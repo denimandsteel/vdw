@@ -1,6 +1,101 @@
 <!doctype html>
 <head>
-<title>Vancouver Design Week</title>
+<title>Vancouver Design Week &ndash; September 2014</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+@-webkit-keyframes background {
+  0% { background: #4F6030; }
+  20% { background: #4F6030; }
+  40% { background: #D792BA; }
+  60% { background: #12578E; }
+  80% { background: #579D7A; }
+  100% { background: #4F6030; }
+}
+body {
+  color: white;
+  -webkit-animation: background 20s infinite; /* Chrome, Safari, Opera */
+    animation: background 20s infinite;
+  margin: 0;
+  font-family: "ff-tisa-web-pro";
+  text-align: center;
+}
+h1 {
+  font-weight: normal;
+  font-size: 5em;
+  line-height: 1.2em;
+  margin: 0;
+}
+h2 {
+  font-weight: normal;
+  font-size: 2.5em;
+  margin: 30px 0 0;
+}
+hr {
+  width: 150px;
+  border: 1px solid white;
+  margin: 30px auto;
+}
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+input {
+  font-family: "ff-tisa-web-pro";
+  -webkit-appearance: none;
+  font-size: 1em;
+  border: 0;
+  padding: 3px 10px 6px 10px;
+  border-radius: 0;
+}
+input[type='submit'] {
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+.center-everything {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  h1 { 
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 15px 0 0;
+  }
+}
+</style>
+<script type="text/javascript" src="//use.typekit.net/mdq3sjd.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
+  <div class="center-everything">
+    <h1>Vancouver Design Week</h1>
+    <h2>is coming September 2014</h2>
+    <hr>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="http://denimandsteel.us5.list-manage.com/subscribe/post?u=4da6b7547530080bdd96d1002&amp;id=de7fead209" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Subscribe to stay informed:</label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email@example.com"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_4da6b7547530080bdd96d1002_de7fead209" tabindex="-1" value=""></div>
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+  </div>
 </body>
