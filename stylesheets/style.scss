@@ -312,6 +312,7 @@ footer {
   padding: 0px 0px 0px 20px;
   // height: 46px;
   line-height: $line-height;
+  @include clearfix();
   @include media($mobile) {
     padding: 0 10px;
   }
