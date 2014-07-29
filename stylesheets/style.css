@@ -274,9 +274,8 @@ header {
 .sponsors {
   margin: 10px 0;
   *zoom: 1;
-  display: table;
-  width: 100%;
-  table-layout: fixed; }
+  display: block;
+  padding: 0 10px; }
   .sponsors:before, .sponsors:after {
     content: " ";
     display: table; }
@@ -284,15 +283,7 @@ header {
     clear: both; }
   @media screen and (max-width: 480px) {
     .sponsors {
-      *zoom: 1;
-      display: block; }
-      .sponsors:before, .sponsors:after {
-        content: " ";
-        display: table; }
-      .sponsors:after {
-        clear: both; } }
-  .sponsors h2 {
-    margin: 10px; }
+      padding: 0 7px; } }
   .sponsors .sponsor {
     padding: 5px 30px 50px;
     display: block;
@@ -301,23 +292,23 @@ header {
     width: 48.82117%; }
     @media screen and (max-width: 480px) {
       .sponsors .sponsor {
-        padding: 10px; } }
+        padding: 7px 0px; } }
     .sponsors .sponsor img {
       width: 100%;
       height: auto;
       display: block; }
     .sponsors .sponsor:last-child {
       margin-right: 0; }
+  .sponsors.platinum {
+    background: #e1e1e1; }
     @media screen and (max-width: 480px) {
-      .sponsors .sponsor {
+      .sponsors.platinum .sponsor {
         display: block;
         float: left;
         margin-right: 7.42297%;
         width: 100%; }
-        .sponsors .sponsor:last-child {
+        .sponsors.platinum .sponsor:last-child {
           margin-right: 0; } }
-  .sponsors.platinum {
-    background: #e1e1e1; }
   .sponsors.gold {
     background: #a38a66; }
   .sponsors.silver {
@@ -329,14 +320,6 @@ header {
       width: 31.76157%; }
       .sponsors.silver .sponsor:last-child {
         margin-right: 0; }
-      @media screen and (max-width: 480px) {
-        .sponsors.silver .sponsor {
-          display: block;
-          float: left;
-          margin-right: 7.42297%;
-          width: 100%; }
-          .sponsors.silver .sponsor:last-child {
-            margin-right: 0; } }
   .sponsors.double-silver {
     background: #95653e; }
 
@@ -357,6 +340,9 @@ header {
         margin-right: 0; } }
   .members .member {
     background: #f2f9ff; }
+    @media screen and (max-width: 768px) {
+      .members .member {
+        margin-bottom: 10px; } }
     .members .member img {
       width: 100%;
       height: auto; }

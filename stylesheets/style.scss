@@ -256,29 +256,33 @@ header {
 
 .sponsors {
   margin: 10px 0;
-  @include row(table);
-  @include media($mobile) {
-    @include row();
-  }
+  @include row();
+  // @include media($mobile) {
+  //   @include row();
+  // }
 
   h2 {
-    margin: 10px;
+    // margin: 10px;
   }
+  padding: 0 10px;
+  @include media($mobile) { padding: 0 7px; }
   .sponsor {
     padding: 5px 30px 50px;
-    @include media($mobile) { padding: 10px; }
+    @include media($mobile) { padding: 7px 0px; }
     img {
       width: 100%;
       height: auto;
       display: block;
     }
     @include span-columns(6);
-    @include media($mobile) {
-      @include span-columns(4);
-    }
   }
   &.platinum {
     background: #e1e1e1;
+    .sponsor {
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+    }
   }
   &.gold {
     background: #a38a66;
@@ -287,9 +291,9 @@ header {
     background: #a6a9aa;
     .sponsor {
       @include span-columns(4);
-      @include media($mobile) {
-        @include span-columns(4);
-      }
+      // @include media($mobile) {
+      //   @include span-columns(4);
+      // }
     }
   }
   &.double-silver {
@@ -304,6 +308,7 @@ header {
   }
   .member {
     background: #f2f9ff;
+    @include media($tablet) { margin-bottom: 10px; }
     img { width: 100%; height: auto; }
     .info { padding: 0 10px; }
   }
