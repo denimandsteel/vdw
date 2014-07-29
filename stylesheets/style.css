@@ -31,7 +31,19 @@ input {
   appearance: none;
   margin: 0;
   padding: 5px 10px 3px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  border-radius: 0; }
+  input[type="email"] {
+    margin-right: 10px;
+    width: 250px;
+    outline: none; }
+  input.highlight {
+    padding: 11px 28px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: #f74715;
+    border: 1px solid #f74715; }
 
 .background {
   z-index: -1;
@@ -75,8 +87,12 @@ body {
   background: url(../images/logo.svg) top left no-repeat;
   width: 408.36px;
   height: 144px;
-  margin: 0 auto;
-  max-width: 100%; }
+  margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .logo {
+      width: 314.12308px;
+      height: 110.76923px;
+      background-size: 314.12308px 110.76923px; } }
 
 section {
   margin: 50px 0;
@@ -135,6 +151,9 @@ header {
   left: 0;
   padding: 0px 0px 0px 20px;
   line-height: 16px; }
+  @media screen and (max-width: 480px) {
+    header {
+      position: absolute; } }
   header h1 {
     line-height: 16px;
     padding: 15px 0;
@@ -147,6 +166,9 @@ header {
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     transition: all 250ms ease-out; }
+    @media screen and (max-width: 480px) {
+      header nav {
+        display: none; } }
   header ul {
     list-style-type: none;
     margin: 0;
@@ -171,17 +193,6 @@ header {
         -webkit-animation-iteration-count: 1;
         -moz-animation-iteration-count: 1;
         animation-iteration-count: 1; }
-  header input[type="email"] {
-    margin-right: 10px;
-    width: 250px;
-    outline: none; }
-  header input.highlight {
-    padding: 11px 28px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    background: #f74715;
-    border: 1px solid #f74715; }
   header form {
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
@@ -347,3 +358,28 @@ header {
       height: auto; }
     .members .member .info {
       padding: 0 10px; }
+
+footer {
+  background: white;
+  padding: 0px 0px 0px 20px;
+  line-height: 16px; }
+  @media screen and (max-width: 480px) {
+    footer {
+      padding: 0 10px; } }
+  footer h1 {
+    line-height: 16px;
+    padding: 15px 0;
+    margin: 0;
+    float: left; }
+  footer a {
+    color: #7d7d7d; }
+  footer p {
+    margin: 0; }
+  footer form {
+    float: right; }
+    @media screen and (max-width: 480px) {
+      footer form {
+        float: none; } }
+  @media screen and (max-width: 480px) {
+    footer input[type="email"] {
+      width: 150px; } }
