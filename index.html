@@ -223,7 +223,10 @@ ga('send', 'pageview');
   // Newsletter form.
   $('header a.highlight').click(function() {
     $('header').addClass('form-active');
-    $('header input[type="email"]').focus();
+    // Wait to trigger focus, otherwise page jumps up.
+    setTimeout(function() {
+      $('header input[type="email"]').focus();
+    }, 250);
     return false;
   });
   $('header input.highlight').click(function() {

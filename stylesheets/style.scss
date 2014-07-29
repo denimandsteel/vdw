@@ -185,7 +185,6 @@ header {
     @include transition(all 250ms ease-out);
     position: absolute;
     right: 0; top: 0;
-    
     @include transform(translateY(-100px));
   }
   &.form-active {
