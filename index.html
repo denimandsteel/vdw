@@ -218,6 +218,25 @@ ga('send', 'pageview');
       return -$(this).height() + $(window).height()/4; // When the bottom hits the middle of the screen.
     }
   });
+  $('header a.highlight').click(function() {
+    $('header').addClass('form-active');
+    $('header input[type="email"]').focus();
+    return false;
+  });
+  $('header input.highlight').click(function() {
+    $('header').removeClass('form-active');
+    return true;
+  });
+  $('header input[type="email"]').keyup(function(e) {
+    // Escape key.
+    if (e.keyCode === 27) {
+      $('header').removeClass('form-active');
+    }
+  });
+
+  // $('header').click(function() {
+  //   $('header').removeClass('form-active');
+  // });
   // $(function() {
   //   $('svg').attr('height', $('.container').height() + 'px');
   //   $('svg').attr('viewBox', '0 0 334.469 ' + $('.container').height());
