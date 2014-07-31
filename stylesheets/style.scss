@@ -72,7 +72,7 @@ input {
 // body { overflow: hidden; }
 
 .background {
-  z-index: -1;
+  z-index: -3;
   position: absolute;
   width: 100%;
   height: auto;
@@ -115,6 +115,16 @@ body {
   width: 408.36px;
   height: 144px;
   margin: 0 auto;
+
+  position: fixed;
+  z-index: -1;
+  top: 80px;
+  left: -35px;
+
+  @include media($tablet) {
+    position: absolute;
+  }
+
   // max-width: 100%;
   @include media($mobile) {
     width: (408.36px/1.3);
@@ -150,6 +160,7 @@ header {
   top: 0; left: 0;
   padding: 0px 0px 0px 20px;
   line-height: $line-height;
+  z-index: 1;
   @include media($mobile) { position: absolute; }
   h1 {
     line-height: $line-height;
@@ -206,7 +217,31 @@ header {
   }
 }
 
-#hero { margin-top: 150px; }
+#hero {
+  color: white;
+  // padding-top: 200px;
+  background: url(../images/top.jpg) center center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  z-index: -2;
+  @include media($mobile) {
+    height: 400px;
+  }
+  h1 {
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    top: 50%; left: 50%;
+    padding: 0px 10px 0;
+    @include transform(translate(-50%, -50%));
+    @include media($mobile) {
+      position: static;
+      @include transform(translate(0%, 0%));
+      padding-top: 270px;
+    }
+  }
+}
 
 .days {
   // @include display-box;
@@ -256,33 +291,52 @@ header {
 
 .sponsors {
   margin: 10px 0;
-  @include row();
+  // @include row();
   // @include media($mobile) {
   //   @include row();
   // }
 
   h2 {
-    // margin: 10px;
+    padding: 10px 10px 0;
   }
-  padding: 0 10px;
-  @include media($mobile) { padding: 0 7px; }
-  .sponsor {
-    padding: 5px 30px 50px;
-    @include media($mobile) { padding: 7px 0px; }
-    img {
-      width: 100%;
+  // padding: 0 10px;
+  // @include media($mobile) { padding: 0 7px; }
+  img {
+      width: 23%;
       height: auto;
-      display: block;
+      padding: 2%;
+      margin: 1%;
+      background: white;
+      @include media($mobile) {
+        width: 48%;
+      }
     }
-    @include span-columns(6);
+  .sponsor {
+    // background: white;
+    // margin-bottom: 20px;
+    // padding: 10px;
+    // padding: 5px 30px 50px;
+    // @include media($mobile) { padding: 7px 0px; }
+    // padding: 10px;
+    padding: 10px;
+    img {
+      width: 180px;
+      height: auto;
+      // width: 100%;
+      // max-width: 200px;
+      // height: auto;
+      // display: block;
+    }
+    // @include span-columns(4);
+    // @include omega(3n);
   }
   &.platinum {
     background: #e1e1e1;
-    .sponsor {
-      @include media($mobile) {
-        @include span-columns(4);
-      }
-    }
+    // .sponsor {
+    //   @include media($mobile) {
+    //     @include span-columns(4);
+    //   }
+    // }
   }
   &.gold {
     background: #a38a66;

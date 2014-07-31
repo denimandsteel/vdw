@@ -13,7 +13,8 @@ ga('create', 'UA-26480550-10', 'designweekvancouver.com');
 ga('send', 'pageview');
 </script>
 </head>
-<body class="hero">
+
+<body class="dates">
 
 <header>
   <h1>Vancouver Design Week <span>[Sept 18 &ndash; 19]</span></h1>
@@ -28,15 +29,16 @@ ga('send', 'pageview');
   </nav>
   <form action="http://denimandsteel.us5.list-manage.com/subscribe/post?u=4da6b7547530080bdd96d1002&amp;id=de7fead209" method="post" target="_blank" novalidate>
     <!-- <label for="mce-EMAIL">Subscribe to stay informed:</label> -->
-    <input type="email" value="" name="EMAIL" class="required email" placeholder="email@example.com"><input type="submit" value="Subscribe" name="subscribe" class="highlight">
+    <input type="email" value="" name="EMAIL" class="required email" placeholder="email@example.com" tabindex="-1"><input type="submit" value="Subscribe" name="subscribe" class="highlight">
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_4da6b7547530080bdd96d1002_de7fead209" tabindex="-1" value=""></div>
   </form>
 </header>
 
-<section id="hero">
-  <div class="logo"></div>
+<div class="logo"></div>
+
+<div id="hero">
   <h1 class="feature">The premiere design event of the year.</h1>
-</section>
+</div>
 
 <section id="dates">
   <div class="days">
@@ -113,26 +115,43 @@ ga('send', 'pageview');
 <section id="sponsor">
   <h1 class="feature">This could only be possible with the help of our sponsors.</h1>
   <div class="sponsors platinum">
-    <h2>Platinum</h2>
-    <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
-    <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
+    <h2>Supporting Partners or Organizations</h2>
+    <div>
+      <img src="images/supporters/cause-and-affect.png" alt="Cause+Affect">
+      <img src="images/supporters/denim-and-steel.png" alt="Denim &amp; Steel">
+      <img src="images/supporters/vancouver-special.png" alt="Vancouver Special">
+      <img src="images/supporters/raic.jpg" alt="the RAIC">
+      <img src="images/supporters/gdc.png" alt="the GDC">
+      <img src="images/supporters/mov.jpg" alt="the MOV">
+      <img src="images/supporters/IDSWest.jpg" alt="IDSWest">
+      <img src="images/supporters/westernlivingmagazine.gif" alt="Western Living Magazine">
+      <img src="images/supporters/gray.jpg" alt="Gray Magazine ">
+      <img src="images/supporters/thnk.png" alt="THNK School for Creative Leadership">
+      <img src="images/supporters/emily-carr.jpg" alt="Emily Carr University">
+      <img src="images/supporters/sala.png" alt="The University of British Columbia School of Architecture and Landscape Architecture">
+      <img src="images/supporters/cag.jpg" alt="The Contemporary Art Gallery of Vancouver">
+      <img src="images/supporters/city-studio.jpg" alt="City Studio">
+      <img src="images/supporters/vpsn.png" alt="the Vancouver Public Space Network">
+      <img src="images/supporters/loha.jpg" alt="LoHA (the Laboratory for Housing Alternatives)">
+      <img src="images/supporters/vancouver-design-nerds.png" alt="the Vancouver Design Nerds">
+    </div>
   </div>
-  <div class="sponsors gold">
+  <!-- <div class="sponsors gold">
     <h2>Gold</h2>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
-  </div>
-  <div class="sponsors silver">
+  </div> -->
+  <!-- <div class="sponsors silver">
     <h2>Silver</h2>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
-  </div>
-  <div class="sponsors double-silver">
+  </div> -->
+  <!-- <div class="sponsors double-silver">
     <h2>Silver</h2>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
     <div class="sponsor"><img src="http://placehold.it/350x150" width="350" height="150" alt="Sponsor"></div>
-  </div>
+  </div> -->
 </section>
 
 <section id="team">
@@ -235,52 +254,7 @@ ga('send', 'pageview');
 </div>
 <script type="text/javascript" src="javascript/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="javascript/waypoints.min.js"></script>
-<script type="text/javascript">
-  // Background fading.
-  var sectionSetter = function(whichWay) {
-    return function(direction) {
-      if (direction === whichWay) {
-        $('body').attr('class', $(this).attr('id'));
-      }
-    }
-  }
-  $('section').waypoint(sectionSetter('down'), { offset: '25%' }); // When the top hits a quarter of the screen.
-  $('section').waypoint(sectionSetter('up'), {
-    offset: function() {
-      return -$(this).height() + $(window).height()/4; // When the bottom hits a quarter of the screen.
-    }
-  });
-
-  // Newsletter form.
-  $('header a.highlight').click(function() {
-    $('header').addClass('form-active');
-    // Wait to trigger focus, otherwise page jumps up.
-    setTimeout(function() {
-      $('header input[type="email"]').focus();
-    }, 250);
-    return false;
-  });
-  $('header input.highlight').click(function() {
-    $('header').removeClass('form-active');
-    return true;
-  });
-  $('header input[type="email"]').keyup(function(e) {
-    // Escape key.
-    if (e.keyCode === 27) {
-      $('header').removeClass('form-active');
-    }
-  });
-
-  // Background crop.
-  var resizeBackground = function() {
-    var bottomOfPage = $('footer').height() + $('footer').offset().top; // Top of page margin (#hero) + margin at bottom (#team).
-    var cropHeight = bottomOfPage * (334.469/$(window).width());
-    // alert(cropHeight)
-    $('svg').attr('height', cropHeight + 'px');
-    $('svg').get(0).setAttribute("viewBox", '0 0 334.469 ' + cropHeight);
-    $('svg').attr('enable-background', 'new 0 0 334.469 ' + cropHeight);
-  };
-  setTimeout(resizeBackground, 500); // Wait long after DOM has finished.
-  $(window).resize(resizeBackground);
-</script>
+<script type="text/javascript" src="javascript/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="javascript/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="javascript/app.js"></script>
 </body>
