@@ -356,6 +356,27 @@ header {
     .members .member .info {
       padding: 0 10px; }
 
+.faqs {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background: #3f3ce5;
+  color: white;
+  padding: 0 10px; }
+  .faqs:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .faqs {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .faqs:last-child {
+        margin-right: 0; } }
+  .faqs p {
+    text-transform: none; }
+
 footer {
   background: white;
   padding: 0px 0px 0px 20px;

@@ -326,6 +326,17 @@ header {
   }
 }
 
+.faqs {
+  @include span-columns(6);
+  @include media($mobile) { @include span-columns(4); }
+  background: #3f3ce5;
+  color: white;
+  padding: 0 10px;
+  p {
+    text-transform: none;
+  }
+}
+
 footer {
   $line-height: 16px;
   $padding-top-bottom: 15px;
