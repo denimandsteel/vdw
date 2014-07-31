@@ -321,24 +321,12 @@ header {
     @media screen and (max-width: 480px) {
       .sponsors img {
         width: 48%; } }
-  .sponsors .sponsor {
-    padding: 10px; }
-    .sponsors .sponsor img {
-      width: 180px;
-      height: auto; }
   .sponsors.platinum {
     background: #e1e1e1; }
   .sponsors.gold {
     background: #a38a66; }
   .sponsors.silver {
     background: #a6a9aa; }
-    .sponsors.silver .sponsor {
-      display: block;
-      float: left;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .sponsors.silver .sponsor:last-child {
-        margin-right: 0; }
   .sponsors.double-silver {
     background: #95653e; }
 

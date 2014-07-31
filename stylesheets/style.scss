@@ -291,68 +291,26 @@ header {
 
 .sponsors {
   margin: 10px 0;
-  // @include row();
-  // @include media($mobile) {
-  //   @include row();
-  // }
 
   h2 {
     padding: 10px 10px 0;
   }
-  // padding: 0 10px;
-  // @include media($mobile) { padding: 0 7px; }
+
   img {
-      width: 23%;
-      height: auto;
-      padding: 2%;
-      margin: 1%;
-      background: white;
-      @include media($mobile) {
-        width: 48%;
-      }
-    }
-  .sponsor {
-    // background: white;
-    // margin-bottom: 20px;
-    // padding: 10px;
-    // padding: 5px 30px 50px;
-    // @include media($mobile) { padding: 7px 0px; }
-    // padding: 10px;
-    padding: 10px;
-    img {
-      width: 180px;
-      height: auto;
-      // width: 100%;
-      // max-width: 200px;
-      // height: auto;
-      // display: block;
-    }
-    // @include span-columns(4);
-    // @include omega(3n);
-  }
-  &.platinum {
-    background: #e1e1e1;
-    // .sponsor {
-    //   @include media($mobile) {
-    //     @include span-columns(4);
-    //   }
-    // }
-  }
-  &.gold {
-    background: #a38a66;
-  }
-  &.silver {
-    background: #a6a9aa;
-    .sponsor {
-      @include span-columns(4);
-      // @include media($mobile) {
-      //   @include span-columns(4);
-      // }
+    width: 23%;
+    height: auto;
+    padding: 2%;
+    margin: 1%;
+    background: white;
+    @include media($mobile) {
+      width: 48%;
     }
   }
-  &.double-silver {
-    background: #95653e;
-  }
+
+  &.platinum { background: #e1e1e1; }
+  &.gold { background: #a38a66; }
+  &.silver { background: #a6a9aa; }
+  &.double-silver { background: #95653e; }
 }
 
 .members {
