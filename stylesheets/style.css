@@ -27,6 +27,18 @@ h1, h2, h3 {
         padding-left: 20px;
         padding-right: 20px; } }
 
+a {
+  color: inherit; }
+  a.highlight {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 11px 28px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: #f74715;
+    border: 1px solid #f74715; }
+
 input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -376,6 +388,28 @@ header {
         margin-right: 0; } }
   .faqs p {
     text-transform: none; }
+
+#contact .details {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  background: white;
+  color: black;
+  padding: 10px 20px 20px;
+  border: 10px solid #f74715; }
+  #contact .details:last-child {
+    margin-right: 0; }
+#contact .highlight {
+  display: inline-block; }
+  #contact .highlight:hover {
+    -webkit-animation: bump 250ms ease-out;
+    -moz-animation: bump 250ms ease-out;
+    animation: bump 250ms ease-out;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
 
 footer {
   background: white;

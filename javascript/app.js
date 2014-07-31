@@ -37,7 +37,7 @@ $('header input[type="email"]').keyup(function(e) {
 
 // Background crop.
 var resizeBackground = function() {
-  var bottomOfPage = $('footer').height() + $('footer').offset().top; // Top of page margin (#hero) + margin at bottom (#team).
+  var bottomOfPage = $('#contact').height() + $('#contact').offset().top + 150; // Top of page margin (#hero) + margin at bottom (#team).
   var cropHeight = bottomOfPage * (334.469/$(window).width());
   // alert(cropHeight)
   $('svg').attr('height', cropHeight + 'px');

@@ -43,6 +43,21 @@ p, input {
   @extend %primary-type;
 }
 
+a {
+  color: inherit;
+
+  &.highlight {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 11px 28px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: $highlight;
+    border: 1px solid $highlight;
+  }
+}
+
 input {
   @include appearance(none);
   margin: 0;
@@ -302,6 +317,8 @@ header {
     padding: 2%;
     margin: 1%;
     background: white;
+    // -webkit-filter: grayscale(100%);
+    // &:hover { -webkit-filter: grayscale(0%); }
     @include media($mobile) {
       width: 48%;
     }
@@ -334,6 +351,24 @@ header {
   padding: 0 10px;
   p {
     text-transform: none;
+  }
+}
+
+#contact {
+  .details {
+    @include span-columns(8);
+    @include shift(2);
+    background: white;
+    color: black;
+    padding: 10px 20px 20px;
+    border: 10px solid $highlight;
+  }
+  .highlight {
+    display: inline-block;
+    &:hover {
+      @include animation(bump 250ms ease-out);
+      @include animation-iteration-count(1);
+    }
   }
 }
 
