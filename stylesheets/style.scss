@@ -275,10 +275,11 @@ header {
   .mission {
     margin-top: 100px;
     background: white;
+    background: rgba(255, 255, 255, 0.9);
     color: black;
     padding: 0 10px;
-    @include span-columns(8);
-    @include shift(2);
+    @include span-columns(6);
+    @include shift(3);
     @include media($tablet) {
       @include span-columns(6);
       @include shift(1);

@@ -267,13 +267,14 @@ header {
   #hero .mission {
     margin-top: 100px;
     background: white;
+    background: rgba(255, 255, 255, 0.9);
     color: black;
     padding: 0 10px;
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
+    width: 48.82117%;
+    margin-left: 25.58941%; }
     #hero .mission:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
