@@ -11,7 +11,7 @@ $yellow: #f1ed5d;
 %primary-type {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 23.44px;
   text-transform: uppercase;
 }
@@ -19,6 +19,7 @@ $yellow: #f1ed5d;
 body {
   color: #292826;
   @extend %primary-type;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   // background: rgb(200, 155, 100);
@@ -37,9 +38,23 @@ h1, h2, h3 {
       padding-right: 20px;
     }
   }
+  &.huge {
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    margin: 250px 0 150px;
+    @include media($tablet) {
+      margin: 200px 0 100px;
+      font-size: 50px;
+    }
+    @include media($mobile) {
+      margin: 140px 0 0px;
+      font-size: 30px;
+    }
+  }
 }
 
-p, input {
+ul, p, input {
   @extend %primary-type;
 }
 
@@ -148,7 +163,7 @@ body {
   }
 }
 
-section {
+section, .content {
   margin: 50px 0;
   padding: 50px 0;
   @include outer-container;
@@ -179,7 +194,7 @@ header {
   @include media($mobile) { position: absolute; }
   h1 {
     line-height: $line-height;
-    padding: $padding-top-bottom 0;
+    padding: ($padding-top-bottom+4) 0;
     margin: 0;
     float: left;
   }
@@ -200,7 +215,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: $lighter-gray;
-    padding: $padding-top-bottom 15px;
+    padding: ($padding-top-bottom+1) 15px;
     display: block;
     &:hover, &.highlight {
       color: white;
@@ -237,23 +252,40 @@ header {
   // padding-top: 200px;
   background: url(../images/top.jpg) center center;
   background-size: cover;
-  height: 800px;
+  // height: 800px;
   position: relative;
   z-index: -2;
-  @include media($mobile) {
-    height: 400px;
-  }
+  // padding-top: 100px;
+  padding-bottom: 25px;
+  // @include media($mobile) {
+  //   height: 400px;
+  // }
   h1 {
-    z-index: 1;
-    margin: 0;
-    position: absolute;
-    top: 50%; left: 50%;
-    padding: 0px 10px 0;
-    @include transform(translate(-50%, -50%));
+    // margin: 0;
+    // position: absolute;
+    // top: 50%; left: 50%;
+    // padding: 0px 10px 0;
+    // @include transform(translate(-50%, -50%));
+    // @include media($mobile) {
+    //   position: static;
+    //   @include transform(translate(0%, 0%));
+    //   padding-top: 270px;
+    // }
+  }
+  .mission {
+    margin-top: 100px;
+    background: white;
+    color: black;
+    padding: 0 10px;
+    @include span-columns(8);
+    @include shift(2);
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(1);
+    }
     @include media($mobile) {
-      position: static;
-      @include transform(translate(0%, 0%));
-      padding-top: 270px;
+      @include span-columns(4);
+      @include shift(0);
     }
   }
 }
@@ -305,6 +337,7 @@ header {
 #sponsor .feature { color: $lighter-gray; }
 
 .sponsors {
+  background: white;
   margin: 10px 0;
 
   h2 {
@@ -340,6 +373,9 @@ header {
     @include media($tablet) { margin-bottom: 10px; }
     img { width: 100%; height: auto; }
     .info { padding: 0 10px; }
+    p {
+      text-transform: none;
+    }
   }
 }
 

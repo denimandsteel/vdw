@@ -3,15 +3,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body, h1, h2, h3, p, input {
+body, h1, h2, h3, ul, p, input {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 23.44px;
   text-transform: uppercase; }
 
 body {
   color: #292826;
+  font-size: 16px;
   margin: 0;
   padding: 0; }
 
@@ -26,6 +27,19 @@ h1, h2, h3 {
       h1.feature, h2.feature, h3.feature {
         padding-left: 20px;
         padding-right: 20px; } }
+  h1.huge, h2.huge, h3.huge {
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    margin: 250px 0 150px; }
+    @media screen and (max-width: 768px) {
+      h1.huge, h2.huge, h3.huge {
+        margin: 200px 0 100px;
+        font-size: 50px; } }
+    @media screen and (max-width: 480px) {
+      h1.huge, h2.huge, h3.huge {
+        margin: 140px 0 0px;
+        font-size: 30px; } }
 
 a {
   color: inherit; }
@@ -117,17 +131,17 @@ body {
       height: 110.76923px;
       background-size: 314.12308px 110.76923px; } }
 
-section {
+section, .content {
   margin: 50px 0;
   padding: 50px 0;
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  section:before, section:after {
+  section:before, section:after, .content:before, .content:after {
     content: " ";
     display: table; }
-  section:after {
+  section:after, .content:after {
     clear: both; }
 
 @-webkit-keyframes bump {
@@ -180,7 +194,7 @@ header {
       position: absolute; } }
   header h1 {
     line-height: 16px;
-    padding: 15px 0;
+    padding: 19px 0;
     margin: 0;
     float: left; }
   header span {
@@ -203,7 +217,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: #7d7d7d;
-    padding: 15px 15px;
+    padding: 16px 15px;
     display: block; }
     header a:hover, header a.highlight {
       color: white;
@@ -247,33 +261,39 @@ header {
   color: white;
   background: url(../images/top.jpg) center center;
   background-size: cover;
-  height: 800px;
   position: relative;
-  z-index: -2; }
-  @media screen and (max-width: 480px) {
-    #hero {
-      height: 400px; } }
-  #hero h1 {
-    z-index: 1;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 0px 10px 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+  z-index: -2;
+  padding-bottom: 25px; }
+  #hero .mission {
+    margin-top: 100px;
+    background: white;
+    color: black;
+    padding: 0 10px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    #hero .mission:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      #hero .mission {
+        display: block;
+        float: left;
+        margin-right: 3.57866%;
+        width: 74.10533%;
+        margin-left: 12.94733%; }
+        #hero .mission:last-child {
+          margin-right: 0; } }
     @media screen and (max-width: 480px) {
-      #hero h1 {
-        position: static;
-        -webkit-transform: translate(0%, 0%);
-        -moz-transform: translate(0%, 0%);
-        -ms-transform: translate(0%, 0%);
-        -o-transform: translate(0%, 0%);
-        transform: translate(0%, 0%);
-        padding-top: 270px; } }
+      #hero .mission {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%;
+        margin-left: 0%; }
+        #hero .mission:last-child {
+          margin-right: 0; } }
 
 .day {
   padding: 0 10px;
@@ -321,6 +341,7 @@ header {
   color: #7d7d7d; }
 
 .sponsors {
+  background: white;
   margin: 10px 0; }
   .sponsors h2 {
     padding: 10px 10px 0; }
@@ -367,6 +388,8 @@ header {
       height: auto; }
     .members .member .info {
       padding: 0 10px; }
+    .members .member p {
+      text-transform: none; }
 
 .faqs {
   display: block;
