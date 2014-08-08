@@ -47,15 +47,11 @@ var resizeBackground = function() {
 setTimeout(resizeBackground, 500); // Wait long after DOM has finished.
 $(window).resize(resizeBackground);
 
+// Sponsor shuffling and masonry.
+$.shuffle('.sponsors div img');
 var $container = $('.sponsors div');
-// initialize
-// $container.masonry({
-//   columnWidth: 200,
-//   itemSelector: '.sponsor'
-// });
 $container.imagesLoaded( function() {
   $container.masonry({
-    // columnWidth: 200,
     itemSelector: 'img'
   });
 });
