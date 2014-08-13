@@ -28,18 +28,27 @@ h1, h2, h3 {
         padding-left: 20px;
         padding-right: 20px; } }
   h1.huge, h2.huge, h3.huge {
-    font-size: 70px;
+    font-size: 45px;
     font-weight: normal;
     text-align: center;
     margin: 250px 0 150px; }
     @media screen and (max-width: 768px) {
       h1.huge, h2.huge, h3.huge {
         margin: 200px 0 100px;
-        font-size: 50px; } }
+        font-size: 28px; } }
     @media screen and (max-width: 480px) {
       h1.huge, h2.huge, h3.huge {
         margin: 140px 0 0px;
-        font-size: 30px; } }
+        font-size: 23px; }
+        h1.huge span, h2.huge span, h3.huge span {
+          display: block; } }
+
+@media screen and (max-width: 480px) {
+  ul, p, input {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; } }
 
 a {
   color: inherit; }
@@ -129,7 +138,8 @@ body {
     .logo {
       width: 314.12308px;
       height: 110.76923px;
-      background-size: 314.12308px 110.76923px; } }
+      background-size: 314.12308px 110.76923px;
+      top: 50px; } }
 
 section, .content {
   margin: 50px 0;
@@ -191,7 +201,7 @@ header {
   z-index: 1; }
   @media screen and (max-width: 480px) {
     header {
-      position: absolute; } }
+      display: none; } }
   header h1 {
     line-height: 16px;
     padding: 19px 0;
@@ -264,6 +274,9 @@ header {
   position: relative;
   z-index: -2;
   padding-bottom: 25px; }
+  @media screen and (max-width: 480px) {
+    #hero {
+      padding-bottom: 0; } }
   #hero .mission {
     margin-top: 100px;
     background: white;
@@ -273,28 +286,16 @@ header {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 25.58941%; }
+    width: 100%; }
     #hero .mission:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      #hero .mission {
-        display: block;
-        float: left;
-        margin-right: 3.57866%;
-        width: 74.10533%;
-        margin-left: 12.94733%; }
-        #hero .mission:last-child {
-          margin-right: 0; } }
-    @media screen and (max-width: 480px) {
-      #hero .mission {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%;
-        margin-left: 0%; }
-        #hero .mission:last-child {
-          margin-right: 0; } }
+  #hero p:first-child {
+    font-weight: bold; }
+  @media screen and (max-width: 480px) {
+    #hero .content {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0; } }
 
 .day {
   padding: 0 10px;
