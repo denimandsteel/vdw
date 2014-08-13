@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body, h1, h2, h3, ul, p, input {
+body, h1, h2, h3, ul, p, input, blockquote, cite {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
   font-size: 17px;
@@ -20,28 +20,13 @@ h1, h2, h3 {
   font-weight: bold; }
   h1.feature, h2.feature, h3.feature {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     margin: 60px 0; }
     @media screen and (max-width: 480px) {
       h1.feature, h2.feature, h3.feature {
         padding-left: 20px;
         padding-right: 20px; } }
-  h1.huge, h2.huge, h3.huge {
-    font-size: 45px;
-    font-weight: normal;
-    text-align: center;
-    margin: 250px 0 150px; }
-    @media screen and (max-width: 768px) {
-      h1.huge, h2.huge, h3.huge {
-        margin: 200px 0 100px;
-        font-size: 28px; } }
-    @media screen and (max-width: 480px) {
-      h1.huge, h2.huge, h3.huge {
-        margin: 140px 0 0px;
-        font-size: 23px; }
-        h1.huge span, h2.huge span, h3.huge span {
-          display: block; } }
 
 @media screen and (max-width: 480px) {
   ul, p, input {
@@ -49,6 +34,21 @@ h1, h2, h3 {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto; } }
+
+blockquote {
+  font-weight: bold;
+  margin: 0;
+  display: inline;
+  color: white;
+  background: #3C65DF;
+  font-size: 22px;
+  line-height: 30px; }
+
+cite {
+  display: block;
+  color: #3C65DF;
+  font-style: normal;
+  font-weight: bold; }
 
 a {
   color: inherit; }
@@ -111,11 +111,28 @@ body {
       fill: #00ab77; }
   body.dates {
     background: #f1ed5d; }
+    body.dates .logo {
+      -webkit-transform: scale(0.75);
+      -moz-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+      -o-transform: scale(0.75);
+      transform: scale(0.75); }
+      @media screen and (max-width: 480px) {
+        body.dates .logo {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1); } }
     body.dates svg path {
       fill: #000000; }
-  body.sponsor {
+  body.context {
     background: #f2f9ff; }
-    body.sponsor svg path {
+    body.context svg path {
+      fill: #f74715; }
+  body.faq {
+    background: #f2f9ff; }
+    body.faq svg path {
       fill: #2e3192; }
   body.team {
     background: #f2f9ff; }
@@ -130,7 +147,12 @@ body {
   position: fixed;
   z-index: -1;
   top: 80px;
-  left: -35px; }
+  left: -35px;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left; }
   @media screen and (max-width: 768px) {
     .logo {
       position: absolute; } }
@@ -269,7 +291,7 @@ header {
 
 #hero {
   color: white;
-  background: url(../images/top.jpg) center center;
+  background: url(../images/VDW_web_bg1.jpg) center center;
   background-size: cover;
   position: relative;
   z-index: -2;
@@ -277,20 +299,53 @@ header {
   @media screen and (max-width: 480px) {
     #hero {
       padding-bottom: 0; } }
-  #hero .mission {
-    margin-top: 100px;
-    background: white;
-    background: rgba(255, 255, 255, 0.9);
+  #hero h1 {
+    margin-top: 150px;
+    padding: 5px;
     color: black;
-    padding: 0 10px;
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px; }
+    #hero h1:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      #hero h1 {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%;
+        margin-left: 0%; }
+        #hero h1:last-child {
+          margin-right: 0; } }
+  #hero .mission {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    margin-top: 20px;
+    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 0 10px 10px; }
     #hero .mission:last-child {
       margin-right: 0; }
-  #hero p:first-child {
-    font-weight: bold; }
+    @media screen and (max-width: 480px) {
+      #hero .mission {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%;
+        margin-left: 0%; }
+        #hero .mission:last-child {
+          margin-right: 0; } }
+    #hero .mission p {
+      text-transform: none; }
   @media screen and (max-width: 480px) {
     #hero .content {
       margin-top: 0;
@@ -393,13 +448,33 @@ header {
     .members .member p {
       text-transform: none; }
 
+#context .shift {
+  background: #f2f9ff;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  #context .shift:last-child {
+    margin-right: 0; }
+#context .second {
+  margin-top: 25px; }
+#context p {
+  text-transform: none; }
+
+#faq .feature {
+  color: white; }
+  #faq .feature span {
+    background: #2e3192; }
+
 .faqs {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 48.82117%;
-  background: #3f3ce5;
-  color: white;
+  background: #f2f9ff;
+  color: black;
   padding: 0 10px; }
   .faqs:last-child {
     margin-right: 0; }

@@ -5,6 +5,7 @@
 $lighter-gray: #7d7d7d;
 $highlight: #f74715;
 
+$cream: #f2f9ff;
 // Backgrounds.
 $yellow: #f1ed5d;
 
@@ -30,27 +31,12 @@ h1, h2, h3 {
   font-weight: bold;
   &.feature {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     margin: 60px 0;
     @include media($mobile) {
       padding-left: 20px;
       padding-right: 20px;
-    }
-  }
-  &.huge {
-    font-size: 45px;
-    font-weight: normal;
-    text-align: center;
-    margin: 250px 0 150px;
-    @include media($tablet) {
-      margin: 200px 0 100px;
-      font-size: 28px;
-    }
-    @include media($mobile) {
-      margin: 140px 0 0px;
-      font-size: 23px;
-      span { display: block; }
     }
   }
 }
@@ -63,6 +49,25 @@ ul, p, input {
         -ms-hyphens: auto;
             hyphens: auto;
   }
+}
+
+blockquote {
+  @extend %primary-type;
+  font-weight: bold;
+  margin: 0;
+  display: inline;
+  color: white;
+  background: #3C65DF;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+cite {
+  @extend %primary-type;
+  display: block;
+  color: #3C65DF;
+  font-style: normal;
+  font-weight: bold;
 }
 
 a {
@@ -133,15 +138,25 @@ body {
     svg path { fill: #00ab77; } // Green
   }
   &.dates {
+    .logo {
+      @include transform(scale(0.75));
+      @include media($mobile) {
+        @include transform(scale(1));
+      }
+    }
     background: $yellow;
     svg path { fill: #000000; }
   }
-  &.sponsor {
-    background: #f2f9ff; // Cream
+  &.context {
+    background: $cream; // Cream
+    svg path { fill: $highlight; } // Red
+  }
+  &.faq {
+    background: $cream; // Cream
     svg path { fill: #2e3192; } // Blue
   }
   &.team {
-    background: #f2f9ff; // Cream
+    background: $cream; // Cream
     svg path { fill: #f4c5b5; } // Peach
   }
 }
@@ -157,6 +172,9 @@ body {
   z-index: -1;
   top: 80px;
   left: -35px;
+
+  @include transform-origin(top left);
+  // @include transition(500ms ease-out all);
 
   @include media($tablet) {
     position: absolute;
@@ -258,7 +276,7 @@ header {
 #hero {
   color: white;
   // padding-top: 200px;
-  background: url(../images/top.jpg) center center;
+  background: url(../images/VDW_web_bg1.jpg) center center;
   background-size: cover;
   // height: 800px;
   position: relative;
@@ -270,6 +288,18 @@ header {
   // }
   @include media($mobile) { padding-bottom: 0; }
   h1 {
+    margin-top: 150px;
+    padding: 5px;
+    color: black;
+    @include span-columns(8);
+    @include shift(2);
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
     // margin: 0;
     // position: absolute;
     // top: 50%; left: 50%;
@@ -280,14 +310,36 @@ header {
     //   @include transform(translate(0%, 0%));
     //   padding-top: 270px;
     // }
+
+    //   &.huge {
+    //   // font-size: 45px;
+    //   font-weight: normal;
+    //   text-align: center;
+    //   margin: 250px 0 150px;
+    //   @include media($tablet) {
+    //     margin: 200px 0 100px;
+    //     font-size: 28px;
+    //   }
+    //   @include media($mobile) {
+    //     margin: 140px 0 0px;
+    //     font-size: 23px;
+    //   }
+    // }
+
   }
   .mission {
-    margin-top: 100px;
+    @include span-columns(10);
+    @include shift(1);
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(0);
+    }
+    margin-top: 20px;
     background: white;
     background: rgba(255, 255, 255, 0.9);
     color: black;
-    padding: 0 10px;
-    @include span-columns(12);
+    padding: 0 10px 10px;
+    p { text-transform: none; }
     // @include shift(3);
     // @include media($tablet) {
     //   @include span-columns(6);
@@ -298,9 +350,9 @@ header {
     //   @include shift(0);
     // }
   }
-  p {
-    &:first-child { font-weight: bold; }
-  }
+  // p {
+  //   &:first-child { font-weight: bold; }
+  // }
 
   .content {
     @include media($mobile) {
@@ -390,7 +442,7 @@ header {
     @include span-columns(8);
   }
   .member {
-    background: #f2f9ff;
+    background: $cream;
     @include media($tablet) { margin-bottom: 10px; }
     img { width: 100%; height: auto; }
     .info { padding: 0 10px; }
@@ -400,11 +452,30 @@ header {
   }
 }
 
+#context {
+  .shift {
+    background: $cream;
+    padding: 0 10px;
+    @include span-columns(10);
+    @include shift(1);
+  }
+  .second { margin-top: 25px; }
+  p { text-transform: none; }
+}
+
+#faq .feature {
+  color: white;
+  span {
+    background: #2e3192;
+  }
+}
+
 .faqs {
   @include span-columns(6);
   @include media($mobile) { @include span-columns(4); }
-  background: #3f3ce5;
-  color: white;
+  // background: #3f3ce5;
+  background: $cream;
+  color: black;
   padding: 0 10px;
   p {
     text-transform: none;
