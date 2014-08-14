@@ -223,6 +223,11 @@ header {
     padding: ($padding-top-bottom+4) 0;
     margin: 0;
     float: left;
+    @include media(max-width 900px) {
+      span {
+        display: none;
+      }
+    }
   }
   span { color: #7d7d7d; }
   nav {
@@ -243,6 +248,10 @@ header {
     color: $lighter-gray;
     padding: ($padding-top-bottom+1) 15px;
     display: block;
+    @include media($tablet) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
     &:hover, &.highlight {
       color: white;
       background: $highlight;
@@ -291,41 +300,16 @@ header {
     margin-top: 150px;
     padding: 5px;
     color: black;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
     @include span-columns(8);
     @include shift(2);
     @include media($mobile) {
       @include span-columns(4);
       @include shift(0);
+      font-size: 18px;
     }
-    text-align: center;
-    font-size: 22px;
-    line-height: 30px;
-    // margin: 0;
-    // position: absolute;
-    // top: 50%; left: 50%;
-    // padding: 0px 10px 0;
-    // @include transform(translate(-50%, -50%));
-    // @include media($mobile) {
-    //   position: static;
-    //   @include transform(translate(0%, 0%));
-    //   padding-top: 270px;
-    // }
-
-    //   &.huge {
-    //   // font-size: 45px;
-    //   font-weight: normal;
-    //   text-align: center;
-    //   margin: 250px 0 150px;
-    //   @include media($tablet) {
-    //     margin: 200px 0 100px;
-    //     font-size: 28px;
-    //   }
-    //   @include media($mobile) {
-    //     margin: 140px 0 0px;
-    //     font-size: 23px;
-    //   }
-    // }
-
   }
   .mission {
     @include span-columns(10);

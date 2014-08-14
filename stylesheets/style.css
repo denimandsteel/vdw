@@ -229,6 +229,9 @@ header {
     padding: 19px 0;
     margin: 0;
     float: left; }
+    @media screen and (max-width: 900px) {
+      header h1 span {
+        display: none; } }
   header span {
     color: #7d7d7d; }
   header nav {
@@ -251,6 +254,10 @@ header {
     color: #7d7d7d;
     padding: 16px 15px;
     display: block; }
+    @media screen and (max-width: 768px) {
+      header a {
+        padding-left: 8px;
+        padding-right: 8px; } }
     header a:hover, header a.highlight {
       color: white;
       background: #f74715; }
@@ -303,14 +310,14 @@ header {
     margin-top: 150px;
     padding: 5px;
     color: black;
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 65.88078%;
-    margin-left: 17.05961%;
-    text-align: center;
-    font-size: 22px;
-    line-height: 30px; }
+    margin-left: 17.05961%; }
     #hero h1:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
@@ -319,7 +326,8 @@ header {
         float: left;
         margin-right: 7.42297%;
         width: 100%;
-        margin-left: 0%; }
+        margin-left: 0%;
+        font-size: 18px; }
         #hero h1:last-child {
           margin-right: 0; } }
   #hero .mission {
