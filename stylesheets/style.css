@@ -341,47 +341,41 @@ header {
     #hero .mission:last-child {
       margin-right: 0; }
 
-.day {
-  padding: 0 10px;
-  margin: 10px 0;
-  background: #f1ed5d;
+#event .event {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 48.82117%; }
-  .day:last-child {
+  width: 23.23176%;
+  background-size: cover;
+  background-position: center center;
+  min-height: 200px;
+  position: relative;
+  margin-bottom: 17px;
+  padding: 0 5px; }
+  #event .event:last-child {
     margin-right: 0; }
+  #event .event:nth-child(4n) {
+    margin-right: 0; }
+  #event .event:nth-child(4n+1) {
+    clear: left; }
   @media screen and (max-width: 768px) {
-    .day {
+    #event .event {
       display: block;
       float: left;
       margin-right: 3.57866%;
-      width: 100%; }
-      .day:last-child {
-        margin-right: 0; } }
-  .day h2 span {
-    display: inline-block;
-    width: 110px; }
-  .day h3 {
-    margin-bottom: 0; }
-  .day dl {
-    margin: 0 0 5px; }
-  .day dt {
-    float: left;
-    width: 110px; }
-  .day dd {
-    margin-left: 110px; }
-
-.map {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .map:last-child {
-    margin-right: 0; }
-  .map img {
-    width: 100%;
-    height: auto; }
+      width: 48.21067%; }
+      #event .event:last-child {
+        margin-right: 0; }
+      #event .event:nth-child(2n) {
+        margin-right: 0; }
+      #event .event:nth-child(2n+1) {
+        clear: left; } }
+#event h2 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  color: white;
+  font-size: 20px; }
 
 .members {
   display: block;

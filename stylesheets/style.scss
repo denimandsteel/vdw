@@ -347,6 +347,30 @@ header {
 
 // #EVENT
 
+#event {
+  .event {
+    @include span-columns(3);
+    @include omega(4n);
+    @include media($tablet) {
+      @include span-columns(4);
+      @include omega(2n);
+    }
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 17px;
+    padding: 0 5px;
+  }
+  h2 {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+  }
+}
+
 // .days {
   // @include display-box;
   // @include box-align(stretch);
@@ -354,42 +378,42 @@ header {
   // @include box-pack(start);
 // }
 
-.day {
-  // @include box-flex(1);
-  $first-column: 110px;
-  padding: 0 10px;
-  margin: 10px 0;
-  background: $yellow;
-  @include span-columns(6);
+// .day {
+//   // @include box-flex(1);
+//   $first-column: 110px;
+//   padding: 0 10px;
+//   margin: 10px 0;
+//   background: $yellow;
+//   @include span-columns(6);
   
-  @include media($tablet) {
-    @include span-columns(8);  
-  }
+//   @include media($tablet) {
+//     @include span-columns(8);  
+//   }
 
-  h2 span {
-    display: inline-block;
-    width: $first-column;
-  }
-  h3 { margin-bottom: 0; }
-  dl {
-    margin: 0 0 5px;
-  }
-  dt {
-    float: left;
-    width: $first-column;
-  }
-  dd {
-    margin-left: $first-column;
-  }
-}
+//   h2 span {
+//     display: inline-block;
+//     width: $first-column;
+//   }
+//   h3 { margin-bottom: 0; }
+//   dl {
+//     margin: 0 0 5px;
+//   }
+//   dt {
+//     float: left;
+//     width: $first-column;
+//   }
+//   dd {
+//     margin-left: $first-column;
+//   }
+// }
 
-.map {
-  @include span-columns(12);
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
+// .map {
+//   @include span-columns(12);
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// }
 
 // #TEAM
 
