@@ -19,11 +19,52 @@ $yellow: #f1ed5d;
 
 body {
   color: #292826;
+  background: $cream; // Cream
   @extend %primary-type;
   font-size: 16px;
   margin: 0;
   padding: 0;
-  // background: rgb(200, 155, 100);
+
+  @include transition(background 1s ease-out);
+  svg path { @include transition(fill 1s ease-out); }
+
+  &.hero {
+    background: $lighter-gray;
+    svg path { fill: #00ab77; } // Green
+  }
+  &.event {
+    background: $yellow;
+    svg path { fill: #000000; } // Black
+  }
+  &.context {
+    svg path { fill: $highlight; } // Red
+  }
+  &.faq {
+    svg path { fill: #2e3192; } // Blue
+  }
+  &.team {
+    svg path { fill: #f4c5b5; } // Peach
+  }
+}
+
+.background {
+  z-index: -3;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  top: 0; left: 0;
+  svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+section, .section {
+  margin: 50px 0;
+  padding: 50px 0;
+  @include outer-container;
 }
 
 h1, h2, h3 {
@@ -70,18 +111,36 @@ cite {
   font-weight: bold;
 }
 
+@include keyframes(bump) {
+  0% {
+    @include transform(translateY(0px));
+  }
+  50% {
+    @include transform(translateY(-5px));
+  }
+  100% {
+    @include transform(translateY(0px));
+  }
+}
+
+%highlight {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 11px 28px 10px;
+  cursor: pointer;
+  color: white;
+  background: $highlight;
+  &:hover {
+    @include animation(bump 250ms ease-out);
+    @include animation-iteration-count(1);
+  }
+}
+
 a {
   color: inherit;
 
   &.highlight {
-    font-weight: bold;
-    text-decoration: none;
-    padding: 11px 28px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    background: $highlight;
-    border: 1px solid $highlight;
+    @extend %highlight;
   }
 }
 
@@ -100,64 +159,33 @@ input {
     outline: none;
   }
   &[type='submit'] {
+    border: 0;
   }
   &.highlight {
-    padding: 11px 28px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    background: $highlight;
-    border: 1px solid $highlight;
+    @extend %highlight;
   }
 }
 
-// body { overflow: hidden; }
-
-.background {
-  z-index: -3;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  top: 0; left: 0;
-  svg {
+%cream-box {
+  background: $cream;
+  color: black;
+  
+  img {
     width: 100%;
-    height: 100%;
-    display: block;
+    height: auto;
   }
-  // width: 334.469px;
-  // height: 2527.252px;
-  // background: url(../images/bg.svg) top left no-repeat;
-}
 
-body {
-  @include transition(background 1s ease-out);
-  svg path { @include transition(fill 1s ease-out); }
-  &.hero {
-    background: $lighter-gray;
-    svg path { fill: #00ab77; } // Green
+  .content {
+    padding: 0 10px;
+    p {
+      text-transform: none;
+    }
   }
-  &.dates {
-    // .logo {
-    //   @include transform(scale(0.75));
-    //   @include media($mobile) {
-    //     @include transform(scale(1));
-    //   }
-    // }
-    background: $yellow;
-    svg path { fill: #000000; }
-  }
-  &.context {
-    background: $cream; // Cream
-    svg path { fill: $highlight; } // Red
-  }
-  &.faq {
-    background: $cream; // Cream
-    svg path { fill: #2e3192; } // Blue
-  }
-  &.team {
-    background: $cream; // Cream
-    svg path { fill: #f4c5b5; } // Peach
+
+  .highlight {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -190,24 +218,6 @@ body {
   }
 }
 
-section, .content {
-  margin: 50px 0;
-  padding: 50px 0;
-  @include outer-container;
-}
-
-@include keyframes(bump) {
-  0% {
-    @include transform(translateY(0px));
-  }
-  50% {
-    @include transform(translateY(-5px));
-  }
-  100% {
-    @include transform(translateY(0px));
-  }
-}
-
 header {
   $line-height: 16px;
   $padding-top-bottom: 15px;
@@ -221,7 +231,7 @@ header {
   @include media($mobile) { display: none; }
   h1 {
     line-height: $line-height;
-    padding: ($padding-top-bottom+4) 0;
+    padding: ($padding-top-bottom+3) 0;
     margin: 0;
     float: left;
     @include media(max-width 900px) {
@@ -247,7 +257,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     color: $lighter-gray;
-    padding: ($padding-top-bottom+1) 15px;
+    padding: ($padding-top-bottom) 15px;
     display: block;
     @include media($tablet) {
       padding-left: 8px;
@@ -259,10 +269,6 @@ header {
     }
     &.highlight {
       padding: $padding-top-bottom 25px;
-      &:hover {
-        @include animation(bump 250ms ease-out);
-        @include animation-iteration-count(1);
-      }
     }
   }
 
@@ -271,6 +277,9 @@ header {
     position: absolute;
     right: 0; top: 0;
     @include transform(translateY(-100px));
+    input.highlight {
+      padding: $padding-top-bottom 25px;
+    }
   }
   &.form-active {
     nav {
@@ -283,20 +292,22 @@ header {
   }
 }
 
+// #HERO
+
 #hero {
   color: white;
-  // padding-top: 200px;
   background: url(../images/VDW_web_bg1.jpg) center center;
   background-size: cover;
-  // height: 800px;
   position: relative;
-  // z-index: -2;
-  // padding-top: 100px;
   padding-bottom: 25px;
-  // @include media($mobile) {
-  //   height: 400px;
-  // }
   @include media($mobile) { padding-bottom: 0; }
+  .section {
+    @include media($mobile) {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
   h1 {
     margin-top: 150px;
     padding: 5px;
@@ -315,40 +326,21 @@ header {
   .mission {
     @include span-columns(12);
     margin-top: 20px;
+    @extend %cream-box;
     background: white;
     background: rgba(255, 255, 255, 0.9);
-    color: black;
     padding: 0 10px 10px;
-    p { text-transform: none; }
-    // @include shift(3);
-    // @include media($tablet) {
-    //   @include span-columns(6);
-    //   @include shift(1);
-    // }
-    // @include media($mobile) {
-    //   @include span-columns(4);
-    //   @include shift(0);
-    // }
-  }
-  // p {
-  //   &:first-child { font-weight: bold; }
-  // }
-
-  .content {
-    @include media($mobile) {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
   }
 }
 
-.days {
+// #EVENT
+
+// .days {
   // @include display-box;
   // @include box-align(stretch);
   // @include box-direction(column);
   // @include box-pack(start);
-}
+// }
 
 .day {
   // @include box-flex(1);
@@ -387,6 +379,46 @@ header {
   }
 }
 
+// #TEAM
+
+.members {
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(8);
+  }
+  .member {
+    @extend %cream-box;
+    @include media($tablet) { margin-bottom: 10px; }
+  }
+}
+
+// #FAQ
+
+#faq .feature {
+  color: white;
+  span {
+    background: #2e3192;
+  }
+}
+
+.faqs {
+  @extend %cream-box;
+  @include span-columns(6);
+  @include media($mobile) { @include span-columns(4); }
+}
+
+// #CONTEXT
+
+#context {
+  .box {
+    @extend %cream-box;
+    @include span-columns(12);
+  }
+  .second { margin-top: 25px; }
+}
+
+// #SPONSORS
+
 #sponsor .feature { color: $lighter-gray; }
 
 .sponsors {
@@ -403,8 +435,6 @@ header {
     padding: 2%;
     margin: 1%;
     background: white;
-    // -webkit-filter: grayscale(100%);
-    // &:hover { -webkit-filter: grayscale(0%); }
     @include media($mobile) {
       width: 48%;
     }
@@ -414,51 +444,6 @@ header {
   &.gold { background: #a38a66; }
   &.silver { background: #a6a9aa; }
   &.double-silver { background: #95653e; }
-}
-
-.members {
-  @include span-columns(4);
-  @include media($tablet) {
-    @include span-columns(8);
-  }
-  .member {
-    background: $cream;
-    @include media($tablet) { margin-bottom: 10px; }
-    img { width: 100%; height: auto; }
-    .info { padding: 0 10px; }
-    p {
-      text-transform: none;
-    }
-  }
-}
-
-#context {
-  .shift {
-    background: $cream;
-    padding: 0 10px;
-    @include span-columns(12);
-  }
-  .second { margin-top: 25px; }
-  p { text-transform: none; }
-}
-
-#faq .feature {
-  color: white;
-  span {
-    background: #2e3192;
-  }
-}
-
-.faqs {
-  @include span-columns(6);
-  @include media($mobile) { @include span-columns(4); }
-  // background: #3f3ce5;
-  background: $cream;
-  color: black;
-  padding: 0 10px;
-  p {
-    text-transform: none;
-  }
 }
 
 #contact {
@@ -472,10 +457,6 @@ header {
   }
   .highlight {
     display: inline-block;
-    &:hover {
-      @include animation(bump 250ms ease-out);
-      @include animation-iteration-count(1);
-    }
   }
 }
 
