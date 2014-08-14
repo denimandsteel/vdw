@@ -313,11 +313,6 @@ header {
   }
   .mission {
     @include span-columns(12);
-    // @include shift(1);
-    // @include media($mobile) {
-      // @include span-columns(4);
-      // @include shift(0);
-    // }
     margin-top: 20px;
     background: white;
     background: rgba(255, 255, 255, 0.9);
@@ -440,8 +435,7 @@ header {
   .shift {
     background: $cream;
     padding: 0 10px;
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(12);
   }
   .second { margin-top: 25px; }
   p { text-transform: none; }
