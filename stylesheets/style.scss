@@ -36,14 +36,21 @@ body {
     background: $yellow;
     svg path { fill: #000000; } // Black
   }
-  &.context {
-    svg path { fill: $highlight; } // Red
+  &.team {
+    svg path { fill: #f4c5b5; } // Peach
   }
   &.faq {
     svg path { fill: #2e3192; } // Blue
   }
-  &.team {
-    svg path { fill: #f4c5b5; } // Peach
+  &.about {
+    svg path { fill: $highlight; } // Red
+  }
+  &.quotes {
+    svg path { fill: #D6D3C5; } // Tan
+  }
+
+  &.supporters {
+
   }
 }
 
@@ -407,9 +414,9 @@ header {
   @include media($mobile) { @include span-columns(4); }
 }
 
-// #CONTEXT
+// #ABOUT
 
-#context {
+#about {
   .box {
     @extend %cream-box;
     @include span-columns(12);
@@ -417,11 +424,15 @@ header {
   .second { margin-top: 25px; }
 }
 
-// #SPONSORS
+#quotes {
+  .after { margin-bottom: 25px; }
+}
 
-#sponsor .feature { color: $lighter-gray; }
+// #SUPPORTERS
 
-.sponsors {
+#supporter .feature { color: $lighter-gray; }
+
+.support {
   background: white;
   margin: 10px 0;
 

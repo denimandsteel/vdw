@@ -31,12 +31,14 @@ body {
     background: #f1ed5d; }
     body.event svg path {
       fill: #000000; }
-  body.context svg path {
-    fill: #f74715; }
-  body.faq svg path {
-    fill: #2e3192; }
   body.team svg path {
     fill: #f4c5b5; }
+  body.faq svg path {
+    fill: #2e3192; }
+  body.about svg path {
+    fill: #f74715; }
+  body.quotes svg path {
+    fill: #D6D3C5; }
 
 .background {
   z-index: -3;
@@ -169,17 +171,17 @@ input {
   input[type='submit'] {
     border: 0; }
 
-#hero .mission, .members .member, .faqs, #context .box {
+#hero .mission, .members .member, .faqs, #about .box {
   background: #f2f9ff;
   color: black; }
-  #hero .mission img, .members .member img, .faqs img, #context .box img {
+  #hero .mission img, .members .member img, .faqs img, #about .box img {
     width: 100%;
     height: auto; }
-  #hero .mission .content, .members .member .content, .faqs .content, #context .box .content {
+  #hero .mission .content, .members .member .content, .faqs .content, #about .box .content {
     padding: 0 10px; }
-    #hero .mission .content p, .members .member .content p, .faqs .content p, #context .box .content p {
+    #hero .mission .content p, .members .member .content p, .faqs .content p, #about .box .content p {
       text-transform: none; }
-  #hero .mission .highlight, .members .member .highlight, .faqs .highlight, #context .box .highlight {
+  #hero .mission .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight {
     display: block;
     width: 100%;
     text-align: center; }
@@ -417,40 +419,43 @@ header {
       .faqs:last-child {
         margin-right: 0; } }
 
-#context .box {
+#about .box {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 100%; }
-  #context .box:last-child {
+  #about .box:last-child {
     margin-right: 0; }
-#context .second {
+#about .second {
   margin-top: 25px; }
 
-#sponsor .feature {
+#quotes .after {
+  margin-bottom: 25px; }
+
+#supporter .feature {
   color: #7d7d7d; }
 
-.sponsors {
+.support {
   background: white;
   margin: 10px 0; }
-  .sponsors h2 {
+  .support h2 {
     padding: 10px 10px 0; }
-  .sponsors img {
+  .support img {
     width: 23%;
     height: auto;
     padding: 2%;
     margin: 1%;
     background: white; }
     @media screen and (max-width: 480px) {
-      .sponsors img {
+      .support img {
         width: 48%; } }
-  .sponsors.platinum {
+  .support.platinum {
     background: #e1e1e1; }
-  .sponsors.gold {
+  .support.gold {
     background: #a38a66; }
-  .sponsors.silver {
+  .support.silver {
     background: #a6a9aa; }
-  .sponsors.double-silver {
+  .support.double-silver {
     background: #95653e; }
 
 #contact .details {
