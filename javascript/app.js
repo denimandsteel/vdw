@@ -37,7 +37,7 @@ $('header input[type="email"]').keyup(function(e) {
 
 // Background crop.
 var resizeBackground = function() {
-  var bottomOfPage = $('#contact').height() + $('#contact').offset().top + 150; // Top of page margin (#hero) + margin at bottom (#team).
+  var bottomOfPage = $('#contact').height() + $('#contact').offset().top; // Top of page margin (#hero) + margin at bottom (#team).
   var cropHeight = bottomOfPage * (334.469/$(window).width());
   // alert(cropHeight)
   $('svg').attr('height', cropHeight + 'px');
@@ -45,7 +45,9 @@ var resizeBackground = function() {
   $('svg').attr('enable-background', 'new 0 0 334.469 ' + cropHeight);
 };
 setTimeout(resizeBackground, 500); // Wait long after DOM has finished.
-$(window).resize(resizeBackground);
+$(window).resize(function() {
+  setTimeout(resizeBackground, 500); // Wait for masonry to shuffle.
+});
 
 // Sponsor shuffling and masonry.
 // $.shuffle('.support div img');

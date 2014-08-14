@@ -459,7 +459,7 @@ header {
         margin-bottom: 10px; } }
 
 #support-tiers .tier {
-  min-height: 400px;
+  min-height: 410px;
   padding-bottom: 60px;
   position: relative;
   display: block;
@@ -523,32 +523,25 @@ header {
   display: inline-block; }
 
 footer {
-  background: white;
-  padding: 0px 0px 0px 20px;
-  line-height: 16px;
-  *zoom: 1; }
-  footer:before, footer:after {
-    content: " ";
-    display: table; }
-  footer:after {
-    clear: both; }
-  @media screen and (max-width: 480px) {
-    footer {
-      padding: 0 10px; } }
+  background: black;
+  color: white; }
+  footer .section {
+    margin-bottom: 0; }
   footer h1 {
-    line-height: 16px;
-    padding: 15px 0;
-    margin: 0;
-    float: left; }
-  footer a {
-    color: #7d7d7d; }
-  footer p {
-    margin: 0; }
-  footer form {
-    float: right; }
-    @media screen and (max-width: 480px) {
-      footer form {
-        float: none; } }
-  @media screen and (max-width: 480px) {
-    footer input[type="email"] {
-      width: 150px; } }
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    footer h1:last-child {
+      margin-right: 0; }
+  footer .locations {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    footer .locations:last-child {
+      margin-right: 0; }
+  footer .highlight {
+    background: #3752BE;
+    width: 100%;
+    text-align: center; }

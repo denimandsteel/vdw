@@ -453,7 +453,7 @@ header {
 #support-tiers {
   .tier {
     @extend %cream-box;
-    min-height: 400px;
+    min-height: 410px;
     padding-bottom: 60px;
     position: relative;
     .highlight {
@@ -511,30 +511,49 @@ header {
   }
 }
 
+// footer {
+//   $line-height: 16px;
+//   $padding-top-bottom: 15px;
+//   background: white;
+//   padding: 0px 0px 0px 20px;
+//   // height: 46px;
+//   line-height: $line-height;
+//   @include clearfix();
+//   @include media($mobile) {
+//     padding: 0 10px;
+//   }
+//   h1 {
+//     line-height: $line-height;
+//     padding: $padding-top-bottom 0;
+//     margin: 0;
+//     float: left;
+//   }
+//   a { color: #7d7d7d; }
+//   p { margin: 0; }
+//   form {
+//     float: right;
+//     @include media($mobile) { float: none; }
+//   }
+//   @include media($mobile) {
+//     input[type="email"] { width: 150px; }
+//   }
+// }
+
 footer {
-  $line-height: 16px;
-  $padding-top-bottom: 15px;
-  background: white;
-  padding: 0px 0px 0px 20px;
-  // height: 46px;
-  line-height: $line-height;
-  @include clearfix();
-  @include media($mobile) {
-    padding: 0 10px;
+  background: black;
+  color: white;
+  .section {
+    margin-bottom: 0;
   }
   h1 {
-    line-height: $line-height;
-    padding: $padding-top-bottom 0;
-    margin: 0;
-    float: left;
+    @include span-columns(8);
   }
-  a { color: #7d7d7d; }
-  p { margin: 0; }
-  form {
-    float: right;
-    @include media($mobile) { float: none; }
+  .locations {
+    @include span-columns(4);
   }
-  @include media($mobile) {
-    input[type="email"] { width: 150px; }
+  .highlight {
+    background: #3752BE;
+    width: 100%;
+    text-align: center;
   }
 }
