@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body, h1, h2, h3, ul, p, input, blockquote, cite {
+body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
   font-size: 17px;
@@ -89,7 +89,7 @@ h1, h2, h3 {
     -ms-hyphens: auto;
     hyphens: auto; } }
 
-blockquote {
+blockquote, .todds-terrible-hack {
   font-weight: bold;
   margin: 0;
   display: inline;
@@ -97,6 +97,11 @@ blockquote {
   background: #3C65DF;
   font-size: 22px;
   line-height: 30px; }
+
+.todds-terrible-hack {
+  color: black;
+  font-size: 20px;
+  background: transparent; }
 
 cite {
   display: block;
@@ -341,6 +346,8 @@ header {
     #hero .mission:last-child {
       margin-right: 0; }
 
+#event .feature span {
+  background: #f1ed5d; }
 #event .event {
   display: block;
   float: left;
@@ -417,6 +424,8 @@ header {
       .faqs:last-child {
         margin-right: 0; } }
 
+#about h1 span {
+  background: #f2f9ff; }
 #about .box {
   display: block;
   float: left;
@@ -447,7 +456,8 @@ header {
         margin-right: 0; } }
   #get-involved .column .box {
     margin: 5px 0;
-    padding-top: 1px; }
+    padding-top: 1px;
+    margin-bottom: 17px; }
     @media screen and (max-width: 768px) {
       #get-involved .column .box {
         margin-bottom: 10px; } }
@@ -537,5 +547,13 @@ footer {
       margin-right: 0; }
   footer .highlight {
     background: #3752BE;
-    width: 100%;
-    text-align: center; }
+    width: 60%;
+    text-align: center;
+    display: inline-block; }
+  footer .social {
+    text-align: center;
+    background: #3752BE;
+    padding: 11px 0 10px;
+    width: 15%;
+    margin-right: 2%;
+    display: inline-block; }

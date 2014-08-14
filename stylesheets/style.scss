@@ -104,7 +104,7 @@ ul, p, input {
   }
 }
 
-blockquote {
+blockquote, .todds-terrible-hack {
   @extend %primary-type;
   font-weight: bold;
   margin: 0;
@@ -113,6 +113,11 @@ blockquote {
   background: #3C65DF;
   font-size: 22px;
   line-height: 30px;
+}
+.todds-terrible-hack {
+  color: black;
+  font-size: 20px;
+  background: transparent;
 }
 
 cite {
@@ -348,6 +353,7 @@ header {
 // #EVENT
 
 #event {
+  .feature span { background: $yellow; }
   .event {
     @include span-columns(3);
     @include omega(4n);
@@ -446,6 +452,7 @@ header {
 // #ABOUT
 
 #about {
+  h1 span { background: $cream; }
   .box {
     @extend %cream-box;
     @include span-columns(12);
@@ -468,6 +475,7 @@ header {
       @extend %cream-box;
       margin: 5px 0;
       padding-top: 1px;
+      margin-bottom: 17px;
       @include media($tablet) { margin-bottom: 10px; }
     }
   }
@@ -535,34 +543,6 @@ header {
   }
 }
 
-// footer {
-//   $line-height: 16px;
-//   $padding-top-bottom: 15px;
-//   background: white;
-//   padding: 0px 0px 0px 20px;
-//   // height: 46px;
-//   line-height: $line-height;
-//   @include clearfix();
-//   @include media($mobile) {
-//     padding: 0 10px;
-//   }
-//   h1 {
-//     line-height: $line-height;
-//     padding: $padding-top-bottom 0;
-//     margin: 0;
-//     float: left;
-//   }
-//   a { color: #7d7d7d; }
-//   p { margin: 0; }
-//   form {
-//     float: right;
-//     @include media($mobile) { float: none; }
-//   }
-//   @include media($mobile) {
-//     input[type="email"] { width: 150px; }
-//   }
-// }
-
 footer {
   background: black;
   color: white;
@@ -577,7 +557,17 @@ footer {
   }
   .highlight {
     background: #3752BE;
-    width: 100%;
+    width: 60%;
     text-align: center;
+    // margin-right: 2%;
+    display: inline-block;
+  }
+  .social {
+    text-align: center;
+    background: #3752BE;
+    padding: 11px 0 10px;
+    width: 15%;
+    margin-right: 2%;
+    display: inline-block;
   }
 }
