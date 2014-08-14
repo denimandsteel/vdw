@@ -334,8 +334,7 @@ header {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%;
+    width: 100%;
     margin-top: 20px;
     background: white;
     background: rgba(255, 255, 255, 0.9);
@@ -343,15 +342,6 @@ header {
     padding: 0 10px 10px; }
     #hero .mission:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 480px) {
-      #hero .mission {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%;
-        margin-left: 0%; }
-        #hero .mission:last-child {
-          margin-right: 0; } }
     #hero .mission p {
       text-transform: none; }
   @media screen and (max-width: 480px) {
