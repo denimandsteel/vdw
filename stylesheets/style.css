@@ -111,19 +111,6 @@ body {
       fill: #00ab77; }
   body.dates {
     background: #f1ed5d; }
-    body.dates .logo {
-      -webkit-transform: scale(0.75);
-      -moz-transform: scale(0.75);
-      -ms-transform: scale(0.75);
-      -o-transform: scale(0.75);
-      transform: scale(0.75); }
-      @media screen and (max-width: 480px) {
-        body.dates .logo {
-          -webkit-transform: scale(1);
-          -moz-transform: scale(1);
-          -ms-transform: scale(1);
-          -o-transform: scale(1);
-          transform: scale(1); } }
     body.dates svg path {
       fill: #000000; }
   body.context {
@@ -144,18 +131,16 @@ body {
   width: 408.36px;
   height: 144px;
   margin: 0 auto;
-  position: fixed;
-  z-index: -1;
+  z-index: 1;
+  position: absolute;
   top: 80px;
-  left: -35px;
-  -webkit-transform-origin: top left;
-  -moz-transform-origin: top left;
-  -ms-transform-origin: top left;
-  -o-transform-origin: top left;
-  transform-origin: top left; }
+  left: -35px; }
+  .logo.fixed {
+    position: fixed;
+    z-index: -4; }
   @media screen and (max-width: 768px) {
-    .logo {
-      position: absolute; } }
+    .logo.fixed {
+      display: none; } }
   @media screen and (max-width: 480px) {
     .logo {
       width: 314.12308px;
@@ -220,7 +205,7 @@ header {
   left: 0;
   padding: 0px 0px 0px 20px;
   line-height: 16px;
-  z-index: 1; }
+  z-index: 2; }
   @media screen and (max-width: 480px) {
     header {
       display: none; } }
@@ -301,7 +286,6 @@ header {
   background: url(../images/VDW_web_bg1.jpg) center center;
   background-size: cover;
   position: relative;
-  z-index: -2;
   padding-bottom: 25px; }
   @media screen and (max-width: 480px) {
     #hero {
