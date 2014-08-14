@@ -48,7 +48,12 @@ body {
   &.quotes {
     svg path { fill: #D6D3C5; } // Tan
   }
-
+  &.get-involved {
+    svg path { fill: #00A778; } // Green
+  }
+  &.support-tiers {
+    svg path { fill: #ABE9D7; } // Light Green
+  }
   &.supporters {
 
   }
@@ -426,6 +431,41 @@ header {
 
 #quotes {
   .after { margin-bottom: 25px; }
+}
+
+// #GET-INVOLVED
+#get-involved {
+  .column {
+    @include span-columns(6);
+    @include media($tablet) {
+      @include span-columns(8);
+    }
+    .box {
+      @extend %cream-box;
+      margin: 5px 0;
+      padding-top: 1px;
+      @include media($tablet) { margin-bottom: 10px; }
+    }
+  }
+}
+
+// #SUPPORT-TIERS
+#support-tiers {
+  .tier {
+    @extend %cream-box;
+    min-height: 400px;
+    padding-bottom: 60px;
+    position: relative;
+    .highlight {
+      position: absolute;
+      bottom: 0;
+    }
+    @include span-columns(4);
+    @include media($tablet) {
+      @include span-columns(8);
+      min-height: 0;
+    }
+  }
 }
 
 // #SUPPORTERS
