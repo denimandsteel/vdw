@@ -605,6 +605,7 @@ footer {
     @include span-columns(4);
     @include media(max-width 950px) {
       @include span-columns(6);
+      margin-top: 10px;
     }
     @include media(max-width 550px) {
       width: 100%;

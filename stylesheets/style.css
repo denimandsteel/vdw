@@ -599,7 +599,8 @@ footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 48.82117%;
+        margin-top: 10px; }
         footer .locations:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 550px) {
