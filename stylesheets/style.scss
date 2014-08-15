@@ -593,6 +593,7 @@ footer {
     @extend %primary-type;
     font-weight: bold;
     text-align: left;
+    letter-spacing: 0;
     margin: 0;
     @include span-columns(8);
     @include media(max-width 950px) {
