@@ -460,6 +460,14 @@ header {
   width: 48.82117%; }
   #about .box:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    #about .box {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      #about .box:last-child {
+        margin-right: 0; } }
 
 #quotes .after {
   margin-bottom: 25px; }

@@ -494,6 +494,7 @@ header {
     background: $yellow;
     // background: #f4c5b5;
     @include span-columns(6);
+    @include media($mobile) { @include span-columns(4); }
   }
 }
 
