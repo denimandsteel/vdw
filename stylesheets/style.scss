@@ -9,6 +9,8 @@ $cream: #f2f9ff;
 // Backgrounds.
 $yellow: #f1ed5d;
 
+$vertical-grid-gutter: 17px;
+
 %primary-type {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
@@ -34,7 +36,7 @@ body {
   }
   &.event {
     background: $yellow;
-    svg path { fill: #000000; } // Black
+    svg path { fill: #292825; } // Soft Black
   }
   &.team {
     svg path { fill: #f4c5b5; } // Peach
@@ -94,7 +96,18 @@ h1, h2, h3 {
       padding-left: 20px;
       padding-right: 20px;
     }
+    span {
+      padding: 4px 4px 0;
+    }
   }
+}
+
+h2 {
+  margin: 0;
+}
+
+h2 + p {
+  margin-top: 0;
 }
 
 ul, p, input {
@@ -116,6 +129,7 @@ blockquote, .todds-terrible-hack {
   background: #3C65DF;
   font-size: 22px;
   line-height: 30px;
+  padding: 4px 4px 0;
 }
 .todds-terrible-hack {
   color: black;
@@ -191,14 +205,18 @@ input {
   color: black;
   
   img {
+    display: block;
     width: 100%;
     height: auto;
   }
 
   .content {
-    padding: 0 10px;
+    padding: 7px 10px;
+    h2:first-of-type { margin-top: 0; }
     p {
       text-transform: none;
+      &:first-child { margin-top: 0; }
+      &:last-of-type { margin-bottom: 0; }
     }
   }
 
@@ -221,7 +239,7 @@ input {
   left: -35px;
   &.fixed {
     position: fixed;
-    z-index: -4;
+    z-index: -2;
   }
 
   @include media($tablet) {
@@ -349,7 +367,6 @@ header {
     @extend %cream-box;
     background: white;
     background: rgba(255, 255, 255, 0.9);
-    padding: 0 10px 10px;
   }
 }
 
@@ -364,19 +381,26 @@ header {
       @include span-columns(4);
       @include omega(2n);
     }
-    background-size: cover;
-    background-position: center center;
-    min-height: 200px;
-    position: relative;
-    margin-bottom: 17px;
+    
+    // min-height: 200px;
+    // position: relative;
+    margin-bottom: $vertical-grid-gutter;
     padding: 0 5px;
   }
+  .image {
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 100%;
+  }
   h2 {
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
+    padding: 4px 5px 0;
     margin: 0;
-    color: white;
-    font-size: 20px;
+    color: black;
+    background: $yellow;
+    font-size: 18px;
   }
 }
 
@@ -434,15 +458,16 @@ header {
   .member {
     @extend %cream-box;
     @include media($tablet) { margin-bottom: 10px; }
+    margin-bottom: $vertical-grid-gutter;
   }
 }
 
 // #FAQ
 
 #faq .feature {
-  color: white;
+  color: black;
   span {
-    background: #2e3192;
+    background: $cream;
   }
 }
 
@@ -466,9 +491,10 @@ header {
   h1 span { background: $cream; }
   .box {
     @extend %cream-box;
-    @include span-columns(12);
+    @include span-columns(6);
+    background: $highlight;
+    color: white;
   }
-  .second { margin-top: 25px; }
 }
 
 #quotes {
@@ -486,7 +512,7 @@ header {
       @extend %cream-box;
       margin: 5px 0;
       padding-top: 1px;
-      margin-bottom: 17px;
+      margin-bottom: $vertical-grid-gutter;
       @include media($tablet) { margin-bottom: 10px; }
     }
   }
@@ -496,7 +522,7 @@ header {
 #support-tiers {
   .tier {
     @extend %cream-box;
-    min-height: 410px;
+    min-height: 300px;
     padding-bottom: 60px;
     position: relative;
     .highlight {

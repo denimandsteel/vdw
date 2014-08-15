@@ -30,7 +30,7 @@ body {
   body.event {
     background: #f1ed5d; }
     body.event svg path {
-      fill: #000000; }
+      fill: #292825; }
   body.team svg path {
     fill: #f4c5b5; }
   body.faq svg path {
@@ -84,6 +84,14 @@ h1, h2, h3 {
       h1.feature, h2.feature, h3.feature {
         padding-left: 20px;
         padding-right: 20px; } }
+    h1.feature span, h2.feature span, h3.feature span {
+      padding: 4px 4px 0; }
+
+h2 {
+  margin: 0; }
+
+h2 + p {
+  margin-top: 0; }
 
 @media screen and (max-width: 480px) {
   ul, p, input {
@@ -99,7 +107,8 @@ blockquote, .todds-terrible-hack {
   color: white;
   background: #3C65DF;
   font-size: 22px;
-  line-height: 30px; }
+  line-height: 30px;
+  padding: 4px 4px 0; }
 
 .todds-terrible-hack {
   color: black;
@@ -187,12 +196,19 @@ input {
   background: #f2f9ff;
   color: black; }
   #hero .mission img, .members .member img, .faqs img, #about .box img, #get-involved .column .box img, #support-tiers .tier img {
+    display: block;
     width: 100%;
     height: auto; }
   #hero .mission .content, .members .member .content, .faqs .content, #about .box .content, #get-involved .column .box .content, #support-tiers .tier .content {
-    padding: 0 10px; }
+    padding: 7px 10px; }
+    #hero .mission .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type {
+      margin-top: 0; }
     #hero .mission .content p, .members .member .content p, .faqs .content p, #about .box .content p, #get-involved .column .box .content p, #support-tiers .tier .content p {
       text-transform: none; }
+      #hero .mission .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child {
+        margin-top: 0; }
+      #hero .mission .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
+        margin-bottom: 0; }
   #hero .mission .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
     display: block;
     width: 100%;
@@ -209,7 +225,7 @@ input {
   left: -35px; }
   .logo.fixed {
     position: fixed;
-    z-index: -4; }
+    z-index: -2; }
   @media screen and (max-width: 768px) {
     .logo.fixed {
       display: none; } }
@@ -344,8 +360,7 @@ header {
     width: 100%;
     margin-top: 20px;
     background: white;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 0 10px 10px; }
+    background: rgba(255, 255, 255, 0.9); }
     #hero .mission:last-child {
       margin-right: 0; }
 
@@ -356,10 +371,6 @@ header {
   float: left;
   margin-right: 2.35765%;
   width: 23.23176%;
-  background-size: cover;
-  background-position: center center;
-  min-height: 200px;
-  position: relative;
   margin-bottom: 17px;
   padding: 0 5px; }
   #event .event:last-child {
@@ -380,12 +391,17 @@ header {
         margin-right: 0; }
       #event .event:nth-child(2n+1) {
         clear: left; } }
+#event .image {
+  background-size: cover;
+  background-position: center center;
+  height: 200px;
+  width: 100%; }
 #event h2 {
-  position: absolute;
-  bottom: 0;
+  padding: 4px 5px 0;
   margin: 0;
-  color: white;
-  font-size: 20px; }
+  color: black;
+  background: #f1ed5d;
+  font-size: 18px; }
 
 .members {
   display: block;
@@ -402,14 +418,16 @@ header {
       width: 100%; }
       .members:last-child {
         margin-right: 0; } }
-  @media screen and (max-width: 768px) {
-    .members .member {
-      margin-bottom: 10px; } }
+  .members .member {
+    margin-bottom: 17px; }
+    @media screen and (max-width: 768px) {
+      .members .member {
+        margin-bottom: 10px; } }
 
 #faq .feature {
-  color: white; }
+  color: black; }
   #faq .feature span {
-    background: #2e3192; }
+    background: #f2f9ff; }
 
 .faqs {
   display: block;
@@ -439,11 +457,11 @@ header {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 48.82117%;
+  background: #f74715;
+  color: white; }
   #about .box:last-child {
     margin-right: 0; }
-#about .second {
-  margin-top: 25px; }
 
 #quotes .after {
   margin-bottom: 25px; }
@@ -472,7 +490,7 @@ header {
         margin-bottom: 10px; } }
 
 #support-tiers .tier {
-  min-height: 410px;
+  min-height: 300px;
   padding-bottom: 60px;
   position: relative;
   display: block;
