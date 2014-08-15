@@ -450,6 +450,7 @@ header {
         margin-right: 0; } }
 
 #about .box {
+  background: #f1ed5d;
   display: block;
   float: left;
   margin-right: 2.35765%;
