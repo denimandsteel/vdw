@@ -64,6 +64,9 @@ section, .section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 480px) {
+    section, .section {
+      padding: 0; } }
   section:before, section:after, .section:before, .section:after {
     content: " ";
     display: table; }
@@ -415,6 +418,12 @@ header {
   width: 48.82117%; }
   .faqs:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .faqs p {
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto; } }
   @media screen and (max-width: 480px) {
     .faqs {
       display: block;
@@ -528,7 +537,8 @@ header {
 
 footer {
   background: black;
-  color: white; }
+  color: white;
+  padding: 0 5px 5px; }
   footer .section {
     margin-bottom: 0; }
   footer h1 {
@@ -538,6 +548,14 @@ footer {
     width: 65.88078%; }
     footer h1:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 950px) {
+      footer h1 {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 100%; }
+        footer h1:last-child {
+          margin-right: 0; } }
   footer .locations {
     display: block;
     float: left;
@@ -545,6 +563,17 @@ footer {
     width: 31.76157%; }
     footer .locations:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 950px) {
+      footer .locations {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        footer .locations:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 550px) {
+      footer .locations {
+        width: 100%; } }
   footer .highlight {
     background: #3752BE;
     width: 60%;
@@ -555,5 +584,11 @@ footer {
     background: #3752BE;
     padding: 11px 0 10px;
     width: 15%;
-    margin-right: 2%;
     display: inline-block; }
+    footer .social:hover {
+      -webkit-animation: bump 250ms ease-out;
+      -moz-animation: bump 250ms ease-out;
+      animation: bump 250ms ease-out;
+      -webkit-animation-iteration-count: 1;
+      -moz-animation-iteration-count: 1;
+      animation-iteration-count: 1; }

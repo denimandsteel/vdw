@@ -76,6 +76,9 @@ body {
 section, .section {
   margin: 50px 0;
   padding: 50px 0;
+  @include media($mobile) {
+    padding: 0;
+  }
   @include outer-container;
 }
 
@@ -446,6 +449,14 @@ header {
 .faqs {
   @extend %cream-box;
   @include span-columns(6);
+  @include media($tablet) {
+    p {
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    }
+  }
   @include media($mobile) { @include span-columns(4); }
 }
 
@@ -546,14 +557,24 @@ header {
 footer {
   background: black;
   color: white;
+  padding: 0 5px 5px;
   .section {
     margin-bottom: 0;
   }
   h1 {
     @include span-columns(8);
+    @include media(max-width 950px) {
+      @include span-columns(12);
+    }
   }
   .locations {
     @include span-columns(4);
+    @include media(max-width 950px) {
+      @include span-columns(6);
+    }
+    @include media(max-width 550px) {
+      width: 100%;
+    }
   }
   .highlight {
     background: #3752BE;
@@ -567,7 +588,11 @@ footer {
     background: #3752BE;
     padding: 11px 0 10px;
     width: 15%;
-    margin-right: 2%;
+    // margin-right: 2%;
     display: inline-block;
+    &:hover {
+      @include animation(bump 250ms ease-out);
+      @include animation-iteration-count(1);
+    }
   }
 }

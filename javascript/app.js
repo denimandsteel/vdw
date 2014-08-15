@@ -16,7 +16,7 @@ $('section').waypoint(sectionSetter('up'), {
 });
 
 // Newsletter form.
-$('header a.highlight').click(function() {
+$('header a.highlight, .newsletter-link').click(function() {
   $('header').addClass('form-active');
   // Wait to trigger focus, otherwise page jumps up.
   setTimeout(function() {
