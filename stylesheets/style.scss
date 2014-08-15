@@ -279,10 +279,14 @@ header {
     @extend %primary-type;
     font-weight: bold;
     line-height: $line-height;
-    padding: ($padding-top-bottom+3) 0;
     margin: 0;
     float: left;
+    padding: ($padding-top-bottom+3) 0;
     span { background: transparent; }
+    a {
+      padding: ($padding-top-bottom+3) 0;
+      text-decoration: none;
+    }
     @include media(max-width 900px) {
       span {
         display: none;
@@ -302,7 +306,7 @@ header {
     margin: 0; padding: 0;
   }
   li { float: left; }
-  a {
+  nav a {
     font-weight: bold;
     text-decoration: none;
     color: $lighter-gray;

@@ -256,11 +256,14 @@ header {
   header h1 {
     font-weight: bold;
     line-height: 16px;
-    padding: 18px 0;
     margin: 0;
-    float: left; }
+    float: left;
+    padding: 18px 0; }
     header h1 span {
       background: transparent; }
+    header h1 a {
+      padding: 18px 0;
+      text-decoration: none; }
     @media screen and (max-width: 900px) {
       header h1 span {
         display: none; } }
@@ -280,20 +283,20 @@ header {
     padding: 0; }
   header li {
     float: left; }
-  header a {
+  header nav a {
     font-weight: bold;
     text-decoration: none;
     color: #7d7d7d;
     padding: 15px 15px;
     display: block; }
     @media screen and (max-width: 768px) {
-      header a {
+      header nav a {
         padding-left: 8px;
         padding-right: 8px; } }
-    header a:hover, header a.highlight {
+    header nav a:hover, header nav a.highlight {
       color: white;
       background: #f74715; }
-    header a.highlight {
+    header nav a.highlight {
       padding: 15px 25px; }
   header form {
     -webkit-transition: all 250ms ease-out;
