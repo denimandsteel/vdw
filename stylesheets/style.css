@@ -465,7 +465,8 @@ header {
       display: block;
       float: left;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 17px; }
       #about .box:last-child {
         margin-right: 0; } }
 
@@ -516,7 +517,8 @@ header {
       float: left;
       margin-right: 3.57866%;
       width: 100%;
-      min-height: 0; }
+      min-height: 0;
+      margin-bottom: 17px; }
       #support-tiers .tier:last-child {
         margin-right: 0; } }
 

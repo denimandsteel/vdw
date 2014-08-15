@@ -494,7 +494,10 @@ header {
     background: $yellow;
     // background: #f4c5b5;
     @include span-columns(6);
-    @include media($mobile) { @include span-columns(4); }
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-bottom: $vertical-grid-gutter;
+    }
   }
 }
 
@@ -535,6 +538,7 @@ header {
     @include media($tablet) {
       @include span-columns(8);
       min-height: 0;
+      margin-bottom: $vertical-grid-gutter;
     }
   }
 }
