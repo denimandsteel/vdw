@@ -84,24 +84,29 @@ section, .section {
   @include outer-container;
 }
 
-h1, h2, h3 {
+h1 {
   @extend %primary-type;
   font-weight: bold;
-  &.feature {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin: 60px 0;
-    padding: 0 10px;
-    @include media($mobile) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    span {
-      padding: 4px 4px 0;
-      background: $cream;
-    }
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px 0;
+  padding: 0 10px;
+  @include media($mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+  span {
+    padding: 4px 4px 0;
+    background: $cream;
+  }
+}
+
+h2, h3 {
+  @extend %primary-type;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -129,13 +134,14 @@ blockquote, .todds-terrible-hack {
   display: inline;
   color: white;
   background: #3C65DF;
-  font-size: 22px;
+  letter-spacing: 1px;
+  font-size: 24px;
   line-height: 30px;
   padding: 4px 4px 0;
 }
 .todds-terrible-hack {
   color: black;
-  font-size: 20px;
+  font-size: 24px;
   background: transparent;
 }
 
@@ -335,7 +341,6 @@ header {
 // #HERO
 
 #hero {
-  color: white;
   background: url(../images/VDW_web_bg1.jpg) center center;
   background-size: cover;
   position: relative;
@@ -349,12 +354,9 @@ header {
     }
   }
   h1 {
-    margin-top: 150px;
+    margin-top: 160px;
     padding: 5px;
-    color: black;
     text-align: center;
-    font-size: 22px;
-    line-height: 30px;
     @include span-columns(8);
     @include shift(2);
     @include media($mobile) {
@@ -369,13 +371,14 @@ header {
     @extend %cream-box;
     background: white;
     background: rgba(255, 255, 255, 0.9);
+    .content p:last-of-type { margin-bottom: 1em; }
   }
 }
 
 // #EVENT
 
 #event {
-  .feature span { background: $yellow; }
+  h1 span { background: $yellow; }
   .event {
     @include span-columns(3);
     @include omega(4n);
@@ -532,7 +535,7 @@ header {
 
 // #SUPPORTERS
 
-#supporter .feature { color: $lighter-gray; }
+#supporter h1 { color: $lighter-gray; }
 
 .support {
   background: white;
@@ -582,6 +585,9 @@ footer {
     margin-bottom: 0;
   }
   h1 {
+    @extend %primary-type;
+    font-weight: bold;
+    text-align: left;
     margin: 0;
     @include span-columns(8);
     @include media(max-width 950px) {

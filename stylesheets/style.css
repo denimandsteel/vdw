@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite {
+body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite, footer h1 {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
   font-size: 17px;
@@ -71,21 +71,25 @@ section, .section {
   section:after, .section:after {
     clear: both; }
 
-h1, h2, h3 {
-  font-weight: bold; }
-  h1.feature, h2.feature, h3.feature {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin: 60px 0;
-    padding: 0 10px; }
-    @media screen and (max-width: 480px) {
-      h1.feature, h2.feature, h3.feature {
-        padding-left: 20px;
-        padding-right: 20px; } }
-    h1.feature span, h2.feature span, h3.feature span {
-      padding: 4px 4px 0;
-      background: #f2f9ff; }
+h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px 0;
+  padding: 0 10px; }
+  @media screen and (max-width: 480px) {
+    h1 {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  h1 span {
+    padding: 4px 4px 0;
+    background: #f2f9ff; }
+
+h2, h3 {
+  font-weight: bold;
+  letter-spacing: 1px; }
 
 h2 {
   margin: 0; }
@@ -106,13 +110,14 @@ blockquote, .todds-terrible-hack {
   display: inline;
   color: white;
   background: #3C65DF;
-  font-size: 22px;
+  letter-spacing: 1px;
+  font-size: 24px;
   line-height: 30px;
   padding: 4px 4px 0; }
 
 .todds-terrible-hack {
   color: black;
-  font-size: 20px;
+  font-size: 24px;
   background: transparent; }
 
 cite {
@@ -316,7 +321,6 @@ header {
     transform: translateY(0); }
 
 #hero {
-  color: white;
   background: url(../images/VDW_web_bg1.jpg) center center;
   background-size: cover;
   position: relative;
@@ -330,12 +334,9 @@ header {
       margin-bottom: 0;
       padding-bottom: 0; } }
   #hero h1 {
-    margin-top: 150px;
+    margin-top: 160px;
     padding: 5px;
-    color: black;
     text-align: center;
-    font-size: 22px;
-    line-height: 30px;
     display: block;
     float: left;
     margin-right: 2.35765%;
@@ -363,8 +364,10 @@ header {
     background: rgba(255, 255, 255, 0.9); }
     #hero .mission:last-child {
       margin-right: 0; }
+    #hero .mission .content p:last-of-type {
+      margin-bottom: 1em; }
 
-#event .feature span {
+#event h1 span {
   background: #f1ed5d; }
 #event .event {
   display: block;
@@ -505,7 +508,7 @@ header {
       #support-tiers .tier:last-child {
         margin-right: 0; } }
 
-#supporter .feature {
+#supporter h1 {
   color: #7d7d7d; }
 
 .support {
@@ -554,6 +557,8 @@ footer {
     padding: 20px 0 10px;
     margin-bottom: 0; }
   footer h1 {
+    font-weight: bold;
+    text-align: left;
     margin: 0;
     display: block;
     float: left;
