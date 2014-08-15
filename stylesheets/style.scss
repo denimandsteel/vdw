@@ -30,10 +30,10 @@ body {
   @include transition(background 1s ease-out);
   svg path { @include transition(fill 1s ease-out); }
 
-  &.hero {
-    background: $lighter-gray;
-    svg path { fill: #00ab77; } // Green
-  }
+  // &.hero {
+  //   background: $lighter-gray;
+  //   svg path { fill: #00ab77; } // Green
+  // }
   &.event {
     background: $yellow;
     svg path { fill: #292825; } // Soft Black
@@ -42,22 +42,22 @@ body {
     svg path { fill: #f4c5b5; } // Peach
   }
   &.faq {
-    svg path { fill: #2e3192; } // Blue
-  }
-  &.about {
     svg path { fill: $highlight; } // Red
   }
+  &.about {
+    svg path { fill: #292825; } // Soft Black
+  }
   &.quotes {
-    svg path { fill: #D6D3C5; } // Tan
-  }
-  &.get-involved {
-    svg path { fill: #00A778; } // Green
-  }
-  &.support-tiers {
     svg path { fill: #ABE9D7; } // Light Green
   }
+  &.get-involved {
+    svg path { fill: #2e3192; } // Blue
+  }
+  &.support-tiers {
+    svg path { fill: #00A778; } // Green
+  }
   &.supporters {
-
+    svg path { fill: #D6D3C5; } // Tan
   }
 }
 
@@ -92,12 +92,14 @@ h1, h2, h3 {
     font-weight: bold;
     text-align: center;
     margin: 60px 0;
+    padding: 0 10px;
     @include media($mobile) {
       padding-left: 20px;
       padding-right: 20px;
     }
     span {
       padding: 4px 4px 0;
+      background: $cream;
     }
   }
 }
@@ -464,13 +466,6 @@ header {
 
 // #FAQ
 
-#faq .feature {
-  color: black;
-  span {
-    background: $cream;
-  }
-}
-
 .faqs {
   @extend %cream-box;
   @include span-columns(6);
@@ -488,17 +483,15 @@ header {
 // #ABOUT
 
 #about {
-  h1 span { background: $cream; }
   .box {
     @extend %cream-box;
     @include span-columns(6);
-    background: $highlight;
-    color: white;
   }
 }
 
 #quotes {
   .after { margin-bottom: 25px; }
+  .content { padding: 0 10px; }
 }
 
 // #GET-INVOLVED
