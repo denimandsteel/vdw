@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite, footer h1 {
+body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite, header h1, footer h1 {
   font-family: 'Lekton', sans-serif;
   font-weight: normal;
   font-size: 17px;
@@ -254,10 +254,13 @@ header {
     header {
       display: none; } }
   header h1 {
+    font-weight: bold;
     line-height: 16px;
     padding: 18px 0;
     margin: 0;
     float: left; }
+    header h1 span {
+      background: transparent; }
     @media screen and (max-width: 900px) {
       header h1 span {
         display: none; } }
