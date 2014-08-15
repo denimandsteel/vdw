@@ -558,8 +558,10 @@ footer {
   color: white;
   padding: 0 5px 5px; }
   footer .section {
+    padding: 20px 0 10px;
     margin-bottom: 0; }
   footer h1 {
+    margin: 0;
     display: block;
     float: left;
     margin-right: 2.35765%;

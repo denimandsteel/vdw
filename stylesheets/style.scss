@@ -585,9 +585,11 @@ footer {
   color: white;
   padding: 0 5px 5px;
   .section {
+    padding: 20px 0 10px;
     margin-bottom: 0;
   }
   h1 {
+    margin: 0;
     @include span-columns(8);
     @include media(max-width 950px) {
       @include span-columns(12);
