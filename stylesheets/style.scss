@@ -400,20 +400,11 @@ header {
 
 // #EVENT
 
-#event {
+.events {
   h1 span { background: $yellow; }
   .event {
-    @include span-columns(3);
-    @include omega(4n);
-    @include media($tablet) {
-      @include span-columns(4);
-      @include omega(2n);
-    }
-    
-    // min-height: 200px;
-    // position: relative;
+    @extend %cream-box;
     margin-bottom: $vertical-grid-gutter;
-    padding: 0 5px;
   }
   .image {
     background-size: cover;
@@ -429,6 +420,32 @@ header {
     color: black;
     background: $yellow;
     font-size: 18px;
+  }
+}
+
+#event {
+  .event {
+    @include span-columns(6);
+    @include omega(2n);
+    @include media($tablet) {
+      @include span-columns(4);
+      @include omega(2n);
+    }
+    @include media($mobile) {
+      @include span-columns(4);
+      @include omega(n);
+    }
+  }
+}
+
+#event-categories {
+  .event {
+    @include span-columns(3);
+    @include omega(4n);
+    @include media($tablet) {
+      @include span-columns(4);
+      @include omega(2n);
+    }
   }
 }
 
