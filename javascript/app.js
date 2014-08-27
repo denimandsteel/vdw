@@ -50,7 +50,7 @@ $(window).resize(function() {
 });
 
 // Sponsor shuffling and masonry.
-$.shuffle('#event > div .event');
+$.shuffle('#event-sample > div .event');
 var $container = $('.support div');
 $container.imagesLoaded( function() {
   $container.masonry({

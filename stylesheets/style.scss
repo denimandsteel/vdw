@@ -423,7 +423,7 @@ header {
   }
 }
 
-#event {
+#event-sample {
   .event {
     @include span-columns(6);
     @include omega(2n);
@@ -439,7 +439,7 @@ header {
   }
 }
 
-#event-categories {
+#event {
   .event {
     @include span-columns(3);
     @include omega(4n);
