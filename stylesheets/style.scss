@@ -50,7 +50,7 @@ body {
   //   background: $lighter-gray;
   //   svg path { fill: #00ab77; } // Green
   // }
-  &.event {
+  &.event, &.event-sample {
     background: $yellow;
     svg path { fill: #292825; } // Soft Black
   }
