@@ -435,7 +435,7 @@ header {
       @include span-columns(4);
       @include omega(n);
     }
-    h3 { margin: 0; }
+    h3, p { margin: 0; }
   }
 }
 
