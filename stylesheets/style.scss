@@ -425,17 +425,16 @@ header {
 
 #event-sample {
   .event {
-    @include span-columns(6);
-    @include omega(2n);
+    width: 48%;
+    height: auto;
+    margin: 1%;
     @include media($tablet) {
-      @include span-columns(4);
-      @include omega(2n);
+      // margin: 0;
     }
     @include media($mobile) {
-      @include span-columns(4);
-      @include omega(n);
+      width: 100%;
+      margin: 0;
     }
-    h3, p { margin: 0; }
   }
 }
 
