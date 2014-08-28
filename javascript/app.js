@@ -58,4 +58,8 @@ $container.imagesLoaded( function() {
   });
 });
 
+$('#event-sample > div').masonry({
+  itemSelector: '.event'
+});
+
 });
