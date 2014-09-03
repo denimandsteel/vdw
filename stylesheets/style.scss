@@ -290,7 +290,7 @@ header {
   padding: 0px 0px 0px 20px;
   line-height: $line-height;
   z-index: 2;
-  @include media($mobile) { display: none; }
+  @include media(max-width 570px) { display: none; }
   h1 {
     @extend %primary-type;
     font-weight: bold;
@@ -374,7 +374,7 @@ header {
   padding-bottom: 25px;
   @include media($mobile) { padding-bottom: 0; }
   .section {
-    @include media($mobile) {
+    @include media(max-width 570px) {
       margin-top: 0;
       margin-bottom: 0;
       padding-bottom: 0;
