@@ -54,7 +54,7 @@ $(window).resize(function() {
 var $container = $('.support div');
 $container.imagesLoaded( function() {
   $container.masonry({
-    itemSelector: 'img'
+    itemSelector: 'img, .supporter'
   });
 });
 

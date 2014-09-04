@@ -587,7 +587,14 @@ header {
 // #SUPPORTERS
 
 #supporter h1 { color: $lighter-gray; }
-
+#supporters {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.supporters {
+  margin:0;
+  padding: 0;
+}
 .support {
   background: white;
   margin: 10px 0;
@@ -596,7 +603,7 @@ header {
     padding: 10px 10px 0;
   }
 
-  img {
+  img, .friend {
     width: 23%;
     height: auto;
     padding: 2%;
@@ -605,6 +612,9 @@ header {
     @include media($mobile) {
       width: 48%;
     }
+  }
+  .friend {
+    display: block;
   }
 
   &.platinum { background: #e1e1e1; }
