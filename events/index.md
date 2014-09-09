@@ -70,7 +70,10 @@ id: events
   {% endfor %}
 {% endfor %}
 
-<script type="text/javascript">map.fitBounds(group.getBounds());</script>
+<script type="text/javascript">
+map.fitBounds(group.getBounds());
+group.addTo(map);
+</script>
 </body>
 
 </html>
