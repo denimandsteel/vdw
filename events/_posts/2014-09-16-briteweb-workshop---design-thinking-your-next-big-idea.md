@@ -5,6 +5,8 @@ description: "How do you create a product, service or solution that is innovativ
 time: 9:30 am - 4:00 pm
 type: Workshop
 address: 211 E Georgia St Suite 102 Vancouver, BC V6A 1Z6 Canada
+latitude: 49.2785756
+longitude: -123.0989244
 eventUrl: https://www.eventbrite.com/e/design-thinking-your-next-big-idea-tickets-12585139491
 published: true
 

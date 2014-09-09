@@ -3,8 +3,21 @@ title: Events
 id: events
 ---
 
-<html>
-<head></head>
+<!doctype html>
+<head>
+  <title>Events</title>
+  <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+  <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+  <style type="text/css">
+  .map {
+      width: 600px;
+      height: 320px;
+      margin: 0 0 1em 0;
+  }
+  </style>
+</head>
 <body>
 
 <!--
@@ -25,6 +38,18 @@ id: events
     </div>
 -->
 
+<div id="map" class="map"></div>
+<script type="text/javascript">
+  var map = new L.Map('map', {
+    center: new L.LatLng(37.8, -122.4),
+    zoom: 10
+  });
+  map.addLayer(new L.StamenTileLayer('toner', {
+    detectRetina: true
+  }));
+  var group = new L.featureGroup();
+</script>
+
 {% for priority in (1..50) %}
   {% for post in site.categories.event %}
     {% if post.priority == priority and post.published == true %}
@@ -38,11 +63,16 @@ id: events
         <p>{{ post.description }}</p>
       </div>
       <a target="_blank" href="{{ post.eventUrl }}" class="highlight">MORE INFO &rarr;</a>
+      <script type="text/javascript">
+      L.marker([{{ post.latitude }}, {{ post.longitude }}]).addTo(group);
+      </script>
     {% endif %}
   {% endfor %}
 {% endfor %}
 
+<script type="text/javascript">map.fitBounds(group.getBounds());</script>
 </body>
+
 </html>
 
 
