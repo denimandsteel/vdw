@@ -2,19 +2,21 @@
 title: Events
 id: events
 ---
-
-<!doctype html>
+<html>
 <head>
   <title>Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
   <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
   <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
   <style type="text/css">
   .map {
-      width: 600px;
+      width: 100%;
       height: 320px;
       margin: 0 0 1em 0;
+      /*padding-right: 100px;*/
+      /*box-sizing: border-box;*/
   }
   </style>
 </head>
@@ -42,8 +44,10 @@ id: events
 <script type="text/javascript">
   var map = new L.Map('map', {
     center: new L.LatLng(37.8, -122.4),
-    zoom: 10
+    zoom: 10,
+    scrollWheelZoom: false,
   });
+  // map.addLayer(new L.StamenTileLayer('toner-lite', {
   map.addLayer(new L.StamenTileLayer('toner', {
     detectRetina: true
   }));
