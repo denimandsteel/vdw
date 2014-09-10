@@ -17,13 +17,14 @@ VDWEvent = Struct.new(
   :event_url_label, 
   :published, 
   :address_lat, 
-  :address_long 
+  :address_long,
+  :price
 )
 
 def markdownPostForEvent(event, priority)
   puts event.inspect
   formattedDate = event.day.strftime("%A %d")
-  formattedTime = event.start_time + (event.end_time == "" ? "" : " - " + event.end_time)
+  formattedTime = event.start_time + (event.end_time.to_s == '' ? "" : " - " + event.end_time)
   isPublished = (event.published == 'YES')  
   content =  
   "---
@@ -34,11 +35,13 @@ startTime: #{event.start_time}
 endTime: #{event.end_time}
 type: #{event.event_type}
 address: #{event.address}
+addressLabel: #{event.address_label}
 latitude: #{event.address_lat}
 longitude: #{event.address_long}
 eventUrl: #{event.event_url}
 eventUrlLabel: #{event.event_url_label}
 published: #{isPublished}
+price: #{event.price}
 
 category: event
 priority: #{priority}
@@ -75,6 +78,7 @@ def readCSV(url)
         event.published = line[header.index('Published')]
         event.address_lat = line[header.index('Lat')]
         event.address_long = line[header.index('Long')]
+        event.price = line[header.index('Price')]
 
         if event.address_lat.to_s == '' || event.address_long.to_s == ''
           google_api_key = "AIzaSyBQDsHDBRQtL2hZl9Jl7sg002VSokqvlZk"

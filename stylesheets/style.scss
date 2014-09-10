@@ -24,6 +24,7 @@ $highlight: #f74715;
 $cream: #f2f9ff;
 // Backgrounds.
 $yellow: #f1ed5d;
+$navyblue: #4558a7;
 
 $vertical-grid-gutter: 17px;
 
@@ -426,6 +427,65 @@ header {
     font-size: 18px;
   }
 }
+
+.dayname {
+  color: white;
+  background: $navyblue;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.event {
+  border-bottom: 1px solid $navyblue;
+}
+
+.eventheader:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+.eventheader {
+  width: 100%;
+  clear: both;
+
+
+  .highlight {
+    width: 120px;
+  }
+  
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+    display: block;
+
+    .highlight {
+      float: left
+    }
+
+    .price {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+
+  .time {
+    float: left;
+  }
+
+  .addresslabel {
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+.eventcontent .description {
+  
+}
+
 
 #event-sample {
   .event {

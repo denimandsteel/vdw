@@ -6,11 +6,13 @@ startTime: 6:00 PM
 endTime: 4:00 PM
 type: Exhibit
 address: 100 – 440 Cambie Street (at Pender Street), Vancouver
+addressLabel: AIBC Gallery
 latitude: 49.2818012
 longitude: -123.1097559
 eventUrl: http://www.aibc.ca/membersite/celebrating-architecture/aibc-gallery/
 eventUrlLabel: Register
 published: true
+price: Free
 
 category: event
 priority: 3

@@ -41,8 +41,8 @@ id: events
 
     </div>
 -->
-
 <div id="map" class="map"></div>
+
 <script type="text/javascript">
   var map = new L.Map('map', {
     center: new L.LatLng(37.8, -122.4),
@@ -61,14 +61,34 @@ id: events
     {% if post.priority == priority and post.published == true %}
       {% capture currentdate %}{{post.date | date: "%A, %B %d, %Y"}}{% endcapture %}
       {% if currentdate != thedate %}
-        <h2>{{ post.day }}</h2>
+        <h2 class="dayname">{{ post.day }}</h2>
+
+        {% assign dayEvents = 0 %}   
         {% capture thedate %}{{currentdate}}{% endcapture %} 
       {% endif %}
-      <div class="content">
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.description }}</p>
+
+      <div class="event">
+        <div class="eventheader">
+          <div class="left">
+            <h3>{{ post.title }}</h3>
+            
+            {% if post.endTime %}
+              <p class="time">{{ post.startTime }} - {{ post.endTime }}</p>
+            {% else %}
+              <p class="time">{{ post.startTime }}</p>
+            {% endif %}
+            <p class="addresslabel">at {{ post.addressLabel }}</p>
+          </div>
+          <div class="right">
+            <p class="price">{{ post.price }}</p>
+            <a target="_blank" href="{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+          </div>
+        </div>
+
+        <div class="eventcontent">
+          <p class="description">{{ post.description }}</p>
+        </div>
       </div>
-      <a target="_blank" href="{{ post.eventUrl }}" class="highlight">MORE INFO &rarr;</a>
       <script type="text/javascript">
       L.marker([{{ post.latitude }}, {{ post.longitude }}]).addTo(group);
       </script>
