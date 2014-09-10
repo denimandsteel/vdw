@@ -63,14 +63,13 @@ id: events
       {% if currentdate != thedate %}
         <h2 class="dayname">{{ post.day }}</h2>
 
-        {% assign dayEvents = 0 %}   
         {% capture thedate %}{{currentdate}}{% endcapture %} 
       {% endif %}
 
       <div class="event">
         <div class="eventheader">
           <div class="left">
-            <h3>{{ post.title }}</h3>
+            <h3 class="title">{{ post.title }}</h3>
             
             {% if post.endTime %}
               <p class="time">{{ post.startTime }} - {{ post.endTime }}</p>

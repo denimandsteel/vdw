@@ -52,7 +52,7 @@ end
 
 def readCSV(url)
   priority = 1
-  csv = CSV.new(open(url))
+  csv = CSV.new(open(url), encoding: "UTF-8")
   
   header = Array.new
 

@@ -25,6 +25,7 @@ $cream: #f2f9ff;
 // Backgrounds.
 $yellow: #f1ed5d;
 $navyblue: #4558a7;
+$lightblue: #eef9f8;
 
 $vertical-grid-gutter: 17px;
 
@@ -38,7 +39,7 @@ $vertical-grid-gutter: 17px;
 
 body {
   color: #292826;
-  background: $cream; // Cream
+  background: $lightblue; // Cream
   @extend %primary-type;
   font-size: 16px;
   margin: 0;
@@ -432,7 +433,7 @@ header {
   color: white;
   background: $navyblue;
   font-size: 20px;
-  padding: 10px 0px;
+  padding: 10px 0px 10px 15px;
 }
 
 .event {
@@ -440,22 +441,22 @@ header {
 }
 
 .eventheader:after {
-    content:"";
-    display:table;
-    clear:both;
-  }
+  content:"";
+  display:table;
+  clear:both;
+}
 
 .eventheader {
   width: 100%;
   clear: both;
 
-
-  .highlight {
-    width: 120px;
-  }
-  
   .left {
     float: left;
+
+    .title {
+      margin-bottom: 0;
+      padding-left: 15px;
+    }
   }
 
   .right {
@@ -463,29 +464,45 @@ header {
     display: block;
 
     .highlight {
-      float: left
+      background: $lightblue;
+      color: $navyblue;
+      width: 120px;
+      height: 40px;
+      margin-top: 8px;
+      margin-right: 15px;
+      text-align: center;
+      float: left;
+      padding: 9px;
+      border: 2px solid $navyblue;
     }
 
     .price {
       float: left;
       margin-right: 20px;
+      color: $lighter-gray;
     }
   }
 
   .time {
     float: left;
+    margin: 0;
+    padding-left: 15px;
   }
 
   .addresslabel {
     float: left;
+    margin: 0;
     margin-left: 20px;
+    text-transform: capitalize;
   }
 }
 
 .eventcontent .description {
-  
+  text-transform: none;
+  border-top: 1px solid $lighter-gray;
+  padding: 15px;
+  color: $lighter-gray;
 }
-
 
 #event-sample {
   .event {

@@ -28,7 +28,7 @@ body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite, header h
 
 body {
   color: #292826;
-  background: #f2f9ff;
+  background: #eef9f8;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -453,7 +453,7 @@ header {
   color: white;
   background: #4558a7;
   font-size: 20px;
-  padding: 10px 0px; }
+  padding: 10px 0px 10px 15px; }
 
 .event {
   border-bottom: 1px solid #4558a7; }
@@ -466,23 +466,44 @@ header {
 .eventheader {
   width: 100%;
   clear: both; }
-  .eventheader .highlight {
-    width: 120px; }
   .eventheader .left {
     float: left; }
+    .eventheader .left .title {
+      margin-bottom: 0;
+      padding-left: 15px; }
   .eventheader .right {
     float: right;
     display: block; }
     .eventheader .right .highlight {
-      float: left; }
+      background: #eef9f8;
+      color: #4558a7;
+      width: 120px;
+      height: 40px;
+      margin-top: 8px;
+      margin-right: 15px;
+      text-align: center;
+      float: left;
+      padding: 9px;
+      border: 2px solid #4558a7; }
     .eventheader .right .price {
       float: left;
-      margin-right: 20px; }
+      margin-right: 20px;
+      color: #7d7d7d; }
   .eventheader .time {
-    float: left; }
+    float: left;
+    margin: 0;
+    padding-left: 15px; }
   .eventheader .addresslabel {
     float: left;
-    margin-left: 20px; }
+    margin: 0;
+    margin-left: 20px;
+    text-transform: capitalize; }
+
+.eventcontent .description {
+  text-transform: none;
+  border-top: 1px solid #7d7d7d;
+  padding: 15px;
+  color: #7d7d7d; }
 
 #event-sample .event {
   width: 48%;
