@@ -19,6 +19,8 @@ id: events
       /*box-sizing: border-box;*/
   }
   </style>
+  <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css?1">
 </head>
 <body>
 
