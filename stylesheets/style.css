@@ -492,6 +492,51 @@ header {
 .leaflet-bar a:last-child {
   border-radius: 0; }
 
+@-webkit-keyframes bobbing {
+  0% {
+    -webkit-transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out; }
+
+  40% {
+    -webkit-transform: translateY(-0.25em);
+    -webkit-animation-timing-function: ease-in-out; }
+
+  80% {
+    -webkit-transform: translateY(0.1em);
+    -webkit-animation-timing-function: ease-in; } }
+@-moz-keyframes bobbing {
+  0% {
+    -moz-transform: translateY(0px);
+    -moz-animation-timing-function: ease-out; }
+
+  40% {
+    -moz-transform: translateY(-0.25em);
+    -moz-animation-timing-function: ease-in-out; }
+
+  80% {
+    -moz-transform: translateY(0.1em);
+    -moz-animation-timing-function: ease-in; } }
+@-o-keyframes bobbing {
+  0% {
+    -o-transform: translateY(0px); }
+
+  40% {
+    -o-transform: translateY(-0.25em); }
+
+  80% {
+    -o-transform: translateY(0.1em); } }
+@keyframes bobbing {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out; }
+
+  40% {
+    transform: translateY(-0.25em);
+    animation-timing-function: ease-in-out; }
+
+  80% {
+    transform: translateY(0.1em);
+    animation-timing-function: ease-in; } }
 .marker {
   font-weight: bold;
   width: 28px;
@@ -504,6 +549,8 @@ header {
     height: 28px;
     margin-top: -28px;
     background-image: url(../images/marker-info.svg); }
+  .marker:hover {
+    opacity: 0.9; }
   .marker span {
     position: relative;
     top: 5px; }

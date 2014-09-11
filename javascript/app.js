@@ -87,10 +87,22 @@ for (var date in vdwEvents) {
 
     // Event markers.
     var events = new L.featureGroup();
-    for (var i = 0; i < vdwEvents[date].length; i++) {
+    vdwEvents[date].forEach(function(event, i) {
+      console.log(event);
       var event = vdwEvents[date][i];
-      L.marker([event.lat, event.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) }).addTo(events);
-    }
+      var marker = L.marker([event.lat, event.long], { /*riseOnHover: true,*/ icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) });
+      marker.on('mouseover', function(marker) {
+        if (marker.originalEvent) {
+          $(marker.originalEvent.target).addClass('active');
+        }
+      });
+      marker.on('mouseout', function() {
+        if (marker.originalEvent) {
+          $(marker.originalEvent.target).removeClass('active');
+        }
+      });
+      marker.addTo(events);
+    });
     events.addTo(map);
     map.fitBounds(events.getBounds());
 

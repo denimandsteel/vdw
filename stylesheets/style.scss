@@ -547,6 +547,23 @@ header {
   border-radius: 0;
 }
 
+@include keyframes(bobbing) {
+  0% {
+    @include transform(translateY(0px));
+    @include animation-timing-function(ease-out);
+  }
+
+  40% {
+    @include transform(translateY(-0.25em));
+    @include animation-timing-function(ease-in-out);
+  }
+
+  80% {
+    @include transform(translateY(0.1em));
+    @include animation-timing-function(ease-in);
+  }
+}
+
 .marker {
   @extend %primary-type;
   font-weight: bold;
@@ -561,6 +578,11 @@ header {
     height: 28px;
     margin-top: -28px;
     background-image: url(../images/marker-info.svg)
+  }
+
+  &:hover {
+    opacity: 0.9;
+    // @include animation(bobbing 2s infinite);
   }
 
   span {
