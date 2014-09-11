@@ -114,13 +114,14 @@
                   <div class="eventheader">
                     <div class="left">
                       <h3 class="title">{{ post.title }}</h3>
-                      
-                      {% if post.endTime %}
-                        <p class="time">{{ post.startTime }} - {{ post.endTime }}</p>
-                      {% else %}
-                        <p class="time">{{ post.startTime }}</p>
-                      {% endif %}
-                      <p class="addresslabel">at {{ post.addressLabel }}</p>
+                      <p class="time-and-place">
+                        {% if post.endTime %}
+                          {{ post.startTime }} - {{ post.endTime }}
+                        {% else %}
+                          {{ post.startTime }}
+                        {% endif %}
+                        at <a href="http://maps.apple.com/?q={{ post.address }}">{{ post.addressLabel }}</a>
+                      </p>
                     </div>
                     <div class="right">
                       <p class="price">{{ post.price }}</p>

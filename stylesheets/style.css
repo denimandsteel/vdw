@@ -458,7 +458,8 @@ header {
     float: left; }
     .eventheader .left .title {
       margin-bottom: 0;
-      padding-left: 15px; }
+      padding-left: 15px;
+      font-size: 18px; }
   .eventheader .right {
     float: right;
     display: block;
@@ -466,32 +467,36 @@ header {
     .eventheader .right .highlight {
       background: #eef9f8;
       color: #4558a7;
-      width: 120px;
+      width: 140px;
       height: 40px;
-      margin-top: 8px;
+      margin-top: 15px;
       margin-right: 15px;
       text-align: center;
       float: left;
       padding: 9px;
       border: 2px solid #4558a7; }
     .eventheader .right .price {
+      font-weight: bold;
       float: left;
       margin-right: 20px;
+      margin-top: 25px;
       color: #7d7d7d; }
-  .eventheader .time {
-    float: left;
-    margin: 0;
-    padding-left: 15px; }
-  .eventheader .addresslabel {
-    float: left;
-    margin: 0;
-    margin-left: 20px;
-    text-transform: capitalize; }
 
-.eventcontent .description {
+.event .description,
+.event .time-and-place {
   text-transform: none;
-  padding: 15px;
-  color: #7d7d7d; }
+  font-size: 18px;
+  line-height: 20px;
+  margin: 15px;
+  color: #797979; }
+  .event .description a,
+  .event .time-and-place a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4558a7; }
+
+.event .time-and-place {
+  margin-top: 0; }
 
 .leaflet-bar {
   box-shadow: none; }

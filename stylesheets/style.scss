@@ -494,6 +494,7 @@ header {
     .title {
       margin-bottom: 0;
       padding-left: 15px;
+      font-size: 18px;
     }
   }
 
@@ -505,9 +506,9 @@ header {
     .highlight {
       background: $lightblue;
       color: $navyblue;
-      width: 120px;
+      width: 140px;
       height: 40px;
-      margin-top: 8px;
+      margin-top: 15px;
       margin-right: 15px;
       text-align: center;
       float: left;
@@ -516,32 +517,44 @@ header {
     }
 
     .price {
+      font-weight: bold;
       float: left;
       margin-right: 20px;
+      margin-top: 25px;
       color: $lighter-gray;
     }
   }
 
-  .time {
-    float: left;
-    margin: 0;
-    padding-left: 15px;
-  }
+  // .time {
+  //   float: left;
+  //   margin: 0;
+  //   padding-left: 15px;
+  // }
 
-  .addresslabel {
-    float: left;
-    margin: 0;
-    margin-left: 20px;
-    text-transform: capitalize;
-  }
+  // .addresslabel {
+  //   float: left;
+  //   margin: 0;
+  //   margin-left: 20px;
+  //   text-transform: capitalize;
+  // }
 }
 
-.eventcontent .description {
+.event .description,
+.event .time-and-place {
   text-transform: none;
+  font-size: 18px;
+  line-height: 20px;
   // border-top: 1px solid $lighter-gray;
-  padding: 15px;
-  color: $lighter-gray;
+  margin: 15px;
+  color: lighten(#464646, 20);
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $navyblue;
+  }
 }
+.event .time-and-place { margin-top: 0; }
 
 .leaflet-bar {
   box-shadow: none;
