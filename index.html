@@ -79,7 +79,7 @@
 </div>
 
 <script type="text/javascript">
-  vdwEvents = [];
+  vdwEvents = {};
 </script>
 
 <section id="event" class="events">
@@ -94,7 +94,7 @@
     {% endif %}
     {% assign eventDayCategory = "event-" | append: dayNumber %}
     {% if site.categories[eventDayCategory].size > 0 %}
-      <div class="day-events" id="{{ eventDayCategory }}">
+      <div id="{{ eventDayCategory }}" class="day-events active">
         <div class="day-header">
           <h2 class="dayname">{{ site.categories[eventDayCategory][0].day }}</h2>
           <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
@@ -105,9 +105,12 @@
             {% for post in site.categories[eventDayCategory] %}
               {% if post.priority == priority and post.published == true %}
                 <script type="text/javascript">
-                  vdwEvents.push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
+                  if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
+                    vdwEvents['map-{{eventDayCategory}}'] = [];
+                  }
+                  vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
                 </script>
-                <div class="event">
+                <div id="event-{{post.slug}}" class="event">
                   <div class="eventheader">
                     <div class="left">
                       <h3 class="title">{{ post.title }}</h3>

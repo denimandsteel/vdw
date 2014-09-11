@@ -37,7 +37,6 @@ $('header input[type="email"]').keyup(function(e) {
 
 // Background crop.
 var resizeBackground = function() {
-  console.log('cool');
   var bottomOfPage = $('#contact').height() + $('#contact').offset().top; // Top of page margin (#hero) + margin at bottom (#team).
   var cropHeight = bottomOfPage * (334.469/$(window).width());
   // alert(cropHeight)
@@ -63,40 +62,9 @@ $('#event-sample > div').masonry({
   itemSelector: '.event'
 });
 
-// Let's make a map!
-var map = new L.Map('map-event-15', {
-  center: new L.LatLng(37.8, -122.4),
-  zoom: 10,
-  scrollWheelZoom: false,
-  attributionControl: false,
-});
-map.addLayer(new L.StamenTileLayer('toner-lite', {
-// map.addLayer(new L.StamenTileLayer('toner', {
-  detectRetina: true,
-}));
-var group = new L.featureGroup();
-group.addTo(map);
-
-var infoStations = new L.featureGroup();
-infoStations.addTo(map);
-
-// var group2 = new L.featureGroup();
-// group2.addTo(map);
-
-// {% for post in site.categories.event-15 %}
-  // L.marker([{{ post.latitude }}, {{ post.longitude }}]).addTo(group);
-// {% endfor %}
-L.marker([49.2608024, -123.113944], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>1</span>' }) }).addTo(group);
-// L.marker([49.2608024, -123.113944]).addTo(group2);
-L.marker([49.2818012, -123.1097559], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>2</span>' }) }).addTo(group);
-
-L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
-
-map.fitBounds(group.getBounds());
-
+// Events open/close.
 $('.day-header').on('click', function() {
   $(this).parents('.day-events').toggleClass('active');
-  // $content = $(this).next();
   //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
   // $content.slideToggle(500, function () {
     //execute this after slideToggle is done
@@ -104,5 +72,77 @@ $('.day-header').on('click', function() {
   // });
   return false;
 });
+
+// // Let's make a bunch of maps!
+// // for (var date in vdwEvents) {
+//   // console.log(date);
+//   // if (vdwEvents.hasOwnProperty(date)) {
+    
+//     // var date = ;
+//     // var events = new L.featureGroup();
+//     // // for (var i = 0; i < vdwEvents[date].length; i++) {
+//     //   var vdwEvent = vdwEvents[date][0];
+//     //   var marker = new L.marker([vdwEvent.lat, vdwEvent.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + vdwEvent.priority + '</span>' }) });
+//     //   marker.addTo(events);
+//     //   var vdwEvent = vdwEvents[date][1];
+//     //   var marker = new L.marker([vdwEvent.lat, vdwEvent.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + vdwEvent.priority + '</span>' }) });
+//     //   marker.addTo(events);
+//     // // }
+    
+//     var map = new L.Map('map-event-15', {
+//       center: new L.LatLng(49.2, -123.1),
+//       zoom: 10,
+//       scrollWheelZoom: false,
+//       attributionControl: false,
+//       // layers: [
+//         // new L.StamenTileLayer('toner-lite', { detectRetina: true }),
+//         // infoStations,
+//         // events,
+//       // ],
+//     });
+//     map.addLayer(new L.StamenTileLayer('toner-lite', {
+//       detectRetina: true,
+//     }));
+//     var infoStations = new L.featureGroup();
+//     L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
+//     L.marker([49.3558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
+    
+//     infoStations.addTo(map);
+//     map.fitBounds(infoStations.getBounds());
+//   // }
+// // }
+
+for (var date in vdwEvents) {
+  if (vdwEvents.hasOwnProperty(date)) {
+    // Let's make a map!
+    var map = new L.Map(date, {
+      // center: new L.LatLng(37.8, -122.4),
+      // zoom: 10,
+      scrollWheelZoom: false,
+      attributionControl: false,
+    });
+    map.addLayer(new L.StamenTileLayer('toner-lite', {
+      detectRetina: true,
+    }));
+
+    // Event markers.
+    var group = new L.featureGroup();
+    group.addTo(map);
+    for (var i = 0; i < vdwEvents[date].length; i++) {
+      var vdwEvent = vdwEvents[date][i];
+      L.marker([vdwEvent.lat, vdwEvent.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + vdwEvent.priority + '</span>' }) }).addTo(group);
+    }
+    map.fitBounds(group.getBounds());
+
+    // Info station markers.
+    // var infoStations = new L.featureGroup();
+    // infoStations.addTo(map);
+    // L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
+
+
+  }
+}
+
+
 
 });
