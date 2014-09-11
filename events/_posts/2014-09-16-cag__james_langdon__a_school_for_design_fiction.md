@@ -1,5 +1,6 @@
 ---
-day: Tuesday 16
+dayOfWeek: Tue
+dayOfMonth: Sep 16
 title: "CAG - JAMES LANGDON  A SCHOOL FOR DESIGN FICTION"
 description: "As our contribution to Vancouver Design Week, the CAG is working with James Langdon, recipient of the 2012 Inform Award for Conceptual Design, presented by the Museum of Contemporary Art Leipzig, Germany (http://www.gfzk-leipzig.de/?p=19328&lang=en). Langdon will offer a short course in reading objects, environments and messages. Stimulated by the curious genre of design fiction, the programme asserts storytelling as the primary function of design. Langdon will conduct a three day workshop on September 16-18 exploring narrative approaches to design, a series of connected exercises subjecting a collection of found materials to various manual and conceptual processes.  The workshop is not concerned with speculative design or futurism, but with documenting and manipulating the narrative potential of ordinary artefacts through consideration of their essence; their relations with each other; and the meanings they might be made to express."
 startTime: 6:00 PM

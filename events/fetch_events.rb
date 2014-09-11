@@ -5,7 +5,7 @@ require 'fileutils'
 require 'json'
 
 VDWEvent = Struct.new( 
-  :day, 
+  :day,
   :title, 
   :description, 
   :start_time, 
@@ -26,7 +26,8 @@ def markdownPostForEvent(event, priority)
   escapedDescription = event.description.gsub('"', '\"');
 
   dayNumber = event.day.strftime("%d")
-  formattedDate = event.day.strftime("%A %d")
+  dayOfWeek = event.day.strftime("%a")
+  dayOfMonth = event.day.strftime("%b %d")
   
   formattedTime = ""
   if event.start_time.to_s != ''
@@ -41,7 +42,8 @@ def markdownPostForEvent(event, priority)
 
   content =  
   "---
-day: #{formattedDate}
+dayOfWeek: #{dayOfWeek}
+dayOfMonth: #{dayOfMonth}
 title: \"#{escapedTitled}\"
 description: \"#{escapedDescription}\"
 startTime: #{event.start_time}

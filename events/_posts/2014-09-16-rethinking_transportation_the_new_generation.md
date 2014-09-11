@@ -1,5 +1,6 @@
 ---
-day: Tuesday 16
+dayOfWeek: Tue
+dayOfMonth: Sep 16
 title: "RETHINKING TRANSPORTATION: THE NEW GENERATION"
 description: "Dr. Markus Moos of the University of Waterloo will speak about Millennials’ values, preferences and priorities. Their attitudes could affect your work, commute, home and community — now and in the future."
 startTime: 7:00 PM
