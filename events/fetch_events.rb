@@ -22,23 +22,32 @@ VDWEvent = Struct.new(
 )
 
 def markdownPostForEvent(event, priority)
-  puts event.inspect
+  escapedTitled = event.title.gsub('"', '\"');
+  escapedDescription = event.description.gsub('"', '\"');
+
   dayNumber = event.day.strftime("%d")
   formattedDate = event.day.strftime("%A %d")
-  formattedTime = event.start_time + (event.end_time.to_s == '' ? "" : " - " + event.end_time)
+  
+  formattedTime = ""
+  if event.start_time.to_s != ''
+    formattedTime = event.start_time + (event.end_time.to_s == '' ? "" : " - " + event.end_time)
+  end
+  
   isPublished = (event.published == 'YES')  
   
   timestamp = event.day.strftime("%Y-%m-%d")
-  slug = (timestamp + "-" + event.title).gsub!(' ','-').downcase
+  cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
+  slug = timestamp + "-" + cleanTitle
+
   content =  
   "---
 day: #{formattedDate}
-title: #{event.title}
-description: \"#{event.description}\"
+title: \"#{escapedTitled}\"
+description: \"#{escapedDescription}\"
 startTime: #{event.start_time}
 endTime: #{event.end_time}
 type: #{event.event_type}
-address: #{event.address}
+address: \"#{event.address}\"
 addressLabel: #{event.address_label}
 latitude: #{event.address_lat}
 longitude: #{event.address_long}
@@ -57,27 +66,27 @@ end
 
 def readCSV(url)
   totalEvents = 0;
-  csv = CSV.new(open(url), encoding: "UTF-8")
+  csv = CSV.new(open(url))
   
   header = Array.new
 
   previousDay = "";
   priority = 0
   csv.each do |line|
+    puts line
     if priority == 0
       header = line
       priority += 1;
     else
       # todo: check for empty rows
-      if line[header.index('Published')] == 'YES'
+      if line[header.index('Published')] == 'YES' && line[header.index('Address')].to_s != ''
         event = VDWEvent.new
-
         event.day = Date.strptime(line[header.index('Day')], "%m/%d/%Y")
         if event.day != previousDay
           priority = 1;
         end
         previousDay = event.day
-        event.title = line[header.index('Title')]
+        event.title = line[header.index('Title')].tr("\n"," ")
         event.description = line[header.index('Description')].tr("\n"," ")
         event.start_time = line[header.index('Start Time')]
         event.end_time = line[header.index('End Time')]
@@ -103,8 +112,9 @@ def readCSV(url)
         content = markdownPostForEvent(event, priority)
 
         formattedDate = event.day.strftime("%Y-%m-%d")
-        slug = formattedDate + "-" + event.title
-        filename = ("_posts/#{slug}.md").gsub!(' ','-').downcase
+        cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
+        slug = formattedDate + "-" + cleanTitle
+        filename = ("_posts/#{slug}.md")
         File.write(filename, content)  
         priority += 1
         totalEvents += 1;
@@ -116,7 +126,9 @@ def readCSV(url)
   puts "#{totalEvents} events posted."
 end
 
-csvURL = "https://docs.google.com/spreadsheets/d/1zlSwKyHZ3ui-hNivaKdZIKINvn45fX3td0xvI4Hu0CU/export?gid=0&format=csv"
+csvURL = "https://docs.google.com/spreadsheets/d/1Sd6MkT_z-kTBtzozSb_6ZfJyO6TcgGzS0VTYavrzI7I/export?gid=0&format=csv"
+# csvURL = "https://docs.google.com/spreadsheets/d/1zlSwKyHZ3ui-hNivaKdZIKINvn45fX3td0xvI4Hu0CU/export?gid=0&format=csv"
+
 # remove all previous markdown files:
 FileUtils.rm_rf(Dir.glob('_posts/*'))
 readCSV(csvURL)
