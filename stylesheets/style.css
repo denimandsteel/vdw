@@ -410,18 +410,26 @@ header {
 .day-events.active .event-count .indicator.minus {
   display: inline; }
 
+.weekname {
+  font-size: 24px;
+  margin: 50px 0 25px; }
+
 .day-header {
   background: #eef9f8;
-  color: #4558a7;
+  color: #292826;
   border-bottom: 1px solid #4558a7;
   height: 60px;
   font-size: 20px;
   padding-top: 20px; }
   .day-header .dayname {
+    font-size: 18px;
+    font-weight: normal;
     float: left;
     padding-left: 15px;
     margin: 0; }
   .day-header .event-count {
+    font-size: 16px;
+    font-weight: bold;
     float: right;
     padding-right: 15px;
     margin-bottom: 0; }
