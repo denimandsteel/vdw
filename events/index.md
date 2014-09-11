@@ -33,6 +33,13 @@ id: events
 
 <section>
 {% for dayNumber in (15..28) %}
+  {% if dayNumber == 15 %}
+    <H1>Event Schedule</H1>
+    <H1>Week 1 / Sept 15th - 21st</H1>
+  {% elsif dayNumber == 22 %}
+    <H1>Event Schedule</H1>
+    <H1>Week 1 / Sept 15th - 21st</H1>
+  {% endif %}
   {% assign eventDayCategory = "event-" | append: dayNumber %}
   {% if site.categories[eventDayCategory].size > 0 %}
     <div class="day-events" id="{{ eventDayCategory }}">

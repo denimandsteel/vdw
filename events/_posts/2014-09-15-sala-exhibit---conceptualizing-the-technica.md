@@ -15,5 +15,6 @@ published: true
 price: Free
 
 category: event-15
-priority: 3
+priority: 2
+slug: 2014-09-15-sala-exhibit---conceptualizing-the-technica
 ---
