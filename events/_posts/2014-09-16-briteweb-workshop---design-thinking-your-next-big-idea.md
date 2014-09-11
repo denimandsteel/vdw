@@ -15,5 +15,6 @@ published: true
 price: $10
 
 category: event-16
-priority: 4
+priority: 1
+slug: 2014-09-16-briteweb-workshop---design-thinking-your-next-big-idea
 ---

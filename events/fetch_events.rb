@@ -27,6 +27,9 @@ def markdownPostForEvent(event, priority)
   formattedDate = event.day.strftime("%A %d")
   formattedTime = event.start_time + (event.end_time.to_s == '' ? "" : " - " + event.end_time)
   isPublished = (event.published == 'YES')  
+  
+  timestamp = event.day.strftime("%Y-%m-%d")
+  slug = (timestamp + "-" + event.title).gsub!(' ','-').downcase
   content =  
   "---
 day: #{formattedDate}
@@ -46,19 +49,22 @@ price: #{event.price}
 
 category: event-#{dayNumber}
 priority: #{priority}
+slug: #{slug}
 ---
 "
   return content
 end
 
 def readCSV(url)
-  priority = 1
+  totalEvents = 0;
   csv = CSV.new(open(url), encoding: "UTF-8")
   
   header = Array.new
 
+  previousDay = "";
+  priority = 0
   csv.each do |line|
-    if priority == 1
+    if priority == 0
       header = line
       priority += 1;
     else
@@ -67,6 +73,10 @@ def readCSV(url)
         event = VDWEvent.new
 
         event.day = Date.strptime(line[header.index('Day')], "%m/%d/%Y")
+        if event.day != previousDay
+          priority = 1;
+        end
+        previousDay = event.day
         event.title = line[header.index('Title')]
         event.description = line[header.index('Description')].tr("\n"," ")
         event.start_time = line[header.index('Start Time')]
@@ -97,12 +107,13 @@ def readCSV(url)
         filename = ("_posts/#{slug}.md").gsub!(' ','-').downcase
         File.write(filename, content)  
         priority += 1
+        totalEvents += 1;
       end
     end
     
   end
 
-  puts "#{priority - 2} events posted."
+  puts "#{totalEvents} events posted."
 end
 
 csvURL = "https://docs.google.com/spreadsheets/d/1zlSwKyHZ3ui-hNivaKdZIKINvn45fX3td0xvI4Hu0CU/export?gid=0&format=csv"

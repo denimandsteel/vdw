@@ -15,5 +15,6 @@ published: true
 price: Free
 
 category: event-15
-priority: 2
+priority: 1
+slug: 2014-09-15-vancouver-urban-design-awards
 ---

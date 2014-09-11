@@ -79,6 +79,10 @@
   </div>
 </div>
 
+<script type="text/javascript">
+  vdwEvents = [];
+</script>
+
 <section id="event" class="events">
   <h1><span>Event Categories &ndash; Full Calendar Coming Soon</span></h1>
   {% for dayNumber in (15..28) %}
@@ -101,6 +105,9 @@
           {% for priority in (1..50) %}
             {% for post in site.categories[eventDayCategory] %}
               {% if post.priority == priority and post.published == true %}
+                <script type="text/javascript">
+                  vdwEvents.push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
+                </script>
                 <div class="event">
                   <div class="eventheader">
                     <div class="left">
@@ -123,9 +130,7 @@
                     <p class="description">{{ post.description }}</p>
                   </div>
                 </div>
-                <script type="text/javascript">
-                <!-- mapObjects[day][] = {lat , lon, priority, event}; -->
-                </script>
+                
               {% endif %}
             {% endfor %}
           {% endfor %}
