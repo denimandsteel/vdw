@@ -1,5 +1,6 @@
 ---
-day: Wednesday 17
+dayOfWeek: Wed
+dayOfMonth: Sep 17
 title: "CAG - JAMES LANGDON  A SCHOOL FOR DESIGN FICTION"
 description: "(See above) "
 startTime: 6:00 PM

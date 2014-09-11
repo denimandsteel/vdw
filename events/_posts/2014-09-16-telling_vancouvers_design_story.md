@@ -1,11 +1,12 @@
 ---
-day: Tuesday 16
+dayOfWeek: Tue
+dayOfMonth: Sep 16
 title: "TELLING VANCOUVER'S DESIGN STORY"
 description: "This roundtable is a discussion between designers of all kinds to build a design story for Vancouver.  What kind of design community do you want to work in?"
 startTime: 6:30 PM
 endTime: 
 type: Workshop
-address: "211 E Georgia St Vancouver, BC V6A 1Z6 Canada"
+address: "B-211 E Georgia St Vancouver, BC V6A 1Z6 Canada"
 addressLabel: 
 latitude: 49.2785756
 longitude: -123.0989244

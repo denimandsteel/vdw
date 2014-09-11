@@ -1,5 +1,6 @@
 ---
-day: Wednesday 17
+dayOfWeek: Wed
+dayOfMonth: Sep 17
 title: "RETHINKING TRANSPORTATION: FUTURE LIVABILITY - BOAST OR BUST?"
 description: "Gil Penalosa will speak to the question of whether Metro Vancouver maintain its \"Livability Credibility\" for the next 30 years."
 startTime: 7:00 PM
