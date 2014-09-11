@@ -407,7 +407,7 @@ header {
 // #EVENT
 
 .events-list {
-  // display: none;
+  background: $lightblue;
   height: 0;
   overflow: hidden;
   // transition: max-height 1s ease-out;
@@ -418,7 +418,6 @@ header {
 
 .event-count .indicator.minus { display: none; }
 .day-events.active .event-count .indicator.minus { display: inline; }
-
 
 // .events {
 //   h1 span { background: $yellow; }
@@ -477,15 +476,9 @@ header {
   border-bottom: 1px solid $navyblue;
 }
 
-.eventheader:after {
-  content:"";
-  display:table;
-  clear:both;
-}
-
 .eventheader {
   width: 100%;
-  clear: both;
+  @include clearfix();
 
   .left {
     float: left;
@@ -537,9 +530,21 @@ header {
 
 .eventcontent .description {
   text-transform: none;
-  border-top: 1px solid $lighter-gray;
+  // border-top: 1px solid $lighter-gray;
   padding: 15px;
   color: $lighter-gray;
+}
+
+.leaflet-bar {
+  box-shadow: none;
+}
+
+.leaflet-bar a {
+  // border-bottom-color: $navyblue;
+}
+.leaflet-bar a:first-child,
+.leaflet-bar a:last-child {
+  border-radius: 0;
 }
 
 .marker {
@@ -552,15 +557,15 @@ header {
   text-align: center;
   background: url(../images/marker.svg) top left no-repeat;
 
-  span {
-    position: relative;
-    top: 5px;
-  }
-
   &.info {
     height: 28px;
     margin-top: -28px;
-    background: url(../images/marker-info.svg)
+    background-image: url(../images/marker-info.svg)
+  }
+
+  span {
+    position: relative;
+    top: 5px;
   }
 }
 

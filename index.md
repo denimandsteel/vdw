@@ -87,11 +87,11 @@
   <h1><span>Event Categories &ndash; Full Calendar Coming Soon</span></h1>
   {% for dayNumber in (15..28) %}
     {% if dayNumber == 15 %}
-      <H2>Event Schedule</H1>
-      <H2>Week 1 / Sept 15th - 21st</H1>
+      <h2>Event Schedule</h2>
+      <h2>Week 1 / Sept 15th - 21st</h2>
     {% elsif dayNumber == 22 %}
-      <H2>Event Schedule</H1>
-      <H2>Week 1 / Sept 15th - 21st</H1>
+      <h2>Event Schedule</h2>
+      <h2>Week 1 / Sept 15th - 21st</h2>
     {% endif %}
     {% assign eventDayCategory = "event-" | append: dayNumber %}
     {% if site.categories[eventDayCategory].size > 0 %}
