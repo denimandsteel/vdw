@@ -94,7 +94,7 @@
     {% endif %}
     {% assign eventDayCategory = "event-" | append: dayNumber %}
     {% if site.categories[eventDayCategory].size > 0 %}
-      <div id="{{ eventDayCategory }}" class="day-events active">
+      <div id="{{ eventDayCategory }}" class="day-events">
         <div class="day-header">
           <h2 class="dayname">{{ site.categories[eventDayCategory][0].day }}</h2>
           <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
