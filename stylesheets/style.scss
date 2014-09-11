@@ -542,6 +542,28 @@ header {
   color: $lighter-gray;
 }
 
+.marker {
+  @extend %primary-type;
+  font-weight: bold;
+  width: 28px;
+  height: 38px;
+  margin-top: -38px;
+  color: white;
+  text-align: center;
+  background: url(../images/marker.svg) top left no-repeat;
+
+  span {
+    position: relative;
+    top: 5px;
+  }
+
+  &.info {
+    height: 28px;
+    margin-top: -28px;
+    background: url(../images/marker-info.svg)
+  }
+}
+
 // #event-sample {
 //   .event {
 //     width: 48%;
