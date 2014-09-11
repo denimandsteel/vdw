@@ -23,6 +23,7 @@ VDWEvent = Struct.new(
 
 def markdownPostForEvent(event, priority)
   puts event.inspect
+  dayNumber = event.day.strftime("%d")
   formattedDate = event.day.strftime("%A %d")
   formattedTime = event.start_time + (event.end_time.to_s == '' ? "" : " - " + event.end_time)
   isPublished = (event.published == 'YES')  
@@ -43,7 +44,7 @@ eventUrlLabel: #{event.event_url_label}
 published: #{isPublished}
 price: #{event.price}
 
-category: event
+category: event-#{dayNumber}
 priority: #{priority}
 ---
 "

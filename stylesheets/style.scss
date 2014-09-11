@@ -406,6 +406,10 @@ header {
 
 // #EVENT
 
+.events-list {
+  display: none;
+}
+
 .events {
   h1 span { background: $yellow; }
   .event {
@@ -429,11 +433,28 @@ header {
   }
 }
 
-.dayname {
-  color: white;
-  background: $navyblue;
+.day-header {
+  background: $lightblue;
+  color: $navyblue;
+  border-bottom: 1px solid $navyblue;
+  height: 60px;
   font-size: 20px;
-  padding: 10px 0px 10px 15px;
+  padding-top: 20px;
+  .dayname {
+    float: left;
+    padding-left: 15px;
+    margin: 0;
+  }  
+  .event-count {
+    float: right;
+    padding-right: 15px;
+    margin-bottom: 0;
+  }  
+}
+
+.day-header.active {
+  background: $navyblue;
+  color: white;
 }
 
 .event {
@@ -462,6 +483,7 @@ header {
   .right {
     float: right;
     display: block;
+    padding-top: 10;
 
     .highlight {
       background: $lightblue;

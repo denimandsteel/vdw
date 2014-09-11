@@ -10,6 +10,7 @@ id: events
   <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
   <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+  <script type="text/javascript" src="../javascript/jquery-2.1.1.min.js"></script>
   <style type="text/css">
   .map {
       width: 100%;
@@ -56,48 +57,65 @@ id: events
   var group = new L.featureGroup();
 </script>
 
-{% for priority in (1..50) %}
-  {% for post in site.categories.event %}
-    {% if post.priority == priority and post.published == true %}
-      {% capture currentdate %}{{post.date | date: "%A, %B %d, %Y"}}{% endcapture %}
-      {% if currentdate != thedate %}
-        <h2 class="dayname">{{ post.day }}</h2>
-
-        {% capture thedate %}{{currentdate}}{% endcapture %} 
-      {% endif %}
-
-      <div class="event">
-        <div class="eventheader">
-          <div class="left">
-            <h3 class="title">{{ post.title }}</h3>
-            
-            {% if post.endTime %}
-              <p class="time">{{ post.startTime }} - {{ post.endTime }}</p>
-            {% else %}
-              <p class="time">{{ post.startTime }}</p>
-            {% endif %}
-            <p class="addresslabel">at {{ post.addressLabel }}</p>
-          </div>
-          <div class="right">
-            <p class="price">{{ post.price }}</p>
-            <a target="_blank" href="{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
-          </div>
-        </div>
-
-        <div class="eventcontent">
-          <p class="description">{{ post.description }}</p>
-        </div>
+{% for dayNumber in (15..28) %}
+  {% assign eventDayCategory = "event-" | append: dayNumber %}
+  {% if site.categories[eventDayCategory].size > 0 %}
+    <div class="day-events" id="{{ eventDayCategory }}">
+      <div class="day-header">
+        <h2 class="dayname">{{ site.categories[eventDayCategory][0].day }}</h2>
+        <p class="event-count">{{site.categories[eventDayCategory].size}} Events [-]</p>
       </div>
-      <script type="text/javascript">
-      L.marker([{{ post.latitude }}, {{ post.longitude }}]).addTo(group);
-      </script>
-    {% endif %}
-  {% endfor %}
+      <div class="events-list">
+      {% for priority in (1..50) %}
+        {% for post in site.categories[eventDayCategory] %}
+          {% if post.priority == priority and post.published == true %}
+            <div class="event">
+              <div class="eventheader">
+                <div class="left">
+                  <h3 class="title">{{ post.title }}</h3>
+                  
+                  {% if post.endTime %}
+                    <p class="time">{{ post.startTime }} - {{ post.endTime }}</p>
+                  {% else %}
+                    <p class="time">{{ post.startTime }}</p>
+                  {% endif %}
+                  <p class="addresslabel">at {{ post.addressLabel }}</p>
+                </div>
+                <div class="right">
+                  <p class="price">{{ post.price }}</p>
+                  <a target="_blank" href="{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+                </div>
+              </div>
+
+              <div class="eventcontent">
+                <p class="description">{{ post.description }}</p>
+              </div>
+            </div>
+            <script type="text/javascript">
+            L.marker([{{ post.latitude }}, {{ post.longitude }}]).addTo(group);
+            </script>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </div> <!-- end of .events -->
+  {% endif %}
 {% endfor %}
+
 
 <script type="text/javascript">
 map.fitBounds(group.getBounds());
 group.addTo(map);
+
+$('.day-header').on('click', function(e) {
+  $(this).toggleClass('active');
+  $content = $(this).next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(500, function () {
+      //execute this after slideToggle is done
+      //change text of header based on visibility of content div
+    });
+  e.preventDefault();
+});
 </script>
 </body>
 

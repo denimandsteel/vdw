@@ -14,6 +14,6 @@ eventUrlLabel: Attend
 published: true
 price: Free
 
-category: event
+category: event-15
 priority: 2
 ---

@@ -14,6 +14,6 @@ eventUrlLabel: Attend
 published: true
 price: $10
 
-category: event
+category: event-16
 priority: 4
 ---

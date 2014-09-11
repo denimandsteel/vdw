@@ -433,6 +433,9 @@ header {
     #hero .mission .content p:last-of-type {
       margin-bottom: 1em; }
 
+.events-list {
+  display: none; }
+
 .events h1 span {
   background: #f1ed5d; }
 .events .event {
@@ -449,11 +452,25 @@ header {
   background: #f1ed5d;
   font-size: 18px; }
 
-.dayname {
-  color: white;
-  background: #4558a7;
+.day-header {
+  background: #eef9f8;
+  color: #4558a7;
+  border-bottom: 1px solid #4558a7;
+  height: 60px;
   font-size: 20px;
-  padding: 10px 0px 10px 15px; }
+  padding-top: 20px; }
+  .day-header .dayname {
+    float: left;
+    padding-left: 15px;
+    margin: 0; }
+  .day-header .event-count {
+    float: right;
+    padding-right: 15px;
+    margin-bottom: 0; }
+
+.day-header.active {
+  background: #4558a7;
+  color: white; }
 
 .event {
   border-bottom: 1px solid #4558a7; }
@@ -473,7 +490,8 @@ header {
       padding-left: 15px; }
   .eventheader .right {
     float: right;
-    display: block; }
+    display: block;
+    padding-top: 10; }
     .eventheader .right .highlight {
       background: #eef9f8;
       color: #4558a7;
