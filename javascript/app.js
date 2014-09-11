@@ -73,76 +73,32 @@ $('.day-header').on('click', function() {
   return false;
 });
 
-// // Let's make a bunch of maps!
-// // for (var date in vdwEvents) {
-//   // console.log(date);
-//   // if (vdwEvents.hasOwnProperty(date)) {
-    
-//     // var date = ;
-//     // var events = new L.featureGroup();
-//     // // for (var i = 0; i < vdwEvents[date].length; i++) {
-//     //   var vdwEvent = vdwEvents[date][0];
-//     //   var marker = new L.marker([vdwEvent.lat, vdwEvent.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + vdwEvent.priority + '</span>' }) });
-//     //   marker.addTo(events);
-//     //   var vdwEvent = vdwEvents[date][1];
-//     //   var marker = new L.marker([vdwEvent.lat, vdwEvent.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + vdwEvent.priority + '</span>' }) });
-//     //   marker.addTo(events);
-//     // // }
-    
-//     var map = new L.Map('map-event-15', {
-//       center: new L.LatLng(49.2, -123.1),
-//       zoom: 10,
-//       scrollWheelZoom: false,
-//       attributionControl: false,
-//       // layers: [
-//         // new L.StamenTileLayer('toner-lite', { detectRetina: true }),
-//         // infoStations,
-//         // events,
-//       // ],
-//     });
-//     map.addLayer(new L.StamenTileLayer('toner-lite', {
-//       detectRetina: true,
-//     }));
-//     var infoStations = new L.featureGroup();
-//     L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
-//     L.marker([49.3558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
-    
-//     infoStations.addTo(map);
-//     map.fitBounds(infoStations.getBounds());
-//   // }
-// // }
-
+// Let's make a bunch of maps!
 for (var date in vdwEvents) {
   if (vdwEvents.hasOwnProperty(date)) {
-    // Let's make a map!
     var map = new L.Map(date, {
       // center: new L.LatLng(37.8, -122.4),
       // zoom: 10,
       scrollWheelZoom: false,
       attributionControl: false,
+      // layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
+      layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
     });
-    map.addLayer(new L.StamenTileLayer('toner-lite', {
-      detectRetina: true,
-    }));
 
     // Event markers.
-    var group = new L.featureGroup();
-    group.addTo(map);
+    var events = new L.featureGroup();
     for (var i = 0; i < vdwEvents[date].length; i++) {
-      var vdwEvent = vdwEvents[date][i];
-      L.marker([vdwEvent.lat, vdwEvent.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + vdwEvent.priority + '</span>' }) }).addTo(group);
+      var event = vdwEvents[date][i];
+      L.marker([event.lat, event.long], { icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) }).addTo(events);
     }
-    map.fitBounds(group.getBounds());
+    events.addTo(map);
+    map.fitBounds(events.getBounds());
 
     // Info station markers.
     // var infoStations = new L.featureGroup();
-    // infoStations.addTo(map);
     // L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
-
-
+    // infoStations.addTo(map);
   }
 }
-
-
 
 });
