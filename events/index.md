@@ -6,12 +6,9 @@ id: events
 <head>
   <title>Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
   <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
-  <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
-  <script type="text/javascript" src="../javascript/jquery-2.1.1.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="../stylesheets/style.css?1">
 </head>
 <body>
@@ -34,13 +31,14 @@ id: events
     </div>
 -->
 
+<section>
 {% for dayNumber in (15..28) %}
   {% assign eventDayCategory = "event-" | append: dayNumber %}
   {% if site.categories[eventDayCategory].size > 0 %}
     <div class="day-events" id="{{ eventDayCategory }}">
       <div class="day-header">
         <h2 class="dayname">{{ site.categories[eventDayCategory][0].day }}</h2>
-        <p class="event-count">{{site.categories[eventDayCategory].size}} Events [-]</p>
+        <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
       </div>
       <div class="events-list">
         <div id="map-{{eventDayCategory}}" class="map"></div>
@@ -75,44 +73,16 @@ id: events
             {% endif %}
           {% endfor %}
         {% endfor %}
-      </div> <!-- end of .events -->
+      </div>
+    </div>
   {% endif %}
 {% endfor %}
+</section>
 
-<!--  -->
-<script type="text/javascript">
-  var map = new L.Map('map-event-15', {
-    center: new L.LatLng(37.8, -122.4),
-    zoom: 10,
-    scrollWheelZoom: false,
-  });
-  map.addLayer(new L.StamenTileLayer('toner-lite', {
-  // map.addLayer(new L.StamenTileLayer('toner', {
-    detectRetina: true
-  }));
-  var group = new L.featureGroup();
-
-  {% for post in site.categories.event-15 %}
-    L.marker([{{ post.latitude }}, {{ post.longitude }}]).addTo(group);
-  {% endfor %}
-
-  map.fitBounds(group.getBounds());
-  group.addTo(map);
-
-  // map.zoom = 10;
-
-
-  $('.day-header').on('click', function(e) {
-    $(this).toggleClass('active');
-    $content = $(this).next();
-    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $content.slideToggle(500, function () {
-      //execute this after slideToggle is done
-      //change text of header based on visibility of content div
-    });
-    e.preventDefault();
-  });
-</script>
+<script type="text/javascript" src="../javascript/third-party.js?1"></script>
+<script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+<script type="text/javascript" src="../javascript/app.js?1"></script>
 </body>
 
 </html>

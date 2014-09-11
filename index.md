@@ -1,4 +1,7 @@
-<!doctype html>
+---
+---
+
+<html>
 <head>
   <!--
 
@@ -22,6 +25,8 @@
   <meta property="og:description" content="For 14 days, Vancouver Design Week will turn the city into a petri dish of design process, practice, and perspectives; through a wide range of independent and collaborative programming. From talks to tours, exhibits to workshops, parties to pop-ups, design across disciplines will open its doors for conversations, installations and celebrations of all scales.">
   <meta property="og:url" content="http://vancouverdesignwk.com/">
   
+  <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css?1">
   
@@ -76,333 +81,51 @@
 
 <section id="event" class="events">
   <h1><span>Event Categories &ndash; Full Calendar Coming Soon</span></h1>
-  <div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/EXHIBITIONS.jpg);"></div>
-      <h2>Exhibitions</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/AWARDS.jpg);"></div>
-      <h2>Awards</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/VDW-SPECIAL.jpg);"></div>
-      <h2>VDW Special Editions</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/TALKS.jpg);"></div>
-      <h2>Talks</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/TOURS.jpg);"></div>
-      <h2>Tours</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/POP-UP.jpg);"></div>
-      <h2>Pop ups</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/Parties.jpg);"></div>
-      <h2>Parties</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/OPENSTUDIOS.jpg);"></div>
-      <h2>Open Studios</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/OpenBuildings.jpg);"></div>
-      <h2>Open Buildings</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/SAMPLINGS.JPG);"></div>
-      <h2>Samplings</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/WORKSHOPS.jpg);"></div>
-      <h2>Workshops/Jams</h2>
-    </div>
-    <div class="event">
-      <div class="image" style="background-image: url(images/event/WILDCARD.jpg);"></div>
-      <h2>Wildcards</h2>
-    </div>
-  </div>
-</section>
-
-<section id="event-sample" class="events">
-  <h1><span>Featured Events &ndash; Full Calendar Coming Soon</span></h1>
-  <div>
-    <div class="event">
-      <h2>MONDAY 15</h2>
-      <div class="content">
-           <h3>VANCOUVER URBAN DESIGN AWARDS</h3>
-          <p>This inaugural event recognizes and celebrates excellence in architecture and urban design in Vancouver.</p>
-           </div>
-      <a target="_blank" href="http://vancouver.ca/home-property-development/urban-design-awards.aspx" class="highlight">MORE INFO &rarr;</a>
-        
-              <div class="content">
-           <h3>SALA EXHIBIT - CONCEPTUALIZING THE TECHNICAL</h3>
-          <p>Studio work produced in a collaboration between the School of Architecture and Landscape Architecture and the UBC First Nations House of Learning. Projects explore the concept of &ldquo;Research Centre&rdquo; development in one of four institutional variants: centre, museum, archive, or memorial. Runs to September 19.</p>
-           </div>
-      <a target="_blank" href="http://www.aibc.ca/membersite/celebrating-architecture/aibc-gallery/" class="highlight">MORE INFO &rarr;</a>
-
-    </div>
-      
-    <div class="event">
-      <h2>TUESDAY 16</h2>
-      <div class=content>
-      <h3>P4A - PARTY FOR ARCHITECTS</h3>
-      <p>LECTURE/PARTY/DJ/BEER. P4A aims to provide an ongoing forum for Vancouver's architects + designers to get together. This special edition P4A for Vancouver Design Week will be bigger and better than ever.</p>
-          </div>
-      <a target="_blank" href="http://p4axvdw.eventbrite.com/?aff=vdw2014" class="highlight">MORE INFO &rarr;</a>
-        
-        <div class="content">
-           <h3>JAMES LANGDON - A SCHOOL FOR DESIGN FICTION</h3>
-          <p>Runs to Sept 18. The CAG is working with James Langdon to offer a three day workshop exploring narrative approaches to design, a series of connected exercises subjecting a collection of found materials to various manual and conceptual processes.</p>
-           </div>
-      <a target="_blank" href="https://www.facebook.com/pages/Contemporary-Art-Gallery-Vancouver/114252503695" class="highlight">MORE INFO &rarr;</a>  
-        
-        
-        <div class="content">
-           <h3>BRITEWEB WORKSHOP - DESIGN-THINKING YOUR NEXT BIG IDEA</h3>
-          <p>How do you create a product, service or solution that is innovative, and that everyone wants? The most creative and successful entrepreneurs and business leaders use design thinking. Taught by Marica Rizzo and Alexis Young, the workshop will also feature local experts to help you craft your solutions.</p>
-           </div>
-      <a target="_blank" href="https://www.eventbrite.com/e/design-thinking-your-next-big-idea-tickets-12585139491" class="highlight">MORE INFO &rarr;</a>  
-      
-
-        <div class=content>
-      <h3>RETHINKING TRANSPORTATION: THE NEW GENERATION</h3>
-      <p>Dr. Markus Moos of the University of Waterloo will speak about Millennials&rsquo; values, preferences and priorities. Their attitudes could affect your work, commute, home and community &mdash; now and in the future.</p>
-          </div>
-      <a target="_blank" href="http://cgi.sfu.ca/~hccweb/cgi-bin/OnlineRegistration/site/event/detail.php?id=904" class="highlight">MORE INFO &rarr;</a>
-      </div>
-      
-      
-      
-<div class="event">
-      <h2>WEDNESDAY 17</h2>
-      <div class="content">
-           <h3>ARCHITECTS' BLOCK PARTY @ HCMA</h3>
-          <p>With social sustainability in mind, HCMA threw their first Architects&rsquo; Block Party in 2013 to strengthen connections + build community in the industry. By inviting others to play in their sand box, they hope to break down real and perceived barriers to community building. Now they&rsquo;re opening their door even wider to fellow creatives as part of VDW. Join them on their rooftop patio overlooking Granville Island to see where the connections lie.</p>
-           </div>
-      <a target="_blank" href="http://www.eventbrite.com/e/architects-block-party-tickets-12748550257?aff=VDWWebsite" class="highlight">MORE INFO &rarr;</a>  
-    
-    <div class="content">
-           <h3>NERD JAM - THE CULTURE OF TRANSFORMATION</h3>
-          <p>JAM I / IDEA CHARRETTE + PROTOTYPE-MAKING: Part 1 of a two-phase Jam about how small interactive urban intervention designs can change our lives. The primary focus will be the endangerment of Vancouver&rsquo;s cultural spaces for creatives, and works that respond to the need for showcasing and sustaining spaces that provide us with content that can transform our lives.
-</p>
-           </div>
-      <a target="_blank" href="http://vancouver.designnerds.org" class="highlight">MORE INFO &rarr;</a>
-
-      <div class=content>
-      <h3>RETHINKING TRANSPORTATION: FUTURE LIVABILITY - BOAST OR BUST?</h3>
-      <p>Gil Penalosa will speak to the question of whether Metro Vancouver maintain its "Livability Credibility" for the next 30 years.</p>
-          </div>
-      <a target="_blank" href="http://cgi.sfu.ca/~hccweb/cgi-bin/OnlineRegistration/site/event/detail.php?id=903" class="highlight">MORE INFO &rarr;</a>
-      
-      <div class=content>
-      <h3>CASCADIA: THEN AND NOW</h3>
-      <p>Join us from 6-9pm for our September Social, a free event for socializing and hearing about our upcoming schedule and changes to the International Living Futures Institute.</p>
-          </div>
-      <a target="_blank" href="https://www.eventbrite.com/e/metro-vancouver-september-social-cascadia-then-and-now-tickets-12920079305" class="highlight">MORE INFO &rarr;</a>
-    
-    
-      </div>
-      
-    <div class="event">
-      <h2>THURSDAY 18</h2>
-      <div class="content">
-           <h3>PECHA KUCHA NIGHT / VOL 34 - SPECIAL VDW EDITION</h3>
-          <p>A diverse roster of local designers to speak about their experiences, philosophies, inspirations, stories or anything else that is in their head.</p>
-           </div>
-      <a target="_blank" href="http://www.pechakuchanightvancouver.com" class="highlight">MORE INFO &rarr;</a>
-    </div>
-      
-      <div class="event">
-      <h2>FRIDAY 19</h2>
-      <div class="content">
-           <h3>A JOURNEY INTO STORYTELLING: MOVE PEOPLE TO ACT</h3>
-          <p>Join corporate leaders and visionaries in a day-long session to uncover storytelling techniques that harness your passion and purpose. Make new connections to the leaders in the community, practice innovation tactics, and walk away with the story you&rsquo;ve been trying to tell.</p>
-           </div>
-      <a target="_blank" href="https://thnk.splashthat.com" class="highlight">MORE INFO &rarr;</a>
-      <div class="content">
-           <h3>STYLEGARAGE</h3>
-          <p>Exclusive presentation of rare archive materials from seminal Canadian architect Russell Spanner and launch of the authorized Spanner Originals line from Gus* Modern.</p>
-           </div>
-      <a target="_blank" href="http://www.stylegarage.com/" class="highlight">MORE INFO &rarr;</a>
-          
-          <div class="content">
-           <h3>CREATIVE MORNINGS / VANCOUVER - SPECIAL VDW EDITION</h3>
-          <p>What role does process have in creative endeavours? How does creativity inform process? A thought-provoking look at the common threads that tie together works such as Union Gospel, Bridge, Ought Apartment, The Western Front, and Good Bye Work. To follow with audience discussion about architecture and civic space.</p>
-           </div>
-      <a target="_blank" href="http://creativemornings.com/talks/reece-terris/" class="highlight">MORE INFO &rarr;</a>
-          
-          <div class="content">
-           <h3>A POP-UP AFFAIR PRESENTS: PEEP SHOW</h3>
-          <p>Through the concept of &lsquo;Transparency&rsquo;, Peep Show brings education, design rationale and the creative process to the surface as a way to question and provoke the current modes of consumption. Peep Show will be featuring and selling the work created by the collective members, and work by other creatives in the community.  Opening 7-11pm. Peep Show runs from Sept 19 to 28th.</p>
-           </div>
-      <a target="_blank" href="http://www.apopupaffair.com" class="highlight">MORE INFO &rarr;</a>
-          
-    </div>
-      <div class="event">
-      <h2>SATURDAY 20</h2>
-      <div class="content">
-           <h3>MODERN HOME TOURS</h3>
-          <p>Vancouver's most creative homeowners, architects, builders and designers open their doors for the first Vancouver Modern Home Tour.</p>
-           </div>
-      <a target="_blank" href="http://modernhometours.com/event/vancouver-modern-home-tour/" class="highlight">MORE INFO &rarr;</a>
-          
-          <div class="content">
-           <h3>GARDEN DIALOGUES</h3>
-          <p>The Cultural Landscape Foundation, in collaboration with the Vancouver Landscape Collective, brings a unique opportunity to experience beautiful exclusive works by Cornelia Oberlander, Paul Sangha and Hapa Collaborative. Runs to Sept 21.</p>
-           </div>
-      <a target="_blank" href="https://tclf.org/event/garden-dialogues-vancouver" class="highlight">MORE INFO &rarr;</a>
-          
-        <div class="content">
-           <h3>PLAYHOUSE</h3>
-          <p>A contemporary design inspired workshop for kids + parents to design, build and customize a space all in one sitting. Join us from 1-3pm in a workshop that draws directly from MAAStudio's design and Collage Collage lesson plans to make a dream space that only you + your child could imagine.</p>
-           </div>
-      <a target="_blank" href="http://shop.collagecollage.ca/products/play-house-a-design-and-craft-workshop-for-vancouver-design-week" class="highlight">MORE INFO &rarr;</a>
-          
-          <div class="content">
-           <h3>NERD JAM - THE CULTURE OF TRANSFORMATION II</h3>
-          <p>JAM 2 / PRODUCTION + INSTALL - Part two of a two-phase Jam about how small interactive urban intervention designs can change our lives.</p>
-           </div>
-      <a target="_blank" href="http://vancouver.designnerds.org" class="highlight">MORE INFO &rarr;</a>
-          
-    </div>
-      <div class="event">
-      <h2>SUNDAY 21</h2>
-        <div class="content">
-        <h3>OPEN BUILDINGS</h3>
-            <p>A walking tour of leading architecture at University of British Columbia. In partnership with the Society of Experiential Graphic Design (SEGD) and six prominent Vancouver architecture and design firms, this tour explores several notable arts, sciences, and sport facilities. A designer from each firm will be speaking about the design process, goals, and challenges of the site.</p>
+  {% for dayNumber in (15..28) %}
+    {% assign eventDayCategory = "event-" | append: dayNumber %}
+    {% if site.categories[eventDayCategory].size > 0 %}
+      <div class="day-events" id="{{ eventDayCategory }}">
+        <div class="day-header">
+          <h2 class="dayname">{{ site.categories[eventDayCategory][0].day }}</h2>
+          <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
         </div>
-    <a target="_blank" href="http://www.eventbrite.ca/e/vancouver-design-week-open-buildings-tickets-12980126909" class="highlight">MORE INFO &rarr;</a>
-          
-        <div class="content">
-        <h3>VANCOUVER URBAN BIKE TOUR</h3>
-            <p>Led by the former Senior Urban Designer for the City of Vancouver Scot Hein, this 2.5 hour tour will visit seminal completed developments that have contributed to Vancouver&rsaquo;s reputation as a &ldquo;laboratory for urbanism&rdquo;.</p>
+        <div class="events-list">
+          <div id="map-{{eventDayCategory}}" class="map"></div>
+          {% for priority in (1..50) %}
+            {% for post in site.categories[eventDayCategory] %}
+              {% if post.priority == priority and post.published == true %}
+                <div class="event">
+                  <div class="eventheader">
+                    <div class="left">
+                      <h3 class="title">{{ post.title }}</h3>
+                      
+                      {% if post.endTime %}
+                        <p class="time">{{ post.startTime }} - {{ post.endTime }}</p>
+                      {% else %}
+                        <p class="time">{{ post.startTime }}</p>
+                      {% endif %}
+                      <p class="addresslabel">at {{ post.addressLabel }}</p>
+                    </div>
+                    <div class="right">
+                      <p class="price">{{ post.price }}</p>
+                      <a target="_blank" href="{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+                    </div>
+                  </div>
+
+                  <div class="eventcontent">
+                    <p class="description">{{ post.description }}</p>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                <!-- mapObjects[day][] = {lat , lon, priority, event}; -->
+                </script>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
         </div>
-    <a target="_blank" href="https://www.eventbrite.ca/e/vdw-vancouver-urban-bike-tour-tickets-12947812255" class="highlight">MORE INFO &rarr;</a>
-        
-    <div class="content">
-    <h3>MONOGRAM DINNER BY DESIGN</h3>
-          <p>Internationally celebrated designers and local talent create three-dimension dining installations that awe, inspire and delight.</p>
-           </div>
-      <a target="_blank" href="http://dinnerxdesign.com" class="highlight">MORE INFO &rarr;</a>
-
-<div class="content">
-           <h3>MONOGRAM DINNER BY DESIGN COCKTAIL ART</h3>
-          <p>Designers and guests mingle during this dazzling display of amazing tablescapes, sampling gourmet treats paired with delicious Absolut Elyx craft cocktails, wine and beer. Special live entertainment, custom cocktail bars, and reverie.</p>
-           </div>
-      <a target="_blank" href="http://dinnerxdesign.com#cocktailart1" class="highlight">MORE INFO &rarr;</a>          
-          
-    </div>
-
-      <div class="event">
-      <h2>MONDAY 22</h2>
-       <div class="content">
-           <h3>MONOGRAM DINNER BY DESIGN PUBLIC VIEWING</h3>
-          <p>Design enthusiasts and fans of IDSwest have a singular opportunity to come and experience Monogram Dinner by Design, admire the tablescapes, spot their next personal inspiration and enjoy an inspiring atmosphere.</p>
-           </div>
-      <a target="_blank" href="http://dinnerxdesign.com/#publicviewing1" class="highlight">MORE INFO &rarr;</a>
-          
-      <div class="content">
-           <h3>MONOGRAM DINNER BY DESIGN GALA DINNER</h3>
-          <p>Cocktails are followed by an elegant seated VIP dinner for 150 guests with all drinks included. Each courses is perfectly paired by a wine and fine musical accompaniment.</p>
-           </div>
-      <a target="_blank" href="http://dinnerxdesign.com/#galadinner1" class="highlight">MORE INFO &rarr;</a>
-    </div>
-      
-    <div class="event">
-      <h2>TUESDAY 23</h2>
-
-      <div class="content">
-           <h3>DESIGN INDUSTRY SOCIAL</h3>
-          <p>A design week is a great excuse for design industry folks to socialize out of the office. The Society of Graphic Designers of Canada (GDC) invites designers, friends, and colleagues of all experience levels to connect and refresh at At Bitter Tasting Room from 6:30-10pm.</p>
-           </div>
-      <a target="_blank" href="" class="highlight">MORE INFO &rarr;</a>
-
-      
-        <div class="content">
-           <h3>FASHIONING CANCER</h3>
-          <p>A night supporting cancer prevention, featuring a live auction of fashion art.  Ten beautiful dresses (works of art!) will be auctioned off in support of cancer prevention research.  Canada&rsquo;s Queen of Punk, singer/songwriter and cancer survivor, Bif Naked, will perform a live set. </p>
-           </div>
-      <a target="_blank" href="http://www.alumni.ubc.ca/fashion" class="highlight">MORE INFO &rarr;</a>
-
-    </div>
-      
-      
-    <div class="event">
-      <h2>WEDNESDAY 24</h2>  
-        <div class="content">
-           <h3>BUILT CITY: FASHIONING PERFORMANCE</h3>
-          <p>The 2014/2015 Built City @MOV series kicks off with a talk that showcases the potential of design to effect significant change in personal and public space.</p>
-           </div>
-      <a target="_blank" href="http://www.museumofvancouver.ca/programs/calendar" class="highlight">MORE INFO &rarr;</a>
       </div>
-    <div class="event">
-      <h2>THURSDAY S-25</h2>
-      <div class="content">
-           <h3>IDSWEST LAUNCH PARTY</h3>
-          <p>IDSwest kicks off its 10th year with a design party on the exposition floor! Dress to impress and enjoy the sophisticated atmosphere while exploring the exhibits and features. Presented by Cosentino.</p>
-           </div>
-      <a target="_blank" href="http://idswest.com/highlights/the-party-on-opening-night/" class="highlight">MORE INFO &rarr;</a>
-        
-        <div class="content">
-           <h3>CREATIVE PULSE SHOWCASE AND INDUSTRY SOCIAL</h3>
-          <p>The 6th Creative Pulse event will showcase the work of talented local designers and artists. Hosted by Elevator Strategy, join us from 6:30-10:30pm for informal drinks with like-minded creatives, and leave inspired.</p>
-           </div>
-      <a target="_blank" href="http://creativepulse.eventbrite.com/" class="highlight">MORE INFO &rarr;</a>
-        
-    </div>
-    <div class="event">
-      <h2>FRIDAY 26</h2>
-      <div class="content">
-           <h3>TYPE BRIGADE SPECIAL VDW EDITION - TYPE WALK</h3>
-          <p>Join this workshop and walking tour led by Working Format and Vancouver Neon for an evening of exploration and conversation, delving into the history and craft of neon signage and sign-making in Vancouver's entertainment district.</p>
-           </div>
-      <a target="_blank" href="http://walk.typebrigade.com/" class="highlight">MORE INFO &rarr;</a>
-
-            <div class="content">
-           <h3>THE THNK GUIDE TO MAKING IDEAS HAPPEN WITH BREAKOUT SESSION AT IDSWEST</h3>
-          <p>Generating new ideas is easy, it&rsquo;s developing truly original breakthrough ideas that&rsquo;s hard. THNK co-founder Lee Feldman, former CCO at global digital design agency Blast Radius shares tried-and-true methods for overcoming common blockers, forming new connections and where to look for signs and weak signals in this hands-on and entertaining 90 minutes co-presented by Creative Mornings Vancouver.</p>
-           </div>
-      <a target="_blank" href="https://reg.conexsys.com/idsw14/tradeday" class="highlight">MORE INFO &rarr;</a>
-
-        
-    <div class="content">
-           <h3>COAST MODERN DOCUMENTARY SCREENING AT IDSWEST</h3>
-          <p>Coast Modern showcases the pioneers of West Coast Modernist Architecture and the homes that have become their legacies. The relaxed journey takes us across three generations of Modernist Architecture in the Pacific North West, followed by director Q&amp;A.</p>
-           </div>
-      <a target="_blank" href="http://idswest.com/event-info/speaker-schedule/" class="highlight">MORE INFO &rarr;</a>
-    </div>
-      
-    <div class="event">
-      <h2>SATURDAY 27</h2>
-        <div class="content">
-           <h3>SHOLTO DESIGN STUDIO FURNITURE LAUNCH PARTY</h3>
-          <p>An opportunity to celebrate the launch of The Emerald Collection at Sholto Design Studio (231 Union St.), a new line of locally designed and made furnitured. A design trade preview from 2-5pm will be followed by a public opening at 8pm.</p>
-           </div>
-      <a target="_blank" href="http://sholto.ca" class="highlight">MORE INFO &rarr;</a>  
-          
-    <div class="content">
-           <h3>IDSWEST/AMANDA FORREST ON THE LIVINGSPACE DESIGN STAGE</h3>
-          <p>Celebrity designer Amanda Forrest takes you on a tour of her recent travels to some of the most historical, inspirational and personality-filled cities in the south. Learn how to incorporate southern hospitality and charm into your home to create warm, inviting, and luxurious rooms that feel like they were curated over time.</p>
-   </div>
-      <a target="_blank" href="http://idswest.com/event-info/speaker-schedule/" class="highlight">MORE INFO &rarr;</a>
-        
-    </div>
-    <div class="event">
-      <h2>SUNDAY 28</h2>
-      <div class="content">
-           <h3>IDSWEST EXHIBITS</h3>
-          <p>Spend Sunday perusing 200+ unique and inspiring exhibits. Design aficionados will be inspired by luxurious furnishings, fixtures, décor and much more from around the world, and a wealth of emerging and established local talent.</p>
-           </div>
-      <a target="_blank" href="http://idswest.com/event-info/exhibitor-list/" class="highlight">MORE INFO &rarr;</a>
-    </div>
-    
-    
-    </div>
+    {% endif %}
+  {% endfor %}
 </section>
 
 <section id="team">
@@ -742,5 +465,7 @@
 </div>
 
 <script type="text/javascript" src="javascript/third-party.js?1"></script>
+<script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
 <script type="text/javascript" src="javascript/app.js?1"></script>
 </body>

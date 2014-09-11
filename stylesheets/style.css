@@ -40,9 +40,9 @@ body {
     -moz-transition: fill 1s ease-out;
     transition: fill 1s ease-out; }
   body.event, body.event-sample {
-    background: #f1ed5d; }
+    background: #eef9f8; }
     body.event svg path, body.event-sample svg path {
-      fill: #292825; }
+      fill: #4558a7; }
   body.team svg path {
     fill: #f4c5b5; }
   body.faq svg path {
@@ -144,79 +144,39 @@ cite {
 
 @-webkit-keyframes bump {
   0% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); }
+    -webkit-transform: translateY(0px); }
+
   50% {
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    transform: translateY(-5px); }
+    -webkit-transform: translateY(-5px); }
+
   100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); } }
+    -webkit-transform: translateY(0px); } }
 @-moz-keyframes bump {
   0% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); }
+    -moz-transform: translateY(0px); }
+
   50% {
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    transform: translateY(-5px); }
+    -moz-transform: translateY(-5px); }
+
   100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); } }
+    -moz-transform: translateY(0px); } }
 @-o-keyframes bump {
   0% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); }
+    -o-transform: translateY(0px); }
+
   50% {
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    transform: translateY(-5px); }
+    -o-transform: translateY(-5px); }
+
   100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-    transform: translateY(0px); } }
+    -o-transform: translateY(0px); } }
 @keyframes bump {
   0% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
     transform: translateY(0px); }
+
   50% {
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
     transform: translateY(-5px); }
+
   100% {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
     transform: translateY(0px); } }
 a.highlight, input.highlight {
   font-weight: bold;
@@ -253,24 +213,24 @@ input {
   input[type='submit'] {
     border: 0; }
 
-#hero .mission, .events .event, .members .member, .faqs, #about .box, #get-involved .column .box, #support-tiers .tier {
+#hero .mission, .members .member, .faqs, #about .box, #get-involved .column .box, #support-tiers .tier {
   background: #f2f9ff;
   color: black; }
-  #hero .mission img, .events .event img, .members .member img, .faqs img, #about .box img, #get-involved .column .box img, #support-tiers .tier img {
+  #hero .mission img, .members .member img, .faqs img, #about .box img, #get-involved .column .box img, #support-tiers .tier img {
     display: block;
     width: 100%;
     height: auto; }
-  #hero .mission .content, .events .event .content, .members .member .content, .faqs .content, #about .box .content, #get-involved .column .box .content, #support-tiers .tier .content {
+  #hero .mission .content, .members .member .content, .faqs .content, #about .box .content, #get-involved .column .box .content, #support-tiers .tier .content {
     padding: 7px 10px; }
-    #hero .mission .content h2:first-of-type, .events .event .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type {
+    #hero .mission .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type {
       margin-top: 0; }
-    #hero .mission .content p, .events .event .content p, .members .member .content p, .faqs .content p, #about .box .content p, #get-involved .column .box .content p, #support-tiers .tier .content p {
+    #hero .mission .content p, .members .member .content p, .faqs .content p, #about .box .content p, #get-involved .column .box .content p, #support-tiers .tier .content p {
       text-transform: none; }
-      #hero .mission .content p:first-child, .events .event .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child {
+      #hero .mission .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child {
         margin-top: 0; }
-      #hero .mission .content p:last-of-type, .events .event .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
+      #hero .mission .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
         margin-bottom: 0; }
-  #hero .mission .highlight, .events .event .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
+  #hero .mission .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
     display: block;
     width: 100%;
     text-align: center; }
@@ -414,8 +374,8 @@ header {
       #hero h1 {
         display: block;
         float: left;
-        margin-right: 2.35765%;
-        width: 31.76157%;
+        margin-right: 7.42297%;
+        width: 100%;
         margin-left: 0%;
         font-size: 18px; }
         #hero h1:last-child {
@@ -434,23 +394,20 @@ header {
       margin-bottom: 1em; }
 
 .events-list {
+  height: 0;
+  overflow: hidden; }
+
+.day-events.active .events-list {
+  height: auto; }
+
+.day-events.active .event-count .indicator.plus {
   display: none; }
 
-.events h1 span {
-  background: #f1ed5d; }
-.events .event {
-  margin-bottom: 17px; }
-.events .image {
-  background-size: cover;
-  background-position: center center;
-  height: 200px;
-  width: 100%; }
-.events h2 {
-  padding: 4px 5px 0;
-  margin: 0;
-  color: black;
-  background: #f1ed5d;
-  font-size: 18px; }
+.event-count .indicator.minus {
+  display: none; }
+
+.day-events.active .event-count .indicator.minus {
+  display: inline; }
 
 .day-header {
   background: #eef9f8;
@@ -468,7 +425,7 @@ header {
     padding-right: 15px;
     margin-bottom: 0; }
 
-.day-header.active {
+.day-events.active .day-header {
   background: #4558a7;
   color: white; }
 
@@ -528,39 +485,6 @@ header {
   padding: 15px;
   color: #7d7d7d; }
 
-#event-sample .event {
-  width: 48%;
-  height: auto;
-  margin: 1%; }
-  @media screen and (max-width: 480px) {
-    #event-sample .event {
-      width: 100%;
-      margin: 0; } }
-
-#event .event {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  #event .event:last-child {
-    margin-right: 0; }
-  #event .event:nth-child(4n) {
-    margin-right: 0; }
-  #event .event:nth-child(4n+1) {
-    clear: left; }
-  @media screen and (max-width: 768px) {
-    #event .event {
-      display: block;
-      float: left;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      #event .event:last-child {
-        margin-right: 0; }
-      #event .event:nth-child(2n) {
-        margin-right: 0; }
-      #event .event:nth-child(2n+1) {
-        clear: left; } }
-
 .members {
   display: block;
   float: left;
@@ -572,8 +496,8 @@ header {
     .members {
       display: block;
       float: left;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
+      margin-right: 3.57866%;
+      width: 100%; }
       .members:last-child {
         margin-right: 0; } }
   .members .member {
@@ -599,8 +523,8 @@ header {
     .faqs {
       display: block;
       float: left;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
+      margin-right: 7.42297%;
+      width: 100%; }
       .faqs:last-child {
         margin-right: 0; } }
 
@@ -616,8 +540,8 @@ header {
     #about .box {
       display: block;
       float: left;
-      margin-right: 2.35765%;
-      width: 31.76157%;
+      margin-right: 7.42297%;
+      width: 100%;
       margin-bottom: 17px; }
       #about .box:last-child {
         margin-right: 0; } }
@@ -638,8 +562,8 @@ header {
     #get-involved .column {
       display: block;
       float: left;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
+      margin-right: 3.57866%;
+      width: 100%; }
       #get-involved .column:last-child {
         margin-right: 0; } }
   #get-involved .column .box {
@@ -667,8 +591,8 @@ header {
     #support-tiers .tier {
       display: block;
       float: left;
-      margin-right: 2.35765%;
-      width: 65.88078%;
+      margin-right: 3.57866%;
+      width: 100%;
       min-height: 0;
       margin-bottom: 17px; }
       #support-tiers .tier:last-child {
@@ -801,5 +725,3 @@ footer {
         background-image: url(../images/twitter.svg); }
       footer .social span.instagram {
         background-image: url(../images/instagram.svg); }
-
-/*# sourceMappingURL=style.css.map */

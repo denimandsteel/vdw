@@ -53,8 +53,8 @@ body {
   //   svg path { fill: #00ab77; } // Green
   // }
   &.event, &.event-sample {
-    background: $yellow;
-    svg path { fill: #292825; } // Soft Black
+    background: $lightblue;
+    svg path { fill: $navyblue; } // Soft Black
   }
   &.team {
     svg path { fill: #f4c5b5; } // Peach
@@ -407,31 +407,41 @@ header {
 // #EVENT
 
 .events-list {
-  display: none;
+  // display: none;
+  height: 0;
+  overflow: hidden;
+  // transition: max-height 1s ease-out;
 }
 
-.events {
-  h1 span { background: $yellow; }
-  .event {
-    @extend %cream-box;
-    margin-bottom: $vertical-grid-gutter;
-  }
-  .image {
-    background-size: cover;
-    background-position: center center;
-    height: 200px;
-    width: 100%;
-  }
-  h2 {
-    // position: absolute;
-    // bottom: 0;
-    padding: 4px 5px 0;
-    margin: 0;
-    color: black;
-    background: $yellow;
-    font-size: 18px;
-  }
-}
+.day-events.active .events-list { height: auto; }
+.day-events.active .event-count .indicator.plus { display: none; }
+
+.event-count .indicator.minus { display: none; }
+.day-events.active .event-count .indicator.minus { display: inline; }
+
+
+// .events {
+//   h1 span { background: $yellow; }
+//   .event {
+//     @extend %cream-box;
+//     margin-bottom: $vertical-grid-gutter;
+//   }
+//   .image {
+//     background-size: cover;
+//     background-position: center center;
+//     height: 200px;
+//     width: 100%;
+//   }
+//   h2 {
+//     // position: absolute;
+//     // bottom: 0;
+//     padding: 4px 5px 0;
+//     margin: 0;
+//     color: black;
+//     background: $yellow;
+//     font-size: 18px;
+//   }
+// }
 
 .day-header {
   background: $lightblue;
@@ -452,7 +462,7 @@ header {
   }  
 }
 
-.day-header.active {
+.day-events.active .day-header {
   background: $navyblue;
   color: white;
 }
@@ -532,31 +542,31 @@ header {
   color: $lighter-gray;
 }
 
-#event-sample {
-  .event {
-    width: 48%;
-    height: auto;
-    margin: 1%;
-    @include media($tablet) {
-      // margin: 0;
-    }
-    @include media($mobile) {
-      width: 100%;
-      margin: 0;
-    }
-  }
-}
+// #event-sample {
+//   .event {
+//     width: 48%;
+//     height: auto;
+//     margin: 1%;
+//     @include media($tablet) {
+//       // margin: 0;
+//     }
+//     @include media($mobile) {
+//       width: 100%;
+//       margin: 0;
+//     }
+//   }
+// }
 
-#event {
-  .event {
-    @include span-columns(3);
-    @include omega(4n);
-    @include media($tablet) {
-      @include span-columns(4);
-      @include omega(2n);
-    }
-  }
-}
+// #event {
+//   .event {
+//     @include span-columns(3);
+//     @include omega(4n);
+//     @include media($tablet) {
+//       @include span-columns(4);
+//       @include omega(2n);
+//     }
+//   }
+// }
 
 // .days {
   // @include display-box;
