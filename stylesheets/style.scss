@@ -457,6 +457,12 @@ header {
   color: white;
 }
 
+.map {
+  width: 100%;
+  height: 320px;
+  margin: 0 0 1em 0;
+}
+
 .event {
   border-bottom: 1px solid $navyblue;
 }
