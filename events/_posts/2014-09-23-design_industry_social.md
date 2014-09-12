@@ -2,7 +2,7 @@
 dayOfWeek: Tue
 dayOfMonth: Sept 23
 title: "DESIGN INDUSTRY SOCIAL"
-description: "A design week is a great excuse for design industry folks to socialize out of the office. The Society of Graphic Designers of Canada (GDC) invites designers, friends, and colleagues of all experience levels to connect and refresh at At Bitter Tasting Room from 6:30-10pm."
+description: "A design week is a great excuse for design industry folks to socialize out of the office. The Society of Graphic Designers of Canada (GDC) invites designers, friends, and colleagues of all experience levels to connect."
 startTime: 6:30 PM
 endTime: 10:00 PM
 type: Party

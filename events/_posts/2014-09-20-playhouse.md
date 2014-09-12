@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "PLAYHOUSE"
-description: "A contemporary design inspired workshop for kids + parents to design, build and customize a space all in one sitting. Join us for a 2 hour workshop that draws directly from MAAStudio's design and Collage Collage lesson plans to make a dream space that only you + your child could imagine. Participants will be lead through a workshop that allows families to work together on a building a space. A treehouse? A school? A living room in space? Choose from unique materials and get building in surroundings made to inspire. With special guest Denise Liu from Edison&Sprinkles and a special landscape installation by Kermodi Design in the courtyard!"
+description: "A contemporary design inspired workshop for kids + parents to design, build and customize a space all in one sitting. Join us in a workshop that draws directly from MAAStudio's design and Collage Collage lesson plans to make a dream space that only you + your child could imagine."
 startTime: 1:00 PM
 endTime: 3:00 PM
 type: Workshop

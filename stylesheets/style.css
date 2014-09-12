@@ -144,39 +144,79 @@ cite {
 
 @-webkit-keyframes bump {
   0% {
-    -webkit-transform: translateY(0px); }
-
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); }
   50% {
-    -webkit-transform: translateY(-5px); }
-
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px); }
   100% {
-    -webkit-transform: translateY(0px); } }
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); } }
 @-moz-keyframes bump {
   0% {
-    -moz-transform: translateY(0px); }
-
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); }
   50% {
-    -moz-transform: translateY(-5px); }
-
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px); }
   100% {
-    -moz-transform: translateY(0px); } }
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); } }
 @-o-keyframes bump {
   0% {
-    -o-transform: translateY(0px); }
-
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); }
   50% {
-    -o-transform: translateY(-5px); }
-
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px); }
   100% {
-    -o-transform: translateY(0px); } }
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); } }
 @keyframes bump {
   0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px); }
-
   50% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
     transform: translateY(-5px); }
-
   100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px); } }
 a.highlight, input.highlight {
   font-weight: bold;
@@ -401,8 +441,8 @@ header {
         margin-bottom: 0px;
         display: block;
         float: left;
-        margin-right: 3.57866%;
-        width: 87.05267%;
+        margin-right: 2.35765%;
+        width: 57.35098%;
         margin-left: 0%; }
         #hero h1:last-child {
           margin-right: 0; } }
@@ -410,8 +450,8 @@ header {
       #hero h1 {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%;
+        margin-right: 2.35765%;
+        width: 31.76157%;
         margin-left: 0%;
         font-size: 18px;
         line-height: 20px; }
@@ -501,6 +541,14 @@ header {
     @media screen and (max-width: 480px) {
       .eventheader .left {
         float: none; } }
+    .eventheader .left .marker {
+      display: inline-block;
+      float: left;
+      margin: 0px;
+      padding: 0px 10px 10px 10px;
+      box-sizing: content-box;
+      margin-top: 15px;
+      background: url(../images/marker.svg) top center no-repeat; }
     .eventheader .left .title {
       margin-bottom: 0;
       padding-left: 15px;
@@ -574,47 +622,114 @@ header {
 @-webkit-keyframes bobbing {
   0% {
     -webkit-transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out; }
-
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
   40% {
     -webkit-transform: translateY(-0.25em);
-    -webkit-animation-timing-function: ease-in-out; }
-
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -o-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
   80% {
     -webkit-transform: translateY(0.1em);
-    -webkit-animation-timing-function: ease-in; } }
+    -moz-transform: translateY(0.1em);
+    -ms-transform: translateY(0.1em);
+    -o-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
 @-moz-keyframes bobbing {
   0% {
+    -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
-    -moz-animation-timing-function: ease-out; }
-
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
   40% {
+    -webkit-transform: translateY(-0.25em);
     -moz-transform: translateY(-0.25em);
-    -moz-animation-timing-function: ease-in-out; }
-
+    -ms-transform: translateY(-0.25em);
+    -o-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
   80% {
+    -webkit-transform: translateY(0.1em);
     -moz-transform: translateY(0.1em);
-    -moz-animation-timing-function: ease-in; } }
+    -ms-transform: translateY(0.1em);
+    -o-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
 @-o-keyframes bobbing {
   0% {
-    -o-transform: translateY(0px); }
-
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
   40% {
-    -o-transform: translateY(-0.25em); }
-
+    -webkit-transform: translateY(-0.25em);
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -o-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
   80% {
-    -o-transform: translateY(0.1em); } }
+    -webkit-transform: translateY(0.1em);
+    -moz-transform: translateY(0.1em);
+    -ms-transform: translateY(0.1em);
+    -o-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
 @keyframes bobbing {
   0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
-
   40% {
+    -webkit-transform: translateY(-0.25em);
+    -moz-transform: translateY(-0.25em);
+    -ms-transform: translateY(-0.25em);
+    -o-transform: translateY(-0.25em);
     transform: translateY(-0.25em);
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out; }
-
   80% {
+    -webkit-transform: translateY(0.1em);
+    -moz-transform: translateY(0.1em);
+    -ms-transform: translateY(0.1em);
+    -o-transform: translateY(0.1em);
     transform: translateY(0.1em);
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 .marker {
   font-weight: bold;
@@ -645,8 +760,8 @@ header {
     .members {
       display: block;
       float: left;
-      margin-right: 3.57866%;
-      width: 100%; }
+      margin-right: 2.35765%;
+      width: 65.88078%; }
       .members:last-child {
         margin-right: 0; } }
   .members .member {
@@ -672,8 +787,8 @@ header {
     .faqs {
       display: block;
       float: left;
-      margin-right: 7.42297%;
-      width: 100%; }
+      margin-right: 2.35765%;
+      width: 31.76157%; }
       .faqs:last-child {
         margin-right: 0; } }
 
@@ -689,8 +804,8 @@ header {
     #about .box {
       display: block;
       float: left;
-      margin-right: 7.42297%;
-      width: 100%;
+      margin-right: 2.35765%;
+      width: 31.76157%;
       margin-bottom: 17px; }
       #about .box:last-child {
         margin-right: 0; } }
@@ -719,8 +834,8 @@ header {
     #quotes .video {
       display: block;
       float: left;
-      margin-right: 7.42297%;
-      width: 100%;
+      margin-right: 2.35765%;
+      width: 31.76157%;
       margin-bottom: 17px; }
       #quotes .video:last-child {
         margin-right: 0; } }
@@ -736,8 +851,8 @@ header {
     #get-involved .column {
       display: block;
       float: left;
-      margin-right: 3.57866%;
-      width: 100%; }
+      margin-right: 2.35765%;
+      width: 65.88078%; }
       #get-involved .column:last-child {
         margin-right: 0; } }
   #get-involved .column .box {
@@ -765,8 +880,8 @@ header {
     #support-tiers .tier {
       display: block;
       float: left;
-      margin-right: 3.57866%;
-      width: 100%;
+      margin-right: 2.35765%;
+      width: 65.88078%;
       min-height: 0;
       margin-bottom: 17px; }
       #support-tiers .tier:last-child {
@@ -899,3 +1014,5 @@ footer {
         background-image: url(../images/twitter.svg); }
       footer .social span.instagram {
         background-image: url(../images/instagram.svg); }
+
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ dayOfMonth: Sept 27
 title: "IDSWEST/ AMANDA FORREST ON THE LIVINGSPACE DESIGN STAGE"
 description: "Celebrity designer Amanda Forrest takes you on a tour of her recent travels to some of the most historical, inspirational and personality-filled cities in the south. Learn how to incorporate southern hospitality and charm into your home to create warm, inviting, and luxurious rooms that feel like they were curated over time."
 startTime: 3:00 PM
-endTime: 
+endTime: 5:00 PM
 type: Talk
 address: "Vancouver Convention Centre West 1055 Canada Place Vancouver, BC"
 addressLabel: Vancouver Convention Centre West – Exhibit Halls B2, B3 & C

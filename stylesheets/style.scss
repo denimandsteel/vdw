@@ -530,6 +530,16 @@ header {
       float: none;
     }
 
+    .marker {
+      display: inline-block;
+      float: left;
+      margin: 0px;
+      padding: 0px 10px 10px 10px;
+      box-sizing: content-box;
+      margin-top: 15px;
+      background: url(../images/marker.svg) top center no-repeat;
+    }
+
     .title {
       margin-bottom: 0;
       padding-left: 15px;

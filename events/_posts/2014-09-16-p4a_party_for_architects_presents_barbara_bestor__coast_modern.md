@@ -2,7 +2,7 @@
 dayOfWeek: Tue
 dayOfMonth: Sept 16
 title: "P4A (PARTY FOR ARCHITECTS) PRESENTS BARBARA BESTOR & COAST MODERN"
-description: "LECTURE /PARTY / DJ / BEER.  Party For Architects (P4A) is a collective bringing together architects and designers of all spectrums since 2009 to celebrate design in Vancouver.     This launch party for Vancouver Design Week features Barbara Bestor of Bestor Architecture from Los Angeles and Vancouverite Gavin Froome, co-director of \"Coast Modern\" a film documenting west coast modernist architecture from LA to Vancouver.  Come join us for an evening of conversation and mingling over drinks and music by DJ Llooped."
+description: "LECTURE /PARTY / DJ / BEER.  P4A aims to provide an ongoing forum for Vancouver's architects + designers to get together. This special edition P4A for Vancouver Design Week will be bigger and better than ever."
 startTime: 7:00 PM
 endTime: 11:00 PM
 type: Talk

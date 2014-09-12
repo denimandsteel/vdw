@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Fri
 dayOfMonth: Sept 19
-title: "THNK - A JOURNEY INTO STORYTELLING: MOVE PEOPLE TO ACT"
+title: "THNK - A JOURNEY INTO STORYTELLING"
 description: "Join corporate leaders and visionaries in a day-long session to uncover storytelling techniques that harness your passion and purpose. Make new connections to the leaders in the community, practice innovation tactics, and walk away with the story you’ve been trying to tell."
 startTime: 11:00 AM
 endTime: 5:00 PM
@@ -17,5 +17,5 @@ price: $185
 
 category: event-19
 priority: 2
-slug: 2014-09-19-thnk__a_journey_into_storytelling_move_people_to_act
+slug: 2014-09-19-thnk__a_journey_into_storytelling
 ---
