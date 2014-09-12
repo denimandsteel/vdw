@@ -579,7 +579,7 @@ header {
       color: $navyblue;
       width: 140px;
       height: 40px;
-      margin-top: 15px;
+      margin-top: 8px;
       margin-right: 15px;
       text-align: center;
       float: left;
@@ -594,7 +594,7 @@ header {
       font-weight: bold;
       float: left;
       margin-right: 20px;
-      margin-top: 25px;
+      margin-top: 18px;
       color: $lighter-gray;
       @include media($mobile) {
         padding-left: 10px;
@@ -635,6 +635,10 @@ header {
     font-weight: bold;
     color: $navyblue;
   }
+}
+
+.event .description {
+  margin-top: 0px;
 }
 
 .event .time-and-place { margin-top: 0; }

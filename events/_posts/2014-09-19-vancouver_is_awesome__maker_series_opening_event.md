@@ -2,7 +2,7 @@
 dayOfWeek: Fri
 dayOfMonth: Sept 19
 title: "VANCOUVER IS AWESOME - MAKER SERIES OPENING EVENT"
-description: "Vancouver is Awesome teams up with MakerLabs to feature the design processes of several emerging local designers.A Pop Up Affair Presents: Peep Show. Join us for this exciting social event, get a first look at the exhibit and meet Vancouver’s emerging designers."
+description: "Vancouver is Awesome teams up with MakerLabs to feature the design processes of several emerging local designers.A Pop Up Affair Presents: Peep Show. Join us for this exciting social event, get a first look at the exhibit and meet Vancouver's emerging designers."
 startTime: 
 endTime: 
 type: Exhibit

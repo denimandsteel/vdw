@@ -99,7 +99,7 @@ for (var date in vdwEvents) {
       layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
     });
     
-    var oms = new OverlappingMarkerSpiderfier(map);
+    var oms = new OverlappingMarkerSpiderfier(map, {nearbyDistance: 1});
     var popup = new L.Popup();
     oms.addListener('mouseover', function(marker) {
       if (marker.originalEvent) {

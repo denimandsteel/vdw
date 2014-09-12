@@ -2,7 +2,7 @@
 dayOfWeek: Wed
 dayOfMonth: Sept 17
 title: "NERD JAM: THE CULTURE OF TRANSFORMATION - PART I"
-description: "JAM I / IDEA CHARRETTE + PROTOTYPE-MAKING: Part 1 of a two-phase Jam about how small interactive urban intervention designs can change our lives. The primary focus will be the endangerment of Vancouver’s cultural spaces for creatives, and works that respond to the need for showcasing and sustaining spaces that provide us with content that can transform our lives."
+description: "JAM I / IDEA CHARRETTE + PROTOTYPE-MAKING: Part 1 of a two-phase Jam about how small interactive urban intervention designs can change our lives. The primary focus will be the endangerment of Vancouver's cultural spaces for creatives, and works that respond to the need for showcasing and sustaining spaces that provide us with content that can transform our lives."
 startTime: 6:00 PM
 endTime: 
 type: Jam

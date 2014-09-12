@@ -7,7 +7,7 @@ startTime: 3:00 PM
 endTime: 5:00 PM
 type: Talk
 address: "Vancouver Convention Centre West 1055 Canada Place Vancouver, BC"
-addressLabel: Vancouver Convention Centre West – Exhibit Halls B2, B3 & C
+addressLabel: Vancouver Convention Centre West - Exhibit Halls B2, B3 & C
 latitude: 49.28915929999999
 longitude: -123.1163347
 eventUrl: http://idswest.com/event-info/speaker-schedule/

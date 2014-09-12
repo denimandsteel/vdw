@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Wed
 dayOfMonth: Sept 24
-title: "BUILT CITY: “FASHIONING PERFORMANCE”"
+title: "BUILT CITY: \"FASHIONING PERFORMANCE\""
 description: "The 2014/2015 Built City @MOV series kicks off with a talk that showcases the potential of design to effect significant change in personal and public space."
 startTime: 7:00 PM
 endTime: 11:30 PM

@@ -2,7 +2,7 @@
 dayOfWeek: Fri
 dayOfMonth: Sept 19
 title: "THNK - A JOURNEY INTO STORYTELLING"
-description: "Join corporate leaders and visionaries in a day-long session to uncover storytelling techniques that harness your passion and purpose. Make new connections to the leaders in the community, practice innovation tactics, and walk away with the story you’ve been trying to tell."
+description: "Join corporate leaders and visionaries in a day-long session to uncover storytelling techniques that harness your passion and purpose. Make new connections to the leaders in the community, practice innovation tactics, and walk away with the story you've been trying to tell."
 startTime: 11:00 AM
 endTime: 5:00 PM
 type: Workshop

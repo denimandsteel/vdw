@@ -2,7 +2,7 @@
 dayOfWeek: Tue
 dayOfMonth: Sept 23
 title: "FASHIONING CANCER FUNDRAISER"
-description: "A night supporting cancer prevention, featuring a live auction of fashion art. Ten beautiful dresses (works of art!) will be auctioned off in support of cancer prevention research. Canada’s Queen of Punk, singer/songwriter and cancer survivor, Bif Naked, will perform a live set."
+description: "A night supporting cancer prevention, featuring a live auction of fashion art. Ten beautiful dresses (works of art!) will be auctioned off in support of cancer prevention research. Canada's Queen of Punk, singer/songwriter and cancer survivor, Bif Naked, will perform a live set."
 startTime: 6:30 PM
 endTime: 9:00 PM
 type: Exhibit
