@@ -80,7 +80,7 @@ body {
 }
 
 .background {
-  z-index: -3;
+  z-index: -4;
   position: absolute;
   width: 100%;
   height: auto;
@@ -265,7 +265,7 @@ input {
   left: -35px;
   &.fixed {
     position: fixed;
-    z-index: -2;
+    z-index: -3;
   }
 
   @include media($tablet) {
@@ -291,7 +291,7 @@ header {
   top: 0; left: 0;
   padding: 0px 0px 0px 20px;
   line-height: $line-height;
-  z-index: 2;
+  z-index: 1001; // Leaflet controls are 1000.
   @include media(max-width 570px) { display: none; }
   h1 {
     @extend %primary-type;
@@ -790,6 +790,19 @@ header {
 #quotes {
   .after { margin-bottom: 25px; }
   .content { padding: 0 10px; }
+  .videos {
+    @include clearfix;
+    margin-top: 40px;
+  }
+  .video {
+    @extend %cream-box;
+    @include span-columns(4);
+    text-decoration: none;
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-bottom: $vertical-grid-gutter;
+    }
+  }
 }
 
 // #GET-INVOLVED

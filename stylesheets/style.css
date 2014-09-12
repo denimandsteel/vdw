@@ -59,7 +59,7 @@ body {
     fill: #D6D3C5; }
 
 .background {
-  z-index: -3;
+  z-index: -4;
   position: absolute;
   width: 100%;
   height: auto;
@@ -213,24 +213,24 @@ input {
   input[type='submit'] {
     border: 0; }
 
-#mission .section, .members .member, .faqs, #about .box, #get-involved .column .box, #support-tiers .tier {
+#mission .section, .members .member, .faqs, #about .box, #quotes .video, #get-involved .column .box, #support-tiers .tier {
   background: #f2f9ff;
   color: black; }
-  #mission .section img, .members .member img, .faqs img, #about .box img, #get-involved .column .box img, #support-tiers .tier img {
+  #mission .section img, .members .member img, .faqs img, #about .box img, #quotes .video img, #get-involved .column .box img, #support-tiers .tier img {
     display: block;
     width: 100%;
     height: auto; }
-  #mission .section .content, .members .member .content, .faqs .content, #about .box .content, #get-involved .column .box .content, #support-tiers .tier .content {
+  #mission .section .content, .members .member .content, .faqs .content, #about .box .content, #quotes .video .content, #get-involved .column .box .content, #support-tiers .tier .content {
     padding: 7px 10px; }
-    #mission .section .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type {
+    #mission .section .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #quotes .video .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type {
       margin-top: 0; }
-    #mission .section .content p, .members .member .content p, .faqs .content p, #about .box .content p, #get-involved .column .box .content p, #support-tiers .tier .content p {
+    #mission .section .content p, .members .member .content p, .faqs .content p, #about .box .content p, #quotes .video .content p, #get-involved .column .box .content p, #support-tiers .tier .content p {
       text-transform: none; }
-      #mission .section .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child {
+      #mission .section .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #quotes .video .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child {
         margin-top: 0; }
-      #mission .section .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
+      #mission .section .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #quotes .video .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
         margin-bottom: 0; }
-  #mission .section .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
+  #mission .section .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #quotes .video .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
     display: block;
     width: 100%;
     text-align: center; }
@@ -246,7 +246,7 @@ input {
   left: -35px; }
   .logo.fixed {
     position: fixed;
-    z-index: -2; }
+    z-index: -3; }
   @media screen and (max-width: 768px) {
     .logo.fixed {
       display: none; } }
@@ -265,7 +265,7 @@ header {
   left: 0;
   padding: 0px 0px 0px 20px;
   line-height: 16px;
-  z-index: 2; }
+  z-index: 1001; }
   @media screen and (max-width: 570px) {
     header {
       display: none; } }
@@ -699,6 +699,31 @@ header {
   margin-bottom: 25px; }
 #quotes .content {
   padding: 0 10px; }
+#quotes .videos {
+  *zoom: 1;
+  margin-top: 40px; }
+  #quotes .videos:before, #quotes .videos:after {
+    content: " ";
+    display: table; }
+  #quotes .videos:after {
+    clear: both; }
+#quotes .video {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  text-decoration: none; }
+  #quotes .video:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    #quotes .video {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-bottom: 17px; }
+      #quotes .video:last-child {
+        margin-right: 0; } }
 
 #get-involved .column {
   display: block;
