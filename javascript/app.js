@@ -119,6 +119,7 @@ for (var date in vdwEvents) {
     });
     events.addTo(map);
     map.fitBounds(events.getBounds());
+    map.setZoom(13);
 
     // Info station markers.
     // var infoStations = new L.featureGroup();
