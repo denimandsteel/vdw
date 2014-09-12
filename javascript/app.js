@@ -98,6 +98,28 @@ for (var date in vdwEvents) {
       // layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
       layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
     });
+    
+    var oms = new OverlappingMarkerSpiderfier(map);
+    var popup = new L.Popup();
+    oms.addListener('mouseover', function(marker) {
+      if (marker.originalEvent) {
+        $(marker.originalEvent.target).addClass('active');
+      }
+    });
+    oms.addListener('mouseout', function() {
+      if (marker.originalEvent) {
+        $(marker.originalEvent.target).removeClass('active');
+      }
+    });
+
+    vdwEvents[date].forEach(function(event1, i) {
+      vdwEvents[date].forEach(function(event2, j) {
+        if (i != j && event1.lat === event2.lat && event1.long === event2.long) {
+          event1.lat += .0003;
+          event1.long += .0003;
+        };
+      });    
+    });
 
     // Event markers.
     var events = new L.featureGroup();
@@ -116,10 +138,13 @@ for (var date in vdwEvents) {
         }
       });
       marker.addTo(events);
+      oms.addMarker(marker);
     });
     events.addTo(map);
     map.fitBounds(events.getBounds());
     map.setZoom(13);
+
+    
 
     // Info station markers.
     // var infoStations = new L.featureGroup();
