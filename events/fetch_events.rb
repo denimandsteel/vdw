@@ -75,7 +75,8 @@ def readCSV(url)
   previousDay = "";
   priority = 0
   csv.each do |line|
-    puts line
+    print '.'
+    STDOUT.flush
     if priority == 0
       header = line
       priority += 1;
@@ -125,8 +126,10 @@ def readCSV(url)
     
   end
 
-  puts "#{totalEvents} events posted."
+  puts " #{totalEvents} events posted."
 end
+
+puts "Fetching events:"
 
 csvURL = "https://docs.google.com/spreadsheets/d/1Sd6MkT_z-kTBtzozSb_6ZfJyO6TcgGzS0VTYavrzI7I/export?gid=0&format=csv"
 # csvURL = "https://docs.google.com/spreadsheets/d/1zlSwKyHZ3ui-hNivaKdZIKINvn45fX3td0xvI4Hu0CU/export?gid=0&format=csv"

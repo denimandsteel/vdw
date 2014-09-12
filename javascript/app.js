@@ -98,13 +98,51 @@ for (var date in vdwEvents) {
       // layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
       layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
     });
+    
+    var oms = new OverlappingMarkerSpiderfier(map);
+    var popup = new L.Popup();
+    oms.addListener('mouseover', function(marker) {
+      if (marker.originalEvent) {
+        $(marker.originalEvent.target).addClass('active');
+      }
+    });
+    oms.addListener('mouseout', function() {
+      if (marker.originalEvent) {
+        $(marker.originalEvent.target).removeClass('active');
+      }
+    });
+
+    oms.addListener('spiderfy', function(markers) {
+      console.log(markers);
+      markers.forEach(function(marker, i) {
+        marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + marker.options.alt + '</span>' }) );
+      });
+    });
+    oms.addListener('unspiderfy', function(markers) {
+      markers.forEach(function(marker, i) {
+        marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) );
+      });
+    });
+    
+    vdwEvents[date].forEach(function(event1, i) {
+      vdwEvents[date].forEach(function(event2, j) {
+        if (i != j && event1.lat === event2.lat && event1.long === event2.long) {
+          event1['overlapping'] = 'yes';
+          event2['overlapping'] = 'yes';
+        };
+      });
+    });
 
     // Event markers.
     var events = new L.featureGroup();
     vdwEvents[date].forEach(function(event, i) {
-      console.log(event);
       var event = vdwEvents[date][i];
-      var marker = L.marker([event.lat, event.long], { /*riseOnHover: true,*/ icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) });
+      var marker;
+      if (event.overlapping === 'yes') {
+        marker = L.marker([event.lat, event.long], { alt: event.priority,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) });
+      } else {
+        marker = L.marker([event.lat, event.long], { alt: event.priority,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) });
+      };
       marker.on('mouseover', function(marker) {
         if (marker.originalEvent) {
           $(marker.originalEvent.target).addClass('active');
@@ -116,9 +154,13 @@ for (var date in vdwEvents) {
         }
       });
       marker.addTo(events);
+      oms.addMarker(marker);
     });
     events.addTo(map);
     map.fitBounds(events.getBounds());
+    map.setZoom(13);
+
+    
 
     // Info station markers.
     // var infoStations = new L.featureGroup();

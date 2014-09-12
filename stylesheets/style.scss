@@ -530,9 +530,31 @@ header {
       float: none;
     }
 
+    .marker {
+      display: inline-block;
+      float: left;
+      margin: 0px;
+      padding: 0px 10px 10px 10px;
+      box-sizing: content-box;
+      margin-top: 15px;
+      background: url(../images/marker.svg) top center no-repeat;
+    }
+
+    .priority {
+      display: inline-block;
+      float: left;
+      margin: 0px;
+      padding: 0px 10px 30px 20px;
+      box-sizing: content-box;
+      margin-top: 25px;
+      font-size: 30px;
+      color: #555;
+      font-weight: 200;
+    }
+
     .title {
       margin-bottom: 0;
-      padding-left: 15px;
+      padding-left: 25px;
       font-size: 18px;
       @include media($mobile) {
         padding-left: 10px;
@@ -614,6 +636,13 @@ header {
     color: $navyblue;
   }
 }
+
+.event .description
+{
+  margin-left: 45px;
+  margin-top: 0px;
+}
+
 .event .time-and-place { margin-top: 0; }
 
 .leaflet-bar {
