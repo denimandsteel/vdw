@@ -27,7 +27,7 @@ def markdownPostForEvent(event, priority)
 
   dayNumber = event.day.strftime("%d")
   dayOfWeek = event.day.strftime("%a")
-  dayOfMonth = event.day.strftime("%b %d")
+  dayOfMonth = event.day.strftime("Sept %d")
   
   formattedTime = ""
   if event.start_time.to_s != ''

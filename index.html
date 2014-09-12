@@ -90,13 +90,13 @@
           Week 1</strong> / Sept 15th - 21st</h2>
     {% elsif dayNumber == 22 %}
       <h2 class="weekname"><strong>Event Schedule<br>
-          Week 1</strong> / Sept 15th - 21st</h2>
+          Week 2</strong> / Sept 22nd - 28th</h2>
     {% endif %}
     {% assign eventDayCategory = "event-" | append: dayNumber %}
     {% if site.categories[eventDayCategory].size > 0 %}
       <div id="{{ eventDayCategory }}" class="day-events">
         <div class="day-header">
-          <h2 class="dayname">{{ site.categories[eventDayCategory][0].day }}</h2>
+          <h2 class="dayname">{{ site.categories[eventDayCategory][0].dayOfWeek}}, <strong>{{ site.categories[eventDayCategory][0].dayOfMonth}}</strong></h2>
           <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
         </div>
         <div class="events-list">
