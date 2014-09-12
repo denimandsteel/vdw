@@ -101,17 +101,7 @@ for (var date in vdwEvents) {
     
     var oms = new OverlappingMarkerSpiderfier(map, {nearbyDistance: 1});
     var popup = new L.Popup();
-    oms.addListener('mouseover', function(marker) {
-      if (marker.originalEvent) {
-        $(marker.originalEvent.target).addClass('active');
-      }
-    });
-    oms.addListener('mouseout', function() {
-      if (marker.originalEvent) {
-        $(marker.originalEvent.target).removeClass('active');
-      }
-    });
-
+    
     oms.addListener('spiderfy', function(markers) {
       console.log(markers);
       markers.forEach(function(marker, i) {
@@ -143,16 +133,6 @@ for (var date in vdwEvents) {
       } else {
         marker = L.marker([event.lat, event.long], { alt: event.priority,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) });
       };
-      marker.on('mouseover', function(marker) {
-        if (marker.originalEvent) {
-          $(marker.originalEvent.target).addClass('active');
-        }
-      });
-      marker.on('mouseout', function() {
-        if (marker.originalEvent) {
-          $(marker.originalEvent.target).removeClass('active');
-        }
-      });
       marker.addTo(events);
       oms.addMarker(marker);
     });
