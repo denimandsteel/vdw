@@ -73,7 +73,7 @@ var $slides = $('.slide');
 // }, 3000);
 setInterval(function() {
   $('.slideshow .slide:last-child').prependTo('.slideshow');
-}, 3000);
+}, 6000);
 
 // Events open/close.
 $('.day-header').on('click', function() {

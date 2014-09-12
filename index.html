@@ -128,12 +128,14 @@
                         {% else %}
                           {{ post.startTime }}
                         {% endif %}
-                        at <a href="http://maps.apple.com/?q={{ post.address }}">{{ post.addressLabel }}</a>
+                        at <a target="_blank" href="http://maps.apple.com/?q={{ post.address }}">{{ post.addressLabel }}</a>
                       </p>
                     </div>
                     <div class="right">
                       <p class="price">{{ post.price }}</p>
+                      {% if post.eventUrl %}
                       <a target="_blank" href="{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+                      {% endif %}
                     </div>
                   </div>
 
