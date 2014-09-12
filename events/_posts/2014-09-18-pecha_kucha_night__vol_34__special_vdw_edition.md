@@ -2,9 +2,9 @@
 dayOfWeek: Thu
 dayOfMonth: Sept 18
 title: "PECHA KUCHA NIGHT / Vol 34 - SPECIAL VDW EDITION"
-description: "Since PechaKucha is part of the first annual Vancouver Design Week, we are assembling a diverse roster of local designers to speak about their experiences, philosophies, inspirations, stories or anything else that is in their head."
-startTime: 630pm (doors open) 730pm (talks start)
-endTime: 6:30 PM
+description: "Since Pecha Kucha is part of the first annual Vancouver Design Week, we are assembling a diverse roster of local designers to speak about their experiences, philosophies, inspirations, stories or anything else that is in their head."
+startTime: 6:30 PM
+endTime: 
 type: Talk
 address: "918 Granville St, Vancouver, BC V6Z 1L2"
 addressLabel: VOGUE THEATRE

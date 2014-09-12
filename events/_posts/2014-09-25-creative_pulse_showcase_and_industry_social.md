@@ -2,7 +2,7 @@
 dayOfWeek: Thu
 dayOfMonth: Sept 25
 title: "CREATIVE PULSE SHOWCASE AND INDUSTRY SOCIAL"
-description: "The 6th Creative Pulse event will showcase the work of talented local designers and artists. Hosted by Elevator Strategy, join us from 6:30-10:30pm for informal drinks with like-minded creatives, and leave inspired."
+description: "The 6th Creative Pulse event will showcase the work of talented local designers and artists. Hosted by Elevator Strategy, join us for informal drinks with like-minded creatives, and leave inspired."
 startTime: 6:30 PM
 endTime: 10:30 PM
 type: Party
