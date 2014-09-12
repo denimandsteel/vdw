@@ -554,7 +554,7 @@ header {
 
     .title {
       margin-bottom: 0;
-      padding-left: 25px;
+      margin-left: 15px;
       font-size: 18px;
       @include media($mobile) {
         padding-left: 10px;
@@ -635,12 +635,6 @@ header {
     font-weight: bold;
     color: $navyblue;
   }
-}
-
-.event .description
-{
-  margin-left: 45px;
-  margin-top: 0px;
 }
 
 .event .time-and-place { margin-top: 0; }
