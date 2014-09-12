@@ -5,7 +5,7 @@ title: "MONOGRAM DINNER BY DESIGN / PUBLIC VIEWING"
 description: "Design enthusiasts and fans of IDSwest have a singular opportunity to come and experience Monogram Dinner by Design, admire the tablescapes, spot their next personal inspiration and enjoy an inspiring atmosphere."
 startTime: 11:00 AM
 endTime: 3:00 PM
-type: Exhibition
+type: Exhibit
 address: "700 Hamilton St, Vancouver, BC V6B 2R5"
 addressLabel: CBC Studios
 latitude: 49.2799544

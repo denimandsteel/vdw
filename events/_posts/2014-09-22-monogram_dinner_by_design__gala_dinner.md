@@ -5,7 +5,7 @@ title: "MONOGRAM DINNER BY DESIGN / GALA DINNER"
 description: "Cocktails are followed by an elegant seated VIP dinner for 150 guests with all drinks included. Each courses is perfectly paired by a wine and fine musical accompaniment."
 startTime: 6:30 PM
 endTime: 1:00 AM
-type: Exhibition
+type: Exhibit
 address: "700 Hamilton St, Vancouver, BC V6B 2R5"
 addressLabel: CBC Studios
 latitude: 49.2799544

@@ -5,7 +5,7 @@ title: "MONOGRAM DINNER BY DESIGN / COCKTAIL ART"
 description: "Designers and guests mingle during this dazzling display of amazing tablescapes, sampling gourmet treats paired with delicious Absolut Elyx craft cocktails, wine and beer. Special live entertainment, custom cocktail bars, and reverie."
 startTime: 8:00 PM
 endTime: Midnight
-type: Exhibition
+type: Exhibit
 address: "700 Hamilton St, Vancouver, BC V6B 2R5"
 addressLabel: CBC Studios
 latitude: 49.2799544
