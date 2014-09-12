@@ -1,6 +1,6 @@
 ---
 dayOfWeek: Tue
-dayOfMonth: Sep 16
+dayOfMonth: Sept 16
 title: "BRITEWEB WORKSHOP - DESIGN-THINKING YOUR NEXT BIG IDEA"
 description: "How do you create a product, service or solution that is innovative, and that everyone wants? The most creative and successful entrepreneurs and business leaders use design thinking. Taught by Marica Rizzo and Alexis Young, the workshop will also feature local experts to help you craft your solutions."
 startTime: 6:30 PM

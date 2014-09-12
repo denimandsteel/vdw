@@ -1,6 +1,6 @@
 ---
 dayOfWeek: Mon
-dayOfMonth: Sep 15
+dayOfMonth: Sept 15
 title: "VANCOUVER URBAN DESIGN AWARDS"
 description: "This inaugural event recognizes and celebrates excellence in architecture and urban design in Vancouver."
 startTime: 5:00 PM

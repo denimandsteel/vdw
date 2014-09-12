@@ -1,6 +1,6 @@
 ---
 dayOfWeek: Thu
-dayOfMonth: Sep 18
+dayOfMonth: Sept 18
 title: "PECHA KUCHA NIGHT / Vol 34 - SPECIAL VDW EDITION"
 description: "Since PechaKucha is part of the first annual Vancouver Design Week, we are assembling a diverse roster of local designers to speak about their experiences, philosophies, inspirations, stories or anything else that is in their head."
 startTime: 630pm (doors open) 730pm (talks start)

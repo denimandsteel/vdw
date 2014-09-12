@@ -1,6 +1,6 @@
 ---
 dayOfWeek: Fri
-dayOfMonth: Sep 19
+dayOfMonth: Sept 19
 title: "CREATIVEMORNINGS/VANCOUVER - SPECIAL VDW EDITION"
 description: "Theme: PROCESS   Summary: What role does process have in creative endeavours? How does creativity inform process? This will be an entertaining and thought-provoking look at the common threads that tie together works such as Union Gospel, Bridge, Ought Apartment, The Western Front, Good Bye Work, and his latest project Triumph of the Technocrat. To follow will be an engaging audience discussion about architecture and civic space, and how the built environment influences how we live."
 startTime: 8:30 PM
