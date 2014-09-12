@@ -62,6 +62,19 @@ $('#event-sample > div').masonry({
   itemSelector: '.event'
 });
 
+// Slideshow.
+var start = 0;
+var $slides = $('.slide');
+// $slides.removeClass('active');
+// $($slides.get(Math.floor(Math.random() * $slides.length))).addClass('active');
+// setInterval(function() {
+//   $slides.removeClass('active');
+//   $($slides.get(++start % 3)).addClass('active');
+// }, 3000);
+setInterval(function() {
+  $('.slideshow .slide:last-child').prependTo('.slideshow');
+}, 3000);
+
 // Events open/close.
 $('.day-header').on('click', function() {
   $(this).parents('.day-events').toggleClass('active');
