@@ -65,6 +65,7 @@ $('#event-sample > div').masonry({
 // Events open/close.
 $('.day-header').on('click', function() {
   $(this).parents('.day-events').toggleClass('active');
+  $.waypoints('refresh');
   //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
   // $content.slideToggle(500, function () {
     //execute this after slideToggle is done
