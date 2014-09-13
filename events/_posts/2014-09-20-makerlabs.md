@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "196 Kingsway, Vancouver, BC, V5T 3J2"
-addressLabel: 
+addressLabel: 196 Kingsway
 latitude: 49.2620236
 longitude: -123.0988001
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://makerlabs.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 

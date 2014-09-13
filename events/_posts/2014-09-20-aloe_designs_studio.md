@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "1443 E Pender St, Vancouver, BC, V5L 1V7"
-addressLabel: 
+addressLabel: 1443 E Pender St
 latitude: 49.2803577
 longitude: -123.074537
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://aloedesigns.com
+eventUrlLabel: Studio Website
 published: true
 price: 
 

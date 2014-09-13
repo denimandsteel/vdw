@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "715 East Hastings Street, Vancouver, BC, V6A 1R3"
-addressLabel: 
+addressLabel: 715 East Hastings Street
 latitude: 49.281158
 longitude: -123.0887874
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://carscadden-architect.com
+eventUrlLabel: Studio Website
 published: true
 price: 
 

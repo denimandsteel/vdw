@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "257 East 7th Ave Vancouver, BC, V5T 0B4"
-addressLabel: 
+addressLabel: 257 East 7th Ave
 latitude: 49.2646962
 longitude: -123.0994286
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://makeisawesome.com
+eventUrlLabel: Studio Website
 published: true
 price: 
 

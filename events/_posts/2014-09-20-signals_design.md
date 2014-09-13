@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "143 West 3rd Ave, Vancouver, BC, V5Y 1E6"
-addressLabel: 
+addressLabel: 143 West 3rd Ave
 latitude: 49.2684395
 longitude: -123.1076815
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://signals.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 

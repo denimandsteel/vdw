@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "1777 West 3rd Avenue, Vancouver, BC, V6J 1K7"
-addressLabel: 
+addressLabel: 1777 West 3rd Avenue
 latitude: 49.2690022
 longitude: -123.1450224
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://pfs.bc.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 

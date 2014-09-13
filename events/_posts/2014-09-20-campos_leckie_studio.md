@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "1395 Odlum Drive, Vancouver, BC, V5L 3M1"
-addressLabel: 
+addressLabel: 1395 Odlum Drive
 latitude: 49.2721787
 longitude: -123.076083
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://camposleckie.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 

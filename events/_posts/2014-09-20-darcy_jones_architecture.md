@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "304-175 East Broadway, Vancouver, BC, V5T 1W2"
-addressLabel: 
+addressLabel: 304-175 East Broadway
 latitude: 49.26294600000001
 longitude: -123.101399
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://darcyjones.com
+eventUrlLabel: Studio Website
 published: true
 price: 
 

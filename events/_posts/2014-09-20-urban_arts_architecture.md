@@ -2,16 +2,16 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "Urban Arts Architecture"
-description: "Architecture office, in process work - will have wine and munchies"
+description: "Architecture office, in process work - will have wine and munchies. Buzz for entry."
 startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "401-134 Abbott Street, Vancouver, BC, V6B 2K4"
-addressLabel: 
+addressLabel: 401-134 Abbott Street
 latitude: 49.2841762
 longitude: -123.1060371
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://urban-arts.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 
