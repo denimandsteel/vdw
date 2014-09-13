@@ -61,6 +61,7 @@
   </form>
 </header>
 
+<div class="logo"></div>
 <div class="logo fixed"></div>
 
 <div id="hero">
@@ -69,17 +70,17 @@
     <div class="slide two"></div>
     <div class="slide three"></div>
   </div>
-  <div class="section">
+  <div class="outer-container">
     <h1>Vancouver Design Week [Sept 15&ndash;28]<br> is a collaborative platform, a call to action, and an invitation to us all to immerse in design and its transformative potential.</h1>
   </div>
 </div>
 
 <div id="mission">
-  <div class="section">
+  <div class="outer-container">
     <div class="content">
       <p>For 14 days, Vancouver Design Week will turn the city into a petri dish of design process, practice, and perspectives; through a wide range of independent and collaborative programming. From talks to tours, exhibits to workshops, parties to pop-ups, design across disciplines will open its doors for conversations, installations and celebrations of all scales.</p>
       <p>Uncover the unique design ecosystem that shapes, defines and sustains our city. <strong>Don&rsquo;t miss the chance to join in, speak up and stand out in shaping Vancouver&rsquo;s future!</strong></p>
-      <blockquote>&ldquo;The city shapes our decisions.&rdquo;</blockquote><span class="todds-terrible-hack"> And design shapes our city.</span>
+      <blockquote class="big-blue">&ldquo;The city shapes our decisions.&rdquo;</blockquote><span class="todds-terrible-hack"> And design shapes our city.</span>
       <cite>Charles Montgomery, Happy City</cite>
     </div>
   </div>
@@ -89,8 +90,7 @@
   vdwEvents = {};
 </script>
 
-<section id="event" class="events">
-  <!-- <h1><span>Event Categories &ndash; Full Calendar Coming Soon</span></h1> -->
+<section id="event" class="events outer-container">
   {% for dayNumber in (15..28) %}
     {% if dayNumber == 15 %}
       <h2 class="weekname"><strong>Event Schedule<br>
@@ -153,7 +153,52 @@
   {% endfor %}
 </section>
 
-<section id="team">
+<section id="faq" class="outer-container">
+  <h1><span>Questions? We have answers.</span></h1>
+  <div class="faqs">
+    <div class="content">
+      <h2>When is VDW?</h2>
+      <p>For 2014, Vancouver Design Week will run from September 15th-28th.</p><!-- 2015 dates have not yet been set. -->
+
+      <h2>Where is VDW?</h2>
+      <p>Vancouver Design Week is happening all around Vancouver. A full event calendar and maps will become available as events and locations are confirmed. <a class="newsletter-link" href="#">Sign up for our newsletter</a> to hear when the event roster is announced.</p>
+      
+      <h2>How do I register? Is it free?</h2>
+      <p>Vancouver Design Week is composed of a wide range of events and happenings. Some require registration and some don&rsquo;t; some are free and some aren&rsquo;t. Registration and ticketing are managed by their individual hosts/organizers, so be sure to confirm details before heading out.</p>
+
+      <h2>How can I get involved?</h2>
+      <p>Like the week&rsquo;s make-up, there are a diversity of ways to get involved - host a tour, submit an event, become a supporting partner, <a href="https://docs.google.com/forms/d/1Z69cK18nCi1vXP8A9Cln8Ts2s1OyoJGGROvN02yRWgc/viewform">volunteer</a>, or make a donation (VDW works under a not-for-profit model).</p>  
+      <p>But most importantly, show up, speak up and stand out! Exchange perspectives with (other) designers, try new things, ask questions, share your thoughts and be a part of the conversation!</p>
+    </div>
+  </div>
+  <div class="faqs">
+    <div class="content">
+      <h2>Can anyone list an event as part of VDW?</h2>
+      <p>VDW invites local designers, design organizations, and design thinkers to challenge and expand the Vancouver design conversation. If you&rsquo;re a part of the Vancouver design scene and are interested in creating a design-related event, <a href="http://vancouverdesignwk.com/opencall"></a>our call for submissions is now open</a> and has further details.</p>
+      <p>If you don&rsquo;t have any programming to propose, but want to share your space - your studio, your workshop, your cafe/shop/restaurant/tasting room, consider joining our Open Doors lineup (<a href="mailto:openstudios@vancouverdesignwk.com">Open Studios</a>/<a href="mailto:openbuildings@vancouverdesignwk.com">Open Buildings</a>/<a href="mailto:samplings@vancouverdesignwk.com">Samplings</a>).</p>
+    
+      <h2>How is VDW possible?</h2>
+      <p>We hoped you&rsquo;d ask.</p>
+      <p>Vancouver Design Week is a not-for-profit social enterprise. Created by a passionate team of volunteers from across design disciplines - with advisory and core committees composed of some of the city&rsquo;s most renowned design institutions, entrepreneurs, educators, thinkers, and makers - Vancouver Design Week has been willed into being by a shared belief that design is imperative to improving the quality and potential of our city.</p>
+      <p>Help us make this vision a reality by showing up, speaking up, and standing out.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="box outer-container">
+    <div class="content">
+      <h2>Context</h2>
+      <p>Vancouver. Edge city. A territory on the geographic and cultural periphery. A place where people come to escape the confines of convention and a place with a unique aptitude for freethinking, incubating and instigating. The results: creation of global phenomena - Occupy, Greenpeace, and &lsquo;Vancouverism&rsquo;; pioneering of West Coast Modernism; and home to a long list of world-class designers and innovators. And yet... &ldquo;although some of the world&rsquo;s greatest designers live/work in Vancouver they are (here at home) unknown, undervalued and disconnected from one another&rdquo; [Jane Cox, Cause+Affect] - limiting our potential for agency as both a culture and a city.</p>
+      <p><strong>Vancouver Design Week is an opportunity to redress this.</strong></p>
+      <h2 class="second">Mission</h2>
+      <p>Vancouver Design Week is city-wide platform, invitation and call to action - to celebrate established and emergent design talent; to spotlight broad spectrum design innovation; to cross-pollenate and empower designers and design-thinkers across disciplines, and to leverage the potential of design for transformative agency and holistic capital, in Vancouver, and beyond.</p>
+      <p>This inaugural Vancouver Design Week will establish not only an annual event in (Metro) Vancouver but the opportunity to initiate a broader Pacific North West dialog - towards catalyzing an even more transformative Vancouver design culture.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="outer-container">
   <h1><span>The VDW Organizing Team</span></h1>
   <div class="members">
     <div class="member">
@@ -276,87 +321,40 @@
   </div>
 </section>
 
-<section id="faq">
-  <h1><span>Questions? We have answers.</span></h1>
-  <div class="faqs">
-    <div class="content">
-      <h2>When is VDW?</h2>
-      <p>For 2014, Vancouver Design Week will run from September 15th-28th.</p><!-- 2015 dates have not yet been set. -->
-
-      <h2>Where is VDW?</h2>
-      <p>Vancouver Design Week is happening all around Vancouver. A full event calendar and maps will become available as events and locations are confirmed. <a class="newsletter-link" href="#">Sign up for our newsletter</a> to hear when the event roster is announced.</p>
-      
-      <h2>How do I register? Is it free?</h2>
-      <p>Vancouver Design Week is composed of a wide range of events and happenings. Some require registration and some don&rsquo;t; some are free and some aren&rsquo;t. Registration and ticketing are managed by their individual hosts/organizers, so be sure to confirm details before heading out.</p>
-
-      <h2>How can I get involved?</h2>
-      <p>Like the week&rsquo;s make-up, there are a diversity of ways to get involved - host a tour, submit an event, become a supporting partner, <a href="https://docs.google.com/forms/d/1Z69cK18nCi1vXP8A9Cln8Ts2s1OyoJGGROvN02yRWgc/viewform">volunteer</a>, or make a donation (VDW works under a not-for-profit model).</p>  
-      <p>But most importantly, show up, speak up and stand out! Exchange perspectives with (other) designers, try new things, ask questions, share your thoughts and be a part of the conversation!</p>
-    </div>
-  </div>
-  <div class="faqs">
-    <div class="content">
-      <h2>Can anyone list an event as part of VDW?</h2>
-      <p>VDW invites local designers, design organizations, and design thinkers to challenge and expand the Vancouver design conversation. If you&rsquo;re a part of the Vancouver design scene and are interested in creating a design-related event, <a href="http://vancouverdesignwk.com/opencall"></a>our call for submissions is now open</a> and has further details.</p>
-      <p>If you don&rsquo;t have any programming to propose, but want to share your space - your studio, your workshop, your cafe/shop/restaurant/tasting room, consider joining our Open Doors lineup (<a href="mailto:openstudios@vancouverdesignwk.com">Open Studios</a>/<a href="mailto:openbuildings@vancouverdesignwk.com">Open Buildings</a>/<a href="mailto:samplings@vancouverdesignwk.com">Samplings</a>).</p>
-    
-      <h2>How is VDW possible?</h2>
-      <p>We hoped you&rsquo;d ask.</p>
-      <p>Vancouver Design Week is a not-for-profit social enterprise. Created by a passionate team of volunteers from across design disciplines - with advisory and core committees composed of some of the city&rsquo;s most renowned design institutions, entrepreneurs, educators, thinkers, and makers - Vancouver Design Week has been willed into being by a shared belief that design is imperative to improving the quality and potential of our city.</p>
-      <p>Help us make this vision a reality by showing up, speaking up, and standing out.</p>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <h1><span>About</span></h1>
-  <div class="box">
-    <div class="content">
-      <h2>Context</h2>
-      <p>Vancouver. Edge city. A territory on the geographic and cultural periphery. A place where people come to escape the confines of convention and a place with a unique aptitude for freethinking, incubating and instigating. The results: creation of global phenomena - Occupy, Greenpeace, and &lsquo;Vancouverism&rsquo;; pioneering of West Coast Modernism; and home to a long list of world-class designers and innovators. And yet... &ldquo;although some of the world&rsquo;s greatest designers live/work in Vancouver they are (here at home) unknown, undervalued and disconnected from one another&rdquo; [Jane Cox, Cause+Affect] - limiting our potential for agency as both a culture and a city.</p>
-      <p><strong>Vancouver Design Week is an opportunity to redress this.</strong></p>
-    </div>
-  </div>
-  <div class="box">
-    <div class="content">
-      <h2>Mission</h2>
-      <p>Vancouver Design Week is city-wide platform, invitation and call to action - to celebrate established and emergent design talent; to spotlight broad spectrum design innovation; to cross-pollenate and empower designers and design-thinkers across disciplines, and to leverage the potential of design for transformative agency and holistic capital, in Vancouver, and beyond.</p>
-      <p>This inaugural Vancouver Design Week will establish not only an annual event in (Metro) Vancouver but the opportunity to initiate a broader Pacific North West dialog - towards catalyzing an even more transformative Vancouver design culture.</p>
-    </div>
-  </div>
-</section>
-
 <section id="quotes">
-  <h1>Part of the mission of Vancouver Design Week is to inspire a shift in perception and value(s) to collectively leverage the potential of design as a catalyst for transformative change!</h1>
-  <div class="content">
-    <blockquote>&ldquo;Design is one of the most powerful forces in our lives. It influences the outcome of almost everything we do, often without our being aware it has done so&hellip; Yet despite its power, design is frequently treated as if it didn&rsquo;t matter by being trivialized, misunderstood (and undervalued)&hellip;&rdquo;</blockquote>
-    <cite class="after">Alice Rawsthorn, Design Critic, global edition of the New York Times</cite>
-    <blockquote>&ldquo;Never doubt that a small group of thoughtful, committed citizens can change the world; indeed its the only thing that ever has.&rdquo;</blockquote>
-    <cite>Margaret Mead</cite>
-    <div class="videos">
-      <a target="_blank" href="http://vimeo.com/105188087#t=0" class="video">
-        <img src="images/video-jeff-cutler.jpg" width="640" height="360" alt="Jeff Cutler">
-        <div class="content">
-          <h2>Jeff Cutler</h2>
-        </div>
-      </a>
-      <a target="_blank" href="http://vimeo.com/105186559#t=0" class="video">
-        <img src="images/video-michael-green.jpg" width="640" height="360" alt="Michael Green">
-        <div class="content">
-          <h2>Michael Green</h2>
-        </div>
-      </a>
-      <a target="_blank" href="http://vimeo.com/105189218#t=0" class="video">
-        <img src="images/video-sam-dal-monte.jpg" width="640" height="360" alt="Sam Dal Monte">
-        <div class="content">
-          <h2>Sam Dal Monte</h2>
-        </div>
-      </a>
+  <div class="outer-container">
+    <div class="content">
+      <h2>Design Value(s)</h2>
+      <p>Part of the mission of Vancouver Design Week is to inspire a shift in perception and value(s) to collectively leverage the potential of design as a catalyst for transformative change!</p>
+      <blockquote>&ldquo;Design is one of the most powerful forces in our lives. It influences the outcome of almost everything we do, often without our being aware it has done so&hellip; Yet despite its power, design is frequently treated as if it didn&rsquo;t matter by being trivialized, misunderstood (and undervalued)&hellip;&rdquo;</blockquote>
+      <cite class="after">Alice Rawsthorn, Design Critic, global edition of the New York Times</cite>
+      <blockquote>&ldquo;Never doubt that a small group of thoughtful, committed citizens can change the world; indeed its the only thing that ever has.&rdquo;</blockquote>
+      <cite>Margaret Mead</cite>
+      <div class="videos">
+        <a target="_blank" href="http://vimeo.com/105188087#t=0" class="video">
+          <img src="images/video-jeff-cutler.jpg" width="640" height="360" alt="Jeff Cutler">
+          <div class="info">
+            <h2>Design Is A Verb <br>Jeff Cutler</h2>
+          </div>
+        </a>
+        <a target="_blank" href="http://vimeo.com/105186559#t=0" class="video">
+          <img src="images/video-michael-green.jpg" width="640" height="360" alt="Michael Green">
+          <div class="info">
+            <h2>Design Is Sustainable <br>Michael Green</h2>
+          </div>
+        </a>
+        <a target="_blank" href="http://vimeo.com/105189218#t=0" class="video">
+          <img src="images/video-sam-dal-monte.jpg" width="640" height="360" alt="Sam Dal Monte">
+          <div class="info">
+            <h2>Design Is Interdisciplinary <br>Sam Dal Monte</h2>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="get-involved">
+<section id="get-involved" class="outer-container">
   <h1><span>GET INVOLVED! Be part of Vancouver Design Week! There are a wide range of ways to get involved in the inaugural Vancouver Design Week:</span></h1>
   <div class="column">
     <div class="box">
@@ -395,7 +393,7 @@
   </div>
 </section>
 
-<section id="support-tiers">
+<section id="support-tiers" class="outer-container">
   <h1>Vancouver Design Week is a non profit social enterprise.<br>All funds/in-kind donations will go directly to supporting the VDW platform in achieving its stated mission.</h1>
   <div class="tier">
     <div class="content">
@@ -420,7 +418,7 @@
   </div>  
 </section>
 
-<section id="supporters">
+<section id="supporters" class="outer-container">
   <h1>A huge thank to all of the following who have been early supporters - because of you Vancouver Design Week is happening!</h1>
   <h1>Visionary Partners</h1>
   <div class="support">
@@ -437,7 +435,7 @@
     <p><a href="mailto:info@vancouverdesignwk.com?subject=Become A Visionary Partner" class="highlight">Show Leadership! Become A Visionary Partner Today</a></p>
 </section>
 
-<section class="supporters">
+<section class="supporters outer-container">
   <h1>Community Partners</h1>
   <div class="support">
     <div>
@@ -459,7 +457,7 @@
   </div>
 </section>
 
-<section class="supporters">
+<section class="supporters outer-container">
   <h1>Event Partners</h1>
   <div class="support">
     <div>
@@ -476,7 +474,7 @@
           <p><a target="_blank" href="event-submission/" class="highlight">Become an Event Partner by putting on your own design workshop, talk, tour, pop-up or party.</a></p>
 </section>
 
-<section class="supporters">
+<section class="supporters outer-container">
   <h1>Friends of VDW</h1>
   <div class="support">
     <div>
@@ -490,7 +488,7 @@
 </section>
 
 <footer id="contact">
-  <div class="section">
+  <div class="outer-container">
     <h1>We&rsquo;re just getting started! For information on sponsorship, programming, and media inquiries, please write us and we&rsquo;ll get back to you shortly.</h1>
     <div class="locations">
       <a href="mailto:info@vancouverdesignwk.com" class="highlight">Get In Touch</a>
