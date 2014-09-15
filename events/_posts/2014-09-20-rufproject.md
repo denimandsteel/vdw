@@ -2,16 +2,16 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "RUFproject"
-description: "RUFproject"
+description: "Buzz 260 for entry."
 startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "Unit 260-49 Dunlevy Avenue, Vancouver, BC, V6A 3A3"
-addressLabel: 
+addressLabel: Unit 260-49 Dunlevy Avenue
 latitude: 49.2845261
 longitude: -123.095409
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://rufproject.com
+eventUrlLabel: Studio Website
 published: true
 price: 
 

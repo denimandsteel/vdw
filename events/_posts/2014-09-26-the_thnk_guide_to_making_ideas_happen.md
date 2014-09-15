@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-26
-priority: 2
+priority: 3
 slug: 2014-09-26-the_thnk_guide_to_making_ideas_happen
 ---

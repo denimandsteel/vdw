@@ -11,11 +11,11 @@ addressLabel: The Hive
 latitude: 49.28184419999999
 longitude: -123.1081617
 eventUrl: http://vancouver.designnerds.org/2014/09/street-talkin-jam-and-vancouver-design-week/
-eventUrlLabel: 
+eventUrlLabel: Attend
 published: true
 price: 
 
 category: event-17
-priority: 3
+priority: 4
 slug: 2014-09-17-nerd_jam_the_culture_of_transformation__part_i
 ---

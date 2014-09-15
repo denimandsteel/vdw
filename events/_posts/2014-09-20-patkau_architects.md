@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "1564 West 6th Avenue, Vancouver, BC, V6J 1R2"
-addressLabel: 
+addressLabel: 1564 West 6th Avenue
 latitude: 49.2662029
 longitude: -123.1400207
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://patkau.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 

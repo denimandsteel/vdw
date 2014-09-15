@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "1120 East Georgia Street, Vancouver, BC, V6A 1Z3"
-addressLabel: 
+addressLabel: 1120 East Georgia Street
 latitude: 49.2782732
 longitude: -123.0808083
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://propellor.ca
+eventUrlLabel: Studio Website
 published: true
 price: 
 

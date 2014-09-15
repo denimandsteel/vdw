@@ -7,11 +7,11 @@ startTime: 11:00 AM
 endTime: 4:00 PM
 type: Open Studio
 address: "936 Clark Drive, Vancouver, BC, V5L 3J8"
-addressLabel: 
+addressLabel: 936 Clark Drive
 latitude: 49.2761635
 longitude: -123.0771836
-eventUrl: 
-eventUrlLabel: 
+eventUrl: http://shrapneldesign.com
+eventUrlLabel: Studio Website
 published: true
 price: 
 

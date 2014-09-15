@@ -16,6 +16,6 @@ published: true
 price: $16
 
 category: event-19
-priority: 4
+priority: 3
 slug: 2014-09-19-why_i_design
 ---

@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-17
-priority: 4
+priority: 5
 slug: 2014-09-17-from_rationing_to_ravishing
 ---

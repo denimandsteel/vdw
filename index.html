@@ -34,7 +34,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-26480550-10', 'designweekvancouver.com');
+
+  ga('create', 'UA-26480550-10', 'auto');
   ga('send', 'pageview');
   </script>
 </head>
@@ -61,26 +62,20 @@
   </form>
 </header>
 
+<div class="logo"></div>
 <div class="logo fixed"></div>
 
 <div id="hero">
   <div class="slideshow">
     <div class="slide one"></div>
-    <div class="slide two"></div>
-    <div class="slide three"></div>
-  </div>
-  <div class="section">
-    <h1>Vancouver Design Week [Sept 15&ndash;28]<br> is a collaborative platform, a call to action, and an invitation to us all to immerse in design and its transformative potential.</h1>
   </div>
 </div>
 
 <div id="mission">
-  <div class="section">
+  <div class="outer-container">
     <div class="content">
-      <p>For 14 days, Vancouver Design Week will turn the city into a petri dish of design process, practice, and perspectives; through a wide range of independent and collaborative programming. From talks to tours, exhibits to workshops, parties to pop-ups, design across disciplines will open its doors for conversations, installations and celebrations of all scales.</p>
-      <p>Uncover the unique design ecosystem that shapes, defines and sustains our city. <strong>Don&rsquo;t miss the chance to join in, speak up and stand out in shaping Vancouver&rsquo;s future!</strong></p>
-      <blockquote>&ldquo;The city shapes our decisions.&rdquo;</blockquote><span class="todds-terrible-hack"> And design shapes our city.</span>
-      <cite>Charles Montgomery, Happy City</cite>
+      <p>Vancouver Design Week is a 14-day-long collection of events and programming to explore the unique design ecosystem of our city. Join the conversation. Learn and share. Show up and help shape Vancouver's design future.</p>
+      <p><a href="#about">More About VDW &gt;</a></p>
     </div>
   </div>
 </div>
@@ -89,8 +84,7 @@
   vdwEvents = {};
 </script>
 
-<section id="event" class="events">
-  <!-- <h1><span>Event Categories &ndash; Full Calendar Coming Soon</span></h1> -->
+<section id="event" class="events outer-container">
   {% for dayNumber in (15..28) %}
     {% if dayNumber == 15 %}
       <h2 class="weekname"><strong>Event Schedule<br>
@@ -153,7 +147,63 @@
   {% endfor %}
 </section>
 
-<section id="team">
+<section id="faq" class="outer-container">
+  <h1><span>Questions? We have answers.</span></h1>
+  <div class="faqs">
+    <div class="content">
+      <h2>When is VDW?</h2>
+      <p>For 2014, Vancouver Design Week will run from September 15th-28th.</p><!-- 2015 dates have not yet been set. -->
+
+      <h2>Where is VDW?</h2>
+      <p>Vancouver Design Week is happening all around Vancouver. A full event calendar and maps will become available as events and locations are confirmed. <a class="newsletter-link" href="#">Sign up for our newsletter</a> to hear when the event roster is announced.</p>
+      
+      <h2>How do I register? Is it free?</h2>
+      <p>Vancouver Design Week is composed of a wide range of events and happenings. Some require registration and some don&rsquo;t; some are free and some aren&rsquo;t. Registration and ticketing are managed by their individual hosts/organizers, so be sure to confirm details before heading out.</p>
+
+      <h2>How can I get involved?</h2>
+      <p>Like the week&rsquo;s make-up, there are a diversity of ways to get involved - host a tour, submit an event, become a supporting partner, <a href="https://docs.google.com/forms/d/1Z69cK18nCi1vXP8A9Cln8Ts2s1OyoJGGROvN02yRWgc/viewform">volunteer</a>, or make a donation (VDW works under a not-for-profit model).</p>  
+      <p>But most importantly, show up, speak up and stand out! Exchange perspectives with (other) designers, try new things, ask questions, share your thoughts and be a part of the conversation!</p>
+    </div>
+  </div>
+  <div class="faqs">
+    <div class="content">
+      <h2>Can anyone list an event as part of VDW?</h2>
+      <p>VDW invites local designers, design organizations, and design thinkers to challenge and expand the Vancouver design conversation. If you&rsquo;re a part of the Vancouver design scene and are interested in creating a design-related event, <a href="http://vancouverdesignwk.com/opencall"></a>our call for submissions is now open</a> and has further details.</p>
+      <p>If you don&rsquo;t have any programming to propose, but want to share your space - your studio, your workshop, your cafe/shop/restaurant/tasting room, consider joining our Open Doors lineup (<a href="mailto:openstudios@vancouverdesignwk.com">Open Studios</a>/<a href="mailto:openbuildings@vancouverdesignwk.com">Open Buildings</a>/<a href="mailto:samplings@vancouverdesignwk.com">Samplings</a>).</p>
+    
+      <h2>How is VDW possible?</h2>
+      <p>We hoped you&rsquo;d ask.</p>
+      <p>Vancouver Design Week is a not-for-profit social enterprise. Created by a passionate team of volunteers from across design disciplines - with advisory and core committees composed of some of the city&rsquo;s most renowned design institutions, entrepreneurs, educators, thinkers, and makers - Vancouver Design Week has been willed into being by a shared belief that design is imperative to improving the quality and potential of our city.</p>
+      <p>Help us make this vision a reality by showing up, speaking up, and standing out.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="box outer-container">
+    <div class="content">
+      <h2>Context</h2>
+      <p>Vancouver. Edge city. A territory on the geographic and cultural periphery. A place where people come to escape the confines of convention and a place with a unique aptitude for freethinking, incubating and instigating.</p>
+      <div class="more">
+        <p class="toggle"><a href="#">Read More [+]</a></p>
+        <div class="extra">
+          <p>The results: creation of global phenomena - Occupy, Greenpeace, and &lsquo;Vancouverism&rsquo;; pioneering of West Coast Modernism; and home to a long list of world-class designers and innovators. And yet... &ldquo;although some of the world&rsquo;s greatest designers live/work in Vancouver they are (here at home) unknown, undervalued and disconnected from one another&rdquo; [Jane Cox, Cause+Affect] - limiting our potential for agency as both a culture and a city.</p>
+          <p><strong>Vancouver Design Week is an opportunity to redress this.</strong></p>
+        </div>
+      </div>
+      <h2 class="second">Mission</h2>
+      <p class="bump">Vancouver Design Week is city-wide platform, invitation and call to action - to celebrate established and emergent design talent; to spotlight broad spectrum design innovation; to cross-pollenate and empower designers and design-thinkers across disciplines, and to leverage the potential of design for transformative agency and holistic capital, in Vancouver, and beyond.</p>
+      <div class="more">
+        <p class="toggle"><a href="#">Read More [+]</a></p>
+        <div class="extra">
+          <p>This inaugural Vancouver Design Week will establish not only an annual event in (Metro) Vancouver but the opportunity to initiate a broader Pacific North West dialog - towards catalyzing an even more transformative Vancouver design culture.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="outer-container">
   <h1><span>The VDW Organizing Team</span></h1>
   <div class="members">
     <div class="member">
@@ -223,7 +273,7 @@
       </div>
     </div>
     <div class="member">
-      <img src="images/team/nadia.png" width="600" height="360" alt="Nadia Nascimento">
+      <img src="images/team/nadia.jpg" width="600" height="360" alt="Nadia Nascimento">
       <div class="content">
         <h2>Nadia Nascimento</h2>
         <p>Nadia is a strategist and digital producer, with 10 years experience in marketing and production. She has developed and implemented socially-driven media campaigns for Fortune 50 brands and has been the acting Director of Marketing for (RED) and THNK School for Creative Leadership.</p>
@@ -276,95 +326,48 @@
   </div>
 </section>
 
-<section id="faq">
-  <h1><span>Questions? We have answers.</span></h1>
-  <div class="faqs">
-    <div class="content">
-      <h2>When is VDW?</h2>
-      <p>For 2014, Vancouver Design Week will run from September 15th-28th.</p><!-- 2015 dates have not yet been set. -->
-
-      <h2>Where is VDW?</h2>
-      <p>Vancouver Design Week is happening all around Vancouver. A full event calendar and maps will become available as events and locations are confirmed. <a class="newsletter-link" href="#">Sign up for our newsletter</a> to hear when the event roster is announced.</p>
-      
-      <h2>How do I register? Is it free?</h2>
-      <p>Vancouver Design Week is composed of a wide range of events and happenings. Some require registration and some don&rsquo;t; some are free and some aren&rsquo;t. Registration and ticketing are managed by their individual hosts/organizers, so be sure to confirm details before heading out.</p>
-
-      <h2>How can I get involved?</h2>
-      <p>Like the week&rsquo;s make-up, there are a diversity of ways to get involved - host a tour, submit an event, become a supporting partner, <a href="https://docs.google.com/forms/d/1Z69cK18nCi1vXP8A9Cln8Ts2s1OyoJGGROvN02yRWgc/viewform">volunteer</a>, or make a donation (VDW works under a not-for-profit model).</p>  
-      <p>But most importantly, show up, speak up and stand out! Exchange perspectives with (other) designers, try new things, ask questions, share your thoughts and be a part of the conversation!</p>
-    </div>
-  </div>
-  <div class="faqs">
-    <div class="content">
-      <h2>Can anyone list an event as part of VDW?</h2>
-      <p>VDW invites local designers, design organizations, and design thinkers to challenge and expand the Vancouver design conversation. If you&rsquo;re a part of the Vancouver design scene and are interested in creating a design-related event, <a href="http://vancouverdesignwk.com/opencall"></a>our call for submissions is now open</a> and has further details.</p>
-      <p>If you don&rsquo;t have any programming to propose, but want to share your space - your studio, your workshop, your cafe/shop/restaurant/tasting room, consider joining our Open Doors lineup (<a href="mailto:openstudios@vancouverdesignwk.com">Open Studios</a>/<a href="mailto:openbuildings@vancouverdesignwk.com">Open Buildings</a>/<a href="mailto:samplings@vancouverdesignwk.com">Samplings</a>).</p>
-    
-      <h2>How is VDW possible?</h2>
-      <p>We hoped you&rsquo;d ask.</p>
-      <p>Vancouver Design Week is a not-for-profit social enterprise. Created by a passionate team of volunteers from across design disciplines - with advisory and core committees composed of some of the city&rsquo;s most renowned design institutions, entrepreneurs, educators, thinkers, and makers - Vancouver Design Week has been willed into being by a shared belief that design is imperative to improving the quality and potential of our city.</p>
-      <p>Help us make this vision a reality by showing up, speaking up, and standing out.</p>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <h1><span>About</span></h1>
-  <div class="box">
-    <div class="content">
-      <h2>Context</h2>
-      <p>Vancouver. Edge city. A territory on the geographic and cultural periphery. A place where people come to escape the confines of convention and a place with a unique aptitude for freethinking, incubating and instigating. The results: creation of global phenomena - Occupy, Greenpeace, and &lsquo;Vancouverism&rsquo;; pioneering of West Coast Modernism; and home to a long list of world-class designers and innovators. And yet... &ldquo;although some of the world&rsquo;s greatest designers live/work in Vancouver they are (here at home) unknown, undervalued and disconnected from one another&rdquo; [Jane Cox, Cause+Affect] - limiting our potential for agency as both a culture and a city.</p>
-      <p><strong>Vancouver Design Week is an opportunity to redress this.</strong></p>
-    </div>
-  </div>
-  <div class="box">
-    <div class="content">
-      <h2>Mission</h2>
-      <p>Vancouver Design Week is city-wide platform, invitation and call to action - to celebrate established and emergent design talent; to spotlight broad spectrum design innovation; to cross-pollenate and empower designers and design-thinkers across disciplines, and to leverage the potential of design for transformative agency and holistic capital, in Vancouver, and beyond.</p>
-      <p>This inaugural Vancouver Design Week will establish not only an annual event in (Metro) Vancouver but the opportunity to initiate a broader Pacific North West dialog - towards catalyzing an even more transformative Vancouver design culture.</p>
-    </div>
-  </div>
-</section>
-
 <section id="quotes">
-  <h1>Part of the mission of Vancouver Design Week is to inspire a shift in perception and value(s) to collectively leverage the potential of design as a catalyst for transformative change!</h1>
-  <div class="content">
-    <blockquote>&ldquo;Design is one of the most powerful forces in our lives. It influences the outcome of almost everything we do, often without our being aware it has done so&hellip; Yet despite its power, design is frequently treated as if it didn&rsquo;t matter by being trivialized, misunderstood (and undervalued)&hellip;&rdquo;</blockquote>
-    <cite class="after">Alice Rawsthorn, Design Critic, global edition of the New York Times</cite>
-    <blockquote>&ldquo;Never doubt that a small group of thoughtful, committed citizens can change the world; indeed its the only thing that ever has.&rdquo;</blockquote>
-    <cite>Margaret Mead</cite>
-    <div class="videos">
-      <a target="_blank" href="http://vimeo.com/105188087#t=0" class="video">
-        <img src="images/video-jeff-cutler.jpg" width="640" height="360" alt="Jeff Cutler">
-        <div class="content">
-          <h2>Jeff Cutler</h2>
-        </div>
-      </a>
-      <a target="_blank" href="http://vimeo.com/105186559#t=0" class="video">
-        <img src="images/video-michael-green.jpg" width="640" height="360" alt="Michael Green">
-        <div class="content">
-          <h2>Michael Green</h2>
-        </div>
-      </a>
-      <a target="_blank" href="http://vimeo.com/105189218#t=0" class="video">
-        <img src="images/video-sam-dal-monte.jpg" width="640" height="360" alt="Sam Dal Monte">
-        <div class="content">
-          <h2>Sam Dal Monte</h2>
-        </div>
-      </a>
+  <div class="outer-container">
+    <div class="content">
+      <h2>Design Value(s)</h2>
+      <p>Part of the mission of Vancouver Design Week is to inspire a shift in perception and value(s) to collectively leverage the potential of design as a catalyst for transformative change!</p>
+      <blockquote>&ldquo;Design is one of the most powerful forces in our lives. It influences the outcome of almost everything we do, often without our being aware it has done so&hellip; Yet despite its power, design is frequently treated as if it didn&rsquo;t matter by being trivialized, misunderstood (and undervalued)&hellip;&rdquo;</blockquote>
+      <cite class="after">Alice Rawsthorn, Design Critic, global edition of the New York Times</cite>
+      <blockquote>&ldquo;Never doubt that a small group of thoughtful, committed citizens can change the world; indeed its the only thing that ever has.&rdquo;</blockquote>
+      <cite>Margaret Mead</cite>
+      <div class="videos">
+        <a target="_blank" href="http://vimeo.com/105188087#t=0" class="video">
+          <img src="images/video-jeff-cutler.jpg" width="640" height="360" alt="Jeff Cutler">
+          <div class="info">
+            <h2>Design Is A Verb <br>Jeff Cutler</h2>
+          </div>
+        </a>
+        <a target="_blank" href="http://vimeo.com/105186559#t=0" class="video">
+          <img src="images/video-michael-green.jpg" width="640" height="360" alt="Michael Green">
+          <div class="info">
+            <h2>Design Is Sustainable <br>Michael Green</h2>
+          </div>
+        </a>
+        <a target="_blank" href="http://vimeo.com/105189218#t=0" class="video">
+          <img src="images/video-sam-dal-monte.jpg" width="640" height="360" alt="Sam Dal Monte">
+          <div class="info">
+            <h2>Design Is Interdisciplinary <br>Sam Dal Monte</h2>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="get-involved">
+<section id="get-involved" class="outer-container">
   <h1><span>GET INVOLVED! Be part of Vancouver Design Week! There are a wide range of ways to get involved in the inaugural Vancouver Design Week:</span></h1>
   <div class="column">
     <div class="box">
       <div class="content">
         <h2>1 / Open Doors</h2>
-        <p>Just that. Open the doors to your space, your process and your unique design perspective. Vancouver Design Week will be facilitating three types of open door events: Open Studios, Open Buildings and Samplings.</p>
+        <p>Just that. Open the doors to your space, your process and your unique design perspective. Vancouver Design Week will be facilitating three types of open door events: Open Studios, Open Buildings and Samplings. <strong>Open Studios and Open Buildings registrations are now closed, but you can still join the Sampling lineup.</strong></p>
       </div>
-      <a target="_blank" href="open-studio-submission" class="highlight">Submit an Open Studio Application</a>
+      <a target="_blank" href="samplings-registration" class="highlight">Register to Offer a Sampling Event</a>
     </div>
     <div class="box">
       <div class="content">
@@ -395,7 +398,7 @@
   </div>
 </section>
 
-<section id="support-tiers">
+<section id="support-tiers" class="outer-container">
   <h1>Vancouver Design Week is a non profit social enterprise.<br>All funds/in-kind donations will go directly to supporting the VDW platform in achieving its stated mission.</h1>
   <div class="tier">
     <div class="content">
@@ -421,77 +424,100 @@
 </section>
 
 <section id="supporters">
-  <h1>A huge thank to all of the following who have been early supporters - because of you Vancouver Design Week is happening!</h1>
-  <h1>Visionary Partners</h1>
-  <div class="support">
-    <div>
-      <a href="http://www.raic.org" target="_blank"><img src="images/supporters/raic.png" alt="the RAIC"></a>
-      <a href="http://causeandaffect.com" target="_blank"><img src="images/supporters/cause-and-affect.png" alt="Cause+Affect"></a>
-      <a href="http://denimandsteel.com" target="_blank"><img src="images/supporters/denim-and-steel.png" alt="Denim &amp; Steel"></a>
-      <a href="http://http://www.dialogdesign.ca" target="_blank"><img src="images/supporters/corplogo-dialog.jpg" alt="Dialog Design"></a>
-      <a href="http://ecuad.ca" target="_blank"><img src="images/supporters/emily-carr.jpg" alt="Emily Carr University"></a>
-      <a href="http://odettevisual.com" target="_blank"><img src="images/supporters/odette_logo.png" alt="Odette"></a>
-      <a href="http://www.chambar.com" target="_blank"><img src="images/supporters/LOGO_chambar_griffin.jpg" alt="Chambar"></a>
+  <div class="outer-container supporters">
+    <p>A huge thank to all of the following who have been early supporters - because of you Vancouver Design Week is happening!</p>
+    <h1>Visionary Partners</h1>
+    <div class="support">
+      <div>
+        <a href="http://www.raic.org" target="_blank"><img src="images/supporters/raic.png" alt="the RAIC"></a>
+        <a href="http://causeandaffect.com" target="_blank"><img src="images/supporters/cause-and-affect.png" alt="Cause+Affect"></a>
+        <a href="http://denimandsteel.com" target="_blank"><img src="images/supporters/denim-and-steel.png" alt="Denim &amp; Steel"></a>        
+        <a href="http://http://www.dialogdesign.ca" target="_blank"><img src="images/supporters/corplogo-dialog.jpg" alt="Dialog Design"></a>
+        <a href="http://ecuad.ca" target="_blank"><img src="images/supporters/emily-carr.jpg" alt="Emily Carr University"></a>
+        <a href="http://odettevisual.com" target="_blank"><img src="images/supporters/odette_logo.png" alt="Odette"></a>
+        <a href="http://www.chambar.com" target="_blank"><img src="images/supporters/LOGO_chambar_griffin.jpg" alt="Chambar"></a>
+        <a href="http://www.hawkersmarket.com" target="_blank"><img src="images/supporters/hwkrs2.png" alt="HWKRS MRKT"></a>
+        <a href="http://www.straight.com" target="_blank"><img src="images/supporters/straight.jpg" alt="Georgia Straight"></a>
+        <a href="http://www.museumofvancouver.ca/programs/blog/tags/urbanarium" target="_blank"><img src="images/supporters/Urbanarium_logo.png" alt="Urbanarium"></a>
+        <a href="http://perkinswill.com" target="_blank"><img src="images/supporters/perkinsandwill.png" alt="Perkins+Will"></a>
+      </div>
     </div>
+    <p class="become-a-sponsor"><a href="mailto:info@vancouverdesignwk.com?subject=Become A Visionary Partner">Show Leadership! Become A Visionary Partner Today &gt;</a></p>
   </div>
-    <p><a href="mailto:info@vancouverdesignwk.com?subject=Become A Visionary Partner" class="highlight">Show Leadership! Become A Visionary Partner Today</a></p>
-</section>
 
-<section class="supporters">
-  <h1>Community Partners</h1>
-  <div class="support">
-    <div>
-      <a href="http://publicdesign.ca" target="_blank"><img src="images/supporters/Public-Logo.png" alt="Public"></a>
-      <a href="http://carscadden.ca" target="_blank"><img src="images/supporters/bca.png" alt="Bruce Carscadden Architect"></a>
-      <a href="http://www.industrialbrand.com" target="_blank"><img src="images/supporters/industrial-brand.png" alt="Industrial Brand"></a>
-      <a href="http://vancouverisawesome.com" target="_blank"><img src="images/supporters/via.png" alt="Vancouver Is Awesome"></a>
-      <a href="http://vnbphoto.com" target="_blank"><img src="images/supporters/vnb.png" alt="VNB Photography"></a>
-      <a href="http://gdc.net" target="_blank"><img src="images/supporters/gdc.png" alt="the GDC"></a>
-      <a href="http://www.sala.ubc.ca/programs/architecture" target="_blank"><img src="images/supporters/sala.png" alt="The University of British Columbia School of Architecture and Landscape Architecture"></a>
-      <a href="http://thnk.org" target="_blank"><img src="images/supporters/thnk.png" alt="THNK School for Creative Leadership"></a>
-      <a href="http://www.graymag.net" target="_blank"><img src="images/supporters/gray.jpg" alt="Gray Magazine "></a>
-      <a href="http://www.westernlivingmagazine.com" target="_blank"><img src="images/supporters/WL_LogoMagazineBlack_small.jpg" alt="Western Living Magazine"></a>
-      <a href="http://www.museumofvancouver.ca" target="_blank"><img src="images/supporters/mov.jpg" alt="the MOV"></a>
-      <a href="http://vanspecial.com" target="_blank"><img src="images/supporters/vancouver-special.png" alt="Vancouver Special"></a>
-      <a href="http://idswest.com" target="_blank"><img src="images/supporters/IDSWest.jpg" alt="IDSWest"></a>
-      <a href="http://citystudiovancouver.com" target="_blank"><img src="images/supporters/city-studio.jpg" alt="City Studio"></a>
-      <a href="http://permel.com" target="_blank"><img src="images/supporters/permel.png" alt="Permel Engraving and Sign Production"></a>
+  <div class="outer-container supporters">
+    <h1>Community Partners</h1>
+    <div class="support">
+      <div>
+        <a href="http://publicdesign.ca" target="_blank"><img src="images/supporters/Public-Logo.png" alt="Public"></a>
+        <a href="http://carscadden.ca" target="_blank"><img src="images/supporters/bca.png" alt="Bruce Carscadden Architect"></a>
+        <a href="http://www.industrialbrand.com" target="_blank"><img src="images/supporters/industrial-brand.png" alt="Industrial Brand"></a>
+        <a href="http://vnbphoto.com" target="_blank"><img src="images/supporters/vnb.png" alt="VNB Photography"></a>
+        <a href="http://www.sala.ubc.ca/programs/architecture" target="_blank"><img src="images/supporters/sala.png" alt="The University of British Columbia School of Architecture and Landscape Architecture"></a>
+        <a href="http://thnk.org" target="_blank"><img src="images/supporters/thnk.png" alt="THNK School for Creative Leadership"></a>
+        <a href="http://www.museumofvancouver.ca" target="_blank"><img src="images/supporters/mov.jpg" alt="the MOV"></a>
+        <a href="http://vanspecial.com" target="_blank"><img src="images/supporters/vancouver-special.png" alt="Vancouver Special"></a>
+        <a href="http://idswest.com" target="_blank"><img src="images/supporters/IDSWest.jpg" alt="IDSWest"></a>
+        <a href="http://citystudiovancouver.com" target="_blank"><img src="images/supporters/city-studio.jpg" alt="City Studio"></a>
+        <a href="http://vancouverisawesome.com/category/vancouver-bc-designers/" target="_blank"><img src="images/supporters/maker_series_logo.png" alt="Maker Series"></a>
+        <a href="http://briteweb.com" target="_blank"><img src="images/supporters/briteweblogo2.jpg" alt="Briteweb"></a>
+        <a href="http://hcma.ca" target="_blank"><img src="images/supporters/hcma.png" alt="HMCA"></a>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="supporters">
-  <h1>Event Partners</h1>
-  <div class="support">
-    <div>
-      <a href="http://www.contemporaryartgallery.ca" target="_blank"><img src="images/supporters/cag.png" alt="The Contemporary Art Gallery of Vancouver"></a>
-      <a href="https://www.segd.org" target="_blank"><img src="images/supporters/SEGD-Logo.jpg" alt="SEGD"></a>
-      <a href="http://vancouver.designnerds.org" target="_blank"><img src="images/supporters/vancouver-design-nerds.png" alt="the Vancouver Design Nerds"></a>
-      <a href="http://vancouverpublicspace.ca" target="_blank"><img src="images/supporters/vpsn.png" alt="the Vancouver Public Space Network"></a>
-      <a href="http://www.lohavancouver.org" target="_blank"><img src="images/supporters/loha.png" alt="LoHA (the Laboratory for Housing Alternatives)"></a>
-      <a href="http://www.industrialbrand.com" target="_blank"><img src="images/supporters/industrial-brand.png" alt="Industrial Brand"></a>
-      <a href="http://www.maastudio.com" target="_blank"><img src="images/supporters/MAASWORDMARK.png" alt="Marianne Amodio Architecture Studio"></a>
-      <a href="http://publicdesign.ca" target="_blank"><img src="images/supporters/Public-Logo.png" alt="Public"></a>
+  <div class="outer-container supporters">
+    <h1>Media Partners</h1>
+    <div class="support">
+      <div>
+        <a href="http://www.graymag.net" target="_blank"><img src="images/supporters/gray.jpg" alt="Gray Magazine "></a>
+        <a href="http://www.westernlivingmagazine.com" target="_blank"><img src="images/supporters/WL_LogoMagazineBlack_small.jpg" alt="Western Living Magazine"></a>
+        <a href="http://vancouverisawesome.com" target="_blank"><img src="images/supporters/via.png" alt="Vancouver Is Awesome"></a>
+        <a href="http://spacing.ca/vancouver" target="_blank"><img src="images/supporters/spacingvan.jpg" alt="Spacing Vancouver"></a>
+        <a href="http://www.tourismvancouver.com" target="_blank"><img src="images/supporters/tourismvan.png" alt="Tourism Vancouver"></a>
+      </div>
     </div>
   </div>
-          <p><a target="_blank" href="event-submission/" class="highlight">Become an Event Partner by putting on your own design workshop, talk, tour, pop-up or party.</a></p>
-</section>
 
-<section class="supporters">
-  <h1>Friends of VDW</h1>
-  <div class="support">
-    <div>
-      <span class="supporter friend">Shelley Craig</span>
-      <span class="supporter friend">Ian McDonald</span>
-      <span class="supporter friend">Kathleen Mazzocco</span>
-      <span class="supporter friend">Carlos Obregon</span>
+  <div class="outer-container supporters">
+    <h1>Event Partners</h1>
+    <div class="support">
+      <div>
+        <a href="http://www.contemporaryartgallery.ca" target="_blank"><img src="images/supporters/cag.png" alt="The Contemporary Art Gallery of Vancouver"></a>
+        <a href="https://www.segd.org" target="_blank"><img src="images/supporters/SEGD-Logo.jpg" alt="SEGD"></a>
+        <a href="http://vancouver.designnerds.org" target="_blank"><img src="images/supporters/vancouver-design-nerds.png" alt="the Vancouver Design Nerds"></a>
+        <a href="http://makerlabs.ca" target="_blank"><img src="images/supporters/MakerLabs.png" alt="Maker Labs"></a>
+        <a href="http://gdc.net" target="_blank"><img src="images/supporters/gdc.png" alt="the GDC"></a>
+        <a href="http://vancouverpublicspace.ca" target="_blank"><img src="images/supporters/vpsn.png" alt="the Vancouver Public Space Network"></a>
+        <a href="http://elevatorstrategy.com" target="_blank"><img src="images/supporters/elevator.png" alt="Elevator Strategy"></a>
+        <a href="http://www.meetup.com/Creative-Pulse-Casual-Events-for-Vancouver-Creatives/" target="_blank"><img src="images/supporters/CP.png" alt="Creative Pulse"></a>
+        <a href="http://www.vancouvercustomfurniture.com" target="_blank"><img src="images/supporters/sholto.png" alt="Sholto Design Studio"></a>
+        <!--      <img src="images/supporters/cc-logo-yoyo.jpg" alt="YoYo">-->
+        <a href="http://www.lohavancouver.org" target="_blank"><img src="images/supporters/loha.png" alt="LoHA (the Laboratory for Housing Alternatives)"></a>
+        <a href="http://www.industrialbrand.com" target="_blank"><img src="images/supporters/industrial-brand.png" alt="Industrial Brand"></a>
+        <a href="http://www.maastudio.com" target="_blank"><img src="images/supporters/MAASWORDMARK.png" alt="Marianne Amodio Architecture Studio"></a>
+        <a href="http://publicdesign.ca" target="_blank"><img src="images/supporters/Public-Logo.png" alt="Public"></a>
+        <a href="http://creativemornings.com/cities/van" target="_blank"><img src="images/supporters/cm-fb-VAN.png" alt="Creative Mornings Vancouver"></a>
+      </div>
     </div>
   </div>
-    <p><a class="highlight" target="_blank" href="http://www.eventbrite.ca/e/vdw-contributions-tickets-12659427689">Become a Friend of VDW with your contribution to this inaugural event.</a></p>
+
+  <div class="outer-container supporters last">
+    <h1>Friends of VDW</h1>
+    <div class="support">
+      <div>
+        <span class="supporter friend">Shelley Craig</span>
+        <span class="supporter friend">Ian McDonald</span>
+        <span class="supporter friend">Kathleen Mazzocco</span>
+        <span class="supporter friend">Carlos Obregon</span>
+      </div>
+    </div>
+    <p class="become-a-sponsor"><a target="_blank" href="http://www.eventbrite.ca/e/vdw-contributions-tickets-13030296969">Become a Friend of VDW with your contribution to this inaugural event &gt;</a></p>
+  </div>
 </section>
 
 <footer id="contact">
-  <div class="section">
+  <div class="outer-container">
     <h1>We&rsquo;re just getting started! For information on sponsorship, programming, and media inquiries, please write us and we&rsquo;ll get back to you shortly.</h1>
     <div class="locations">
       <a href="mailto:info@vancouverdesignwk.com" class="highlight">Get In Touch</a>
@@ -539,9 +565,6 @@
   </svg>
 </div>
 
-<script type="text/javascript" src="javascript/third-party.js?1"></script>
-<script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
-<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
-<script type="text/javascript" src="javascript/oms.min.js?1"></script>
-<script type="text/javascript" src="javascript/app.js?1"></script>
+<script type="text/javascript" src="javascript/third-party.js?2"></script>
+<script type="text/javascript" src="javascript/app.js?2"></script>
 </body>
