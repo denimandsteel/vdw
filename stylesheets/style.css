@@ -837,7 +837,10 @@ header {
 
 #supporters {
   background: #eef9f8;
-  padding: 80px 0; }
+  padding: 80px 10px; }
+  @media screen and (max-width: 480px) {
+    #supporters {
+      padding: 10px; } }
 
 #supporters .outer-container {
   margin: 0 auto;
@@ -855,6 +858,9 @@ header {
     padding: 0;
     margin-top: 70px;
     margin-bottom: 0; }
+    @media screen and (max-width: 480px) {
+      #supporters .supporters h1 {
+        margin-top: 30px; } }
   #supporters .supporters .become-a-sponsor {
     margin: 5px 0; }
 
