@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-17
-priority: 5
+priority: 6
 slug: 2014-09-17-rethinking_transportation_future_livability__boast_or_bust
 ---

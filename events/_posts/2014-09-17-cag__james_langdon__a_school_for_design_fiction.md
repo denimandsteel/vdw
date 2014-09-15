@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-17
-priority: 2
+priority: 3
 slug: 2014-09-17-cag__james_langdon__a_school_for_design_fiction
 ---

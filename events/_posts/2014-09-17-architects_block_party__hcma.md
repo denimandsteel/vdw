@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-17
-priority: 1
+priority: 2
 slug: 2014-09-17-architects_block_party__hcma
 ---
