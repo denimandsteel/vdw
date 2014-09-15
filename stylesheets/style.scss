@@ -388,6 +388,7 @@ header {
 #hero {
   position: relative;
   padding-bottom: 25px;
+  height: 600px;
 
   @include media($mobile) { padding-bottom: 0; }
   .outer-container {
@@ -443,6 +444,7 @@ header {
   margin: 0 auto;
   @extend %cream-box;
   @extend %big-box;
+  h2, p { @extend %big-type; }
   background: transparent;
   .content p:last-of-type { margin-bottom: 1em; }
 }

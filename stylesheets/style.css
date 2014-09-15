@@ -26,12 +26,12 @@ body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite, header h
   line-height: 23.44px;
   text-transform: uppercase; }
 
-h1, blockquote, .todds-terrible-hack, #hero h1, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p {
+h1, blockquote, .todds-terrible-hack, #hero h1, #mission .outer-container h2, #mission .outer-container p, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 1px; }
   @media screen and (max-width: 480px) {
-    h1, blockquote, .todds-terrible-hack, #hero h1, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p {
+    h1, blockquote, .todds-terrible-hack, #hero h1, #mission .outer-container h2, #mission .outer-container p, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p {
       font-size: 18px;
       line-height: 20px; } }
 
@@ -358,7 +358,8 @@ header {
 
 #hero {
   position: relative;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  height: 600px; }
   @media screen and (max-width: 480px) {
     #hero {
       padding-bottom: 0; } }
