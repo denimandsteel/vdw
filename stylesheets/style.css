@@ -234,6 +234,8 @@ input {
         margin-top: 0; }
       #mission .outer-container .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #quotes .outer-container .content p:last-of-type, #quotes .video .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
         margin-bottom: 0; }
+    #mission .outer-container .content p.bump, .members .member .content p.bump, .faqs .content p.bump, #about .box .content p.bump, #quotes .outer-container .content p.bump, #quotes .video .content p.bump, #get-involved .column .box .content p.bump, #support-tiers .tier .content p.bump {
+      margin-bottom: 1em; }
   #mission .outer-container .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #quotes .outer-container .highlight, #quotes .video .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
     display: block;
     width: 100%;
@@ -241,6 +243,18 @@ input {
 
 #mission .outer-container, #about .box, #quotes .outer-container {
   padding: 80px 0; }
+  #mission .outer-container a, #about .box a, #quotes .outer-container a {
+    color: #4558a7;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; }
+  #mission .outer-container .more .extra, #about .box .more .extra, #quotes .outer-container .more .extra {
+    display: none; }
+  #mission .outer-container .more.active .toggle, #about .box .more.active .toggle, #quotes .outer-container .more.active .toggle {
+    display: none; }
+  #mission .outer-container .more.active .extra, #about .box .more.active .extra, #quotes .outer-container .more.active .extra {
+    display: block; }
   @media screen and (max-width: 480px) {
     #mission .outer-container, #about .box, #quotes .outer-container {
       padding: 20px 0; } }

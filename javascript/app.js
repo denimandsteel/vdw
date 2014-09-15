@@ -44,9 +44,14 @@ var resizeBackground = function() {
   $('svg').get(0).setAttribute("viewBox", '0 0 334.469 ' + cropHeight);
   $('svg').attr('enable-background', 'new 0 0 334.469 ' + cropHeight);
 };
-setTimeout(resizeBackground, 500); // Wait long after DOM has finished.
+setTimeout(resizeBackground, 5000); // Wait long after DOM has finished. This is a little gross, would setting all image width and height help?
 $(window).resize(function() {
   setTimeout(resizeBackground, 500); // Wait for masonry to shuffle.
+});
+
+$('.more .toggle').click(function() {
+  $(this).parent('.more').addClass('active');
+  return false;
 });
 
 // Sponsor shuffling and masonry.

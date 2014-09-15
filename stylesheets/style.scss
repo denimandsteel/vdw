@@ -255,6 +255,7 @@ input {
       &:first-child { margin-top: 0; }
       &:last-of-type { margin-bottom: 0; }
     }
+    p.bump { margin-bottom: 1em; }
   }
 
   .highlight {
@@ -266,6 +267,20 @@ input {
 
 %big-box {
   padding: 80px 0;
+  a {
+    color: $navyblue;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .more {
+    .extra { display: none; }
+    &.active {
+      .toggle { display: none; }
+      .extra { display: block; }
+    }
+  }
   @include media($mobile) { padding: 20px 0; }
 }
 
