@@ -62,18 +62,24 @@ $('#event-sample > div').masonry({
   itemSelector: '.event'
 });
 
-// Slideshow.
-var start = 0;
-var $slides = $('.slide');
-// $slides.removeClass('active');
-// $($slides.get(Math.floor(Math.random() * $slides.length))).addClass('active');
-// setInterval(function() {
-//   $slides.removeClass('active');
-//   $($slides.get(++start % 3)).addClass('active');
-// }, 3000);
-setInterval(function() {
+// Lazy load a slideshow.
+var interval = 6000;
+setTimeout(function() {
+  $('.slideshow').append('<div class="slide two"></div>');
+}, interval*0.5);
+setTimeout(function() {
   $('.slideshow .slide:last-child').prependTo('.slideshow');
-}, 6000);
+}, interval);
+setTimeout(function() {
+  $('.slideshow').append('<div class="slide three"></div>');
+}, interval*1.5);
+setTimeout(function() {
+  $('.slideshow .slide:last-child').prependTo('.slideshow');
+  setInterval(function() {
+    $('.slideshow .slide:last-child').prependTo('.slideshow');
+  }, interval);
+}, interval*2);
+
 
 // Events open/close.
 $('.day-header').on('click', function() {
@@ -139,8 +145,6 @@ for (var date in vdwEvents) {
     events.addTo(map);
     map.fitBounds(events.getBounds());
     map.setZoom(13);
-
-    
 
     // Info station markers.
     // var infoStations = new L.featureGroup();
