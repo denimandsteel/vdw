@@ -26,12 +26,12 @@ body, h1, h2, h3, ul, p, input, blockquote, .todds-terrible-hack, cite, header h
   line-height: 23.44px;
   text-transform: uppercase; }
 
-h1, blockquote, .todds-terrible-hack, #hero h1, #mission .outer-container h2, #mission .outer-container p, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p {
+h1, blockquote, .todds-terrible-hack, #hero h1, #mission .outer-container h2, #mission .outer-container p, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p, #supporters .outer-container h2, #supporters .outer-container p {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 1px; }
   @media screen and (max-width: 480px) {
-    h1, blockquote, .todds-terrible-hack, #hero h1, #mission .outer-container h2, #mission .outer-container p, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p {
+    h1, blockquote, .todds-terrible-hack, #hero h1, #mission .outer-container h2, #mission .outer-container p, .weekname, #about .box h2, #about .box p, #quotes .outer-container h2, #quotes .outer-container p, #supporters .outer-container h2, #supporters .outer-container p {
       font-size: 18px;
       line-height: 20px; } }
 
@@ -217,46 +217,46 @@ input {
   input[type='submit'] {
     border: 0; }
 
-#mission .outer-container, .members .member, .faqs, #about .box, #quotes .outer-container, #quotes .video, #get-involved .column .box, #support-tiers .tier {
+#mission .outer-container, .members .member, .faqs, #about .box, #quotes .outer-container, #quotes .video, #get-involved .column .box, #support-tiers .tier, #supporters .outer-container {
   background: #f2f9ff;
   color: black; }
-  #mission .outer-container img, .members .member img, .faqs img, #about .box img, #quotes .outer-container img, #quotes .video img, #get-involved .column .box img, #support-tiers .tier img {
+  #mission .outer-container img, .members .member img, .faqs img, #about .box img, #quotes .outer-container img, #quotes .video img, #get-involved .column .box img, #support-tiers .tier img, #supporters .outer-container img {
     display: block;
     width: 100%;
     height: auto; }
-  #mission .outer-container .content, .members .member .content, .faqs .content, #about .box .content, #quotes .outer-container .content, #quotes .video .content, #get-involved .column .box .content, #support-tiers .tier .content {
+  #mission .outer-container .content, .members .member .content, .faqs .content, #about .box .content, #quotes .outer-container .content, #quotes .video .content, #get-involved .column .box .content, #support-tiers .tier .content, #supporters .outer-container .content {
     padding: 7px 10px; }
-    #mission .outer-container .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #quotes .outer-container .content h2:first-of-type, #quotes .video .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type {
+    #mission .outer-container .content h2:first-of-type, .members .member .content h2:first-of-type, .faqs .content h2:first-of-type, #about .box .content h2:first-of-type, #quotes .outer-container .content h2:first-of-type, #quotes .video .content h2:first-of-type, #get-involved .column .box .content h2:first-of-type, #support-tiers .tier .content h2:first-of-type, #supporters .outer-container .content h2:first-of-type {
       margin-top: 0; }
-    #mission .outer-container .content p, .members .member .content p, .faqs .content p, #about .box .content p, #quotes .outer-container .content p, #quotes .video .content p, #get-involved .column .box .content p, #support-tiers .tier .content p {
+    #mission .outer-container .content p, .members .member .content p, .faqs .content p, #about .box .content p, #quotes .outer-container .content p, #quotes .video .content p, #get-involved .column .box .content p, #support-tiers .tier .content p, #supporters .outer-container .content p {
       text-transform: none; }
-      #mission .outer-container .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #quotes .outer-container .content p:first-child, #quotes .video .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child {
+      #mission .outer-container .content p:first-child, .members .member .content p:first-child, .faqs .content p:first-child, #about .box .content p:first-child, #quotes .outer-container .content p:first-child, #quotes .video .content p:first-child, #get-involved .column .box .content p:first-child, #support-tiers .tier .content p:first-child, #supporters .outer-container .content p:first-child {
         margin-top: 0; }
-      #mission .outer-container .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #quotes .outer-container .content p:last-of-type, #quotes .video .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type {
+      #mission .outer-container .content p:last-of-type, .members .member .content p:last-of-type, .faqs .content p:last-of-type, #about .box .content p:last-of-type, #quotes .outer-container .content p:last-of-type, #quotes .video .content p:last-of-type, #get-involved .column .box .content p:last-of-type, #support-tiers .tier .content p:last-of-type, #supporters .outer-container .content p:last-of-type {
         margin-bottom: 0; }
-    #mission .outer-container .content p.bump, .members .member .content p.bump, .faqs .content p.bump, #about .box .content p.bump, #quotes .outer-container .content p.bump, #quotes .video .content p.bump, #get-involved .column .box .content p.bump, #support-tiers .tier .content p.bump {
+    #mission .outer-container .content p.bump, .members .member .content p.bump, .faqs .content p.bump, #about .box .content p.bump, #quotes .outer-container .content p.bump, #quotes .video .content p.bump, #get-involved .column .box .content p.bump, #support-tiers .tier .content p.bump, #supporters .outer-container .content p.bump {
       margin-bottom: 1em; }
-  #mission .outer-container .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #quotes .outer-container .highlight, #quotes .video .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight {
+  #mission .outer-container .highlight, .members .member .highlight, .faqs .highlight, #about .box .highlight, #quotes .outer-container .highlight, #quotes .video .highlight, #get-involved .column .box .highlight, #support-tiers .tier .highlight, #supporters .outer-container .highlight {
     display: block;
     width: 100%;
     text-align: center; }
 
-#mission .outer-container, #about .box, #quotes .outer-container {
+#mission .outer-container, #about .box, #quotes .outer-container, #supporters .outer-container {
   padding: 80px 0; }
-  #mission .outer-container a, #about .box a, #quotes .outer-container a {
+  #mission .outer-container a, #about .box a, #quotes .outer-container a, #supporters .outer-container a {
     color: #4558a7;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none; }
-  #mission .outer-container .more .extra, #about .box .more .extra, #quotes .outer-container .more .extra {
+  #mission .outer-container .more .extra, #about .box .more .extra, #quotes .outer-container .more .extra, #supporters .outer-container .more .extra {
     display: none; }
-  #mission .outer-container .more.active .toggle, #about .box .more.active .toggle, #quotes .outer-container .more.active .toggle {
+  #mission .outer-container .more.active .toggle, #about .box .more.active .toggle, #quotes .outer-container .more.active .toggle, #supporters .outer-container .more.active .toggle {
     display: none; }
-  #mission .outer-container .more.active .extra, #about .box .more.active .extra, #quotes .outer-container .more.active .extra {
+  #mission .outer-container .more.active .extra, #about .box .more.active .extra, #quotes .outer-container .more.active .extra, #supporters .outer-container .more.active .extra {
     display: block; }
   @media screen and (max-width: 480px) {
-    #mission .outer-container, #about .box, #quotes .outer-container {
+    #mission .outer-container, #about .box, #quotes .outer-container, #supporters .outer-container {
       padding: 20px 0; } }
 
 .logo {
@@ -835,42 +835,51 @@ header {
       #support-tiers .tier:last-child {
         margin-right: 0; } }
 
-#supporter h1 {
-  color: #7d7d7d; }
-
 #supporters {
-  margin-bottom: 0;
-  padding-bottom: 0; }
+  background: #eef9f8;
+  padding: 80px 0; }
 
-.supporters {
+#supporters .outer-container {
+  margin: 0 auto;
+  background: transparent; }
+  #supporters .outer-container .content p:last-of-type {
+    margin-bottom: 1em; }
+
+#supporters .supporters {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0; }
+  padding: 0;
+  border-bottom: 1px solid #4558a7; }
+  #supporters .supporters h1 {
+    text-align: left;
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 0; }
+  #supporters .supporters .become-a-sponsor {
+    margin: 5px 0; }
 
-.support {
-  background: white;
+#supporters .outer-container .support {
   margin: 10px 0; }
-  .support h2 {
+  #supporters .outer-container .support h2 {
     padding: 10px 10px 0; }
-  .support img, .support .friend {
+  #supporters .outer-container .support img, #supporters .outer-container .support .friend {
     width: 23%;
     height: auto;
     padding: 2%;
     margin: 1%;
     background: white; }
     @media screen and (max-width: 480px) {
-      .support img, .support .friend {
+      #supporters .outer-container .support img, #supporters .outer-container .support .friend {
         width: 48%; } }
-  .support .friend {
+  #supporters .outer-container .support .friend {
     display: block; }
-  .support.platinum {
+  #supporters .outer-container .support.platinum {
     background: #e1e1e1; }
-  .support.gold {
+  #supporters .outer-container .support.gold {
     background: #a38a66; }
-  .support.silver {
+  #supporters .outer-container .support.silver {
     background: #a6a9aa; }
-  .support.double-silver {
+  #supporters .outer-container .support.double-silver {
     background: #95653e; }
 
 #contact .details {

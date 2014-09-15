@@ -929,20 +929,44 @@ header {
 }
 
 // #SUPPORTERS
-
-#supporter h1 { color: $lighter-gray; }
 #supporters {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  background: $lightblue;
+  padding: 80px 0;
 }
-.supporters {
+#supporters .outer-container {
+  margin: 0 auto;
+  @extend %cream-box;
+  @extend %big-box;
+  h2, p { @extend %big-type; }
+  background: transparent;
+  .content p:last-of-type { margin-bottom: 1em; }
+}
+
+// #supporter h1 { color: $lighter-gray; }
+// #supporters {
+//   margin-bottom: 0;
+//   padding-bottom: 0;
+// }
+
+#supporters .supporters {
   margin-top:0;
   margin-bottom:0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
+  // padding-top: 0;
+  // padding-bottom: 0;
+  border-bottom: 1px solid $navyblue;
+  h1 {
+    text-align: left;
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+  .become-a-sponsor {
+    margin: 5px 0;
+  }
 }
-.support {
-  background: white;
+#supporters .outer-container .support {
+  // background: white;
   margin: 10px 0;
 
   h2 {
