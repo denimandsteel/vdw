@@ -4,7 +4,7 @@ dayOfMonth: Sept 20
 title: "Campos Leckie Studio"
 description: "Campos Leckie Studio"
 startTime: 11:00 AM
-endTime: 4:00 PM
+endTime: 2:00 PM
 type: Open Studio
 address: "1395 Odlum Drive, Vancouver, BC, V5L 3M1"
 addressLabel: 1395 Odlum Drive

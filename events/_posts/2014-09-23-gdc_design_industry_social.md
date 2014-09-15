@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Tue
 dayOfMonth: Sept 23
-title: "DESIGN INDUSTRY SOCIAL"
+title: "GDC DESIGN INDUSTRY SOCIAL"
 description: "A design week is a great excuse for design industry folks to socialize out of the office. The Society of Graphic Designers of Canada (GDC) invites designers, friends, and colleagues of all experience levels to connect."
 startTime: 6:30 PM
 endTime: 10:00 PM
@@ -17,5 +17,5 @@ price: Free
 
 category: event-23
 priority: 1
-slug: 2014-09-23-design_industry_social
+slug: 2014-09-23-gdc_design_industry_social
 ---

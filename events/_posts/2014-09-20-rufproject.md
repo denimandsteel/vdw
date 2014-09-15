@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "RUFproject"
 description: "Buzz 260 for entry."
-startTime: 11:00 AM
+startTime: 1:00 PM
 endTime: 4:00 PM
 type: Open Studio
 address: "Unit 260-49 Dunlevy Avenue, Vancouver, BC, V6A 3A3"

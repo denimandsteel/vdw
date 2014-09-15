@@ -2,7 +2,7 @@
 dayOfWeek: Tue
 dayOfMonth: Sept 23
 title: "DEMO NITE EDITION 1: THE STORY BEHIND THE DESIGN"
-description: "Exclusive to Vancouver Design Week, a new forum for showcasing local creative works kicks off. Join local makers working in digital and material design to see new works and to hear the story behind what motivated their creations."
+description: "Exclusive to Vancouver Design Week, Denim & Steel presents a new forum for showcasing local creative works kicks off. Join local makers working in digital and material design to see new works and to hear the story behind what motivated their creations."
 startTime: 7:00 PM
 endTime: 9:00 PM
 type: Talk

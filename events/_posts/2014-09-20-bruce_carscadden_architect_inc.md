@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "Bruce Carscadden Architect Inc."
 description: "Short studio tour and discussion of recent work. Q&A to follow."
-startTime: 11:00 AM
+startTime: 1:00 PM
 endTime: 4:00 PM
 type: Open Studio
 address: "715 East Hastings Street, Vancouver, BC, V6A 1R3"

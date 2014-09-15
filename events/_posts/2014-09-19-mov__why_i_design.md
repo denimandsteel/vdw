@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Fri
 dayOfMonth: Sept 19
-title: "WHY I DESIGN"
+title: "MOV - WHY I DESIGN"
 description: "Join 30+ designers for conversations about their work, and why they choose to do what they do in Vancouver. Why I Design aims the spotlight on the process of invention.You can ask the designers, ranging from those launching their careers to innovative leaders in international corporations, what motivates them, how they do what they do, and why Vancouver inspires them to keep doing it."
 startTime: 8:00 PM
 endTime: 11:30 PM
@@ -17,5 +17,5 @@ price: $16
 
 category: event-19
 priority: 3
-slug: 2014-09-19-why_i_design
+slug: 2014-09-19-mov__why_i_design
 ---

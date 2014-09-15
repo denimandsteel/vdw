@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "Pound & Grain"
 description: "WE ARE AN ORIGINAL AND FEARLESS DIGITAL CREATIVE AGENCY THAT HAS BEEN BUILDING HARDWORKING CREATIVE AND TECHNICAL SOLUTIONS SINCE 2010. BUZZ FOR ENTRY."
-startTime: 11:00 AM
+startTime: 1:00 PM
 endTime: 4:00 PM
 type: Open Studio
 address: "326 West Cordova Street, Vancouver, BC, V6B 1E8"
@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 19
+priority: 21
 slug: 2014-09-20-pound__grain
 ---
