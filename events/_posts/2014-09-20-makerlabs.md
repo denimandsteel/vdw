@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 21
+priority: 22
 slug: 2014-09-20-makerlabs
 ---

@@ -16,6 +16,6 @@ published: true
 price: $25
 
 category: event-20
-priority: 31
+priority: 32
 slug: 2014-09-20-maker_series_laser_cutting__more
 ---

@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 12
+priority: 13
 slug: 2014-09-20-space2place_design
 ---
