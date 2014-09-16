@@ -102,8 +102,8 @@ $('.day-header').on('click', function() {
 for (var date in vdwEvents) {
   if (vdwEvents.hasOwnProperty(date)) {
     var map = new L.Map(date, {
-      // center: new L.LatLng(37.8, -122.4),
-      // zoom: 10,
+      center: new L.LatLng(49.28214015975995, -123.13854217529297),
+      zoom: 12,
       scrollWheelZoom: false,
       attributionControl: false,
       // layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
@@ -114,7 +114,7 @@ for (var date in vdwEvents) {
     var popup = new L.Popup();
     
     oms.addListener('spiderfy', function(markers) {
-      console.log(markers);
+      // console.log(markers);
       markers.forEach(function(marker, i) {
         marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + marker.options.alt + '</span>' }) );
       });
@@ -148,8 +148,8 @@ for (var date in vdwEvents) {
       oms.addMarker(marker);
     });
     events.addTo(map);
-    map.fitBounds(events.getBounds());
-    map.setZoom(13);
+    // map.fitBounds(events.getBounds());
+    // map.setZoom(13);
 
     // Info station markers.
     // var infoStations = new L.featureGroup();
