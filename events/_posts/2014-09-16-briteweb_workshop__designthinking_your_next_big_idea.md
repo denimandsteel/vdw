@@ -13,7 +13,7 @@ longitude: -123.0989244
 eventUrl: https://www.eventbrite.com/e/design-thinking-your-next-big-idea-tickets-12585139491
 eventUrlLabel: Register
 published: true
-price: $10
+price: SOLD OUT
 
 category: event-16
 priority: 2

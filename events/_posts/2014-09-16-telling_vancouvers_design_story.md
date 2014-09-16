@@ -13,7 +13,7 @@ longitude: -123.0989244
 eventUrl: https://www.picatic.com/event14099623519477370
 eventUrlLabel: Register
 published: true
-price: Free
+price: SOLD OUT
 
 category: event-16
 priority: 3
