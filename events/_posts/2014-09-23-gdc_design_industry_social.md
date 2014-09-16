@@ -10,8 +10,8 @@ address: "16 W Hastings St, Vancouver, BC V6B 1G6"
 addressLabel: Bitter Tasting Room
 latitude: 49.2816086
 longitude: -123.1050501
-eventUrl: http://gdc.net/
-eventUrlLabel: Attend
+eventUrl: https://www.gdc.net/event/2014/09/15/2816
+eventUrlLabel: RSVP
 published: true
 price: Free
 

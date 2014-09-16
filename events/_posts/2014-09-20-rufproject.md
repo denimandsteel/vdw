@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "RUFproject"
-description: "Buzz 260 for entry."
+description: "Special VDW pre launch and sneak peak at Vancouver's next big thing in condo living. Buzz 260 for entry."
 startTime: 1:00 PM
 endTime: 4:00 PM
 type: Open Studio
