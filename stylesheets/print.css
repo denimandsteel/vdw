@@ -9,7 +9,7 @@
 .day-events:last-child { page-break-after: auto; }
 
 .day-events.active .day-header {
-  background: $navyblue;
+  background: #4558a7;
   color: white;
 }
 

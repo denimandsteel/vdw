@@ -102,9 +102,7 @@
         </div>
         <div class="events-list">
           <div id="map-{{eventDayCategory}}" class="map"></div>
-          {% for priority in (1..50) %}
-            {% for post in site.categories[eventDayCategory] %}
-              {% if post.priority == priority and post.published == true %}
+          {% for priority in (1..50) %}{% for post in site.categories[eventDayCategory] %}{% if post.priority == priority and post.published == true %}
                 <script type="text/javascript">
                   if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
                     vdwEvents['map-{{eventDayCategory}}'] = [];
@@ -137,10 +135,7 @@
                     <p class="description">{{ post.description }}</p>
                   </div>
                 </div>
-                
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
+              {% endif %}{% endfor %}{% endfor %}
         </div>
       </div>
     {% endif %}
@@ -292,6 +287,7 @@
       <img src="images/team/MarkBusse.jpg" width="600" height="360" alt="Mark Busse">
       <div class="content">
         <h2>Mark Busse / Connector</h2>
+        <p>Mark owns Industrial Brand, a Vancouver-based brand strategy &amp; communication design consultancy that helps built-environment professionals realize their brand and marketing potential. He's also a Fellow and past president of the Graphic Designers of Canada, has been known to write &amp; teach about design, and co-founded Foodists.ca.</p>
       </div>
     </div>
     <div class="member">
