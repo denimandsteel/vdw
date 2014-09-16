@@ -826,7 +826,7 @@ header {
         margin-bottom: 0;
         padding-bottom: 0; } }
   #hero .slide {
-    background: #4558a7 url(../images/header1.jpg) center center;
+    background: #4558a7 url(../images/VDW_Web-Header_slide1.jpg) center center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -843,11 +843,11 @@ header {
     #hero .slide.active {
       opacity: 1; }
     #hero .slide.one {
-      background-image: url(../images/header1.jpg); }
+      background-image: url(../images/VDW_Web-Header_slide1.jpg); }
     #hero .slide.two {
-      background-image: url(../images/header2.jpg); }
+      background-image: url(../images/VDW_Web-Header_slide2.jpg); }
     #hero .slide.three {
-      background-image: url(../images/header3.jpg); }
+      background-image: url(../images/VDW_Web-Header_slide2.jpg); }
   #hero h1 {
     margin-top: 250px;
     margin-bottom: 100px;

@@ -418,7 +418,7 @@ header {
   }
 
   .slide {
-    background: $navyblue url(../images/header1.jpg) center center;
+    background: $navyblue url(../images/VDW_Web-Header_slide1.jpg) center center;
     background-size: cover;
     position: absolute;
     top: 0; left: 0;
@@ -428,9 +428,9 @@ header {
     @include transition(1.5s opacity ease-in-out);
     &:first-child { opacity: 1; }
     &.active { opacity: 1; }
-    &.one { background-image: url(../images/header1.jpg); }
-    &.two { background-image: url(../images/header2.jpg); }
-    &.three { background-image: url(../images/header3.jpg); }
+    &.one { background-image: url(../images/VDW_Web-Header_slide1.jpg); }
+    &.two { background-image: url(../images/VDW_Web-Header_slide2.jpg); }
+    &.three { background-image: url(../images/VDW_Web-Header_slide2.jpg); }
   }
 
   h1 {
