@@ -16,6 +16,6 @@ published: true
 price: $15-30
 
 category: event-21
-priority: 3
+priority: 2
 slug: 2014-09-21-open_buildings_vdw_signature_event
 ---

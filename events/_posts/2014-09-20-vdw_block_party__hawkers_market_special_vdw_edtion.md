@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "VDW BLOCK PARTY / HAWKERS MARKET -SPECIAL VDW EDTION"
-description: "VDW in collaboration with Hawkers Market re-designs the \"block party\".  Take your taste buds for a walk and make us one of your stops on your VDW design adventure."
+description: "VDW in collaboration with Hawkers Market re-designs the \"block party\".  Take your taste buds for a walk as you continue along your VDW Open Studio and Sampling adventure."
 startTime: 11:00 AM
 endTime: 4:00 PM
 type: Party
