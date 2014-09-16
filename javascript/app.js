@@ -106,8 +106,8 @@ for (var date in vdwEvents) {
       zoom: 12,
       scrollWheelZoom: false,
       attributionControl: false,
-      // layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
-      layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
+      layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
+      // layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
     });
     
     var oms = new OverlappingMarkerSpiderfier(map, {nearbyDistance: 1});
