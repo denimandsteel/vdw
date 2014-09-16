@@ -10,8 +10,8 @@ address: "405 Railway St, Vancouver, BC, V6A 1A7"
 addressLabel: Inform Contract
 latitude: 49.2848984
 longitude: -123.0951361
-eventUrl: http://informcontract.com
-eventUrlLabel: Attend
+eventUrl: mailto:info@informcontract.com
+eventUrlLabel: RSVP
 published: true
 price: 
 

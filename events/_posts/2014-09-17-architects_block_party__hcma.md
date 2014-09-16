@@ -2,7 +2,7 @@
 dayOfWeek: Wed
 dayOfMonth: Sept 17
 title: "ARCHITECTS' BLOCK PARTY @ HCMA"
-description: "With social sustainability in mind, HCMA threw their first Architects' Block Party in 2013 to strengthen connections + build community in the industry. By inviting others to play in their sand box, they hope to break down real and perceived barriers to community building. Now they're opening their door even wider to fellow creatives as part of VDW. Join them on their rooftop patio overlooking Granville Island to see where the connections lie."
+description: "With social sustainability in mind, HCMA threw their first Architects' Block Party in 2013 to strengthen connections + build community in the industry. By inviting others to play in their sand box, they hope to break down real and perceived barriers to community building. Now they're opening their doors to fellow creatives as part of VDW. Join our rooftop patio party overlooking Granville Island to see where the connections lie."
 startTime: 5:30 PM
 endTime: 8:30 PM
 type: 
