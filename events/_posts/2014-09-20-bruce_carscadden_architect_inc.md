@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 9
+priority: 10
 slug: 2014-09-20-bruce_carscadden_architect_inc
 ---
