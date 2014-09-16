@@ -10,7 +10,7 @@ address: "555 Nelson St, Vancouver, BC V6B 6R5"
 addressLabel: Contemporary Art Gallery
 latitude: 49.27826270000001
 longitude: -123.1211277
-eventUrl: 
+eventUrl: http://www.contemporaryartgallery.ca/events/james-langdon-a-school-for-design-fiction/
 eventUrlLabel: Attend
 published: true
 price: 

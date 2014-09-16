@@ -7,13 +7,13 @@ startTime: 6:30 PM
 endTime: 10:00 PM
 type: Workshop
 address: "B-211 E Georgia St Vancouver, BC V6A 1Z6 Canada"
-addressLabel: 
+addressLabel: Spring.is Event Hall
 latitude: 49.2785756
 longitude: -123.0989244
-eventUrl: 
-eventUrlLabel: 
+eventUrl: https://www.picatic.com/event14099623519477370
+eventUrlLabel: Register
 published: true
-price: 
+price: Free
 
 category: event-16
 priority: 3

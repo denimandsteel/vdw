@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-26
-priority: 1
+priority: 2
 slug: 2014-09-26-coast_modern_documentary_screening__director_qa
 ---
