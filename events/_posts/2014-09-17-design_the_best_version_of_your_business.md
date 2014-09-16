@@ -10,7 +10,7 @@ address: "88 East Pender Street, Vancouver, BC, V6A 1T1"
 addressLabel: VFS - 88 E Pender St.
 latitude: 49.2802275
 longitude: -123.1027065
-eventUrl: https://www.gdc.net/event/2014/09/15/2816
+eventUrl: https://www.gdc.net/event/2014/08/22/2774
 eventUrlLabel: Attend
 published: true
 price: $20-35
