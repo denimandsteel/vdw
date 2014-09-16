@@ -16,6 +16,6 @@ published: true
 price: $50
 
 category: event-21
-priority: 5
+priority: 4
 slug: 2014-09-21-monogram_dinner_by_design__cocktail_art
 ---

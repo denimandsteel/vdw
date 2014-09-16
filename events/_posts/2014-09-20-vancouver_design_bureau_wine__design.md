@@ -1,6 +1,6 @@
 ---
-dayOfWeek: Sun
-dayOfMonth: Sept 21
+dayOfWeek: Sat
+dayOfMonth: Sept 20
 title: "VANCOUVER DESIGN BUREAU: WINE & DESIGN"
 description: "Join us for a casual evening social hosted at Espiritu Design Studio with refreshments to celebrate VDW! The event is an opportunity to share in creative conversation; perhaps you’ll find your next collaboration! "
 startTime: 7:00 PM
@@ -15,7 +15,7 @@ eventUrlLabel: Attend
 published: true
 price: 
 
-category: event-21
-priority: 1
-slug: 2014-09-21-vancouver_design_bureau_wine__design
+category: event-20
+priority: 32
+slug: 2014-09-20-vancouver_design_bureau_wine__design
 ---
