@@ -1,12 +1,12 @@
 ---
 dayOfWeek: Sat
 dayOfMonth: Sept 20
-title: "Maker Series: Laser Cutting & More"
+title: "MAKER SERIES: LASER CUTTING & MORE"
 description: "Learn about laser cutting and digital fabrication with hands on making at MakerLabs"
 startTime: 1:00 PM
 endTime: 
 type: Workshop
-address: "196 Kingsway Vancouver British Columbia Canada"
+address: "196 Kingsway, Vancouver, BC, Canada"
 addressLabel: MakerLabs
 latitude: 49.2620236
 longitude: -123.0988001
@@ -16,6 +16,6 @@ published: true
 price: $25
 
 category: event-20
-priority: 30
+priority: 31
 slug: 2014-09-20-maker_series_laser_cutting__more
 ---

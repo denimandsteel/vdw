@@ -16,6 +16,6 @@ published: true
 price: $30
 
 category: event-20
-priority: 25
+priority: 26
 slug: 2014-09-20-modern_home_tours
 ---

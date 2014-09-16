@@ -16,6 +16,6 @@ published: true
 price: Multiple
 
 category: event-21
-priority: 3
+priority: 4
 slug: 2014-09-21-garden_dialogues
 ---

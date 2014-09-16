@@ -16,6 +16,6 @@ published: true
 price: $100
 
 category: event-23
-priority: 3
+priority: 4
 slug: 2014-09-23-fashioning_cancer_fundraiser
 ---
