@@ -7,7 +7,7 @@ startTime: 5:00 PM
 endTime: 8:00 PM
 type: Workshop
 address: "1818 Cornwall Ave, Vancouver, V6J 1C7"
-addressLabel: Lululemon Athletica
+addressLabel: lululemon athletica
 latitude: 49.271976
 longitude: -123.1468993
 eventUrl: http://lululemon.com
