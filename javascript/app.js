@@ -37,12 +37,15 @@ $('header input[type="email"]').keyup(function(e) {
 
 // Background crop.
 var resizeBackground = function() {
-  var bottomOfPage = $('#contact').height() + $('#contact').offset().top; // Top of page margin (#hero) + margin at bottom (#team).
-  var cropHeight = bottomOfPage * (334.469/$(window).width());
-  // alert(cropHeight)
-  $('svg').attr('height', cropHeight + 'px');
-  $('svg').get(0).setAttribute("viewBox", '0 0 334.469 ' + cropHeight);
-  $('svg').attr('enable-background', 'new 0 0 334.469 ' + cropHeight);
+  var $contact = $('#contact');
+  if ($contact.length > 0) {
+    var bottomOfPage = $contact.height() + $contact.offset().top; // Top of page margin (#hero) + margin at bottom (#team).
+    var cropHeight = bottomOfPage * (334.469/$(window).width());
+    // alert(cropHeight)
+    $('svg').attr('height', cropHeight + 'px');
+    $('svg').get(0).setAttribute("viewBox", '0 0 334.469 ' + cropHeight);
+    $('svg').attr('enable-background', 'new 0 0 334.469 ' + cropHeight);
+  }
 };
 setTimeout(resizeBackground, 5000); // Wait long after DOM has finished. This is a little gross, would setting all image width and height help?
 $(window).resize(function() {
