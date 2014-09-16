@@ -1,0 +1,89 @@
+---
+---
+<!doctype html>
+<head>
+  <title>VDW Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+  <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css?1">
+  <link rel="stylesheet" type="text/css" media="print" href="../stylesheets/print.css?1">
+</head>
+<body>
+
+<section class="outer-container" style="margin-bottom: 0;">
+  <h1 style="margin-bottom: 0;">Vancouver Design Week</h1>
+</section>
+
+<script type="text/javascript">
+  vdwEvents = {};
+</script>
+
+<section id="event" class="events outer-container" style="margin-top: 40px;">
+  {% for dayNumber in (15..28) %}
+    {% if dayNumber == 15 %}
+      <h2 class="weekname"><strong>Event Schedule<br>
+          Week 1</strong> / Sept 15th - 21st</h2>
+    {% elsif dayNumber == 22 %}
+      <h2 class="weekname"><strong>Event Schedule<br>
+          Week 2</strong> / Sept 22nd - 28th</h2>
+    {% endif %}
+    {% assign eventDayCategory = "event-" | append: dayNumber %}
+    {% if site.categories[eventDayCategory].size > 0 %}
+      <div id="{{ eventDayCategory }}" class="day-events">
+        <div class="day-header">
+          <h2 class="dayname">{{ site.categories[eventDayCategory][0].dayOfWeek}}, <strong>{{ site.categories[eventDayCategory][0].dayOfMonth}}</strong></h2>
+          <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+        </div>
+        <div class="events-list">
+          <div id="map-{{eventDayCategory}}" class="map"></div>
+          {% for priority in (1..50) %}
+            {% for post in site.categories[eventDayCategory] %}
+              {% if post.priority == priority and post.published == true %}
+                <script type="text/javascript">
+                  if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
+                    vdwEvents['map-{{eventDayCategory}}'] = [];
+                  }
+                  vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
+                </script>
+                <div id="event-{{post.slug}}" class="event">
+                  <div class="eventheader">
+                    <div class="left">
+                      <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
+                      <h3 class="title">{{ post.priority }}. {{ post.title }}</h3>
+                      <p class="time-and-place">
+                        {% if post.endTime %}
+                          {{ post.startTime }} - {{ post.endTime }}
+                        {% else %}
+                          {{ post.startTime }}
+                        {% endif %}
+                        at <a target="_blank" href="http://maps.apple.com/?q={{ post.address }}">{{ post.addressLabel }}</a>
+                      </p>
+                    </div>
+                    <div class="right">
+                      <p class="price">{{ post.price }}</p>
+                      {% if post.eventUrl %}
+                      <a target="_blank" href="{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+                      {% endif %}
+                    </div>
+                  </div>
+
+                  <div class="eventcontent">
+                    <p class="description">{{ post.description }}</p>
+                  </div>
+                </div>
+                
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<script type="text/javascript" src="../javascript/third-party.js?2"></script>
+<script type="text/javascript" src="../javascript/app.js?2"></script>
+</body>
+
+</html>

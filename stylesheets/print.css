@@ -1,0 +1,17 @@
+.day-events .events-list { height: auto; }
+.day-events .event-count .indicator.plus { display: none; }
+
+.event-count .indicator.minus { display: block; }
+.day-events .event-count .indicator.minus { display: inline; }
+
+.page-break { page-break-before: always; }
+.day-events { page-break-after: always; }
+.day-events:last-child { page-break-after: auto; }
+
+.day-events.active .day-header {
+  background: $navyblue;
+  color: white;
+}
+
+body, .day-header, .events-list, .eventheader .right .highlight { background: white !important; }
+.background, header, footer, .logo { display: none; }

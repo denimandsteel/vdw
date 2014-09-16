@@ -27,6 +27,7 @@
   <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css?1">
+  <link rel="stylesheet" type="text/css" media="print" href="stylesheets/print.css?1">
   
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -83,7 +84,7 @@
   vdwEvents = {};
 </script>
 
-<section id="event" class="events outer-container">
+<section id="event" class="events outer-container page-break">
   {% for dayNumber in (15..28) %}
     {% if dayNumber == 15 %}
       <h2 class="weekname"><strong>Event Schedule<br>
@@ -146,7 +147,7 @@
   {% endfor %}
 </section>
 
-<section id="faq" class="outer-container">
+<section id="faq" class="outer-container page-break">
   <h1><span>Questions? We have answers.</span></h1>
   <div class="faqs">
     <div class="content">
