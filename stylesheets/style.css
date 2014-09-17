@@ -1027,7 +1027,7 @@ header {
   height: 320px; }
   @media screen and (max-width: 480px) {
     .map {
-      height: 250px; } }
+      height: 200px; } }
 
 .event-item {
   -webkit-backface-visibility: hidden;
