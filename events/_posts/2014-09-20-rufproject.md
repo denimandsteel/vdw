@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 11
+priority: 12
 slug: 2014-09-20-rufproject
 ---

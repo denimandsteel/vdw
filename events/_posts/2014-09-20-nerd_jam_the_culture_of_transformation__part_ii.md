@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-20
-priority: 31
+priority: 32
 slug: 2014-09-20-nerd_jam_the_culture_of_transformation__part_ii
 ---

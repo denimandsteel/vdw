@@ -16,6 +16,6 @@ published: true
 price: $25
 
 category: event-20
-priority: 2
+priority: 3
 slug: 2014-09-20-vancouver_is_awesome__maker_series_workshop_event
 ---

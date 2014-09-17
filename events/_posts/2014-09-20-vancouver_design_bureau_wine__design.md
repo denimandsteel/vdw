@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 33
+priority: 34
 slug: 2014-09-20-vancouver_design_bureau_wine__design
 ---
