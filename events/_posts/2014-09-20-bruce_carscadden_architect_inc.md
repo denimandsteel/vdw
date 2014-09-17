@@ -10,7 +10,7 @@ address: "715 East Hastings Street, Vancouver, BC, V6A 1R3"
 addressLabel: 715 East Hastings Street
 latitude: 49.281158
 longitude: -123.0887874
-eventUrl: http://carscadden-architect.com
+eventUrl: www.carscadden.ca
 eventUrlLabel: Studio Website
 published: true
 price: 
