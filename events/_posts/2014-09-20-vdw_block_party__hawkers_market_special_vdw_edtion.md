@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 32
+priority: 31
 slug: 2014-09-20-vdw_block_party__hawkers_market_special_vdw_edtion
 ---

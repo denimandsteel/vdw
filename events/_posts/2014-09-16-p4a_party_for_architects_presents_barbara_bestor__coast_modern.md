@@ -13,7 +13,7 @@ longitude: -123.1007143
 eventUrl: http://www.eventbrite.ca/e/p4a-presents-barbara-bestor-coast-modern-for-vdw-tickets-12788704359?aff=vdw2014
 eventUrlLabel: Register
 published: true
-price: 
+price: SOLD OUT
 
 category: event-16
 priority: 1
