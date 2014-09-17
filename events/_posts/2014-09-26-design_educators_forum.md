@@ -10,7 +10,7 @@ address: "1399 Johnston Street Vancouver, BC V6A 2B8"
 addressLabel: Emily Carr University of Art + Design, Room 291, 2nd Floor, North Building
 latitude: 49.2704495
 longitude: -123.1329995
-eventUrl: http://www.ecuad.ca
+eventUrl: http://www.eventbrite.com/e/design-educators-forum-part-of-vancouver-design-week-tickets-13082884259
 eventUrlLabel: Website
 published: true
 price: 
