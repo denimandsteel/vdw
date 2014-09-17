@@ -52,13 +52,13 @@ $(window).resize(function() {
   setTimeout(resizeBackground, 500); // Wait for masonry to shuffle.
 });
 
+// More text widgets.
 $('.more .toggle').click(function() {
   $(this).parent('.more').addClass('active');
   return false;
 });
 
-// Sponsor shuffling and masonry.
-// $.shuffle('#event-sample > div .event');
+// Sponsor masonry.
 var $container = $('.support div');
 $container.imagesLoaded( function() {
   $container.masonry({
@@ -100,6 +100,10 @@ $('.day-header').on('click', function() {
   // });
   return false;
 });
+
+// Event current day and past days.
+$('#event-' + (new Date).getDate() + ' .day-header').addClass('current');
+$('#event-' + (new Date).getDate() + '').prevAll('.day-events').find('.day-header').addClass('done');
 
 // Let's make a bunch of maps!
 for (var date in vdwEvents) {

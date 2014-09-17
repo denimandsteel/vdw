@@ -103,6 +103,9 @@ body {
     height: 100%;
     display: block;
   }
+  @include media($mobile) {
+    display: none;
+  }
 }
 
 .outer-container {
@@ -408,7 +411,10 @@ header {
   padding-bottom: 25px;
   height: 600px;
 
-  @include media($mobile) { padding-bottom: 0; }
+  @include media($mobile) {
+    padding-bottom: 0;
+    height: 300px;
+  }
   .outer-container {
     margin-top: 0px;
     @include media(max-width 570px) {
@@ -430,7 +436,12 @@ header {
     &.active { opacity: 1; }
     &.one { background-image: url(../images/VDW_Web-Header_slide1.jpg); }
     &.two { background-image: url(../images/VDW_Web-Header_slide2.jpg); }
-    &.three { background-image: url(../images/VDW_Web-Header_slide2.jpg); }
+    &.three { background-image: url(../images/VDW_Web-Header_slide3.jpg); }
+    @include media($mobile) {
+      &.one { background-image: url(../images/VDW_Web-Header_slide1_mobile.jpg); }
+      &.two { background-image: url(../images/VDW_Web-Header_slide2_mobile.jpg); }
+      &.three { background-image: url(../images/VDW_Web-Header_slide3_mobile.jpg); }
+    }
   }
 
   h1 {
@@ -482,6 +493,11 @@ header {
 .event-count .indicator.minus { display: none; }
 .day-events.active .event-count .indicator.minus { display: inline; }
 
+.events {
+  @include media($mobile) {
+    margin-top: 0;
+  }
+}
 // .events {
 //   h1 span { background: $yellow; }
 //   .event {
@@ -532,7 +548,7 @@ header {
     @include media($mobile) {
       padding-left: 10px;
     }
-  }  
+  }
   .event-count {
     font-size: 16px;
     font-weight: bold;
@@ -542,7 +558,11 @@ header {
     @include media($mobile) {
       padding-right: 10px;
     }
-  }  
+  }
+  &.current { border-left: 10px solid $highlight; }
+  &.done {
+    .dayname, .event-count { color: $lighter-gray; }
+  }
 }
 
 .day-events.active .day-header {
@@ -553,12 +573,43 @@ header {
 .map {
   width: 100%;
   height: 320px;
-  margin: 0 0 1em 0;
 }
 
-.event {
+.event-item {
   @include backface-visibility(hidden);
   border-bottom: 1px solid $navyblue;
+  padding: 10px;
+
+  .event-type {
+    color: black;
+    text-transform:uppercase;
+  }
+  .description,
+  .time-and-place {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 20px;
+    // border-top: 1px solid $lighter-gray;
+    // margin: 15px;
+    
+    color: lighten(#464646, 20);
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $navyblue;
+    }
+  }
+  .description {
+    margin: 0;
+  }
+  .time-and-place {
+    margin-top: 0;
+    @include media($mobile) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .eventheader {
@@ -594,11 +645,11 @@ header {
     }
 
     .title {
-      margin-bottom: 0;
-      margin-left: 15px;
+      margin: 0;
       font-size: 18px;
       @include media($mobile) {
-        padding-left: 10px;
+        // padding-left: 10px;
+        // margin-left: 10px;
       }
     }
   }
@@ -606,11 +657,6 @@ header {
   .right {
     float: right;
     display: block;
-    padding-top: 10px;
-    @include media($mobile) {
-      padding-top: 0px;
-    }
-
     @include media($mobile) {
       float: none;
     }
@@ -620,27 +666,26 @@ header {
       color: $navyblue;
       width: 140px;
       height: 40px;
-      margin-top: 10px;
-      margin-right: 15px;
+      // margin-top: 10px;
+      // margin-right: 15px;
       text-align: center;
       float: left;
       padding: 9px;
       border: 2px solid $navyblue;
       @include media($mobile) {
-        margin-top: 0px;
+        margin-bottom: 15px;
       }
     }
 
     .price {
       font-weight: bold;
       float: left;
-      margin-right: 20px;
-      margin-top: 20px;
+      margin: 10px 20px 0 0;
       color: $lighter-gray;
       @include media($mobile) {
-        padding-left: 10px;
+        float: right;
         margin-top: 10px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
       }
     }
   }
@@ -658,31 +703,6 @@ header {
   //   text-transform: capitalize;
   // }
 }
-
-.event .description,
-.event .time-and-place {
-  text-transform: none;
-  font-size: 18px;
-  line-height: 20px;
-  // border-top: 1px solid $lighter-gray;
-  margin: 15px;
-  @include media($mobile) {
-    margin-left: 10px;
-  }
-  color: lighten(#464646, 20);
-
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: $navyblue;
-  }
-}
-
-.event .description {
-  margin-top: 0px;
-}
-
-.event .time-and-place { margin-top: 0; }
 
 .leaflet-bar {
   box-shadow: none;
