@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-18
-priority: 1
+priority: 2
 slug: 2014-09-18-cascadia_then_and_now
 ---

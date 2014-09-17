@@ -16,6 +16,6 @@ published: true
 price: $20-35
 
 category: event-17
-priority: 7
+priority: 6
 slug: 2014-09-17-design_the_best_version_of_your_business
 ---

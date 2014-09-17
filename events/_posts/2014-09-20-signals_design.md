@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 5
+priority: 7
 slug: 2014-09-20-signals_design
 ---

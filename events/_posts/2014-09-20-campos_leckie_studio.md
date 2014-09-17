@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 8
+priority: 10
 slug: 2014-09-20-campos_leckie_studio
 ---

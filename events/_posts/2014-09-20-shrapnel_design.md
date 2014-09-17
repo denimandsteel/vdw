@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 18
+priority: 20
 slug: 2014-09-20-shrapnel_design
 ---

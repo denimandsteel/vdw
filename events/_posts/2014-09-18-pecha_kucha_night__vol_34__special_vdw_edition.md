@@ -16,6 +16,6 @@ published: true
 price: SOLD OUT
 
 category: event-18
-priority: 2
+priority: 3
 slug: 2014-09-18-pecha_kucha_night__vol_34__special_vdw_edition
 ---

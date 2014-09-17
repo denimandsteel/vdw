@@ -16,6 +16,6 @@ published: true
 price: SOLD OUT
 
 category: event-20
-priority: 29
+priority: 31
 slug: 2014-09-20-playhouse
 ---

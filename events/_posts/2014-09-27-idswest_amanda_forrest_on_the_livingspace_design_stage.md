@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-27
-priority: 2
+priority: 3
 slug: 2014-09-27-idswest_amanda_forrest_on_the_livingspace_design_stage
 ---

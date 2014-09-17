@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 16
+priority: 18
 slug: 2014-09-20-dish_denim
 ---
