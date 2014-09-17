@@ -975,7 +975,7 @@ header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-bottom: 1px solid #4558a7;
-  padding: 10px; }
+  padding: 15px 10px 10px; }
   .event-item .event-type {
     color: black;
     text-transform: uppercase; }
@@ -1047,10 +1047,8 @@ header {
       text-align: center;
       float: left;
       padding: 9px;
-      border: 2px solid #4558a7; }
-      @media screen and (max-width: 480px) {
-        .eventheader .right .highlight {
-          margin-bottom: 15px; } }
+      border: 2px solid #4558a7;
+      margin-bottom: 15px; }
     .eventheader .right .price {
       font-weight: bold;
       float: left;
