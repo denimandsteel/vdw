@@ -329,7 +329,6 @@ header {
   padding: 0px 0px 0px 20px;
   line-height: $line-height;
   z-index: 1001; // Leaflet controls are 1000.
-  @include media(max-width 570px) { display: none; }
   h1 {
     @extend %primary-type;
     font-weight: bold;
@@ -352,12 +351,11 @@ header {
   nav {
     float: right;
     @include transition(all 250ms ease-out);
-    @include media(max-width 750px) {
+    @include media($tablet) {
       float: left;
       clear: left;
-    }
-    @include media($mobile) {
-      display: none;
+      position: relative;
+      left: -10px;
     }
   }
   ul {
@@ -402,6 +400,60 @@ header {
       @include transform(translateY(0));
     }
   }
+  .mobile-toggle { display: none; }
+
+  @include media(max-width 570px) {
+    padding: 0;
+    
+    h1 {
+      padding: ($padding-top-bottom) 8px;
+    }
+    .mobile-toggle {
+      cursor: pointer;
+      float: right;
+      display: block;
+      font-weight: bold;
+      padding: ($padding-top-bottom) 8px;
+    }
+    .indicator {
+      color: black;
+      &.minus { display: none; }
+    }
+    nav {
+      left: 0px;
+      float: none;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+    }
+    li { float: none; }
+    nav a {
+      display: block;
+    }
+    li .highlight { display: none; }
+    form {
+      display: none;
+      position: static;
+      @include transform(translateY(0));
+      input[type="email"] {
+        width: 175px;
+        margin-left: 8px;
+      }
+      input.highlight {
+        padding: 12px 16px;
+      }
+    }
+
+    &.active {
+      form { display: block; }
+      .indicator.plus { display: none; }
+      .indicator.minus { display: inline; }
+      nav { height: auto; }
+    }
+    &.form-active {
+      nav { @include transform(translateY(0)); }
+    }
+  }
 }
 
 // #HERO
@@ -411,6 +463,9 @@ header {
   padding-bottom: 25px;
   height: 600px;
 
+  @include media(max-width 600px) {
+    height: 450px;
+  }
   @include media($mobile) {
     padding-bottom: 0;
     height: 300px;

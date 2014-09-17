@@ -105,6 +105,13 @@ $('.day-header').on('click', function() {
 $('#event-' + (new Date).getDate() + ' .day-header').addClass('current');
 $('#event-' + (new Date).getDate() + '').prevAll('.day-events').find('.day-header').addClass('done');
 
+$('.mobile-toggle').click(function() {
+  $('header').toggleClass('active');
+});
+$('header nav a').click(function() {
+  $('header').removeClass('active');
+});
+
 // Let's make a bunch of maps!
 for (var date in vdwEvents) {
   if (vdwEvents.hasOwnProperty(date)) {

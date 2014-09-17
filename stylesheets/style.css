@@ -735,9 +735,6 @@ header {
   padding: 0px 0px 0px 20px;
   line-height: 16px;
   z-index: 1001; }
-  @media screen and (max-width: 570px) {
-    header {
-      display: none; } }
   header h1 {
     font-weight: bold;
     line-height: 16px;
@@ -759,13 +756,12 @@ header {
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     transition: all 250ms ease-out; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
       header nav {
         float: left;
-        clear: left; } }
-    @media screen and (max-width: 480px) {
-      header nav {
-        display: none; } }
+        clear: left;
+        position: relative;
+        left: -10px; } }
   header ul {
     list-style-type: none;
     margin: 0;
@@ -814,11 +810,70 @@ header {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); }
+  header .mobile-toggle {
+    display: none; }
+  @media screen and (max-width: 570px) {
+    header {
+      padding: 0; }
+      header h1 {
+        padding: 15px 8px; }
+      header .mobile-toggle {
+        cursor: pointer;
+        float: right;
+        display: block;
+        font-weight: bold;
+        padding: 15px 8px; }
+      header .indicator {
+        color: black; }
+        header .indicator.minus {
+          display: none; }
+      header nav {
+        left: 0px;
+        float: none;
+        clear: both;
+        height: 0;
+        overflow: hidden; }
+      header li {
+        float: none; }
+      header nav a {
+        display: block; }
+      header li .highlight {
+        display: none; }
+      header form {
+        display: none;
+        position: static;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0); }
+        header form input[type="email"] {
+          width: 175px;
+          margin-left: 8px; }
+        header form input.highlight {
+          padding: 12px 16px; }
+      header.active form {
+        display: block; }
+      header.active .indicator.plus {
+        display: none; }
+      header.active .indicator.minus {
+        display: inline; }
+      header.active nav {
+        height: auto; }
+      header.form-active nav {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0); } }
 
 #hero {
   position: relative;
   padding-bottom: 25px;
   height: 600px; }
+  @media screen and (max-width: 600px) {
+    #hero {
+      height: 450px; } }
   @media screen and (max-width: 480px) {
     #hero {
       padding-bottom: 0;
