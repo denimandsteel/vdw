@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "OpenRoad Communications"
-description: "We'll provide a tour of service design work across physical and digital spaces to create a connected, delightful experience. Students can connect with our Creative team for portfolio reviews. Local food and beverages will be provided. Enter from courtyard; buzz 210 for entry."
+description: "OpenRoad is a web design and development consultancy working across physical and digital spaces to create connected, user-centred experiences for global brands and organizations. Meet members of our strategy, UX, creative, and development teams, and enjoy catering from the amazing Winner Winner (yes, it's chicken dinner) as well as a selection of local beers and wines.Enter from courtyard; buzz 210 for entry."
 startTime: 1:00 PM
 endTime: 4:00 PM
 type: Open Studio
