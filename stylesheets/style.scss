@@ -619,7 +619,7 @@ header {
     .dayname, .event-count { color: $lighter-gray; }
   }
 }
-.day-events.active .day-header.done { color: white; }
+.day-events.active .day-header.done { .dayname, .event-count { color: white; } }
 
 .day-events.active .day-header {
   background: $navyblue;
