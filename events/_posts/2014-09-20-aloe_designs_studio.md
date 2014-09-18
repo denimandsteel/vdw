@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "Aloe Designs Studio"
-description: "Aloe Designs is a Vancouver landscape design group that creates fresh outdoor living spaces—cultivating sustainable communities one patio, balcony, backyard, rooftop, and container garden at a time."
+description: "Aloe Designs is a Vancouver landscape design group that creates fresh outdoor living spaces—cultivating sustainable communities one patio, balcony, backyard, rooftop, and container garden at a time. Come check out our unique space and learn more about our process, practice, and perspectives. Plus well have a few beers on ice!"
 startTime: 1:00 PM
 endTime: 4:00 PM
 type: Open Studio
