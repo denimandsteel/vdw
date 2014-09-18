@@ -99,7 +99,7 @@
       <div id="{{ eventDayCategory }}" class="day-events">
         <div class="day-header">
           <h2 class="dayname">{{ site.categories[eventDayCategory][0].dayOfWeek}}, <strong>{{ site.categories[eventDayCategory][0].dayOfMonth}}</strong></h2>
-          <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+          <p class="event-count">{{site.categories[eventDayCategory].size}} Events {% if dayNumber == 20 %}&amp; Open Studios {% endif %}[<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
         </div>
         <div class="events-list">
           <div id="map-{{eventDayCategory}}" class="map"></div>
