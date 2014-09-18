@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="#vdw2014">
   <link rel="apple-touch-icon" href="../images/web-app-icon.png">
 
   <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -57,7 +58,7 @@
                   }
                   vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
                 </script>
-                <div id="event-{{post.slug}}" class="event">
+                <div id="event-{{post.slug}}" class="event-item">
                   <div class="eventheader">
                     <div class="left">
                       <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
@@ -80,7 +81,7 @@
                   </div>
 
                   <div class="eventcontent">
-                    <p class="description">{{ post.description }}</p>
+                    <p class="description">{% if post.type %}<span class="event-type">[{{ post.type }}]</span> {% endif %}{{ post.description }}</p>
                   </div>
                 </div>
               {% endif %}{% endfor %}{% endfor %}
