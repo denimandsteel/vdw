@@ -3,8 +3,8 @@ dayOfWeek: Sat
 dayOfMonth: Sept 20
 title: "NERD JAM: THE CULTURE OF TRANSFORMATION - PART II"
 description: "JAM 2 / PRODUCTION + INSTALL - Part two of a two-phase Jam about how small interactive urban intervention designs can change our lives."
-startTime: TBA
-endTime: TBA
+startTime: 10:00 AM
+endTime: 11:00 AM
 type: Workshop
 address: "611 Alexander St Vancouver, BC V6A 1E1 Canada"
 addressLabel: Railway St at Princess AVe
