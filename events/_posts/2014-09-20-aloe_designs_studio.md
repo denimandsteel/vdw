@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 22
+priority: 26
 slug: 2014-09-20-aloe_designs_studio
 ---

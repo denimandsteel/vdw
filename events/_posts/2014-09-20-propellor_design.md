@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 8
+priority: 19
 slug: 2014-09-20-propellor_design
 ---

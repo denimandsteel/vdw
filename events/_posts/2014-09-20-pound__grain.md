@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 25
+priority: 27
 slug: 2014-09-20-pound__grain
 ---

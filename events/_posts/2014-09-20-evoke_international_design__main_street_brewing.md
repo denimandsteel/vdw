@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 1
+priority: 4
 slug: 2014-09-20-evoke_international_design__main_street_brewing
 ---

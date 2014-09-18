@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-20
-priority: 16
+priority: 21
 slug: 2014-09-20-nick_milkovich_architects__hapa_collaborative
 ---
