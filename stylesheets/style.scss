@@ -612,6 +612,7 @@ header {
     margin-bottom: 0;
     @include media($mobile) {
       padding-right: 10px;
+      .open-studios { display: none; }
     }
   }
   &.current { border-left: 10px solid $highlight; }
