@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-27
-priority: 2
+priority: 3
 slug: 2014-09-27-idswestsarah_richardsons_design_ideas_and_renovation_insight
 ---

@@ -16,6 +16,6 @@ published: true
 price: $10-14
 
 category: event-24
-priority: 2
+priority: 3
 slug: 2014-09-24-built_city_fashioning_performance
 ---

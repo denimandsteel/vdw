@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-24
-priority: 1
+priority: 2
 slug: 2014-09-24-rove_exploring_the_best_of_local_design
 ---
