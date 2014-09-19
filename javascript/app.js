@@ -35,6 +35,14 @@ $('header input[type="email"]').keyup(function(e) {
   }
 });
 
+window.setTimeout(function() {
+  if (window.location.hash.match(/^#event-/)) {
+    var eventOffsetTop = $(window.location.hash).addClass('active').offset().top;
+    $('header').height();
+    window.scrollTo(0, eventOffsetTop - $('header').height());
+  }
+}, 50);
+
 // Background crop.
 var resizeBackground = function() {
   var $contact = $('#contact');
