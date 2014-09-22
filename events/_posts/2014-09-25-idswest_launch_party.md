@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-25
-priority: 1
+priority: 2
 slug: 2014-09-25-idswest_launch_party
 ---

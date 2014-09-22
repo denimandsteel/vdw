@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-25
-priority: 2
+priority: 3
 slug: 2014-09-25-creative_pulse_showcase_and_industry_social
 ---
