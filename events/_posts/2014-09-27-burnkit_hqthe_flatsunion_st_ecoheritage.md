@@ -13,7 +13,7 @@ longitude: -123.0878759
 eventUrl: https://www.eventbrite.ca/e/vancouver-design-week-building-tour-tickets-13192116977
 eventUrlLabel: Register
 published: true
-price: $10
+price: SOLD OUT
 
 category: event-27
 priority: 1
