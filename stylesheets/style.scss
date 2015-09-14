@@ -365,7 +365,7 @@ header {
       float: left;
       clear: left;
       position: relative;
-      left: -10px;
+      left: 10px;
     }
   }
   ul {
@@ -488,6 +488,9 @@ header {
   
   &.short {
     height: 300px;
+    @include media($mobile) {
+      height: 200px;
+    }
   }
 
   @include media(max-width 600px) {
@@ -565,6 +568,12 @@ header {
     display: inline-block;
     width: auto;
     color: white;
+  }
+  @include media($mobile) {
+    input[type='email'] {
+      width: 155px;
+      padding: 5px 3px 3px;
+    }
   }
 }
 
