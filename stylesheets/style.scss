@@ -29,6 +29,8 @@ $yellow: #f1ed5d;
 $navyblue: #4558a7;
 $lightblue: #eef9f8;
 
+$notice: #FFF97E;
+
 $vertical-grid-gutter: 17px;
 
 %primary-type {
@@ -198,6 +200,11 @@ cite {
   }
 }
 
+.overline {
+  background: $notice;
+  padding: 2px 0px 0px 5px;
+}
+
 %highlight {
   font-weight: bold;
   text-decoration: none;
@@ -304,6 +311,9 @@ input {
     position: fixed;
     z-index: -3;
   }
+  &.no-header {
+    top: 30px;
+  }
 
   @include media($tablet) {
     // position: absolute;
@@ -326,14 +336,14 @@ header {
   background: white;
   position: fixed;
   top: 0; left: 0;
-  padding: 0px 0px 0px 20px;
+  padding: 0;
   line-height: $line-height;
   z-index: 1001; // Leaflet controls are 1000.
   h1 {
     @extend %primary-type;
     font-weight: bold;
     line-height: $line-height;
-    margin: 0;
+    margin: 0 0 0 20px;
     float: left;
     padding: ($padding-top-bottom+3) 0;
     span { background: transparent; }
@@ -402,6 +412,19 @@ header {
   }
   .mobile-toggle { display: none; }
 
+  .notice a {
+    display: block;
+    clear: both;
+    // background: $yellow;
+    background: $notice;
+    // color: white;
+    padding: 20px;
+    &:hover {
+      background: $highlight;
+      color: white;
+    }
+  }
+
   @include media(max-width 570px) {
     padding: 0;
     
@@ -462,6 +485,10 @@ header {
   position: relative;
   padding-bottom: 25px;
   height: 600px;
+  
+  &.short {
+    height: 300px;
+  }
 
   @include media(max-width 600px) {
     height: 450px;
@@ -531,6 +558,14 @@ header {
   h2, p { @extend %big-type; }
   background: transparent;
   .content p:last-of-type { margin-bottom: 1em; }
+}
+
+#mission.short {
+  .highlight {
+    display: inline-block;
+    width: auto;
+    color: white;
+  }
 }
 
 // #EVENT
