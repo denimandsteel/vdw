@@ -121,6 +121,8 @@ $('header nav a').click(function() {
 });
 
 // Let's make a bunch of maps!
+if (typeof vdwEvents !== 'undefined') {
+
 for (var date in vdwEvents) {
   if (vdwEvents.hasOwnProperty(date)) {
     var map = new L.Map(date, {
@@ -178,6 +180,8 @@ for (var date in vdwEvents) {
     // L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
     // infoStations.addTo(map);
   }
+}
+
 }
 
 });
