@@ -236,7 +236,7 @@ html {
 .u-ar {
   @include media($breaks-at-md) {
     float: right !important;
-    clear: right;  
+    clear: right;
   }
 }
 
@@ -620,7 +620,6 @@ button,
   position: relative;
   background-color: $color-primary;
   color: $color-base;
-  z-index: -2;
   height: 100%;
   overflow-x: hidden;
 
@@ -634,11 +633,10 @@ button,
     left: 0;
 
     opacity: 0.2;
-
-    background-image: url('/images/VDW-logo-blk.svg');
+    background-image: url('/2017-images/VDW-logo-blk.svg');
     background-repeat: no-repeat;
     background-size: 350%;
-    z-index: -1;
+
     background-position: center;
     @include media($breaks-at-md) {
       background-size: 200%;
@@ -651,7 +649,7 @@ button,
 }
 
 .vdw-section2 {
-  background-image: url('/images/People_Cards.jpg');
+  background-image: url('/2017-images/People_Cards.jpg');
   background-position: center;
   background-size: cover;
 }
