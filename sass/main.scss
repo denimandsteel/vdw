@@ -217,8 +217,6 @@ html {
   clear: both;
 }
 
-
-
 // ********
 // Utility Classes (.u-*)
 // ********
@@ -662,6 +660,20 @@ button,
 
   color: $color-secondary;
   font-size: 22px;
+
+  a {
+    color: $color-secondary;
+    border-bottom: 2px solid $color-primary;
+
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      color: $color-base;
+      line-height: $font-line-height;
+    }
+  }
+
   ul {
       margin-top: 0;
       list-style: none;
