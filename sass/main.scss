@@ -1,0 +1,687 @@
+// Durfee's default styles
+
+// Class food chain:
+
+// Elements (smallest)                   | .e-*
+// Components (everything else)          | .c-*
+// Templates (biggest)                   | .t-*
+
+// Templates aren't really necessary here,
+// but they might be later on, so I'm making a note of it now.
+
+// ********
+// Imports
+// ********
+
+@import 'normalize.css';
+
+// Lekton font-face
+@font-face {
+  font-family: Lekton;
+  src: url('/fonts/Lekton-regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+// Tabac Sans font-face (thin, light, black)
+
+@font-face {
+  font-family: 'Tabac Sans';
+  src: url('/fonts/TabacSansBlack.otf') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Tabac Sans';
+  src: url('/fonts/TabacSansLight.otf') format('opentype');
+  font-weight: 300;
+
+}
+
+@font-face {
+  font-family: 'Tabac Sans';
+  src: url('/fonts/TabacSansThin.otf') format('opentype');
+  font-weight: 100;
+}
+
+// ********
+// Mixins
+// ********
+
+@mixin media($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+// ********
+// Vars
+// ********
+
+// Vars > colors
+// ********
+$color-base: #fff;
+
+$color-primary: #ff323c;
+$color-secondary: #000;
+
+
+// Vars > breakpoints
+// ********
+
+$breakpoints: (
+  n: 0,
+  xs: 20em,
+  sm: 34.375em,
+  md: 48em,
+  lg: 64em,
+  xl: 78.5em
+);
+
+$bp-nil: map-get($breakpoints, n);
+$breaks-at-xs: map-get($breakpoints, xs);
+$breaks-at-sm: map-get($breakpoints, sm);
+$breaks-at-md: map-get($breakpoints, md);
+$breaks-at-lg: map-get($breakpoints, lg);
+$breaks-at-xl: map-get($breakpoints, xl);
+
+
+// Vars > fonts
+// ********
+
+$font-size-base: 16px;
+$font-line-height: $font-size-base * 1.6;
+$font-family: 'Tabac Sans', sans-serif;
+
+.ff-primary,
+%ff-primary {
+  font-family: 'Tabac Sans';
+}
+
+.ff-secondary,
+%ff-secondary {
+  font-family: 'Lekton';
+}
+
+/**
+ * Type scale and mixins
+ * map each heading = charlie through hotel.
+ * super-alpha        =   16 * 6.667  =  106.67
+ * alpha              =   16 * 5.333  =  85.33
+ * bravo              =   16 * 4      =  64
+ * charlie            =   16 * 3.333  =  53.33
+ * delta              =   16 * 2.667  =  42.67
+ * echo               =   16 * 2      =  32
+ * foxtrot            =   16 * 1.667  =  26.67
+ * golf               =   16 * 1.333  =  21.33
+ * hotel              =   16 * 1      =  16
+ * */
+
+$type-scale: (
+  super-alpha: 107,
+  alpha:    85,
+  bravo:    64,
+  charlie:  53,
+  delta:    43,
+  echo:     32,
+  foxtrot:  27,
+  golf:     21.33,
+  hotel:    16,
+  ) !default;
+
+$type-units: px;
+
+$type-scale-headings: (
+  h1: charlie,
+  h2: delta,
+  h3: echo,
+  h4: foxtrot,
+  h5: golf,
+  h6: hotel
+  ) !default;
+
+// Include any omni-heading styles here.
+@mixin heading-styles() {
+  @extend %ff-primary;
+  font-weight: 900;
+  margin-top: 0;
+  line-height: 1.01; // Eliminate whitespace for split headers.
+}
+
+// Hard and silent classes for all headings.
+@mixin heading-classes() {
+  @each $name, $scale in $type-scale {
+    .#{$name},
+    %#{$name} {
+      @include heading-styles();
+      font-size: ($scale * 0.875) + $type-units;
+      @include media($breaks-at-md) {
+        font-size: ($scale * 0.925) + $type-units;
+      }
+
+      @include media($breaks-at-lg) {
+        font-size: ($scale * 0.975) + $type-units;
+      }
+
+      @include media($breaks-at-xl) {
+        font-size: $scale + $type-units;
+      }
+    }
+  }
+}
+
+// Extend silent classes to h elements.
+@mixin heading-elements() {  
+  @each $h, $scale in $type-scale-headings {
+    #{$h} {
+     @extend %#{$scale};
+    }
+  }
+}
+
+@include heading-classes();
+@include heading-elements();
+
+// Vars > Global values and styles
+// ********
+$unit: $font-line-height;
+
+html {
+  font-family: $font-family;
+  font-size: $font-size-base*0.8;
+  line-height: $font-line-height;
+  * {
+    transition: all 0.1s ease-out;
+  }
+
+  @include media($breaks-at-md) {
+    font-size: $font-size-base * 0.875;
+  }
+
+  @include media($breaks-at-lg) {
+    font-size: $font-size-base * 0.95;
+  }
+
+  @include media($breaks-at-xl) {
+    font-size: $font-size-base;
+}
+
+}
+
+// ********
+// Silent classes
+// ********
+
+%clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+// ********
+// Utility Classes (.u-*)
+// ********
+
+// a = Alignment 
+// l = left | r = right | c = center
+
+.u-al {
+  @include media($breaks-at-md) {
+    float: left !important;
+    clear: left;
+  }
+}
+
+.u-ar {
+  @include media($breaks-at-md) {
+    float: right !important;
+    clear: right;  
+  }
+}
+
+.u-ac { margin: 0 auto; }
+
+// d = Display (Block)
+
+.u-db { display: block; }
+
+// m = Margin (Top, Right, Bottom, Left)
+.u-mt { margin-top: 3rem; }
+
+.u-mb { margin-bottom: 3rem; }
+
+.u-ml { margin-left: 3rem; }
+
+.u-mr { margin-right: 3rem; }
+
+.u-mt--s { margin-top: 1.5rem; }
+
+.u-mb--s { margin-bottom: 1.5rem; }
+
+.u-ml--s { margin-left: 1.5rem; }
+
+.u-mr--s { margin-right: 1.5rem; }
+
+.u-mt--l { margin-top: 4.5rem; }
+
+.u-mb--l { margin-bottom: 4.5rem; }
+
+.u-ml--l { margin-left: 4.5rem; }
+
+.u-mr--l { margin-right: 4.5rem; }
+
+// p = Padding (Top, Right, Bottom, Left) --s = small
+.u-p { padding: 3rem; }
+
+.u-pt { padding-top: 3rem; }
+
+.u-pb { padding-bottom: 3rem; }
+
+.u-pr { padding-right: 3rem; }
+
+.u-pl { padding-left: 3rem; }
+
+.u-p--s { padding: 1.5rem; }
+
+.u-pt--s { padding-top: 1.5rem; }
+
+.u-pb--s { padding-bottom: 1.5rem; }
+
+.u-pr--s { padding-right: 1.5rem; }
+
+.u-pl--s { padding-left: 1.5rem; }
+
+.u-p--l { padding: 6rem; }
+
+.u-pt--l { padding-top: 6rem; }
+
+.u-pb--l { padding-bottom: 6rem; }
+
+.u-pr--l { padding-right: 6rem; }
+
+.u-pl--l { padding-left: 6rem; }
+
+.u-p--xl { padding: 9rem; }
+
+.u-pt--xl { padding-top: 9rem; }
+
+.u-pb--xl { padding-bottom: 9rem; }
+
+.u-pr--xl { padding-right: 9rem; }
+
+.u-pl--xl { padding-left: 9rem; }
+
+// ********
+// Elements
+// ********
+a {
+  color: $color-base;
+  text-decoration: none;
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  cursor: auto;
+  width: 4rem;
+  outline: none;
+  line-height: $font-line-height;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+}
+
+// Font (f) weights (w) & varients 
+// b = bold, l = light, t = thin
+.f-wb,
+%f-wb {
+  font-weight: 900;
+}
+
+// w-l
+.f-wl,
+%f-wl {
+  font-weight: 300;
+}
+
+// w-t
+.f-wt,
+%f-wl {
+  font-weight: 100;
+}
+
+// TODO: Transfer these to input styles
+
+.f-emphasis--color { background-color: transparentize($color-primary, 0.5); }
+
+.f-emphasis--ul { border-bottom: 1px dotted $color-base; }
+// Extra line height, mostly for headings. Will do proper 
+// heading classes later.
+// TODO: Heading line heights
+
+.f-line-height--s { line-height: 1; }
+.f-line-height--l { line-height: $font-line-height * 2; }
+
+// ta = Text Alignment;
+.f-ta-c { text-align: center; }
+
+.f-ta-l { text-align: left; }
+
+.f-ta-r { text-align: right; }
+
+.f-small { font-size: 85%; }
+
+// tt-* = text transform
+
+.f-tt-uc {
+  text-transform: uppercase;
+}
+
+// Elements > Buttons (.e-btn)
+button,
+.e-btn,
+%e-btn {
+  display: inline-block;
+  padding: 0.53 * $unit 1.5 * $unit;
+  width: 144px;
+  // border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.e-btn-primary {
+  @extend %e-btn;
+  background-color: $color-base;
+  color: $color-secondary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($color-base, 12);
+  }
+}
+
+// Elements > icons
+
+.e-icon--feature {
+  width: 10rem;
+
+  @include media($breaks-at-md) {
+    width: 12rem;
+    height: auto;
+  }
+
+  @include media($breaks-at-lg) {
+    width: 15rem;
+    height: auto;
+  }
+}
+
+// ********
+// Components
+// ********
+
+// Components > hero (.c-hero)
+// .c-hero-title {
+//   padding-top: 3rem;
+//   padding-bottom: 3rem;
+
+//   h1 {
+//     @extend %f-wl;
+//     font-size: $font-size-base * 3;
+//   }
+// }
+
+// .c-hero-copy {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   padding-bottom: 4rem;
+// }
+
+// Components > callout (.c-callout)
+
+.c-callout {
+
+}
+
+// Components > layout (.c-l-*)
+// 
+
+// Full width container (fw-container)
+.c-l-fw-container {
+  max-width: 100vw;
+  width: 100vw;
+  position: relative;
+}
+
+.c-l-fw-container:after,
+.c-l-container:after,
+.c-l-row:after {
+  @extend %clearfix;  
+}
+
+.c-l-screen-high {
+  min-height: 100vh;
+}
+
+.c-l-container {
+  position: relative;
+  width: 100%;
+  max-width: $breaks-at-lg;
+  margin: 0 auto;
+  @include media($breaks-at-sm) {
+    width: 90%;
+    padding: 0 1.5rem;
+  }
+
+  @include media($breaks-at-md) {
+    width: 80%;
+  }
+}
+
+// Natural language columns e.g. element spans `.one.column`, `.three.columns`
+// *
+// Based on a 12 column grid, one column is roughly 5-8% depending 
+// on the number of columns. Fewer columns = less margin, since margin
+// is % based. Also don't nest these because nasty tiny margins will happen.
+// 
+// Column pushes are declared by .push-x-column or .push-x-columns
+// and are equal to column width + 4% (default margin left).
+// IF DEFAULT MARGIN LEFT IS CHANGED, PLEASE CHANGE PUSHES
+// 
+// Only a couple fractional columns right now. More coming soon
+
+.column,
+.columns {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  @include media($breaks-at-md) {
+    float: left;
+    margin-left: 4%;
+
+    &:first-child {
+      margin-left: 0;
+    }  
+  }
+}
+
+.two.columns { @include media($breaks-at-md) { width: 13.33%; } }
+
+.three.columns { @include media($breaks-at-md) { width: 22%; } }
+
+.four.columns { @include media($breaks-at-md) { width: 30%; } }
+
+.five.columns { @include media($breaks-at-md) { width: 36.666%; } }
+
+.six.columns { @include media($breaks-at-md) { width: 46%; } }
+
+.seven.columns { @include media($breaks-at-md) { width: 53%; } }
+
+.eight.columns { @include media($breaks-at-md) { width: 66%; } }
+
+.twelve.columns { @include media($breaks-at-md) { width: 100%; margin-left: 0; } }
+
+.lg-two.columns { @include media($breaks-at-lg) { width: 13.33%; } }
+
+.lg-three.columns { @include media($breaks-at-lg) { width: 22%; } }
+
+.lg-four.columns { @include media($breaks-at-lg) { width: 30%; } }
+
+.lg-five.columns { @include media($breaks-at-lg) { width: 36.666%; } }
+
+.lg-six.columns { @include media($breaks-at-lg) { width: 46%; } }
+
+.lg-seven.columns { @include media($breaks-at-lg) { width: 53%; } }
+
+.lg-eight.columns { @include media($breaks-at-lg) { width: 66%; } }
+
+// Pushes
+
+.push-one.column { @include media($breaks-at-md) { margin-left: 8.33%; } }
+.push-two.columns { @include media($breaks-at-md) { margin-left: 21.33%; } }
+.push-three.columns { @include media($breaks-at-md) { margin-left: 26%; } }
+.push-four.columns { @include media($breaks-at-md) { margin-left: 34%; } }
+.push-five.columns { @include media($breaks-at-md) { margin-left: 40.33%; } }
+.push-six.columns { @include media($breaks-at-md) { margin-left: 50%; } }
+.push-seven.columns { @include media($breaks-at-md) { margin-left: 57%; } }
+.push-eight.columns { @include media($breaks-at-md) { margin-left: 64%; } }
+
+.lg-push-one.column { @include media($breaks-at-lg) { margin-left: 8.33%; } }
+.lg-push-two.columns { @include media($breaks-at-lg) { margin-left: 21.33%; } }
+.lg-push-three.columns { @include media($breaks-at-lg) { margin-left: 26%; } }
+.lg-push-four.columns { @include media($breaks-at-lg) { margin-left: 34%; } }
+.lg-push-five.columns { @include media($breaks-at-lg) { margin-left: 40.33%; } }
+.lg-push-six.columns { @include media($breaks-at-lg) { margin-left: 50%; } }
+.lg-push-seven.columns { @include media($breaks-at-lg) { margin-left: 57%; } }
+.lg-push-eight.columns { @include media($breaks-at-lg) { margin-left: 64%; } }
+// Fractional columns
+
+
+
+.one-half.column { @include media($breaks-at-md) { width: 48%; } }
+
+.one-third.column { @include media($breaks-at-md) { width: 30%; } }
+
+.two-thirds.column { @include media($breaks-at-md) { width: 65%; } }
+
+// Components > Feature card
+
+.c-feature-card {
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+  }
+}
+
+// ********
+// Theme specifics
+// ********
+
+.vdw-email-input {
+  display: block;
+  height: 44px;
+  width: 270px;
+  padding-left: 10px;
+  margin-bottom: 3rem;
+  border: 3px solid $color-base;
+  color: white;
+  @include media($breaks-at-md) {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+}
+
+.vdw-email-button {
+  display: block;
+  font-size: 18px;
+  @include media($breaks-at-md) {
+    display: inline-block;
+  }
+}
+
+.vdw-bg-wrapper {
+  position: relative;
+  background-color: $color-primary;
+  color: $color-base;
+  z-index: -2;
+  height: 100%;
+  overflow-x: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0.2;
+
+    background-image: url('/images/VDW-logo-blk.svg');
+    background-repeat: no-repeat;
+    background-size: 350%;
+    z-index: -1;
+    background-position: center;
+    @include media($breaks-at-md) {
+      background-size: 200%;
+    }
+
+    @include media($breaks-at-lg) {
+      background-size: 125%;
+    }
+  }
+}
+
+.vdw-section2 {
+  background-image: url('/images/People_Cards.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.vdw-callout {
+  background-color: $color-base;
+  width: 300px;
+  min-height: 200px;
+  vertical-align: center;
+
+  color: $color-secondary;
+  font-size: 22px;
+  ul {
+      margin-top: 0;
+      list-style: none;
+      line-height: $font-line-height * 1.5;
+    }
+
+    .c-callout-col1 {
+      float: left;
+      width: 30%;
+    }
+
+    .c-callout-col2 {
+      margin-left: 4%;
+      padding-left: 6rem;
+      width: 70%;
+    }
+
+    @include media ($breaks-at-md) {
+      padding: 0.5rem;
+    }
+}
