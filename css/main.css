@@ -421,7 +421,7 @@ button,
   background-color: #fff;
   color: #000; }
   .e-btn-primary:hover, .e-btn-primary:focus, .e-btn-primary:active {
-    background-color: #e0e0e0; }
+    background-color: #ebda00; }
 
 .e-icon--feature {
   width: 10rem; }
@@ -498,6 +498,10 @@ button,
     width: 66%; } }
 
 @media screen and (min-width: 48em) {
+  .nine.columns {
+    width: 74%; } }
+
+@media screen and (min-width: 48em) {
   .twelve.columns {
     width: 100%;
     margin-left: 0; } }
@@ -529,6 +533,10 @@ button,
 @media screen and (min-width: 64em) {
   .lg-eight.columns {
     width: 66%; } }
+
+@media screen and (min-width: 64em) {
+  .lg-nine.columns {
+    width: 74%; } }
 
 @media screen and (min-width: 48em) {
   .push-one.column {
@@ -617,7 +625,7 @@ button,
   width: 270px;
   padding-left: 10px;
   margin-bottom: 3rem;
-  border: 3px solid #fff;
+  border: 3px solid #ffed00;
   color: white; }
   @media screen and (min-width: 48em) {
     .vdw-email-input {
@@ -626,6 +634,7 @@ button,
 
 .vdw-email-button {
   display: block;
+  background-color: #ffed00;
   font-size: 18px; }
   @media screen and (min-width: 48em) {
     .vdw-email-button {
@@ -658,7 +667,7 @@ button,
 
 .vdw-section2 {
   background-image: url("/2017-images/People_Cards.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover; }
 
 .vdw-callout {
@@ -670,7 +679,8 @@ button,
   font-size: 22px; }
   .vdw-callout a {
     color: #000;
-    border-bottom: 2px solid #ff323c; }
+    border-bottom: 2px solid #ff323c;
+    padding: 0.3rem; }
     .vdw-callout a:hover, .vdw-callout a:active {
       background-color: #ff323c;
       color: #fff;

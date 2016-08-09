@@ -62,6 +62,7 @@
 $color-base: #fff;
 
 $color-primary: #ff323c;
+$color-accent: #ffed00;
 $color-secondary: #000;
 
 
@@ -410,7 +411,7 @@ button,
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($color-base, 12);
+    background-color: darken($color-accent, 4);
   }
 }
 
@@ -520,34 +521,23 @@ button,
 }
 
 .two.columns { @include media($breaks-at-md) { width: 13.33%; } }
-
 .three.columns { @include media($breaks-at-md) { width: 22%; } }
-
 .four.columns { @include media($breaks-at-md) { width: 30%; } }
-
 .five.columns { @include media($breaks-at-md) { width: 36.666%; } }
-
 .six.columns { @include media($breaks-at-md) { width: 46%; } }
-
 .seven.columns { @include media($breaks-at-md) { width: 53%; } }
-
 .eight.columns { @include media($breaks-at-md) { width: 66%; } }
-
+.nine.columns { @include media($breaks-at-md) { width: 74%; } }
 .twelve.columns { @include media($breaks-at-md) { width: 100%; margin-left: 0; } }
 
 .lg-two.columns { @include media($breaks-at-lg) { width: 13.33%; } }
-
 .lg-three.columns { @include media($breaks-at-lg) { width: 22%; } }
-
 .lg-four.columns { @include media($breaks-at-lg) { width: 30%; } }
-
 .lg-five.columns { @include media($breaks-at-lg) { width: 36.666%; } }
-
 .lg-six.columns { @include media($breaks-at-lg) { width: 46%; } }
-
 .lg-seven.columns { @include media($breaks-at-lg) { width: 53%; } }
-
 .lg-eight.columns { @include media($breaks-at-lg) { width: 66%; } }
+.lg-nine.columns { @include media($breaks-at-lg) { width: 74%; } }
 
 // Pushes
 
@@ -568,14 +558,11 @@ button,
 .lg-push-six.columns { @include media($breaks-at-lg) { margin-left: 50%; } }
 .lg-push-seven.columns { @include media($breaks-at-lg) { margin-left: 57%; } }
 .lg-push-eight.columns { @include media($breaks-at-lg) { margin-left: 64%; } }
+
 // Fractional columns
 
-
-
 .one-half.column { @include media($breaks-at-md) { width: 48%; } }
-
 .one-third.column { @include media($breaks-at-md) { width: 30%; } }
-
 .two-thirds.column { @include media($breaks-at-md) { width: 65%; } }
 
 // Components > Feature card
@@ -598,8 +585,9 @@ button,
   width: 270px;
   padding-left: 10px;
   margin-bottom: 3rem;
-  border: 3px solid $color-base;
+  border: 3px solid $color-accent;
   color: white;
+
   @include media($breaks-at-md) {
     display: inline-block;
     margin-right: 3rem;
@@ -608,13 +596,16 @@ button,
 
 .vdw-email-button {
   display: block;
+  background-color: $color-accent;
   font-size: 18px;
+
   @include media($breaks-at-md) {
     display: inline-block;
   }
 }
 
 .vdw-bg-wrapper {
+  // Background color and overflow management
   position: relative;
   background-color: $color-primary;
   color: $color-base;
@@ -622,6 +613,7 @@ button,
   overflow-x: hidden;
 
   &:before {
+    // VDW logo & background texture
     content: "";
     position: absolute;
 
@@ -648,11 +640,12 @@ button,
 
 .vdw-section2 {
   background-image: url('/2017-images/People_Cards.jpg');
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
 .vdw-callout {
+  // On top of people_cards.jpg
   background-color: $color-base;
   width: 300px;
   min-height: 200px;
@@ -664,7 +657,7 @@ button,
   a {
     color: $color-secondary;
     border-bottom: 2px solid $color-primary;
-
+    padding: 0.3rem;
 
     &:hover,
     &:active {
