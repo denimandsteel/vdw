@@ -381,6 +381,9 @@ footer {
 .f-line-height--s {
   line-height: 1; }
 
+.f-line-height {
+  line-height: 25.6px !important; }
+
 .f-line-height--l {
   line-height: 51.2px; }
 
@@ -788,12 +791,10 @@ button,
   font-size: 22px; }
   .vdw-callout a {
     color: #000;
-    border-bottom: 2px solid #ff323c;
-    padding: 0.3rem; }
+    border-bottom: 2px solid #ff323c; }
     .vdw-callout a:hover, .vdw-callout a:active {
       background-color: #ff323c;
-      color: #fff;
-      line-height: 25.6px; }
+      color: #fff; }
   .vdw-callout ul {
     margin-top: 0;
     list-style: none;

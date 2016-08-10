@@ -181,6 +181,7 @@ $type-scale-headings: (
 
 // Vars > Global values and styles
 // ********
+
 $unit: $font-line-height;
 
 html {
@@ -333,6 +334,7 @@ footer {
 // TODO: Heading line heights
 
 .f-line-height--s { line-height: 1; }
+.f-line-height { line-height: $font-line-height !important; }
 .f-line-height--l { line-height: $font-line-height * 2; }
 
 // ta = Text Alignment;
@@ -671,13 +673,11 @@ button,
   a {
     color: $color-secondary;
     border-bottom: 2px solid $color-primary;
-    padding: 0.3rem;
 
     &:hover,
     &:active {
       background-color: $color-primary;
       color: $color-base;
-      line-height: $font-line-height;
     }
   }
 
