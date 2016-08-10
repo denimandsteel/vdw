@@ -638,6 +638,33 @@ button,
   }
 }
 
+.keep-scrolling-arrow {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  bottom: 25px;
+  right: 50%;
+
+}
+
+.hover {
+  animation-name: hover;
+  animation-duration: 1s;
+  animation-count: 1;
+  animation-delay: 1.5s;
+}
+
+@Keyframes hover {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1 !important;
+  }
+}
+
 .vdw-section2 {
   background-image: url('/2017-images/People_Cards.jpg');
   background-position: top;
