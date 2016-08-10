@@ -101,6 +101,7 @@ $font-family: 'Tabac Sans', sans-serif;
 .ff-secondary,
 %ff-secondary {
   font-family: 'Lekton';
+  font-weight: 300;
 }
 
 /**
@@ -585,7 +586,7 @@ button,
   width: 270px;
   padding-left: 10px;
   margin-bottom: 3rem;
-  border: 3px solid $color-accent;
+  border: 3px solid $color-base;
   color: white;
 
   @include media($breaks-at-md) {
@@ -641,27 +642,29 @@ button,
 .keep-scrolling-arrow {
   display: block;
   position: absolute;
-  z-index: 1000;
   bottom: 25px;
   right: 50%;
-
+  visibility: hidden;
+  opacity: 0;
 }
 
-.hover {
-  animation-name: hover;
+.fadeIn {
+  animation-name: fadeIn;
   animation-duration: 1s;
-  animation-count: 1;
-  animation-delay: 1.5s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  visibility: visible;
 }
 
-@Keyframes hover {
+@keyframes fadeIn {
   0% {
+    opacity: 0.0;
     transform: translateY(-100%);
-    opacity: 0;
   }
   100% {
-    transform: translateY(0);
-    opacity: 1 !important;
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 

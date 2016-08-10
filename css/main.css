@@ -34,7 +34,8 @@ h6 {
   font-family: 'Tabac Sans'; }
 
 .ff-secondary {
-  font-family: 'Lekton'; }
+  font-family: 'Lekton';
+  font-weight: 300; }
 
 /**
  * Type scale and mixins
@@ -213,6 +214,7 @@ html {
   font-size: 12.8px;
   line-height: 25.6px; }
   html * {
+    -webkit-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out; }
   @media screen and (min-width: 48em) {
     html {
@@ -625,7 +627,7 @@ button,
   width: 270px;
   padding-left: 10px;
   margin-bottom: 3rem;
-  border: 3px solid #ffed00;
+  border: 3px solid #fff;
   color: white; }
   @media screen and (min-width: 48em) {
     .vdw-email-input {
@@ -668,23 +670,43 @@ button,
 .keep-scrolling-arrow {
   display: block;
   position: absolute;
-  z-index: 1000;
   bottom: 25px;
-  right: 50%; }
+  right: 50%;
+  visibility: hidden;
+  opacity: 0; }
 
-.hover {
-  animation-name: hover;
-  animation-duration: 1s;
-  animation-count: 1;
-  animation-delay: 1.5s; }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: visible; }
 
-@Keyframes hover {
+@-webkit-keyframes fadeIn {
   0% {
-    transform: translateY(-100%);
-    opacity: 0; }
+    opacity: 0.0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
   100% {
-    transform: translateY(0);
-    opacity: 1 !important; } }
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); } }
 .vdw-section2 {
   background-image: url("/2017-images/People_Cards.jpg");
   background-position: top;

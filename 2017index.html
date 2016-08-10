@@ -21,7 +21,6 @@
   <title>Vancouver Design Week 2017</title>
   <meta name="description" content="Connect. Explore. Engage. Impact.">
   <link rel="stylesheet" href="css/main.css">
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
   <section class="c-l-fw-container vdw-bg-wrapper">
@@ -37,10 +36,10 @@
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_4da6b7547530080bdd96d1002_de7fead209" tabindex="-1" value=""></div>
         </form>
       </div>
-      <a id="anchorjump" class="keep-scrolling-arrow fadeIn" href="#vdw-section2"><img src="2017-images/keep-scrolling.svg" alt=""></a>
+      <img class="keep-scrolling-arrow hover" src="2017-images/keep-scrolling.svg" alt="">
     </article>
 
-    <article id="vdw-section2" class="c-l-fw-container c-l-screen-high vdw-section2 u-p u-m u-pt--l">
+    <article class="c-l-fw-container c-l-screen-high vdw-section2 u-p u-m u-pt--l">
       <div class="c-l-container u-db six push-six lg-five lg-push-six columns u-mt c-callout ff-secondary vdw-callout">
         <div class="c-l-row u-pt--s">
           <h3 class="f-tt-uc f-ta-c"><span class="f-wt">The Successes </span><br>of 2014</h3>
@@ -68,7 +67,7 @@
           </div>
         </div>
         <div class="c-callout-link u-pt--s u-pb--s f-ta-c">
-          <a href="http://www.vancouverdesignwk.com/2014/index.html">See what else we did last year.</a>
+          <a href="vancouverdesignwk.com/2014">See what else we did last year.</a>
         </div>
       </div>
     </article>
@@ -110,12 +109,5 @@
     </article>
 
   </section>
-  <script>
-    $('#anchorJump').click( function (e) {
-      $('html').animate(
-        { scrollTop: $('#vdw-section2').offset.top, }, 1000);
-      e.preventDefault();
-    });
-  </script>
 </body>
 </html>
