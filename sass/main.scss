@@ -16,11 +16,7 @@
 @import 'normalize.css';
 
 // Lekton font-face
-@font-face {
-  font-family: Lekton;
-  src: url('/fonts/Lekton-regular.ttf') format('truetype');
-  font-weight: normal;
-}
+@import 'https://fonts.googleapis.com/css?family=Lekton';
 
 // Tabac Sans font-face (thin, light, black)
 
@@ -101,7 +97,7 @@ $font-family: 'Tabac Sans', sans-serif;
 .ff-secondary,
 %ff-secondary {
   font-family: 'Lekton';
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /**
@@ -248,70 +244,38 @@ html {
 
 // m = Margin (Top, Right, Bottom, Left)
 .u-mt { margin-top: 3rem; }
-
 .u-mb { margin-bottom: 3rem; }
-
 .u-ml { margin-left: 3rem; }
-
 .u-mr { margin-right: 3rem; }
-
 .u-mt--s { margin-top: 1.5rem; }
-
 .u-mb--s { margin-bottom: 1.5rem; }
-
 .u-ml--s { margin-left: 1.5rem; }
-
 .u-mr--s { margin-right: 1.5rem; }
-
 .u-mt--l { margin-top: 4.5rem; }
-
 .u-mb--l { margin-bottom: 4.5rem; }
-
 .u-ml--l { margin-left: 4.5rem; }
-
 .u-mr--l { margin-right: 4.5rem; }
-
 // p = Padding (Top, Right, Bottom, Left) --s = small
 .u-p { padding: 3rem; }
-
 .u-pt { padding-top: 3rem; }
-
 .u-pb { padding-bottom: 3rem; }
-
 .u-pr { padding-right: 3rem; }
-
 .u-pl { padding-left: 3rem; }
-
 .u-p--s { padding: 1.5rem; }
-
 .u-pt--s { padding-top: 1.5rem; }
-
 .u-pb--s { padding-bottom: 1.5rem; }
-
 .u-pr--s { padding-right: 1.5rem; }
-
 .u-pl--s { padding-left: 1.5rem; }
-
 .u-p--l { padding: 6rem; }
-
 .u-pt--l { padding-top: 6rem; }
-
 .u-pb--l { padding-bottom: 6rem; }
-
 .u-pr--l { padding-right: 6rem; }
-
 .u-pl--l { padding-left: 6rem; }
-
 .u-p--xl { padding: 9rem; }
-
 .u-pt--xl { padding-top: 9rem; }
-
 .u-pb--xl { padding-bottom: 9rem; }
-
 .u-pr--xl { padding-right: 9rem; }
-
 .u-pl--xl { padding-left: 9rem; }
-
 // ********
 // Elements
 // ********
@@ -531,6 +495,16 @@ button,
 .nine.columns { @include media($breaks-at-md) { width: 74%; } }
 .twelve.columns { @include media($breaks-at-md) { width: 100%; margin-left: 0; } }
 
+.md-two.columns { @include media($breaks-at-md) { width: 13.33%; } }
+.md-three.columns { @include media($breaks-at-md) { width: 22%; } }
+.md-four.columns { @include media($breaks-at-md) { width: 30%; } }
+.md-five.columns { @include media($breaks-at-md) { width: 36.666%; } }
+.md-six.columns { @include media($breaks-at-md) { width: 46%; } }
+.md-seven.columns { @include media($breaks-at-md) { width: 53%; } }
+.md-eight.columns { @include media($breaks-at-md) { width: 66%; } }
+.md-nine.columns { @include media($breaks-at-md) { width: 74%; } }
+.md-twelve.columns { @include media($breaks-at-md) { width: 100%; margin-left: 0; } }
+
 .lg-two.columns { @include media($breaks-at-lg) { width: 13.33%; } }
 .lg-three.columns { @include media($breaks-at-lg) { width: 22%; } }
 .lg-four.columns { @include media($breaks-at-lg) { width: 30%; } }
@@ -550,6 +524,15 @@ button,
 .push-six.columns { @include media($breaks-at-md) { margin-left: 50%; } }
 .push-seven.columns { @include media($breaks-at-md) { margin-left: 57%; } }
 .push-eight.columns { @include media($breaks-at-md) { margin-left: 64%; } }
+
+.md-push-one.column { @include media($breaks-at-md) { margin-left: 8.33%; } }
+.md-push-two.columns { @include media($breaks-at-md) { margin-left: 21.33%; } }
+.md-push-three.columns { @include media($breaks-at-md) { margin-left: 26%; } }
+.md-push-four.columns { @include media($breaks-at-md) { margin-left: 34%; } }
+.md-push-five.columns { @include media($breaks-at-md) { margin-left: 40.33%; } }
+.md-push-six.columns { @include media($breaks-at-md) { margin-left: 50%; } }
+.md-push-seven.columns { @include media($breaks-at-md) { margin-left: 57%; } }
+.md-push-eight.columns { @include media($breaks-at-md) { margin-left: 64%; } }
 
 .lg-push-one.column { @include media($breaks-at-lg) { margin-left: 8.33%; } }
 .lg-push-two.columns { @include media($breaks-at-lg) { margin-left: 21.33%; } }
@@ -640,10 +623,11 @@ button,
 }
 
 .keep-scrolling-arrow {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  position: absolute;
-  bottom: 25px;
-  right: 50%;
+  position: relative;
   visibility: hidden;
   opacity: 0;
 }

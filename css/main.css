@@ -1,8 +1,5 @@
 @import url(normalize.css);
-@font-face {
-  font-family: Lekton;
-  src: url("/fonts/Lekton-regular.ttf") format("truetype");
-  font-weight: normal; }
+@import "https://fonts.googleapis.com/css?family=Lekton";
 @font-face {
   font-family: 'Tabac Sans';
   src: url("/fonts/TabacSansBlack.otf") format("opentype");
@@ -35,7 +32,7 @@ h6 {
 
 .ff-secondary {
   font-family: 'Lekton';
-  font-weight: 300; }
+  font-weight: 400; }
 
 /**
  * Type scale and mixins
@@ -508,6 +505,43 @@ button,
     width: 100%;
     margin-left: 0; } }
 
+@media screen and (min-width: 48em) {
+  .md-two.columns {
+    width: 13.33%; } }
+
+@media screen and (min-width: 48em) {
+  .md-three.columns {
+    width: 22%; } }
+
+@media screen and (min-width: 48em) {
+  .md-four.columns {
+    width: 30%; } }
+
+@media screen and (min-width: 48em) {
+  .md-five.columns {
+    width: 36.666%; } }
+
+@media screen and (min-width: 48em) {
+  .md-six.columns {
+    width: 46%; } }
+
+@media screen and (min-width: 48em) {
+  .md-seven.columns {
+    width: 53%; } }
+
+@media screen and (min-width: 48em) {
+  .md-eight.columns {
+    width: 66%; } }
+
+@media screen and (min-width: 48em) {
+  .md-nine.columns {
+    width: 74%; } }
+
+@media screen and (min-width: 48em) {
+  .md-twelve.columns {
+    width: 100%;
+    margin-left: 0; } }
+
 @media screen and (min-width: 64em) {
   .lg-two.columns {
     width: 13.33%; } }
@@ -570,6 +604,38 @@ button,
 
 @media screen and (min-width: 48em) {
   .push-eight.columns {
+    margin-left: 64%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-one.column {
+    margin-left: 8.33%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-two.columns {
+    margin-left: 21.33%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-three.columns {
+    margin-left: 26%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-four.columns {
+    margin-left: 34%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-five.columns {
+    margin-left: 40.33%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-six.columns {
+    margin-left: 50%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-seven.columns {
+    margin-left: 57%; } }
+
+@media screen and (min-width: 48em) {
+  .md-push-eight.columns {
     margin-left: 64%; } }
 
 @media screen and (min-width: 64em) {
@@ -668,10 +734,11 @@ button,
         background-size: 125%; } }
 
 .keep-scrolling-arrow {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  position: absolute;
-  bottom: 25px;
-  right: 50%;
+  position: relative;
   visibility: hidden;
   opacity: 0; }
 
