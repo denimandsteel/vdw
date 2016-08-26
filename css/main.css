@@ -407,7 +407,7 @@ button,
 .e-btn-primary {
   display: inline-block;
   padding: 13.568px 38.4px;
-  width: 144px;
+  width: auto;
   text-transform: uppercase;
   text-decoration: none; }
   button:hover, button:focus, button:active,
