@@ -182,7 +182,7 @@ $type-scale-headings: (
 // Vars > Global values and styles
 // ********
 
-$unit: $font-line-height;
+$unit: 1.25em;
 
 html {
   font-family: $font-family;
@@ -204,6 +204,12 @@ html {
     font-size: $font-size-base;
 }
 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 // ********
@@ -257,26 +263,26 @@ html {
 .u-ml--l { margin-left: 4.5rem; }
 .u-mr--l { margin-right: 4.5rem; }
 // p = Padding (Top, Right, Bottom, Left) --s = small
-.u-p { padding: 3rem; }
-.u-pt { padding-top: 3rem; }
-.u-pb { padding-bottom: 3rem; }
-.u-pr { padding-right: 3rem; }
-.u-pl { padding-left: 3rem; }
-.u-p--s { padding: 1.5rem; }
-.u-pt--s { padding-top: 1.5rem; }
-.u-pb--s { padding-bottom: 1.5rem; }
-.u-pr--s { padding-right: 1.5rem; }
-.u-pl--s { padding-left: 1.5rem; }
-.u-p--l { padding: 6rem; }
-.u-pt--l { padding-top: 6rem; }
-.u-pb--l { padding-bottom: 6rem; }
-.u-pr--l { padding-right: 6rem; }
-.u-pl--l { padding-left: 6rem; }
-.u-p--xl { padding: 9rem; }
-.u-pt--xl { padding-top: 9rem; }
-.u-pb--xl { padding-bottom: 9rem; }
-.u-pr--xl { padding-right: 9rem; }
-.u-pl--xl { padding-left: 9rem; }
+.u-p { padding: 3rem !important; }
+.u-pt { padding-top: 3rem !important; }
+.u-pb { padding-bottom: 3rem !important; }
+.u-pr { padding-right: 3rem !important; }
+.u-pl { padding-left: 3rem !important; }
+.u-p--s { padding: 1.5rem !important; }
+.u-pt--s { padding-top: 1.5rem !important; }
+.u-pb--s { padding-bottom: 1.5rem !important; }
+.u-pr--s { padding-right: 1.5rem !important; }
+.u-pl--s { padding-left: 1.5rem !important; }
+.u-p--l { padding: 6rem !important; }
+.u-pt--l { padding-top: 6rem !important; }
+.u-pb--l { padding-bottom: 6rem !important; }
+.u-pr--l { padding-right: 6rem !important; }
+.u-pl--l { padding-left: 6rem !important; }
+.u-p--xl { padding: 9rem !important; }
+.u-pt--xl { padding-top: 9rem !important; }
+.u-pb--xl { padding-bottom: 9rem !important; }
+.u-pr--xl { padding-right: 9rem !important; }
+.u-pl--xl { padding-left: 9rem !important; }
 // ********
 // Elements
 // ********
@@ -442,7 +448,8 @@ button,
 }
 
 .c-l-screen-high {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 800px;
 }
 
 .c-l-container {
@@ -467,9 +474,12 @@ button,
 // is % based. Also don't nest these because nasty tiny margins will happen.
 // 
 // Column pushes are declared by .push-x-column or .push-x-columns
-// and are equal to column width + 4% (default margin left).
+// and are equal to column width + 4% (default margin left) L:485.
+//
+// !!! *** !!!
 // IF DEFAULT MARGIN LEFT IS CHANGED, PLEASE CHANGE PUSHES
-// 
+// !!! *** !!!
+//
 // Only a couple fractional columns right now. More coming soon
 
 .column,
@@ -568,7 +578,9 @@ button,
 .vdw-email-input {
   display: block;
   height: 44px;
-  width: 270px;
+  min-width: 270px;
+  width: 22vw;
+  max-width: 450px;
   padding-left: 10px;
   margin-bottom: 3rem;
   border: 3px solid $color-base;
@@ -670,17 +682,6 @@ button,
   color: $color-secondary;
   font-size: 22px;
 
-  a {
-    color: $color-secondary;
-    border-bottom: 2px solid $color-primary;
-
-    &:hover,
-    &:active {
-      background-color: $color-primary;
-      color: $color-base;
-    }
-  }
-
   ul {
       margin-top: 0;
       list-style: none;
@@ -701,4 +702,45 @@ button,
     @include media ($breaks-at-md) {
       padding: 0.5rem;
     }
+}
+
+.u-callout-link {
+  color: $color-secondary;
+  border-bottom: 2px solid $color-primary;
+
+  &:hover,
+  &:active {
+    background-color: $color-primary;
+    color: $color-base;
+  }
+}
+
+.u-email-link {
+  border-bottom: 2px solid $color-base;
+
+  &:hover,
+  &:active {
+    background-color: $color-base;
+    color: $color-primary;
+  }
+}
+
+.u-social-link:not(:first-of-type) {
+  padding-left: $unit;
+}
+
+.u-social-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+
+  &.u--instagram {
+    background-image: url('/images/glyph-logo_May2016.png');
+  }
+
+  &.u--twitter {
+    background-image: url('/images/Twitter_Social_Icon_White.svg');
+  } 
 }
