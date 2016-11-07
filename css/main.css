@@ -497,6 +497,71 @@ html * {
   padding-left: 9rem !important;
 }
 
+.u-callout-link {
+  color: #000;
+  border-bottom: 2px solid #ff323c;
+}
+
+.u-callout-link:hover, .u-callout-link:active {
+  background-color: #ff323c;
+  color: #fff;
+}
+
+.u-email-link {
+  border-bottom: 2px solid #fff;
+}
+
+.u-email-link:hover, .u-email-link:active {
+  background-color: #fff;
+  color: #ff323c;
+}
+
+.u-social-link:not(:first-of-type) {
+  padding-left: 1.25em;
+}
+
+.u-social-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+.u-social-icon.u--instagram {
+  background-image: url("/images/glyph-logo_May2016.png");
+}
+
+.u-social-icon.u--twitter {
+  background-image: url("/images/Twitter_Social_Icon_White.svg");
+}
+
+.u-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.u-flexbox.u--flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.u-flex {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -622,37 +687,23 @@ button:hover, button:focus, button:active,
 }
 
 .c-l-fw-container {
-  max-width: 100vw;
   width: 100vw;
   position: relative;
 }
 
-.c-l-screen-high {
-  height: 100vh;
-  max-height: 800px;
-}
-
 .c-l-container {
   position: relative;
-  width: 100%;
   max-width: 64em;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 34.375em) {
   .c-l-container {
-    width: 90%;
     padding: 0 1.5rem;
   }
 }
 
-@media screen and (min-width: 48em) {
-  .c-l-container {
-    width: 80%;
-  }
-}
-
-.column,
+.column, .c-member-card,
 .columns {
   width: 90%;
   margin-left: auto;
@@ -660,12 +711,12 @@ button:hover, button:focus, button:active,
 }
 
 @media screen and (min-width: 48em) {
-  .column,
+  .column, .c-member-card,
   .columns {
     float: left;
     margin-left: 4%;
   }
-  .column:first-child,
+  .column:first-child, .c-member-card:first-child,
   .columns:first-child {
     margin-left: 0;
   }
@@ -830,7 +881,7 @@ button:hover, button:focus, button:active,
 }
 
 @media screen and (min-width: 48em) {
-  .push-one.column {
+  .push-one.column, .push-one.c-member-card {
     margin-left: 8.33%;
   }
 }
@@ -878,7 +929,7 @@ button:hover, button:focus, button:active,
 }
 
 @media screen and (min-width: 48em) {
-  .md-push-one.column {
+  .md-push-one.column, .md-push-one.c-member-card {
     margin-left: 8.33%;
   }
 }
@@ -926,7 +977,7 @@ button:hover, button:focus, button:active,
 }
 
 @media screen and (min-width: 64em) {
-  .lg-push-one.column {
+  .lg-push-one.column, .lg-push-one.c-member-card {
     margin-left: 8.33%;
   }
 }
@@ -974,19 +1025,19 @@ button:hover, button:focus, button:active,
 }
 
 @media screen and (min-width: 48em) {
-  .one-half.column {
+  .one-half.column, .c-member-card {
     width: 48%;
   }
 }
 
 @media screen and (min-width: 48em) {
-  .one-third.column {
+  .one-third.column, .one-third.c-member-card {
     width: 30%;
   }
 }
 
 @media screen and (min-width: 48em) {
-  .two-thirds.column {
+  .two-thirds.column, .two-thirds.c-member-card {
     width: 65%;
   }
 }
@@ -1045,7 +1096,8 @@ button:hover, button:focus, button:active,
   left: 0;
   opacity: 0.2;
   background-image: url("/2017-images/VDW-logo-blk.svg");
-  background-repeat: no-repeat;
+  background-position: top;
+  background-repeat: space;
   background-size: 350%;
   background-position: center;
 }
@@ -1120,9 +1172,8 @@ button:hover, button:focus, button:active,
 
 .vdw-callout {
   background-color: #fff;
-  width: 300px;
   min-height: 200px;
-  vertical-align: center;
+  max-width: 450px;
   color: #000;
   font-size: 22px;
 }
@@ -1131,17 +1182,31 @@ button:hover, button:focus, button:active,
   margin-top: 0;
   list-style: none;
   line-height: 38.4px;
+  padding-left: 0.3125em;
 }
 
 .vdw-callout .c-callout-col1 {
-  float: left;
-  width: 30%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 25%;
+          flex: 3 1 25%;
+}
+
+@media screen and (min-width: 34.375em) {
+  .vdw-callout .c-callout-col1 {
+    text-align: right;
+  }
 }
 
 .vdw-callout .c-callout-col2 {
-  margin-left: 4%;
-  padding-left: 6rem;
-  width: 70%;
+  -webkit-box-flex: 7;
+      -ms-flex: 7 1 75%;
+          flex: 7 1 75%;
+}
+
+@media screen and (min-width: 34.375em) {
+  .vdw-callout .c-callout-col2 {
+    padding-left: 3rem;
+  }
 }
 
 @media screen and (min-width: 48em) {
@@ -1150,41 +1215,28 @@ button:hover, button:focus, button:active,
   }
 }
 
-.u-callout-link {
-  color: #000;
-  border-bottom: 2px solid #ff323c;
-}
-
-.u-callout-link:hover, .u-callout-link:active {
-  background-color: #ff323c;
-  color: #fff;
-}
-
-.u-email-link {
-  border-bottom: 2px solid #fff;
-}
-
-.u-email-link:hover, .u-email-link:active {
+.c-member-card {
   background-color: #fff;
-  color: #ff323c;
+  color: #000;
+  margin-bottom: 1.25em;
+  max-width: 48%;
 }
 
-.u-social-link:not(:first-of-type) {
-  padding-left: 1.25em;
+.c-member-card img {
+  width: 100%;
+  max-height: 245px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.u-social-icon {
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
+.c-member-card:nth-child(n+2) {
+  margin-left: 0;
 }
 
-.u-social-icon.u--instagram {
-  background-image: url("/images/glyph-logo_May2016.png");
+.c-member-card:nth-child(2n) {
+  margin-left: 2%;
 }
 
-.u-social-icon.u--twitter {
-  background-image: url("/images/Twitter_Social_Icon_White.svg");
+.c-member-card__content {
+  padding: 0 0.625em;
 }
