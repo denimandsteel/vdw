@@ -27,11 +27,11 @@
 </head>
 <body>
 
-{% comment %}
   {% include navigation.html %}
-{% endcomment %}
+
+
   <main class="c-l-fw-container vdw-bg-wrapper" role="main">
-    
+
     <section id="hero" class="c-l-container u-pb u-pr--xs u-pl--xs">
       <div class="push-two lg-push-four columns two-thirds column">
         <img class="u-pt--l vdw-knd-logo" src="{{ 'images/VDW-knd-logo-white.svg' | prepend: site.baseurl }}" alt="">
@@ -112,9 +112,10 @@
     {% include faq.html %}
     
     {% include team.html %}
-
-<!--     {% include get-involved.html %}
- -->
+    
+    {% comment %}
+      {% include get-involved.html %}
+    {% endcomment %}
 {% comment %}
     {% include sponsors.html %}
 {% endcomment %}
