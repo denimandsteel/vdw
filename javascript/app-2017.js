@@ -91,13 +91,18 @@ for (var date in vdwEvents) {
 // Navigation color switcher
 
 var $nav = $('.c-navigation');
-var switch1 = $('#successes').offset().top;
-var switch2 = $('#about').offset().top;
-var switch3 = $('#get-involved').offset().top;
+if ($('#successes').is(":visible")) {
+  var switch1 = $('#successes').offset().top;
+}
+if ($('#about').is(":visible")) {
+  var switch2 = $('#about').offset().top;  
+}
+if($('#get-involved.html').is(":visible")) {
+  var switch3 = $('#get-involved').offset().top;
+}
 
 $(window).on('scroll', function() {
   if(switch1 <= $(window).scrollTop() && $(window).scrollTop() <= switch1 + $('#hero').height() ) {
-    console.log("Fire 1!");
     $nav.css({
       'background-color': '#28e9dc',
     });
@@ -105,7 +110,6 @@ $(window).on('scroll', function() {
       color: '#fff'
     });
   } else if(switch2 <= $(window).scrollTop() && $(window).scrollTop() <= switch2 + $('#about').height() ) {
-    console.log("Fire 2!");
     $nav.css({
       'background-color': '#466eff',
     });
@@ -113,7 +117,6 @@ $(window).on('scroll', function() {
       color: '#fff'
     });
   } else if(switch3 <= $(window).scrollTop() && $(window).scrollTop() <= switch3+ $('#get-involved').height() ) {
-    console.log("Fire 3!");
     $nav.css({
       'background-color': '#ffe6e6',
     });
@@ -121,7 +124,6 @@ $(window).on('scroll', function() {
       color: '#000'
     });
   } else {
-    console.log("Hold!");
     $nav.css({
       'background-color': '#fff',
     });
