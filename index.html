@@ -19,34 +19,39 @@
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vancouver Design Week</title>
   <meta name="description" content="Connect. Explore. Engage. Impact.">
   <link rel="stylesheet" href="css/main.css">
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
-  <section class="c-l-fw-container vdw-bg-wrapper">
 
-    <article class="c-l-container u-pb">
+{% comment %}
+  {% include navigation.html %}
+{% endcomment %}
+  <main class="c-l-fw-container vdw-bg-wrapper" role="main">
+    
+    <section id="hero" class="c-l-container u-pb u-pr--xs u-pl--xs">
       <div class="push-two lg-push-four columns two-thirds column">
-        <h1 class="bravo u-pt--l">Vancouver <br>Design Week is back</h1>
+        <img class="u-pt--l vdw-knd-logo" src="{{ 'images/VDW-knd-logo-white.svg' | prepend: site.baseurl }}" alt="">
+        <h1 class="bravo">Vancouver <br>Design Week is back</h1>
         <h5 class="ff-secondary">May 12-14, <a style="text-decoration: underline;" href="http://eepurl.com/cEOnSv">read the update</a></h5>
-        <h5 class="ff-secondary u-pt">Get on the list &ndash; more coming soon.</h5>
-        <form action="http://denimandsteel.us5.list-manage.com/subscribe/post?u=4da6b7547530080bdd96d1002&amp;id=de7fead209" method="post" target="_blank" novalidate accept-charset="utf-8">
-          <input class="vdw-email-input u-ac ff-secondary" type="email" value="" name="EMAIL" tabindex="1" placeholder="YourLovelyEmail@example.com">
-          <input type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button u-ac ff-secondary">
+        <h5 class="ff-secondary">Get on the list &ndash; more coming soon.</h5>
+        <form action="http://denimandsteel.us5.list-manage.com/subscribe/post?u=4da6b7547530080bdd96d1002&amp;id=de7fead209" method="post" target="_blank" rel="noopener" novalidate accept-charset="utf-8">
+          <input class="vdw-email-input ff-secondary" type="email" value="" name="EMAIL" tabindex="1" placeholder="YourLovelyEmail@example.com">
+          <input type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button ff-secondary">
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_4da6b7547530080bdd96d1002_de7fead209" tabindex="-1" value=""></div>
         </form>
       </div>
       <div class="c-l-row twelve columns">
         <a id="anchorjump" class="keep-scrolling-arrow fadeIn u-mt" href="#vdw-section2"><img src="2017-images/keep-scrolling.svg" alt=""></a>
       </div>
-    </article>
+    </section>
 
-    <article id="vdw-section2" class="c-l-fw-container vdw-section2 u-m u-pt--l u-pb">
-      <div class="c-l-container u-db twelve md-eight md-push-two lg-six lg-push-six columns u-mt u-pt c-callout ff-secondary vdw-callout">
-        <div class="c-l-row u-pt--s">
+    <section id="successes" class="c-l-fw-container vdw-section2 u-pt--l u-pb">
+      <div class="c-l-container u-db twelve md-eight md-push-two lg-six lg-push-six columns c-callout ff-secondary vdw-callout u-pt">
+        <div class="c-l-row">
           <h3 class="f-tt-uc f-ta-c"><span class="f-wt">The Successes </span><br>of 2014</h3>
         </div>
         <div class="c-l-row u-flexbox">
@@ -75,46 +80,58 @@
             </ul>
           </div>
         </div>
-        <div class="c-callout-link u-pt--s u-pb--s f-ta-c">
+        <div class="c-callout-link u-pt--s u-pb--s f-ta-c u-pr--xs u-pl--xs">
           <p>With the help of <span class="f-wb">43</span> supporting partners.
-          <p><a class="u-callout-link" href="http://vancouverdesignwk.com/2014/">See what else we did in 2014.</a></p>
+          <p><a class="u-callout-link" href="/2014/">See what else we did in 2014.</a></p>
         </div>
       </div>
-    </article>
+    </section>
+{% comment %}
+    {% include event-schedule.html %}
+{% endcomment %}
+    <section id="about" class="c-l-fw-container u-bg-blue">
+      <div class="c-l-container u-pt u-pb">
+        <div class="c-l-row eight push-two lg-push-four columns u-pr--xs u-pl--xs">
+          <h1 class="f-tt-uc bravo"><span class="f-wt">Design for </span>Impact</h1>
+        </div>
+        <div class="c-l-row twelve lg-eight lg-push-four columns u-pr--xs u-pl--xs">
+          <div class="one-half column">
+            <h3 class="f-tt-uc u-mt ff-secondary golf">What are we talking about?</h3>
+            <p>Vancouver Design Week is a city-wide platform, invitation and call to action. A chance to spotlight design innovation, to connect designers across disciplines, and to to celebrate and empower the design talent shaping our future.</p>
+            <p>Vancouver Design Week&rsquo;s first event was in 2014, and we&rsquo;ll return with a focus around a new theme: IMPACT.
+          </div>
+          <div class="one-half column">
+            <h3 class="f-tt-uc u-mt ff-secondary golf">Impact.</h3>
+            <p>How are designers impacting our city and our world? What positive change are they creating in our communities? Why is design critical to solving social and environmental problems?</p>
+            <p class="f-wb">Connect. Explore. Engage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <article class="c-l-container u-pt--l u-pb">
-      <div class="c-l-row eight push-two lg-push-four columns">
-        <h1 class="f-tt-uc bravo u-pt"><span class="f-wt">Design for </span>Impact</h1>
-      </div>
-      <div class="c-l-row twelve lg-eight lg-push-four columns">
-        <div class="one-half column">
-          <h3 class="f-tt-uc u-mt ff-secondary golf">What are we talking about?</h3>
-          <p>Vancouver Design Week is a city-wide platform, invitation and call to action. A chance to spotlight design innovation, to connect designers across disciplines, and to to celebrate and empower the design talent shaping our future.</p>
-          <p>Vancouver Design Week&rsquo;s first event was in 2014, and we&rsquo;ll return with a focus around a new theme: IMPACT.
-        </div>
-        <div class="one-half column">
-          <h3 class="f-tt-uc u-mt ff-secondary golf">Impact.</h3>
-          <p>How are designers impacting our city and our world? What positive change are they creating in our communities? Why is design critical to solving social and environmental problems?</p>
-          <p class="f-wb">Connect. Explore. Engage.</p>
-        </div>
-      </div>
-    </article>
-    {% comment %}
-      {% include team.html %}
-    {% endcomment %}
+    {% include faq.html %}
+    
+    {% include team.html %}
 
-    <article class="c-l-container">
+    {% include get-involved.html %}
+{% comment %}
+    {% include sponsors.html %}
+{% endcomment %}
+    <section id="newsletter" class="c-l-container u-pr--xs u-pl--xs">
       <div class="c-l-row u-pb u-db twelve lg-eight lg-push-four columns">
         <h5 class="ff-secondary">Get on the list &ndash; Updates are coming soon.</h5>
-        <form action="http://denimandsteel.us5.list-manage.com/subscribe/post?u=4da6b7547530080bdd96d1002&amp;id=de7fead209" method="post" target="_blank" novalidate accept-charset="utf-8">
+        <form action="http://denimandsteel.us5.list-manage.com/subscribe/post?u=4da6b7547530080bdd96d1002&amp;id=de7fead209" method="post" target="_blank" rel="noopener" novalidate accept-charset="utf-8">
           <input class="vdw-email-input u-ac ff-secondary" type="email" value="" name="EMAIL" tabindex="2" placeholder="YourLovelyEmail@example.com">
           <input type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button u-ac ff-secondary">
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_4da6b7547530080bdd96d1002_de7fead209" tabindex="-1" value=""></div>
         </form>
       </div>
 
-    </article>
-    <footer class="c-l-container"> 
+    </section>
+
+
+
+    <footer id="contact" class="c-l-container u-pr--xs u-pl--xs">
       <div class="eight push-two lg-push-four columns u-mb">
         <div class="one-half column">
           <h3 class="f-tt-uc ff-secondary golf">Contact</h3>
@@ -127,7 +144,9 @@
         </div>
       </div>
     </footer>
-  </section>
+
+
+  </main>
 
   <script>
     $(function() {
@@ -145,5 +164,7 @@
       });
     });
   </script>
+  <script type="text/javascript" src="/javascript/third-party.js"></script>
+  <script type="text/javascript" src="/javascript/app-2017.js"></script>
 </body>
 </html>
