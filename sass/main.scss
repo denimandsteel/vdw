@@ -13,7 +13,7 @@
 // Imports
 // ********
 
-@import 'normalize.css';
+@import 'normalize';
 @import 'leaflet';
 
 // Lekton font-face
@@ -412,11 +412,6 @@ ul {
   margin: 0;
 }
 
-footer {
-  width: 100vw;
-  height: 5vh;
-}
-
 // Font (f) weights (w) & varients 
 // b = bold, l = light, t = thin
 .f-wb,
@@ -756,8 +751,6 @@ button,
   position: relative;
   background-color: $color-primary;
   color: $color-base;
-  height: 100%;
-  overflow-x: hidden;
 
   &:before {
     // VDW logo & background texture
