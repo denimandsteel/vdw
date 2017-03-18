@@ -1,0 +1,17 @@
+{
+  "name": "vdw",
+  "version": "1.0.0",
+  "description": "The Vancouver Design Week website",
+  "scripts": {
+    "build": "sass sass/main.scss:css/main.css --style=expanded --sourcemap=none && ./node_modules/.bin/postcss --use autoprefixer -o css/main.css css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denimandsteel/vdw.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.7.7",
+    "postcss-cli-simple": "^1.0.4"
+  }
+}
