@@ -164,12 +164,12 @@ $type-scale-headings: (
       @include heading-styles();
       font-size: ($scale * 0.875) + $type-units;
       margin-top: $font-line-height;
-      margin-bottom: $font-line-height;
+      margin-bottom: $font-line-height * 0.75;
 
       @include media($breaks-at-md) {
         font-size: ($scale * 0.925) + $type-units;
-        margin-bottom: $font-line-height;
-        margin-top: $font-line-height * 2;
+        margin-bottom: $font-line-height * 0.75;
+        margin-top: $font-line-height * 1.25;
       }
 
       @include media($breaks-at-lg) {
@@ -284,6 +284,7 @@ html {
 .u-mb--l { margin-bottom: 4.5rem; }
 .u-ml--l { margin-left: 4.5rem; }
 .u-mr--l { margin-right: 4.5rem; }
+
 // p = Padding (Top, Right, Bottom, Left) --s = small
 .u-p { padding: 3rem !important; }
 .u-pt { padding-top: 3rem !important; }
@@ -295,10 +296,16 @@ html {
 .u-pb--s { padding-bottom: 1.5rem !important; }
 .u-pr--s { padding-right: 1.5rem !important; }
 .u-pl--s { padding-left: 1.5rem !important; }
+.u-p--xs { padding: 0.5rem !important; }
 .u-pt--xs { padding-top: 0.5rem !important; }
 .u-pb--xs { padding-bottom: 0.5rem !important; }
 .u-pr--xs { padding-right: 0.5rem !important; }
 .u-pl--xs { padding-left: 0.5rem !important; }
+.u-p--xxs { padding: 0.25rem !important; }
+.u-pt--xxs { padding-top: 0.25rem !important; }
+.u-pb--xxs { padding-bottom: 0.25rem !important; }
+.u-pr--xxs { padding-right: 0.25rem !important; }
+.u-pl--xxs { padding-left: 0.25rem !important; }
 .u-p--l { padding: 6rem !important; }
 .u-pt--l { padding-top: 6rem !important; }
 .u-pb--l { padding-bottom: 6rem !important; }
@@ -1181,3 +1188,4 @@ button,
     padding: 2%;
   }
 }
+

@@ -594,14 +594,14 @@ h6,
   letter-spacing: 0.05rem;
   font-size: 93.625px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .super-alpha {
     font-size: 98.975px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -623,14 +623,14 @@ h6,
   letter-spacing: 0.05rem;
   font-size: 74.375px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .alpha {
     font-size: 78.625px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -652,14 +652,14 @@ h6,
   letter-spacing: 0.05rem;
   font-size: 56px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .bravo {
     font-size: 59.2px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -682,15 +682,15 @@ h1 {
   letter-spacing: 0.05rem;
   font-size: 46.375px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .charlie,
   h1 {
     font-size: 49.025px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -715,15 +715,15 @@ h2 {
   letter-spacing: 0.05rem;
   font-size: 37.625px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .delta,
   h2 {
     font-size: 39.775px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -748,15 +748,15 @@ h3 {
   letter-spacing: 0.05rem;
   font-size: 28px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .echo,
   h3 {
     font-size: 29.6px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -781,15 +781,15 @@ h4 {
   letter-spacing: 0.05rem;
   font-size: 23.625px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
   .foxtrot,
   h4 {
     font-size: 24.975px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -815,7 +815,7 @@ h5,
   letter-spacing: 0.05rem;
   font-size: 18.66375px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
@@ -823,8 +823,8 @@ h5,
   h5,
   .eventheader .left .title {
     font-size: 19.73025px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -852,7 +852,7 @@ h6,
   letter-spacing: 0.05rem;
   font-size: 14px;
   margin-top: 25.6px;
-  margin-bottom: 25.6px;
+  margin-bottom: 19.2px;
 }
 
 @media screen and (min-width: 48em) {
@@ -860,8 +860,8 @@ h6,
   h6,
   .eventheader .right .price {
     font-size: 14.8px;
-    margin-bottom: 25.6px;
-    margin-top: 51.2px;
+    margin-bottom: 19.2px;
+    margin-top: 32px;
   }
 }
 
@@ -1046,6 +1046,10 @@ html {
   padding-left: 1.5rem !important;
 }
 
+.u-p--xs {
+  padding: 0.5rem !important;
+}
+
 .u-pt--xs {
   padding-top: 0.5rem !important;
 }
@@ -1060,6 +1064,26 @@ html {
 
 .u-pl--xs {
   padding-left: 0.5rem !important;
+}
+
+.u-p--xxs {
+  padding: 0.25rem !important;
+}
+
+.u-pt--xxs {
+  padding-top: 0.25rem !important;
+}
+
+.u-pb--xxs {
+  padding-bottom: 0.25rem !important;
+}
+
+.u-pr--xxs {
+  padding-right: 0.25rem !important;
+}
+
+.u-pl--xxs {
+  padding-left: 0.25rem !important;
 }
 
 .u-p--l {
