@@ -1553,6 +1553,38 @@ html {
   background-image: url("/images/Twitter_Social_Icon_White.svg");
 }
 
+.c-big-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #000;
+}
+@media screen and (min-width: 64em) {
+  .c-big-social {
+    width: 66%;
+  }
+}
+.c-big-social .u--instagram {
+  background-image: url("/images/glyph-logo_May2016_black.png");
+  min-width: 48px;
+}
+.c-big-social .text {
+  margin: 0 0 0 20px;
+}
+.c-big-social:hover {
+  background: #000;
+  color: white;
+}
+.c-big-social:hover .u--instagram {
+  background-image: url("/images/glyph-logo_May2016.png");
+}
+
 .u-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;

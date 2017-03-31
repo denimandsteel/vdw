@@ -369,6 +369,30 @@ html {
   } 
 }
 
+.c-big-social {
+  @include media($breaks-at-lg) {
+    width: 66%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: $color-black;
+  .u--instagram {
+    background-image: url('/images/glyph-logo_May2016_black.png');
+    min-width: 48px;
+  }
+  .text {
+    margin: 0 0 0 20px;
+  }
+  &:hover {
+    background: $color-black;
+    color: white;
+    .u--instagram {
+      background-image: url('/images/glyph-logo_May2016.png');
+    }
+  }
+}
+
 .u-flexbox {
   display: flex;
   flex-direction: row;
