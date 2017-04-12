@@ -144,12 +144,12 @@ $('.js-nav-mobile-toggle').bind('click', function() {
 })
 
 // Sponsor masonry.
-var $container = $('.support');
-$container.imagesLoaded( function() {
-  $container.masonry({
-    itemSelector: 'img'
-  });
-});
+// var $container = $('.support');
+// $container.imagesLoaded( function() {
+//   $container.masonry({
+//     itemSelector: 'img'
+//   });
+// });
 
 });
 

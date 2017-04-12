@@ -1189,12 +1189,26 @@ button,
 // ---
 
 .support {
-  a > img {
-    @extend .columns;
-    @extend .sm-six;
-    @extend .four;
-    @extend .lg-three;
-
-    padding: 2%;
+  display: flex;
+  // justify-content; center;
+  align-items: center;
+  flex-wrap: wrap;
+  a {
+    display: block;
+    width: 19%;
+    margin: 3% 6% 3% 0;
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  // display: flex;
+  // a > img {
+  //   @extend .columns;
+  //   @extend .sm-six;
+  //   @extend .four;
+  //   @extend .lg-three;
+
+  //   padding: 2%;
+  // }
 }
