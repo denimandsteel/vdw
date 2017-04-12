@@ -1193,15 +1193,40 @@ button,
   // justify-content; center;
   align-items: center;
   flex-wrap: wrap;
+  // padding: 0 1em;
   a {
     display: block;
-    width: 19%;
-    margin: 3% 6% 3% 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    width: 75%;
+    margin: 15px 0;
+
+    @include media($breaks-at-sm) {
+      $margin-right: 6%;
+      width: (100% - 1 * $margin-right)/2;
+      margin: 3% $margin-right 3% 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @include media($breaks-at-md) {
+      $margin-right: 6%;
+      width: (100% - 3 * $margin-right)/4;
+      margin: 3% $margin-right 3% 0;
+      &:nth-child(2n) {
+        margin-right: 6%;
+      }
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
   }
-  img {
-    width: 100%;
-    height: auto;
-  }
+  
   // display: flex;
   // a > img {
   //   @extend .columns;

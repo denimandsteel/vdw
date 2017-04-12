@@ -2588,12 +2588,33 @@ button:hover, button:focus, button:active,
 }
 .support a {
   display: block;
-  width: 19%;
-  margin: 3% 6% 3% 0;
+  width: 75%;
+  margin: 15px 0;
 }
-.support img {
+.support a img {
   width: 100%;
   height: auto;
+}
+@media screen and (min-width: 34.375em) {
+  .support a {
+    width: 47%;
+    margin: 3% 6% 3% 0;
+  }
+  .support a:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48em) {
+  .support a {
+    width: 20.5%;
+    margin: 3% 6% 3% 0;
+  }
+  .support a:nth-child(2n) {
+    margin-right: 6%;
+  }
+  .support a:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
