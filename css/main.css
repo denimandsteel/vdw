@@ -2595,6 +2595,9 @@ button:hover, button:focus, button:active,
   width: 100%;
   height: auto;
 }
+.support a.big-logo {
+  padding: 2%;
+}
 @media screen and (min-width: 34.375em) {
   .support a {
     width: 47%;
