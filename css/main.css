@@ -1524,6 +1524,10 @@ html {
   color: #ffe6e6;
 }
 
+.u-color-grey {
+  color: #999;
+}
+
 .u-callout-link {
   color: #000;
   border-bottom: 2px solid #ff323c;
