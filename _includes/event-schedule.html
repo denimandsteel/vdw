@@ -8,16 +8,15 @@
         vdwEvents = {};
       </script>
       <section id="event" class="events outer-container page-break">
+        <div class="u-pr--xs u-pl--xs u-mt--l">
+            <h3 class="charlie">2017 Event Schedule</h3>
+            <!-- <h5 class="ff-secondary">May 12th - 14th, 2017</h5> -->
+        </div>
+
         {% for dayNumber in (12..14) %}
-
-          <div class="u-pr--xs u-pl--xs u-mt--l">
-              <h3 class="charlie">2017 Event Schedule</h3>
-              <h5 class="ff-secondary">May 12th - 14th, 2017</h5>
-          </div>
-
           {% assign eventDayCategory = "event-" | append: dayNumber %}
           {% if site.categories[eventDayCategory].size > 0 %}
-            <div id="{{ eventDayCategory }}" class="day-events">
+            <div id="{{ eventDayCategory }}" class="day-events active">
               <div class="day-header">
                 <h2 class="dayname">{{ site.categories[eventDayCategory][0].dayOfWeek}}, <strong>{{ site.categories[eventDayCategory][0].dayOfMonth}}</strong></h2>
                 <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
@@ -42,7 +41,7 @@
                               {% else %}
                                 {{ post.startTime }}
                               {% endif %}
-                              at <a target="_blank" rel="noopener" href="http://maps.apple.com/?q={{ post.address }}">{{ post.addressLabel }}</a>
+                              at <a target="_blank" rel="noopener" href="http://maps.google.com/?q={{ post.latitude }},{{ post.longitude }}">{{ post.addressLabel }}</a>
                             </p>
                           </div>
                           <div class="right md-four columns">

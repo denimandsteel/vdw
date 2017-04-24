@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'open-uri'
-require 'csv'
 require 'fileutils'
 require 'json'
 
@@ -18,29 +17,27 @@ VDWEvent = Struct.new(
   :published, 
   :address_lat, 
   :address_long,
-  :price
+  :price,
+  :priority
 )
 
-def markdownPostForEvent(event, priority)
+def markdownPostForEvent(event)
   escapedTitled = event.title.gsub('"', '\"');
   escapedDescription = event.description.gsub('"', '\"');
 
   dayNumber = event.day.strftime("%d")
   dayOfWeek = event.day.strftime("%a")
-  dayOfMonth = event.day.strftime("Sept %d")
+  dayOfMonth = event.day.strftime("May %d")
   
   formattedTime = ""
   if event.start_time.to_s != ''
     formattedTime = event.start_time + (event.end_time.to_s == '' ? "" : " - " + event.end_time)
   end
-  
-  isPublished = (event.published == 'YES')  
-  
+
   timestamp = event.day.strftime("%Y-%m-%d")
   cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
   slug = timestamp + "-" + cleanTitle
 
-  content =  
   "---
 dayOfWeek: #{dayOfWeek}
 dayOfMonth: #{dayOfMonth}
@@ -49,79 +46,72 @@ description: \"#{escapedDescription}\"
 startTime: #{event.start_time}
 endTime: #{event.end_time}
 type: #{event.event_type}
-address: \"#{event.address}\"
+address: \"#{event.address}, Vancouver, BC, Canada\"
 addressLabel: #{event.address_label}
 latitude: #{event.address_lat}
 longitude: #{event.address_long}
 eventUrl: #{event.event_url}
 eventUrlLabel: #{event.event_url_label}
-published: #{isPublished}
+published: #{event.published}
 price: #{event.price}
 
 category: event-#{dayNumber}
-priority: #{priority}
+priority: #{event.priority}
 slug: #{slug}
 ---
 "
-  return content
 end
 
-def readCSV(url)
+def readEvents(url)
   totalEvents = 0;
-  csv = CSV.new(open(url))
-  
-  header = Array.new
-
-  previousDay = "";
   priority = 0
-  csv.each do |line|
-    print '.'
-    STDOUT.flush
-    if priority == 0
-      header = line
-      priority += 1;
-    else
-      # todo: check for empty rows
-      if line[header.index('Published')] == 'YES' && line[header.index('Address')].to_s != ''
-        event = VDWEvent.new
-        event.day = Date.strptime(line[header.index('Day')], "%m/%d/%Y")
-        if event.day != previousDay
-          priority = 1;
-        end
-        previousDay = event.day
-        event.title = line[header.index('Title')].tr("\n"," ")
-        event.description = line[header.index('Description')].tr("\n"," ")
-        event.start_time = line[header.index('Start Time')]
-        event.end_time = line[header.index('End Time')]
-        event.event_type = line[header.index('Type')]
-        event.address = line[header.index('Address')].tr("\n"," ")
-        event.address_label = line[header.index('Address Label')]
-        event.event_url = line[header.index('URL')]
-        event.event_url_label = line[header.index('URL Label')]
-        event.published = line[header.index('Published')]
-        event.address_lat = line[header.index('Lat')]
-        event.address_long = line[header.index('Long')]
-        event.price = line[header.index('Price')]
 
-        if event.address_lat.to_s == '' || event.address_long.to_s == ''
-          google_api_key = "AIzaSyBQDsHDBRQtL2hZl9Jl7sg002VSokqvlZk"
-          geocoder = JSON.parse(open("https://maps.googleapis.com/maps/api/geocode/json?address=#{URI::encode(event.address)}&key=#{google_api_key}").string)
-          if geocoder && geocoder["results"].length > 0
-            event.address_lat = geocoder["results"][0]["geometry"]["location"]["lat"]
-            event.address_long = geocoder["results"][0]["geometry"]["location"]["lng"]
-          end  
-        end
-        
-        content = markdownPostForEvent(event, priority)
+  events = JSON.parse(open(url).read)
+  puts events.length
 
-        formattedDate = event.day.strftime("%Y-%m-%d")
-        cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
-        slug = formattedDate + "-" + cleanTitle
-        filename = ("_posts/#{slug}.md")
-        File.write(filename, content)  
-        priority += 1
-        totalEvents += 1;
-      end
+  typePlain = {
+    'tastings' => 'Tastings',
+    'open_call' => 'Open Call',
+    'open_studios' => 'Open Studios',
+    'open_buildings' => 'Open Buildings',
+  }
+  
+  events.each do |eventJSON|
+    event = VDWEvent.new
+    if eventJSON['is_date_friday']
+      event.day = Date.strptime("05/12/2017", "%m/%d/%Y")
+    elsif eventJSON['is_date_saturday']
+      event.day = Date.strptime("05/13/2017", "%m/%d/%Y")
+    elsif eventJSON['is_date_sunday']
+      event.day = Date.strptime("05/14/2017", "%m/%d/%Y")
+    end
+
+    if eventJSON['public'] && event.day
+      event.title = eventJSON['name'].tr("\n"," ")
+      event.description = eventJSON['public_description'].tr("\n"," ")
+      event.start_time = eventJSON['time']
+      # event.end_time = eventJSON['End Time']
+      event.event_type = typePlain[eventJSON['event_type']]
+      event.address = eventJSON['address'].tr("\n"," ")
+      event.address_label = eventJSON['address']
+      # event.event_url = eventJSON['URL']
+      # event.event_url_label = eventJSON['URL Label']
+      event.published = eventJSON['public']
+      event.address_lat = eventJSON['latitude']
+      event.address_long = eventJSON['longitude']
+      # event.price = eventJSON['Price']
+      # event.priority = eventJSON['position']
+      event.priority = priority
+      priority += 1
+
+      content = markdownPostForEvent(event)
+
+      formattedDate = event.day.strftime("2016-%m-%d")
+      cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
+      slug = formattedDate + "-" + cleanTitle
+      filename = ("_posts/#{slug}.md")
+      File.write(filename, content)  
+      totalEvents += 1;
     end
     
   end
@@ -129,11 +119,7 @@ def readCSV(url)
   puts " #{totalEvents} events posted."
 end
 
-puts "Fetching events:"
+print "Fetching events: "
 
-csvURL = "https://docs.google.com/spreadsheets/d/1Sd6MkT_z-kTBtzozSb_6ZfJyO6TcgGzS0VTYavrzI7I/export?gid=0&format=csv"
-# csvURL = "https://docs.google.com/spreadsheets/d/1zlSwKyHZ3ui-hNivaKdZIKINvn45fX3td0xvI4Hu0CU/export?gid=0&format=csv"
-
-# remove all previous markdown files:
-FileUtils.rm_rf(Dir.glob('_posts/*'))
-readCSV(csvURL)
+FileUtils.rm_rf(Dir.glob('_posts/2016-*')) # remove all previous markdown files:
+readEvents("http://localhost:3000/locations.json")
