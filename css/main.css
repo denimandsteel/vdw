@@ -2623,5 +2623,36 @@ button:hover, button:focus, button:active,
     margin-right: 0;
   }
 }
+.support.support-small a {
+  width: 47%;
+  margin: 3% 6% 3% 0;
+}
+.support.support-small a:nth-child(2n) {
+  margin-right: 0;
+}
+@media screen and (min-width: 34.375em) {
+  .support.support-small a {
+    width: 29.33333%;
+    margin: 3% 6% 3% 0;
+  }
+  .support.support-small a:nth-child(2n) {
+    margin-right: 6%;
+  }
+  .support.support-small a:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48em) {
+  .support.support-small a {
+    width: 15.2%;
+    margin: 3% 6% 3% 0;
+  }
+  .support.support-small a:nth-child(3n) {
+    margin-right: 6%;
+  }
+  .support.support-small a:nth-child(5n) {
+    margin-right: 0;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

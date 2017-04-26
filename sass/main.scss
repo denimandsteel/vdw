@@ -1210,7 +1210,8 @@ button,
 
     @include media($breaks-at-sm) {
       $margin-right: 6%;
-      width: (100% - 1 * $margin-right)/2;
+      $grid: 2;
+      width: (100% - ($grid - 1) * $margin-right)/$grid;
       margin: 3% $margin-right 3% 0;
       &:nth-child(2n) {
         margin-right: 0;
@@ -1219,7 +1220,8 @@ button,
 
     @include media($breaks-at-md) {
       $margin-right: 6%;
-      width: (100% - 3 * $margin-right)/4;
+      $grid: 4;
+      width: (100% - ($grid - 1) * $margin-right)/$grid;
       margin: 3% $margin-right 3% 0;
       &:nth-child(2n) {
         margin-right: 6%;
@@ -1227,6 +1229,43 @@ button,
 
       &:nth-child(4n) {
         margin-right: 0;
+      }
+    }
+  }
+
+  &.support-small {
+    a {
+      $margin-right: 6%;
+      $grid: 2;
+      width: (100% - ($grid - 1) * $margin-right)/$grid;
+      margin: 3% $margin-right 3% 0;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      @include media($breaks-at-sm) {
+        $margin-right: 6%;
+        $grid: 3;
+        width: (100% - ($grid - 1) * $margin-right)/$grid;
+        margin: 3% $margin-right 3% 0;
+        &:nth-child(2n) {
+          margin-right: $margin-right;
+        }
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+      @include media($breaks-at-md) {
+        $margin-right: 6%;
+        $grid: 5;
+        width: (100% - ($grid - 1) * $margin-right)/$grid;
+        margin: 3% $margin-right 3% 0;
+        &:nth-child(3n) {
+          margin-right: $margin-right;
+        }
+
+        &:nth-child(5n) {
+          margin-right: 0;
+        }
       }
     }
   }
