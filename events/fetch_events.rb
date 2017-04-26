@@ -94,13 +94,13 @@ def readEvents(url)
       event.event_type = typePlain[eventJSON['event_type']]
       event.address = eventJSON['address'].tr("\n"," ")
       event.address_label = eventJSON['address']
-      # event.event_url = eventJSON['URL']
-      # event.event_url_label = eventJSON['URL Label']
+      event.event_url = eventJSON['public_url']
+      event.event_url_label = eventJSON['public_url_label']
       event.published = eventJSON['public']
       event.address_lat = eventJSON['latitude']
       event.address_long = eventJSON['longitude']
-      # event.price = eventJSON['Price']
-      # event.priority = eventJSON['position']
+      event.price = eventJSON['price']
+      event.priority = eventJSON['position'] || 0
       event.priority = priority
       priority += 1
 
