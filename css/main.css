@@ -1004,7 +1004,7 @@ h6,
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .super-alpha {
     font-size: 98.975px;
     margin-bottom: 25.6px;
@@ -1030,7 +1030,7 @@ h6,
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .alpha {
     font-size: 78.625px;
     margin-bottom: 25.6px;
@@ -1056,7 +1056,7 @@ h6,
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .bravo {
     font-size: 59.2px;
     margin-bottom: 25.6px;
@@ -1083,7 +1083,7 @@ h1 {
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .charlie,
   h1 {
     font-size: 49.025px;
@@ -1113,7 +1113,7 @@ h2 {
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .delta,
   h2 {
     font-size: 39.775px;
@@ -1143,7 +1143,7 @@ h3 {
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .echo,
   h3 {
     font-size: 29.6px;
@@ -1173,7 +1173,7 @@ h4 {
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .foxtrot,
   h4 {
     font-size: 24.975px;
@@ -1204,7 +1204,7 @@ h5,
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .golf,
   h5,
   .eventheader .left .title {
@@ -1238,7 +1238,7 @@ h6,
   margin-top: 25.6px;
   margin-bottom: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .hotel,
   h6,
   .eventheader .right .price {
@@ -1267,7 +1267,7 @@ html {
   font-size: 13.6px;
   line-height: 25.6px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   html {
     font-size: 14.4px;
   }
@@ -1298,14 +1298,14 @@ html {
   clear: both;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .u-al {
     float: left !important;
     clear: left;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .u-ar {
     float: right !important;
     clear: right;
@@ -1706,7 +1706,7 @@ button:hover, button:focus, button:active,
 .e-icon--feature {
   width: 10rem;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .e-icon--feature {
     width: 12rem;
     height: auto;
@@ -1741,7 +1741,7 @@ button:hover, button:focus, button:active,
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .column,
   .columns {
     float: left;
@@ -1753,55 +1753,55 @@ button:hover, button:focus, button:active,
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .two.columns {
     width: 13.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .three.columns {
     width: 22%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .four.columns {
     width: 30%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .five.columns {
     width: 36.666%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .six.columns {
     width: 46%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .seven.columns {
     width: 53%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .eight.columns {
     width: 66%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .nine.columns {
     width: 74%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .twelve.columns {
     width: 100%;
     margin-left: 0;
@@ -1845,55 +1845,55 @@ button:hover, button:focus, button:active,
   margin-left: 0;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-two.columns {
     width: 13.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-three.columns {
     width: 22%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-four.columns {
     width: 30%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-five.columns {
     width: 36.666%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-six.columns {
     width: 46%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-seven.columns {
     width: 53%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-eight.columns {
     width: 66%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-nine.columns {
     width: 74%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-twelve.columns {
     width: 100%;
     margin-left: 0;
@@ -1948,97 +1948,97 @@ button:hover, button:focus, button:active,
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-one.column {
     margin-left: 8.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-two.columns {
     margin-left: 21.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-three.columns {
     margin-left: 26%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-four.columns {
     margin-left: 34%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-five.columns {
     margin-left: 40.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-six.columns {
     margin-left: 50%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-seven.columns {
     margin-left: 57%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .push-eight.columns {
     margin-left: 64%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-one.column {
     margin-left: 8.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-two.columns {
     margin-left: 21.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-three.columns {
     margin-left: 26%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-four.columns {
     margin-left: 34%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-five.columns {
     margin-left: 40.33%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-six.columns {
     margin-left: 50%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-seven.columns {
     margin-left: 57%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .md-push-eight.columns {
     margin-left: 64%;
   }
@@ -2092,19 +2092,19 @@ button:hover, button:focus, button:active,
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .one-half.column {
     width: 48%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .one-third.column {
     width: 30%;
   }
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .two-thirds.column {
     width: 65%;
   }
@@ -2125,7 +2125,7 @@ button:hover, button:focus, button:active,
   z-index: 1001;
   transition: background-color 0.25s ease-in, color 0.25s ease-in;
 }
-@media screen and (min-width: 34.375em) {
+@media screen and (min-width: 50em) {
   .c-navigation {
     display: flex;
     justify-content: flex-end;
@@ -2153,7 +2153,7 @@ button:hover, button:focus, button:active,
   float: left;
   width: 100%;
 }
-@media screen and (min-width: 34.375em) {
+@media screen and (min-width: 50em) {
   .c-navigation--links {
     display: flex !important;
     float: none;
@@ -2166,7 +2166,7 @@ button:hover, button:focus, button:active,
   float: right;
   cursor: pointer;
 }
-@media screen and (min-width: 34.375em) {
+@media screen and (min-width: 50em) {
   .c-navigation--mobile-toggle {
     display: none !important;
   }
@@ -2187,7 +2187,7 @@ button:hover, button:focus, button:active,
   border: 3px solid #fff;
   color: #fff;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .vdw-email-input {
     display: inline-block;
     margin-right: 3rem;
@@ -2199,7 +2199,7 @@ button:hover, button:focus, button:active,
   background-color: #ffed00;
   font-size: 18px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .vdw-email-button {
     display: inline-block;
   }
@@ -2224,7 +2224,7 @@ button:hover, button:focus, button:active,
   background-position: center;
   transition: all 0.1s ease-out;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .vdw-bg-wrapper:before {
     background-size: 200%;
   }
@@ -2299,7 +2299,7 @@ button:hover, button:focus, button:active,
     padding-left: 3rem;
   }
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .vdw-callout {
     padding: 0.5rem;
   }
@@ -2310,7 +2310,7 @@ button:hover, button:focus, button:active,
   color: #000;
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .c-member-card {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -2469,7 +2469,7 @@ button:hover, button:focus, button:active,
 .eventheader .left {
   float: none;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .eventheader .left {
     float: left;
   }
@@ -2504,7 +2504,7 @@ button:hover, button:focus, button:active,
   display: block;
   float: none;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .eventheader .right {
     float: right;
   }
@@ -2611,7 +2611,7 @@ button:hover, button:focus, button:active,
     margin-right: 0;
   }
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .support a {
     width: 20.5%;
     margin: 3% 6% 3% 0;
@@ -2642,7 +2642,7 @@ button:hover, button:focus, button:active,
     margin-right: 0;
   }
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .support.support-small a {
     width: 15.2%;
     margin: 3% 6% 3% 0;

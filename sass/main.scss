@@ -80,7 +80,7 @@ $breakpoints: (
   n: 0,
   xs: 20em,
   sm: 34.375em,
-  md: 48em,
+  md: 50em,
   lg: 64em,
   xl: 78.5em
 );
@@ -686,7 +686,7 @@ button,
 
   transition: background-color 0.25s ease-in, color 0.25s ease-in;
 
-  @include media($breaks-at-sm) {
+  @include media($breaks-at-md) {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -719,7 +719,7 @@ button,
     // .c-navigation--link {
     //   width: 100%;
     // }
-    @include media($breaks-at-sm) {
+    @include media($breaks-at-md) {
       display: flex !important;
       float: none;
       width: auto;
@@ -731,7 +731,7 @@ button,
     float: right;
     cursor: pointer;
 
-    @include media($breaks-at-sm) {
+    @include media($breaks-at-md) {
       display: none !important;
     }
   }
