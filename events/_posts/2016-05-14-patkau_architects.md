@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 14
 title: "Patkau Architects"
-description: "Patkau Architects is an architecture and design research studio. We explore the richness and diversity of architectural practice, understanding it as a critical cultural act that engages our most fundamental desires and aspirations.  We will be showcasing our architecture design studio and gallery, along with a shop demonstration.  Please note that our upstairs gallery is not wheelchair accessible, and that our entrance to the main studio has steps that may pose an accessibility issue for some. "
+description: "Patkau Architects is an architecture and design research studio. We explore the richness and diversity of architectural practice, understanding it as a critical cultural act that engages our most fundamental desires and aspirations.<br> <br> We will be showcasing our architecture design studio and gallery, along with a shop demonstration.<br> <br> Please note that our upstairs gallery is not wheelchair accessible, and that our entrance to the main studio has steps that may pose an accessibility issue for some. "
 startTime: 
 endTime: 
 type: Open Studios

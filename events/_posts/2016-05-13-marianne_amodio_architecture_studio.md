@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Marianne Amodio Architecture Studio"
-description: "Join us for a warm welcome, slideshow, and Courtyard Antics.  The studio is located on the ground floor in the courtyard towards the back of the building."
+description: "Join us for a warm welcome, slideshow, and Courtyard Antics.<br> <br> The studio is located on the ground floor in the courtyard towards the back of the building."
 startTime: 
 endTime: 
 type: Open Studios
