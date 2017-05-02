@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Carscadden Stokes McDonald Architects Inc."
-description: "We are a east-side architecture and design studio, ready to welcome you warmly and let you talk our ears off about why design matters."
+description: "We are an east-side architecture and design studio, ready to welcome you warmly and let you talk our ears off about why design matters."
 startTime: 
 endTime: 
 type: Open Studios

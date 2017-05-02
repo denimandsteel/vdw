@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 14
 title: "Oddity Kombucha Taproom "
-description: "Oddity Kombucha will be hosting a kombucha tasting and workshop during Vancouver Design Week! Come be the first to preview of our kombucha bar, opening early summer, and sample our variety of kombucha flavors. We will also be guiding you through the process of making kombucha and the ingredient that makes it so delicious. Kombucha starter kits are available at the event so you can make your own kombucha at home!<br> Ticket includes 3 kombucha samples and our Kombucha 101 workshop<br> Kombucha starter kits are available to purchase at the event<br> All ages are welcome! Please contact us if you have any questions. <br> "
+description: "Oddity Kombucha will be hosting a kombucha tasting and workshop during Vancouver Design Week! Come be the first to preview of our kombucha bar, opening early summer, and sample our variety of kombucha flavors. We will also be guiding you through the process of making kombucha and the ingredient that makes it so delicious. Kombucha starter kits are available at the event so you can make your own kombucha at home!<br> <br> Ticket includes 3 kombucha samples and our Kombucha 101 workshop.<br> <br> Kombucha starter kits are available to purchase at the event.<br> <br> All ages are welcome! Please contact us if you have any questions."
 startTime: 1-2:30
 endTime: 
 type: Tastings
