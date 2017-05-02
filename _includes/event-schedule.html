@@ -23,8 +23,11 @@
                     {% if timeValue == 'am' %}
                       <span class="f-tt-uc">Morning</span>
                     {% endif %}
-                    {% if timeValue == 'pm' %}
+                    {% if timeValue == 'pm' and dayNumber != 12 %}
                       <span class="f-tt-uc">Afternoon</span>
+                    {% endif %}
+                    {% if timeValue == 'pm' and dayNumber == 12 %}
+                      <span class="f-tt-uc">Evening</span>
                     {% endif %}
                   </strong>
                 </h2>
@@ -32,7 +35,7 @@
               </div>
               <div class="events-list">
                 <div id="map-{{eventDayCategory}}" class="map"></div>
-                {% for priority in (1..50) %}{% for post in site.categories[eventDayCategory] %}{% if post.priority == priority and post.published == true %}
+                {% for priority in (0..50) %}{% for post in site.categories[eventDayCategory] %}{% if post.priority == priority and post.published == true %}
                   <script type="text/javascript">
                     if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
                       vdwEvents['map-{{eventDayCategory}}'] = [];
