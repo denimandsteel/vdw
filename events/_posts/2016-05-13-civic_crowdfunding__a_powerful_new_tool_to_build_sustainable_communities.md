@@ -12,6 +12,9 @@ latitude: 49.2832809999999
 longitude: -123.113486
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: www.wayblaze.com
 published: true
 price: 
 

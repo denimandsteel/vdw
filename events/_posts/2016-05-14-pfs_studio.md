@@ -12,6 +12,9 @@ latitude: 49.2693809818873
 longitude: -123.144200571751
 eventUrl: 
 eventUrlLabel: 
+twitter: PFSStudio
+instagram: PFSStudio
+website: pfs.bc.ca
 published: true
 price: 
 

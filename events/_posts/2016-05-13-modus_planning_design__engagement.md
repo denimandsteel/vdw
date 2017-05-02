@@ -12,6 +12,9 @@ latitude: 49.283281
 longitude: -123.113486
 eventUrl: 
 eventUrlLabel: 
+twitter: thinkmodus
+instagram: 
+website: www.thinkmodus.ca/
 published: true
 price: 
 

@@ -12,6 +12,9 @@ latitude: 49.2797295749231
 longitude: -123.077492988139
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: yewwoodshop
+website: www.yewwoodshop.com
 published: true
 price: 
 

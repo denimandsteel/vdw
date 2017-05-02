@@ -12,6 +12,9 @@ latitude: 49.2753459999999
 longitude: -123.080348
 eventUrl: 
 eventUrlLabel: 
+twitter: WesterlyShoes
+instagram: westerly_shoes
+website: www.westerlyhandmadeshoes.com
 published: true
 price: 
 

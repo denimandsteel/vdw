@@ -12,6 +12,9 @@ latitude: 49.283732
 longitude: -123.110029
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: www.carscadden.ca/segev-llp
 published: true
 price: 
 

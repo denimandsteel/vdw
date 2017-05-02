@@ -12,6 +12,9 @@ latitude: 49.2830883413558
 longitude: -123.125412310703
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: vancouver.adler.edu
 published: true
 price: Free
 

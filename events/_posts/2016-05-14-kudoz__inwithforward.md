@@ -12,6 +12,9 @@ latitude: 49.257716
 longitude: -123.087364
 eventUrl: 
 eventUrlLabel: 
+twitter: inwithforward
+instagram: kudozexperience
+website: inwithforward.com/projects/kudoz
 published: true
 price: 
 

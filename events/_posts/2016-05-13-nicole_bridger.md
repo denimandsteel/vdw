@@ -12,6 +12,9 @@ latitude: 49.2835389998004
 longitude: -123.104487999337
 eventUrl: 
 eventUrlLabel: 
+twitter: nicolebridger
+instagram: nicolebridger
+website: www.nicolebridger.com
 published: true
 price: 
 

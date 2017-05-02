@@ -12,6 +12,9 @@ latitude: 49.281429
 longitude: -123.08883
 eventUrl: 
 eventUrlLabel: 
+twitter: CarscaddenArch
+instagram: CarscaddenArch
+website: www.carscadden.ca
 published: true
 price: 
 

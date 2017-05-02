@@ -2448,6 +2448,22 @@ button:hover, button:focus, button:active,
 .event-item .description {
   margin: 0;
 }
+.event-item .social-links {
+  margin-top: 10px;
+}
+.event-item .social-links a {
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff323c;
+}
+.event-item .social-links a:after {
+  content: " -";
+}
+.event-item .social-links a:last-child:after {
+  content: '';
+}
 .event-item .time-and-place {
   margin-top: 10px;
   margin-bottom: 10px;

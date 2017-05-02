@@ -5,18 +5,21 @@ require 'json'
 
 VDWEvent = Struct.new( 
   :day,
-  :title, 
-  :description, 
-  :start_time, 
-  :end_time, 
-  :ampm, 
-  :event_type, 
-  :address, 
-  :address_label, 
-  :event_url, 
-  :event_url_label, 
-  :published, 
-  :address_lat, 
+  :title,
+  :description,
+  :start_time,
+  :end_time,
+  :ampm,
+  :event_type,
+  :address,
+  :address_label,
+  :event_url,
+  :event_url_label,
+  :twitter,
+  :instagram,
+  :website,
+  :published,
+  :address_lat,
   :address_long,
   :price,
   :priority
@@ -53,6 +56,9 @@ latitude: #{event.address_lat}
 longitude: #{event.address_long}
 eventUrl: #{event.event_url}
 eventUrlLabel: #{event.event_url_label}
+twitter: #{event.twitter}
+instagram: #{event.instagram}
+website: #{event.website}
 published: #{event.published}
 price: #{event.price}
 
@@ -115,6 +121,9 @@ def readEvents(url)
       event.address_label = eventJSON['address']
       event.event_url = eventJSON['public_url']
       event.event_url_label = eventJSON['public_url_label']
+      event.twitter = eventJSON['twitter']
+      event.instagram = eventJSON['instagram']
+      event.website = eventJSON['website']
       event.published = eventJSON['public']
       event.address_lat = eventJSON['latitude']
       event.address_long = eventJSON['longitude']

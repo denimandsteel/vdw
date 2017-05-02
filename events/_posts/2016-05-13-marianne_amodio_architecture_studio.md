@@ -12,6 +12,9 @@ latitude: 49.280667
 longitude: -123.101174
 eventUrl: 
 eventUrlLabel: 
+twitter: marianneamodio
+instagram: maarchitecturestudio
+website: maastudio.com
 published: true
 price: 
 

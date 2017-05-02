@@ -12,6 +12,9 @@ latitude: 49.282699
 longitude: -123.106633
 eventUrl: 
 eventUrlLabel: 
+twitter: louderthanten
+instagram: louderthanten
+website: louderthanten.com
 published: true
 price: 
 

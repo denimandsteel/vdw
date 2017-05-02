@@ -12,6 +12,9 @@ latitude: 49.2631105489123
 longitude: -123.101443501121
 eventUrl: 
 eventUrlLabel: 
+twitter: darcy_jones
+instagram: thatdarcyjones
+website: darcyjones.com
 published: true
 price: 
 

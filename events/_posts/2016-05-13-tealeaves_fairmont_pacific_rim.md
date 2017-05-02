@@ -12,6 +12,9 @@ latitude: 49.2880559999998
 longitude: -123.116389
 eventUrl: www.eventbrite.com/e/tealeaves-x-four-seasons-hotel-vancouver-vancouver-design-week-tickets-34216545609 
 eventUrlLabel: Register
+twitter: 
+instagram: tealeavesco
+website: 
 published: true
 price: $25
 

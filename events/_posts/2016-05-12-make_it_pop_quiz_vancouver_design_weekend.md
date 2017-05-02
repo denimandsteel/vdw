@@ -12,6 +12,9 @@ latitude: 49.285149
 longitude: -123.114114
 eventUrl: https://www.eventbrite.com/e/make-it-pop-quiz-vancouver-design-weekend-tickets-33633300106
 eventUrlLabel: GET TICKETS
+twitter: 
+instagram: 
+website: eng.in/mipqvdw
 published: true
 price: Free
 

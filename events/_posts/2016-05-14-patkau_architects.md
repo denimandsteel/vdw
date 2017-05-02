@@ -12,6 +12,9 @@ latitude: 49.2662130000002
 longitude: -123.14014
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: patkau_architects
+website: www.patkau.ca
 published: true
 price: 
 

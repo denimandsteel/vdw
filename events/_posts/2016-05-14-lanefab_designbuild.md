@@ -12,6 +12,9 @@ latitude: 49.2619690000001
 longitude: -123.096709
 eventUrl: 
 eventUrlLabel: 
+twitter: lanefab
+instagram: lanefab
+website: http://www.lanefab.com
 published: true
 price: 
 

@@ -12,6 +12,9 @@ latitude: 49.281539
 longitude: -123.116655
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: telusgarden.com
 published: true
 price: Free
 

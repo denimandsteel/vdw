@@ -12,6 +12,9 @@ latitude: 49.2868900000001
 longitude: -123.122116
 eventUrl: 
 eventUrlLabel: 
+twitter: habaneroconsult
+instagram: 
+website: www.habaneroconsulting.com
 published: true
 price: 
 

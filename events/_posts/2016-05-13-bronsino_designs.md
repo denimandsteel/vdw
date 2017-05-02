@@ -12,6 +12,9 @@ latitude: 49.276335
 longitude: -123.078608
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: bronsino
+website: www.bronsino.com
 published: true
 price: 
 

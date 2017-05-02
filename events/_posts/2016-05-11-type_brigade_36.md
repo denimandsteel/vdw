@@ -12,6 +12,9 @@ latitude: 49.2812831776873
 longitude: -123.114625907307
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: typebrigade.com
 published: true
 price: 
 

@@ -12,6 +12,9 @@ latitude: 49.244455
 longitude: -123.166431
 eventUrl: 
 eventUrlLabel: 
+twitter: evendesigninc
+instagram: evendesign
+website: www.evendesign.ca
 published: true
 price: 
 

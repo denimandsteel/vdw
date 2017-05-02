@@ -12,6 +12,9 @@ latitude: 49.2572168527528
 longitude: -123.09026107192
 eventUrl: 
 eventUrlLabel: 
+twitter: theaviary_ca
+instagram: theaviary_ca
+website: www.theaviary.ca
 published: true
 price: 
 

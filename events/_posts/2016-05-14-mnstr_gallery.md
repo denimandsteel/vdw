@@ -12,6 +12,9 @@ latitude: 49.268757
 longitude: -123.099454
 eventUrl: 
 eventUrlLabel: 
+twitter: mnstrgallery
+instagram: mnstrgallery
+website: www.mnstrgallery.com
 published: true
 price: 
 

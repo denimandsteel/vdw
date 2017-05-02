@@ -12,6 +12,9 @@ latitude: 49.2764540000003
 longitude: -123.121463
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: sv_bakery
+website: smallvictory.ca
 published: true
 price: 
 

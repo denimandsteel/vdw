@@ -12,6 +12,9 @@ latitude: 49.283732
 longitude: -123.110029
 eventUrl: 
 eventUrlLabel: 
+twitter: CygnusGroup
+instagram: CygnusYVR
+website: cygnusgroup.ca/
 published: true
 price: 
 

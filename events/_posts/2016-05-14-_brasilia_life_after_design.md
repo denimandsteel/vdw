@@ -12,6 +12,9 @@ latitude: 49.2766560000001
 longitude: -123.124983
 eventUrl: www.doxafestival.ca/film/brasilia-life-after-design
 eventUrlLabel: GET TICKETS
+twitter: DOXAFestival
+instagram: DOXAFestival
+website: www.doxafestival.ca/film/brasilia-life-after-design
 published: true
 price: 
 

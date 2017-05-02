@@ -12,6 +12,9 @@ latitude: 49.2841939999999
 longitude: -123.106248
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: wiivv.com
 published: true
 price: 
 

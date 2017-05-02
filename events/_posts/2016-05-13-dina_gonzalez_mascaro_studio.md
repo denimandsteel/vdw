@@ -12,6 +12,9 @@ latitude: 49.281943
 longitude: -123.071281
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: dinagm
+website: www.gonzalezmascaro.com
 published: true
 price: 
 

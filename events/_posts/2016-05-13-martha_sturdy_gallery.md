@@ -12,6 +12,9 @@ latitude: 49.2665019999999
 longitude: -123.105035
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: www.marthasturdy.com/
 published: true
 price: 
 

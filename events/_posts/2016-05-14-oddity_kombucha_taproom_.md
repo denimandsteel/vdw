@@ -12,6 +12,9 @@ latitude: 49.2686560187935
 longitude: -123.104645758867
 eventUrl: www.eventbrite.ca/e/vdw-oddity-kombucha-tasting-workshop-tickets-34089094399
 eventUrlLabel: Buy Tickets
+twitter: 
+instagram: odditykombucha
+website: odditykombucha.com
 published: true
 price: $15
 

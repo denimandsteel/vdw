@@ -12,6 +12,9 @@ latitude: 49.2842940000001
 longitude: -123.069391
 eventUrl: 
 eventUrlLabel: By Invite
+twitter: oddspirits
+instagram: oddsocietyspirits
+website: www.oddsocietyspirits.com
 published: true
 price: 
 

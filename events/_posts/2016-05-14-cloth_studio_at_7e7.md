@@ -12,6 +12,9 @@ latitude: 49.2652061447681
 longitude: -123.103694426686
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: atelierstgeorge.com
 published: true
 price: Free
 

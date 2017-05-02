@@ -12,6 +12,9 @@ latitude: 49.274804
 longitude: -123.123392
 eventUrl: 
 eventUrlLabel: 
+twitter: perkinswill_VAN
+instagram: perkinswill
+website: perkinswill.com/offices/vancouver
 published: true
 price: 
 

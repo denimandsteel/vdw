@@ -12,6 +12,9 @@ latitude: 49.2848506081398
 longitude: -123.114188182825
 eventUrl: www.eventbrite.ca/e/vdw-public-launch-party-tickets-34078846748
 eventUrlLabel: Get Tickets
+twitter: 
+instagram: 
+website: 
 published: true
 price: Free
 

@@ -12,6 +12,9 @@ latitude: 49.266624
 longitude: -123.11215
 eventUrl: 
 eventUrlLabel: 
+twitter: milkovicharch
+instagram: milkovicharch
+website: milkovicharchitects.com
 published: true
 price: 
 

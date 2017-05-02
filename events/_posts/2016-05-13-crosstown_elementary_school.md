@@ -12,6 +12,9 @@ latitude: 49.27757
 longitude: -123.103516
 eventUrl: 
 eventUrlLabel: 
+twitter: 
+instagram: 
+website: www.vsb.bc.ca/district-facilities/projects/crosstown
 published: true
 price: Free
 

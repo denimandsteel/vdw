@@ -12,6 +12,9 @@ latitude: 49.2831
 longitude: -123.118983
 eventUrl: 
 eventUrlLabel: 
+twitter: tealeavesco
+instagram: tealeavesco
+website: http://paletteforyourpalate.com/
 published: true
 price: 
 

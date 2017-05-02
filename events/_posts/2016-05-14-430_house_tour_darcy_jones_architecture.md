@@ -12,6 +12,9 @@ latitude: 49.2528727459028
 longitude: -123.097214658899
 eventUrl: www.eventbrite.ca/e/darcy-jones-430-house-tour-and-vancouver-special-garden-party-tickets-34201480549
 eventUrlLabel: Buy Tickets
+twitter: darcy_jones
+instagram: thatdarcyjones
+website: www.darcyjones.com/430-house/
 published: true
 price: $10
 

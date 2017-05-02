@@ -12,6 +12,9 @@ latitude: 49.2823028824704
 longitude: -123.076716845864
 eventUrl: www.eventbrite.ca/e/callister-brewing-vancouver-design-week-tickets-33945557075
 eventUrlLabel: Buy Tickets
+twitter: callisterbeer
+instagram: callisterbeer
+website: www.callisterbrewing.com
 published: true
 price: $15
 
