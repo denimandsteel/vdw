@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 14
 title: "RED Academy"
-description: "Come by and check out our campus! You can experience the user-centric design process we teach. You can also see our student portfolios or have your own portfolio reviewed to learn about your options for a career in tech. RED Academy is a technology and design school. We offer full and part-time programs in UX (User Experience) Design as well as UI (User Interface) Design. We also have programs in Digital Marketing, Web and Application Development.  We are at West Broadway and Granville between the Blenz and McDonalds. There will be student volunteers in the lobby to lead you upstairs."
+description: "Come by and check out our campus! You can experience the user-centric design process we teach. You can also see our student portfolios or have your own portfolio reviewed to learn about your options for a career in tech. RED Academy is a technology and design school. We offer full and part-time programs in UX (User Experience) Design as well as UI (User Interface) Design. We also have programs in Digital Marketing, Web and Application Development.<br> <br> We are at West Broadway and Granville between the Blenz and McDonalds. There will be student volunteers in the lobby to lead you upstairs."
 startTime: 
 endTime: 
 type: Open Studios

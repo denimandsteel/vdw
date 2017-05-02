@@ -27,7 +27,7 @@ VDWEvent = Struct.new(
 
 def markdownPostForEvent(event)
   escapedTitled = event.title.gsub('"', '\"');
-  escapedDescription = event.description.gsub('"', '\"');
+  escapedDescription = event.description.gsub('"', '\"').gsub(/(?:\n\r?|\r\n?)/, '<br>');
 
   dayNumber = event.day.strftime("%d")
   dayOfWeek = event.day.strftime("%a")

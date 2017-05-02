@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Crosstown Elementary School"
-description: "Crosstown Elementary’s unique four-storey design inside a condo building makes it the first of its kind in B.C.  The school has two decks for outdoor learning but students will use an existing public playground and field nearby."
+description: "Crosstown Elementary’s unique four-storey design inside a condo building makes it the first of its kind in B.C.<br> <br> The school has two decks for outdoor learning but students will use an existing public playground and field nearby."
 startTime: 1-4
 endTime: 
 type: Open Buildings
