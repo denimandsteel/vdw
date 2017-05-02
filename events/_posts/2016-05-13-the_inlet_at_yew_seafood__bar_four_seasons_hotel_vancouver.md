@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 35
+priority: 37
 slug: 2017-05-13-the_inlet_at_yew_seafood__bar_four_seasons_hotel_vancouver
 ---
