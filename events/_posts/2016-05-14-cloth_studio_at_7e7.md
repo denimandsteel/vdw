@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-14-pm
-priority: 9
+priority: 0
 slug: 2017-05-14-cloth_studio_at_7e7
 ---

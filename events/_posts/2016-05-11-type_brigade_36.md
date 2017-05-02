@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-11-pm
-priority: 40
+priority: 0
 slug: 2017-05-11-type_brigade_36
 ---

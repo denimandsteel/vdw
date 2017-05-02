@@ -114,9 +114,9 @@ def readEvents(url)
       event.address_lat = eventJSON['latitude']
       event.address_long = eventJSON['longitude']
       event.price = eventJSON['price']
-      event.priority = eventJSON['position'] || 0
-      event.priority = priority
-      priority += 1
+      event.priority = eventJSON['position']
+      # event.priority = priority
+      # priority += 1
 
       content = markdownPostForEvent(event)
 

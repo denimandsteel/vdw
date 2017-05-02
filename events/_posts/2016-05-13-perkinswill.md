@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 29
+priority: 0
 slug: 2017-05-13-perkinswill
 ---

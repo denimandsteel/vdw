@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 32
+priority: 0
 slug: 2017-05-13-small_victory_bakery
 ---

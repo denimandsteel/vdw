@@ -16,6 +16,6 @@ published: true
 price: $25
 
 category: event-13-pm
-priority: 35
+priority: 0
 slug: 2017-05-13-tealeaves_fairmont_pacific_rim
 ---

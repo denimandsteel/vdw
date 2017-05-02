@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-am
-priority: 42
+priority: 0
 slug: 2017-05-13-westerly_handmade_shoes
 ---

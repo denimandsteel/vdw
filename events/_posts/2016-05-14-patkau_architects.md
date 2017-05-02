@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-14-pm
-priority: 28
+priority: 0
 slug: 2017-05-14-patkau_architects
 ---

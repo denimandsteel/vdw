@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-14-pm
-priority: 23
+priority: 0
 slug: 2017-05-14-mnstr_gallery
 ---

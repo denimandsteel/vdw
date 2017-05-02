@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 38
+priority: 0
 slug: 2017-05-13-the_cygnus_design_group
 ---

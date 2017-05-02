@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-14-pm
-priority: 22
+priority: 0
 slug: 2017-05-14-martha_sturdy_gallery
 ---
