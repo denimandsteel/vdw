@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-13-pm
-priority: 30
+priority: 33
 slug: 2017-05-13-telus_garden
 ---

@@ -16,6 +16,6 @@ published: true
 price: $15
 
 category: event-14-pm
-priority: 24
+priority: 25
 slug: 2017-05-14-oddity_kombucha_taproom_
 ---
