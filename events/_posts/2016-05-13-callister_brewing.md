@@ -16,6 +16,6 @@ published: true
 price: $15
 
 category: event-13-
-priority: 3
+priority: 5
 slug: 2017-05-13-callister_brewing
 ---

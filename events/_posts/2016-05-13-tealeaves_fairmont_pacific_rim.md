@@ -13,9 +13,9 @@ longitude: -123.116389
 eventUrl: www.eventbrite.com/e/tealeaves-x-four-seasons-hotel-vancouver-vancouver-design-week-tickets-34216545609 
 eventUrlLabel: Register
 published: true
-price: 25
+price: $25
 
 category: event-13-pm
-priority: 13
+priority: 29
 slug: 2017-05-13-tealeaves_fairmont_pacific_rim
 ---

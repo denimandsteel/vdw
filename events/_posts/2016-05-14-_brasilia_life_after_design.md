@@ -8,10 +8,10 @@ endTime:
 type: Open Call
 address: "1181 Seymour St., Vancouver, BC, Canada"
 addressLabel: 1181 Seymour St.
-latitude: 49.276656
+latitude: 49.2766560000001
 longitude: -123.124983
-eventUrl: 
-eventUrlLabel: 
+eventUrl: www.doxafestival.ca/film/brasilia-life-after-design
+eventUrlLabel: GET TICKETS
 published: true
 price: 
 

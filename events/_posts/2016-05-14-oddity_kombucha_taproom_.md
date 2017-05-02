@@ -11,11 +11,11 @@ addressLabel: 1863 Ontario Street
 latitude: 49.2686560187935
 longitude: -123.104645758867
 eventUrl: www.eventbrite.ca/e/vdw-oddity-kombucha-tasting-workshop-tickets-34089094399
-eventUrlLabel: Buy kombucha tasting and workshop
+eventUrlLabel: Buy Tickets
 published: true
 price: $15
 
 category: event-14-pm
-priority: 10
+priority: 24
 slug: 2017-05-14-oddity_kombucha_taproom_
 ---

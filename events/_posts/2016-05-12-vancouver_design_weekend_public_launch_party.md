@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-12-pm
-priority: 17
+priority: 33
 slug: 2017-05-12-vancouver_design_weekend_public_launch_party
 ---
