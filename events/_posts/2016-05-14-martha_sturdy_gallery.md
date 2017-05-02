@@ -3,13 +3,13 @@ dayOfWeek: Sun
 dayOfMonth: May 14
 title: "Martha Sturdy Gallery"
 description: ""
-startTime: 1-4
+startTime: 
 endTime: 
-type: Open Buildings
+type: Open Studios
 address: "12 West 5th Ave, Vancouver, BC, Canada"
 addressLabel: 12 West 5th Ave
-latitude: 49.2665346061329
-longitude: -123.105449457248
+latitude: 49.2665019999999
+longitude: -123.105035
 eventUrl: 
 eventUrlLabel: 
 published: true
