@@ -10,12 +10,12 @@ address: "225 - 975 Vernon Dr. (In the Mergatroid Building), Vancouver, BC, Cana
 addressLabel: 225 - 975 Vernon Dr. (In the Mergatroid Building)
 latitude: 49.276335
 longitude: -123.078608
-eventUrl: bronsino.com
+eventUrl: 
 eventUrlLabel: 
 published: true
 price: 
 
 category: event-13-am
-priority: 3
+priority: 4
 slug: 2017-05-13-bronsino_designs
 ---

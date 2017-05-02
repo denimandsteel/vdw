@@ -13,7 +13,7 @@ longitude: -123.115548521235
 eventUrl: 
 eventUrlLabel: 
 published: true
-price: Free
+price: 
 
 category: event-13-am
 priority: 20

@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 25
+priority: 26
 slug: 2017-05-13-nicole_bridger
 ---

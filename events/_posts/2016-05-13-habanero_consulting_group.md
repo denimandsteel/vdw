@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 14
+priority: 15
 slug: 2017-05-13-habanero_consulting_group
 ---

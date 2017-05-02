@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 6
+priority: 7
 slug: 2017-05-13-carscadden_stokes_mcdonald_architects_inc
 ---

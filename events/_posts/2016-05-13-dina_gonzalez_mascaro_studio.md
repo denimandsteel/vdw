@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-am
-priority: 12
+priority: 13
 slug: 2017-05-13-dina_gonzalez_mascaro_studio
 ---

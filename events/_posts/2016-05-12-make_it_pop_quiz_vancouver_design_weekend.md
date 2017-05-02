@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-12-pm
-priority: 17
+priority: 18
 slug: 2017-05-12-make_it_pop_quiz_vancouver_design_weekend
 ---

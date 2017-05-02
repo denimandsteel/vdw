@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 10
+priority: 11
 slug: 2017-05-13-darcy_jones_architecture
 ---

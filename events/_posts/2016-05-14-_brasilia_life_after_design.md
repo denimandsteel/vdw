@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-14-pm
-priority: 2
+priority: 3
 slug: 2017-05-14-_brasilia_life_after_design
 ---

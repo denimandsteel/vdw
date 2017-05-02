@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 23
+priority: 24
 slug: 2017-05-13-modus_planning_design__engagement
 ---

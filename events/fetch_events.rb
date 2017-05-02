@@ -95,6 +95,11 @@ def readEvents(url)
       event.ampm = ''
     end
 
+    if eventJSON['id'] == 104 # Type Brigade is on Thursday...
+      event.day = Date.strptime("05/11/2017", "%m/%d/%Y")
+      event.ampm = 'pm'
+    end
+
     if eventJSON['public'] && event.day
       event.title = eventJSON['name'].tr("\n"," ")
       event.description = eventJSON['public_description'].tr("\n"," ")

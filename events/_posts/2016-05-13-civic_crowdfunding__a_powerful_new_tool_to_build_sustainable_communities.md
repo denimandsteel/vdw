@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-am
-priority: 7
+priority: 8
 slug: 2017-05-13-civic_crowdfunding__a_powerful_new_tool_to_build_sustainable_communities
 ---

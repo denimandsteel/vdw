@@ -16,6 +16,6 @@ published: true
 price: Free
 
 category: event-13-pm
-priority: 9
+priority: 10
 slug: 2017-05-13-crosstown_elementary_school
 ---

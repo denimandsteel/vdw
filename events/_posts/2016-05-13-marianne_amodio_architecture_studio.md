@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 18
+priority: 19
 slug: 2017-05-13-marianne_amodio_architecture_studio
 ---

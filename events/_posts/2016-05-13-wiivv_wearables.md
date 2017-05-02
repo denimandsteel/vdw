@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 41
+priority: 43
 slug: 2017-05-13-wiivv_wearables
 ---

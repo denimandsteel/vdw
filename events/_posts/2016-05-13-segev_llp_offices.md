@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-pm
-priority: 30
+priority: 31
 slug: 2017-05-13-segev_llp_offices
 ---
