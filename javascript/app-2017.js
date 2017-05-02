@@ -62,18 +62,22 @@ for (var date in vdwEvents) {
       });
     });
 
+    var index = 1;
+
     // Event markers.
     var events = new L.featureGroup();
     vdwEvents[date].forEach(function(event, i) {
       var event = vdwEvents[date][i];
       var marker;
       if (event.overlapping === 'yes') {
-        marker = L.marker([event.lat, event.long], { alt: event.priority,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) });
+        marker = L.marker([event.lat, event.long], { alt: index,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) });
       } else {
-        marker = L.marker([event.lat, event.long], { alt: event.priority,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + event.priority + '</span>' }) });
+        marker = L.marker([event.lat, event.long], { alt: index,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + index + '</span>' }) });
       };
       marker.addTo(events);
       oms.addMarker(marker);
+      $('#event-' + event.slug + ' .js-marker-index').text(index + '. ');
+      index += 1;
     });
     events.addTo(map);
     // map.fitBounds(events.getBounds());

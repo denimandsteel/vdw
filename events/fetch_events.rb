@@ -9,6 +9,7 @@ VDWEvent = Struct.new(
   :description, 
   :start_time, 
   :end_time, 
+  :ampm, 
   :event_type, 
   :address, 
   :address_label, 
@@ -55,7 +56,7 @@ eventUrlLabel: #{event.event_url_label}
 published: #{event.published}
 price: #{event.price}
 
-category: event-#{dayNumber}
+category: event-#{dayNumber}-#{event.ampm}
 priority: #{event.priority}
 slug: #{slug}
 ---
@@ -84,6 +85,14 @@ def readEvents(url)
       event.day = Date.strptime("05/13/2017", "%m/%d/%Y")
     elsif eventJSON['is_date_sunday']
       event.day = Date.strptime("05/14/2017", "%m/%d/%Y")
+    end
+
+    if eventJSON['is_time_am']
+      event.ampm = 'am'
+    elsif eventJSON['is_time_pm']
+      event.ampm = 'pm'
+    else
+      event.ampm = ''
     end
 
     if eventJSON['public'] && event.day
@@ -122,4 +131,4 @@ end
 print "Fetching events: "
 
 FileUtils.rm_rf(Dir.glob('_posts/2016-*')) # remove all previous markdown files:
-readEvents("http://localhost:3000/locations.json")
+readEvents("http://maps.vancouverdesignwk.com/locations.json")
