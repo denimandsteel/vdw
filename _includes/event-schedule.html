@@ -9,7 +9,7 @@
         <!-- <h5 class="ff-secondary">May 12th - 14th, 2017</h5> -->
       </div>
 
-      {% for dayNumber in (11..14) %}
+      {% for dayNumber in (11..16) %}
         {% assign times = "am|pm" | split: "|" %}
         {% for timeValue in times %}
           {% capture eventDayCategory %}event-{{dayNumber}}-{{timeValue}}{% endcapture %}
@@ -24,7 +24,7 @@
                       <span class="f-tt-uc">Morning</span>
                     {% endif %}
                     {% if timeValue == 'pm' %}
-                      {% if dayNumber == 11 or dayNumber == 12 %}
+                      {% if dayNumber == 11 or dayNumber == 12 or dayNumber == 16 %}
                         <span class="f-tt-uc">Evening</span>
                       {% else %}
                         <span class="f-tt-uc">Afternoon</span>

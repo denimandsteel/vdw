@@ -100,6 +100,11 @@ def readEvents(url)
       event.ampm = 'pm'
     end
 
+    if eventJSON['id'] == 130 # Debrief is on Tuesday...
+      event.day = Date.strptime("05/16/2017", "%m/%d/%Y")
+      event.ampm = 'pm'
+    end
+
     if eventJSON['public'] && event.day
       event.title = eventJSON['name'].tr("\n"," ")
       event.description = eventJSON['public_description'].tr("\n"," ")
