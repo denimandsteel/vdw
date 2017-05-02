@@ -8,8 +8,8 @@ endTime:
 type: Open Studios
 address: "12 West 5th Ave, Vancouver, BC, Canada"
 addressLabel: "12 West 5th Ave"
-latitude: 49.2660974607463
-longitude: -123.115548521235
+latitude: 49.2665019999999
+longitude: -123.105035
 eventUrl: 
 eventUrlLabel: 
 published: true
