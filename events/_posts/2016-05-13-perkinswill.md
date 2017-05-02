@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1220 Homer Street, Vancouver, BC, Canada"
-addressLabel: 1220 Homer Street
+addressLabel: "1220 Homer Street"
 latitude: 49.274804
 longitude: -123.123392
 eventUrl: 

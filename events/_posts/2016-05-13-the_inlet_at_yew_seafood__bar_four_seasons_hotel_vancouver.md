@@ -7,7 +7,7 @@ startTime: 3-4
 endTime: 
 type: Tastings
 address: "791 W Georgia St, Vancouver, BC, Canada"
-addressLabel: 791 W Georgia St
+addressLabel: "791 W Georgia St"
 latitude: 49.2831
 longitude: -123.118983
 eventUrl: 

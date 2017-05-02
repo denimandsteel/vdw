@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "606-318 Homer St, Vancouver, BC, Canada"
-addressLabel: 606-318 Homer St
+addressLabel: "606-318 Homer St"
 latitude: 49.283732
 longitude: -123.110029
 eventUrl: 

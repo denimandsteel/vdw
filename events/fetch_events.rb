@@ -48,7 +48,7 @@ startTime: #{event.start_time}
 endTime: #{event.end_time}
 type: #{event.event_type}
 address: \"#{event.address}, Vancouver, BC, Canada\"
-addressLabel: #{event.address_label}
+addressLabel: \"#{event.address_label}\"
 latitude: #{event.address_lat}
 longitude: #{event.address_long}
 eventUrl: #{event.event_url}

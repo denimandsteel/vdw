@@ -7,7 +7,7 @@ startTime: Noon-1
 endTime: 
 type: Tastings
 address: "1338 Franklin Street, Vancouver, BC, Canada"
-addressLabel: 1338 Franklin Street
+addressLabel: "1338 Franklin Street"
 latitude: 49.2823028824704
 longitude: -123.076716845864
 eventUrl: www.eventbrite.ca/e/callister-brewing-vancouver-design-week-tickets-33945557075

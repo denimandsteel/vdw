@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "134 Abbott Street, Vancouver, BC, Canada"
-addressLabel: 134 Abbott Street
+addressLabel: "134 Abbott Street"
 latitude: 49.2841939999999
 longitude: -123.106248
 eventUrl: 

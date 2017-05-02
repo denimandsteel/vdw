@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "#304-175 East Broadway, Vancouver, BC, Canada"
-addressLabel: #304-175 East Broadway
+addressLabel: "#304-175 East Broadway"
 latitude: 49.2631105489123
 longitude: -123.101443501121
 eventUrl: 

@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "102-127 East Pender Street., Vancouver, BC, Canada"
-addressLabel: 102-127 East Pender Street.
+addressLabel: "102-127 East Pender Street."
 latitude: 49.280667
 longitude: -123.101174
 eventUrl: 

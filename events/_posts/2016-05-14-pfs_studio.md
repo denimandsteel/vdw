@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1777 West 3rd Ave, Vancouver, BC, Canada"
-addressLabel: 1777 West 3rd Ave
+addressLabel: "1777 West 3rd Ave"
 latitude: 49.2693809818873
 longitude: -123.144200571751
 eventUrl: 

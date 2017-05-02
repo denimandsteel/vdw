@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1654 Franklin Street studio #11, Vancouver, BC, Canada"
-addressLabel: 1654 Franklin Street studio #11
+addressLabel: "1654 Franklin Street studio #11"
 latitude: 49.281943
 longitude: -123.071281
 eventUrl: 

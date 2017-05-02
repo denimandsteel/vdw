@@ -7,7 +7,7 @@ startTime: 6-10
 endTime: 
 type: Open Call
 address: "Odd Society Distillery 1725 Powell St, Vancouver, BC, Canada"
-addressLabel: Odd Society Distillery 1725 Powell St
+addressLabel: "Odd Society Distillery 1725 Powell St"
 latitude: 49.2842940000001
 longitude: -123.069391
 eventUrl: 

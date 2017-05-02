@@ -7,7 +7,7 @@ startTime: 3-4
 endTime: 
 type: Tastings
 address: "1088 Homer Street, Vancouver, BC, Canada"
-addressLabel: 1088 Homer Street
+addressLabel: "1088 Homer Street"
 latitude: 49.2764540000003
 longitude: -123.121463
 eventUrl: 

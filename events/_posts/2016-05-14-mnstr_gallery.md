@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1818 Lorne St., Vancouver, BC, Canada"
-addressLabel: 1818 Lorne St.
+addressLabel: "1818 Lorne St."
 latitude: 49.268757
 longitude: -123.099454
 eventUrl: 

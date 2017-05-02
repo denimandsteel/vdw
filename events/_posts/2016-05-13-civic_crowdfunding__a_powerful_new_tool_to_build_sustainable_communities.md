@@ -7,7 +7,7 @@ startTime: 10:30 - Noon
 endTime: 
 type: Open Call
 address: "Modus - 400-509 Richards St., Vancouver, BC, Canada"
-addressLabel: Modus - 400-509 Richards St.
+addressLabel: "Modus - 400-509 Richards St."
 latitude: 49.2832809999999
 longitude: -123.113486
 eventUrl: 

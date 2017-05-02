@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1000 Parker Street, Studio 250, Vancouver, BC, Canada"
-addressLabel: 1000 Parker Street, Studio 250
+addressLabel: "1000 Parker Street, Studio 250"
 latitude: 49.2753459999999
 longitude: -123.080348
 eventUrl: 

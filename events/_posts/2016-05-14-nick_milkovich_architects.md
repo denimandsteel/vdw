@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "375 West 5th Ave, Vancouver, BC, Canada"
-addressLabel: 375 West 5th Ave
+addressLabel: "375 West 5th Ave"
 latitude: 49.266624
 longitude: -123.11215
 eventUrl: 

@@ -7,7 +7,7 @@ startTime: 1-4
 endTime: 
 type: Open Buildings
 address: "55 Expo Boulevard, Vancouver, BC, Canada"
-addressLabel: 55 Expo Boulevard
+addressLabel: "55 Expo Boulevard"
 latitude: 49.27757
 longitude: -123.103516
 eventUrl: 

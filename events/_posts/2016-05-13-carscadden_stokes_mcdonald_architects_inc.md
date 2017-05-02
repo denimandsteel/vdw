@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "715 East Hastings Street, Vancouver, BC, Canada"
-addressLabel: 715 East Hastings Street
+addressLabel: "715 East Hastings Street"
 latitude: 49.2814289999999
 longitude: -123.08883
 eventUrl: 

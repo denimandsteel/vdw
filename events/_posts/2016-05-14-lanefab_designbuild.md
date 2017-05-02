@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "362 E.10th Ave Vancouver, Vancouver, BC, Canada"
-addressLabel: 362 E.10th Ave Vancouver
+addressLabel: "362 E.10th Ave Vancouver"
 latitude: 49.2619690000001
 longitude: -123.096709
 eventUrl: 

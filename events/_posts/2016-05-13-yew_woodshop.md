@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1295 Frances St, Vancouver, BC, Canada"
-addressLabel: 1295 Frances St
+addressLabel: "1295 Frances St"
 latitude: 49.2797295749231
 longitude: -123.077492988139
 eventUrl: 

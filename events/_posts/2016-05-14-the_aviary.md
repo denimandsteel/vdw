@@ -7,7 +7,7 @@ startTime: 1-4
 endTime: 
 type: Open Studios
 address: "657 East 15th Ave, Vancouver, BC, Canada"
-addressLabel: 657 East 15th Ave
+addressLabel: "657 East 15th Ave"
 latitude: 49.2572168527528
 longitude: -123.09026107192
 eventUrl: 

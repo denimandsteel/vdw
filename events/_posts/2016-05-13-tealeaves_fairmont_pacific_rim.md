@@ -7,7 +7,7 @@ startTime: 4-5
 endTime: 
 type: Tastings
 address: "1038 Canada Place, Vancouver, BC, Canada"
-addressLabel: 1038 Canada Place
+addressLabel: "1038 Canada Place"
 latitude: 49.2880559999998
 longitude: -123.116389
 eventUrl: www.eventbrite.com/e/tealeaves-x-four-seasons-hotel-vancouver-vancouver-design-week-tickets-34216545609 

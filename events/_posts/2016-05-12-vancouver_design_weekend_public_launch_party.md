@@ -7,7 +7,7 @@ startTime: 6-10
 endTime: 
 type: Open Call
 address: "Alley Oop - West Hastings @ Granville, Vancouver, BC, Canada"
-addressLabel: Alley Oop - West Hastings @ Granville
+addressLabel: "Alley Oop - West Hastings @ Granville"
 latitude: 49.2848506081398
 longitude: -123.114188182825
 eventUrl: www.eventbrite.ca/e/vdw-public-launch-party-tickets-34078846748

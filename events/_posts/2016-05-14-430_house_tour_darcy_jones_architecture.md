@@ -7,7 +7,7 @@ startTime: 1-4
 endTime: 
 type: Open Buildings
 address: "430 East 20th Avenue, Vancouver, BC V5V 1M9, Vancouver, BC, Canada"
-addressLabel: 430 East 20th Avenue, Vancouver, BC V5V 1M9
+addressLabel: "430 East 20th Avenue, Vancouver, BC V5V 1M9"
 latitude: 49.2528727459028
 longitude: -123.097214658899
 eventUrl: www.eventbrite.ca/e/darcy-jones-430-house-tour-and-vancouver-special-garden-party-tickets-34201480549

@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "1564 West 6th Ave, Vancouver, BC, Canada"
-addressLabel: 1564 West 6th Ave
+addressLabel: "1564 West 6th Ave"
 latitude: 49.2662130000002
 longitude: -123.14014
 eventUrl: 

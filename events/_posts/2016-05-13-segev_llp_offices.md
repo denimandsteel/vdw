@@ -7,7 +7,7 @@ startTime: 11-4
 endTime: 
 type: Open Buildings
 address: "310 - 318 Homer Street, Vancouver, BC, Canada"
-addressLabel: 310 - 318 Homer Street
+addressLabel: "310 - 318 Homer Street"
 latitude: 49.283732
 longitude: -123.110029
 eventUrl: 

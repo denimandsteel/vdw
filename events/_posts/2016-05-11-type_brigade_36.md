@@ -7,7 +7,7 @@ startTime: Thursday May 11 Doors 6:30, Talks 7:00
 endTime: 
 type: Open Call
 address: "400-401 W Georgia St. (Unbounce), Vancouver, BC, Canada"
-addressLabel: 400-401 W Georgia St. (Unbounce)
+addressLabel: "400-401 W Georgia St. (Unbounce)"
 latitude: 49.2812831776873
 longitude: -123.114625907307
 eventUrl: 

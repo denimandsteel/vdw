@@ -7,7 +7,7 @@ startTime: 8-10
 endTime: 
 type: Open Call
 address: "Masaladobo 433 Granville St., Vancouver, BC, Canada"
-addressLabel: Masaladobo 433 Granville St.
+addressLabel: "Masaladobo 433 Granville St."
 latitude: 49.285149
 longitude: -123.114114
 eventUrl: https://www.eventbrite.com/e/make-it-pop-quiz-vancouver-design-weekend-tickets-33633300106

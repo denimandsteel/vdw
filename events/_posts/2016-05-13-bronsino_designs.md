@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "225 - 975 Vernon Dr. (In the Mergatroid Building), Vancouver, BC, Canada"
-addressLabel: 225 - 975 Vernon Dr. (In the Mergatroid Building)
+addressLabel: "225 - 975 Vernon Dr. (In the Mergatroid Building)"
 latitude: 49.276335
 longitude: -123.078608
 eventUrl: 

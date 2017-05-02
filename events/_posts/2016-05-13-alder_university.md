@@ -7,11 +7,11 @@ startTime: 1-2:30
 endTime: 
 type: Open Buildings
 address: "520 Seymour Street , Vancouver, BC, Canada"
-addressLabel: 520 Seymour Street 
+addressLabel: "520 Seymour Street "
 latitude: 49.2830883413558
 longitude: -123.125412310703
 eventUrl: 
-eventUrlLabel: First come, first serve!
+eventUrlLabel: 
 published: true
 price: Free
 

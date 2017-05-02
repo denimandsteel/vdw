@@ -7,7 +7,7 @@ startTime:
 endTime: 
 type: Open Studios
 address: "4-306 Abbott St, Vancouver, BC, Canada"
-addressLabel: 4-306 Abbott St
+addressLabel: "4-306 Abbott St"
 latitude: 49.282699
 longitude: -123.106633
 eventUrl: 

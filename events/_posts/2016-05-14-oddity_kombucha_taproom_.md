@@ -7,7 +7,7 @@ startTime: 1-2:30
 endTime: 
 type: Tastings
 address: "1863 Ontario Street, Vancouver, BC, Canada"
-addressLabel: 1863 Ontario Street
+addressLabel: "1863 Ontario Street"
 latitude: 49.2686560187935
 longitude: -123.104645758867
 eventUrl: www.eventbrite.ca/e/vdw-oddity-kombucha-tasting-workshop-tickets-34089094399
