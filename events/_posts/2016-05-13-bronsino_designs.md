@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-13-am
-priority: 4
+priority: 3
 slug: 2017-05-13-bronsino_designs
 ---

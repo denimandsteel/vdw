@@ -8,14 +8,14 @@ endTime:
 type: Open Studios
 address: "12 West 5th Ave, Vancouver, BC, Canada"
 addressLabel: "12 West 5th Ave"
-latitude: 49.2660974607464
+latitude: 49.2660974607463
 longitude: -123.115548521235
 eventUrl: 
 eventUrlLabel: 
 published: true
 price: 
 
-category: event-13-am
-priority: 21
+category: event-13-pm
+priority: 20
 slug: 2017-05-13-martha_sturdy_gallery
 ---

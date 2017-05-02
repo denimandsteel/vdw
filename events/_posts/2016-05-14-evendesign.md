@@ -16,6 +16,6 @@ published: true
 price: 
 
 category: event-14-pm
-priority: 14
+priority: 13
 slug: 2017-05-14-evendesign
 ---

@@ -8,14 +8,14 @@ endTime:
 type: Open Studios
 address: "715 East Hastings Street, Vancouver, BC, Canada"
 addressLabel: "715 East Hastings Street"
-latitude: 49.2814289999999
+latitude: 49.281429
 longitude: -123.08883
 eventUrl: 
 eventUrlLabel: 
 published: true
 price: 
 
-category: event-13-pm
-priority: 7
+category: event-13-am
+priority: 6
 slug: 2017-05-13-carscadden_stokes_mcdonald_architects_inc
 ---
