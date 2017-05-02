@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Tealeaves Fairmont Pacific Rim"
-description: "TEALEAVES is one of the very few tea blenders in the world, and we take precision very seriously. Why? Because in luxury, it’s the details that matter. TEALEAVES blends teas specifically for color, alongside aroma and taste, with understanding that “the first taste is with the eyes”. This philosophy inspired the #PaletteForYourPalate project in collaboration with Pantone Color Institute and 30+ world-class chefs and mixologists. Explore the exhibit of tea + color + mood at paletteforyourpalate.com. Join us for a refreshing spring cocktail from the #PaletteForYourPalate campaign, created by the Four Seasons Hotel Vancouver’s mixologist, Todd Zimmerman!"
+description: "TEALEAVES is one of the very few tea blenders in the world, and we take precision very seriously. Why? Because in luxury, it’s the details that matter. TEALEAVES blends teas specifically for color, alongside aroma and taste, with understanding that “the first taste is with the eyes”. This philosophy inspired the #PaletteForYourPalate project in collaboration with Pantone Color Institute and 30+ world-class chefs and mixologists. Explore the exhibit of tea + color + mood at <a target=\"_blank\" href=\"http://paletteforyourpalate.com\">http://paletteforyourpalate.com</a>. Join us for a refreshing spring cocktail from the #PaletteForYourPalate campaign, created by the Four Seasons Hotel Vancouver’s mixologist, Todd Zimmerman!"
 startTime: 4-5
 endTime: 
 type: Tastings
