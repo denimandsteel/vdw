@@ -12,8 +12,8 @@ latitude: 49.2640369440743
 longitude: -123.138899532095
 eventUrl: 
 eventUrlLabel: 
-twitter: @REDAcademy
-instagram: @red.academy
+twitter: REDAcademy
+instagram: red.academy
 website: www.redacademy.com/
 published: true
 price: 
