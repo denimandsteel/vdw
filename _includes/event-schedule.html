@@ -23,11 +23,12 @@
                     {% if timeValue == 'am' %}
                       <span class="f-tt-uc">Morning</span>
                     {% endif %}
-                    {% if timeValue == 'pm' and dayNumber != 12 %}
-                      <span class="f-tt-uc">Afternoon</span>
-                    {% endif %}
-                    {% if timeValue == 'pm' and dayNumber == 12 %}
-                      <span class="f-tt-uc">Evening</span>
+                    {% if timeValue == 'pm' %}
+                      {% if dayNumber == 11 or dayNumber == 12 %}
+                        <span class="f-tt-uc">Evening</span>
+                      {% else %}
+                        <span class="f-tt-uc">Afternoon</span>
+                      {% endif %}
                     {% endif %}
                   </strong>
                 </h2>
