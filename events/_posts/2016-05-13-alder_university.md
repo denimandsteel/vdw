@@ -10,8 +10,8 @@ address: "520 Seymour Street , Vancouver, BC, Canada"
 addressLabel: "520 Seymour Street "
 latitude: 49.2830883413558
 longitude: -123.125412310703
-eventUrl: 
-eventUrlLabel: 
+eventUrl: www.eventbrite.ca/e/brand-architecture-tour-tickets-34187928013
+eventUrlLabel: Get Tickets
 twitter: 
 instagram: 
 website: vancouver.adler.edu
