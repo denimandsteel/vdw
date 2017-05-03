@@ -13,7 +13,7 @@ longitude: -123.14014
 eventUrl: 
 eventUrlLabel: 
 twitter: 
-instagram: patkau_architects
+instagram: patkauarchitects
 website: www.patkau.ca
 published: true
 price: 
