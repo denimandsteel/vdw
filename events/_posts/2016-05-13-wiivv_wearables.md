@@ -3,12 +3,12 @@ dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Wiivv Wearables"
 description: "We develop 3D printed bionics, starting out with insoles and sandals customised from your smart phone. We can have product demos, virtual factory tours and designers on hand."
-startTime: 
+startTime: 1-4
 endTime: 
 type: Open Studios
 address: "134 Abbott Street, Vancouver, BC, Canada"
 addressLabel: "134 Abbott Street"
-latitude: 49.2841939999999
+latitude: 49.284194
 longitude: -123.106248
 eventUrl: 
 eventUrlLabel: 

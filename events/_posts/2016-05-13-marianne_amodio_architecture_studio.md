@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Marianne Amodio Architecture Studio"
 description: "Join us for a warm welcome, slideshow, and Courtyard Antics.<br> <br> The studio is located on the ground floor in the courtyard towards the back of the building."
-startTime: 
+startTime: 1-4
 endTime: 
 type: Open Studios
 address: "102-127 East Pender Street., Vancouver, BC, Canada"

@@ -2,13 +2,13 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Martha Sturdy Gallery"
-description: "Born and raised in British Columbia, Martha Sturdy has always been inspired and guided by the elements. Materials such as resin, brass, steel, and salvaged cedar find expression in her work.  As a graduate of sculpture from Emily Carr University (1978), Martha’s focus today is on three-dimensional fine art and sculpture. Martha’s studio also provides sophisticated custom furniture, accessories and artworks for clients including Louis Vuitton, Saks Fifth Avenue, Four Seasons, Jennifer Post and Holly Hunt. Martha’s open studio will display a range of her art, sculpture, furniture and accessories. We will share an overview of Martha’s inspiration and successes from her 40 years of experience, as well as an insight into our production processes."
-startTime: 
+description: "Born and raised in British Columbia, Martha Sturdy has always been inspired and guided by the elements. Materials such as resin, brass, steel, and salvaged cedar find expression in her work. <br> <br> As a graduate of sculpture from Emily Carr University (1978), Martha’s focus today is on three-dimensional fine art and sculpture. Martha’s studio also provides sophisticated custom furniture, accessories and artworks for clients including Louis Vuitton, Saks Fifth Avenue, Four Seasons, Jennifer Post and Holly Hunt. Martha’s open studio will display a range of her art, sculpture, furniture and accessories. <br> <br> We will share an overview of Martha’s inspiration and successes from her 40 years of experience, as well as an insight into our production processes."
+startTime: 11-4pm
 endTime: 
 type: Open Studios
 address: "12 West 5th Ave, Vancouver, BC, Canada"
 addressLabel: "12 West 5th Ave"
-latitude: 49.2665019999999
+latitude: 49.266502
 longitude: -123.105035
 eventUrl: 
 eventUrlLabel: 

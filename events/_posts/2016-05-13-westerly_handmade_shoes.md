@@ -3,12 +3,12 @@ dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Westerly Handmade Shoes"
 description: "Come visit an active shoemaking studio and workshop. See shoes on display and ask questions about the process of having shoes made. "
-startTime: 
+startTime: 11-1
 endTime: 
 type: Open Studios
 address: "1000 Parker Street, Studio 250, Vancouver, BC, Canada"
 addressLabel: "1000 Parker Street, Studio 250"
-latitude: 49.2753459999999
+latitude: 49.275346
 longitude: -123.080348
 eventUrl: 
 eventUrlLabel: 
