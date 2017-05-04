@@ -2,8 +2,8 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Habanero Consulting Group"
-description: "At Habanero we focus on creating amazing workplace experiences. To do that, we do a lot of human-centred design research and co-design solutions with our clients. We thought that VDW would be a good opportunity to share some of stories from our recent work."
-startTime: 1-4
+description: "At Habanero we focus on creating amazing workplace experiences. To do that, we do a lot of human-centred design research and co-design solutions with our clients. Visit us to see and hear some stories of design success from our recent work.<br> <br> Our office is located at Melville and Thurlow. Access will be via the door facing Thurlow. A Habanero person will be there to let you in."
+startTime: 2-4
 endTime: 
 type: Open Studios
 address: "510 - 1111 Melville Street, Vancouver, BC, Canada"
