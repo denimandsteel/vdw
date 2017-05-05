@@ -8,7 +8,7 @@ endTime:
 type: Open Studios
 address: "510 - 1111 Melville Street, Vancouver, BC, Canada"
 addressLabel: "510 - 1111 Melville Street"
-latitude: 49.28689
+latitude: 49.2868900000001
 longitude: -123.122116
 eventUrl: 
 eventUrlLabel: 
