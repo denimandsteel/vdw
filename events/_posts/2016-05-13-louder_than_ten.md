@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Louder Than Ten"
-description: "Buzzer #4<br> Go up the stairs to the second level.<br> <br> We train people who run projects in the tech and creative industries. Come in with your client, team and project problems and we'll help you work through them as time allows."
+description: "We train people who run projects in the tech and creative industries. Come in with your client, team and project problems and we'll help you work through them as time allows.<br> <br> Buzzer #4<br> Go up the stairs to the second level."
 startTime: 1-4
 endTime: 
 type: Open Studios
