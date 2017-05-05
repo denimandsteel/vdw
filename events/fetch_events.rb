@@ -85,12 +85,17 @@ def readEvents(url)
   
   events.each do |eventJSON|
     event = VDWEvent.new
+
+    dates = []
+
     if eventJSON['is_date_friday']
-      event.day = Date.strptime("05/12/2017", "%m/%d/%Y")
-    elsif eventJSON['is_date_saturday']
-      event.day = Date.strptime("05/13/2017", "%m/%d/%Y")
-    elsif eventJSON['is_date_sunday']
-      event.day = Date.strptime("05/14/2017", "%m/%d/%Y")
+      dates << Date.strptime("05/12/2017", "%m/%d/%Y")
+    end
+    if eventJSON['is_date_saturday']
+      dates << Date.strptime("05/13/2017", "%m/%d/%Y")
+    end
+    if eventJSON['is_date_sunday']
+      dates << Date.strptime("05/14/2017", "%m/%d/%Y")
     end
 
     if eventJSON['is_time_am']
@@ -102,16 +107,16 @@ def readEvents(url)
     end
 
     if eventJSON['id'] == 104 # Type Brigade is on Thursday...
-      event.day = Date.strptime("05/11/2017", "%m/%d/%Y")
+      dates << Date.strptime("05/11/2017", "%m/%d/%Y")
       event.ampm = 'pm'
     end
 
     if eventJSON['id'] == 130 # Debrief is on Tuesday...
-      event.day = Date.strptime("05/16/2017", "%m/%d/%Y")
+      dates << Date.strptime("05/16/2017", "%m/%d/%Y")
       event.ampm = 'pm'
     end
 
-    if eventJSON['public'] && event.day
+    if eventJSON['public'] && dates.length > 0
       event.title = eventJSON['name'].tr("\n"," ")
       event.description = eventJSON['public_description'].tr("\n"," ")
       event.start_time = eventJSON['time']
@@ -132,14 +137,17 @@ def readEvents(url)
       # event.priority = priority
       # priority += 1
 
-      content = markdownPostForEvent(event)
 
-      formattedDate = event.day.strftime("2016-%m-%d")
-      cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
-      slug = formattedDate + "-" + cleanTitle
-      filename = ("_posts/#{slug}.md")
-      File.write(filename, content)  
-      totalEvents += 1;
+      dates.each do |date|
+        event.day = date
+        content = markdownPostForEvent(event)
+        cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
+        formattedDate = event.day.strftime("2016-%m-%d")
+        slug = formattedDate + "-" + cleanTitle
+        filename = ("_posts/#{slug}.md")
+        File.write(filename, content)
+        totalEvents += 1;
+      end
     end
     
   end
