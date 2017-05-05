@@ -1320,6 +1320,10 @@ html {
   display: block;
 }
 
+.u-m-0 {
+  margin: 0 !important;
+}
+
 .u-mt {
   margin-top: 3rem;
 }
@@ -1382,6 +1386,10 @@ html {
 
 .u-mr--l {
   margin-right: 4.5rem;
+}
+
+.u-p-0 {
+  padding: 0 !important;
 }
 
 .u-p {
@@ -1948,8 +1956,14 @@ button:hover, button:focus, button:active,
   }
 }
 
+@media screen and (min-width: 64em) {
+  .lg-ten.columns {
+    width: 78.67%;
+  }
+}
+
 @media screen and (min-width: 50em) {
-  .push-one.column {
+  .push-one.columns {
     margin-left: 8.33%;
   }
 }
@@ -2667,6 +2681,27 @@ button:hover, button:focus, button:active,
     margin-right: 6%;
   }
   .support.support-small a:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+
+.c-even-boxes {
+  display: flex;
+  flex-direction: column;
+}
+.c-even-boxes > * {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 50em) {
+  .c-even-boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .c-even-boxes > * {
+    margin-right: 1.5rem;
+    width: calc(50% - 0.75rem);
+  }
+  .c-even-boxes > *:nth-child(2n) {
     margin-right: 0;
   }
 }
