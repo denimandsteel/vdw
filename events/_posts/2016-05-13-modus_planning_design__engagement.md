@@ -8,8 +8,8 @@ endTime:
 type: Open Studios
 address: "Suite #400 - 509 Richards Street , Vancouver, BC, Canada"
 addressLabel: "Suite #400 - 509 Richards Street "
-latitude: 49.2860432134987
-longitude: -123.113726471051
+latitude: 49.283281
+longitude: -123.113486
 eventUrl: 
 eventUrlLabel: 
 twitter: thinkmodus
