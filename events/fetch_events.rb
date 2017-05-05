@@ -106,7 +106,7 @@ def readEvents(url)
       event.ampm = ''
     end
 
-    if eventJSON['id'] == 104 # Type Brigade is on Thursday...
+    if eventJSON['id'] == 104 || eventJSON['id'] == 149 # Type Brigade and Glacier are on Thursday...
       dates << Date.strptime("05/11/2017", "%m/%d/%Y")
       event.ampm = 'pm'
     end
