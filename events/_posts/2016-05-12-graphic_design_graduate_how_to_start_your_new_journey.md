@@ -2,7 +2,7 @@
 dayOfWeek: Fri
 dayOfMonth: May 12
 title: "Graphic design graduate, how to start your new journey?"
-description: "You’ve graduated from a Graphic design program, so what’s next?<br> What are future employers looking for and do you have it? <br> What kind of graphic designer are you and how can you find your place in the Graphic Design industry or create your own business?<br> What does it take to get your foot in the door of the design industry? Find out what the reality is and BE prepared for it."
+description: "You’ve graduated from a Graphic design program, so what’s next? What are future employers looking for and do you have it?  What kind of graphic designer are you and how can you find your place in the Graphic Design industry or create your own business?<br> <br> What does it take to get your foot in the door of the design industry? Find out what the reality is and BE prepared for it."
 startTime: 2-4
 endTime: 
 type: Open Call
