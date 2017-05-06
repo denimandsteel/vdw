@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Nicole Bridger"
-description: "This is our flagship boutique. Nicole will speak at 7pm on our brand philosophy and design principles. Drinks, nibbles and conversation before heading to MGA. Guests will also receive 15% discount to shop."
+description: "This is our flagship boutique. Nicole will speak at 7pm on our brand philosophy and design principles. Drinks, nibbles and good conversation. Guests will also receive 15% discount to shop."
 startTime: 7-8 pm
 endTime: 
 type: Open Studios
