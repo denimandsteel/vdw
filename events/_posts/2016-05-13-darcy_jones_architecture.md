@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "D'Arcy Jones Architecture"
-description: "Current projects include modern houses, multifamily buildings, art galleries, small and large renovations, and interiors. Project models and the working studio will be on display."
+description: "D’Arcy Jones Architecture work in a modern renovated space in a cool building from 1912.  Come for the beer, the junk food, or to see what kind of projects our studio is designing.  While you are here, sneak a peek into our new larger space being built right now, if you think construction sites are as interesting as we do."
 startTime: 11-4
 endTime: 
 type: Open Studios
