@@ -2,7 +2,7 @@
 dayOfWeek: Fri
 dayOfMonth: May 12
 title: "Vancouver Design Week(end) Public Launch Party"
-description: ""
+description: "Join us as we celebrate our launch party in @hcma.ca’s Alley-Oop Friday May 12 and help us kick off Vancouver Design Week(end)! <strong>Tickets are free, but admission is limited.</strong>"
 startTime: 6-10
 endTime: 
 type: Open Call
