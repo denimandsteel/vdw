@@ -2,7 +2,7 @@
 dayOfWeek: Fri
 dayOfMonth: May 12
 title: "Vancouver Design Week(end) Public Launch Party"
-description: "Join us as we celebrate our launch party in @hcma.ca’s Alley-Oop Friday May 12 and help us kick off Vancouver Design Week(end)! <strong>Tickets are free, but admission is limited.</strong>"
+description: "Join us as we celebrate our launch party in HCMA's Alley-Oop Friday May 12 and help us kick off Vancouver Design Week(end)! <br> <br> This community party is brought to you in partnership with VIVA Vancouver, HCMA Architecture + Design, and the Odyssey; with activations by Tangible Interactions, local craft brew by Faculty Brewing, and catered pan-Asian fare by Roaming Dragon food truck.<br> <br> <strong>Tickets are free, but admission is limited.</strong>"
 startTime: 6-10
 endTime: 
 type: Open Call

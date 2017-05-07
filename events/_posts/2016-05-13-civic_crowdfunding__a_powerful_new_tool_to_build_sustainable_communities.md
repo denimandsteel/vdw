@@ -10,13 +10,13 @@ address: "Modus - 400-509 Richards St., Vancouver, BC, Canada"
 addressLabel: "Modus - 400-509 Richards St."
 latitude: 49.2832809999999
 longitude: -123.113486
-eventUrl: 
-eventUrlLabel: 
-twitter: 
+eventUrl: wayblazevdw.eventbrite.ca
+eventUrlLabel: Register
+twitter: wayblaze
 instagram: 
 website: www.wayblaze.com
 published: true
-price: 
+price: Free
 
 category: event-13-am
 priority: 0
