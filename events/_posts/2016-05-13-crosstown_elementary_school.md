@@ -8,10 +8,10 @@ endTime:
 type: Open Buildings
 address: "55 Expo Boulevard, Vancouver, BC, Canada"
 addressLabel: "55 Expo Boulevard"
-latitude: 49.27757
+latitude: 49.2775700000001
 longitude: -123.103516
-eventUrl: 
-eventUrlLabel: 
+eventUrl: www.eventbrite.com/e/crosstown-elementary-school-tour-tickets-34335466304?utm_source=eb_email&utm_medium=email&utm_campaign=new_event_email&utm_term=viewmyevent_button
+eventUrlLabel: TICKETS
 twitter: 
 instagram: 
 website: www.vsb.bc.ca/district-facilities/projects/crosstown

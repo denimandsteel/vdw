@@ -10,8 +10,8 @@ address: "392 West Hastings Street (VFS), Vancouver, BC, Canada"
 addressLabel: "392 West Hastings Street (VFS)"
 latitude: 49.283415
 longitude: -123.110884
-eventUrl: gdc-connect-ux1.eventbrite.ca
-eventUrlLabel: Attend
+eventUrl: gdc-connect-ux1.eventbrite.ca/
+eventUrlLabel: GET TICKETS
 twitter: 
 instagram: 
 website: www.gdc.net/gdc-connect

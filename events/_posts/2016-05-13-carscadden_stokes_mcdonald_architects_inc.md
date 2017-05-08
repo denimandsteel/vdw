@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Carscadden Stokes McDonald Architects Inc."
 description: "We are an east-side architecture and design studio, ready to welcome you warmly and let you talk our ears off about why design matters."
-startTime: 
+startTime: 11-4
 endTime: 
 type: Open Studios
 address: "715 East Hastings Street, Vancouver, BC, Canada"

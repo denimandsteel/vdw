@@ -3,13 +3,13 @@ dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Union Wood Co"
 description: "We build custom furniture and millwork projects for residential and commercial clients. Come see what we are currently working on featuring some of our Birch Bark Series pieces (featured in Design Milk)."
-startTime: 11-1
+startTime: 11-2
 endTime: 
 type: Open Studios
 address: "1340 East Pender St., Vancouver, BC, Canada"
 addressLabel: "1340 East Pender St."
-latitude: 49.280383
-longitude: -123.07629
+latitude: 49.2803829942453
+longitude: -123.076290115714
 eventUrl: 
 eventUrlLabel: 
 twitter: unionwoodco
