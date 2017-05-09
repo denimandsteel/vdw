@@ -32,7 +32,7 @@
                     {% endif %}
                   </strong>
                 </h2>
-                <p class="event-count">{{site.categories[eventDayCategory].size}} Events [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+                <p class="event-count">{{site.categories[eventDayCategory].size}} {% if {{site.categories[eventDayCategory].size > 1 %}Events{% else %}Event{% endif %} [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
               </div>
               <div class="events-list">
                 <div id="map-{{eventDayCategory}}" class="map"></div>
