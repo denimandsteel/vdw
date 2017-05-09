@@ -10,7 +10,7 @@ address: "400-401 W Georgia St. (Unbounce), Vancouver, BC, Canada"
 addressLabel: "400-401 W Georgia St. (Unbounce)"
 latitude: 49.281292
 longitude: -123.114675
-eventUrl: https://www.meetup.com/typebrigade/events/239570283/
+eventUrl: www.meetup.com/typebrigade/events/239570283/
 eventUrlLabel: RSVP
 twitter: 
 instagram: 
