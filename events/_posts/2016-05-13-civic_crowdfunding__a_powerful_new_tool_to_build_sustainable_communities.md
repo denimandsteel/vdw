@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Civic Crowdfunding – A Powerful New Tool to Build Sustainable Communities"
-description: "This workshop will introduce the concept of civic crowdfunding and how it can be used to support local government, local business and community-based projects. This provocative session will challenge assumptions about who should fund community projects and how crowdfunding can help democratize local investment and enhance community engagement. Includes a crowdfunding game with prizes. "
+description: "This workshop will introduce the concept of civic crowdfunding and how it can be used to support local government, local business and community-based projects. This provocative session will challenge assumptions about who should fund community projects and how crowdfunding can help democratize local investment and enhance community engagement. Includes a crowdfunding game with prizes. <br> <br> For Vancouver Design Week, we're asking for your thoughts in helping shape Vancouver's public spaces. <a target=\"_blank\" href=\"https://www.wayblaze.com/ideas_campaigns/vdw-2017/\">Contribute your best ideas to the conversation</a>. "
 startTime: 10:30 - Noon
 endTime: 
 type: Open Call
