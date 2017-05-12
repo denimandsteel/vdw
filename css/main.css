@@ -2430,12 +2430,7 @@ button:hover, button:focus, button:active,
 
 .map {
   width: 100%;
-  height: 320px;
-}
-@media screen and (min-width: 34.375em) {
-  .map {
-    height: 200px;
-  }
+  height: 200px;
 }
 
 .event-item {

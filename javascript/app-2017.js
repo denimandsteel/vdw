@@ -33,7 +33,7 @@ for (var date in vdwEvents) {
       center: new L.LatLng(49.28214015975995, -123.13854217529297),
       zoom: 12,
       scrollWheelZoom: false,
-      dragging: 'ontouchstart' in window ? false : true,
+      // dragging: 'ontouchstart' in window ? false : true,
       attributionControl: false,
       layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
       // layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),

@@ -1004,9 +1004,9 @@ button,
 
 .map {
   width: 100%;
-  height: 320px;
+  // height: 320px;
+  height: 200px;
   @include media($breaks-at-sm) {
-    height: 200px;
   }
 }
 
