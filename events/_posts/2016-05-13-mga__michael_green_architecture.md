@@ -10,7 +10,7 @@ address: "63 E Cordova St, Vancouver, BC V6A 1K3, Vancouver, BC, Canada"
 addressLabel: "63 E Cordova St, Vancouver, BC V6A 1K3"
 latitude: 49.2823540191528
 longitude: -123.10285906361
-eventUrl: mg-architecture.ca
+eventUrl: 
 eventUrlLabel: 
 twitter: mgarchitecture
 instagram: mgarchitecture
