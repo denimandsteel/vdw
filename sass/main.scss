@@ -963,29 +963,36 @@ button,
   background: $color-base;
   color: #292826;
   border-bottom: 1px solid $color-primary;
-  height: 60px;
   font-size: 20px;
   padding-top: 20px;
+  @include media($breaks-at-sm) {
+    height: 60px;
+  }
   .dayname {
     font-size: 24px;
     font-weight: normal;
-    float: left;
     padding-left: 15px;
     margin: 0;
     margin-top: -3px;
     @include media($breaks-at-sm) {
+      float: left;
       padding-left: 10px;
     }
   }
   .event-count {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    float: right;
     padding-right: 15px;
-    margin-bottom: 0;
-    margin-top: 0;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     @include media($breaks-at-sm) {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 16px;
+      padding-left: 0px;
+      float: right;
       padding-right: 10px;
       .open-studios { display: none; }
     }

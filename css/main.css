@@ -2439,34 +2439,43 @@ button:hover, button:focus, button:active,
   background: #fff;
   color: #292826;
   border-bottom: 1px solid #ff323c;
-  height: 60px;
   font-size: 20px;
   padding-top: 20px;
+}
+@media screen and (min-width: 34.375em) {
+  .day-header {
+    height: 60px;
+  }
 }
 .day-header .dayname {
   font-size: 24px;
   font-weight: normal;
-  float: left;
   padding-left: 15px;
   margin: 0;
   margin-top: -3px;
 }
 @media screen and (min-width: 34.375em) {
   .day-header .dayname {
+    float: left;
     padding-left: 10px;
   }
 }
 .day-header .event-count {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  float: right;
   padding-right: 15px;
-  margin-bottom: 0;
-  margin-top: 0;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 34.375em) {
   .day-header .event-count {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    padding-left: 0px;
+    float: right;
     padding-right: 10px;
   }
   .day-header .event-count .open-studios {
