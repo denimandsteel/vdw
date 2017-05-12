@@ -2617,6 +2617,12 @@ button:hover, button:focus, button:active,
   float: right;
   padding: 9px;
   border: 2px solid #ff323c;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 34.375em) {
+  .eventheader .right .highlight {
+    margin-bottom: 0px;
+  }
 }
 .eventheader .right .price {
   font-weight: 700;

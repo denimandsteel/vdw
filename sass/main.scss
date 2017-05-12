@@ -1137,7 +1137,10 @@ button,
       float: right;
       padding: 9px;
       border: 2px solid $color-primary;
-      // margin-bottom: 15px;
+      margin-bottom: 20px;
+      @include media($breaks-at-sm) {
+        margin-bottom: 0px;
+      }
     }
 
     .price {
