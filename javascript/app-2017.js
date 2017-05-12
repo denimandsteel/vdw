@@ -27,17 +27,45 @@ $('header nav a').click(function() {
 // Let's make a bunch of maps!
 if (typeof vdwEvents !== 'undefined') {
 
+window.map_options = {
+  'map-event-11-pm': {
+    center: new L.LatLng(49.270940821149594, -123.10729980468749),
+    zoom: 12,
+  },
+  'map-event-12-am': {
+    center: new L.LatLng(49.28230813048122, -123.1178569793701),
+    zoom: 14,
+  },
+  'map-event-12-pm': {
+    center: new L.LatLng(49.284603672996994, -123.11442375183105),
+    zoom: 16,
+  },
+  'map-event-13-am': {
+    center: new L.LatLng(49.27654080832181, -123.09425354003905),
+    zoom: 13,
+  },
+  'map-event-13-pm': {
+    center: new L.LatLng(49.27788471064522, -123.11279296875001),
+    zoom: 12,
+  },
+  'map-event-14-pm': {
+    center: new L.LatLng(49.263771909876155, -123.13167572021483),
+    zoom: 12,
+  },
+};
+
 for (var date in vdwEvents) {
   if (vdwEvents.hasOwnProperty(date)) {
     var map = new L.Map(date, {
-      center: new L.LatLng(49.28214015975995, -123.13854217529297),
-      zoom: 12,
+      center: map_options[date].center,
+      zoom: map_options[date].zoom,
       scrollWheelZoom: false,
       // dragging: 'ontouchstart' in window ? false : true,
       attributionControl: false,
       layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
       // layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
     });
+    window.map_options[date].map = map;
     
     var oms = new OverlappingMarkerSpiderfier(map, {nearbyDistance: 1});
     var popup = new L.Popup();

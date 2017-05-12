@@ -2497,9 +2497,35 @@ button:hover, button:focus, button:active,
   background: #ffe6e6;
 }
 
+.map-container {
+  position: relative;
+}
+
 .map {
   width: 100%;
   height: 200px;
+}
+.map .leaflet-control-zoom {
+  display: none;
+}
+@media screen and (min-width: 34.375em) {
+  .map .leaflet-control-zoom {
+    display: block;
+  }
+}
+
+.mobile-map-blocker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 34.375em) {
+  .mobile-map-blocker {
+    display: none;
+  }
 }
 
 .event-item {
