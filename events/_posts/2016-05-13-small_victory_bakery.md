@@ -10,13 +10,13 @@ address: "1088 Homer Street, Vancouver, BC, Canada"
 addressLabel: "1088 Homer Street"
 latitude: 49.2764540000003
 longitude: -123.121463
-eventUrl: 
-eventUrlLabel: 
+eventUrl: www.eventbrite.com/e/vdw-tasting-event-at-small-victory-bakery-with-leckie-studios-tickets-34572728963?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text
+eventUrlLabel: RSVP
 twitter: 
 instagram: sv_bakery
 website: smallvictory.ca
 published: true
-price: 
+price: Free
 
 category: event-13-pm
 priority: 0

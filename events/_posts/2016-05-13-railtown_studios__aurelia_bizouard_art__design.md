@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 13
 title: "Railtown Studios - Aurelia Bizouard Art & Design"
-description: "Glass design and art."
+description: "Aurélia Bizouard is a French designer working with glass art in Vancouver and Paris. Made from reverse paintings on glass panels, this innovative way of working with glass offers multiple possibilities to beautify a place and create an architectural glass structure with a piece of art."
 startTime: 11-2
 endTime: 
 type: Open Studios
@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: aureliabiz
 instagram: aureliabizouard
-website: www.aureliabizouard.com
+website: www.glassismdesign.com
 published: true
 price: 
 
