@@ -42,7 +42,7 @@ window.map_options = {
   },
   'map-event-13-am': {
     center: new L.LatLng(49.27654080832181, -123.09425354003905),
-    zoom: 13,
+    zoom: 12,
   },
   'map-event-13-pm': {
     center: new L.LatLng(49.27788471064522, -123.11279296875001),
