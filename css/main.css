@@ -225,7 +225,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -326,7 +327,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -353,7 +355,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -435,7 +438,8 @@ textarea {
 .leaflet-marker-shadow {
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-drag: none;
 }
 
@@ -455,7 +459,8 @@ textarea {
 }
 
 .leaflet-tile {
-  filter: inherit;
+  -webkit-filter: inherit;
+          filter: inherit;
   visibility: hidden;
 }
 
@@ -568,8 +573,6 @@ textarea {
 .leaflet-fade-anim .leaflet-popup {
   opacity: 0;
   -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
@@ -580,17 +583,15 @@ textarea {
 
 .leaflet-zoom-anim .leaflet-zoom-animated {
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
-  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
-  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1), -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
 }
 
 .leaflet-zoom-anim .leaflet-tile,
 .leaflet-pan-anim .leaflet-tile,
 .leaflet-touching .leaflet-zoom-animated {
   -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
   transition: none;
 }
 
@@ -646,7 +647,8 @@ textarea {
 
 /* general toolbar styles */
 .leaflet-bar {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
   border-radius: 4px;
 }
 
@@ -718,7 +720,8 @@ textarea {
 
 /* layers control */
 .leaflet-control-layers {
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   background: #fff;
   border-radius: 5px;
 }
@@ -813,8 +816,8 @@ textarea {
   font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   background: #fff;
   background: rgba(255, 255, 255, 0.5);
 }
@@ -832,7 +835,8 @@ textarea {
 .leaflet-touch .leaflet-control-attribution,
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .leaflet-touch .leaflet-control-layers,
@@ -876,16 +880,14 @@ textarea {
   padding: 1px;
   margin: -10px auto 0;
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
   background: white;
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
 }
 
 .leaflet-container a.leaflet-popup-close-button {
@@ -1286,7 +1288,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .c-l-fw-container:after,
@@ -1572,9 +1575,15 @@ html {
 }
 
 .c-big-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: #000;
 }
 @media screen and (min-width: 64em) {
@@ -1598,17 +1607,28 @@ html {
 }
 
 .u-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .u-flexbox.u--flex-column {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .u-flex {
   display: block;
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 a {
@@ -2137,13 +2157,21 @@ button:hover, button:focus, button:active,
   right: 0;
   background-color: #fff;
   z-index: 1001;
+  -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in;
   transition: background-color 0.25s ease-in, color 0.25s ease-in;
 }
 @media screen and (min-width: 50em) {
   .c-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .c-navigation .home {
@@ -2169,10 +2197,15 @@ button:hover, button:focus, button:active,
 }
 @media screen and (min-width: 50em) {
   .c-navigation--links {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
     float: none;
     width: auto;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -2236,6 +2269,7 @@ button:hover, button:focus, button:active,
   background-position: top center;
   background-size: 350%;
   background-position: center;
+  -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 @media screen and (min-width: 50em) {
@@ -2260,22 +2294,42 @@ button:hover, button:focus, button:active,
 }
 
 .fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   visibility: visible;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0.0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 .vdw-section2 {
@@ -2298,7 +2352,9 @@ button:hover, button:focus, button:active,
   padding-left: 0.3125rem;
 }
 .vdw-callout .c-callout-col1 {
-  flex: 3 1 25%;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 25%;
+          flex: 3 1 25%;
 }
 @media screen and (min-width: 34.375em) {
   .vdw-callout .c-callout-col1 {
@@ -2306,7 +2362,9 @@ button:hover, button:focus, button:active,
   }
 }
 .vdw-callout .c-callout-col2 {
-  flex: 7 1 75%;
+  -webkit-box-flex: 7;
+      -ms-flex: 7 1 75%;
+          flex: 7 1 75%;
 }
 @media screen and (min-width: 34.375em) {
   .vdw-callout .c-callout-col2 {
@@ -2334,8 +2392,10 @@ button:hover, button:focus, button:active,
   width: 100%;
   max-width: 100%;
   height: 200px;
-  object-fit: cover;
-  filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .c-member-card__content {
@@ -2434,7 +2494,8 @@ button:hover, button:focus, button:active,
 }
 
 .event-item {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-bottom: 1px solid #ff323c;
   padding: 25px 10px 20px;
 }
@@ -2505,7 +2566,8 @@ button:hover, button:focus, button:active,
   float: left;
   margin: 0px;
   padding: 0px 10px 10px 10px;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   margin-top: 15px;
   background: url(../images/marker.svg) top center no-repeat;
 }
@@ -2514,7 +2576,8 @@ button:hover, button:focus, button:active,
   float: left;
   margin: 0px;
   padding: 0px 10px 30px 20px;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   margin-top: 25px;
   font-size: 30px;
   color: #555;
@@ -2560,7 +2623,8 @@ button:hover, button:focus, button:active,
 }
 
 .leaflet-bar {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .leaflet-bar a,
@@ -2576,15 +2640,33 @@ button:hover, button:focus, button:active,
   border-radius: 0;
 }
 
-@keyframes bobbing {
+@-webkit-keyframes bobbing {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   40% {
-    transform: translateY(-0.25em);
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
   }
   80% {
-    transform: translateY(0.1em);
+    -webkit-transform: translateY(0.1em);
+            transform: translateY(0.1em);
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  40% {
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+  }
+  80% {
+    -webkit-transform: translateY(0.1em);
+            transform: translateY(0.1em);
   }
 }
 .marker {
@@ -2612,9 +2694,14 @@ button:hover, button:focus, button:active,
 }
 
 .support {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .support a {
   display: block;
@@ -2682,16 +2769,25 @@ button:hover, button:focus, button:active,
 }
 
 .c-even-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .c-even-boxes > * {
   margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 50em) {
   .c-even-boxes {
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .c-even-boxes > * {
     margin-right: 1.5rem;
@@ -2701,5 +2797,3 @@ button:hover, button:focus, button:active,
     margin-right: 0;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
