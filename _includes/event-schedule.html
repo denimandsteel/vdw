@@ -14,7 +14,8 @@
         {% for timeValue in times %}
           {% capture eventDayCategory %}event-{{dayNumber}}-{{timeValue}}{% endcapture %}
           {% if site.categories[eventDayCategory].size > 0 %}
-            <div id="{{ eventDayCategory }}" class="day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %}">
+            <!-- day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %} -->
+            <div id="{{ eventDayCategory }}" class="day-events">
               <div class="day-header">
                 <h2 class="dayname">
                   {{ site.categories[eventDayCategory][0].dayOfWeek}},
