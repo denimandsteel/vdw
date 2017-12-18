@@ -110,7 +110,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -573,6 +574,7 @@ textarea {
 .leaflet-fade-anim .leaflet-popup {
   opacity: 0;
   -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
@@ -583,7 +585,9 @@ textarea {
 
 .leaflet-zoom-anim .leaflet-zoom-animated {
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
+  -o-transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1), -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
 }
@@ -592,6 +596,7 @@ textarea {
 .leaflet-pan-anim .leaflet-tile,
 .leaflet-touching .leaflet-zoom-animated {
   -webkit-transition: none;
+  -o-transition: none;
   transition: none;
 }
 
@@ -880,6 +885,7 @@ textarea {
   padding: 1px;
   margin: -10px auto 0;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -1748,7 +1754,7 @@ button:hover, button:focus, button:active,
 }
 
 .c-l-fw-container {
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 
@@ -2158,6 +2164,7 @@ button:hover, button:focus, button:active,
   background-color: #fff;
   z-index: 1001;
   -webkit-transition: background-color 0.25s ease-in, color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in, color 0.25s ease-in;
   transition: background-color 0.25s ease-in, color 0.25s ease-in;
 }
 @media screen and (min-width: 50em) {
@@ -2270,6 +2277,7 @@ button:hover, button:focus, button:active,
   background-size: 350%;
   background-position: center;
   -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 @media screen and (min-width: 50em) {
@@ -2786,7 +2794,7 @@ button:hover, button:focus, button:active,
 }
 @media screen and (min-width: 34.375em) {
   .support.support-small a {
-    width: 29.33333%;
+    width: 29.3333333333%;
     margin: 3% 6% 3% 0;
   }
   .support.support-small a:nth-child(2n) {
