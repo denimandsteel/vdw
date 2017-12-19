@@ -329,6 +329,7 @@ html {
 .u-color-black { color: $color-black; }
 .u-color-cyan { color: $color-cyan; }
 .u-color-pink { color: $color-pink; }
+.u-color-blue { color: $color-blue; }
 .u-color-grey { color: #999; }
 
 .u-callout-link {
@@ -411,6 +412,12 @@ html {
   flex: 1 1 auto;
 }
 
+.u-hide-on-mobile {
+  display: none;
+  @include media($breaks-at-md) {
+    display: block;
+  }
+}
 
 
 // ********
