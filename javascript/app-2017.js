@@ -174,7 +174,7 @@ $('.js-nav-mobile-toggle').bind('click', function() {
   $(this).find('.js-menu-sign').text(
     text == "-" ? "+" : "-"
     );
-})
+});
 
 // Sponsor masonry.
 // var $container = $('.support');
