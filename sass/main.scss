@@ -370,7 +370,11 @@ html {
 
   &.u--twitter {
     background-image: url('/images/Twitter_Social_Icon_White.svg');
-  } 
+  }
+
+  &.u--facebook {
+    background-image: url('/images/facebook.svg');
+  }
 }
 
 .c-big-social {

@@ -1583,6 +1583,9 @@ html {
 .u-social-icon.u--twitter {
   background-image: url("/images/Twitter_Social_Icon_White.svg");
 }
+.u-social-icon.u--facebook {
+  background-image: url("/images/facebook.svg");
+}
 
 .c-big-social {
   display: -webkit-box;
