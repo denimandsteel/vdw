@@ -1,1 +1,1 @@
-sass sass/main.scss:css/main.css --style=expanded --watch
+sass sass/main-2018.scss:css/main-2018.css --style=expanded --watch
