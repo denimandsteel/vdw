@@ -187,7 +187,7 @@ $type-scale-headings: (
 }
 
 // Extend silent classes to h elements.
-@mixin heading-elements() {  
+@mixin heading-elements() {
   @each $h, $scale in $type-scale-headings {
     #{$h} {
      @extend %#{$scale};
@@ -247,7 +247,7 @@ html {
 
 
 
-// a = Alignment 
+// a = Alignment
 // l = left | r = right | c = center
 
 .u-al {
@@ -454,7 +454,7 @@ ul {
   margin: 0;
 }
 
-// Font (f) weights (w) & varients 
+// Font (f) weights (w) & varients
 // b = bold, l = light, t = thin
 .f-wb,
 %f-wb {
@@ -478,7 +478,7 @@ ul {
 .f-emphasis--color { background-color: transparentize($color-primary, 0.5); }
 
 .f-emphasis--ul { border-bottom: 1px dotted $color-base; }
-// Extra line height, mostly for headings. Will do proper 
+// Extra line height, mostly for headings. Will do proper
 // heading classes later.
 // TODO: Heading line heights
 
@@ -567,7 +567,7 @@ button,
 
 
 // Components > layout (.c-l-*)
-// 
+//
 
 // Full width container (fw-container)
 .c-l-fw-container {
@@ -578,7 +578,7 @@ button,
 .c-l-fw-container:after,
 .c-l-container:after,
 .c-l-row:after {
-  @extend %clearfix;  
+  @extend %clearfix;
 }
 
 .c-l-container {
@@ -592,10 +592,10 @@ button,
 
 // Natural language columns e.g. element spans `.one.column`, `.three.columns`
 // *
-// Based on a 12 column grid, one column is roughly 5-8% depending 
+// Based on a 12 column grid, one column is roughly 5-8% depending
 // on the number of columns. Fewer columns = less margin, since margin
 // is % based. Also don't nest these because nasty tiny margins will happen.
-// 
+//
 // Column pushes are declared by .push-x-column or .push-x-columns
 // and are equal to column width + 4% (default margin left) L:485.
 //
@@ -616,7 +616,7 @@ button,
 
     &:first-child {
       margin-left: 0;
-    }  
+    }
   }
 }
 
@@ -723,7 +723,7 @@ button,
     justify-content: flex-end;
     flex-direction: row;
   }
-    
+
   .home {
     margin-right: auto;
 
@@ -1078,7 +1078,7 @@ button,
     text-transform: none;
     font-size: 18px;
     line-height: 20px;
-    
+
     color: lighten(#464646, 20);
 
     a {
@@ -1266,96 +1266,58 @@ button,
 // Sponsors & supporters masonry
 // ---
 
-.support {
+.sponsors {
   display: flex;
-  // justify-content; center;
-  align-items: center;
-  flex-wrap: wrap;
-  // padding: 0 1em;
+  align-items: baseline;
+  flex-flow: row wrap;
+
+  &.center {
+    align-items: center;
+  }
+
   a {
-    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 6%;
+    margin-bottom: 6%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     img {
       width: 100%;
       height: auto;
     }
-    &.big-logo {
-      padding: 2%;
-    }
+  }
+}
 
-    width: 75%;
-    margin: 15px 0;
+.support {
+  a {
+    flex-basis: 300px;
 
-    @include media($breaks-at-sm) {
-      $margin-right: 6%;
-      $grid: 2;
-      width: (100% - ($grid - 1) * $margin-right)/$grid;
-      margin: 3% $margin-right 3% 0;
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-    }
-
-    @include media($breaks-at-md) {
-      $margin-right: 6%;
-      $grid: 4;
-      width: (100% - ($grid - 1) * $margin-right)/$grid;
-      margin: 3% $margin-right 3% 0;
-      &:nth-child(2n) {
-        margin-right: 6%;
-      }
-
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
+    &.grow {
+      flex-grow: 0.5;
     }
   }
+}
 
-  &.support-small {
-    a {
-      $margin-right: 6%;
-      $grid: 2;
-      width: (100% - ($grid - 1) * $margin-right)/$grid;
-      margin: 3% $margin-right 3% 0;
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-      @include media($breaks-at-sm) {
-        $margin-right: 6%;
-        $grid: 3;
-        width: (100% - ($grid - 1) * $margin-right)/$grid;
-        margin: 3% $margin-right 3% 0;
-        &:nth-child(2n) {
-          margin-right: $margin-right;
-        }
-        &:nth-child(3n) {
-          margin-right: 0;
-        }
-      }
-      @include media($breaks-at-md) {
-        $margin-right: 6%;
-        $grid: 5;
-        width: (100% - ($grid - 1) * $margin-right)/$grid;
-        margin: 3% $margin-right 3% 0;
-        &:nth-child(3n) {
-          margin-right: $margin-right;
-        }
+.support-small {
+  a {
+    flex-basis: 150px;
 
-        &:nth-child(5n) {
-          margin-right: 0;
-        }
-      }
+    &.grow {
+      flex-grow: 0.3;
     }
   }
-  
-  // display: flex;
-  // a > img {
-  //   @extend .columns;
-  //   @extend .sm-six;
-  //   @extend .four;
-  //   @extend .lg-three;
+}
 
-  //   padding: 2%;
-  // }
+.industry {
+  margin-bottom: 6%;
+
+  a {
+    flex-basis: 420px;
+  }
 }
 
 .c-even-boxes {
