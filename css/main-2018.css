@@ -2691,13 +2691,17 @@ button:hover, button:focus, button:active,
   display: flex;
   align-items: baseline;
   flex-flow: row wrap;
+  margin-bottom: 4%;
 }
 .sponsors.center {
   align-items: center;
 }
+.sponsors.last {
+  align-items: last baseline;
+}
 .sponsors a {
   flex-grow: 0;
-  flex-shrink: 0;
+  flex-shrink: 1;
   margin-right: 6%;
   margin-bottom: 6%;
 }
@@ -2708,26 +2712,26 @@ button:hover, button:focus, button:active,
   width: 100%;
   height: auto;
 }
-
-.support a {
+.sponsors.support-xl a {
+  flex-basis: 400px;
+}
+.sponsors.support-lg a {
   flex-basis: 300px;
 }
-.support a.grow {
+.sponsors.support-lg a.grow {
   flex-grow: 0.5;
 }
-
-.support-small a {
+.sponsors.support-md a {
+  flex-basis: 250px;
+}
+.sponsors.support-md a.grow {
+  flex-grow: 0.4;
+}
+.sponsors.support-sm a {
   flex-basis: 150px;
 }
-.support-small a.grow {
+.sponsors.support-sm a.grow {
   flex-grow: 0.3;
-}
-
-.industry {
-  margin-bottom: 6%;
-}
-.industry a {
-  flex-basis: 420px;
 }
 
 .c-even-boxes {
