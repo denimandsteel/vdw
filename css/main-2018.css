@@ -2691,10 +2691,6 @@ button:hover, button:focus, button:active,
   display: flex;
   align-items: baseline;
   flex-flow: row wrap;
-  margin-bottom: 4%;
-}
-.sponsors.center {
-  align-items: center;
 }
 .sponsors.last {
   align-items: last baseline;
@@ -2705,12 +2701,17 @@ button:hover, button:focus, button:active,
   margin-right: 6%;
   margin-bottom: 6%;
 }
-.sponsors a:last-child {
-  margin-bottom: 0;
-}
 .sponsors a img {
   width: 100%;
   height: auto;
+}
+@media (min-width: 1120px) {
+  .sponsors.center {
+    align-items: center;
+  }
+  .sponsors.center a:last-child {
+    margin-bottom: 0;
+  }
 }
 .sponsors.support-xl a {
   flex-basis: 400px;
