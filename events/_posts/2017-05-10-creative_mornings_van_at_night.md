@@ -1,0 +1,24 @@
+---
+dayOfWeek: Thu
+dayOfMonth: May 10
+title: "Creative Mornings Van At Night"
+description: "THIS IS A SPECIAL VDW EDITION OF CMVAN. Instead of breakfast and coffee, join the CMVan community for drinks and canapés on Thursday, May 10th from 6–7pm and hear from two rising local design stars, Ender and Pat Christie, co-founders of SPACE, in a co-presentation about creativity through the lenses of commitment and craft. As part of Vancouver Design Week, this special evening edition of CreativeMornings/Vancouver will be hosted by HCMA Architecture + Design in their Vancouver headquarters. As usual, Tickets are free, but tickets will be issued with priority to Vancouver Design Week attendees. Any remaining seats will be chosen randomly from the waitlist on Monday, May 7th with confirmation sent via email."
+startTime: 6-7 pm
+endTime: 
+type: Design Edition
+address: "400 - 675 West Hastings Street Vancouver, British Columbia V6B 1N2, Vancouver, BC, Canada"
+addressLabel: "400 - 675 West Hastings Street Vancouver, British Columbia V6B 1N2"
+latitude: 49.2853399999999
+longitude: -123.11336
+eventUrl: creativemornings.com/talks/vancouver-design-week-cmvan-at-night
+eventUrlLabel: Register May 4 9 am
+twitter: 
+instagram: hcma.ca
+website: hcma.ca
+published: true
+price: Free, reservations required
+
+category: event-2018-10-pm
+priority: 0
+slug: 2018-05-10-creative_mornings_van_at_night
+---

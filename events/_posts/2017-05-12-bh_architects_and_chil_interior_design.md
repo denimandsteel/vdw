@@ -1,0 +1,24 @@
+---
+dayOfWeek: Sat
+dayOfMonth: May 12
+title: "B+H Architects and CHIL Interior Design"
+description: "An open office self-guided tour with current and in progress projects scattered throughout the space. An opportunity for the public to see how our firm designs by displaying our process and finished works."
+startTime: 11-4
+endTime: 
+type: Design Studios
+address: "1706 West 1st Avenue, Suite 400, Vancouver, BC, Canada"
+addressLabel: "1706 West 1st Avenue, Suite 400"
+latitude: 49.2703759999999
+longitude: -123.14399
+eventUrl: 
+eventUrlLabel: 
+twitter: BHarchitects
+instagram: CHILdesign
+website: www.bharchitects.com/en/
+published: true
+price: 
+
+category: event-2018-12-pm
+priority: 0
+slug: 2018-05-12-bh_architects_and_chil_interior_design
+---

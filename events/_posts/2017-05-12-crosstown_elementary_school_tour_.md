@@ -1,0 +1,24 @@
+---
+dayOfWeek: Sat
+dayOfMonth: May 12
+title: "Crosstown Elementary School Tour "
+description: "Crosstown Elementary School is a new urban primary school for downtown Vancouver families. Join us a for a tour of the school and its community-oriented spaces.Presented by Francl Architecture<br> "
+startTime: 
+endTime: 
+type: Design Spaces
+address: "55 Expo Boulevard, Vancouver, BC, Canada"
+addressLabel: "55 Expo Boulevard"
+latitude: 49.2786374356992
+longitude: -123.106601447654
+eventUrl: 
+eventUrlLabel: 
+twitter: 
+instagram: 
+website: franclarchitecture.com
+published: true
+price: 
+
+category: event-2018-12-pm
+priority: 0
+slug: 2018-05-12-crosstown_elementary_school_tour_
+---

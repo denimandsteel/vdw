@@ -29,7 +29,7 @@ def markdownPostForEvent(event)
   escapedTitled = event.title.gsub('"', '\"');
   escapedDescription = event.description.gsub('"', '\"').gsub(/(?:\n\r?|\r\n?)/, '<br>');
 
-  dayNumber = event.day.strftime("%d")
+  dayNumber = event.day.strftime("%-d")
   dayOfWeek = event.day.strftime("%a")
   dayOfMonth = event.day.strftime("May %d")
   
@@ -62,7 +62,7 @@ website: #{event.website}
 published: #{event.published}
 price: #{event.price}
 
-category: event-#{dayNumber}-#{event.ampm}
+category: event-2018-#{dayNumber}-#{event.ampm}
 priority: #{event.priority}
 slug: #{slug}
 ---
@@ -77,10 +77,12 @@ def readEvents(url)
   puts events.length
 
   typePlain = {
-    'tastings' => 'Tastings',
+    'tastings' => 'Design Tastings',
     'open_call' => 'Open Call',
-    'open_studios' => 'Open Studios',
-    'open_buildings' => 'Open Buildings',
+    'studios' => 'Design Studios',
+    'spaces' => 'Design Spaces',
+    'landmarks' => 'Design Landmarks',
+    'editions' => 'Design Edition',
   }
   
   events.each do |eventJSON|
@@ -88,14 +90,26 @@ def readEvents(url)
 
     dates = []
 
+    if eventJSON['is_date_monday']
+      dates << Date.strptime("05/07/2018", "%m/%d/%Y")
+    end
+    if eventJSON['is_date_tuesday']
+      dates << Date.strptime("05/08/2018", "%m/%d/%Y")
+    end
+    if eventJSON['is_date_wednesday']
+      dates << Date.strptime("05/09/2018", "%m/%d/%Y")
+    end
+    if eventJSON['is_date_thursday']
+      dates << Date.strptime("05/10/2018", "%m/%d/%Y")
+    end
     if eventJSON['is_date_friday']
-      dates << Date.strptime("05/12/2017", "%m/%d/%Y")
+      dates << Date.strptime("05/11/2018", "%m/%d/%Y")
     end
     if eventJSON['is_date_saturday']
-      dates << Date.strptime("05/13/2017", "%m/%d/%Y")
+      dates << Date.strptime("05/12/2018", "%m/%d/%Y")
     end
     if eventJSON['is_date_sunday']
-      dates << Date.strptime("05/14/2017", "%m/%d/%Y")
+      dates << Date.strptime("05/13/2018", "%m/%d/%Y")
     end
 
     if eventJSON['is_time_am']
@@ -106,17 +120,21 @@ def readEvents(url)
       event.ampm = ''
     end
 
-    if eventJSON['id'] == 104 || eventJSON['id'] == 149 # Type Brigade and Glacier are on Thursday...
-      dates << Date.strptime("05/11/2017", "%m/%d/%Y")
-      event.ampm = 'pm'
-    end
+    # if eventJSON['id'] == 104 || eventJSON['id'] == 149 # Type Brigade and Glacier are on Thursday...
+    #   dates << Date.strptime("05/11/2017", "%m/%d/%Y")
+    #   event.ampm = 'pm'
+    # end
 
-    if eventJSON['id'] == 130 # Debrief is on Tuesday...
-      dates << Date.strptime("05/16/2017", "%m/%d/%Y")
-      event.ampm = 'pm'
-    end
+    # if eventJSON['id'] == 130 # Debrief is on Tuesday...
+    #   dates << Date.strptime("05/16/2017", "%m/%d/%Y")
+    #   event.ampm = 'pm'
+    # end
 
-    if eventJSON['public'] && dates.length > 0
+    # puts "#{eventJSON['name']} - #{eventJSON['public']} - #{eventJSON['year2018']}"
+
+    # if eventJSON['public'] && eventJSON['year2018'] && dates.length > 0
+    if eventJSON['confirmed'] && eventJSON['year2018'] && dates.length > 0
+      # puts "#{eventJSON['name']} #{dates}"
       event.title = eventJSON['name'].tr("\n"," ")
       event.description = eventJSON['public_description'].tr("\n"," ")
       event.start_time = eventJSON['time']
@@ -126,10 +144,10 @@ def readEvents(url)
       event.address_label = eventJSON['address']
       event.event_url = eventJSON['public_url']
       event.event_url_label = eventJSON['public_url_label']
-      event.twitter = eventJSON['twitter']
-      event.instagram = eventJSON['instagram']
+      event.twitter = eventJSON['twitter'].gsub('@', '')
+      event.instagram = eventJSON['instagram'].gsub('@', '')
       event.website = eventJSON['website']
-      event.published = eventJSON['public']
+      event.published = true # eventJSON['public']
       event.address_lat = eventJSON['latitude']
       event.address_long = eventJSON['longitude']
       event.price = eventJSON['price']
@@ -142,7 +160,7 @@ def readEvents(url)
         event.day = date
         content = markdownPostForEvent(event)
         cleanTitle = event.title.gsub(' ','_').gsub(/[^A-Za-z0-9_]/i, '').downcase
-        formattedDate = event.day.strftime("2016-%m-%d")
+        formattedDate = event.day.strftime("2017-%m-%d") # Events are a year early so we can publish future posts
         slug = formattedDate + "-" + cleanTitle
         filename = ("_posts/#{slug}.md")
         File.write(filename, content)
@@ -157,5 +175,5 @@ end
 
 print "Fetching events: "
 
-FileUtils.rm_rf(Dir.glob('_posts/2016-*')) # remove all previous markdown files:
+FileUtils.rm_rf(Dir.glob('_posts/2017-*')) # remove all previous markdown files:
 readEvents("http://maps.vancouverdesignwk.com/locations.json")
