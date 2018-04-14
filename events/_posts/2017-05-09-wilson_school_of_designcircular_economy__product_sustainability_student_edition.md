@@ -2,7 +2,7 @@
 dayOfWeek: Wed
 dayOfMonth: May 09
 title: "Wilson School of Design:Circular Economy & Product Sustainability: Student Edition"
-description: "Guest lecturers from UK’s Cranfield University will provide participants with an interactive workshop leaving attendees with an understanding of what a circular economy is and how they can implement circular innovation to add new value to their studies. <br> <br> Participants will use state of the art tools and approaches to assess their current capability levels for the integration of circular economy principles into their learning. "
+description: "Guest lecturers from UK’s Cranfield University will provide participants with an interactive workshop leaving attendees with an understanding of what a circular economy is and how they can implement circular innovation to add new value to their studies. <br> <br> Participants will use state of the art tools and approaches to assess their current capability levels for the integration of circular economy principles into their learning. https://www.facebook.com/events/380842069058937/"
 startTime: 1-6 om
 endTime: 
 type: Open Call
@@ -11,12 +11,12 @@ addressLabel: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8"
 latitude: 
 longitude: 
 eventUrl: www.eventbrite.ca/e/circular-economy-product-sustainability-student-edition-tickets-45121259903
-eventUrlLabel: 
+eventUrlLabel: Reserve your spot
 twitter: 
 instagram: 
 website: 
 published: true
-price: 
+price: FREE - RSVP
 
 category: event-2018-9-pm
 priority: 0
