@@ -18,7 +18,7 @@ website:
 published: true
 price: 
 
-category: event-2018-8-pm
+category: event-2018-8
 priority: 0
 slug: 2018-05-08-pechakucha_after_party__by_invitation
 ---

@@ -18,7 +18,7 @@ website: www.alisonbrooksarchitects.com
 published: true
 price: By Donation, suggested $10
 
-category: event-2018-9-pm
+category: event-2018-9
 priority: 0
 slug: 2018-05-09-alison_brooks_ideals_then_ideas_new_urban_housing_as_civic_architecture
 ---

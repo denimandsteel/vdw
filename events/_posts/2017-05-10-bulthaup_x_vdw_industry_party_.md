@@ -18,7 +18,7 @@ website: www.vancouver.bulthaup.com/en
 published: true
 price: 
 
-category: event-2018-10-pm
+category: event-2018-10
 priority: 0
 slug: 2018-05-10-bulthaup_x_vdw_industry_party_
 ---

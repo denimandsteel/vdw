@@ -18,7 +18,7 @@ website: www.invokedigital.co
 published: true
 price: 
 
-category: event-2018-9-pm
+category: event-2018-9
 priority: 0
 slug: 2018-05-09-rapid_prototyping_for_digital_products_with_invoke_digital_and_creative_pulse
 ---

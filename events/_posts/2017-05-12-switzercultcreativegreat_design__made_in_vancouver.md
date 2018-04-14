@@ -18,7 +18,7 @@ website: www.switzercultcreative.com
 published: true
 price: 
 
-category: event-2018-12-pm
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-switzercultcreativegreat_design__made_in_vancouver
 ---

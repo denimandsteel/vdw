@@ -18,7 +18,7 @@ website:
 published: true
 price: 
 
-category: event-2018-12-pm
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-ideals_then_ideas_new_urban_housing_as_civic_architecture
 ---

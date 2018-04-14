@@ -18,7 +18,7 @@ website: hapacobo.com and http://www.milkovicharchitects.com
 published: true
 price: 
 
-category: event-2018-13-
+category: event-2018-13
 priority: 0
 slug: 2018-05-13-hapa_collaborativenick_milkovich_architects
 ---

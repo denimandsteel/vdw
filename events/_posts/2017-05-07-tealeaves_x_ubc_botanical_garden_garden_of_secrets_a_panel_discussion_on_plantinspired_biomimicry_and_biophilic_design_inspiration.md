@@ -18,7 +18,7 @@ website: tealeaves.com
 published: true
 price: 
 
-category: event-2018-7-pm
+category: event-2018-7
 priority: 0
 slug: 2018-05-07-tealeaves_x_ubc_botanical_garden_garden_of_secrets_a_panel_discussion_on_plantinspired_biomimicry_and_biophilic_design_inspiration
 ---

@@ -18,7 +18,7 @@ website: tealeaves.com
 published: true
 price: 
 
-category: event-2018-8-
+category: event-2018-8
 priority: 0
 slug: 2018-05-08-tealeaves_colorinsight_documentary_screening__panel_discussion_on_color
 ---

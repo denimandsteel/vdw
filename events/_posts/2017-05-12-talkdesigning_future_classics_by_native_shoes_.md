@@ -18,7 +18,7 @@ website: www.nativeshoes.com
 published: true
 price: free
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-talkdesigning_future_classics_by_native_shoes_
 ---

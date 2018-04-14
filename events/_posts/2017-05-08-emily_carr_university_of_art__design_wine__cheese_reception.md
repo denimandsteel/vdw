@@ -18,7 +18,7 @@ website: www.ecuad.ca
 published: true
 price: 
 
-category: event-2018-8-pm
+category: event-2018-8
 priority: 0
 slug: 2018-05-08-emily_carr_university_of_art__design_wine__cheese_reception
 ---

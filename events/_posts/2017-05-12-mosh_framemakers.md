@@ -18,7 +18,7 @@ website: www.moshframemakers.com
 published: true
 price: 
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 
 slug: 2018-05-12-mosh_framemakers
 ---

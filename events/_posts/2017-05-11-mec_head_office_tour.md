@@ -18,7 +18,7 @@ website: MEC.CA
 published: true
 price: 
 
-category: event-2018-11-am
+category: event-2018-11
 priority: 0
 slug: 2018-05-11-mec_head_office_tour
 ---

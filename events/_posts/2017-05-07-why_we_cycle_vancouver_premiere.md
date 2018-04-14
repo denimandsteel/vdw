@@ -18,7 +18,7 @@ website: www.modacitylife.com/why-we-cycle
 published: true
 price: 
 
-category: event-2018-7-pm
+category: event-2018-7
 priority: 0
 slug: 2018-05-07-why_we_cycle_vancouver_premiere
 ---

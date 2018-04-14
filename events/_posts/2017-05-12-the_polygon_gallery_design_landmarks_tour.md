@@ -18,7 +18,7 @@ website: thepolygon.ca
 published: true
 price: Suggested Donation $10
 
-category: event-2018-12-pm
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-the_polygon_gallery_design_landmarks_tour
 ---

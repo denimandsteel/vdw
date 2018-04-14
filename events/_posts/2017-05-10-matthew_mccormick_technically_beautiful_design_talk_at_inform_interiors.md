@@ -18,7 +18,7 @@ website: www.matthewmccormick.ca
 published: true
 price: 
 
-category: event-2018-10-pm
+category: event-2018-10
 priority: 0
 slug: 2018-05-10-matthew_mccormick_technically_beautiful_design_talk_at_inform_interiors
 ---

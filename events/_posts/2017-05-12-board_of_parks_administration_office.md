@@ -18,7 +18,7 @@ website: vancouver.ca/parks-recreation-culture/parks-and-recreation.aspx
 published: true
 price: Suggested donation $10
 
-category: event-2018-12-
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-board_of_parks_administration_office
 ---

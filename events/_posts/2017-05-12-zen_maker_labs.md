@@ -18,7 +18,7 @@ website: zenmakerlab.com
 published: true
 price: 
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-zen_maker_labs
 ---

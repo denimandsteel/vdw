@@ -18,7 +18,7 @@ website: smallhousingbc.org
 published: true
 price: $10 (suggested donation, pay at the door
 
-category: event-2018-12-pm
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-tiny_talk_small_housingdesign__its_role_in_addressing_densification__latelier_vancouver
 ---

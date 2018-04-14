@@ -38,83 +38,34 @@ if (typeof vdwEvents !== 'undefined') {
 //   }
 // }
 window.map_options = {
-  // 'map-event-2018-7-am': {
-  //   center: new L.LatLng(49.270940821149594, -123.10729980468749),
-  //   zoom: 12,
-  // },
-  'map-event-2018-7-pm': {
+  'map-event-2018-7': {
     center: new L.LatLng(49.27362889433306, -123.1512451171875),
     zoom: 11,
   },
-  // 'map-event-2018-8-am': {
-  //   center: new L.LatLng(49.270940821149594, -123.10729980468749),
-  //   zoom: 12,
-  // },
-  'map-event-2018-8-pm': {
+  'map-event-2018-8': {
     center: new L.LatLng(49.279452550408074, -123.10729980468749),
     zoom: 11,
   },
-  // 'map-event-2018-9-am': {
-  //   center: new L.LatLng(49.270940821149594, -123.10729980468749),
-  //   zoom: 12,
-  // },
-  'map-event-2018-9-pm': {
+  'map-event-2018-9': {
     center: new L.LatLng(49.24629332459796, -123.07983398437499),
     zoom: 10,
   },
-  // 'map-event-2018-10-am': {
-  //   center: new L.LatLng(49.270940821149594, -123.10729980468749),
-  //   zoom: 12,
-  // },
-  'map-event-2018-10-pm': {
+  'map-event-2018-10': {
     center: new L.LatLng(49.27609283274329, -123.10214996337889),
     zoom: 12,
   },
-  'map-event-2018-11-am': {
-    center: new L.LatLng(49.27138884351881, -123.06713104248047),
-    zoom: 12,
-  },
-  'map-event-2018-11-pm': {
+  'map-event-2018-11': {
     center: new L.LatLng(49.27362889433306, -123.08601379394531),
     zoom: 12,
   },
-  'map-event-2018-12-am': {
-    center: new L.LatLng(49.25973893952819, -123.0743408203125),
-    zoom: 10,
-  },
-  'map-event-2018-12-pm': {
+  'map-event-2018-12': {
     center: new L.LatLng(49.29781496184064, -123.08326721191406),
     zoom: 11,
   },
-  'map-event-2018-13-am': {
-    center: new L.LatLng(49.27026877996669, -123.1234359741211),
-    zoom: 12,
-  },
-  'map-event-2018-13-pm': {
+  'map-event-2018-13': {
     center: new L.LatLng(49.26534019822459, -123.09579849243164),
     zoom: 13,
   },
-
-  // 'map-event-12-am': {
-  //   center: new L.LatLng(49.28230813048122, -123.1178569793701),
-  //   zoom: 14,
-  // },
-  // 'map-event-12-pm': {
-  //   center: new L.LatLng(49.284603672996994, -123.11442375183105),
-  //   zoom: 16,
-  // },
-  // 'map-event-13-am': {
-  //   center: new L.LatLng(49.27654080832181, -123.09425354003905),
-  //   zoom: 12,
-  // },
-  // 'map-event-13-pm': {
-  //   center: new L.LatLng(49.27788471064522, -123.11279296875001),
-  //   zoom: 12,
-  // },
-  // 'map-event-14-pm': {
-  //   center: new L.LatLng(49.263771909876155, -123.13167572021483),
-  //   zoom: 12,
-  // },
 };
 
 for (var date in vdwEvents) {

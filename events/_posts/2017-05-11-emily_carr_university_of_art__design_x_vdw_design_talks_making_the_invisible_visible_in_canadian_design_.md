@@ -18,7 +18,7 @@ website: www.ecuad.ca
 published: true
 price: By Donation (suggested $10)
 
-category: event-2018-11-pm
+category: event-2018-11
 priority: 0
 slug: 2018-05-11-emily_carr_university_of_art__design_x_vdw_design_talks_making_the_invisible_visible_in_canadian_design_
 ---

@@ -18,7 +18,7 @@ website: hcma.ca
 published: true
 price: Free, reservations required
 
-category: event-2018-10-pm
+category: event-2018-10
 priority: 0
 slug: 2018-05-10-creative_mornings_van_at_night
 ---

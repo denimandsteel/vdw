@@ -18,7 +18,7 @@ website: www.bharchitects.com/en/
 published: true
 price: 
 
-category: event-2018-12-pm
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-bh_architects_and_chil_interior_design
 ---

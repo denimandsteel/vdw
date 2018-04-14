@@ -10,85 +10,72 @@
       </div>
 
       {% for dayNumber in (7..13) %}
-        {% assign times = "am|pm" | split: "|" %}
-        {% for timeValue in times %}
-          {% capture eventDayCategory %}event-2018-{{dayNumber}}-{{timeValue}}{% endcapture %}
-          {% if site.categories[eventDayCategory].size > 0 %}
-            <!-- day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %} -->
-            <div id="{{ eventDayCategory }}" class="day-events">
-              <div class="day-header">
-                <h2 class="dayname">
-                  {{ site.categories[eventDayCategory][0].dayOfWeek}},
-                  <strong>
-                    {{ site.categories[eventDayCategory][0].dayOfMonth}}
-                    {% if timeValue == 'am' %}
-                      <span class="f-tt-uc">Morning</span>
-                    {% endif %}
-                    {% if timeValue == 'pm' %}
-                      {% if dayNumber == 11 or dayNumber == 12 or dayNumber == 16 %}
-                        <span class="f-tt-uc">Evening</span>
-                      {% else %}
-                        <span class="f-tt-uc">Afternoon</span>
-                      {% endif %}
-                    {% endif %}
-                  </strong>
-                </h2>
-                <p class="event-count">{{site.categories[eventDayCategory].size}} {% if {{site.categories[eventDayCategory].size > 1 %}Events{% else %}Event{% endif %} [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+        {% capture eventDayCategory %}event-2018-{{dayNumber}}{% endcapture %}
+        {% if site.categories[eventDayCategory].size > 0 %}
+          <!-- day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %} -->
+          <div id="{{ eventDayCategory }}" class="day-events">
+            <div class="day-header">
+              <h2 class="dayname">
+                {{ site.categories[eventDayCategory][0].dayOfWeek}},
+                <strong>
+                  {{ site.categories[eventDayCategory][0].dayOfMonth}}
+                </strong>
+              </h2>
+              <p class="event-count">{{site.categories[eventDayCategory].size}} {% if {{site.categories[eventDayCategory].size > 1 %}Events{% else %}Event{% endif %} [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+            </div>
+            <div class="events-list">
+              <div class="map-container">
+                <div id="map-{{eventDayCategory}}" class="map"></div>
+                <div class="mobile-map-blocker"></div>
               </div>
-              <div class="events-list">
-                <div class="map-container">
-                  <div id="map-{{eventDayCategory}}" class="map"></div>
-                  <div class="mobile-map-blocker"></div>
-                </div>
-                {% for priority in (0..50) %}{% for post in site.categories[eventDayCategory] reversed %}{% if post.priority == priority and post.published == true %}
-                  <script type="text/javascript">
-                    if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
-                      vdwEvents['map-{{eventDayCategory}}'] = [];
-                    }
-                    vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
-                  </script>
-                  <div id="event-{{post.slug}}" class="event-item">
-                    <div class="eventheader row">
-                      <div class="left md-eight columns">
-                        <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
-                        <h3 class="title"><span class="js-marker-index"></span>{{ post.title }}</h3>
-                        <p class="time-and-place">
-                          {% if post.endTime %}
-                            {{ post.startTime }} - {{ post.endTime }}
-                          {% else %}
-                            {{ post.startTime }}
-                          {% endif %}
-                          at <a target="_blank" rel="noopener" href="http://maps.google.com/?q={{ post.latitude }},{{ post.longitude }}">{{ post.addressLabel }}</a>
-                        </p>
-                      </div>
-                      <div class="right md-four columns">
-                        <p class="price">{{ post.price }}</p>
-                        {% if post.eventUrl or post.eventUrlLabel %}
-                          {% if post.eventUrl %}
-                            <a target="_blank" rel="noopener" href="http://{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
-                          {% else %}
-                            <div class="highlight">{{ post.eventUrlLabel }}</div>
-                          {% endif %}
+              {% for priority in (0..50) %}{% for post in site.categories[eventDayCategory] reversed %}{% if post.priority == priority and post.published == true %}
+                <script type="text/javascript">
+                  if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
+                    vdwEvents['map-{{eventDayCategory}}'] = [];
+                  }
+                  vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
+                </script>
+                <div id="event-{{post.slug}}" class="event-item">
+                  <div class="eventheader row">
+                    <div class="left md-eight columns">
+                      <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
+                      <h3 class="title"><span class="js-marker-index"></span>{{ post.title }}</h3>
+                      <p class="time-and-place">
+                        {% if post.endTime %}
+                          {{ post.startTime }} - {{ post.endTime }}
+                        {% else %}
+                          {{ post.startTime }}
                         {% endif %}
-                      </div>
+                        at <a target="_blank" rel="noopener" href="http://maps.google.com/?q={{ post.latitude }},{{ post.longitude }}">{{ post.addressLabel }}</a>
+                      </p>
                     </div>
-
-                    <div class="eventcontent">
-                      <p class="description">{% if post.type %}<span class="event-type f-wb">[{{ post.type }}]</span> {% endif %}{{ post.description }}</p>
-                      {% if post.twitter or post.instagram or post.website %}
-                        <div class="social-links">
-                          {% if post.twitter %}<a target="_blank" href="http://twitter.com/{{post.twitter}}">Twitter</a>{% endif %}
-                          {% if post.instagram %}<a target="_blank" href="http://instagram.com/{{post.instagram}}">Instagram</a>{% endif %}
-                          {% if post.website %}<a target="_blank" href="http://{{post.website}}">Website</a>{% endif %}
-                        </div>
+                    <div class="right md-four columns">
+                      <p class="price">{{ post.price }}</p>
+                      {% if post.eventUrl or post.eventUrlLabel %}
+                        {% if post.eventUrl %}
+                          <a target="_blank" rel="noopener" href="http://{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+                        {% else %}
+                          <div class="highlight">{{ post.eventUrlLabel }}</div>
+                        {% endif %}
                       {% endif %}
                     </div>
                   </div>
-                {% endif %}{% endfor %}{% endfor %}
-              </div>
+
+                  <div class="eventcontent">
+                    <p class="description">{% if post.type %}<span class="event-type f-wb">[{{ post.type }}]</span> {% endif %}{{ post.description }}</p>
+                    {% if post.twitter or post.instagram or post.website %}
+                      <div class="social-links">
+                        {% if post.twitter %}<a target="_blank" href="http://twitter.com/{{post.twitter}}">Twitter</a>{% endif %}
+                        {% if post.instagram %}<a target="_blank" href="http://instagram.com/{{post.instagram}}">Instagram</a>{% endif %}
+                        {% if post.website %}<a target="_blank" href="http://{{post.website}}">Website</a>{% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}{% endfor %}{% endfor %}
             </div>
-          {% endif %}
-        {% endfor %}
+          </div>
+        {% endif %}
       {% endfor %}
     </section>
   </div>

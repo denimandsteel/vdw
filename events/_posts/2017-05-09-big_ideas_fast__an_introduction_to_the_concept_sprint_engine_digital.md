@@ -18,7 +18,7 @@ website: enginedigital.com
 published: true
 price: 
 
-category: event-2018-9-pm
+category: event-2018-9
 priority: 0
 slug: 2018-05-09-big_ideas_fast__an_introduction_to_the_concept_sprint_engine_digital
 ---

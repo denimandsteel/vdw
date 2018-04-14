@@ -18,7 +18,7 @@ website: boconcept-vancouver.ca
 published: true
 price: 
 
-category: event-2018-13-am
+category: event-2018-13
 priority: 0
 slug: 2018-05-13-boconcept_vancouver
 ---

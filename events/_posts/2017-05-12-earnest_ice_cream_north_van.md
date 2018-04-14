@@ -18,7 +18,7 @@ website: http://earnesticecream.com
 published: true
 price: $5 in shop
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-earnest_ice_cream_north_van
 ---

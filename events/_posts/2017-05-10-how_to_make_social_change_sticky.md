@@ -18,7 +18,7 @@ website: inwithforward.com
 published: true
 price: 
 
-category: event-2018-10-pm
+category: event-2018-10
 priority: 0
 slug: 2018-05-10-how_to_make_social_change_sticky
 ---

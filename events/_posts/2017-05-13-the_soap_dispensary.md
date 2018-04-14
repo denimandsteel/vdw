@@ -18,7 +18,7 @@ website: https://www.thesoapdispensary.com/
 published: true
 price: 
 
-category: event-2018-13-
+category: event-2018-13
 priority: 0
 slug: 2018-05-13-the_soap_dispensary
 ---

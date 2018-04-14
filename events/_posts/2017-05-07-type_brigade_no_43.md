@@ -18,7 +18,7 @@ website: typebrigade.com
 published: true
 price: 
 
-category: event-2018-7-pm
+category: event-2018-7
 priority: 0
 slug: 2018-05-07-type_brigade_no_43
 ---

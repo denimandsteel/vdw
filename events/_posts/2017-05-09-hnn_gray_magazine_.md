@@ -18,7 +18,7 @@ website:
 published: true
 price: 
 
-category: event-2018-9-
+category: event-2018-9
 priority: 0
 slug: 2018-05-09-hnn_gray_magazine_
 ---

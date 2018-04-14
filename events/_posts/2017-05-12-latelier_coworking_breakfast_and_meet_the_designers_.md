@@ -18,7 +18,7 @@ website: ateliervancouver.com
 published: true
 price: Free
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-latelier_coworking_breakfast_and_meet_the_designers_
 ---

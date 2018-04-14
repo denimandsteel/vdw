@@ -18,7 +18,7 @@ website: www.carscadden.ca
 published: true
 price: 
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-carscadden_stokes_mcdonald_architects_inc
 ---

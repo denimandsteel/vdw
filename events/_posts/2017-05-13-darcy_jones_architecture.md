@@ -18,7 +18,7 @@ website: darcyjones.com
 published: true
 price: 
 
-category: event-2018-13-pm
+category: event-2018-13
 priority: 0
 slug: 2018-05-13-darcy_jones_architecture
 ---

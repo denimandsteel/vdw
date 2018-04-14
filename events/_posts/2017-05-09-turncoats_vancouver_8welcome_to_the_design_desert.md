@@ -18,7 +18,7 @@ website: turncoats.ca/
 published: true
 price: 
 
-category: event-2018-9-pm
+category: event-2018-9
 priority: 0
 slug: 2018-05-09-turncoats_vancouver_8welcome_to_the_design_desert
 ---

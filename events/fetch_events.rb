@@ -62,7 +62,7 @@ website: #{event.website}
 published: #{event.published}
 price: #{event.price}
 
-category: event-2018-#{dayNumber}-#{event.ampm}
+category: event-2018-#{dayNumber}
 priority: #{event.priority}
 slug: #{slug}
 ---

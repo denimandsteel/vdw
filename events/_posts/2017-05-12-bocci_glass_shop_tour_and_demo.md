@@ -18,7 +18,7 @@ website: www.bocci.ca
 published: true
 price: Free
 
-category: event-2018-12-am
+category: event-2018-12
 priority: 0
 slug: 2018-05-12-bocci_glass_shop_tour_and_demo
 ---

@@ -18,7 +18,7 @@ website: www.citystudiovancouver.com/
 published: true
 price: Free
 
-category: event-2018-9-pm
+category: event-2018-9
 priority: 0
 slug: 2018-05-09-designing_change_x_vdw_design_talks
 ---

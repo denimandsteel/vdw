@@ -18,7 +18,7 @@ website: redacademy.com/
 published: true
 price: Free
 
-category: event-2018-10-pm
+category: event-2018-10
 priority: 0
 slug: 2018-05-10-red_academy_logo_design_battle
 ---

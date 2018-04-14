@@ -2,7 +2,7 @@
 dayOfWeek: Tue
 dayOfMonth: May 08
 title: "A Magical Place"
-description: "Entering the studio will be a door to a magical world where technology, nature and human beings meet. People will be diving into a world of light from the projection of a moving laser light through a glass art previously designed to deliver a strong message of positive impact and strong actions we can have. They will be immersed into nature with all their senses: a colorful visual and a relaxing music."
+description: "Entering a magical world where technology, nature, and human beings meet. Dive into a world of light designed to deliver a message of positive impact and immerse your senses in colourful visuals and relaxing music."
 startTime: 6pm
 endTime: 
 type: Design Edition
@@ -16,9 +16,9 @@ twitter:
 instagram: 
 website: www.aureliabizouard.com/lumiere
 published: true
-price: 
+price: Free
 
-category: event-2018-8-pm
+category: event-2018-8
 priority: 0
 slug: 2018-05-08-a_magical_place
 ---
