@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Arnt Arntsen @ Paneficio Studios"
-description: "Designer and builder of contemporary studio furniture in the shared designers/artist at Paneficio, with a display of works  and process talk."
+description: "Meet the designer and builder of contemporary studio furniture in  shared designers/artist space Paneficio, with a display of works  and process talk."
 startTime: 11-4
 endTime: 
 type: Design Studios
