@@ -18,7 +18,7 @@ website: http://circlewellnessstudios.com
 published: true
 price: 
 
-category: event-2018-13-
+category: event-2018-13-pm
 priority: 0
 slug: 2018-05-13-circle_wellness_studios__nulane_design__build
 ---

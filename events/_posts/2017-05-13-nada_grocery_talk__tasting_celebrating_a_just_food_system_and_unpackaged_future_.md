@@ -18,7 +18,7 @@ website: www.nadagrocery.com
 published: true
 price: $10
 
-category: event-2018-13-
+category: event-2018-13-pm
 priority: 0
 slug: 2018-05-13-nada_grocery_talk__tasting_celebrating_a_just_food_system_and_unpackaged_future_
 ---

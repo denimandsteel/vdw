@@ -18,7 +18,7 @@ website: https://www.bcitsa.ca/careerservices/events/
 published: true
 price: 
 
-category: event-2018-11-
+category: event-2018-11-pm
 priority: 0
 slug: 2018-05-11-creative_cocktail_shaken__stirred__bcit_graphic_design_grad_show
 ---

@@ -18,7 +18,7 @@ website: ngxinteractive.com
 published: true
 price: 
 
-category: event-2018-13-
+category: event-2018-13-am
 priority: 0
 slug: 2018-05-13-ngx_interactive
 ---

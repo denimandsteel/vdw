@@ -18,7 +18,7 @@ website: delacajigafineart.com
 published: true
 price: 
 
-category: event-2018-12-
+category: event-2018-12-pm
 priority: 0
 slug: 2018-05-12-de_la_cajga_art_studio
 ---

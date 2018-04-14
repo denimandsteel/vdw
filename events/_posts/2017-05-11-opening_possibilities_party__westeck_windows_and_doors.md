@@ -18,7 +18,7 @@ website: www.westeckwindows.com
 published: true
 price: 
 
-category: event-2018-11-
+category: event-2018-11-pm
 priority: 0
 slug: 2018-05-11-opening_possibilities_party__westeck_windows_and_doors
 ---

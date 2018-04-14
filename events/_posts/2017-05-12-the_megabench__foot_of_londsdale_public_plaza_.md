@@ -18,7 +18,7 @@ website: hapacobo.com/now-open-foot-of-lonsdale-megabench/
 published: true
 price: Free
 
-category: event-2018-12-
+category: event-2018-12-pm
 priority: 0
 slug: 2018-05-12-the_megabench__foot_of_londsdale_public_plaza_
 ---
