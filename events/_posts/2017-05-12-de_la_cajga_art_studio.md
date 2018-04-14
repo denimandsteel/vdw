@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "De La Cajga Art Studio"
-description: "Artist talk, photography, painting, mixed media."
+description: "Artist talk, photography, painting, and mixed media."
 startTime: 12-4
 endTime: 
 type: Design Studios
