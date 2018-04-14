@@ -4,4 +4,4 @@
 # Then just check things out in your Git client, commit, and sync!
 
 # cd events/ && ruby fetch_events.rb && git add _posts/ && git commit -m "Build events" && cd ../
-cd events/ && ruby fetch_events.rb && git add _posts/ && cd ../ && git commit -m "Build by cron" && git push
+cd /home/vdw/vdw/events/ && ruby fetch_events.rb && git add _posts/ && cd ../ && git commit -m "Build by cron" && git push
