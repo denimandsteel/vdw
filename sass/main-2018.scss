@@ -1127,6 +1127,11 @@ button,
         display: inline;
       }
     }
+    .js-show-on-map {
+      #your-list & {
+        display: none;
+      }
+    }
 
     a {
       text-decoration: none;

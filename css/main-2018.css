@@ -2761,6 +2761,10 @@ button:hover, button:focus, button:active,
 #your-list .event-item .time-and-place .date {
   display: inline;
 }
+#your-list .event-item .description .js-show-on-map,
+#your-list .event-item .time-and-place .js-show-on-map {
+  display: none;
+}
 .event-item .description a,
 .event-item .time-and-place a {
   text-decoration: none;
