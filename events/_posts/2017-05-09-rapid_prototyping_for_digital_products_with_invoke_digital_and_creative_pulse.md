@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: www.invokedigital.co
 published: true
-price: 
+price: Free
 internal_id: 319
 
 category: event-2018-9
