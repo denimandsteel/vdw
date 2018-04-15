@@ -16,7 +16,7 @@ twitter: ngxinteractive
 instagram: ngxinteractive
 website: ngxinteractive.com
 published: true
-price: 
+price: Free
 internal_id: 287
 
 category: event-2018-13
