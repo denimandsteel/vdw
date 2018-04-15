@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "WOKE Studio"
-description: "We transform the raw materials of software and hardware into refined user experiences. Come check out the studio and ask our designers about our projects, thoughts on the future of design, or anything your heart desires"
+description: "We transform the raw materials of software and hardware into refined user experiences. Come check out the studio and ask our designers about our projects, thoughts on the future of design, or anything your heart desires."
 startTime: 2-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: wokestudio
 website: woke.co
 published: true
-price: 
+price: Free
 internal_id: 255
 
 category: event-2018-13
