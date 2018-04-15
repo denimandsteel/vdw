@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "mcfarlane biggar architects + designers"
-description: "We will open our studio’s doors and offer a display of previous and current projects to showcase our design process, along with some icy sweet treats from our Earnest neighbours."
+description: "We'll offer a display of previous and current projects to showcase our design process, along with some icy sweet treats from our Earnest neighbours."
 startTime: 1-3 pm
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: mcfarlanebiggar
 instagram: 
 website: http://www.officemb.ca
 published: true
-price: 
+price: Free
 internal_id: 289
 
 category: event-2018-13

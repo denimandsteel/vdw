@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Louder Than Ten"
-description: "Louder Than Ten trains digital project managers for the design industry. Join us for refreshments, shop talk, and help on your project pains.<br> "
+description: "Louder Than Ten trains digital project managers for the design industry. Join us for refreshments, shop talk, and help on your project pains."
 startTime: 1-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: louderthanten
 instagram: louderthanten
 website: louderthanten.com
 published: true
-price: 
+price: Free
 internal_id: 95
 
 category: event-2018-12
