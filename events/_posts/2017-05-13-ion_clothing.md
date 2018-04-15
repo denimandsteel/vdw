@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "i.O.N Clothing"
-description: "Emily Carr award winner, Patrick Christie has teamed up i.O.N (formerly Hemp and Company), one of Canada's oldest eco clothing companies to design and build their first Vancouver location. Built from BC wood and sustainable materials, i.O.N provides a retail environment that shows a concern for our planet both environmentally and socially. "
+description: "Emily Carr award winner Patrick Christie has teamed up i.O.N (formerly Hemp and Company), one of Canada's oldest eco clothing companies, to design and build their first Vancouver location. <br> <br> Built from BC wood and sustainable materials, i.O.N provides a retail environment that shows a concern for our planet both environmentally and socially. "
 startTime: 10-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: i.o.n_clothingyvr
 website: www.ionclothing.ca 
 published: true
-price: 
+price: Free
 internal_id: 368
 
 category: event-2018-13

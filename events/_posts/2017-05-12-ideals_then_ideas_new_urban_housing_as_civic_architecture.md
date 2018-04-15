@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: 
 published: true
-price: 
+price: Free
 internal_id: 371
 
 category: event-2018-12

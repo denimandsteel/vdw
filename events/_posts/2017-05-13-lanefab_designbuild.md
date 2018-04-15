@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Lanefab Design/Build"
-description: "Design studio open house including samples of passive house windows and doors.<br> Lanefab is an integrated design/build company that crafts custom homes and infill mini-homes (or “laneway houses”) with design quality & energy efficiency as core values. <br> <br> "
+description: "Lanefab is an integrated design/build company that crafts custom homes and infill mini-homes (or “laneway houses”) with design quality & energy efficiency as core values. <br> <br> Visit our design studio to see  samples of passive house windows and doors and understand how they work. "
 startTime: 12-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: lanefab
 instagram: lanefab
 website: http://www.lanefab.com
 published: true
-price: 
+price: Free
 internal_id: 38
 
 category: event-2018-13
