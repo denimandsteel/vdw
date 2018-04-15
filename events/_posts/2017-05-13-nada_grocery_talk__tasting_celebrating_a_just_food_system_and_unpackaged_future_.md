@@ -11,7 +11,7 @@ addressLabel: "675 East Broadway"
 latitude: 49.2624855288608
 longitude: -123.089446757138
 eventUrl: https://www.picatic.com/nada_x_vancouverdesignweek
-eventUrlLabel: Ticket for Nada Talk/Tasting @ 2
+eventUrlLabel: Get Tickets
 twitter: nadagrocery
 instagram: nadagrocery
 website: www.nadagrocery.com

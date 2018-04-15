@@ -2,7 +2,7 @@
 dayOfWeek: Thu
 dayOfMonth: May 10
 title: "Matthew McCormick Technically Beautiful Design Talk at Inform Interiors"
-description: "Matthew shares his personal journey into lighting, his work and inspiration since he created his eponymous studio in 2013.<br> "
+description: "Matthew shares his personal journey into lighting, his work, and inspiration since he created his eponymous studio in 2013."
 startTime: 5:30-7:30
 endTime: 
 type: Design Edition
@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: www.matthewmccormick.ca
 published: true
-price: 
+price: Free
 internal_id: 191
 
 category: event-2018-10
