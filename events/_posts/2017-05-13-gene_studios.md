@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Gene Studios"
-description: "Product Design, Visual Branding, Photography, Communications. We work collaboratively in the studio between Char Kennedy and Lobby Studio (www.lobbystudio.ca) to come up with engaging and thought provoking design ideas and we want to invite the public into our space to be part of the conversation."
+description: "Product Design, Visual Branding, Photography, Communications. We work collaboratively in the studio between Char Kennedy and Lobby Studio (www.lobbystudio.ca) to come up with engaging and thought provoking design ideas, and we invite the public into our space to be part of the conversation."
 startTime: 
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: charkennedy_
 website: www.charkennedy.com
 published: true
-price: 
+price: Free
 
 category: event-2018-13
 priority: 0

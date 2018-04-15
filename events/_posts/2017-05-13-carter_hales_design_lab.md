@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Carter Hales Design Lab"
-description: "We are a branding, packaging and website design firm. "
+description: "We are a branding, packaging and website design firm."
 startTime: 
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: CarterHalesLab
 instagram: carterhalesdesign
 website: carterhales.com
 published: true
-price: 
+price: Free
 
 category: event-2018-13
 priority: 0

@@ -11,7 +11,7 @@ addressLabel: "2099 Beach Ave, Vancouver, BC V6G 1Z4"
 latitude: 49.290735
 longitude: -123.14621
 eventUrl: www.picatic.com/event15236361019853
-eventUrlLabel: Reserve your spot on April 26 9am
+eventUrlLabel: Get Ticket
 twitter: 
 instagram: 
 website: vancouver.ca/parks-recreation-culture/parks-and-recreation.aspx

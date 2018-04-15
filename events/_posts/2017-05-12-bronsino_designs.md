@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Bronsino Designs"
-description: "We handmade leather bags & accessories for both men & women. We use both new & upcycled leathers & will be guiding visitors through our upcycling process & how we turn old leather garments into new products. We will have bags & accessories from our spring/summer 2018 collection on display."
+description: "See handmade leather bags & accessories for both men & women using both new & upcycled leathers. <br> <br> We'll guide you through our upcycling process & how we turn old leather garments into new products. Bags & accessories from our spring/summer 2018 collection on display."
 startTime: 11-3
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: bronsino
 website: www.bronsino.com
 published: true
-price: 
+price: Free
 
 category: event-2018-12
 priority: 0

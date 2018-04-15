@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "D'Arcy Jones Architecture"
-description: "DJA are a boutique architecture and design studio. Come see our new studio and some new projects we're working on. Snacks and refreshments will be served.  <br> "
+description: "DJA are a boutique architecture and design studio. Come see our new studio and some new projects we're working on. Snacks and refreshments will be served.  "
 startTime: 1-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: darcy_jones
 instagram: thatdarcyjones
 website: darcyjones.com
 published: true
-price: 
+price: Free
 
 category: event-2018-13
 priority: 0

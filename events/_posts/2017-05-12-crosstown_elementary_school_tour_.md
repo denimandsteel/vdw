@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Crosstown Elementary School Tour "
-description: "Crosstown Elementary School is a new urban primary school for downtown Vancouver families. Join us a for a tour of the school and its community-oriented spaces.Presented by Francl Architecture<br> "
+description: "Crosstown Elementary School is a new urban primary school for downtown Vancouver families. Join us a for a tour of the school and its community-oriented spaces. Presented by Francl Architecture."
 startTime: 
 endTime: 
 type: Design Spaces
@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: franclarchitecture.com
 published: true
-price: 
+price: Free
 
 category: event-2018-12
 priority: 0

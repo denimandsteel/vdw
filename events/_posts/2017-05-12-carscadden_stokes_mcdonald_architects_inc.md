@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Carscadden Stokes McDonald Architects Inc."
-description: "We area core architectural practice specializing in community recreation facilities. We want our work to be accessible and to the public and ourselves. We do that through conversation. So come and convene. "
+description: "We are a core architectural practice specializing in community recreation facilities. We want our work to be accessible to the public and ourselves. We do that through conversation. So come and convene."
 startTime: 
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: CarscaddenArch
 instagram: CarscaddenArch
 website: www.carscadden.ca
 published: true
-price: 
+price: Free
 
 category: event-2018-12
 priority: 0

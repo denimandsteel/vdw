@@ -2,7 +2,7 @@
 dayOfWeek: Wed
 dayOfMonth: May 09
 title: "Big Ideas, Fast - An Introduction to the Concept Sprint @Engine Digital"
-description: "This introductory workshop takes participants through a condensed version of the Concept Sprint, a valuable tool that Engine Digital uses to rapidly generate and test big ideas. We will look at a case study for the award-winning Ocean.org project and complete a group exercise to ideate on impactful solutions to key civic issues."
+description: "This introductory workshop takes participants through a condensed version of the Concept Sprint, a valuable tool that Engine Digital uses to rapidly generate and test big ideas. <br> <br> We will look at a case study for the award-winning Ocean.org project and complete a group exercise to ideate on impactful solutions to key civic issues."
 startTime: 
 endTime: 
 type: Open Call

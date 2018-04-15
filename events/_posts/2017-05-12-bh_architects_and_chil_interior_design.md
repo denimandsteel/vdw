@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "B+H Architects and CHIL Interior Design"
-description: "An open office self-guided tour with current and in progress projects scattered throughout the space. An opportunity for the public to see how our firm designs by displaying our process and finished works."
+description: "An open office self-guided tour with current and in-progress projects displayed for the public to see our design process and finished works."
 startTime: 11-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: BHarchitects
 instagram: CHILdesign
 website: www.bharchitects.com/en/
 published: true
-price: 
+price: Free
 
 category: event-2018-12
 priority: 0
