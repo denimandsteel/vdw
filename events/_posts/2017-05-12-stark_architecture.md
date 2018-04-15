@@ -16,7 +16,7 @@ twitter:
 instagram: starkarchitecture
 website: starkarchitecture.com
 published: true
-price: 
+price: Free
 internal_id: 192
 
 category: event-2018-12

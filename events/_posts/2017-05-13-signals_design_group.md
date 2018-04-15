@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Signals Design Group"
-description: "For more than 30 years, Signals has fused critical and creative thinking to tackle complex problems, and improve health and wellness. For VDW, we will use our studio to showcase a selection of recent projects that seek to improve the care experience and create greater awareness of youth mental health, sexual health, substance use, and social connections."
+description: "For more than 30 years, Signals has fused critical and creative thinking to tackle complex problems, and improve health and wellness. For VDW, we will  showcase a selection of recent projects that improve the care experience and create greater awareness of youth mental health, sexual health, substance use, and social connections."
 startTime: 12-3
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: signalsca
 instagram: signalsdesign
 website: signals.ca
 published: true
-price: 
+price: Free
 internal_id: 304
 
 category: event-2018-13
