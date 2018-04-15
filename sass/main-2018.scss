@@ -1127,11 +1127,11 @@ button,
         display: inline;
       }
     }
-    .js-show-on-map {
-      #your-list & {
-        display: none;
-      }
-    }
+    // .js-show-on-map {
+    //   #your-list & {
+    //     display: none;
+    //   }
+    // }
 
     a {
       text-decoration: none;
@@ -1325,6 +1325,35 @@ button,
   span {
     position: relative;
     top: 5px;
+  }
+}
+
+#your-list {
+  .share {
+    display: none;
+  }
+  .map-container {
+    display: none;
+    // height: 0;
+    // overflow: none;
+  }
+  &.sticky .events-list {
+    padding-top: 0px;
+  }
+  &.has-events {
+    &.sticky .events-list {
+      padding-top: 200px;
+    }
+    .empty {
+      display: none;
+    }
+    .share {
+      display: block;
+    }
+    .map-container {
+      display: block;
+      // height: auto;
+    }
   }
 }
 

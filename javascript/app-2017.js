@@ -4,6 +4,9 @@ $(document).ready(function() {
 // Events open/close.
 $('.day-header').on('click', function() {
   $(this).parents('.day-events').toggleClass('active');
+  if ($(this).parent().attr('id') === 'your-list' ) {
+    window.map_options['map-your-list'].map.invalidateSize();
+  }
   $.waypoints('refresh');
   //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
   // $content.slideToggle(500, function () {
@@ -14,7 +17,7 @@ $('.day-header').on('click', function() {
 });
 
 $(window).on('scroll', function() {
-  $('.day-events.active:not(#your-list)').each(function() {
+  $('.day-events.active').each(function() {
     var $scrollBottomedOut = window.scrollY > $(this).find('.events-list .event-item').last().offset().top - $(this).find('.map-container').height() - $('.c-navigation').height();
     if ( !$scrollBottomedOut && window.scrollY > $(this).find('.events-list').offset().top - $('.c-navigation').height() ) {
       $(this).addClass('sticky');
@@ -77,6 +80,10 @@ if (typeof vdwEvents !== 'undefined') {
 //   }
 // }
 window.map_options = {
+  'map-your-list': {
+    center: new L.LatLng(49.29781496184064, -123.08326721191406),
+    zoom: 10,
+  },
   'map-event-2018-7': {
     center: new L.LatLng(49.27362889433306, -123.1512451171875),
     zoom: 11,
@@ -107,68 +114,67 @@ window.map_options = {
   },
 };
 
+var setupMap = function(date) {
+
+  var map = new L.Map(date, {
+    center: map_options[date].center,
+    zoom: map_options[date].zoom,
+    scrollWheelZoom: false,
+    // dragging: 'ontouchstart' in window ? false : true,
+    attributionControl: false,
+    layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
+    // layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
+  });
+  window.map_options[date].map = map;
+  
+  var oms = new OverlappingMarkerSpiderfier(map, { nearbyDistance: 1 });
+  var popup = new L.Popup();
+  
+  oms.addListener('spiderfy', function(markers) {
+    // console.log(markers);
+    markers.forEach(function(marker, i) {
+      marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + marker.options.alt + '</span>' }) );
+    });
+  });
+  oms.addListener('unspiderfy', function(markers) {
+    markers.forEach(function(marker, i) {
+      marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) );
+    });
+  });
+  
+  vdwEvents[date].forEach(function(event1, i) {
+    vdwEvents[date].forEach(function(event2, j) {
+      if (i != j && event1.lat === event2.lat && event1.long === event2.long) {
+        event1['overlapping'] = 'yes';
+        event2['overlapping'] = 'yes';
+      };
+    });
+  });
+
+  var index = 1;
+
+  // Event markers.
+  window.map_options[date].events = new L.featureGroup();
+  vdwEvents[date].forEach(function(event, i) {
+    var event = vdwEvents[date][i];
+    var marker;
+    if (event.overlapping === 'yes') {
+      marker = L.marker([event.lat, event.long], { alt: index,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) });
+    } else {
+      marker = L.marker([event.lat, event.long], { alt: index,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + index + '</span>' }) });
+    };
+    marker.addTo(window.map_options[date].events);
+    oms.addMarker(marker);
+    $('#' + event.id + ' .js-marker-index').text(index + '. ');
+    index += 1;
+  });
+  window.map_options[date].events.addTo(map);
+
+};
+
 for (var date in vdwEvents) {
   if (vdwEvents.hasOwnProperty(date)) {
-    var map = new L.Map(date, {
-      center: map_options[date].center,
-      zoom: map_options[date].zoom,
-      scrollWheelZoom: false,
-      // dragging: 'ontouchstart' in window ? false : true,
-      attributionControl: false,
-      layers: new L.StamenTileLayer('toner-lite', { detectRetina: true }),
-      // layers: new L.tileLayer('https://{s}.tiles.mapbox.com/v4/carlingborne.ijk72kc4/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2FybGluZ2Jvcm5lIiwiYSI6Ii1YdFRDUEUifQ.IoeTgzoXnKhH-Z-QP10c9A', { detectRetina: true }),
-    });
-    window.map_options[date].map = map;
-    
-    var oms = new OverlappingMarkerSpiderfier(map, {nearbyDistance: 1});
-    var popup = new L.Popup();
-    
-    oms.addListener('spiderfy', function(markers) {
-      // console.log(markers);
-      markers.forEach(function(marker, i) {
-        marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + marker.options.alt + '</span>' }) );
-      });
-    });
-    oms.addListener('unspiderfy', function(markers) {
-      markers.forEach(function(marker, i) {
-        marker.setIcon( L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) );
-      });
-    });
-    
-    vdwEvents[date].forEach(function(event1, i) {
-      vdwEvents[date].forEach(function(event2, j) {
-        if (i != j && event1.lat === event2.lat && event1.long === event2.long) {
-          event1['overlapping'] = 'yes';
-          event2['overlapping'] = 'yes';
-        };
-      });
-    });
-
-    var index = 1;
-
-    // Event markers.
-    var events = new L.featureGroup();
-    vdwEvents[date].forEach(function(event, i) {
-      var event = vdwEvents[date][i];
-      var marker;
-      if (event.overlapping === 'yes') {
-        marker = L.marker([event.lat, event.long], { alt: index,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>+</span>' }) });
-      } else {
-        marker = L.marker([event.lat, event.long], { alt: index,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + index + '</span>' }) });
-      };
-      marker.addTo(events);
-      oms.addMarker(marker);
-      $('#' + event.id + ' .js-marker-index').text(index + '. ');
-      index += 1;
-    });
-    events.addTo(map);
-    // map.fitBounds(events.getBounds());
-    // map.setZoom(13);
-
-    // Info station markers.
-    // var infoStations = new L.featureGroup();
-    // L.marker([49.2558024, -123.112944], { icon: L.divIcon({ className: 'marker info', iconSize: 28 }) }).addTo(infoStations);
-    // infoStations.addTo(map);
+    setupMap(date);
   }
 }
 
@@ -178,29 +184,33 @@ $('.js-show-on-map').click(function() {
   map_options[$(this).data('day')].map.flyTo({ lat: $(this).data('lat'), lng: $(this).data('long') }, 15.5);
 });
 
+var listCount = 0;
+var listMarkers = {};
 var toggleOnList = function(eventId, adjustHeight) {
   var heightBefore = $('#your-list').height();
 
   if ( ! $( '#' + eventId + ' .js-add-to-list').hasClass('active') ) {
     $( '#' + eventId + ' .js-add-to-list').addClass('active');
     $( '#' + eventId + ' .js-add-to-list').html('Remove from List');
-    $( '#' + eventId ).clone(true).appendTo('#your-list .events-list');
+    var $clone = $( '#' + eventId ).clone(true);
+    $clone.find('.js-show-on-map').data('day', 'map-your-list');
+    $clone.appendTo('#your-list .events-list');
+    listCount += 1;
+    listMarkers[eventId] = L.marker([$( '#' + eventId ).data('lat'), $( '#' + eventId ).data('long')], { alt: listCount,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + listCount + '</span>' }) });
+    listMarkers[eventId].addTo(window.map_options['map-your-list'].events);
   }
   else {
     $( '#your-list #' + eventId ).remove();
     $( '#' + eventId + ' .js-add-to-list').removeClass('active');
     $( '#' + eventId + ' .js-add-to-list').html('Add to List');
-  }
-
-  var heightAfter = $('#your-list').height();
-  if (adjustHeight) {
-    window.scrollTo(0, scrollY + heightAfter - heightBefore)
+    listCount -= 1;
+    listMarkers[eventId].remove();
   }
 
   var eventCount = $('#your-list .event-item').length;
   if (eventCount > 0) {
-    $('#your-list .empty').hide();
-    $('#your-list .share').show();
+    $('#your-list').addClass('has-events');
+    window.map_options['map-your-list'].map.invalidateSize();
     $('.js-event-count').html(eventCount + ' events');
 
     var events = $('#your-list .event-item').map(function() { return $(this).attr('id'); }).toArray().join(',')
@@ -208,9 +218,13 @@ var toggleOnList = function(eventId, adjustHeight) {
     Cookies.set('vdw-list', events, { expires: 30 });
   }
   else {
-    $('#your-list .empty').show();
-    $('#your-list .share').hide();
+    $('#your-list').removeClass('has-events');
     $('.js-event-count').html('Add events on this device or email others');
+  }
+  
+  var heightAfter = $('#your-list').height();
+  if (adjustHeight) {
+    window.scrollTo(0, scrollY + heightAfter - heightBefore)
   }
 };
 

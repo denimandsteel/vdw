@@ -2761,10 +2761,6 @@ button:hover, button:focus, button:active,
 #your-list .event-item .time-and-place .date {
   display: inline;
 }
-#your-list .event-item .description .js-show-on-map,
-#your-list .event-item .time-and-place .js-show-on-map {
-  display: none;
-}
 .event-item .description a,
 .event-item .time-and-place a {
   text-decoration: none;
@@ -2945,6 +2941,28 @@ button:hover, button:focus, button:active,
 .marker span {
   position: relative;
   top: 5px;
+}
+
+#your-list .share {
+  display: none;
+}
+#your-list .map-container {
+  display: none;
+}
+#your-list.sticky .events-list {
+  padding-top: 0px;
+}
+#your-list.has-events.sticky .events-list {
+  padding-top: 200px;
+}
+#your-list.has-events .empty {
+  display: none;
+}
+#your-list.has-events .share {
+  display: block;
+}
+#your-list.has-events .map-container {
+  display: block;
 }
 
 .sponsors {
