@@ -214,14 +214,17 @@ var toggleOnList = function(eventId, adjustHeight) {
     $('.js-event-count').html(eventCount + ' events');
 
     var events = $('#your-list .event-item').map(function() { return $(this).attr('id'); }).toArray().join(',')
-    $('#your-list .share a').attr('href', 'mailto:?subject=Event List for Vancouver Design Week&body=' + encodeURIComponent(window.location.origin + window.location.pathname + '?list=' + events) );
+    var link = encodeURIComponent(window.location.origin + window.location.pathname + '?list=' + events);
+    $('#your-list .share .email').attr('href', 'mailto:?subject=Event List for Vancouver Design Week&body=' + link);
+    $('#your-list .share .twitter').attr('href', 'http://twitter.com/intent/tweet?text=' + link);
+    $('#your-list .share .facebook').attr('href', 'http://www.facebook.com/sharer/sharer.php?u=' + link);
     Cookies.set('vdw-list', events, { expires: 30 });
   }
   else {
     $('#your-list').removeClass('has-events');
     $('.js-event-count').html('Add events on this device or email others');
   }
-  
+
   var heightAfter = $('#your-list').height();
   if (adjustHeight) {
     window.scrollTo(0, scrollY + heightAfter - heightBefore)
