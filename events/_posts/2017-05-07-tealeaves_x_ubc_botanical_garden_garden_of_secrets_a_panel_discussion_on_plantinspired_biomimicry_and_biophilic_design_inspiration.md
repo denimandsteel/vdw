@@ -2,7 +2,7 @@
 dayOfWeek: Mon
 dayOfMonth: May 07
 title: "TEALEAVES x UBC Botanical Garden: Garden of Secrets, a Panel Discussion on Plant-Inspired Biomimicry and Biophilic Design Inspiration"
-description: "This panel (consisting of luxury tea blender TEALEAVES, UBC Botanical Garden, Christine Lintott Architects & PFS Studios) explores how botanical gardens and the “secrets” they house can inspire different innovators from tea blenders, designers, academics and more to build lasting impact on people, society and the environment. <br> The first bud from the Garden of Secrets will bloom at Vancouver Design Week! A world of possibilities awaits."
+description: "This panel, consisting of luxury tea blender TEALEAVES, UBC Botanical Garden, Christine Lintott Architects & PFS Studios, explores how botanical gardens and the “secrets” they house can inspire different innovators from tea blenders, designers, academics and more to build lasting impact on people, society and the environment. <br> <br> The first bud from the Garden of Secrets will bloom at Vancouver Design Week! <br> <br> A world of possibilities awaits."
 startTime: 7
 endTime: 
 type: Design Edition
