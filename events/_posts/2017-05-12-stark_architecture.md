@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "STARK Architecture"
-description: "Models, drawings and snacks!"
+description: "Our experience and skill set lies in fostering relationships with the clients and listening to their needs. We like to change and adapt our styles to suit the client and love experimenting with new ideas, software, materials and processes. Join us as we open our doors for a lineup of models, drawings, and snacks!"
 startTime: 
 endTime: 
 type: Design Studios
