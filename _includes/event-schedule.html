@@ -41,12 +41,18 @@
                       <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
                       <h3 class="title"><span class="js-marker-index"></span>{{ post.title }}</h3>
                       <p class="time-and-place">
+                        <span class="date">{{ site.categories[eventDayCategory][0].dayOfWeek}}, {{ site.categories[eventDayCategory][0].dayOfMonth}} - </span>
+
                         {% if post.endTime %}
                           {{ post.startTime }} - {{ post.endTime }}
                         {% else %}
                           {{ post.startTime }}
                         {% endif %}
                         at <a target="_blank" rel="noopener" href="http://maps.google.com/?q={{ post.latitude }},{{ post.longitude }}">{{ post.addressLabel }}</a>
+                      </p>
+                      <p class="time-and-place">
+                        <span class="action-button js-show-on-map" data-day="map-{{eventDayCategory}}" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">Show on Map</span>
+                        <span class="action-button js-add-to-list" data-day="map-{{eventDayCategory}}" data-event="event-{{post.slug}}">Add to List</span>
                       </p>
                     </div>
                     <div class="right md-four columns">
@@ -77,6 +83,25 @@
           </div>
         {% endif %}
       {% endfor %}
+
+      <div id="your-list" class="day-events">
+        <div class="day-header">
+          <h2 class="dayname">
+            <strong>Your List</strong>
+          </h2>
+          <p class="event-count"><span class="js-event-count">Add events on this device or email others</span> [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+        </div>
+        <div class="events-list">
+          <p class="empty">Events will appear here.</p>
+          <!-- <div class="map-container">
+            <div id="map-{{eventDayCategory}}" class="map"></div>
+            <div class="mobile-map-blocker"></div>
+          </div> -->
+          <div class="share"><a href="#" class="action-button">Share by Email</a></div>
+        </div>
+
+      </div>
+
     </section>
   </div>
 

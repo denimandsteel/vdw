@@ -953,6 +953,46 @@ button,
 
 .day-events.active .events-list { height: auto; }
 .day-events.active .event-count .indicator.plus { display: none; }
+.day-events.sticky {
+  .events-list {
+    padding-top: 200px;
+  }
+  .map-container {
+    position: fixed;
+    &:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0));
+    }
+  }
+}
+.day-events.bottom {
+  .events-list {
+    position: relative;
+  }
+  .map-container {
+    position: absolute;
+    top: 500px;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.events-list .empty {
+  font-weight: bold;
+  padding: 0 10px;
+  color: $color-primary;
+}
+.events-list .share {
+  padding: 15px 10px 10px;
+  color: $color-primary;
+  border-bottom: $color-primary 1px solid;
+}
 
 .event-count .indicator.minus { display: none; }
 .day-events.active .event-count .indicator.minus { display: inline; }
@@ -1081,6 +1121,13 @@ button,
 
     color: lighten(#464646, 20);
 
+    .date {
+      display: none;
+      #your-list & {
+        display: inline;
+      }
+    }
+
     a {
       text-decoration: none;
       font-weight: 700;
@@ -1112,6 +1159,19 @@ button,
     @include media($breaks-at-sm) {
       margin-top: 0;
     }
+  }
+}
+.action-button {
+  display: inline-block;
+  margin: 0px 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  padding: 5px 10px 3px;
+  &.active {
+    background: $color-primary;
+    color: white;
   }
 }
 
@@ -1238,8 +1298,8 @@ button,
   @extend %ff-secondary;
   font-weight: 700;
   width: 28px;
-  height: 38px;
-  margin-top: -38px;
+  height: 38px !important;
+  margin-top: -38px !important;
   color: white;
   text-align: center;
   background: url(../images/marker.svg) top left no-repeat;

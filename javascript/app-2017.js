@@ -13,6 +13,45 @@ $('.day-header').on('click', function() {
   return false;
 });
 
+$(window).on('scroll', function() {
+  $('.day-events.active:not(#your-list)').each(function() {
+    var $scrollBottomedOut = window.scrollY > $(this).find('.events-list .event-item').last().offset().top - $(this).find('.map-container').height() - $('.c-navigation').height();
+    if ( !$scrollBottomedOut && window.scrollY > $(this).find('.events-list').offset().top - $('.c-navigation').height() ) {
+      $(this).addClass('sticky');
+      $(this).removeClass('bottom');
+      $(this).find('.map-container').css({
+        top: $('.c-navigation').height(),
+        height: $(this).find('.map-container').height(),
+        width: $(this).find('.events-list').width(),
+      });
+    }
+    else if ( $scrollBottomedOut ) {
+      $(this).addClass('sticky bottom');
+      $(this).find('.map-container').css({
+        top: $(this).find('.events-list').height() - $(this).find('.events-list .event-item').last().height() - 47,
+      });
+    }
+    else {
+      $(this).removeClass('sticky bottom');
+      $(this).find('.map-container').css({
+        top: 0,
+        height: 'inherit',
+        width: 'auto',
+      });
+    }
+  });
+});
+
+$(window).on('resize', function() {
+  $('.day-events.sticky').each(function() {
+    $(this).find('.map-container').css({
+      top: $('.c-navigation').height(),
+      height: $(this).find('.map-container').height(),
+      width: $(this).find('.events-list').width(),
+    });
+  });
+});
+
 // Event current day and past days.
 $('#event-' + (new Date).getDate() + ' .day-header').addClass('current');
 $('#event-' + (new Date).getDate() + '').prevAll('.day-events').find('.day-header').addClass('done');
@@ -134,6 +173,54 @@ for (var date in vdwEvents) {
 }
 
 }
+
+$('.js-show-on-map').click(function() {
+  map_options[$(this).data('day')].map.flyTo({ lat: $(this).data('lat'), lng: $(this).data('long') }, 15.5);
+});
+
+var toggleOnList = function(eventId) {
+  if ( ! $( '#' + eventId + ' .js-add-to-list').hasClass('active') ) {
+    $( '#' + eventId + ' .js-add-to-list').addClass('active');
+    $( '#' + eventId + ' .js-add-to-list').html('Remove from List');
+    $( '#' + eventId ).clone(true).appendTo('#your-list .events-list');
+  }
+  else {
+    $( '#your-list #' + eventId ).remove();
+    $( '#' + eventId + ' .js-add-to-list').removeClass('active');
+    $( '#' + eventId + ' .js-add-to-list').html('Add to List');
+  }
+
+  var eventCount = $('#your-list .event-item').length;
+  if (eventCount > 0) {
+    $('#your-list .empty').hide();
+    $('#your-list .share').show();
+    $('.js-event-count').html(eventCount + ' events');
+
+    var events = $('#your-list .event-item').map(function() { return $(this).attr('id'); }).toArray().join('&')
+    $('#your-list .share a').attr('href', 'mailto:?subject=Event List for Vancouver Design Week&body=' + encodeURIComponent(window.location.origin + window.location.pathname + '?' + events) );
+    Cookies.set('your-list', events, { expires: 30 });
+  }
+  else {
+    $('#your-list .empty').show();
+    $('#your-list .share').hide();
+    $('.js-event-count').html('Add events on this device or email others');
+  }
+};
+
+$('.js-add-to-list').click(function() {
+  toggleOnList($(this).data('event'));
+});
+
+var urlEvents = [];
+if (window.location.search.length > 1) {
+  urlEvents = window.location.search.replace('?', '').split('&');
+}
+else if (Cookies.get('your-list') && Cookies.get('your-list').length > 0) {
+  urlEvents = Cookies.get('your-list').split('&');
+}
+$.each(urlEvents, function(i, eventId) {
+  toggleOnList(eventId);
+});
 
 // Navigation color switcher
 
