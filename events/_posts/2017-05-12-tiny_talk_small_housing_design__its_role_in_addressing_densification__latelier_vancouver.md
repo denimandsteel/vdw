@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Sat
 dayOfMonth: May 12
-title: "Tiny talk: Small housing/design & its role in addressing densification @ L'Atelier Vancouver"
+title: "Tiny talk: Small Housing Design & its Role in Addressing Densification @ L'Atelier Vancouver"
 description: "A presentation on small housing types, designs and their real-world applications. Followed by an industry-led panel and Q&A with Jake Fry (Smallworks), BC Tiny House Collective co-founders and other panelists. Presented by Small Housing BC."
 startTime: 1-2:30
 endTime: 
@@ -21,5 +21,5 @@ internal_id: 370
 
 category: event-2018-12
 priority: 0
-slug: 2018-05-12-tiny_talk_small_housingdesign__its_role_in_addressing_densification__latelier_vancouver
+slug: 2018-05-12-tiny_talk_small_housing_design__its_role_in_addressing_densification__latelier_vancouver
 ---

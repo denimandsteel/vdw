@@ -11,12 +11,12 @@ addressLabel: "BrainStation, ground floor of 455 Granville St."
 latitude: 49.285081
 longitude: -123.11476
 eventUrl: typebrigade.com
-eventUrlLabel: 
+eventUrlLabel: RSVP
 twitter: 
 instagram: 
 website: typebrigade.com
 published: true
-price: 
+price: Free
 internal_id: 202
 
 category: event-2018-7
