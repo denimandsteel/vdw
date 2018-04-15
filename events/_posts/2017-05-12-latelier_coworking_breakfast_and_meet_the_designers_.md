@@ -17,6 +17,7 @@ instagram: vancityatelier
 website: ateliervancouver.com
 published: true
 price: Free
+internal_id: 109
 
 category: event-2018-12
 priority: 0

@@ -17,6 +17,7 @@ instagram: wokestudio
 website: woke.co
 published: true
 price: 
+internal_id: 255
 
 category: event-2018-13
 priority: 0

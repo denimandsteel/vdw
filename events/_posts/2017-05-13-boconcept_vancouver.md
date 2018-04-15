@@ -17,6 +17,7 @@ instagram: boconceptvan
 website: boconcept-vancouver.ca
 published: true
 price: Free
+internal_id: 162
 
 category: event-2018-13
 priority: 0

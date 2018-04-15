@@ -17,6 +17,7 @@ instagram: Earnesticecream
 website: http://earnesticecream.com
 published: true
 price: $5 (in shop)
+internal_id: 235
 
 category: event-2018-12
 priority: 0

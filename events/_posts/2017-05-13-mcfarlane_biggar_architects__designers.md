@@ -17,6 +17,7 @@ instagram:
 website: http://www.officemb.ca
 published: true
 price: 
+internal_id: 289
 
 category: event-2018-13
 priority: 0

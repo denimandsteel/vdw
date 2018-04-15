@@ -17,6 +17,7 @@ instagram: bronsino
 website: www.bronsino.com
 published: true
 price: Free
+internal_id: 310
 
 category: event-2018-12
 priority: 0

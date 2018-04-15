@@ -17,6 +17,7 @@ instagram:
 website: segd.org/chapters/vancouver
 published: true
 price: Free
+internal_id: 296
 
 category: event-2018-12
 priority: 0

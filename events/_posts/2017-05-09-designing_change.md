@@ -17,6 +17,7 @@ instagram:
 website: www.citystudiovancouver.com/
 published: true
 price: Free
+internal_id: 201
 
 category: event-2018-9
 priority: 0

@@ -17,6 +17,7 @@ instagram: ngxinteractive
 website: ngxinteractive.com
 published: true
 price: 
+internal_id: 287
 
 category: event-2018-13
 priority: 0

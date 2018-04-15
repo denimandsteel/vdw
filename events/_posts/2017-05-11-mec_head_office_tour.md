@@ -17,6 +17,7 @@ instagram:
 website: MEC.CA
 published: true
 price: 
+internal_id: 190
 
 category: event-2018-11
 priority: 0

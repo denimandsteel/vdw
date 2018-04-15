@@ -17,6 +17,7 @@ instagram:
 website: 
 published: true
 price: 
+internal_id: 204
 
 category: event-2018-8
 priority: 0

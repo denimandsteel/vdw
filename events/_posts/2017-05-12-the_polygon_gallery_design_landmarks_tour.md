@@ -17,6 +17,7 @@ instagram: thepolygongallery/
 website: thepolygon.ca
 published: true
 price: Suggested Donation $10
+internal_id: 367
 
 category: event-2018-12
 priority: 0

@@ -17,6 +17,7 @@ instagram: mckinleyburkart
 website: https://www.mckinleyburkart.com/
 published: true
 price: 
+internal_id: 290
 
 category: event-2018-12
 priority: 0

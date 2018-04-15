@@ -17,6 +17,7 @@ instagram: i.o.n_clothingyvr
 website: www.ionclothing.ca 
 published: true
 price: 
+internal_id: 368
 
 category: event-2018-13
 priority: 0

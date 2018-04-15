@@ -17,6 +17,7 @@ instagram: intergalacticagency
 website: intergalactic.com
 published: true
 price: 
+internal_id: 320
 
 category: event-2018-12
 priority: 0

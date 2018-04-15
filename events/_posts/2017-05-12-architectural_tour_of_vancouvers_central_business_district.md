@@ -17,6 +17,7 @@ instagram:
 website: www.raic.org/bc/
 published: true
 price: Free
+internal_id: 306
 
 category: event-2018-12
 priority: 0

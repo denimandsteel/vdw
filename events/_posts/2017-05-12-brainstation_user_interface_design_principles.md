@@ -17,6 +17,7 @@ instagram:
 website: brainstation.io
 published: true
 price: Free (use code VDW100)
+internal_id: 312
 
 category: event-2018-12
 priority: 0

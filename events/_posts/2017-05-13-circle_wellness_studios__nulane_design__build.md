@@ -17,6 +17,7 @@ instagram: circle_studios
 website: http://circlewellnessstudios.com
 published: true
 price: Free
+internal_id: 186
 
 category: event-2018-13
 priority: 0

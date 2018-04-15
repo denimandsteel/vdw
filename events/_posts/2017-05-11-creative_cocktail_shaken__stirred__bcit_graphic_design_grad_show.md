@@ -17,6 +17,7 @@ instagram:
 website: https://www.bcitsa.ca/careerservices/events/
 published: true
 price: Free
+internal_id: 369
 
 category: event-2018-11
 priority: 0

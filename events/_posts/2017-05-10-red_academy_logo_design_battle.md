@@ -17,6 +17,7 @@ instagram:
 website: redacademy.com/
 published: true
 price: Free
+internal_id: 285
 
 category: event-2018-10
 priority: 0

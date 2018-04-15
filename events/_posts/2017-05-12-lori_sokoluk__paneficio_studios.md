@@ -17,6 +17,7 @@ instagram: lorisokoluk/
 website: www.lorisokoluk.com
 published: true
 price: 
+internal_id: 362
 
 category: event-2018-12
 priority: 0

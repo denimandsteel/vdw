@@ -17,6 +17,7 @@ instagram: hapacobo
 website: hapacobo.com/now-open-foot-of-lonsdale-megabench/
 published: true
 price: Free
+internal_id: 377
 
 category: event-2018-12
 priority: 0

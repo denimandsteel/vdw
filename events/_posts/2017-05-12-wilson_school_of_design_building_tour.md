@@ -17,6 +17,7 @@ instagram:
 website: www.kpu.ca/design
 published: true
 price: Free - RSVP required
+internal_id: 155
 
 category: event-2018-12
 priority: 0

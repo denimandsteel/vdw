@@ -158,7 +158,7 @@ for (var date in vdwEvents) {
       };
       marker.addTo(events);
       oms.addMarker(marker);
-      $('#event-' + event.slug + ' .js-marker-index').text(index + '. ');
+      $('#' + event.id + ' .js-marker-index').text(index + '. ');
       index += 1;
     });
     events.addTo(map);
@@ -178,7 +178,9 @@ $('.js-show-on-map').click(function() {
   map_options[$(this).data('day')].map.flyTo({ lat: $(this).data('lat'), lng: $(this).data('long') }, 15.5);
 });
 
-var toggleOnList = function(eventId) {
+var toggleOnList = function(eventId, adjustHeight) {
+  var heightBefore = $('#your-list').height();
+
   if ( ! $( '#' + eventId + ' .js-add-to-list').hasClass('active') ) {
     $( '#' + eventId + ' .js-add-to-list').addClass('active');
     $( '#' + eventId + ' .js-add-to-list').html('Remove from List');
@@ -190,15 +192,20 @@ var toggleOnList = function(eventId) {
     $( '#' + eventId + ' .js-add-to-list').html('Add to List');
   }
 
+  var heightAfter = $('#your-list').height();
+  if (adjustHeight) {
+    window.scrollTo(0, scrollY + heightAfter - heightBefore)
+  }
+
   var eventCount = $('#your-list .event-item').length;
   if (eventCount > 0) {
     $('#your-list .empty').hide();
     $('#your-list .share').show();
     $('.js-event-count').html(eventCount + ' events');
 
-    var events = $('#your-list .event-item').map(function() { return $(this).attr('id'); }).toArray().join('&')
-    $('#your-list .share a').attr('href', 'mailto:?subject=Event List for Vancouver Design Week&body=' + encodeURIComponent(window.location.origin + window.location.pathname + '?' + events) );
-    Cookies.set('your-list', events, { expires: 30 });
+    var events = $('#your-list .event-item').map(function() { return $(this).attr('id'); }).toArray().join(',')
+    $('#your-list .share a').attr('href', 'mailto:?subject=Event List for Vancouver Design Week&body=' + encodeURIComponent(window.location.origin + window.location.pathname + '?list=' + events) );
+    Cookies.set('vdw-list', events, { expires: 30 });
   }
   else {
     $('#your-list .empty').show();
@@ -208,15 +215,19 @@ var toggleOnList = function(eventId) {
 };
 
 $('.js-add-to-list').click(function() {
-  toggleOnList($(this).data('event'));
+  toggleOnList($(this).data('event'), $(this).parents('#your-list').length === 0 );
 });
 
 var urlEvents = [];
-if (window.location.search.length > 1) {
-  urlEvents = window.location.search.replace('?', '').split('&');
+if (!!window.location.search.match('list')) {
+  urlEvents = window.location.search.replace('?list=', '').split(',');
+  $('#your-list').addClass('active');
+  $('html, body').animate({
+    scrollTop: $('#your-list').offset().top - $('.c-navigation').height() - 5,
+  }, 1000);
 }
-else if (Cookies.get('your-list') && Cookies.get('your-list').length > 0) {
-  urlEvents = Cookies.get('your-list').split('&');
+else if (Cookies.get('vdw-list') && Cookies.get('vdw-list').length > 0) {
+  urlEvents = Cookies.get('vdw-list').split(',');
 }
 $.each(urlEvents, function(i, eventId) {
   toggleOnList(eventId);

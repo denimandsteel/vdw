@@ -17,6 +17,7 @@ instagram:
 website: vancouver.ca/parks-recreation-culture/parks-and-recreation.aspx
 published: true
 price: Suggested donation $10
+internal_id: 378
 
 category: event-2018-12
 priority: 0

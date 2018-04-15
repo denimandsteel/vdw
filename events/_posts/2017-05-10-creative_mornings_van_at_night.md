@@ -17,6 +17,7 @@ instagram: hcma.ca
 website: hcma.ca
 published: true
 price: Free
+internal_id: 379
 
 category: event-2018-10
 priority: 0

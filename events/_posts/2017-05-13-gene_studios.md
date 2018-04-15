@@ -17,6 +17,7 @@ instagram: charkennedy_
 website: www.charkennedy.com
 published: true
 price: Free
+internal_id: 297
 
 category: event-2018-13
 priority: 0

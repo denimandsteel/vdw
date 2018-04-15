@@ -17,6 +17,7 @@ instagram: #hapacobo and #milkovicharch
 website: hapacobo.com and http://www.milkovicharchitects.com
 published: true
 price: 
+internal_id: 300
 
 category: event-2018-13
 priority: 0

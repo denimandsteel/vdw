@@ -17,6 +17,7 @@ instagram: starkarchitecture
 website: starkarchitecture.com
 published: true
 price: 
+internal_id: 192
 
 category: event-2018-12
 priority: 0

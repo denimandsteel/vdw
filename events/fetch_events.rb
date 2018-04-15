@@ -4,6 +4,7 @@ require 'fileutils'
 require 'json'
 
 VDWEvent = Struct.new( 
+  :internal_id,
   :day,
   :title,
   :description,
@@ -61,6 +62,7 @@ instagram: #{event.instagram}
 website: #{event.website}
 published: #{event.published}
 price: #{event.price}
+internal_id: #{event.internal_id}
 
 category: event-2018-#{dayNumber}
 priority: #{event.priority}
@@ -135,6 +137,7 @@ def readEvents(url)
     # if eventJSON['public'] && eventJSON['year2018'] && dates.length > 0
     if eventJSON['confirmed'] && eventJSON['year2018'] && dates.length > 0
       # puts "#{eventJSON['name']} #{dates}"
+      event.internal_id = eventJSON['id']
       event.title = eventJSON['name'].tr("\n"," ")
       event.description = eventJSON['public_description'].tr("\n"," ")
       event.start_time = eventJSON['time']

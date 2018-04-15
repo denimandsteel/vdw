@@ -17,6 +17,7 @@ instagram: thesoapdispensary
 website: https://www.thesoapdispensary.com/
 published: true
 price: 
+internal_id: 154
 
 category: event-2018-13
 priority: 0

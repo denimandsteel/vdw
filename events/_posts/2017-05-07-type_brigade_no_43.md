@@ -17,6 +17,7 @@ instagram:
 website: typebrigade.com
 published: true
 price: 
+internal_id: 202
 
 category: event-2018-7
 priority: 0

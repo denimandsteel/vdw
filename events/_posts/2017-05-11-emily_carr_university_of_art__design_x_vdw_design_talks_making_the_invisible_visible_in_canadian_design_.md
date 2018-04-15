@@ -17,6 +17,7 @@ instagram: emilycarru/
 website: www.ecuad.ca
 published: true
 price: By Donation (suggested $10)
+internal_id: 213
 
 category: event-2018-11
 priority: 0

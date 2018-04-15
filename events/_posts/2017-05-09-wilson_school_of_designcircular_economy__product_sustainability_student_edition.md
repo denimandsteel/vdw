@@ -17,6 +17,7 @@ instagram:
 website: 
 published: true
 price: FREE - RSVP
+internal_id: 382
 
 category: event-2018-9
 priority: 0

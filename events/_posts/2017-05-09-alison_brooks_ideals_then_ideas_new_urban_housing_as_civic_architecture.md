@@ -17,6 +17,7 @@ instagram:
 website: www.alisonbrooksarchitects.com
 published: true
 price: By Donation, suggested $10
+internal_id: 372
 
 category: event-2018-9
 priority: 0

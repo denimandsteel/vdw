@@ -17,6 +17,7 @@ instagram: www.instagram.com/arnt_arntzen
 website: www.arntarntzen.com
 published: true
 price: Free
+internal_id: 359
 
 category: event-2018-12
 priority: 0

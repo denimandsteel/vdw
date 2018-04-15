@@ -17,6 +17,7 @@ instagram: CHILdesign
 website: www.bharchitects.com/en/
 published: true
 price: Free
+internal_id: 283
 
 category: event-2018-12
 priority: 0

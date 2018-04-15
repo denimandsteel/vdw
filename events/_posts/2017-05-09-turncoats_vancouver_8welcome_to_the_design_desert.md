@@ -17,6 +17,7 @@ instagram:
 website: turncoats.ca/
 published: true
 price: 
+internal_id: 318
 
 category: event-2018-9
 priority: 0
