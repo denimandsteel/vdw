@@ -10,8 +10,8 @@ address: "50 Water St, Vancouver, British Columbia V6B 2K8, Canada, Vancouver, B
 addressLabel: "50 Water St, Vancouver, British Columbia V6B 2K8, Canada"
 latitude: 49.2834529282651
 longitude: -123.105709761663
-eventUrl: 
-eventUrlLabel: RSVP required
+eventUrl: www.eventbrite.com/e/matthew-mccormick-technically-beautiful-tickets-44380256542
+eventUrlLabel: RSVP
 twitter: 
 instagram: 
 website: www.matthewmccormick.ca
