@@ -16,7 +16,7 @@ twitter: SoapDispensary
 instagram: thesoapdispensary
 website: https://www.thesoapdispensary.com/
 published: true
-price: 
+price: Free
 internal_id: 154
 
 category: event-2018-13
