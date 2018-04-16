@@ -10,7 +10,7 @@ address: "675 East Broadway, Vancouver, BC, Canada"
 addressLabel: "675 East Broadway"
 latitude: 49.2624855288608
 longitude: -123.089446757138
-eventUrl: https://www.picatic.com/nada_x_vancouverdesignweek
+eventUrl: www.picatic.com/nada_x_vancouverdesignweek
 eventUrlLabel: Get Tickets
 twitter: nadagrocery
 instagram: nadagrocery

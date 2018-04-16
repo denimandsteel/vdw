@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: perkinswill_VAN
 instagram: perkinswill_VAN
-website: ca.perkinswill.com/
+website: perkinswill.com/offices/vancouver.html
 published: true
 price: Free
 internal_id: 302
