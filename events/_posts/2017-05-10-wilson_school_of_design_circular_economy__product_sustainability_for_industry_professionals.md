@@ -11,7 +11,7 @@ addressLabel: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8"
 latitude: 49.1748603216866
 longitude: -123.128012836554
 eventUrl: www.eventbrite.ca/e/circular-economy-product-sustainability-for-industry-professionals-tickets-45121409350
-eventUrlLabel: 
+eventUrlLabel: RSVP
 twitter: 
 instagram: 
 website: www.kpu.ca/design
