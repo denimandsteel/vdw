@@ -1,6 +1,6 @@
 ---
-dayOfWeek: Thu
-dayOfMonth: May 10
+dayOfWeek: Sat
+dayOfMonth: May 12
 title: "Pivot & Pilot: Creative-Communicating Visually: How to Make Design Speak for Itself"
 description: "Join us for a discussion on the impact of evocative branding. Why do different brands selling similar items, compel entirely different groups of people? We will examine the communicative power of strategic branding as well as give insight into our design process. Drinks and snacks will be provided."
 startTime: 1-4 pm
@@ -19,7 +19,7 @@ published: true
 price: Free
 internal_id: 199
 
-category: event-2018-10
+category: event-2018-12
 priority: 0
-slug: 2018-05-10-pivot__pilot_creativecommunicating_visually_how_to_make_design_speak_for_itself
+slug: 2018-05-12-pivot__pilot_creativecommunicating_visually_how_to_make_design_speak_for_itself
 ---
