@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Carter Hales Design Lab"
 description: "We are a branding, packaging and website design firm."
-startTime: 
+startTime: 1-4
 endTime: 
 type: Design Studios
 address: "377 West 6th Ave Vancouver, Vancouver, BC, Canada"

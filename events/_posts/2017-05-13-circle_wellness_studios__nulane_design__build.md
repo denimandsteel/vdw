@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Circle Wellness Studios & NULANE Design + Build"
-description: "We are re-thinking how wellness amenities are experienced at home and in businesses. We design and build custom wellness experiences with a combination of ancient wisdom and modern building technology to make our installations inviting, efficient, and sustainable. We use natural materials and elements such as salt, crystal, charcoal, wood, stone, heat, air, and water. "
+description: "We are re-thinking how wellness amenities are experienced at home and in businesses. We design and build custom wellness experiences with a combination of ancient wisdom and modern building technology to make our installations inviting, efficient, and sustainable. We use natural materials and elements such as salt, crystal, charcoal, wood, stone, heat, air, and water. Open studio visit includes: NULANE Design + Build is a boutique Design and Build firm passionate about designing small living spaces. Our natural niche in the Vancouver housing market is lane way homes, which allows as to help in the current housing crisis. With the idea of promoting the use of ethical and environmentally responsible building materials, we also enjoy designing alternative residential buildings like Straw bale houses, Earthships and Tiny Houses."
 startTime: 1-4
 endTime: 
 type: Design Studios
