@@ -10,7 +10,7 @@ address: "3612 Main Street, Vancouver BC, Vancouver, BC, Canada"
 addressLabel: "3612 Main Street, Vancouver BC"
 latitude: 49.2526339999999
 longitude: -123.10057
-eventUrl: www.oddtea.ca
+eventUrl: 
 eventUrlLabel: 
 twitter: odd_tea
 instagram: odd_tea
