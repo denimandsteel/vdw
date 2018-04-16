@@ -11,12 +11,12 @@ addressLabel: "5600 Kwantlen Street, Richmond"
 latitude: 49.1748365957035
 longitude: -123.128329541562
 eventUrl: www.eventbrite.ca/e/wilson-school-of-design-building-tour-tickets-45121642046​
-eventUrlLabel: Reserve your spot
+eventUrlLabel: RSVP
 twitter: 
 instagram: 
 website: www.kpu.ca/design
 published: true
-price: Free - RSVP required
+price: Free
 internal_id: 155
 
 category: event-2018-12

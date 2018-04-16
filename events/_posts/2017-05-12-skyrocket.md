@@ -10,7 +10,7 @@ address: "#301 - 560 Beatty St., Vancouver, BC, Canada"
 addressLabel: "#301 - 560 Beatty St."
 latitude: 49.2805576177306
 longitude: -123.111464477198
-eventUrl: skyrocket.is
+eventUrl: 
 eventUrlLabel: 
 twitter: skyrkt
 instagram: skyrocketdigital/

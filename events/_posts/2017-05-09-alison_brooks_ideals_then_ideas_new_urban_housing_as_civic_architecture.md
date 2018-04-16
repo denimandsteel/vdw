@@ -11,7 +11,7 @@ addressLabel: "UBC, Robson Square"
 latitude: 49.2812000000001
 longitude: -123.123
 eventUrl: 
-eventUrlLabel: Tickets Available April 18 9 am
+eventUrlLabel: Tickets Coming Soon
 twitter: 
 instagram: 
 website: www.alisonbrooksarchitects.com

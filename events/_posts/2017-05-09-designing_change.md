@@ -11,7 +11,7 @@ addressLabel: "1800 Spyglass Place"
 latitude: 49.2703140000001
 longitude: -123.1149
 eventUrl: www.picatic.com/DesignTalksVDW
-eventUrlLabel: Reserve your Spot
+eventUrlLabel: RSVP
 twitter: 
 instagram: 
 website: www.citystudiovancouver.com/
