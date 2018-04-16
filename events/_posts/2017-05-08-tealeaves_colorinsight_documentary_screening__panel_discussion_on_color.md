@@ -10,7 +10,7 @@ address: "SFU Goldcorp Centre for the Arts, 149 W Hastings St., Vancouver, BC, C
 addressLabel: "SFU Goldcorp Centre for the Arts, 149 W Hastings St."
 latitude: 49.282788
 longitude: -123.10776
-eventUrl: https://www.eventbrite.ca/e/tealeaves-colorinsight-documentary-screening-panel-discussion-on-color-tickets-45047147230
+eventUrl: www.eventbrite.ca/e/tealeaves-colorinsight-documentary-screening-panel-discussion-on-color-tickets-45047147230
 eventUrlLabel: All ticket proceeds go toward Vancouver Design Foundation
 twitter: 
 instagram: 

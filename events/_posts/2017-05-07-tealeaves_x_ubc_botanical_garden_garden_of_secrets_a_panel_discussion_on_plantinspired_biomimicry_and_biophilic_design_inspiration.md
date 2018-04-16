@@ -10,7 +10,7 @@ address: "UBC Botanical Garden and Centre for Plant Research, 6804 S W Marine Dr
 addressLabel: "UBC Botanical Garden and Centre for Plant Research, 6804 S W Marine Dr, Greater Vancouver A, British Columbia V6T 2J8, Canada"
 latitude: 49.253333333333
 longitude: -123.25
-eventUrl: https://www.eventbrite.ca/e/tealeaves-x-ubc-botanical-garden-garden-of-secrets-a-panel-discussion-on-plant-inspired-biomimicry-tickets-45046414037
+eventUrl: www.eventbrite.ca/e/tealeaves-x-ubc-botanical-garden-garden-of-secrets-a-panel-discussion-on-plant-inspired-biomimicry-tickets-45046414037
 eventUrlLabel: Get Tickets
 twitter: 
 instagram: 

@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: www.modacitylife.com/why-we-cycle
 published: true
-price: 13
+price: $13
 internal_id: 209
 
 category: event-2018-7

@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: smallhousingbc.org
 published: true
-price: $10 (suggested donation, pay at door)
+price: $10 (suggested donation)
 internal_id: 370
 
 category: event-2018-12
