@@ -2,21 +2,21 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "ODD Tea @ Vancouver Special Anniversary"
-description: "ODD Tea welcomes its you to our debut opening ceremony through VDW.<br> <br> Exclusively for this debut, a handful of meticulously curated tea infused beverages will be served for tasting thoughtfully paired with pastries that will express 'a perfect marriage.'<br> <br> Amid a variety of roses and orchids, ODD Tea share the story behind its inception, health benefits of locally purveyed ingredients, and the know-how to making delicious recipes with an odd twist."
+description: "ODD Tea welcomes its you to our debut opening ceremony through VDW. Join us at our POP up at the Vancouver Special Anniversary event.<br> <br> Exclusively for this debut, a handful of meticulously curated tea infused beverages will be served for tasting. <br> <br> Amid a variety of roses and orchids, ODD Tea share the story behind its inception, health benefits of locally purveyed ingredients, and the know-how to making delicious recipes with an odd twist."
 startTime: 10-5
 endTime: 
 type: Design Tastings
-address: "N/A, Vancouver, BC, Canada"
-addressLabel: "N/A"
-latitude: 49.2881251862306
-longitude: -123.170801454487
+address: "3612 Main Street, Vancouver BC, Vancouver, BC, Canada"
+addressLabel: "3612 Main Street, Vancouver BC"
+latitude: 49.2526339999999
+longitude: -123.10057
 eventUrl: http://www.oddtea.ca
 eventUrlLabel: 
 twitter: odd_tea
 instagram: odd_tea
 website: http://www.oddtea.ca
 published: true
-price: TBD
+price: 
 internal_id: 152
 
 category: event-2018-13
