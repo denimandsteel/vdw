@@ -10,7 +10,7 @@ address: "BrainStation, ground floor of 455 Granville St., Vancouver, BC, Canada
 addressLabel: "BrainStation, ground floor of 455 Granville St."
 latitude: 49.285081
 longitude: -123.11476
-eventUrl: typebrigade.com
+eventUrl: https://www.meetup.com/typebrigade/
 eventUrlLabel: RSVP
 twitter: 
 instagram: 
