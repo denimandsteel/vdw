@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: www.kpu.ca/design
 published: true
-price: 
+price: Free
 internal_id: 381
 
 category: event-2018-10
