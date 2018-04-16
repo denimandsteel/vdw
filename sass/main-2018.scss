@@ -340,7 +340,7 @@ html {
   color: $color-secondary;
   border-bottom: 2px solid $color-primary;
 
-  &:hover,
+  .support-hover &:hover,
   &:active {
     background-color: $color-primary;
     color: $color-base;
@@ -350,7 +350,7 @@ html {
 .u-email-link {
   border-bottom: 2px solid $color-base;
 
-  &:hover,
+  .support-hover &:hover,
   &:active {
     background-color: $color-base;
     color: $color-primary;
@@ -396,7 +396,7 @@ html {
   .text {
     margin: 0 0 0 20px;
   }
-  &:hover {
+  .support-hover &:hover {
     background: $color-black;
     color: white;
     .u--instagram {
@@ -513,7 +513,7 @@ button,
   text-decoration: none;
   cursor: pointer;
 
-  &:hover,
+  .support-hover &:hover,
   &:focus,
   &:active {
     text-decoration: none;
@@ -525,7 +525,7 @@ button,
   background-color: white;
   color: $color-secondary;
 
-  &:hover,
+  .support-hover &:hover,
   &:focus,
   &:active {
     background-color: $color-accent;
@@ -537,7 +537,7 @@ button,
   background-color: $color-secondary;
   color: white;
 
-  &:hover,
+  .support-hover &:hover,
   &:focus,
   &:active {
     background-color: $color-primary;
@@ -738,7 +738,7 @@ button,
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 
-  &:hover {
+  .support-hover &:hover {
     color: white;
     background-color: $color-secondary;
   }
@@ -1075,7 +1075,9 @@ button,
 .day-events.active .day-header.done { .dayname, .event-count { color: white; } }
 
 .day-events.active .day-header {
+  color: white;
   background: $color-quartary;
+  box-shadow: inset 0px 1px 4px rgba(0,0,0,0.5)
   // color: $color-base;
 }
 
@@ -1237,18 +1239,26 @@ button,
     }
 
     .highlight {
-      background: $color-base;
-      color: $color-primary;
+      // background: $color-base;
+      background: $color-secondary;
+      color: white;
       width: 140px;
-      height: 40px;
+      // height: 40px;
       // margin-top: 10px;
       // margin-right: 15px;
       text-transform: uppercase;
       text-align: center;
       float: right;
-      padding: 9px;
-      border: 2px solid $color-primary;
+      padding: 9px 5px 5px;
+      // border: 2px solid $color-primary;
       margin-bottom: 20px;
+      display: block;
+      font-weight: bold;
+      cursor: pointer;
+      .support-hover &:hover {
+        color: white;
+        background: $color-primary;
+      }
       @include media($breaks-at-sm) {
         margin-bottom: 0px;
       }
@@ -1274,7 +1284,7 @@ button,
 }
 
 .leaflet-bar a,
-.leaflet-bar a:hover {
+.support-hover .leaflet-bar a:hover {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -1317,7 +1327,7 @@ button,
     background-image: url(../images/marker-info.svg)
   }
 
-  &:hover {
+  .support-hover &:hover {
     opacity: 0.9;
     // animation: bobbing 0.2s infinite;
   }

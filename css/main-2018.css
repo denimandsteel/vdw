@@ -1744,7 +1744,7 @@ html {
   color: #FE5000;
   border-bottom: 2px solid #7E2D40;
 }
-.u-callout-link:hover, .u-callout-link:active {
+.support-hover .u-callout-link:hover, .u-callout-link:active {
   background-color: #7E2D40;
   color: #fff;
 }
@@ -1752,7 +1752,7 @@ html {
 .u-email-link {
   border-bottom: 2px solid #fff;
 }
-.u-email-link:hover, .u-email-link:active {
+.support-hover .u-email-link:hover, .u-email-link:active {
   background-color: #fff;
   color: #7E2D40;
 }
@@ -1796,11 +1796,11 @@ html {
 .c-big-social .text {
   margin: 0 0 0 20px;
 }
-.c-big-social:hover {
+.support-hover .c-big-social:hover {
   background: #27251F;
   color: white;
 }
-.c-big-social:hover .u--instagram {
+.support-hover .c-big-social:hover .u--instagram {
   background-image: url("/images/glyph-logo_May2016.png");
 }
 
@@ -1911,12 +1911,12 @@ button,
   text-decoration: none;
   cursor: pointer;
 }
-button:hover, button:focus, button:active,
-.e-btn:hover,
+.support-hover button:hover, button:focus, button:active,
+.support-hover .e-btn:hover,
 .e-btn:focus,
 .e-btn:active,
-.e-btn-primary:hover,
-.e-btn-secondary:hover,
+.support-hover .e-btn-primary:hover,
+.support-hover .e-btn-secondary:hover,
 .e-btn-primary:focus,
 .e-btn-secondary:focus,
 .e-btn-primary:active,
@@ -1928,7 +1928,7 @@ button:hover, button:focus, button:active,
   background-color: white;
   color: #FE5000;
 }
-.e-btn-primary:hover, .e-btn-primary:focus, .e-btn-primary:active {
+.support-hover .e-btn-primary:hover, .e-btn-primary:focus, .e-btn-primary:active {
   background-color: #FE5000;
 }
 
@@ -1936,7 +1936,7 @@ button:hover, button:focus, button:active,
   background-color: #FE5000;
   color: white;
 }
-.e-btn-secondary:hover, .e-btn-secondary:focus, .e-btn-secondary:active {
+.support-hover .e-btn-secondary:hover, .e-btn-secondary:focus, .e-btn-secondary:active {
   background-color: #7E2D40;
 }
 
@@ -2387,7 +2387,7 @@ button:hover, button:focus, button:active,
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.c-navigation--link:hover {
+.support-hover .c-navigation--link:hover {
   color: white;
   background-color: #FE5000;
 }
@@ -2704,7 +2704,9 @@ button:hover, button:focus, button:active,
 }
 
 .day-events.active .day-header {
+  color: white;
   background: #FE5000;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .map-container {
@@ -2862,16 +2864,21 @@ button:hover, button:focus, button:active,
   }
 }
 .eventheader .right .highlight {
-  background: #fff;
-  color: #7E2D40;
+  background: #FE5000;
+  color: white;
   width: 140px;
-  height: 40px;
   text-transform: uppercase;
   text-align: center;
   float: right;
-  padding: 9px;
-  border: 2px solid #7E2D40;
+  padding: 9px 5px 5px;
   margin-bottom: 20px;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+.support-hover .eventheader .right .highlight:hover {
+  color: white;
+  background: #7E2D40;
 }
 @media screen and (min-width: 34.375em) {
   .eventheader .right .highlight {
@@ -2896,7 +2903,7 @@ button:hover, button:focus, button:active,
 }
 
 .leaflet-bar a,
-.leaflet-bar a:hover {
+.support-hover .leaflet-bar a:hover {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -2935,7 +2942,7 @@ button:hover, button:focus, button:active,
   margin-top: -28px;
   background-image: url(../images/marker-info.svg);
 }
-.marker:hover {
+.support-hover .marker:hover {
   opacity: 0.9;
 }
 .marker span {

@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+window.addEventListener('touchstart', function onFirstTouch() {
+  $('body').removeClass('support-hover');
+  $('body').addClass('support-touch');
+  window.removeEventListener('touchstart', onFirstTouch, false);
+}, false);
 
 // Events open/close.
 $('.day-header').on('click', function() {
