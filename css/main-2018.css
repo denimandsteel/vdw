@@ -1166,10 +1166,10 @@ h3,
 h4,
 .golf,
 h5,
-.eventheader .left .title,
+.eventheader .info .title,
 .hotel,
 h6,
-.eventheader .right .price {
+.attend .price {
   font-family: 'Tabac Sans';
 }
 
@@ -1392,7 +1392,7 @@ h4 {
 
 .golf,
 h5,
-.eventheader .left .title {
+.eventheader .info .title {
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0.05rem;
@@ -1403,7 +1403,7 @@ h5,
 @media screen and (min-width: 50em) {
   .golf,
   h5,
-  .eventheader .left .title {
+  .eventheader .info .title {
     font-size: 19.73025px;
     margin-bottom: 25.6px;
     margin-top: 51.2px;
@@ -1412,21 +1412,21 @@ h5,
 @media screen and (min-width: 64em) {
   .golf,
   h5,
-  .eventheader .left .title {
+  .eventheader .info .title {
     font-size: 20.79675px;
   }
 }
 @media screen and (min-width: 78.5em) {
   .golf,
   h5,
-  .eventheader .left .title {
+  .eventheader .info .title {
     font-size: 21.33px;
   }
 }
 
 .hotel,
 h6,
-.eventheader .right .price {
+.attend .price {
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: 0.05rem;
@@ -1437,7 +1437,7 @@ h6,
 @media screen and (min-width: 50em) {
   .hotel,
   h6,
-  .eventheader .right .price {
+  .attend .price {
     font-size: 14.8px;
     margin-bottom: 25.6px;
     margin-top: 51.2px;
@@ -1446,14 +1446,14 @@ h6,
 @media screen and (min-width: 64em) {
   .hotel,
   h6,
-  .eventheader .right .price {
+  .attend .price {
     font-size: 15.6px;
   }
 }
 @media screen and (min-width: 78.5em) {
   .hotel,
   h6,
-  .eventheader .right .price {
+  .attend .price {
     font-size: 16px;
   }
 }
@@ -2592,6 +2592,7 @@ button,
 }
 .day-events.sticky .map-container {
   position: fixed;
+  z-index: 1;
 }
 .day-events.sticky .map-container:after {
   content: '';
@@ -2820,15 +2821,7 @@ button,
   content: '';
   display: table;
 }
-.eventheader .left {
-  float: none;
-}
-@media screen and (min-width: 50em) {
-  .eventheader .left {
-    float: left;
-  }
-}
-.eventheader .left .marker {
+.eventheader .info .marker {
   display: inline-block;
   float: left;
   margin: 0px;
@@ -2837,7 +2830,7 @@ button,
   margin-top: 15px;
   background: url(../images/marker.svg) top center no-repeat;
 }
-.eventheader .left .priority {
+.eventheader .info .priority {
   display: inline-block;
   float: left;
   margin: 0px;
@@ -2848,54 +2841,48 @@ button,
   color: #555;
   font-weight: 200;
 }
-.eventheader .left .title {
+.eventheader .info .title {
   letter-spacing: 0.5px;
   margin: 0;
   padding-bottom: 0.75rem;
   color: #FE5000;
 }
-.eventheader .right {
-  display: block;
-  float: none;
+
+.attend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
 }
-@media screen and (min-width: 50em) {
-  .eventheader .right {
-    float: right;
-  }
-}
-.eventheader .right .highlight {
+.attend .highlight {
   background: #FE5000;
   color: white;
-  width: 140px;
   text-transform: uppercase;
   text-align: center;
-  float: right;
-  padding: 9px 5px 5px;
-  margin-bottom: 20px;
+  padding: 9px 10px 5px;
   display: block;
   font-weight: bold;
   cursor: pointer;
 }
-.support-hover .eventheader .right .highlight:hover {
+.support-hover .attend .highlight:hover {
   color: white;
   background: #7E2D40;
 }
 @media screen and (min-width: 34.375em) {
-  .eventheader .right .highlight {
+  .attend .highlight {
     margin-bottom: 0px;
   }
 }
-.eventheader .right .price {
+.attend div.highlight {
+  opacity: 0.5;
+}
+.attend .price {
   font-weight: 700;
   color: #4a4a4a;
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 0;
 }
-@media screen and (min-width: 34.375em) {
-  .eventheader .right .price {
-    margin: 10px 15px 0 0;
-  }
+.attend .highlight + .price {
+  margin-left: 10px;
 }
 
 .leaflet-bar {

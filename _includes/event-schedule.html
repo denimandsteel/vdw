@@ -37,9 +37,19 @@
                 </script>
                 <div id="{{post.internal_id}}" class="event-item" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">
                   <div class="eventheader row">
-                    <div class="left md-eight columns">
+                    <div class="info">
                       <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
                       <h3 class="title"><span class="js-marker-index"></span>{{ post.title }}</h3>
+                      <div class="attend">
+                        {% if post.eventUrl or post.eventUrlLabel %}
+                          {% if post.eventUrl %}
+                            <a target="_blank" rel="noopener" href="http://{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
+                          {% else %}
+                            <div class="highlight">{{ post.eventUrlLabel }}</div>
+                          {% endif %}
+                        {% endif %}
+                        <p class="price">{{ post.price }}</p>
+                      </div>
                       <p class="time-and-place">
                         <span class="date">{{ site.categories[eventDayCategory][0].dayOfWeek}}, {{ site.categories[eventDayCategory][0].dayOfMonth}} - </span>
 
@@ -54,16 +64,6 @@
                         <span class="action-button js-show-on-map" data-day="map-{{eventDayCategory}}" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">Show on Map</span>
                         <span class="action-button js-add-to-list" data-day="map-{{eventDayCategory}}" data-event="{{post.internal_id}}">Add to List</span>
                       </p>
-                    </div>
-                    <div class="right md-four columns">
-                      <p class="price">{{ post.price }}</p>
-                      {% if post.eventUrl or post.eventUrlLabel %}
-                        {% if post.eventUrl %}
-                          <a target="_blank" rel="noopener" href="http://{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
-                        {% else %}
-                          <div class="highlight">{{ post.eventUrlLabel }}</div>
-                        {% endif %}
-                      {% endif %}
                     </div>
                   </div>
 
