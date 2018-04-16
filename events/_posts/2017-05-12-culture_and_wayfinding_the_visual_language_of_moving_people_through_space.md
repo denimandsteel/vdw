@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Culture and Wayfinding: The Visual Language of Moving People through Space"
 description: "SEGD Vancouver (our local chapter of the Society for Experiential Graphic Design) will review the principles of wayfinding and explore the cultural implications of the language of signage, iconography and message in built environments.<br> By SEGD Vancouver and SubCulture at Creative Coworkers."
-startTime: 5 pm start 
+startTime: 5 pm 
 endTime: 
 type: Open Call
 address: "343 Railway St Vancouver, BC, Vancouver, BC, Canada"
