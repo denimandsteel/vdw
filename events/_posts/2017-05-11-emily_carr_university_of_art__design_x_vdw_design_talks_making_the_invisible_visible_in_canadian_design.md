@@ -11,7 +11,7 @@ addressLabel: "520 East 1st Avenue Vancouver, BC V5T 0H2"
 latitude: 49.2675890002937
 longitude: -123.092395311788
 eventUrl: 
-eventUrlLabel: 
+eventUrlLabel: Tickets April 18
 twitter: 
 instagram: emilycarru/
 website: www.ecuad.ca
