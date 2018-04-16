@@ -10,7 +10,7 @@ address: "495 Railway St, Vancouver, British Columbia V6A 1B1, Canada, Vancouver
 addressLabel: "495 Railway St, Vancouver, British Columbia V6A 1B1, Canada"
 latitude: 49.285084
 longitude: -123.09345
-eventUrl: vimeo.com/226026640
+eventUrl: 
 eventUrlLabel: 
 twitter: 
 instagram: 

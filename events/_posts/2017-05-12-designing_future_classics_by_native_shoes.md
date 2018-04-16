@@ -10,7 +10,7 @@ address: "14 Water St, Vancouver, BC V6B 1A4, Vancouver, BC, Canada"
 addressLabel: "14 Water St, Vancouver, BC V6B 1A4"
 latitude: 49.2835184587074
 longitude: -123.104811524029
-eventUrl: www.nativeshoes.com
+eventUrl: 
 eventUrlLabel: 
 twitter: 
 instagram: 
