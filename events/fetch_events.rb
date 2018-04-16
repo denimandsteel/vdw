@@ -134,8 +134,8 @@ def readEvents(url)
 
     # puts "#{eventJSON['name']} - #{eventJSON['public']} - #{eventJSON['year2018']}"
 
-    # if eventJSON['public'] && eventJSON['year2018'] && dates.length > 0
-    if eventJSON['confirmed'] && eventJSON['year2018'] && dates.length > 0
+    if eventJSON['public'] && eventJSON['year2018'] && dates.length > 0
+    # if eventJSON['confirmed'] && eventJSON['year2018'] && dates.length > 0
       # puts "#{eventJSON['name']} #{dates}"
       event.internal_id = eventJSON['id']
       event.title = eventJSON['name'].tr("\n"," ")
