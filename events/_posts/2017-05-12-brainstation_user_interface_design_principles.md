@@ -10,7 +10,7 @@ address: "455 Granville St, Vancouver, BC, Canada"
 addressLabel: "455 Granville St"
 latitude: 49.285081
 longitude: -123.11476
-eventUrl: https://brainstation.io/event/intro-to-user-interface-20184517400
+eventUrl: brainstation.io/event/intro-to-user-interface-20184517400
 eventUrlLabel: RSVP
 twitter: 
 instagram: 

@@ -11,7 +11,7 @@ addressLabel: "93 Cordova St W, Vancouver, British Columbia V6B 2K9, Canada"
 latitude: 49.283054
 longitude: -123.10652
 eventUrl: 
-eventUrlLabel: 
+eventUrlLabel: By Invitation
 twitter: 
 instagram: 
 website: www.vancouver.bulthaup.com/en
