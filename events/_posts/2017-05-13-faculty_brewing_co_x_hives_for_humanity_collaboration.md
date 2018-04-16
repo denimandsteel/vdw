@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Faculty Brewing Co. X Hives For Humanity Collaboration"
 description: "In collaboration with Hives For Humanity, we have brewed a special pilot brew for VDW! Come hang out, grab a beer, and check out our space! <br> "
-startTime: 11-4
+startTime: 11-6
 endTime: 
 type: Design Tastings
 address: "1830 Ontario Street, Vancouver, BC, Canada"
