@@ -222,7 +222,8 @@ var toggleOnList = function(eventId, adjustHeight) {
   }
   else {
     $('#your-list').removeClass('has-events');
-    $('.js-event-count').html('Add events on this device or email others');
+    $('.js-event-count').html('0 Events');
+    Cookies.set('vdw-list', '', { expires: 30 });
   }
 
   var heightAfter = $('#your-list').height();

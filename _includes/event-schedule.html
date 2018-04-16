@@ -9,31 +9,6 @@
         <!-- <h5 class="ff-secondary">May 7th - 13th, 2018</h5> -->
       </div>
 
-      <div id="your-list" class="day-events">
-        <div class="day-header">
-          <h2 class="dayname">
-            <strong>Your List</strong>
-          </h2>
-          <p class="event-count"><span class="js-event-count">Add events on this device or email others</span> [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
-        </div>
-        <div class="events-list">
-          <p class="empty">Events will appear here.</p>
-          <div class="your-list map-container">
-            <div id="map-your-list" class="map"></div>
-          </div>
-          <script type="text/javascript">
-            if (typeof vdwEvents['map-your-list'] === 'undefined') {
-              vdwEvents['map-your-list'] = [];
-            }
-          </script>
-          <div class="share">
-            <a href="#" class="email action-button">Share List by Email</a>
-            <a href="#" class="twitter action-button">Share List on Twitter</a>
-            <a href="#" class="facebook action-button">Share List on Facebook</a>
-          </div>
-        </div>
-      </div>
-
       {% for dayNumber in (7..13) %}
         {% capture eventDayCategory %}event-2018-{{dayNumber}}{% endcapture %}
         {% if site.categories[eventDayCategory].size > 0 %}
@@ -108,7 +83,33 @@
           </div>
         {% endif %}
       {% endfor %}
-    <p>Planning an event? <a style="text-decoration: underline; color: inherit;" href="/brand">Help yourself to our brand assets</a> to promote it in style!</p
+
+      <div id="your-list" class="day-events">
+        <div class="day-header">
+          <h2 class="dayname">
+            <strong>Your List</strong>
+          </h2>
+          <p class="event-count"><span class="js-event-count">0 Events</span> [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+        </div>
+        <div class="events-list">
+          <p class="empty">Events added to the List will appear here and are saved only on this device. If you share your list a link will be created that reproduces your selections.</p>
+          <div class="your-list map-container">
+            <div id="map-your-list" class="map"></div>
+          </div>
+          <script type="text/javascript">
+            if (typeof vdwEvents['map-your-list'] === 'undefined') {
+              vdwEvents['map-your-list'] = [];
+            }
+          </script>
+          <div class="share">
+            <a href="#" class="email action-button">Share List by Email</a>
+            <a href="#" class="twitter action-button">Share List on Twitter</a>
+            <a href="#" class="facebook action-button">Share List on Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <p>Planning an event? <a style="text-decoration: underline; color: inherit;" href="/brand">Help yourself to our brand assets</a> to promote it in style!</p
     </section>
   </div>
 
