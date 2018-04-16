@@ -10,7 +10,7 @@ address: "3612 Main Street, Vancouver, BC, Canada"
 addressLabel: "3612 Main Street"
 latitude: 49.2620099999999
 longitude: -123.0705
-eventUrl: www.vanspecial.com
+eventUrl: 
 eventUrlLabel: 
 twitter: 
 instagram: 
