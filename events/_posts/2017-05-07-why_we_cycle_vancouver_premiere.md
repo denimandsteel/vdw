@@ -11,12 +11,12 @@ addressLabel: "1660 E Broadway, Vancouver, BC V5N 1W1"
 latitude: 49.26201
 longitude: -123.0705
 eventUrl: www.eventbrite.ca/e/why-we-cycle-vancouver-premiere-tickets-43995987182
-eventUrlLabel: 
+eventUrlLabel: Get Tickets
 twitter: 
 instagram: 
 website: www.modacitylife.com/why-we-cycle
 published: true
-price: 
+price: 13
 internal_id: 209
 
 category: event-2018-7
