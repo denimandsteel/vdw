@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "BFJ Design Showroom "
-description: "Come and get impressed by our wonderful cabinetry design and unique finishing. "
+description: "Open studio: Cabinetry design and unique finishing. "
 startTime: 11-4
 endTime: 
 type: Design Studios
