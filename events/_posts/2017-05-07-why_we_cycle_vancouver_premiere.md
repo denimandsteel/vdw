@@ -10,7 +10,7 @@ address: "1660 E Broadway, Vancouver, BC V5N 1W1, Vancouver, BC, Canada"
 addressLabel: "1660 E Broadway, Vancouver, BC V5N 1W1"
 latitude: 49.26201
 longitude: -123.0705
-eventUrl: 
+eventUrl: www.eventbrite.ca/e/why-we-cycle-vancouver-premiere-tickets-43995987182
 eventUrlLabel: 
 twitter: 
 instagram: 
