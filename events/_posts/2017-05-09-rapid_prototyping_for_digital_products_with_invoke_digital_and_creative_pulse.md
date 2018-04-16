@@ -13,10 +13,10 @@ longitude: -123.10947
 eventUrl: 
 eventUrlLabel: 
 twitter: 
-instagram: 
+instagram: cpyvr/invokedigital 
 website: www.invokedigital.co
 published: true
-price: 
+price: Free
 internal_id: 319
 
 category: event-2018-9

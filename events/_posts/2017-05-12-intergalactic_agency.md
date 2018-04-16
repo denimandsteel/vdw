@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Intergalactic Agency"
-description: "Intergalactic will be showing off our VR, AR, interactive, design and UX capabilities. We will have demos of a VR apartment walkthrough, VR Light Sabre game, augmented tablet experience for Real Estate, video demos of our interactive/design process.<br> "
+description: "Intergalactic will be showing off our VR, AR, interactive, design and UX capabilities with demos of a VR apartment walkthrough, VR Light Sabre game, augmented tablet experience for Real Estate, and video demos of our interactive/design process."
 startTime: 
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: Agencyinspace
 instagram: intergalacticagency
 website: intergalactic.com
 published: true
-price: 
+price: Free
 internal_id: 320
 
 category: event-2018-12

@@ -2,8 +2,8 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "The Soap Dispensary"
-description: "A sampling of delicious locally made snacks and beverages."
-startTime: 
+description: "Join us for a sampling of delicious locally made snacks and beverages as part of Vancouver Design Week."
+startTime: 10-6
 endTime: 
 type: Design Tastings
 address: "3718 Main St, Vancouver, BC V5V 3N7, Vancouver, BC, Canada"
@@ -16,7 +16,7 @@ twitter: SoapDispensary
 instagram: thesoapdispensary
 website: https://www.thesoapdispensary.com/
 published: true
-price: 
+price: Free
 internal_id: 154
 
 category: event-2018-13

@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Lori Sokoluk @ Paneficio Studios"
-description: "Artist talk on impact of architecture on Lori's art practice, and desired impact of the artwork on our city.<br> "
+description: "Join us for this artist talk on impact of architecture on Lori's art practice, and desired impact of the artwork on our city."
 startTime: 11-3
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: lorisokoluk/
 website: www.lorisokoluk.com
 published: true
-price: 
+price: Free
 internal_id: 362
 
 category: event-2018-12

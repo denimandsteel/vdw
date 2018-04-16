@@ -16,7 +16,7 @@ twitter: REDAcademy
 instagram: red.academy
 website: www.redacademy.com
 published: true
-price: 
+price: Free
 internal_id: 374
 
 category: event-2018-13

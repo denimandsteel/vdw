@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Haeccity Studio @ MakerLabs"
-description: "Recent work and work relating to the theme will be on display. Snacks and refreshments will be served.<br> "
+description: "Recent work and work relating to VDW's 2018 theme of Impact will be on display. Snacks and refreshments will be served."
 startTime: 
 endTime: 
 type: Design Studios

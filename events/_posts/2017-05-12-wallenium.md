@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Wallenium"
-description: "Our space features Vintage Yaletown style + modern space optimization! Come see our newly designed autonomous silent meeting room, integrated glass wall systems and locally designed craft furniture presented by @archetypeconcepts. Lets talk design while enjoying some wine, beer, refreshments and snacks. "
+description: "Our space features Vintage Yaletown style + modern space optimization! <br> <br> Come see our newly designed autonomous silent meeting room, integrated glass wall systems and locally designed craft furniture presented by @archetypeconcepts. <br> <br> Lets talk design while enjoying some refreshments and snacks."
 startTime: 
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: wallenium.ca
 published: true
-price: 
+price: Free
 internal_id: 303
 
 category: event-2018-12

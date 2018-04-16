@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Wilson School of Design Building Tour"
-description: "On this faculty-led tour, you will experience the School’s exterior glass curtain wall which produces a breathable and comfortable environment for the students within, as it regulates levels of air, light, and temperature. The innovative, wooden interior structure conveys an inviting atmosphere while incorporating sustainable, renewable design and a carbon footprint reduction. The second-floor “porch” juts out of the building and contains a student lounge with access to an outdoor terrace for enjoying Richmond’s moderate climate. The event box, on the fifth floor, takes advantage of views to the mountains and the Pacific Ocean. Come see what the centre for design innovation and leadership looks like.<br> https://www.facebook.com/events/2094229650821207/"
+description: "On this faculty-led tour, you will experience the School’s exterior glass curtain wall which produces a breathable and comfortable environment for the students within, as it regulates levels of air, light, and temperature. The innovative, wooden interior structure conveys an inviting atmosphere while incorporating sustainable, renewable design and a carbon footprint reduction. The second-floor “porch” juts out of the building and contains a student lounge with access to an outdoor terrace for enjoying Richmond’s moderate climate. <br> <br> The event box, on the fifth floor, takes advantage of views to the mountains and the Pacific Ocean. Come see what the centre for design innovation and leadership looks like."
 startTime: 12-3, tours at 1 & 2:30
 endTime: 
 type: Design Spaces

@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Timbertrain Coffee Roasters"
-description: "We will be teaching a class on how to professionally cup coffees to identify tasting notes and flavours.<br> In specialty coffee, impact can be a coffee that leaves an impression on you. Flavours that pop in new and interesting ways, or invoke a memory that you didn't realize you had. <br> "
+description: "We will be teaching a class on how to professionally cup coffees to identify tasting notes and flavours.<br> <br> In specialty coffee, impact can be a coffee that leaves an impression on you. Flavours that pop in new and interesting ways, or invoke a memory that you didn't realize you had. "
 startTime: 
 endTime: 
 type: Design Tastings

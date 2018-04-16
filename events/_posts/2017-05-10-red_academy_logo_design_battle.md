@@ -11,7 +11,7 @@ addressLabel: "1490 Broadway W, Vancouver, British Columbia V6H 1H5, Canada"
 latitude: 49.263348
 longitude: -123.13817
 eventUrl: 
-eventUrlLabel: RSVP required
+eventUrlLabel: 
 twitter: 
 instagram: 
 website: redacademy.com/

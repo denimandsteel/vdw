@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Zen Maker Labs"
-description: "We are an industry connected, education focussed community hub consisting of a maker lab, a print and digital design agency, and a business incubator and co-working space.We will open up the maker stations for all ages but with a focus on kids for later cutting, 3-d design and 3-d printing, jewelry design and poster making."
+description: "We're an industry-connected, education-focussed community hub consisting of a maker lab, a print and digital design agency, and a business incubator and co-working space. <br> <br> For VDW we'll open our maker stations for all ages with a focus on kids for laser cutting, 3D design, 3D printing, jewelry design, and poster making."
 startTime: 11-4
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter: zenmakerlab
 instagram: zenmakerlab
 website: zenmakerlab.com
 published: true
-price: 
+price: Free
 internal_id: 187
 
 category: event-2018-12

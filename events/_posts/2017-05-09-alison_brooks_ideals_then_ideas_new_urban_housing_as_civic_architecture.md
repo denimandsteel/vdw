@@ -10,8 +10,8 @@ address: "UBC, Robson Square, Vancouver, BC, Canada"
 addressLabel: "UBC, Robson Square"
 latitude: 49.2812000000001
 longitude: -123.123
-eventUrl: www.picatic.com/alisonbrooks
-eventUrlLabel: Tickets available April 18 9 am
+eventUrl: 
+eventUrlLabel: Tickets Available April 18 9 am
 twitter: 
 instagram: 
 website: www.alisonbrooksarchitects.com

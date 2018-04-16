@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Tue
 dayOfMonth: May 08
-title: "PechaKucha After Party - By Invitation"
+title: "PechaKucha After Party"
 description: ""
 startTime: 9:40pm
 endTime: 
@@ -16,10 +16,10 @@ twitter:
 instagram: 
 website: 
 published: true
-price: 
+price: By Invitation
 internal_id: 204
 
 category: event-2018-8
 priority: 0
-slug: 2018-05-08-pechakucha_after_party__by_invitation
+slug: 2018-05-08-pechakucha_after_party
 ---

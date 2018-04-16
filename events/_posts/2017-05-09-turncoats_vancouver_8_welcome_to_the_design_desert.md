@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Wed
 dayOfMonth: May 09
-title: "Turncoats Vancouver #8:Welcome to the Design Desert"
+title: "Turncoats Vancouver #8: Welcome to the Design Desert"
 description: "Who doesn’t want to throw up when reading useless labels like “most liveable city”, “greenest city”, or “hotspot for sustainable design”? Nothing can cover up the harsh reality: If not for its famed geography and picturesque surroundings, Vancouver would be a third or fourth tier city. Where are the buildings and public spaces that are artful, intelligent and innovative? Where are the ideas? Design isn’t valued here. We’re thirsty for an oasis in this design desert!"
 startTime: 6 pm 
 endTime: 
@@ -16,10 +16,10 @@ twitter:
 instagram: 
 website: turncoats.ca/
 published: true
-price: 
+price: Free
 internal_id: 318
 
 category: event-2018-9
 priority: 0
-slug: 2018-05-09-turncoats_vancouver_8welcome_to_the_design_desert
+slug: 2018-05-09-turncoats_vancouver_8_welcome_to_the_design_desert
 ---

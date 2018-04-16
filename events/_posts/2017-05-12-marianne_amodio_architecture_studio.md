@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Marianne Amodio Architecture Studio"
-description: "Come join us for a libation in the courtyard, a tour of the studio and a view of our upcoming and ongoing work. <br> "
+description: "Come join us for libations in the courtyard, a tour of the studio, and a view of our upcoming and ongoing work.<br> "
 startTime: 
 endTime: 
 type: Design Studios
@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: www.maastudio.com
 published: true
-price: 
+price: Free
 internal_id: 291
 
 category: event-2018-12

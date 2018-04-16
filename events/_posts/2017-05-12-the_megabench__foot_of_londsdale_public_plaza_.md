@@ -11,7 +11,7 @@ addressLabel: "101 Carrie Cates Ct, North Vancouver"
 latitude: 49.31081
 longitude: -123.07913
 eventUrl: 
-eventUrlLabel: RRVP April 24
+eventUrlLabel: RSVP
 twitter: 
 instagram: hapacobo
 website: hapacobo.com/now-open-foot-of-lonsdale-megabench/
