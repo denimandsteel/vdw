@@ -6,10 +6,10 @@ description: "The expected growth of our city makes for a carefully orchestrated
 startTime: 12-4
 endTime: 
 type: Design Studios
-address: "#409- 268 Keefer Street, Vancouver, British Columbia V6A 2V3 unit 409, Vancouver, BC, Canada"
-addressLabel: "#409- 268 Keefer Street, Vancouver, British Columbia V6A 2V3 unit 409"
-latitude: 49.2791807135576
-longitude: -123.098025725981
+address: "#409 - 268 Keefer Street, Vancouver, British Columbia V6A 2V3, Vancouver, BC, Canada"
+addressLabel: "#409 - 268 Keefer Street, Vancouver, British Columbia V6A 2V3"
+latitude: 49.279182
+longitude: -123.09803
 eventUrl: 
 eventUrlLabel: 
 twitter: delacajigaphoto
