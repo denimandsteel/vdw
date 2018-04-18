@@ -20,6 +20,6 @@ price: Free
 internal_id: 160
 
 category: event-2018-12
-priority: 
+priority: 0
 slug: 2018-05-12-mosh_framemakers
 ---
