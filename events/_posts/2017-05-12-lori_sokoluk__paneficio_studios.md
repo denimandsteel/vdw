@@ -6,10 +6,10 @@ description: "Join us for this artist talk on impact of architecture on Lori's a
 startTime: 11-3
 endTime: 
 type: Design Studios
-address: "800 Keefer Street, Vancouver, British Columbia V6A 2A3, Canada, Vancouver, BC, Canada"
-addressLabel: "800 Keefer Street, Vancouver, British Columbia V6A 2A3, Canada"
-latitude: 49.2848804448699
-longitude: -123.097473136082
+address: "800 Keefer Street, Vancouver, British Columbia V6A 1Y7, Vancouver, BC, Canada"
+addressLabel: "800 Keefer Street, Vancouver, British Columbia V6A 1Y7"
+latitude: 49.2789860000001
+longitude: -123.08708
 eventUrl: 
 eventUrlLabel: 
 twitter: 
