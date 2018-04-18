@@ -3,7 +3,7 @@ dayOfWeek: Fri
 dayOfMonth: May 11
 title: "Emily Carr University of Art + Design x VDW Design Talks: Making the Invisible Visible in Canadian Design"
 description: "Western Canadian design stems from humble roots: our country's early practitioners were often anonymous, though their work impacted the everyday lives of citizens. They shaped Canada through design, creating the architecture, systems and products of a newly founded and developing country. As a result, Canadian design has been, in practice, largely unseen in Canadian life and in the international design market. <br> <br> Spend an evening with five designers whose work challenges this anonymity and brings attention to the value and impact that West Coast design contributes to on a local and a global scale. Five short presentations will be followed by a roundtable discussion and audience Q&A.<br>  <br> Speakers: Bonne Zabolotney (Vice President Academic + Provost, ECUAD); Mo Dhaliwal (Director of Strategy, Skyrocket Digital) David Battersby (Partner, BattersbyHowat Architects Inc.); Michael Leckie (Principal, Leckie Studio); and Kate Duncan (Designer, Kate Duncan Furniture Design). Moderated by Anicka Quin (Editorial Director, Western Living & Vancouver magazine) and Leanne Prain (President, GDC BC)."
-startTime: Doors 5:30, 6 - 7:30 pm
+startTime: Doors 6:30, 7 - 8:30  pm
 endTime: 
 type: Open Call
 address: "520 East 1st Avenue Vancouver, BC V5T 0H2, Vancouver, BC, Canada"
