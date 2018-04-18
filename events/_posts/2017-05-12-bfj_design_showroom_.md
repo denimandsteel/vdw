@@ -13,7 +13,7 @@ longitude: -123.12666
 eventUrl: 
 eventUrlLabel: 
 twitter: 
-instagram: http://www.instagram.com/p/BZhcu9PhmqM/?taken-by=bfjdesign
+instagram: bfjdesign
 website: www.bfjdesign.com
 published: true
 price: 
