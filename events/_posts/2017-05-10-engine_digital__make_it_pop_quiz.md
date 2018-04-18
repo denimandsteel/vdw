@@ -10,10 +10,10 @@ address: "The Railway Stage & Beer Café 2808 main street, Vancouver, BC, Canada
 addressLabel: "The Railway Stage & Beer Café 2808 main street"
 latitude: 49.259532
 longitude: -123.10089
-eventUrl: 
-eventUrlLabel: 
-twitter: 
-instagram: 
+eventUrl: www.eventbrite.com/e/make-it-pop-quiz-vancouver-design-week-tickets-45249174499
+eventUrlLabel: RSVP
+twitter: makeitpopquiz
+instagram: makeitpopquiz
 website: enginedigital.com
 published: true
 price: Free

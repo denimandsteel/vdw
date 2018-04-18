@@ -12,8 +12,8 @@ latitude: 49.285081
 longitude: -123.11476
 eventUrl: www.meetup.com/typebrigade/
 eventUrlLabel: RSVP
-twitter: 
-instagram: 
+twitter: typebrigade
+instagram: typebrigade
 website: typebrigade.com
 published: true
 price: Free

@@ -12,8 +12,8 @@ latitude: 49.282788
 longitude: -123.10776
 eventUrl: www.eventbrite.ca/e/tealeaves-colorinsight-documentary-screening-panel-discussion-on-color-tickets-45047147230
 eventUrlLabel: Get Tickets
-twitter: 
-instagram: 
+twitter: tealeavesco
+instagram: tealeavesco
 website: tealeaves.com
 published: true
 price: $5

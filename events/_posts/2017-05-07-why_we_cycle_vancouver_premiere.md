@@ -12,8 +12,8 @@ latitude: 49.26201
 longitude: -123.0705
 eventUrl: www.eventbrite.ca/e/why-we-cycle-vancouver-premiere-tickets-43995987182
 eventUrlLabel: Get Tickets
-twitter: 
-instagram: 
+twitter: modacitylife
+instagram: modacitylife
 website: www.modacitylife.com/why-we-cycle
 published: true
 price: $13

@@ -12,8 +12,8 @@ latitude: 49.253333333333
 longitude: -123.25
 eventUrl: www.eventbrite.ca/e/tealeaves-x-ubc-botanical-garden-garden-of-secrets-a-panel-discussion-on-plant-inspired-biomimicry-tickets-45046414037
 eventUrlLabel: Get Tickets
-twitter: 
-instagram: 
+twitter: tealeavesco
+instagram: tealeavesco
 website: tealeaves.com
 published: true
 price: $18 - $30
