@@ -10,11 +10,11 @@ address: "BCIT Downtown Campus, 555 Seymour St., 8th Fl.- Atrium, Vancouver, BC,
 addressLabel: "BCIT Downtown Campus, 555 Seymour St., 8th Fl.- Atrium"
 latitude: 49.283419
 longitude: -123.11527
-eventUrl: www.bcitsa.ca/careerservices/events/
+eventUrl: tinyurl.com/y9hyol9z
 eventUrlLabel: RSVP
 twitter: 
 instagram: 
-website: https://www.bcitsa.ca/careerservices/events/
+website: www.bcitsa.ca/careerservices/events/
 published: true
 price: Free
 internal_id: 369
