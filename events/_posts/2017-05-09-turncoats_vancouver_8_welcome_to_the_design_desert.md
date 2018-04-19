@@ -11,12 +11,12 @@ addressLabel: "DUDOC Vancouver 1489 Frances Street Vancouver BC V5L 1Z1"
 latitude: 49.279419
 longitude: -123.073666
 eventUrl: www.eventbrite.ca/e/turncoats-8-welcome-to-the-design-desert-tickets-44753225101
-eventUrlLabel: RSVP
+eventUrlLabel: Get Ticket
 twitter: turncoatsvancouver
 instagram: turncoatsvancouver
 website: turncoats.ca/
 published: true
-price: Free
+price: $11
 internal_id: 318
 
 category: event-2018-9
