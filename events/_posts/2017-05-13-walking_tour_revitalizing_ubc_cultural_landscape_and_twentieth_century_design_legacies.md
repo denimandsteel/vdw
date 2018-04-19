@@ -8,8 +8,8 @@ endTime:
 type: Open Call
 address: ", Vancouver, BC, Canada"
 addressLabel: ""
-latitude: 
-longitude: 
+latitude: 49.2679941202153
+longitude: -123.255313273957
 eventUrl: www.vancouverheritagefoundation.org/attend-an-event/walking-tours/
 eventUrlLabel: Get Tickets
 twitter: 
