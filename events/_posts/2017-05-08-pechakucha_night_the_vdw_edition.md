@@ -16,7 +16,7 @@ twitter:
 instagram: 
 website: pechakuchavancouver.com
 published: true
-price: 19.75
+price: $19.75
 internal_id: 203
 
 category: event-2018-8
