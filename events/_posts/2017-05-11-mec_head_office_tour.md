@@ -11,12 +11,12 @@ addressLabel: "1077 Great Northern Way"
 latitude: 49.2659176585263
 longitude: -123.082055543328
 eventUrl: 
-eventUrlLabel: 
+eventUrlLabel: RSVP: katie.furniss@mec.ca
 twitter: 
 instagram: 
 website: MEC.CA
 published: true
-price: Free
+price: Free 
 internal_id: 190
 
 category: event-2018-11
