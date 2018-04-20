@@ -156,10 +156,10 @@ var setupMap = function(date) {
     });
   });
 
-  var index = 1;
-
   // Event markers.
+  var index = 1;
   window.map_options[date].events = new L.featureGroup();
+
   vdwEvents[date].forEach(function(event, i) {
     var event = vdwEvents[date][i];
     var marker;
@@ -174,6 +174,13 @@ var setupMap = function(date) {
     index += 1;
   });
   window.map_options[date].events.addTo(map);
+  // window.map_options[date].events.bringToFront();
+
+  // window.mobi = new L.featureGroup();
+  // var mobiMarker = L.marker([49.26534019822459, -123.09579849243164], { icon: L.divIcon({ className: 'marker mobi what', iconSize: 28, zIndexOffset: -1000 }) });
+  // mobiMarker.addTo(window.mobi);
+  // // oms.addMarker(mobiMarker);
+  // window.mobi.addTo(map);
 
 };
 

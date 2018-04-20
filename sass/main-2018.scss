@@ -1336,6 +1336,12 @@ button,
     margin-top: -28px;
     background-image: url(../images/marker-info.svg)
   }
+  &.mobi {
+    height: 28px;
+    margin-top: -28px;
+    background: url(../images/marker-mobi.svg) top left no-repeat;
+    z-index: 0 !important;
+  }
 
   .support-hover &:hover {
     opacity: 0.9;
