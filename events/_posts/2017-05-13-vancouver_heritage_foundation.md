@@ -6,11 +6,11 @@ description: "Revitalizing UBC: Cultural landscape and twentieth century design 
 startTime: 2-4
 endTime: 
 type: Design Spaces
-address: "Flag Pole Plaza UBC, 6331 Crescent Rd, Vancouver, BC V6T 1Z2, Vancouver, BC, Canada"
-addressLabel: "Flag Pole Plaza UBC, 6331 Crescent Rd, Vancouver, BC V6T 1Z2"
+address: "6331 Crescent Rd, Vancouver, BC V6T 1Z2, Vancouver, BC, Canada"
+addressLabel: "6331 Crescent Rd, Vancouver, BC V6T 1Z2"
 latitude: 0.00065087549084808
 longitude: -0.00156960653788474
-eventUrl: https://www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
+eventUrl: www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
 eventUrlLabel: 
 twitter: VanHeritage
 instagram: 
