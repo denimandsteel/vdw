@@ -6,15 +6,15 @@ description: "The University of British Columbia offers a rich design legacy to 
 startTime: 2-4 pm
 endTime: 
 type: Open Call
-address: ", Vancouver, BC, Canada"
-addressLabel: ""
+address: "6331 Crescent Rd, Vancouver, BC V6T 1Z2, Vancouver, BC, Canada"
+addressLabel: "6331 Crescent Rd, Vancouver, BC V6T 1Z2"
 latitude: 49.2679941202153
 longitude: -123.255313273957
 eventUrl: www.vancouverheritagefoundation.org/attend-an-event/walking-tours/
 eventUrlLabel: Get Tickets
-twitter: 
-instagram: 
-website: www.vancouverheritagefoundation.org
+twitter: VanHeritage
+instagram: vancouverheritagefoundation
+website: https://www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
 published: true
 price: $15
 internal_id: 390

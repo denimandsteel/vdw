@@ -14,7 +14,7 @@ eventUrl: https://www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
 eventUrlLabel: 
 twitter: VanHeritage
 instagram: 
-website: https://www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
+website: www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
 published: true
 price: $15
 internal_id: 389
