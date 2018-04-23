@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: 
 instagram: mckinleyburkart
-website: https://www.mckinleyburkart.com/
+website: www.mckinleyburkart.com/
 published: true
 price: 
 internal_id: 290
