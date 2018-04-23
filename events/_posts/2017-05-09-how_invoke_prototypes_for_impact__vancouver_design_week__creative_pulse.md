@@ -12,9 +12,9 @@ latitude: 49.2841919999999
 longitude: -123.10947
 eventUrl: creativepulse.co/design-week-2018/
 eventUrlLabel: Get tickets
-twitter: 
-instagram: cpyvr/invokedigital 
-website: https://www.invokedigital.co/
+twitter: invokedigital 
+instagram: cpyvr 
+website: www.invokedigital.co/
 published: true
 price: Pay what you can
 internal_id: 319
