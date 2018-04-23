@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Mia Weinberg's Studio"
-description: "I specialise in creating site-specific public art combining my professional training and years of experience as an artist with a background in materials technology, industrial engineering, and production control. I will invite you into my creative process with examples of how I integrate art into architecture and public spaces, from initial concept to installed artwork. You will get up close and personal with some of the materials I have used, including: engraved granite; Richlite® (panels made from recycled cardboard); thermo-formed translucent Corian®; Streetbond® and cement skim."
+description: "I specialise in creating site-specific public art combining my professional training and years of experience as an artist with a background in materials technology, industrial engineering, and production control. I will invite you into my creative process with examples of how I integrate art into architecture and public spaces, from initial concept to installed artwork. You will get up close and personal with some of the materials I have used, including: engraved granite; Richlite® (panels made from recycled cardboard); thermo-formed translucent Corian®; Streetbond® and cement skim.  Note: Please enter @ entrance at the loading bay on George Street."
 startTime: 11-3
 endTime: 
 type: Design Studios
