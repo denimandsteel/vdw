@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: mcfarlanebiggar
 instagram: 
-website: http://www.officemb.ca
+website: www.officemb.ca
 published: true
 price: Free
 internal_id: 289

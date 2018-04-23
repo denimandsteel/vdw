@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: lanefab
 instagram: lanefab
-website: http://www.lanefab.com
+website: www.lanefab.com
 published: true
 price: Free
 internal_id: 38

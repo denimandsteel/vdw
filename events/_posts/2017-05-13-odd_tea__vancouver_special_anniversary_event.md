@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: odd_tea
 instagram: odd_tea
-website: www.oddtea.ca
+website: oddtea.ca/new-events/
 published: true
 price: 
 internal_id: 152

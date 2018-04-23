@@ -12,9 +12,9 @@ latitude: 49.266892
 longitude: -123.11199
 eventUrl: 
 eventUrlLabel: 
-twitter: hapacobo and MilkovichArch
-instagram: #hapacobo and #milkovicharch
-website: hapacobo.com and http://www.milkovicharchitects.com
+twitter: MilkovichArch
+instagram: hapacobo/
+website: hapacobo.com 
 published: true
 price: Free
 internal_id: 300
