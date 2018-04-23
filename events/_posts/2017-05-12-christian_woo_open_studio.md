@@ -2,8 +2,8 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Christian Woo Open Studio"
-description: ""
-startTime: 1-4
+description: "Open Studio: Guided by a deep respect for the heritage of woodworking and fuelled by the pace of contemporary culture."
+startTime: 1-4 pm
 endTime: 
 type: Design Studios
 address: "7 – 20 Orwell Street North Vancouver, BC V7J 2G1, Vancouver, BC, Canada"
@@ -13,8 +13,8 @@ longitude: -123.02871
 eventUrl: 
 eventUrlLabel: 
 twitter: 
-instagram: 
-website: http://christianwoo.com
+instagram: christianwoo/?hl=en
+website: christianwoo.com
 published: true
 price: 
 internal_id: 385

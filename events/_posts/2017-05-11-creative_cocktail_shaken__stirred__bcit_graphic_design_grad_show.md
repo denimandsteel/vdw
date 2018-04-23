@@ -14,7 +14,7 @@ eventUrl: tinyurl.com/y9hyol9z
 eventUrlLabel: RSVP
 twitter: 
 instagram: 
-website: www.bcitsa.ca/careerservices/events/
+website: bcitsa.ca/careerservices/events/
 published: true
 price: Free
 internal_id: 369
