@@ -10,11 +10,11 @@ address: "6331 Crescent Rd, Vancouver, BC V6T 1Z2, Vancouver, BC, Canada"
 addressLabel: "6331 Crescent Rd, Vancouver, BC V6T 1Z2"
 latitude: 49.2679941202153
 longitude: -123.255313273957
-eventUrl: www.vancouverheritagefoundation.org/attend-an-event/walking-tours/
+eventUrl: www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
 eventUrlLabel: Get Tickets
 twitter: VanHeritage
 instagram: vancouverheritagefoundation
-website: https://www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
+website: www.vancouverheritagefoundation.org
 published: true
 price: $15
 internal_id: 390

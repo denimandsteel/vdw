@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: SoapDispensary
 instagram: thesoapdispensary
-website: https://www.thesoapdispensary.com/
+website: www.thesoapdispensary.com/
 published: true
 price: Free
 internal_id: 154
