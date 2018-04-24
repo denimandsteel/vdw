@@ -11,7 +11,7 @@ addressLabel: "198 West 18th Avenue"
 latitude: 49.255228
 longitude: -123.121822
 eventUrl: www.eventbrite.com/e/the-mighty-oak-walking-tour-tickets-45463929838?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text
-eventUrlLabel: Buy Tickets Here
+eventUrlLabel: Get Tickets
 twitter: 
 instagram: 
 website: www.lanefab.com
