@@ -2627,6 +2627,31 @@ button,
   border-bottom: #7E2D40 1px solid;
 }
 
+.events-list .sponsor-list {
+  background-color: #FE5000;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+.events-list .sponsor-list .supported-by {
+  margin-right: 20px;
+}
+.events-list .sponsor-list a {
+  margin: 10px 20px 10px 0;
+}
+.events-list .sponsor-list a:last-of-type {
+  margin-right: 0;
+}
+.events-list .sponsor-list img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 160px;
+  max-height: 35px;
+}
+
 .event-count .indicator.minus {
   display: none;
 }

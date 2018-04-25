@@ -28,6 +28,35 @@
                 <div id="map-{{eventDayCategory}}" class="map"></div>
                 <div class="mobile-map-blocker"></div>
               </div>
+
+              {% if eventDayCategory == 'event-2018-11' %}
+                <div class="sponsor-list">
+                  <div class="supported-by">Supported by:</div>
+                  <a href="http://hcma.ca" target="_blank"><img src="/images/supporters-map/hcma.svg"></a>
+                  <a href="http://www.ideaschoolofdesign.com" target="_blank"><img src="/images/supporters-map/capilano.svg"></a>
+                  <a href="http://dialogdesign.ca" target="_blank"><img src="/images/supporters-map/dialog.svg"></a>
+                  <a href="https://www.bfjdesign.com" target="_blank"><img src="/images/supporters-map/bfj.svg"></a>
+                  <a href="http://reveryarchitecture.com" target="_blank"><img src="/images/supporters-map/revery.svg"></a>
+                </div>
+              {% endif %}
+              {% if eventDayCategory == 'event-2018-12' %}
+                <div class="sponsor-list">
+                  <div class="supported-by">Supported by:</div>
+                  <a href="http://www.lasallecollegevancouver.com" target="_blank"><img src="/images/supporters-map/lasalle.svg"></a>
+                  <a href="https://rize.ca" target="_blank"><img src="/images/supporters-map/rize.svg"></a>
+                  <a href="http://www.vancouver.bulthaup.com/en" target="_blank"><img src="/images/supporters-map/bulthaup.svg"></a>
+                </div>
+              {% endif %}
+              {% if eventDayCategory == 'event-2018-13' %}
+                <div class="sponsor-list">
+                  <div class="supported-by">Supported by:</div>
+                  <a href="http://ecuad.ca" target="_blank"><img src="/images/supporters-map/ecu.svg"></a>
+                  <a href="https://www.bocci.ca" target="_blank"><img src="/images/supporters-map/bocci.svg"></a>
+                  <a href="http://livingspace.com" target="_blank"><img src="/images/supporters-map/livingspace.svg"></a>
+                  <a href="http://localpractice.ca" target="_blank"><img src="/images/supporters-map/local.svg"></a>
+                </div>
+              {% endif %}
+
               {% for priority in (0..50) %}{% for post in site.categories[eventDayCategory] reversed %}{% if post.priority == priority and post.published == true %}
                 <script type="text/javascript">
                   if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {

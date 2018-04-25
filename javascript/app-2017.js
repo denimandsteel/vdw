@@ -239,7 +239,7 @@ var toggleOnList = function(eventId, adjustHeight) {
   }
 
   var heightAfter = $('#your-list').height();
-  if (adjustHeight) {
+  if (false && adjustHeight) {
     window.scrollTo(0, scrollY + heightAfter - heightBefore)
   }
 };
