@@ -2,7 +2,7 @@
 dayOfWeek: Wed
 dayOfMonth: May 09
 title: "Museum of Anthropology Exhibition Design Tour"
-description: "As spaces of cultural preservation, engagement, and reflection, museums present interesting design challenges in both their architecture and the exhibitions themselves. Exhibition Designer and Producer Skooker Broome will lead a tour of the Museum of Anthropology at UBC, starting from Arthur Erikson's iconic 1976 building design and looking at the process behind three current exhibitions. Don't miss this rare opportunity to see behind the scenes and learn the design process of cultural engagement.<br> <br> Optionally combine with the Morris and Helen Belkin Art Gallery tour, also in the UBC cultural district."
+description: "As spaces of cultural preservation, engagement, and reflection, museums present interesting design challenges in both their architecture and the exhibitions themselves. Exhibition Designer and Producer Skooker Broome will lead a tour of the Museum of Anthropology at UBC, starting from Arthur Erikson's iconic 1976 building design and looking at the process behind three current exhibitions. Don't miss this rare opportunity to see behind the scenes and learn the design process of cultural engagement.<br> <br> Optionally combine with the Morris and Helen Belkin Art Gallery tour, also in the UBC cultural district. https://www.picatic.com/CombinedUBCdesignTours"
 startTime: 3 - 4  pm
 endTime: 
 type: Design Spaces
