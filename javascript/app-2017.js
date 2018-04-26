@@ -119,6 +119,44 @@ window.map_options = {
   },
 };
 
+window.mobi_stations = {
+  'map-event-2018-11': [
+    [49.282214, -123.114101],
+    [49.265004, -123.081263],
+  ],
+  'map-event-2018-12': [
+    [49.267859, -123.145782],
+    [49.272827, -123.147744],
+    [49.274497, -123.121788],
+    [49.277665, -123.096683],
+    [49.278004, -123.105664],
+    [49.279342, -123.101822],
+    [49.279764, -123.110154],
+    [49.280620, -123.124820],
+    [49.282214, -123.114101],
+    [49.282266, -123.102165],
+    [49.282759, -123.106955],
+    [49.284157, -123.099917],
+    [49.284605, -123.108662],
+    [49.286020, -123.116624],
+    [49.287214, -123.112870],
+  ],
+  'map-event-2018-13': [
+    [49.261533, -123.089364],
+    [49.262329, -123.093064],
+    [49.262598, -123.138921],
+    [49.263635, -123.099236],
+    [49.265300, -123.138110],
+    [49.266673, -123.112511],
+    [49.267120, -123.109370],
+    [49.267635, -123.127702],
+    [49.267859, -123.145782],
+    [49.268298, -123.102539],
+    [49.269361, -123.137820],
+    [49.270062, -123.100211],
+  ],
+}
+
 var setupMap = function(date) {
 
   var map = new L.Map(date, {
@@ -176,11 +214,15 @@ var setupMap = function(date) {
   window.map_options[date].events.addTo(map);
   // window.map_options[date].events.bringToFront();
 
-  // window.mobi = new L.featureGroup();
-  // var mobiMarker = L.marker([49.26534019822459, -123.09579849243164], { icon: L.divIcon({ className: 'marker mobi what', iconSize: 28, zIndexOffset: -1000 }) });
-  // mobiMarker.addTo(window.mobi);
-  // // oms.addMarker(mobiMarker);
-  // window.mobi.addTo(map);
+  if (typeof mobi_stations[date] !== 'undefined') {
+    window.mobi = new L.featureGroup();
+    mobi_stations[date].forEach(function(station) {
+      var mobiMarker = L.marker(station, { icon: L.divIcon({ className: 'marker mobi what', iconSize: 28, zIndexOffset: -1000 }) });
+      mobiMarker.addTo(window.mobi);
+      // oms.addMarker(mobiMarker);
+    });
+    window.mobi.addTo(map);
+  }
 
 };
 
