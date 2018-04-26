@@ -16,7 +16,7 @@ twitter: belkin_gallery
 instagram: belkinartgallery
 website: belkin.ubc.ca
 published: true
-price: 10
+price: $10
 internal_id: 217
 
 category: event-2018-9
