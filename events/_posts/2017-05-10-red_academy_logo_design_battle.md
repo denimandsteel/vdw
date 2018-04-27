@@ -10,8 +10,8 @@ address: "1490 Broadway W, Vancouver, British Columbia V6H 1H5, Canada, Vancouve
 addressLabel: "1490 Broadway W, Vancouver, British Columbia V6H 1H5, Canada"
 latitude: 49.263348
 longitude: -123.13817
-eventUrl: 
-eventUrlLabel: 
+eventUrl: www.eventbrite.ca/e/impact-logo-design-battle-tickets-45263526426
+eventUrlLabel: RSVP
 twitter: 
 instagram: 
 website: redacademy.com/
