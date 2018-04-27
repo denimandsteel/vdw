@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "ODD Tea @ Vancouver Special Anniversary Event"
-description: "ODD Tea welcomes its you to our debut opening ceremony through VDW. Join us at our POP up at the Vancouver Special Anniversary event.<br> <br> Exclusively for this debut, a handful of meticulously curated tea infused beverages will be served for tasting. <br> <br> Amid a variety of roses and orchids, ODD Tea share the story behind its inception, health benefits of locally purveyed ingredients, and the know-how to making delicious recipes with an odd twist."
+description: "Odd Tea welcomes you to our debut opening ceremony through VDW.  Join us at our POP up at the Vancouver Special Anniversary event.<br> <br> Exclusively for this debut, we will be serving three of our meticulously prepared NO. 1 Blooming Collection including: FOREVER YOUNG HIBISCUS, GOLDEN LAVENDER MYLK, and MATCHA BLOSSOM LATTE for tasting.   <br> <br> VDW's 2018 theme is reflecting on how design impacts our world.  Our goal is to showcase how the products we have researched and developed can contribute positively to our community and our drive for sustainability."
 startTime: 12 - 5 
 endTime: 
 type: Design Tastings
@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: odd_tea
 instagram: odd_tea
-website: oddtea.ca/new-events/
+website: www.instagram.com/oddteayvr/
 published: true
 price: 
 internal_id: 152
