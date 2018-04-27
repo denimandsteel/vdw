@@ -2609,7 +2609,7 @@ button,
   left: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
 }
-.day-events.sticky.hide-sticky-map .map {
+.hide-sticky-map .day-events.sticky .map {
   display: none;
 }
 

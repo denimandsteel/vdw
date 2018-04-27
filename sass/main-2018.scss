@@ -978,7 +978,7 @@ button,
       background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0));
     }
   }
-  &.hide-sticky-map {
+  .hide-sticky-map & {
     .map { display: none; }
   }
 }

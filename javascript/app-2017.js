@@ -34,8 +34,8 @@ $('.day-header').on('click', function() {
 
 $('.hide-map').on('click', function() {
   var $day = $(this).parents('.day-events');
-  $day.toggleClass('hide-sticky-map');
-  $(this).find('span').html( $day.hasClass('hide-sticky-map') ? 'Show Map' : 'Hide Map');
+  $('body').toggleClass('hide-sticky-map');
+  $('.hide-map span').html( $('body').hasClass('hide-sticky-map') ? 'Show Map' : 'Hide Map');
   $day.find('.map-container').css({
     height: 'auto',
   });
@@ -46,7 +46,6 @@ $('.hide-map').on('click', function() {
 });
 
 $(window).on('scroll', function() {
-  console.log('active', $('.day-events.active'))
   $('.day-events.active').each(function() {
     var $scrollBottomedOut = window.scrollY > $(this).find('.events-list .event-item').last().offset().top - $(this).find('.map-container').height() - $('.c-navigation').height();
     if ( !$scrollBottomedOut && window.scrollY > $(this).offset().top - $('.c-navigation').height() ) {
@@ -61,7 +60,7 @@ $(window).on('scroll', function() {
     else if ( $scrollBottomedOut ) {
       $(this).addClass('sticky bottom');
       $(this).find('.map-container').css({
-        top: $(this).find('.events-list').height() - $(this).find('.events-list .event-item').last().height() - 47 + ($(this).hasClass('hide-sticky-map') ? 200 : 0), // - 47 + $(this).find('.day-header').height()
+        top: $(this).find('.events-list').height() - $(this).find('.events-list .event-item').last().height() - 47 + ($('body').hasClass('hide-sticky-map') ? 200 : 0), // - 47 + $(this).find('.day-header').height()
       });
     }
     else {
@@ -383,6 +382,10 @@ $('.js-nav-mobile-toggle').bind('click', function() {
   $(this).find('.js-menu-sign').text(
     text == "-" ? "+" : "-"
     );
+});
+
+$('.c-navigation--links .c-navigation--link').click(function() {
+  $('.c-navigation--links').slideToggle('fast');
 });
 
 // Sponsor masonry.
