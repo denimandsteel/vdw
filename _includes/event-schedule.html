@@ -14,20 +14,21 @@
         {% if site.categories[eventDayCategory].size > 0 %}
           <!-- day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %} -->
           <div id="{{ eventDayCategory }}" class="day-events">
-            <div class="day-header">
-              <h2 class="dayname">
-                {{ site.categories[eventDayCategory][0].dayOfWeek}},
-                <strong>
-                  {{ site.categories[eventDayCategory][0].dayOfMonth}}
-                </strong>
-              </h2>
-              <p class="event-count">{{site.categories[eventDayCategory].size}} {% if {{site.categories[eventDayCategory].size > 1 %}Events{% else %}Event{% endif %} [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+            <div class="map-container">
+              <div class="day-header">
+                <h2 class="dayname">
+                  {{ site.categories[eventDayCategory][0].dayOfWeek}},
+                  <strong>
+                    {{ site.categories[eventDayCategory][0].dayOfMonth}}
+                  </strong>
+                </h2>
+                <p class="event-count">{{site.categories[eventDayCategory].size}} {% if {{site.categories[eventDayCategory].size > 1 %}Events{% else %}Event{% endif %} [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+                <div class="hide-map"><span>Hide Map</span></div>
+              </div>
+              <div id="map-{{eventDayCategory}}" class="map"></div>
+              {% comment %}<div class="mobile-map-blocker"></div>{% endcomment %}
             </div>
             <div class="events-list">
-              <div class="map-container">
-                <div id="map-{{eventDayCategory}}" class="map"></div>
-                <div class="mobile-map-blocker"></div>
-              </div>
 
               {% if eventDayCategory == 'event-2018-11' %}
                 <div class="sponsor-list">

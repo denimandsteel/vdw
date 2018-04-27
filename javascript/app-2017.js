@@ -8,11 +8,22 @@ window.addEventListener('touchstart', function onFirstTouch() {
 
 // Events open/close.
 $('.day-header').on('click', function() {
-  $(this).parents('.day-events').toggleClass('active');
-  if ($(this).parent().attr('id') === 'your-list' ) {
-    window.map_options['map-your-list'].map.invalidateSize();
+  var $day = $(this).parents('.day-events');
+  if ($day.hasClass('active')) {
+    if ($day.hasClass('sticky')) {
+      window.scrollTo(0, $day.offset().top - $('.c-navigation').height());
+    }
+    $day.removeClass('sticky bottom');
+    $day.find('.map-container').css({
+      top: 0,
+      height: 'inherit',
+      width: 'auto',
+    });
   }
+  $day.toggleClass('active');
+  window.map_options['map-' + $day.attr('id')].map.invalidateSize();
   $.waypoints('refresh');
+
   //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
   // $content.slideToggle(500, function () {
     //execute this after slideToggle is done
@@ -21,10 +32,24 @@ $('.day-header').on('click', function() {
   return false;
 });
 
+$('.hide-map').on('click', function() {
+  var $day = $(this).parents('.day-events');
+  $day.toggleClass('hide-sticky-map');
+  $(this).find('span').html( $day.hasClass('hide-sticky-map') ? 'Show Map' : 'Hide Map');
+  $day.find('.map-container').css({
+    height: 'auto',
+  });
+  $day.find('.map-container').css({
+    height: $(this).find('.map-container').height(),
+  });
+  return false;
+});
+
 $(window).on('scroll', function() {
+  console.log('active', $('.day-events.active'))
   $('.day-events.active').each(function() {
     var $scrollBottomedOut = window.scrollY > $(this).find('.events-list .event-item').last().offset().top - $(this).find('.map-container').height() - $('.c-navigation').height();
-    if ( !$scrollBottomedOut && window.scrollY > $(this).find('.events-list').offset().top - $('.c-navigation').height() ) {
+    if ( !$scrollBottomedOut && window.scrollY > $(this).offset().top - $('.c-navigation').height() ) {
       $(this).addClass('sticky');
       $(this).removeClass('bottom');
       $(this).find('.map-container').css({
@@ -36,7 +61,7 @@ $(window).on('scroll', function() {
     else if ( $scrollBottomedOut ) {
       $(this).addClass('sticky bottom');
       $(this).find('.map-container').css({
-        top: $(this).find('.events-list').height() - $(this).find('.events-list .event-item').last().height() - 47,
+        top: $(this).find('.events-list').height() - $(this).find('.events-list .event-item').last().height() - 47 + ($(this).hasClass('hide-sticky-map') ? 200 : 0), // - 47 + $(this).find('.day-header').height()
       });
     }
     else {
