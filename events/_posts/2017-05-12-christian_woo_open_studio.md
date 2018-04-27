@@ -2,7 +2,7 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Christian Woo Open Studio"
-description: "Open Studio: Guided by a deep respect for the heritage of woodworking and fuelled by the pace of contemporary culture."
+description: "Located on the edge of a Pacific Northwest rainforest, Christian Woo produces furniture infused with a strong sentiment of place, scale and permanence. Christian Woo’s design philosophy is centered on the creation of a calm and timeless presence. Built from the highest-grade, hand-sourced materials with precision-cut craftsmanship, our pieces embrace a clean-lined, bold aesthetic."
 startTime: 1-4 pm
 endTime: 
 type: Design Studios
