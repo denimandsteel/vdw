@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "PFS Studio"
 description: "PFS Studio is a leading Canadian planning, urban design and landscape architecture firm offering consulting services nationally and internationally on a wide range of projects for both the public and private sectors. We plan to host a digital presentation accompanied with project images and models, as well as an opportunity to engage in an informative Q&A session with real live landscape architects. We will also be offering snacks and refreshments. <br> "
-startTime: 1-3 p,
+startTime: 1-3 
 endTime: 
 type: Design Studios
 address: "1777 W 3rd Avenue, Vancouver BC, Vancouver, BC, Canada"
