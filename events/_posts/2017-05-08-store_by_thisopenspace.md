@@ -3,7 +3,7 @@ dayOfWeek: Tue
 dayOfMonth: May 08
 title: "Store by thisopenspace"
 description: "Store by thisopenspace is an eclectic marketplace bringing emerging designer brands to the public space of the historic Waterfront Station for the first time ever. Visit this Pop Up for unique brands for your wardrobe, home or gifts and meet the designers themselves."
-startTime: 11am-7pm
+startTime: Mon-Fri 11am-7pm
 endTime: 
 type: Open Call
 address: "Waterfront Station, 601 W Cordova St, Vancouver, BC V6C 1G6, Vancouver, BC, Canada"
