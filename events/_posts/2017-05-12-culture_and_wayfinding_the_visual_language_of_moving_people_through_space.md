@@ -10,8 +10,8 @@ address: "343 Railway St Vancouver, BC, Vancouver, BC, Canada"
 addressLabel: "343 Railway St Vancouver, BC"
 latitude: 49.284821
 longitude: -123.09676
-eventUrl: 
-eventUrlLabel: 
+eventUrl: www.eventbrite.ca/e/culture-and-wayfinding-the-visual-language-of-moving-people-through-space-tickets-45605279619
+eventUrlLabel: GET TICKETS
 twitter: 
 instagram: 
 website: segd.org/chapters/vancouver
