@@ -13,7 +13,7 @@ longitude: -123.10298
 eventUrl: 
 eventUrlLabel: 
 twitter: mcfarlanebiggar
-instagram: 
+instagram: mcfarlanebiggar/
 website: www.officemb.ca
 published: true
 price: Free
