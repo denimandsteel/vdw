@@ -2,7 +2,7 @@
 dayOfWeek: Tue
 dayOfMonth: May 08
 title: "Emily Carr University of Art + Design Wine & Cheese Reception"
-description: "Join an intimate gathering of industry leaders and graduating ECU design students to celebrate the globally significant design industry in Vancouver on the occasion of Vancouver Design Week. <br> <br> Co-hosted by Vancouver Design Week and the Shumka Centre for Creative Entrepreneurship at Emily Carr University of Art + Design."
+description: "Join an intimate gathering of industry leaders and graduating ECU design students to celebrate the globally significant design industry in Vancouver on the occasion of Vancouver Design Week. <br> <br> This is also a fantastic opportunity to view the Emily Carr Grad Show! <br> <br> Co-hosted by Vancouver Design Week and the Shumka Centre for Creative Entrepreneurship at Emily Carr University of Art + Design."
 startTime: 5-7
 endTime: 
 type: 
