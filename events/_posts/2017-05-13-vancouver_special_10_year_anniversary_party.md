@@ -12,8 +12,8 @@ latitude: 49.2620099999999
 longitude: -123.0705
 eventUrl: 
 eventUrlLabel: 
-twitter: 
-instagram: 
+twitter: van_special
+instagram: vanspecial/
 website: www.vanspecial.com
 published: true
 price: Free
