@@ -5,7 +5,7 @@ title: "Tiny talk: Small Housing Design & its Role in Addressing Densification @
 description: "A presentation on small housing types, designs and their real-world applications. Followed by an industry-led panel and Q&A with Jake Fry (Smallworks), BC Tiny House Collective co-founders and other panelists. Presented by Small Housing BC."
 startTime: 1-2:30
 endTime: 
-type: Open Call
+type: 
 address: "#400-319 West Hastings Street, Vancouver, BC, Canada"
 addressLabel: "#400-319 West Hastings Street"
 latitude: 49.2832169999999

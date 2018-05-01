@@ -5,7 +5,7 @@ title: "Wilson School of Design: Circular Economy & Product Sustainability: For 
 description: "Guest lecturers from UK’s Cranfield University will provide participants with an interactive workshop leaving attendees with an understanding of what a circular economy is and how they can implement circular innovation to create new value for their business.<br> <br> Participants will use state of the art tools and approaches to assess their current capability levels for the integration of circular economy principles into their business operations. "
 startTime: 9 am - 12 pm
 endTime: 
-type: Open Call
+type: 
 address: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8, Vancouver, BC, Canada"
 addressLabel: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8"
 latitude: 49.1748603216866

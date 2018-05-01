@@ -232,7 +232,7 @@ var setupMap = function(date) {
     };
     marker.addTo(window.map_options[date].events);
     oms.addMarker(marker);
-    $('#' + event.id + ' .js-marker-index').text(index + '. ');
+    $('#' + date.replace('map-', '') + ' .event-' + event.id + ' .js-marker-index').text(index + '. ');
     index += 1;
   });
   window.map_options[date].events.addTo(map);
@@ -267,20 +267,20 @@ var listMarkers = {};
 var toggleOnList = function(eventId, adjustHeight) {
   var heightBefore = $('#your-list').height();
 
-  if ( ! $( '#' + eventId + ' .js-add-to-list').hasClass('active') ) {
-    $( '#' + eventId + ' .js-add-to-list').addClass('active');
-    $( '#' + eventId + ' .js-add-to-list').html('Remove from List');
-    var $clone = $( '#' + eventId ).clone(true);
+  if ( ! $( '.event-' + eventId + ' .js-add-to-list').hasClass('active') ) {
+    $( '.event-' + eventId + ' .js-add-to-list').addClass('active');
+    $( '.event-' + eventId + ' .js-add-to-list').html('Remove from List');
+    var $clone = $( '.event-' + eventId ).first().clone(true);
     $clone.find('.js-show-on-map').data('day', 'map-your-list');
     $clone.appendTo('#your-list .events-list');
     listCount += 1;
-    listMarkers[eventId] = L.marker([$( '#' + eventId ).data('lat'), $( '#' + eventId ).data('long')], { alt: listCount,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + listCount + '</span>' }) });
+    listMarkers[eventId] = L.marker([$( '.event-' + eventId ).data('lat'), $( '.event-' + eventId ).data('long')], { alt: listCount,  icon: L.divIcon({ className: 'marker', iconSize: 28, html: '<span>' + listCount + '</span>' }) });
     listMarkers[eventId].addTo(window.map_options['map-your-list'].events);
   }
   else {
-    $( '#your-list #' + eventId ).remove();
-    $( '#' + eventId + ' .js-add-to-list').removeClass('active');
-    $( '#' + eventId + ' .js-add-to-list').html('Add to List');
+    $( '#your-list .event-' + eventId ).remove();
+    $( '.event-' + eventId + ' .js-add-to-list').removeClass('active');
+    $( '.event-' + eventId + ' .js-add-to-list').html('Add to List');
     listCount -= 1;
     listMarkers[eventId].remove();
   }

@@ -80,7 +80,7 @@ def readEvents(url)
 
   typePlain = {
     'tastings' => 'Design Tastings',
-    'open_call' => 'Open Call',
+    # 'open_call' => 'Open Call',
     'studios' => 'Design Studios',
     'spaces' => 'Design Spaces',
     'landmarks' => 'Design Landmarks',
@@ -142,7 +142,9 @@ def readEvents(url)
       event.description = eventJSON['public_description'].tr("\n"," ")
       event.start_time = eventJSON['time']
       # event.end_time = eventJSON['End Time']
-      event.event_type = typePlain[eventJSON['event_type']]
+      if typePlain[eventJSON['event_type']]
+        event.event_type = typePlain[eventJSON['event_type']]
+      end
       event.address = eventJSON['address'].tr("\n"," ")
       event.address_label = eventJSON['address']
       event.event_url = eventJSON['public_url']

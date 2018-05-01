@@ -5,7 +5,7 @@ title: "Pivot & Pilot: Creative-Communicating Visually: How to Make Design Speak
 description: "Join us for a discussion on the impact of evocative branding. Why do different brands selling similar items, compel entirely different groups of people? We will examine the communicative power of strategic branding as well as give insight into our design process. Drinks and snacks will be provided."
 startTime: 1-4 pm
 endTime: 
-type: Open Call
+type: 
 address: "475 Main St. Suite 228, Vancouver, BC, Canada"
 addressLabel: "475 Main St. Suite 228"
 latitude: 49.2805139559593

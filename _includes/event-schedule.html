@@ -65,7 +65,7 @@
                   }
                   vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, id: "{{post.internal_id}}"});
                 </script>
-                <div id="{{post.internal_id}}" class="event-item" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">
+                <div id="{{post.internal_id}}" class="event-item event-{{post.internal_id}}" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">
                   <div class="eventheader row">
                     <div class="info">
                       <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->

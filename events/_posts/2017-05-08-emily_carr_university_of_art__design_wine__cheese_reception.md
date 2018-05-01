@@ -5,7 +5,7 @@ title: "Emily Carr University of Art + Design Wine & Cheese Reception"
 description: "Join an intimate gathering of industry leaders and graduating ECU design students to celebrate the globally significant design industry in Vancouver on the occasion of Vancouver Design Week. <br> <br> Co-hosted by Vancouver Design Week and the Shumka Centre for Creative Entrepreneurship at Emily Carr University of Art + Design."
 startTime: 5-7
 endTime: 
-type: Open Call
+type: 
 address: " 520 E 1st Avenue, Vancouver, Vancouver, BC, Canada"
 addressLabel: " 520 E 1st Avenue, Vancouver"
 latitude: 49.2675792608952
