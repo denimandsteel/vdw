@@ -2,7 +2,7 @@
 dayOfWeek: Fri
 dayOfMonth: May 11
 title: "Grey Ghost Restoration Open House"
-description: "Join us for a glass of wine & cheese included in the tour of a fully restored 1995 34 ft Airstream trailer by Gray Ghost Restorations.  James Thiessen discuss his design strategy and improvements to make this trailer a travelling home. "
+description: "Join us for a glass of wine & cheese included in the tour of a fully restored 1995 34 ft Airstream trailer by Gray Ghost Restorations.  James Thiessen will discuss his design strategy and the improvements he made to make this trailer a travelling home. "
 startTime: 5pm-7pm
 endTime: 
 type: Design Spaces
@@ -14,7 +14,7 @@ eventUrl:
 eventUrlLabel: 
 twitter: 
 instagram: grayghostreno
-website: 
+website: grayghostrestorations.com
 published: true
 price: Free
 internal_id: 309
