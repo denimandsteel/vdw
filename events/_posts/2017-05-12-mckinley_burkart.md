@@ -2,8 +2,8 @@
 dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Mckinley Burkart"
-description: "With a newly opened office in Vancouver we would be thrilled to host an open studio tour to showcase who we are and what we're up to... more details to follow!<br> "
-startTime: 12-4
+description: "Join us at our newly opened Vancouver office to see our current work on display and meet the team. Light refreshments will be served."
+startTime: 11-3
 endTime: 
 type: Design Studios
 address: "suite 412 - 611 Alexander Street Vancouver BC V6A 1E1, Vancouver, BC, Canada"
