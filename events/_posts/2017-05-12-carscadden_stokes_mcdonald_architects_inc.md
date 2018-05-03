@@ -3,13 +3,13 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Carscadden Stokes McDonald Architects Inc."
 description: "We are a core architectural practice specializing in community recreation facilities. We want our work to be accessible to the public and ourselves. We do that through conversation. So come and convene."
-startTime: 
+startTime: 11-3
 endTime: 
 type: Design Studios
 address: "715 East Hastings Street, Vancouver, BC, Canada"
 addressLabel: "715 East Hastings Street"
-latitude: 49.2821787444969
-longitude: -123.093674287318
+latitude: 49.281434
+longitude: -123.08884
 eventUrl: 
 eventUrlLabel: 
 twitter: CarscaddenArch
