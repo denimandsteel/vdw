@@ -1,68 +1,76 @@
-<article id="schedule">
+<article id="schedule" style="clear:both; padding-top: 40px;">
   <div class="c-l-container u-pb">
     <script type="text/javascript">
       vdwEvents = {};
     </script>
     <section id="event" class="events outer-container page-break">
-      <div class="u-pr--xs u-pl--xs u-mt--l">
-        <h3 class="charlie">2017 Event Schedule</h3>
-        <!-- <h5 class="ff-secondary">May 12th - 14th, 2017</h5> -->
-      </div>
+      <!-- <div class="u-pr--xs u-pl--xs u-mt--l">
+        <h3 class="charlie">2018 Event Schedule</h3>
+        <!-- <h5 class="ff-secondary">May 7th - 13th, 2018</h5> 
+      </div> -->
 
-      {% for dayNumber in (11..16) %}
-        {% assign times = "am|pm" | split: "|" %}
-        {% for timeValue in times %}
-          {% capture eventDayCategory %}event-{{dayNumber}}-{{timeValue}}{% endcapture %}
-          {% if site.categories[eventDayCategory].size > 0 %}
-            <!-- day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %} -->
-            <div id="{{ eventDayCategory }}" class="day-events">
+      {% for dayNumber in (7..13) %}
+        {% capture eventDayCategory %}event-2018-{{dayNumber}}{% endcapture %}
+        {% if site.categories[eventDayCategory].size > 0 %}
+          <!-- day-events {% if eventDayCategory == 'event-14-am' or eventDayCategory == 'event-14-pm' %} active{% endif %} -->
+          <div id="{{ eventDayCategory }}" class="day-events">
+            <div class="map-container">
               <div class="day-header">
                 <h2 class="dayname">
                   {{ site.categories[eventDayCategory][0].dayOfWeek}},
                   <strong>
                     {{ site.categories[eventDayCategory][0].dayOfMonth}}
-                    {% if timeValue == 'am' %}
-                      <span class="f-tt-uc">Morning</span>
-                    {% endif %}
-                    {% if timeValue == 'pm' %}
-                      {% if dayNumber == 11 or dayNumber == 12 or dayNumber == 16 %}
-                        <span class="f-tt-uc">Evening</span>
-                      {% else %}
-                        <span class="f-tt-uc">Afternoon</span>
-                      {% endif %}
-                    {% endif %}
                   </strong>
                 </h2>
                 <p class="event-count">{{site.categories[eventDayCategory].size}} {% if {{site.categories[eventDayCategory].size > 1 %}Events{% else %}Event{% endif %} [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+                <div class="hide-map"><span>Hide Map</span></div>
               </div>
-              <div class="events-list">
-                <div class="map-container">
-                  <div id="map-{{eventDayCategory}}" class="map"></div>
-                  <div class="mobile-map-blocker"></div>
+              <div id="map-{{eventDayCategory}}" class="map"></div>
+              {% comment %}<div class="mobile-map-blocker"></div>{% endcomment %}
+            </div>
+            <div class="events-list">
+
+              {% if eventDayCategory == 'event-2018-11' %}
+                <div class="sponsor-list">
+                  <div class="supported-by">Sponsored by:</div>
+                  <a href="http://hcma.ca" target="_blank"><img src="/images/supporters-map/hcma.svg"></a>
+                  <a href="http://www.ideaschoolofdesign.com" target="_blank"><img src="/images/supporters-map/capilano.svg"></a>
+                  <a href="http://dialogdesign.ca" target="_blank"><img src="/images/supporters-map/dialog.svg"></a>
+                  <a href="https://www.bfjdesign.com" target="_blank"><img src="/images/supporters-map/bfj.svg"></a>
+                  <a href="http://reveryarchitecture.com" target="_blank"><img src="/images/supporters-map/revery.svg"></a>
                 </div>
-                {% for priority in (0..50) %}{% for post in site.categories[eventDayCategory] reversed %}{% if post.priority == priority and post.published == true %}
-                  <script type="text/javascript">
-                    if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
-                      vdwEvents['map-{{eventDayCategory}}'] = [];
-                    }
-                    vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, slug: "{{post.slug}}"});
-                  </script>
-                  <div id="event-{{post.slug}}" class="event-item">
-                    <div class="eventheader row">
-                      <div class="left md-eight columns">
-                        <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
-                        <h3 class="title"><span class="js-marker-index"></span>{{ post.title }}</h3>
-                        <p class="time-and-place">
-                          {% if post.endTime %}
-                            {{ post.startTime }} - {{ post.endTime }}
-                          {% else %}
-                            {{ post.startTime }}
-                          {% endif %}
-                          at <a target="_blank" rel="noopener" href="http://maps.google.com/?q={{ post.latitude }},{{ post.longitude }}">{{ post.addressLabel }}</a>
-                        </p>
-                      </div>
-                      <div class="right md-four columns">
-                        <p class="price">{{ post.price }}</p>
+              {% endif %}
+              {% if eventDayCategory == 'event-2018-12' %}
+                <div class="sponsor-list">
+                  <div class="supported-by">Sponsored by:</div>
+                  <a href="http://www.lasallecollegevancouver.com" target="_blank"><img src="/images/supporters-map/lasalle.svg"></a>
+                  <a href="https://rize.ca" target="_blank"><img src="/images/supporters-map/rize.svg"></a>
+                  <a href="http://www.vancouver.bulthaup.com/en" target="_blank"><img src="/images/supporters-map/bulthaup.svg"></a>
+                </div>
+              {% endif %}
+              {% if eventDayCategory == 'event-2018-13' %}
+                <div class="sponsor-list">
+                  <div class="supported-by">Sponsored by:</div>
+                  <a href="http://ecuad.ca" target="_blank"><img src="/images/supporters-map/ecu.svg"></a>
+                  <a href="https://www.bocci.ca" target="_blank"><img src="/images/supporters-map/bocci.svg"></a>
+                  <a href="http://livingspace.com" target="_blank"><img src="/images/supporters-map/livingspace.svg"></a>
+                  <a href="http://localpractice.ca" target="_blank"><img src="/images/supporters-map/local.svg"></a>
+                </div>
+              {% endif %}
+
+              {% for priority in (0..50) %}{% for post in site.categories[eventDayCategory] reversed %}{% if post.priority == priority and post.published == true %}
+                <script type="text/javascript">
+                  if (typeof vdwEvents['map-{{eventDayCategory}}'] === 'undefined') {
+                    vdwEvents['map-{{eventDayCategory}}'] = [];
+                  }
+                  vdwEvents['map-{{eventDayCategory}}'].push({lat: {{post.latitude}}, long: {{post.longitude}}, priority: {{post.priority}}, id: "{{post.internal_id}}"});
+                </script>
+                <div id="{{post.internal_id}}" class="event-item event-{{post.internal_id}}" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">
+                  <div class="eventheader row">
+                    <div class="info">
+                      <!-- <div class="marker"><span class="active">{{ post.priority }}</span></div> -->
+                      <h3 class="title"><span class="js-marker-index"></span>{{ post.title }}</h3>
+                      <div class="attend">
                         {% if post.eventUrl or post.eventUrlLabel %}
                           {% if post.eventUrl %}
                             <a target="_blank" rel="noopener" href="http://{{ post.eventUrl }}" class="highlight">{{ post.eventUrlLabel }}</a>
@@ -70,26 +78,69 @@
                             <div class="highlight">{{ post.eventUrlLabel }}</div>
                           {% endif %}
                         {% endif %}
+                        <p class="price">{{ post.price }}</p>
                       </div>
-                    </div>
+                      <p class="time-and-place">
+                        <span class="date">{{ site.categories[eventDayCategory][0].dayOfWeek}}, {{ site.categories[eventDayCategory][0].dayOfMonth}} - </span>
 
-                    <div class="eventcontent">
-                      <p class="description">{% if post.type %}<span class="event-type f-wb">[{{ post.type }}]</span> {% endif %}{{ post.description }}</p>
-                      {% if post.twitter or post.instagram or post.website %}
-                        <div class="social-links">
-                          {% if post.twitter %}<a target="_blank" href="http://twitter.com/{{post.twitter}}">Twitter</a>{% endif %}
-                          {% if post.instagram %}<a target="_blank" href="http://instagram.com/{{post.instagram}}">Instagram</a>{% endif %}
-                          {% if post.website %}<a target="_blank" href="http://{{post.website}}">Website</a>{% endif %}
-                        </div>
-                      {% endif %}
+                        {% if post.endTime %}
+                          {{ post.startTime }} - {{ post.endTime }}
+                        {% else %}
+                          {{ post.startTime }}
+                        {% endif %}
+                        at <a target="_blank" rel="noopener" href="http://maps.google.com/?q={{ post.latitude }},{{ post.longitude }}">{{ post.addressLabel }}</a>
+                      </p>
+                      <p class="time-and-place">
+                        <span class="action-button js-show-on-map" data-day="map-{{eventDayCategory}}" data-lat="{{post.latitude}}" data-long="{{post.longitude}}">Show on Map</span>
+                        <span class="action-button js-add-to-list" data-day="map-{{eventDayCategory}}" data-event="{{post.internal_id}}">Add to List</span>
+                      </p>
                     </div>
                   </div>
-                {% endif %}{% endfor %}{% endfor %}
-              </div>
+
+                  <div class="eventcontent">
+                    <p class="description">{% if post.type %}<span class="event-type f-wb">[{{ post.type }}]</span> {% endif %}{{ post.description }}</p>
+                    {% if post.twitter or post.instagram or post.website %}
+                      <div class="social-links">
+                        {% if post.twitter %}<a target="_blank" href="http://twitter.com/{{post.twitter}}">Twitter</a>{% endif %}
+                        {% if post.instagram %}<a target="_blank" href="http://instagram.com/{{post.instagram}}">Instagram</a>{% endif %}
+                        {% if post.website %}<a target="_blank" href="http://{{post.website}}">Website</a>{% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}{% endfor %}{% endfor %}
             </div>
-          {% endif %}
-        {% endfor %}
+          </div>
+        {% endif %}
       {% endfor %}
+
+      <div id="your-list" class="day-events">
+        <div class="day-header">
+          <h2 class="dayname">
+            <strong>Your List</strong>
+          </h2>
+          <p class="event-count"><span class="js-event-count">0 Events</span> [<span class="indicator plus">+</span><span class="indicator minus">-</span>]</p>
+        </div>
+        <div class="events-list">
+          <p class="empty">Events added to the List will appear here and are saved only on this device. If you share your list a link will be created that reproduces your selections.</p>
+          <div class="your-list map-container">
+            <div id="map-your-list" class="map"></div>
+          </div>
+          <script type="text/javascript">
+            if (typeof vdwEvents['map-your-list'] === 'undefined') {
+              vdwEvents['map-your-list'] = [];
+            }
+          </script>
+          <div class="share">
+            <a href="#" class="email action-button">Share List by Email</a>
+            <a href="#" class="twitter action-button">Share List on Twitter</a>
+            <a href="#" class="facebook action-button">Share List on Facebook</a>
+          </div>
+        </div>
+      </div>
+      <p>Attendance to any VDW event is subject to our <a style="text-decoration: underline; color: inherit;" href="/code-of-conduct">Code of Conduct</a>.</p>
+
+      <p>Planning an event? <a style="text-decoration: underline; color: inherit;" href="/brand">Help yourself to our brand assets</a> to promote it in style!</p>
     </section>
   </div>
 
