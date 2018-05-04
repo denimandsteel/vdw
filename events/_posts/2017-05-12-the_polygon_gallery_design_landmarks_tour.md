@@ -11,7 +11,7 @@ addressLabel: "101 Carrie Cates Court  North Vancouver, V7M 3J4"
 latitude: 49.31081
 longitude: -123.07913
 eventUrl: www.picatic.com/event15235773638496
-eventUrlLabel: Get Tickets
+eventUrlLabel: Sold Out - Wait List Available
 twitter: 
 instagram: thepolygongallery/
 website: thepolygon.ca
