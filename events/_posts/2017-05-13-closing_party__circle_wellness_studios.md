@@ -16,7 +16,7 @@ twitter:
 instagram: p/BiSmixCla_-/?taken-by=circle_studios
 website: circlewellnessstudios.com
 published: true
-price: $10 at door
+price: $10 (early bird 6 pm) $15 after
 internal_id: 404
 
 category: event-2018-13
