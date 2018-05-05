@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Closing Party @ Circle Wellness Studios"
-description: "Join Circle Wellness Studios and Pacific Rhythm and cap off Vancouver Design Week with some dancing, food and drinks. Featuring our newest additions to the studio, Modus Coffee and Nulanedb. The party begins after our open studio at 4 pm. Let's celebrate #VDW2018"
+description: "Join Circle Wellness Studios and Pacific Rhythm and cap off Vancouver Design Week with some dancing, food and drinks. Featuring our newest additions to the studio, Modus Coffee and Nulanedb. The party begins after our open studio at 4 pm. Tickets at the door. Let's celebrate #VDW2018"
 startTime: 4 - 10 pm
 endTime: 
 type: 
