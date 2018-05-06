@@ -11,7 +11,7 @@ addressLabel: "520 East 1st Avenue Vancouver, BC V5T 0H2"
 latitude: 49.2676027928305
 longitude: -123.092169311688
 eventUrl: www.picatic.com/event15235786922042
-eventUrlLabel: RSVP
+eventUrlLabel: Sold Out - Join Waitlist
 twitter: 
 instagram: emilycarru
 website: ecuad.ca
