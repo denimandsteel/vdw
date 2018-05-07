@@ -10,7 +10,7 @@ address: "Waterfront Station, 601 W Cordova St, Vancouver, BC V6C 1G6, Vancouver
 addressLabel: "Waterfront Station, 601 W Cordova St, Vancouver, BC V6C 1G6"
 latitude: 49.2855392469635
 longitude: -123.111655711176
-eventUrl: thisopenspace.com
+eventUrl: 
 eventUrlLabel: 
 twitter: thisopenspace
 instagram: thisopenspace
