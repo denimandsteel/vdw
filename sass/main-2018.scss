@@ -1126,7 +1126,7 @@ button,
 
   &.current { border-left: 10px solid $color-accent; }
   &.done {
-    .dayname, .event-count { color: #4a4a4a; }
+    .dayname, .event-count { color: #9b9b9b; }
   }
 }
 .day-events.active .day-header.done { .dayname, .event-count { color: white; } }

@@ -85,8 +85,8 @@ $(window).on('resize', function() {
 });
 
 // Event current day and past days.
-$('#event-' + (new Date).getDate() + ' .day-header').addClass('current');
-$('#event-' + (new Date).getDate() + '').prevAll('.day-events').find('.day-header').addClass('done');
+$('#event-2018-' + (new Date).getDate() + ' .day-header').click();
+$('#event-2018-' + (new Date).getDate() ).prevAll('.day-events').find('.day-header').addClass('done');
 
 $('.mobile-toggle').click(function() {
   $('header').toggleClass('active');

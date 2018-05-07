@@ -2749,7 +2749,7 @@ button,
   border-left: 10px solid #FE5000;
 }
 .day-header.done .dayname, .day-header.done .event-count {
-  color: #4a4a4a;
+  color: #9b9b9b;
 }
 
 .day-events.active .day-header.done .dayname, .day-events.active .day-header.done .event-count {
