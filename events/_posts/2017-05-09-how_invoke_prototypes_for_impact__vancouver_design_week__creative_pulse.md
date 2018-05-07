@@ -3,7 +3,7 @@ dayOfWeek: Wed
 dayOfMonth: May 09
 title: "How Invoke Prototypes For Impact | Vancouver Design Week + Creative Pulse"
 description: "Dominic Wong, Director of Design at Invoke, will lead a fast-paced workshop on paper prototyping for digital products.<br> Learn what it takes to refine a world class product through Invoke’s process of failing fast, iterative prototyping, and tactical collaboration. <br> Join us for tasty beverages and snacks—and discover how paper can make your digital projects more impactful."
-startTime: 6:30
+startTime: 6-10pm
 endTime: 
 type: Design Edition
 address: "322 Water St #400, Vancouver, BC V6B 1B6, Vancouver, BC, Canada"
