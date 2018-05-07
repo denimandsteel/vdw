@@ -13,7 +13,7 @@ longitude: -123.09442
 eventUrl: 
 eventUrlLabel: 
 twitter: 
-instagram: 
+instagram: lightlines.art
 website: www.aureliabizouard.com/lumiere
 published: true
 price: Free
