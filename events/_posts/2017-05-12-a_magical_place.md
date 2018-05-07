@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "A Magical Place"
 description: "Entering a magical world where technology, nature, and human beings meet. Dive into a world of light designed to deliver a message of positive impact and immerse your senses in colourful visuals and relaxing music."
-startTime: 7-9pm
+startTime: 6-9pm Tuesday, 7-9pm Thurs-Saturday
 endTime: 
 type: Design Edition
 address: "#409-321 Railway St, Vancouver V6A1A4 (4th floor, buzzer0409), Vancouver, BC, Canada"

@@ -1,6 +1,6 @@
 ---
-dayOfWeek: Thu
-dayOfMonth: May 10
+dayOfWeek: Tue
+dayOfMonth: May 08
 title: "A Magical Place"
 description: "Entering a magical world where technology, nature, and human beings meet. Dive into a world of light designed to deliver a message of positive impact and immerse your senses in colourful visuals and relaxing music."
 startTime: 6-9pm Tuesday, 7-9pm Thurs-Saturday
@@ -19,7 +19,7 @@ published: true
 price: Free
 internal_id: 280
 
-category: event-2018-10
+category: event-2018-8
 priority: 0
-slug: 2018-05-10-a_magical_place
+slug: 2018-05-08-a_magical_place
 ---
