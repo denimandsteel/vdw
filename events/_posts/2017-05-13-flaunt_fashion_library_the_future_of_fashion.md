@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Flaunt Fashion Library: The Future Of Fashion"
 description: "Come visit our pop-up in collaboration with BoConcept Vancouver!  Flaunt Fashion Library is an online dress rental startup. We offer a complete wardrobe from work to party to give women the opportunity to wear a new outfit everyday guilt-free.  Our mission is to revolutionize how women consume fashion with less impact on the environment while being able to have the best styles. <br> <br> The founder Kim Luu will be present to share her vision of the future of fashion and showcase the launch of a new subscription fashion rental box."
-startTime: 12-5 pm
+startTime: 12-5pm
 endTime: 
 type: Design Studios
 address: "1275 West 6th Avenue @ Bo Concept, Vancouver, BC, Canada"

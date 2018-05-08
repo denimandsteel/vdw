@@ -3,7 +3,7 @@ dayOfWeek: Thu
 dayOfMonth: May 10
 title: "Engine Digital - Make it POP Quiz"
 description: "Engine Digital is part digital consultancy, part design and technology studio. Seeing the need for a casual and fun event to bring together the Vancouver design community, the design team at Engine Digital created Make It POP Quiz — pub trivia with a design-nerd twist."
-startTime: 6:30pm - 9:00pm
+startTime: 6:30-9pm
 endTime: 
 type: Design Edition
 address: "The Railway Stage & Beer Café - 579 Dunsmuir Street, Vancouver, BC, Canada"

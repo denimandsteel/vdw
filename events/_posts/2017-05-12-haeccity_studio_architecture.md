@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Haeccity Studio Architecture"
 description: "Haeccity Studio Architecture's work is situated at the intersection of art, architecture and planning. Find out what we've been up to, view our award winning proposal for the Missing Middle Competition, and test play our latest prototype: a collaborative board game demonstrating how together we can make an impact on housing affordability. "
-startTime: 12-4
+startTime: 12-4pm
 endTime: 
 type: Design Studios
 address: "780 East Cordova Street, Vancouver, BC, Canada"
