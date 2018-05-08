@@ -3,12 +3,12 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Mckinley Burkart"
 description: "Join us at our newly opened Vancouver office to see our current work on display and meet the team. Light refreshments will be served."
-startTime: 11-3
+startTime: 11-3pm
 endTime: 
 type: Design Studios
-address: "suite 412 - 611 Alexander Street Vancouver BC V6A 1E1, Vancouver, BC, Canada"
-addressLabel: "suite 412 - 611 Alexander Street Vancouver BC V6A 1E1"
-latitude: 49.2844369999999
+address: "#412 - 611 Alexander Street, Vancouver, BC, Canada"
+addressLabel: "#412 - 611 Alexander Street"
+latitude: 49.2844369999998
 longitude: -123.09151
 eventUrl: 
 eventUrlLabel: 

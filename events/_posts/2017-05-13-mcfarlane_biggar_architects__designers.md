@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "mcfarlane biggar architects + designers"
 description: "We'll offer a display of previous and current projects to showcase our design process, along with some icy sweet treats from our Earnest neighbours."
-startTime: 1-3 pm
+startTime: 1-3pm
 endTime: 
 type: Design Studios
 address: "301 - 1825 Quebec Street, Vancouver, BC V5T 2Z3, Vancouver, BC, Canada"

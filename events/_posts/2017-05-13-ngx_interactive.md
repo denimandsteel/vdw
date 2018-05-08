@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "NGX Interactive"
 description: "Come tour our studio and workshop to experience interactive exhibits at different stages from early prototypes to near installation. Give your input on our exhibits via our visitor experience evaluation methods or chat with us about the future of technology in the cultural sector."
-startTime: 11-3
+startTime: 11-3pm
 endTime: 
 type: Design Studios
 address: "265 East 1st Avenue, Vancouver, British Columbia V5T 4P5, Canada, Vancouver, BC, Canada"
