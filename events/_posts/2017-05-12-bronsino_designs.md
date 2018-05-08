@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Bronsino Designs"
 description: "See handmade leather bags & accessories for both men & women using both new & upcycled leathers. <br> <br> We'll guide you through our upcycling process & how we turn old leather garments into new products. Bags & accessories from our spring/summer 2018 collection on display."
-startTime: 12-4
+startTime: 12-4pm
 endTime: 
 type: Design Studios
 address: "225 - 975 Vernon Drive, Vancouver, BC, Canada"

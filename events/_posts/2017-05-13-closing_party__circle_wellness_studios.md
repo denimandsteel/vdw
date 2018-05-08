@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Closing Party @ Circle Wellness Studios"
 description: "Join Pacific Rhythm and Circle Wellness Studios to cap off Vancouver Design Week with an outdoor sunset bbq and dance party.  Featuring some of Vancouvers best music selectors and offering local flavours of food and drinks. The party will begin after our open studio finishes at 4 pm. Tickets at the door.  Let's celebrate #VDW2018  <br> <br> Presented by Pacific Rhythm, Circle Wellness Studios, Vancouver Design Week, and Modus Coffee Roasters"
-startTime: 4 - 10 pm
+startTime: 4-10pm
 endTime: 
 type: 
 address: "390 Industrial Avenue, Vancouver, BC, Canada"

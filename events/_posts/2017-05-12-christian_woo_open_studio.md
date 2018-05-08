@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Christian Woo Open Studio"
 description: "Located on the edge of a Pacific Northwest rainforest, Christian Woo produces furniture infused with a strong sentiment of place, scale and permanence. Christian Woo’s design philosophy is centered on the creation of a calm and timeless presence. Built from the highest-grade, hand-sourced materials with precision-cut craftsmanship, our pieces embrace a clean-lined, bold aesthetic."
-startTime: 1-4 pm
+startTime: 1-4pm
 endTime: 
 type: Design Studios
 address: "7 – 20 Orwell Street North Vancouver, BC V7J 2G1, Vancouver, BC, Canada"

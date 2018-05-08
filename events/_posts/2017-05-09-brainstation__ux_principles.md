@@ -3,7 +3,7 @@ dayOfWeek: Wed
 dayOfMonth: May 09
 title: "BrainStation - UX Principles"
 description: "UX Principles provides you with the basic understanding of the UX Design process, essential skills of a UX Designer, and how they use strategies like Design Thinking and Human-Centred Design when designing digital products. <br> <br> We’ll discuss how UX Designers work independently and alongside technical teammates, and review the day-to-day work of a UX Designer."
-startTime: 6-7:30
+startTime: 6-7:30pm
 endTime: 
 type: 
 address: "455 Granville St, Vancouver, British Columbia V6C 2T7, Canada, Vancouver, BC, Canada"

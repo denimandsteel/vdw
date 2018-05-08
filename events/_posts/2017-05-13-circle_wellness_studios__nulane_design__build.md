@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Circle Wellness Studios & NULANE Design + Build"
 description: "Circle Wellness Studios: Innovative wellness amenities for residential and commercial clients.  The WelPod, a multi-sensory therapeutic smart room, is their flagship concept, and they also offer consult, design, and build services for custom experiential installations that promote mindfulness and well-being. <br> <br> NULANE Design +  Build:  A boutique Design and Build firm passionate about designing small living spaces. Our natural niche in the Vancouver housing market is lane way homes, and we also enjoy designing alternative residential buildings like straw bale houses, earthships and tiny houses.  "
-startTime: 1-4
+startTime: 1-4pm
 endTime: 
 type: Design Studios
 address: "390 Industrial Avenue, Vancouver, British Columbia V5T 1A9, Canada, Vancouver, BC, Canada"

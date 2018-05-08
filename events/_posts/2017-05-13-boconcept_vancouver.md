@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "BoConcept Vancouver"
 description: "Open house featuring the history of our brand and key iconic designs in our showroom. <br> <br> There will be a photo wall, a movie and other activities. Light refreshments will be served with a Danish touch."
-startTime: 12-5
+startTime: 12-5pm
 endTime: 
 type: Design Studios
 address: "1275 West 6th Avenue, Vancouver, BC, Canada"

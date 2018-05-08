@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "BrainStation: User Interface Design Principles"
 description: "The User Interface Design Principles Workshop will provide you with the basic understanding of the UI Design process, essential skills of a UI Designer, and the tools they use.<br> <br> We’ll also discuss how UI Designers work independently and alongside technical teammates, and review examples of great UI and current trends. Please bring a computer."
-startTime: 3-4:30
+startTime: 3-4:30pm
 endTime: 
 type: 
 address: "455 Granville St, Vancouver, BC, Canada"

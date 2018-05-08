@@ -3,12 +3,12 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Board of Parks Administration Office Design Tour"
 description: "On the edge of our world famous forested park sits a somewhat unassuming building that is, in fact, a portal to a different era of design. The Vancouver Parks Board Office in Stanley Park is perhaps our best-preserved, though still actively used, example of mid-century modernism.<br> <br> This rare tour will take you through a seldom-seen gem of our city’s government and design legacy."
-startTime: 2-3 pm
+startTime: 2-3pm
 endTime: 
 type: Design Landmarks
 address: "2099 Beach Ave, Vancouver, BC V6G 1Z4, Vancouver, BC, Canada"
 addressLabel: "2099 Beach Ave, Vancouver, BC V6G 1Z4"
-latitude: 49.290735
+latitude: 49.2907349999999
 longitude: -123.14621
 eventUrl: www.picatic.com/ParksAdminLandmarkTour
 eventUrlLabel: Get Ticket
