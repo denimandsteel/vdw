@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "BFJ Design Showroom "
 description: "Open studio: Cabinetry design and unique finishing. "
-startTime: 11-4
+startTime: 11-4pm
 endTime: 
 type: Design Studios
 address: "1362 W Pender, Vancouver, Vancouver, BC, Canada"

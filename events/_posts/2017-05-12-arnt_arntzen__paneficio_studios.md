@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Arnt Arntzen @ Paneficio Studios"
 description: "Meet the designer and builder of contemporary studio furniture in  shared designers/artist space Paneficio, with a display of works and process talk."
-startTime: 11-3
+startTime: 11-3pm
 endTime: 
 type: Design Studios
 address: "800 Keefer Street, Vancouver, BC V6A 1Y7, Vancouver, BC, Canada"

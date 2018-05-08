@@ -6,8 +6,8 @@ description: "How does design impact our lives? The Vancouver Design Nerds and F
 startTime: Thu-Sat 3-7, Sun 2-4
 endTime: 
 type: 
-address: "800 Robson Street, Vancouver, Vancouver, BC, Canada"
-addressLabel: "800 Robson Street, Vancouver"
+address: "Robson Square, 800 Robson Street, Vancouver, BC, Canada"
+addressLabel: "Robson Square, 800 Robson Street"
 latitude: 49.282393
 longitude: -123.1212
 eventUrl: 

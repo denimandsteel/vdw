@@ -6,8 +6,8 @@ description: "What if design could…? Vancouver Design Foundation is raising aw
 startTime: Fri-Sat 1-6, Sun 2-4
 endTime: 
 type: 
-address: "800 Robson Street, Vancouver, Vancouver, BC, Canada"
-addressLabel: "800 Robson Street, Vancouver"
+address: "Robson Square, 800 Robson Street, Vancouver, BC, Canada"
+addressLabel: "Robson Square, 800 Robson Street"
 latitude: 49.282393
 longitude: -123.1212
 eventUrl: 
