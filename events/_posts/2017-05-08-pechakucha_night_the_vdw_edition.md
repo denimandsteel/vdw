@@ -10,8 +10,8 @@ address: "Vogue Theatre, 918 Granville St, Vancouver, British Columbia V6B 1E3, 
 addressLabel: "Vogue Theatre, 918 Granville St, Vancouver, British Columbia V6B 1E3, Canada"
 latitude: 49.2799999701007
 longitude: -123.119999900647
-eventUrl: www.ticketfly.com/purchase/event/1663455
-eventUrlLabel: Get Tickets
+eventUrl: 
+eventUrlLabel: Sold Out
 twitter: 
 instagram: 
 website: pechakuchavancouver.com
