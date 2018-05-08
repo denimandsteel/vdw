@@ -6,8 +6,8 @@ description: "Guest lecturers from UK’s Cranfield University will provide part
 startTime: 9 am - 12 pm
 endTime: 
 type: 
-address: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8, Vancouver, BC, Canada"
-addressLabel: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8"
+address: "5600 Kwantlen Street, Richmond, Vancouver, BC, Canada"
+addressLabel: "5600 Kwantlen Street, Richmond"
 latitude: 49.1748603216866
 longitude: -123.128012836554
 eventUrl: www.eventbrite.ca/e/circular-economy-product-sustainability-for-industry-professionals-tickets-45121409350

@@ -6,8 +6,8 @@ description: "Spaceship As A City is a metaphorical movement in urban planning -
 startTime: 1-2:30
 endTime: 
 type: 
-address: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8, Vancouver, BC, Canada"
-addressLabel: "5600 Kwantlen Street, Richmond, British Columbia V6X 3V8"
+address: "5600 Kwantlen Street, Richmond, Vancouver, BC, Canada"
+addressLabel: "5600 Kwantlen Street, Richmond"
 latitude: 49.1747930656487
 longitude: -123.127784947124
 eventUrl: www.eventbrite.ca/e/city-as-a-spaceship-urban-planning-tickets-45121011159

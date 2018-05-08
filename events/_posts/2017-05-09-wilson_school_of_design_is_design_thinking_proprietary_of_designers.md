@@ -6,8 +6,8 @@ description: "Many designers feel something has been taken from them when profes
 startTime: 6-8
 endTime: 
 type: 
-address: "5600 Kwantlen st. Richmond, Vancouver, BC, Canada"
-addressLabel: "5600 Kwantlen st. Richmond"
+address: "5600 Kwantlen Street, Richmond, Vancouver, BC, Canada"
+addressLabel: "5600 Kwantlen Street, Richmond"
 latitude: 49.1747930656487
 longitude: -123.127784947124
 eventUrl: www.eventbrite.ca/e/is-design-thinking-exclusive-to-designers-tickets-45121518677
