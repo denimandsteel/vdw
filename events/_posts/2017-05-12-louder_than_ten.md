@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Louder Than Ten"
 description: "Louder Than Ten trains digital project managers for the design industry. Join us for refreshments, shop talk, and help on your project pains."
-startTime: 1-4
+startTime: 1-4pm
 endTime: 
 type: Design Studios
 address: "#4-306 Abbott St, Vancouver, BC, Canada"

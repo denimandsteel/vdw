@@ -3,7 +3,7 @@ dayOfWeek: Thu
 dayOfMonth: May 10
 title: "Matthew McCormick Technically Beautiful Design Talk at Inform Interiors"
 description: "Matthew shares his personal journey into lighting, his work, and inspiration since he created his eponymous studio in 2013."
-startTime: 5:30-7:30
+startTime: 5:30-7:30pm
 endTime: 
 type: Design Edition
 address: "50 Water St, Vancouver, British Columbia V6B 2K8, Canada, Vancouver, BC, Canada"

@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Lori Sokoluk @ Paneficio Studios"
 description: "Join us for this artist talk on impact of architecture on Lori's art practice, and desired impact of the artwork on our city."
-startTime: 11-3
+startTime: 11-3pm
 endTime: 
 type: Design Studios
 address: "800 Keefer Street, Vancouver, British Columbia V6A 1Y7, Vancouver, BC, Canada"

@@ -8,7 +8,7 @@ endTime:
 type: Design Studios
 address: "403-375 West Fifth Avenue, Vancouver, BC, Canada"
 addressLabel: "403-375 West Fifth Avenue"
-latitude: 49.266892
+latitude: 49.2668919999999
 longitude: -123.11199
 eventUrl: 
 eventUrlLabel: 
