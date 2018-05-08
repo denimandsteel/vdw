@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Panefico Studios Tour"
 description: "I have been part of creating three artist studio buildings and will give you a tour that will touch on Paneficio Studios history, the neighbourhood and fostering the well being of artists in our city. I am a visual artist whose primary medium is assemblage. My art will be on display but I will focus on the tour of our building and how we created a working space for 9 artists. This will start the day off at our building with two artist talks by Arnt Arntzen and Lori Sokoluk. "
-startTime: 11-3
+startTime: 11-3pm
 endTime: 
 type: Design Studios
 address: "800 Keefer Street, Vancouver, BC, Canada"

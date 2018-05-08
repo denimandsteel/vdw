@@ -3,12 +3,12 @@ dayOfWeek: Fri
 dayOfMonth: May 11
 title: "RED Academy Logo Design Battle"
 description: "Get ready for RED Academy’s Impact Logo Design Battle. Join to watch or participate along with our students and staff. There will be a face off against each other in an attempt to create the best logo for one of our community partners. Armed with markers and our whiteboards, teams will have one hour to conceptualize and execute a logo. Join us for a beer and cheer them on or get in on the action!<br> <br> In our programs, students work with Community Partners as their clients."
-startTime: 6-8
+startTime: 6-8pm
 endTime: 
 type: 
 address: "1490 Broadway W, Vancouver, British Columbia V6H 1H5, Canada, Vancouver, BC, Canada"
 addressLabel: "1490 Broadway W, Vancouver, British Columbia V6H 1H5, Canada"
-latitude: 49.263348
+latitude: 49.2633480000001
 longitude: -123.13817
 eventUrl: www.eventbrite.ca/e/impact-logo-design-battle-tickets-45263526426
 eventUrlLabel: RSVP
