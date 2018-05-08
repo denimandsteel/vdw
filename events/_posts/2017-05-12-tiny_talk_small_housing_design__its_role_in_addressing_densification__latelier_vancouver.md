@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Tiny talk: Small Housing Design & its Role in Addressing Densification @ L'Atelier Vancouver"
 description: "A presentation on small housing types, designs and their real-world applications. Followed by an industry-led panel and Q&A with Jake Fry (Smallworks), BC Tiny House Collective co-founders and other panelists. Presented by Small Housing BC."
-startTime: 1-2:30
+startTime: 1-2:30pm
 endTime: 
 type: 
 address: "#400-319 West Hastings Street, Vancouver, BC, Canada"

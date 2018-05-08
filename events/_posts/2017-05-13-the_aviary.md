@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "The Aviary"
 description: "We are a coworking space where a range of designers/creatives share the studio together. We will have an installation/exhibit on display.<br> "
-startTime: 11-5
+startTime: 11-5pm
 endTime: 
 type: Design Studios
 address: "657 East 15th Ave, Vancouver, BC, Canada"

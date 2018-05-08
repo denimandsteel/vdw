@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "The Mighty Oak Walking Tour"
 description: "A Walking Tour highlighting the impact of changes in our community resulting from the construction of Laneway Houses and Passive Houses. We will meet at the Mighty Oak to showcase an outstanding community gathering place. Coffee and treats will be included in the tour fee. Designers participating in the tour are Lanefab Design/Build, Erik Olofsson Construction, Gray Ghost Restoration.<br> <br> The walk will start with the tour of 2-3 Laneway Houses and a completed Passive House. Your tour guide is Jill Leversage - a homeowner who just moved into this community."
-startTime: 10-2
+startTime: 10-2pm
 endTime: 
 type: 
 address: "198 West 18th Avenue, Vancouver, BC, Canada"
