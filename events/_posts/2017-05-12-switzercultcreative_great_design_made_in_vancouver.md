@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "SwitzerCultCreative: Great Design Made in Vancouver"
 description: "Come and hear our stories!  SwitzerCultCreative cultivates opportunities for talented local designer/makers. We believe great local talent holds an important place in our community and beyond. What impact does \"Create local, buy local\" have on our communities? Guests will hear the SwitzerCultCreative story and directly from those working on the front lines."
-startTime: 1-3 pm
+startTime: 1-3pm
 endTime: 
 type: Design Studios
 address: " 1725 West 3rd Avenue, Vancouver V6J 1K7 , Vancouver, BC, Canada"

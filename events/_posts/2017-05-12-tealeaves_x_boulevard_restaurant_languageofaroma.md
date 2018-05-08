@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "TEALEAVES X Boulevard Restaurant #LanguageOfAroma"
 description: "Join TEALEAVES for an AROMA-themed tasting experience, inspired by tea at Boulevard Kitchen & Oyster Bar. Explore how AROMA affects taste with Executive Chef Alex Chen through his tea-inspired entreé.<br> Menu details:<br> Slow cooked halibut with summer peas, snap peas, asparagus, pomme dauphine, TEALEAVES Health & Well-Being Green tea-infused razor clam sauce vin blanc, and caviar.<br> <br> #PaletteForYourPalate project in collaboration with Pantone, Microsoft Design and world-class chefs and mixologists, we explore tea + color + mood + aroma through our bespoke culinary experiences. "
-startTime: 3-4
+startTime: 3-4pm
 endTime: 
 type: Design Tastings
 address: "845 Burrard St, Vancouver, British Columbia V6Z 1X9, Canada, Vancouver, BC, Canada"

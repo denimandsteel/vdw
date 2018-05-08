@@ -3,7 +3,7 @@ dayOfWeek: Tue
 dayOfMonth: May 08
 title: "TEALEAVES #ColorInSight Documentary Screening & Panel Discussion on Color"
 description: "An inspired documentary screening, #ColorInSight, and panel discussion will explore colour strategy, specifically, how brands across industries can harness the power of colour and how colour strategy can have a large impact on the perception of products and services.<br> <br> For companies, colour has long been a tool that the most memorable brands use to assert their identity. Colour has become an industry-agnostic tool that only the best brands wield to capture their audience’s attention.<br> <br> Proceeds from ticket sales will be donated to the Vancouver Design Foundation to support VDW."
-startTime: 7:30 PM – 9:00 PM
+startTime: 7:30–9pm
 endTime: 
 type: Design Edition
 address: "SFU Goldcorp Centre for the Arts, 149 W Hastings St., Vancouver, BC, Canada"
