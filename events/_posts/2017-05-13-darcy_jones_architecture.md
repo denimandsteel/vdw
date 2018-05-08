@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "D'Arcy Jones Architecture"
 description: "DJA are a boutique architecture and design studio. Come see our new studio and some new projects we're working on. Snacks and refreshments will be served.  "
-startTime: 1-4
+startTime: 1-4pm
 endTime: 
 type: Design Studios
 address: "#309-175 East Broadway, Vancouver, BC, Canada"

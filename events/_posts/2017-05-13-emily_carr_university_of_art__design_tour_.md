@@ -3,7 +3,7 @@ dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Emily Carr University of Art + Design: Tour "
 description: "On September 5, 2017, Emily Carr University of Art + Design officially opened the doors to its new home. The $122-million campus was designed by Diamond Schmitt Architects to facilitate multi-disciplinary approaches to the arts with an emphasis on vision, learning and innovation. <br> <br> Join lead architect Ana Maria Llanos for a tour of the first purpose-built institution of art in design in Canada. RSVP April 24 to reserve a spot."
-startTime: 1 - 2:30
+startTime: 1-2:30pm
 endTime: 
 type: Design Landmarks
 address: "520 East 1st Avenue Vancouver, BC V5T 0H2, Vancouver, BC, Canada"
