@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Faculty Brewing Co. X Hives For Humanity Collaboration"
-description: "In collaboration with Hives For Humanity, we have brewed a special pilot brew for VDW! Join us on Mother’s day for a special pop-up market: <br> - Honey and candles from H4H.<br> - Demonstration frame with bees (weather dependent!)<br> - Try Faculty's Honey Hefeweizen beer pilot brew on tap, a special brew for this event!<br> - Raffle tickets - prize packs with beer, honey and Faculty brewing swag, with proceeds going towards H4H.<br> - H4H Hive box for visitors to draw/write on, then this hive will become a home for the bees!"
+description: "In collaboration with <a href=\"http://hivesforhumanity.com\">Hives For Humanity</a>, we have brewed a special pilot brew for VDW! Join us on Mother’s day for a special pop-up market: <br> - Honey and candles from H4H.<br> <br> - Demonstration frame with bees (weather dependent!)<br> <br> - Try Faculty's Honey Hefeweizen beer pilot brew on tap, a special brew for this event!<br> <br> - Raffle tickets - prize packs with beer, honey and Faculty brewing swag, with proceeds going towards H4H.<br> <br> - H4H Hive box for visitors to draw/write on, then this hive will become a home for the bees!"
 startTime: 11-5pm
 endTime: 
 type: Design Tastings
