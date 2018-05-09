@@ -2,8 +2,8 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "Faculty Brewing Co. X Hives For Humanity Collaboration"
-description: "In collaboration with Hives For Humanity, we have brewed a special pilot brew for VDW! Come hang out, grab a beer, and check out our space! <br> "
-startTime: 11-6pm
+description: "In collaboration with Hives For Humanity, we have brewed a special pilot brew for VDW! Join us on Mother’s day for a special pop-up market: <br> - Honey and candles from H4H.<br> - Demonstration frame with bees (weather dependent!)<br> - Try Faculty's Honey Hefeweizen beer pilot brew on tap, a special brew for this event!<br> - Raffle tickets - prize packs with beer, honey and Faculty brewing swag, with proceeds going towards H4H.<br> - H4H Hive box for visitors to draw/write on, then this hive will become a home for the bees!"
+startTime: 11-5pm
 endTime: 
 type: Design Tastings
 address: "1830 Ontario Street, Vancouver, BC, Canada"
@@ -16,7 +16,7 @@ twitter: facultybrewing
 instagram: facultybrewing
 website: facultybrewing.com
 published: true
-price: 
+price: FREE
 internal_id: 383
 
 category: event-2018-13
