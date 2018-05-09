@@ -2,7 +2,7 @@
 dayOfWeek: Sun
 dayOfMonth: May 13
 title: "BUBBLESCAPE "
-description: "A multi-day collaboration of the Vancouver Design Nerds, frida&frank, and Vancouver Design Foundation at Robson Square.<br> <br> A variety of pop-up experiences will enliven our inflatable bubble spaces, showing you first hand how they use design to create impact. Plus surprise activities and guests to be announced. Sponsored by VIVA Vancouver.<br> <br> <b>Saturday Programming</b><br> <br> <em>All Day (2:30pm to evening)</em><br> Lighting and Projection Show by HFOUR<br> Refreshment by Johnny Can’t Surf Coffee<br> <br> <em>2-4pm: </em><br> Discordant Projects: When is a Museum? (Vancouver Design Edition)<br> TEALEAVES Tea Tasting"
+description: "A multi-day collaboration of the Vancouver Design Nerds, frida&frank, and Vancouver Design Foundation at Robson Square.<br> <br> A variety of pop-up experiences will enliven our inflatable bubble spaces, showing you first hand how they use design to create impact. Plus surprise activities and guests to be announced. Sponsored by VIVA Vancouver.<br> <br> <b>Sunday Programming</b><br> <em>2-4pm: </em><br> Discordant Projects: When is a Museum? (Vancouver Design Edition)<br> TEALEAVES Tea Tasting"
 startTime: Thu-Sat 3-7pm, Sun 2-4pm
 endTime: 
 type: 
