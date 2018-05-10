@@ -10,8 +10,8 @@ address: "400 - 675 West Hastings Street Vancouver, British Columbia V6B 1N2, Va
 addressLabel: "400 - 675 West Hastings Street Vancouver, British Columbia V6B 1N2"
 latitude: 49.2853399999999
 longitude: -123.11336
-eventUrl: creativemornings.com/talks/vancouver-design-week-cmvan-at-night
-eventUrlLabel: Get Tickets
+eventUrl: creativemornings.com/talks/pat-christie-vancouver-design-week
+eventUrlLabel: Sold Out (Waitlist)
 twitter: 
 instagram: hcma.ca
 website: hcma.ca
