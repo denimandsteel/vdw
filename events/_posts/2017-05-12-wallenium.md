@@ -3,7 +3,7 @@ dayOfWeek: Sat
 dayOfMonth: May 12
 title: "Wallenium"
 description: "Our space features Vintage Yaletown style + modern space optimization! <br> <br> Come see our newly designed autonomous silent meeting room, integrated glass wall systems and locally designed craft furniture presented by @archetypeconcepts. <br> <br> Lets talk design while enjoying some refreshments and snacks."
-startTime: 
+startTime: 12-6pm
 endTime: 
 type: Design Studios
 address: "7-1238 Homer st., Vancouver, BC, Canada"
