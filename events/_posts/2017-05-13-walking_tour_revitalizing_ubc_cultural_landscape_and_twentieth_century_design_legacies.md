@@ -11,7 +11,7 @@ addressLabel: "6331 Crescent Rd, Vancouver, BC V6T 1Z2"
 latitude: 49.2679941202153
 longitude: -123.255313273957
 eventUrl: www.tickettailor.com/checkout/view-event/id/162769/chk/5b66
-eventUrlLabel: Get Tickets
+eventUrlLabel: Sold out - Join waitlist
 twitter: VanHeritage
 instagram: vancouverheritagefoundation
 website: www.vancouverheritagefoundation.org
