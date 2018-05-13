@@ -1,7 +1,7 @@
 ---
 dayOfWeek: Sun
 dayOfMonth: May 13
-title: "Circle Wellness Studios Party"
+title: "Pacific Rhythm, Circle Wellness, and Friends After Party"
 description: "Join Pacific Rhythm and Circle Wellness Studios to cap off Vancouver Design Week with an outdoor sunset bbq and dance party.  Featuring some of Vancouvers best music selectors and offering local flavours of food and drinks. The party will begin after our open studio finishes at 4 pm. Tickets at the door.  Let's celebrate #VDW2018  <br> <br> Presented by Pacific Rhythm, Circle Wellness Studios, Vancouver Design Week, and Modus Coffee Roasters"
 startTime: 4-10pm
 endTime: 
@@ -21,5 +21,5 @@ internal_id: 404
 
 category: event-2018-13
 priority: 0
-slug: 2018-05-13-circle_wellness_studios_party
+slug: 2018-05-13-pacific_rhythm_circle_wellness_and_friends_after_party
 ---
