@@ -8,8 +8,8 @@ endTime:
 type: 
 address: "3612 Main Street, Vancouver, BC, Canada"
 addressLabel: "3612 Main Street"
-latitude: 49.2620099999999
-longitude: -123.0705
+latitude: 49.252634
+longitude: -123.10057
 eventUrl: 
 eventUrlLabel: 
 twitter: van_special
