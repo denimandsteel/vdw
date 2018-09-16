@@ -338,8 +338,8 @@ if ($('#successes').is(":visible")) {
 if ($('#about').is(":visible")) {
   var switch2 = $('#about').offset().top;  
 }
-if($('#get-involved.html').is(":visible")) {
-  var switch3 = $('#get-involved').offset().top;
+if($('#festival.html').is(":visible")) {
+  var switch3 = $('#festival').offset().top;
 }
 
 $(window).on('scroll', function() {
@@ -357,7 +357,7 @@ $(window).on('scroll', function() {
     $('.c-navigation--link').css({
       color: '#fff'
     });
-  } else if(switch3 <= $(window).scrollTop() && $(window).scrollTop() <= switch3+ $('#get-involved').height() ) {
+  } else if(switch3 <= $(window).scrollTop() && $(window).scrollTop() <= switch3+ $('#festival').height() ) {
     $nav.css({
       'background-color': '#ffe6e6',
     });
