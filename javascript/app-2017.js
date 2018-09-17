@@ -331,48 +331,48 @@ $.each(urlEvents, function(i, eventId) {
 
 // Navigation color switcher
 
-var $nav = $('.c-navigation');
-if ($('#successes').is(":visible")) {
-  var switch1 = $('#successes').offset().top;
-}
-if ($('#about').is(":visible")) {
-  var switch2 = $('#about').offset().top;  
-}
-if($('#get-involved.html').is(":visible")) {
-  var switch3 = $('#get-involved').offset().top;
-}
+// var $nav = $('.c-navigation');
+// if ($('#successes').is(":visible")) {
+//   var switch1 = $('#successes').offset().top;
+// }
+// if ($('#about').is(":visible")) {
+//   var switch2 = $('#about').offset().top;  
+// }
+// if($('#festival').is(":visible")) {
+//   var switch3 = $('#festival').offset().top;
+// }
 
-$(window).on('scroll', function() {
-  if(switch1 <= $(window).scrollTop() && $(window).scrollTop() <= switch1 + $('#hero').height() ) {
-    $nav.css({
-      'background-color': '#28e9dc',
-    });
-    $('.c-navigation--link').css({
-      color: '#fff'
-    });
-  } else if(switch2 <= $(window).scrollTop() && $(window).scrollTop() <= switch2 + $('#about').height() ) {
-    $nav.css({
-      'background-color': '#466eff',
-    });
-    $('.c-navigation--link').css({
-      color: '#fff'
-    });
-  } else if(switch3 <= $(window).scrollTop() && $(window).scrollTop() <= switch3+ $('#get-involved').height() ) {
-    $nav.css({
-      'background-color': '#ffe6e6',
-    });
-    $('.c-navigation--link').css({
-      color: '#000'
-    });
-  } else {
-    $nav.css({
-      'background-color': '#fff',
-    });
-    $('.c-navigation--link').css({
-      color: '#000'
-    });
-  }
-});
+// $(window).on('scroll', function() {
+//   if(switch1 <= $(window).scrollTop() && $(window).scrollTop() <= switch1 + $('#hero').height() ) {
+//     $nav.css({
+//       'background-color': '#28e9dc',
+//     });
+//     $('.c-navigation--link').css({
+//       color: '#fff'
+//     });
+//   } else if(switch2 <= $(window).scrollTop() && $(window).scrollTop() <= switch2 + $('#about').height() ) {
+//     $nav.css({
+//       'background-color': '#466eff',
+//     });
+//     $('.c-navigation--link').css({
+//       color: '#fff'
+//     });
+//   } else if(switch3 <= $(window).scrollTop() && $(window).scrollTop() <= switch3+ $('#festival').height() ) {
+//     $nav.css({
+//       'background-color': '#ffe6e6',
+//     });
+//     $('.c-navigation--link').css({
+//       color: '#000'
+//     });
+//   } else {
+//     $nav.css({
+//       'background-color': '#fff',
+//     });
+//     $('.c-navigation--link').css({
+//       color: '#000'
+//     });
+//   }
+// });
 
 // Nav mobile toggle
 // ---
