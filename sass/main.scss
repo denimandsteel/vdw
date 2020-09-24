@@ -1,11 +1,21 @@
 @import "normalize";
 
 $neutral0: #1A202C;
-$neutal02: #4A5568;
+$neutral02: #4A5568;
 $neutral04: #A0AEC0;
 $neutral06: #E2E8F0;
 $neutral08: #F7FAFC;
-$neutal10: #fff;
+$neutral10: #fff;
+$accent0: #ABDCFF;
+$accent1: #0396FF;
+$accent2: #FFF6B7;
+$accent3: #F6416C;
+$accent4: #5EFCE8;
+$accent5: #736EFE;
+
+$gradientZero: linear-gradient(to right, $accent0 10%, $accent1 100%);
+$gradientOne: linear-gradient(to right, $accent2 10%, $accent3 100%);
+$gradientTwo: linear-gradient(to right, $accent4 10%, $accent5 100%);
 
 $white: $neutral08;
 $black: $neutral0;
@@ -13,6 +23,13 @@ $black: $neutral0;
 $breakpoint-sm: 36rem;
 $breakpoint-md: 48rem;
 $breakpoint-lg: 64rem;
+
+
+
+html,
+body {
+  margin: 0;
+}
 
 body {
   font-size: 16px;
@@ -28,32 +45,168 @@ body {
   }
 }
 
-main {
+header {
+  width: 100%;
+  margin-bottom: 4rem;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 8rem;
+  }
+}
+
+nav {
+  max-width: $breakpoint-md;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+}
+
+section {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.homepage-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-canvas {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: 100%;
+  
+  filter: blur(100px);
+  mix-blend-mode: multiply;
+
+}
+
+.grid-container {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 1.5rem 1fr 1.5rem;
-  grid-column-gap: 1.5rem;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  
+  z-index: 1;
 
   max-width: 54rem;
 
-  margin: 4rem auto 0;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width: $breakpoint-md) {
+    grid-auto-flow: row;
     grid-template-columns: repeat(3, 1fr)
   }
 }
 
 .section-about {
-  grid-column: span 3;
-  @media screen and (min-width: $breakpoint-md) {
-    grid-column: span 1;
-  }
+  grid-column: span 1;
 }
 
 .section-primary {
-  grid-column: span 3;
+  grid-column: span 1;
   @media screen and (min-width: $breakpoint-md) {
     grid-column: 2 / span 2;
+  }
+}
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="email"] {
+  flex: 8 8 20rem;
+  min-width: 16rem;
+  width: 20rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+
+  border: 2px solid transparent;
+  background-color: $neutral10;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 8px 16px -4px rgba(14,14,14,0.12);
+  will-change: border;
+  transition: border 150ms ease-in-out;
+
+  &:focus {
+    border: 2px solid $accent4;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes backgroundRepeat {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+button[type="submit"] {
+  position: relative;
+  flex: 2 2 5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: $neutral0;
+  color: $neutral10;
+  cursor: pointer;
+  box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 8px 16px -4px rgba(14,14,14,0.12);
+
+  will-change: background-image, box-shadow;
+  transition: background-image, box-shadow 150ms ease-in-out;
+
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    color: $black;
+    opacity: 0;
+
+    will-change: opacity;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  .text-burn {
+    mix-blend-mode: color-burn;
+  }
+
+  &:hover {
+    background-image: $gradientOne;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    animation: backgroundRepeat 3000ms ease-in-out 1000ms infinite alternate;
+    box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 16px 32px -8px rgba(14,14,14,0.15);
+
+    .text-overlay {
+      opacity: 0.6;
+    }
   }
 }

@@ -1911,12 +1911,12 @@ button,
   text-decoration: none;
   cursor: pointer;
 }
-.support-hover button:hover, button:focus, button:active,
-.support-hover .e-btn:hover,
+.support-hover button:hover, button:focus, button:active, .support-hover
+.e-btn:hover,
 .e-btn:focus,
-.e-btn:active,
-.support-hover .e-btn-primary:hover,
-.support-hover .e-btn-secondary:hover,
+.e-btn:active, .support-hover
+.e-btn-primary:hover, .support-hover
+.e-btn-secondary:hover,
 .e-btn-primary:focus,
 .e-btn-secondary:focus,
 .e-btn-primary:active,
@@ -2607,7 +2607,7 @@ button,
   width: 100%;
   top: 100%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent);
 }
 .hide-sticky-map .day-events.sticky .map {
   display: none;
@@ -2809,11 +2809,12 @@ button,
   line-height: 20px;
   color: #797979;
 }
-.event-item .description .date, .event-item .time-and-place .date {
+.event-item .description .date,
+.event-item .time-and-place .date {
   display: none;
 }
-#your-list .event-item .description .date,
-#your-list .event-item .time-and-place .date {
+#your-list .event-item .description .date, #your-list
+.event-item .time-and-place .date {
   display: inline;
 }
 .event-item .description a,

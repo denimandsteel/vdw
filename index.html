@@ -36,21 +36,44 @@
   </script>
 </head>
 <body class="support-hover">
-  <main class="grid-container" role="main">
-    <div class="section-about">
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Archive</li>
+        <li>Past events</li>
+      </ul>
+    </nav>
+  </header>
+  <main  role="main">
+    <section>
+      <div class="homepage-background">
+        <canvas id="canvas" class="background-canvas"></canvas>
+      </div>
+    <div class="grid-container">
+      <div class="section-about">
       <h1>VDW</h1>
       <h3>Vancouver Design Week 2020: Environment & Sustainability</h3>
       <p>Mission & vision & goals for 2020 Lorem ipsum </p>
     </div>
     <div class="section-primary">
-      <p>Stay up to date with our newsletter</p>
-      <label for="email">Sign up</label>
-      <input type="email" name="email">
-      <button>Sign up</button>
+      <label for="email">Stay up to date with our newsletter</label>
+      <form action="//vancouverdesignwk.us16.list-manage.com/subscribe/post?u=7158559d84aec8751751635da&amp;id=58cff9b111" method="post" target="_blank" rel="noopener" novalidate accept-charset="utf-8">
+        <input type="email" value="" name="EMAIL" tabindex="2" placeholder="email@example.com">
+        <button type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button u-ac ff-secondary">
+          Subscribe
+          <span class="text-overlay text-burn" aria-hidden="true">Subscribe</span>
+          <span class="text-overlay" aria-hidden="true">Subscribe</span>
+        </button>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7158559d84aec8751751635da_58cff9b111" tabindex="-1" value=""></div>
+      </form>
       <p>We'll be featuring local designers, products we believe in and other fun stuff</p>
     </div>
+    </div>
+    </section>
+    
   </main>
-
-  <script type="text/javascript" src="/javascript/third-party.js"></script>
+  
+  <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 </html>
