@@ -24,8 +24,6 @@ $breakpoint-sm: 36rem;
 $breakpoint-md: 48rem;
 $breakpoint-lg: 64rem;
 
-
-
 html,
 body {
   margin: 0;
@@ -35,21 +33,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-size: 1.25rem;
-  @media (prefers-color-scheme: light) {
-    color: $black;
-    background-color: $white;
-  }
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-    background-color: $black;
-  }
+  color: $neutral10;
 }
 
 header {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   @media screen and (min-width: $breakpoint-md) {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -64,12 +56,78 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    
+    padding: 0;
   }
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $neutral10;
+
+    &:visited {
+      color: $neutral10;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  max-width: $breakpoint-md;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $neutral10;
+
+    &:visited {
+      color: $neutral10;
+    }
+  }
+
 }
 
 section {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+figure {
+  margin: 0;
+  height: auto;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.3
+  }
+
+  .burn {
+    opacity: 1;
+    background-blend-mode: color-burn;
+  }
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,li {
+  margin: 0 0 calc(1.45 * 1rem);
 }
 
 .homepage-background {
@@ -79,6 +137,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-color: #da7f3a;
 }
 
 .background-canvas {
@@ -86,10 +145,9 @@ section {
   display: block;
   width: inherit;
   height: 100%;
-  
-  filter: blur(100px);
-  mix-blend-mode: multiply;
 
+  filter: blur(15px);
+  // mix-blend-mode: soft-light;
 }
 
 .grid-container {
@@ -101,23 +159,33 @@ section {
   
   z-index: 1;
 
-  max-width: 54rem;
+  max-width: 64rem;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3rem auto 4rem;
 
   @media screen and (min-width: $breakpoint-md) {
+    margin-top: 4rem;
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .section-about {
   grid-column: span 1;
+
+  figure {
+    margin: 0 auto;
+    fill: $neutral10;
+  }
 }
 
 .section-primary {
   grid-column: span 1;
+
+  > * + * {
+    margin-bottom: 1.45 * 1rem;
+  }
+
   @media screen and (min-width: $breakpoint-md) {
     grid-column: 2 / span 2;
   }
@@ -183,7 +251,7 @@ button[type="submit"] {
 
   .text-overlay {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     bottom: 0;
     padding: 0.5rem 1rem;
@@ -204,9 +272,14 @@ button[type="submit"] {
     background-repeat: no-repeat;
     animation: backgroundRepeat 3000ms ease-in-out 1000ms infinite alternate;
     box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 16px 32px -8px rgba(14,14,14,0.15);
+    color: transparent;
 
     .text-overlay {
-      opacity: 0.6;
+      opacity: 0.3;
+    }
+
+    .text-burn {
+      opacity: 1
     }
   }
 }

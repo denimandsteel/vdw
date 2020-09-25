@@ -413,27 +413,17 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-size: 1.25rem;
-}
-@media (prefers-color-scheme: light) {
-  body {
-    color: #1A202C;
-    background-color: #F7FAFC;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #F7FAFC;
-    background-color: #1A202C;
-  }
+  color: #fff;
 }
 
 header {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 48rem) {
   header {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -451,11 +441,71 @@ nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+  padding: 0;
+}
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+nav a:visited {
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:visited {
+  color: #fff;
 }
 
 section {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+figure {
+  margin: 0;
+  height: auto;
+  position: relative;
+}
+figure .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.3;
+}
+figure .burn {
+  opacity: 1;
+  background-blend-mode: color-burn;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0 0 calc(1.45 * 1rem);
 }
 
 .homepage-background {
@@ -465,6 +515,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-color: #da7f3a;
 }
 
 .background-canvas {
@@ -472,8 +523,7 @@ section {
   display: block;
   width: inherit;
   height: 100%;
-  filter: blur(100px);
-  mix-blend-mode: multiply;
+  filter: blur(15px);
 }
 
 .grid-container {
@@ -487,12 +537,12 @@ section {
       grid-template-columns: 1fr;
   grid-gap: 3rem;
   z-index: 1;
-  max-width: 54rem;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 64rem;
+  margin: 3rem auto 4rem;
 }
 @media screen and (min-width: 48rem) {
   .grid-container {
+    margin-top: 4rem;
     grid-auto-flow: row;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -503,10 +553,17 @@ section {
   -ms-grid-column: span 1;
       grid-column: span 1;
 }
+.section-about figure {
+  margin: 0 auto;
+  fill: #fff;
+}
 
 .section-primary {
   -ms-grid-column: span 1;
       grid-column: span 1;
+}
+.section-primary > * + * {
+  margin-bottom: 1.45rem;
 }
 @media screen and (min-width: 48rem) {
   .section-primary {
@@ -579,7 +636,7 @@ button[type="submit"] {
 }
 button[type="submit"] .text-overlay {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   bottom: 0;
   padding: 0.5rem 1rem;
@@ -597,7 +654,11 @@ button[type="submit"]:hover {
   background-repeat: no-repeat;
   animation: backgroundRepeat 3000ms ease-in-out 1000ms infinite alternate;
   box-shadow: 0 1px 1px 0 rgba(14, 14, 14, 0.05), 0 16px 32px -8px rgba(14, 14, 14, 0.15);
+  color: transparent;
 }
 button[type="submit"]:hover .text-overlay {
-  opacity: 0.6;
+  opacity: 0.3;
+}
+button[type="submit"]:hover .text-burn {
+  opacity: 1;
 }

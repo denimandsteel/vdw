@@ -2,21 +2,26 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 
-const circleCount = 2;
+const circleCount = 1;
 const speedMultiplier = 2;
 
 const { innerWidth, innerHeight } = window;
 
 const gradients = [
   {
-    start: '#ABDCFF',
-    stop: '#0396FF'
-  }, {
-    start: '#FFF6B7',
-    stop: "#F6416C"
-  }, {
-    start: "#736EFE",
-    stop: "#5EFCE8"
+    start: 'rgba(200,1,1,0.8)',
+    stop: 'rgba(200,1,1,0)'
+  }, 
+  {
+    start: 'rgba(219,1,104,1)',
+    stop: "rgba(219,1,104,0.0)"
+  },
+  {
+    start: "rgba(233,161,38,1)",
+    stop: "rgba(233,161,38,0.6)"
+  },  {
+    start: "rgba(212,16,16,0.7)",
+    stop: "rgba(212,16,16,0)"
   }
 ]
 
@@ -27,57 +32,78 @@ function Circle (x, y, dx, dy, radius, index) {
   this.dy = dy;
   this.radius = radius;
 
-  // const gradient = ctx.createLinearGradient(0, 0, radius, radius);
-  // gradient.addColorStop(0.1, gradients[index].start);
-  // gradient.addColorStop(1, gradients[index].stop);
+  const gradient = ctx.createRadialGradient(
+    this.x, this.y, 0, 
+    this.x, this.y, radius);
+  gradient.addColorStop(0, gradients[index].start);
+  gradient.addColorStop(1, gradients[index].stop);
 
   this.draw = function () {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    ctx.fillStyle = gradients[index].stop;
-    ctx.globalAlpha = 0.6;
+    ctx.fillStyle = gradient;
+
     ctx.fill();
     ctx.closePath();
   }
 
-  this.update = function() {
-    if(this.x > canvas.width || this.x < 0) {
-      this.dx = -this.dx;
-    }
+  // this.update = function() {
+  //   if(this.x > canvas.width || this.x < 0) {
+  //     this.dx = -this.dx;
+  //   }
 
-    if(this.y > canvas.height || this.y < 0) {
-      this.dy = -this.dy;
-    }
+  //   if(this.y > canvas.height || this.y < 0) {
+  //     this.dy = -this.dy;
+  //   }
 
-    this.x += this.dx;
-    this.y += this.dy;
+    // this.x += this.dx;
+    // this.y += this.dy;
 
-    this.draw();
-  }
+  //   this.draw();
+  // }
 }
 
-const circlesArray = [];
-
-for (let i = 0; i < circleCount; i += 1) {
-  let x = Math.random() * innerWidth;
-  let y = Math.random() * innerHeight;
-  let dx = (Math.random() - 0.5) * speedMultiplier;
-  let dy = (Math.random() - 0.5) * speedMultiplier;
-  let radius = 500;
-
-  circlesArray.push(new Circle(x, y, dx, dy, radius, i));
-}
+const circlesArray = [
+  new Circle(
+    0.95 * innerWidth,
+    0.15 * innerHeight,
+    (Math.random() - 0.5) * speedMultiplier,
+    (Math.random() - 0.5) * speedMultiplier,
+    500,
+    0),
+  new Circle(
+    0.45 * innerWidth,
+    0.66 * innerHeight,
+    (Math.random() - 0.5) * speedMultiplier,
+    (Math.random() - 0.5) * speedMultiplier,
+    400,
+    1),
+  new Circle(
+    0.25 * innerWidth,
+    0.75 * innerHeight,
+    
+    (Math.random() - 0.5) * speedMultiplier,
+    (Math.random() - 0.5) * speedMultiplier,
+    400,
+    2),
+  new Circle(
+    0.78 * innerWidth,
+    0.95 * innerHeight,
+    (Math.random() - 0.5) * speedMultiplier,
+    (Math.random() - 0.5) * speedMultiplier,
+    600,
+    3),
+  ];
 
 function animate() {
-  requestAnimationFrame(animate);
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  for (let i = 0; i < circlesArray.length; i += 1) {
-    circlesArray[i].update();
-  }
+  circlesArray[0].draw();
+  circlesArray[1].draw();
+  circlesArray[2].draw();
+  circlesArray[3].draw();
 }
-
-animate();
+setTimeout(() => {
+  animate();
+}, 1);
 
 const setCanvasDimensions = () => {
   canvas.width = window.innerWidth;
