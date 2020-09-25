@@ -1,1359 +1,289 @@
-// Durfee's default styles
-
-// Class food chain:
-
-// Elements (smallest)                   | .e-*
-// Components (everything else)          | .c-*
-// Templates (biggest)                   | .t-*
-
-// Templates aren't really necessary here,
-// but they might be later on, so I'm making a note of it now.
-
-// ********
-// Imports
-// ********
-
-@import 'normalize';
-@import 'leaflet';
-
-// Lekton font-face
-@import 'https://fonts.googleapis.com/css?family=Lekton:400,700';
-
-// Tabac Sans font-face (thin, light, black)
-
-@font-face {
-  font-family: 'Tabac Sans';
-  src: url('/fonts/TabacSansBlack.otf') format('opentype');
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'Tabac Sans';
-  src: url('/fonts/TabacSansLight.otf') format('opentype');
-  font-weight: 300;
-
-}
-
-@font-face {
-  font-family: 'Tabac Sans';
-  src: url('/fonts/TabacSansThin.otf') format('opentype');
-  font-weight: 100;
-}
-
-// ********
-// Mixins
-// ********
-
-@mixin media($device) {
-  @media screen and (min-width: $device) {
-    @content;
-  }
-}
-
-// ********
-// Vars
-// ********
-
-// Vars > colors
-// ********
-$color-base: #fff;
-
-$color-red: #ff323c;
-$color-yellow: #ffed00;
-$color-cyan: #28e9dc;
-$color-blue: #466eff;
-$color-pink: #ffe6e6;
-$color-black: #000;
-
-$color-primary: $color-red;
-$color-accent: $color-yellow;
-$color-secondary: $color-black;
-$color-tertiary: $color-cyan;
-$color-quartary: $color-pink;
-
-
-
-// Vars > breakpoints
-// ********
-
-$breakpoints: (
-  n: 0,
-  xs: 20em,
-  sm: 34.375em,
-  md: 50em,
-  lg: 64em,
-  xl: 78.5em
-);
-
-$bp-nil: map-get($breakpoints, n);
-$breaks-at-xs: map-get($breakpoints, xs);
-$breaks-at-sm: map-get($breakpoints, sm);
-$breaks-at-md: map-get($breakpoints, md);
-$breaks-at-lg: map-get($breakpoints, lg);
-$breaks-at-xl: map-get($breakpoints, xl);
-
-
-// Vars > fonts
-// ********
-
-$font-size-base: 16px;
-$font-line-height: $font-size-base * 1.6;
-$font-family-base: 'Lekton', sans-serif;
-
-.ff-primary,
-%ff-primary {
-  font-family: 'Tabac Sans';
-}
-
-.ff-secondary,
-%ff-secondary {
-  font-family: 'Lekton';
-  font-weight: 400;
-}
-
-/**
- * Type scale and mixins
- * map each heading = charlie through hotel.
- * super-alpha        =   16 * 6.667  =  106.67
- * alpha              =   16 * 5.333  =  85.33
- * bravo              =   16 * 4      =  64
- * charlie            =   16 * 3.333  =  53.33
- * delta              =   16 * 2.667  =  42.67
- * echo               =   16 * 2      =  32
- * foxtrot            =   16 * 1.667  =  26.67
- * golf               =   16 * 1.333  =  21.33
- * hotel              =   16 * 1      =  16
- * */
-
-$type-scale: (
-  super-alpha: 107,
-  alpha:    85,
-  bravo:    64,
-  charlie:  53,
-  delta:    43,
-  echo:     32,
-  foxtrot:  27,
-  golf:     21.33,
-  hotel:    16,
-  ) !default;
-
-$type-units: px;
-
-$type-scale-headings: (
-  h1: charlie,
-  h2: delta,
-  h3: echo,
-  h4: foxtrot,
-  h5: golf,
-  h6: hotel
-  ) !default;
-
-// Include any omni-heading styles here.
-@mixin heading-styles() {
-  @extend %ff-primary;
-  font-weight: 900;
-  line-height: 1.1; // Eliminate whitespace for split headers.
-  letter-spacing: 0.05rem;
-}
-
-// Hard and silent classes for all headings.
-@mixin heading-classes() {
-  @each $name, $scale in $type-scale {
-    .#{$name},
-    %#{$name} {
-      @include heading-styles();
-      font-size: ($scale * 0.875) + $type-units;
-      margin-top: $font-line-height;
-      margin-bottom: $font-line-height;
-
-      @include media($breaks-at-md) {
-        font-size: ($scale * 0.925) + $type-units;
-        margin-bottom: $font-line-height;
-        margin-top: $font-line-height * 2;
-      }
-
-      @include media($breaks-at-lg) {
-        font-size: ($scale * 0.975) + $type-units;
-      }
-
-      @include media($breaks-at-xl) {
-        font-size: $scale + $type-units;
-      }
-    }
-  }
-}
-
-// Extend silent classes to h elements.
-@mixin heading-elements() {  
-  @each $h, $scale in $type-scale-headings {
-    #{$h} {
-     @extend %#{$scale};
-    }
-  }
-}
-
-@include heading-classes();
-@include heading-elements();
-
-// Vars > Global values and styles
-// ********
-
-$unit: 1.25rem;
-
-html {
-  font-family: $font-family-base;
-  font-size: $font-size-base*0.85;
-  line-height: $font-line-height;
-
-  @include media($breaks-at-md) {
-    font-size: $font-size-base * 0.9;
-  }
-
-  @include media($breaks-at-lg) {
-    font-size: $font-size-base * 0.95;
-  }
-
-  @include media($breaks-at-xl) {
-    font-size: $font-size-base;
-}
-
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-// ********
-// Silent classes
-// ********
-
-%clearfix,
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-// ********
-// Utility Classes (.u-*)
-// ********
-
-
-
-// a = Alignment 
-// l = left | r = right | c = center
-
-.u-al {
-  @include media($breaks-at-md) {
-    float: left !important;
-    clear: left;
-  }
-}
-
-.u-ar {
-  @include media($breaks-at-md) {
-    float: right !important;
-    clear: right;
-  }
-}
-
-.u-ac { margin: 0 auto; }
-
-// d = Display (Block)
-
-.u-db { display: block; }
-
-// m = Margin (Top, Right, Bottom, Left)
-.u-m-0 { margin: 0 !important; }
-.u-mt { margin-top: 3rem; }
-.u-mb { margin-bottom: 3rem; }
-.u-ml { margin-left: 3rem; }
-.u-mr { margin-right: 3rem; }
-.u-mt--xs { margin-top: 0.5rem; }
-.u-mb--xs { margin-bottom: 0.5rem; }
-.u-ml--xs { margin-left: 0.5rem; }
-.u-mr--xs { margin-right: 0.5rem; }
-.u-mt--s { margin-top: 1.5rem; }
-.u-mb--s { margin-bottom: 1.5rem; }
-.u-ml--s { margin-left: 1.5rem; }
-.u-mr--s { margin-right: 1.5rem; }
-.u-mt--l { margin-top: 4.5rem; }
-.u-mb--l { margin-bottom: 4.5rem; }
-.u-ml--l { margin-left: 4.5rem; }
-.u-mr--l { margin-right: 4.5rem; }
-// p = Padding (Top, Right, Bottom, Left) --s = small
-.u-p-0 { padding: 0 !important; }
-.u-p { padding: 3rem !important; }
-.u-pt { padding-top: 3rem !important; }
-.u-pb { padding-bottom: 3rem !important; }
-.u-pr { padding-right: 3rem !important; }
-.u-pl { padding-left: 3rem !important; }
-.u-p--s { padding: 1.5rem !important; }
-.u-pt--s { padding-top: 1.5rem !important; }
-.u-pb--s { padding-bottom: 1.5rem !important; }
-.u-pr--s { padding-right: 1.5rem !important; }
-.u-pl--s { padding-left: 1.5rem !important; }
-.u-pt--xs { padding-top: 0.5rem !important; }
-.u-pb--xs { padding-bottom: 0.5rem !important; }
-.u-pr--xs { padding-right: 0.5rem !important; }
-.u-pl--xs { padding-left: 0.5rem !important; }
-.u-p--l { padding: 6rem !important; }
-.u-pt--l { padding-top: 6rem !important; }
-.u-pb--l { padding-bottom: 6rem !important; }
-.u-pr--l { padding-right: 6rem !important; }
-.u-pl--l { padding-left: 6rem !important; }
-.u-p--xl { padding: 9rem !important; }
-.u-pt--xl { padding-top: 9rem !important; }
-.u-pb--xl { padding-bottom: 9rem !important; }
-.u-pr--xl { padding-right: 9rem !important; }
-.u-pl--xl { padding-left: 9rem !important; }
-
-// Background Colors
-// ---
-.u-bg-white { background-color: $color-base; }
-.u-bg-red { background-color: $color-red; }
-.u-bg-black { background-color: $color-black; }
-.u-bg-cyan { background-color: $color-cyan; }
-.u-bg-pink { background-color: $color-pink; }
-.u-bg-blue { background-color: $color-blue; }
-
-// Colors
-// ---
-
-.u-color-white { color: $color-base; }
-.u-color-red { color: $color-red; }
-.u-color-black { color: $color-black; }
-.u-color-cyan { color: $color-cyan; }
-.u-color-pink { color: $color-pink; }
-.u-color-blue { color: $color-blue; }
-.u-color-grey { color: #999; }
-
-.u-callout-link {
-  color: $color-secondary;
-  border-bottom: 2px solid $color-primary;
-
-  &:hover,
-  &:active {
-    background-color: $color-primary;
-    color: $color-base;
-  }
-}
-
-.u-email-link {
-  border-bottom: 2px solid $color-base;
-
-  &:hover,
-  &:active {
-    background-color: $color-base;
-    color: $color-primary;
-  }
-}
-
-.u-social-link:not(:first-of-type) {
-  padding-left: $unit;
-}
-
-.u-social-icon {
-  width: 48px;
-  height: 48px;
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
-
-  &.u--instagram {
-    background-image: url('/images/glyph-logo_May2016.png');
-  }
-
-  &.u--twitter {
-    background-image: url('/images/Twitter_Social_Icon_White.svg');
-  }
-
-  &.u--facebook {
-    background-image: url('/images/facebook.svg');
-  }
-}
-
-.c-big-social {
-  @include media($breaks-at-lg) {
-    width: 66%;
-  }
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: $color-black;
-  .u--instagram {
-    background-image: url('/images/glyph-logo_May2016_black.png');
-    min-width: 48px;
-  }
-  .text {
-    margin: 0 0 0 20px;
-  }
-  &:hover {
-    background: $color-black;
-    color: white;
-    .u--instagram {
-      background-image: url('/images/glyph-logo_May2016.png');
-    }
-  }
-}
-
-.u-flexbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  &.u--flex-column {
-    flex-direction: column;
-  }
-}
-
-.u-flex {
-  display: block;
-  flex: 1 1 auto;
-}
-
-.u-hide-on-mobile {
-  display: none;
-  @include media($breaks-at-md) {
-    display: block;
-  }
-}
-
-
-// ********
-// Elements
-// ********
-
-
-
-a {
-  color: $color-base;
-  text-decoration: none;
-}
-
-input,
-button {
-  background: none;
-  border: none;
-  cursor: auto;
-  width: 4rem;
-  outline: none;
-  line-height: $font-line-height;
-}
-ol,
-ul {
-  padding: 0;
+@import "normalize";
+
+$neutral0: #1A202C;
+$neutral02: #4A5568;
+$neutral04: #A0AEC0;
+$neutral06: #E2E8F0;
+$neutral08: #F7FAFC;
+$neutral10: #fff;
+$accent0: #ABDCFF;
+$accent1: #0396FF;
+$accent2: #FFF6B7;
+$accent3: #F6416C;
+$accent4: #5EFCE8;
+$accent5: #736EFE;
+
+$gradientZero: linear-gradient(to right, $accent0 10%, $accent1 100%);
+$gradientOne: linear-gradient(to right, $accent2 10%, $accent3 100%);
+$gradientTwo: linear-gradient(to right, $accent4 10%, $accent5 100%);
+
+$white: $neutral08;
+$black: $neutral0;
+
+$breakpoint-sm: 36rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;
+
+html,
+body {
   margin: 0;
 }
 
-// Font (f) weights (w) & varients 
-// b = bold, l = light, t = thin
-.f-wb,
-%f-wb {
-  font-weight: bold;
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  color: $neutral10;
 }
 
-// w-l
-.f-wl,
-%f-wl {
-  font-weight: 400;
-}
-
-// w-t
-.f-wt,
-%f-wl {
-  font-weight: 100;
-}
-
-// TODO: Transfer these to input styles
-
-.f-emphasis--color { background-color: transparentize($color-primary, 0.5); }
-
-.f-emphasis--ul { border-bottom: 1px dotted $color-base; }
-// Extra line height, mostly for headings. Will do proper 
-// heading classes later.
-// TODO: Heading line heights
-
-.f-line-height--s { line-height: 1; }
-.f-line-height { line-height: $font-line-height !important; }
-.f-line-height--l { line-height: $font-line-height * 2; }
-
-// ta = Text Alignment;
-.f-ta-c { text-align: center; }
-
-.f-ta-l { text-align: left; }
-
-.f-ta-r { text-align: right; }
-
-.f-small { font-size: 85%; }
-
-// tt-* = text transform
-
-.f-tt-uc {
-  text-transform: uppercase;
-}
-
-// Elements > Buttons (.e-btn)
-button,
-.e-btn,
-%e-btn {
-  display: inline-block;
-  padding: 0.53 * $unit 1.5 * $unit;
-  width: auto;
-  // border-radius: 4px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: none;
-  }
-}
-
-.e-btn-primary {
-  @extend %e-btn;
-  background-color: $color-base;
-  color: $color-secondary;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: darken($color-accent, 4);
-  }
-}
-
-// Elements > icons
-
-.e-icon--feature {
-  width: 10rem;
-
-  @include media($breaks-at-md) {
-    width: 12rem;
-    height: auto;
-  }
-
-  @include media($breaks-at-lg) {
-    width: 15rem;
-    height: auto;
-  }
-}
-
-// ********
-// Components
-// ********
-
-
-
-// Components > layout (.c-l-*)
-// 
-
-// Full width container (fw-container)
-.c-l-fw-container {
+header {
   width: 100%;
-  position: relative;
-}
-
-.c-l-fw-container:after,
-.c-l-container:after,
-.c-l-row:after {
-  @extend %clearfix;  
-}
-
-.c-l-container {
-  position: relative;
-  max-width: $breaks-at-lg;
-  margin: 0 auto;
-  @include media($breaks-at-sm) {
-    padding: 0 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 4rem;
   }
 }
 
-// Natural language columns e.g. element spans `.one.column`, `.three.columns`
-// *
-// Based on a 12 column grid, one column is roughly 5-8% depending 
-// on the number of columns. Fewer columns = less margin, since margin
-// is % based. Also don't nest these because nasty tiny margins will happen.
-// 
-// Column pushes are declared by .push-x-column or .push-x-columns
-// and are equal to column width + 4% (default margin left) L:485.
-//
-// !!! *** !!!
-// IF DEFAULT MARGIN LEFT IS CHANGED, PLEASE CHANGE PUSHES
-// !!! *** !!!
-//
-// Only a couple fractional columns right now. More coming soon
-
-.column,
-.columns {
-  width: 100%;
+nav {
+  max-width: $breakpoint-md;
   margin-left: auto;
   margin-right: auto;
-  @include media($breaks-at-md) {
-    float: left;
-    margin-left: 4%;
+  font-size: 1.25rem;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    
+    padding: 0;
+  }
 
-    &:first-child {
-      margin-left: 0;
-    }  
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $neutral10;
+
+    &:visited {
+      color: $neutral10;
+    }
   }
 }
 
-.two.columns { @include media($breaks-at-md) { width: 13.33%; } }
-.three.columns { @include media($breaks-at-md) { width: 22%; } }
-.four.columns { @include media($breaks-at-md) { width: 30%; } }
-.five.columns { @include media($breaks-at-md) { width: 36.666%; } }
-.six.columns { @include media($breaks-at-md) { width: 46%; } }
-.seven.columns { @include media($breaks-at-md) { width: 53%; } }
-.eight.columns { @include media($breaks-at-md) { width: 66%; } }
-.nine.columns { @include media($breaks-at-md) { width: 74%; } }
-// .ten.columns { @include media($breaks-at-md) { width: 80%; } }
-.twelve.columns { @include media($breaks-at-md) { width: 100%; margin-left: 0; } }
+footer {
+  width: 100%;
 
-.sm-two.columns { width: 13.33%; }
-.sm-three.columns { width: 22%; }
-.sm-four.columns { width: 30%; }
-.sm-five.columns { width: 36.666%; }
-.sm-six.columns { width: 46%; }
-.sm-seven.columns { width: 53%; }
-.sm-eight.columns { width: 66%; }
-.sm-nine.columns { width: 74%; }
-.sm-twelve.columns { width: 100%; margin-left: 0; }
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 
-.md-two.columns { @include media($breaks-at-md) { width: 13.33%; } }
-.md-three.columns { @include media($breaks-at-md) { width: 22%; } }
-.md-four.columns { @include media($breaks-at-md) { width: 30%; } }
-.md-five.columns { @include media($breaks-at-md) { width: 36.666%; } }
-.md-six.columns { @include media($breaks-at-md) { width: 46%; } }
-.md-seven.columns { @include media($breaks-at-md) { width: 53%; } }
-.md-eight.columns { @include media($breaks-at-md) { width: 66%; } }
-.md-nine.columns { @include media($breaks-at-md) { width: 74%; } }
-.md-twelve.columns { @include media($breaks-at-md) { width: 100%; margin-left: 0; } }
+  max-width: $breakpoint-md;
+  margin-left: auto;
+  margin-right: auto;
 
-.lg-two.columns { @include media($breaks-at-lg) { width: 13.33%; } }
-.lg-three.columns { @include media($breaks-at-lg) { width: 22%; } }
-.lg-four.columns { @include media($breaks-at-lg) { width: 30%; } }
-.lg-five.columns { @include media($breaks-at-lg) { width: 36.666%; } }
-.lg-six.columns { @include media($breaks-at-lg) { width: 46%; } }
-.lg-seven.columns { @include media($breaks-at-lg) { width: 53%; } }
-.lg-eight.columns { @include media($breaks-at-lg) { width: 66%; } }
-.lg-nine.columns { @include media($breaks-at-lg) { width: 74%; } }
-.lg-ten.columns { @include media($breaks-at-lg) { width: (100%-21.33%); } }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    
+    padding: 0;
+  }
 
-// Pushes
+  li + li {
+    margin-left: 2.5rem;
+  }
 
-.push-one.columns { @include media($breaks-at-md) { margin-left: 8.33%; } }
-.push-two.columns { @include media($breaks-at-md) { margin-left: 21.33%; } }
-.push-three.columns { @include media($breaks-at-md) { margin-left: 26%; } }
-.push-four.columns { @include media($breaks-at-md) { margin-left: 34%; } }
-.push-five.columns { @include media($breaks-at-md) { margin-left: 40.33%; } }
-.push-six.columns { @include media($breaks-at-md) { margin-left: 50%; } }
-.push-seven.columns { @include media($breaks-at-md) { margin-left: 57%; } }
-.push-eight.columns { @include media($breaks-at-md) { margin-left: 64%; } }
+  a {
+    text-decoration: none;
+    color: $neutral10;
 
-.md-push-one.column { @include media($breaks-at-md) { margin-left: 8.33%; } }
-.md-push-two.columns { @include media($breaks-at-md) { margin-left: 21.33%; } }
-.md-push-three.columns { @include media($breaks-at-md) { margin-left: 26%; } }
-.md-push-four.columns { @include media($breaks-at-md) { margin-left: 34%; } }
-.md-push-five.columns { @include media($breaks-at-md) { margin-left: 40.33%; } }
-.md-push-six.columns { @include media($breaks-at-md) { margin-left: 50%; } }
-.md-push-seven.columns { @include media($breaks-at-md) { margin-left: 57%; } }
-.md-push-eight.columns { @include media($breaks-at-md) { margin-left: 64%; } }
+    &:visited {
+      color: $neutral10;
+    }
+  }
 
-.lg-push-one.column { @include media($breaks-at-lg) { margin-left: 8.33%; } }
-.lg-push-two.columns { @include media($breaks-at-lg) { margin-left: 21.33%; } }
-.lg-push-three.columns { @include media($breaks-at-lg) { margin-left: 26%; } }
-.lg-push-four.columns { @include media($breaks-at-lg) { margin-left: 34%; } }
-.lg-push-five.columns { @include media($breaks-at-lg) { margin-left: 40.33%; } }
-.lg-push-six.columns { @include media($breaks-at-lg) { margin-left: 50%; } }
-.lg-push-seven.columns { @include media($breaks-at-lg) { margin-left: 57%; } }
-.lg-push-eight.columns { @include media($breaks-at-lg) { margin-left: 64%; } }
+}
 
-// Fractional columns
+section {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
-.one-half.column { @include media($breaks-at-md) { width: 48%; } }
-.one-third.column { @include media($breaks-at-md) { width: 30%; } }
-.two-thirds.column { @include media($breaks-at-md) { width: 65%; } }
+figure {
+  margin: 0;
+  height: auto;
+  position: relative;
 
-// Components > Feature card
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.3
+  }
 
-.c-feature-card {
-  img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 100%;
+  .burn {
+    opacity: 1;
+    background-blend-mode: color-burn;
   }
 }
 
-.c-navigation {
+h1,h2,h3,h4,h5,h6,p,ul,ol,li {
+  margin: 0 0 calc(1.45 * 1rem);
+}
+
+.homepage-background {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-
-  background-color: $color-base;
-
-  z-index: 1001; // // Leaflet controls are 1000.
-
-  transition: background-color 0.25s ease-in, color 0.25s ease-in;
-
-  @include media($breaks-at-md) {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-  }
-    
-  .home {
-    margin-right: auto;
-
-    float: left;
-  }
-}
-
-.c-navigation--link {
-  line-height: $font-line-height * 2;
-  color: $color-black;
-  display: block;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  &:hover {
-    background-color: $color-yellow;
-  }
-}
-
-.c-navigation--links {
-    display: none;
-    float: left;
-    width: 100%;
-
-    // .c-navigation--link {
-    //   width: 100%;
-    // }
-    @include media($breaks-at-md) {
-      display: flex !important;
-      float: none;
-      width: auto;
-      flex-direction: row;
-    }
-  }
-
-.c-navigation--mobile-toggle {
-    float: right;
-    cursor: pointer;
-
-    @include media($breaks-at-md) {
-      display: none !important;
-    }
-  }
-
-// ********
-// Theme specifics
-// ********
-
-.vdw-knd-logo {
-  max-width: 52vw;
-}
-
-.vdw-email-input {
-  display: block;
-  height: 44px;
-  min-width: 280px;
-  width: 30vw;
-  max-width: 450px;
-  padding-left: 10px;
-  margin-bottom: 3rem;
-  border: 3px solid $color-base;
-  color: $color-base;
-
-  @include media($breaks-at-md) {
-    display: inline-block;
-    margin-right: 3rem;
-  }
-}
-
-.vdw-email-button {
-  display: block;
-  background-color: $color-accent;
-  font-size: 18px;
-
-  @include media($breaks-at-md) {
-    display: inline-block;
-  }
-}
-
-.vdw-bg-wrapper {
-  // Background color and overflow management
-  position: relative;
-  background-color: $color-primary;
-  color: $color-base;
-
-  &:before {
-    // VDW logo & background texture
-    content: "";
-    position: absolute;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    opacity: 0.2;
-    background-image: url('/2017-images/VDW-logo-blk.svg');
-    background-position: top center;
-    // background-repeat: space;
-    background-size: 350%;
-
-    background-position: center;
-
-    transition: all 0.1s ease-out;
-
-    @include media($breaks-at-md) {
-      background-size: 200%;
-    }
-
-    @include media($breaks-at-lg) {
-      background-size: 125%;
-    }
-  }
-}
-
-.keep-scrolling-arrow {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  visibility: visible;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-.vdw-section2 {
-  background-image: url('/2017-images/People_Cards.jpg');
-  background-position: top;
-  background-size: cover;
-}
-
-.vdw-callout {
-  // On top of people_cards.jpg
-  background-color: $color-base;
-  min-height: 200px;
-  max-width: 450px;
-
-  color: $color-secondary;
-  font-size: 22px;
-
-  ul {
-      margin-top: 0;
-      list-style: none;
-      line-height: $font-line-height * 1.5;
-      padding-left: $unit/4;
-    }
-
-    .c-callout-col1 {
-      flex: 3 1 25%;
-      @include media($breaks-at-sm) {
-        text-align: right;
-      }
-    }
-
-    .c-callout-col2 {
-      flex: 7 1 75%;
-      @include media($breaks-at-sm) {
-        padding-left: 3rem;
-      }
-      // @include media($breaks-at-md) {
-      //   padding-left: 4rem;
-      // }
-    }
-
-    @include media ($breaks-at-md) {
-      padding: 0.5rem;
-    }
-}
-
-
-.c-member-card {
-  background-color: $color-base;
-  color: $color-secondary;
-  margin-bottom: $unit;
-
-  @include media($breaks-at-md) {
-    margin-left: $unit;
-    margin-right: $unit;
-  }
-
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: 200px;
-    object-fit: cover;
-    filter: grayscale(100%);
-  }
-}
-
-.c-member-card__content {
-  padding: 0 $unit/2;
-}
-
-
-// Event styles – modified version of 2014
-// ---
-// NOTE: should probably be tidied up someday, if it needs it.
-
-.events-list {
-  background: $color-base;
-  height: 0;
-  overflow: hidden;
-  // transition: max-height 1s ease-out;
-}
-
-.day-events.active .events-list { height: auto; }
-.day-events.active .event-count .indicator.plus { display: none; }
-
-.event-count .indicator.minus { display: none; }
-.day-events.active .event-count .indicator.minus { display: inline; }
-
-.events {
-  @include media($breaks-at-sm) {
-    margin-top: 0;
-  }
-}
-// .events {
-//   h1 span { background: $yellow; }
-//   .event {
-//     @extend %cream-box;
-//     margin-bottom: $vertical-grid-gutter;
-//   }
-//   .image {
-//     background-size: cover;
-//     background-position: center center;
-//     height: 200px;
-//     width: 100%;
-//   }
-//   h2 {
-//     // position: absolute;
-//     // bottom: 0;
-//     padding: 4px 5px 0;
-//     margin: 0;
-//     color: black;
-//     background: $yellow;
-//     font-size: 18px;
-//   }
-// }
-
-#event-15, #event-22 {
-  border-top: 1px solid $color-primary;
-}
-.day-header {
-  cursor: pointer;
-  background: $color-base;
-  color: #292826;
-  border-bottom: 1px solid $color-primary;
-  font-size: 20px;
-  padding-top: 20px;
-  @include media($breaks-at-sm) {
-    height: 60px;
-  }
-  .dayname {
-    font-size: 24px;
-    font-weight: normal;
-    padding-left: 15px;
-    margin: 0;
-    margin-top: -3px;
-    @include media($breaks-at-sm) {
-      float: left;
-      padding-left: 10px;
-    }
-  }
-  .event-count {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    @include media($breaks-at-sm) {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-size: 16px;
-      padding-left: 0px;
-      float: right;
-      padding-right: 10px;
-      .open-studios { display: none; }
-    }
-  }
-  &.current { border-left: 10px solid $color-accent; }
-  &.done {
-    .dayname, .event-count { color: #4a4a4a; }
-  }
-}
-.day-events.active .day-header.done { .dayname, .event-count { color: white; } }
-
-.day-events.active .day-header {
-  background: $color-quartary;
-  // color: $color-base;
-}
-
-.map-container {
-  position: relative;
-}
-.map {
-  width: 100%;
-  // height: 320px;
-  height: 200px;
-  .leaflet-control-zoom { display: none; }
-  @include media($breaks-at-sm) {
-    .leaflet-control-zoom { display: block; }
-  }
-}
-.mobile-map-blocker {
-  position: absolute;
-  top: 0; left: 0;
   width: 100%;
   height: 100%;
-  // background: rgba(255, 0,0,0.5);
+  z-index: -1;
+  background-color: #da7f3a;
+}
+
+.background-canvas {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: 100%;
+
+  filter: blur(15px);
+  // mix-blend-mode: soft-light;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  
   z-index: 1;
-  @include media($breaks-at-sm) {
-    display: none;
+
+  max-width: 64rem;
+
+  margin: 3rem auto 4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-top: 4rem;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.event-item {
-  backface-visibility: hidden;
-  border-bottom: 1px solid $color-primary;
-  padding: 25px 10px 20px;
+.section-about {
+  grid-column: span 1;
 
-  .event-type {
-    color: black;
-    text-transform: uppercase;
-  }
-
-  .description,
-  .time-and-place {
-    text-transform: none;
-    font-size: 18px;
-    line-height: 20px;
-    
-    color: lighten(#464646, 20);
-
-    a {
-      text-decoration: none;
-      font-weight: 700;
-      color: $color-primary;
-    }
-  }
-  .description {
-    margin: 0;
-  }
-  .social-links {
-    margin-top: 10px;
-    a {
-      font-size: 18px;
-      line-height: 20px;
-      text-decoration: none;
-      font-weight: 700;
-      color: $color-primary;
-      &:after {
-        content: ' -'
-      }
-      &:last-child:after {
-        content: '';
-      }
-    }
-  }
-  .time-and-place {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    @include media($breaks-at-sm) {
-      margin-top: 0;
-    }
+  figure {
+    margin: 0 auto;
+    fill: $neutral10;
   }
 }
 
-.eventheader {
-  width: 100%;
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
+.section-primary {
+  grid-column: span 1;
+
+  > * + * {
+    margin-bottom: 1.45 * 1rem;
   }
 
-  .left {
-    float: none;
-    @include media($breaks-at-md) {
-      float: left;
-    }
+  @media screen and (min-width: $breakpoint-md) {
+    grid-column: 2 / span 2;
+  }
+}
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-    .marker {
-      display: inline-block;
-      float: left;
-      margin: 0px;
-      padding: 0px 10px 10px 10px;
-      box-sizing: content-box;
-      margin-top: 15px;
-      background: url(../images/marker.svg) top center no-repeat;
-    }
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
 
-    .priority {
-      display: inline-block;
-      float: left;
-      margin: 0px;
-      padding: 0px 10px 30px 20px;
-      box-sizing: content-box;
-      margin-top: 25px;
-      font-size: 30px;
-      color: #555;
-      font-weight: 200;
-    }
+input[type="email"] {
+  flex: 8 8 20rem;
+  min-width: 16rem;
+  width: 20rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
 
-    .title {
-      @extend %golf;
-      letter-spacing: 0.5px;
-      margin: 0;
-      padding-bottom: 0.75rem;
-      color: $color-secondary;
-      @include media($breaks-at-sm) {
-        // padding-left: 10px;
-        // margin-left: 10px;
-      }
-    }
+  border: 2px solid transparent;
+  background-color: $neutral10;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 8px 16px -4px rgba(14,14,14,0.12);
+  will-change: border;
+  transition: border 150ms ease-in-out;
+
+  &:focus {
+    border: 2px solid $accent4;
   }
 
-  .right {
-    display: block;
-    float: none;
-    @include media($breaks-at-md) {
-      float: right;
-    }
-
-    .highlight {
-      background: $color-base;
-      color: $color-primary;
-      width: 140px;
-      height: 40px;
-      // margin-top: 10px;
-      // margin-right: 15px;
-      text-transform: uppercase;
-      text-align: center;
-      float: right;
-      padding: 9px;
-      border: 2px solid $color-primary;
-      margin-bottom: 20px;
-      @include media($breaks-at-sm) {
-        margin-bottom: 0px;
-      }
-    }
-
-    .price {
-      @extend %ff-primary;
-      @extend %hotel;
-      font-weight: 700;
-      color: #4a4a4a;
-      float: left;
-      margin-top: 10px;
-      margin-bottom: 15px;
-      @include media($breaks-at-sm) {
-        margin: 10px 15px 0 0;
-      }
-    }
+  @media screen and (min-width: $breakpoint-sm) {
+    margin-right: 2rem;
+    margin-bottom: 0;
   }
 }
 
-.leaflet-bar {
-  box-shadow: none;
-}
-
-.leaflet-bar a,
-.leaflet-bar a:hover {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 32px;
-}
-.leaflet-bar a:first-child,
-.leaflet-bar a:last-child {
-  border-radius: 0;
-}
-
-@keyframes bobbing {
-  0% {
-    transform: translateY(0px);
+@keyframes backgroundRepeat {
+  from {
+    background-position: 0%;
   }
-
-  40% {
-    transform: translateY(-0.25em);
-  }
-
-  80% {
-    transform: translateY(0.1em);
+  to {
+    background-position: 100%;
   }
 }
 
-.marker {
-  @extend %ff-secondary;
-  font-weight: 700;
-  width: 28px;
-  height: 38px;
-  margin-top: -38px;
-  color: white;
-  text-align: center;
-  background: url(../images/marker.svg) top left no-repeat;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
+button[type="submit"] {
+  position: relative;
+  flex: 2 2 5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: $neutral0;
+  color: $neutral10;
+  cursor: pointer;
+  box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 8px 16px -4px rgba(14,14,14,0.12);
 
-  &.info {
-    height: 28px;
-    margin-top: -28px;
-    background-image: url(../images/marker-info.svg)
+  will-change: background-image, box-shadow;
+  transition: background-image, box-shadow 150ms ease-in-out;
+
+  .text-overlay {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    color: $black;
+    opacity: 0;
+
+    will-change: opacity;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  .text-burn {
+    mix-blend-mode: color-burn;
   }
 
   &:hover {
-    opacity: 0.9;
-    // animation: bobbing 0.2s infinite;
-  }
+    background-image: $gradientOne;
+    background-size: 400%;
+    background-repeat: no-repeat;
+    animation: backgroundRepeat 3000ms ease-in-out 1000ms infinite alternate;
+    box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 16px 32px -8px rgba(14,14,14,0.15);
+    color: transparent;
 
-  span {
-    position: relative;
-    top: 5px;
-  }
-}
-
-// Sponsors & supporters masonry
-// ---
-
-.support {
-  display: flex;
-  // justify-content; center;
-  align-items: center;
-  flex-wrap: wrap;
-  // padding: 0 1em;
-  a {
-    display: block;
-    img {
-      width: 100%;
-      height: auto;
-    }
-    &.big-logo {
-      padding: 2%;
+    .text-overlay {
+      opacity: 0.3;
     }
 
-    width: 75%;
-    margin: 15px 0;
-
-    @include media($breaks-at-sm) {
-      $margin-right: 6%;
-      $grid: 2;
-      width: (100% - ($grid - 1) * $margin-right)/$grid;
-      margin: 3% $margin-right 3% 0;
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-    }
-
-    @include media($breaks-at-md) {
-      $margin-right: 6%;
-      $grid: 4;
-      width: (100% - ($grid - 1) * $margin-right)/$grid;
-      margin: 3% $margin-right 3% 0;
-      &:nth-child(2n) {
-        margin-right: 6%;
-      }
-
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &.support-small {
-    a {
-      $margin-right: 6%;
-      $grid: 2;
-      width: (100% - ($grid - 1) * $margin-right)/$grid;
-      margin: 3% $margin-right 3% 0;
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
-      @include media($breaks-at-sm) {
-        $margin-right: 6%;
-        $grid: 3;
-        width: (100% - ($grid - 1) * $margin-right)/$grid;
-        margin: 3% $margin-right 3% 0;
-        &:nth-child(2n) {
-          margin-right: $margin-right;
-        }
-        &:nth-child(3n) {
-          margin-right: 0;
-        }
-      }
-      @include media($breaks-at-md) {
-        $margin-right: 6%;
-        $grid: 5;
-        width: (100% - ($grid - 1) * $margin-right)/$grid;
-        margin: 3% $margin-right 3% 0;
-        &:nth-child(3n) {
-          margin-right: $margin-right;
-        }
-
-        &:nth-child(5n) {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-  
-  // display: flex;
-  // a > img {
-  //   @extend .columns;
-  //   @extend .sm-six;
-  //   @extend .four;
-  //   @extend .lg-three;
-
-  //   padding: 2%;
-  // }
-}
-
-.c-even-boxes {
-  display: flex;
-  flex-direction: column;
-  > * {
-    margin-bottom: 1.5rem;
-  }
-  @include media($breaks-at-md) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    > * {
-      margin-right: 1.5rem;
-      width: calc(50% - 0.75rem);
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
+    .text-burn {
+      opacity: 1
     }
   }
 }

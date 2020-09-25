@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vancouver Design Week</title>
   <meta name="description" content="Connect. Explore. Engage. Impact.">
-  <link rel="stylesheet" href="css/main-2018.css?20180626">
+  <link rel="stylesheet" href="css/main.css">
   <meta property="og:url" content="http://vancouverdesignwk.com/">
   <meta property="og:title" content="Vancouver Design Week">
   <meta property="og:description" content="Vancouver Design Week (VDW) is the city’s official interdisciplinary design festival — at once a city-wide platform, invitation and call to action! VDW is a unique opportunity to: celebrate local design talent; connect design makers and users; and to support design’s capacity for improving the quality of our everyday lives.">
@@ -38,158 +36,65 @@
   </script>
 </head>
 <body class="support-hover">
-
-  {% include navigation.html %}
-
-  <main class="vdw-bg-wrapper" role="main">
-
-    <section id="hero" class="c-l-container u-pb u-pr--xs u-pl--xs">
-      <div class="push-two lg-push-four columns two-thirds column">
-        <img class="u-pt--l vdw-knd-logo" src="{{ 'images/VDW-logo-white.svg' | prepend: site.baseurl }}" alt="">
-        <h1 class="charlie">Vancouver <br>Design Week</h1>
-        {% comment %}<h1 class="bravo u-ac">April 29 - May 5, 2019</h1>{% endcomment %}
+  <header>
+    <nav>
+      <ul>
+        <li><a href="https://us16.campaign-archive.com/home/?u=7158559d84aec8751751635da&id=58cff9b111" rel="noopener noreferrer">Archive</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main  role="main">
+    <section>
+      <div class="homepage-background">
+        <canvas id="canvas" class="background-canvas"></canvas>
       </div>
-
-      {% comment %}
-      {% include event-schedule.html %}
-      {% endcomment %}
-
-      <div class="push-two lg-push-four columns two-thirds column">
-        <h5 class="ff-secondary u-mt--xs">The City&rsquo;s Multi-Disciplinary Design Festival</h5>
-
-        <h5 class="ff-secondary">Subscribe to the VDW Newsletter for festival updates</h5>
-        <form action="//vancouverdesignwk.us16.list-manage.com/subscribe/post?u=7158559d84aec8751751635da&amp;id=58cff9b111" method="post" target="_blank" rel="noopener" novalidate accept-charset="utf-8">
-          <input class="vdw-email-input ff-secondary" type="email" value="" name="EMAIL" tabindex="1" placeholder="email@example.com">
-          <input type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button ff-secondary">
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7158559d84aec8751751635da_58cff9b111" tabindex="-1" value=""></div>
-        </form>
-        <h5 class="ff-secondary">Send us an email to get involved: <a href="mailto:info@vancouverdesignwk.com">info@vancouverdesignwk.com</a></h5>
-
-        {% comment %}
-        <div class="u-bg-white u-color-black u-mt--s u-p">
-          <h3 class="foxtrot u-mt--s u-mb--s">This Year&rsquo;s Theme: Connection</h3>
-          <p>Yearly themes provide the opportunity to consider design through refreshing perspectives - deepening our understanding of its value and presence.</p>
-          <p>By addressing the theme of connection, VDW encourages participants to consider how design may increase our awareness, shift our perspective, change our actions or provide solutions to challenges from a lack of connection.</p> 
-          <p>If design is the means through which we shape and create the world we live in, how does it influence or respond to the idea of connection?</p>
-        </div>
-        {% endcomment %}
-      </div>
-    </section>
-
-    <section class="">
-      <img style="width: 100%;position: relative;display: block;" alt="Photo Credit: Yew Wood, @maarchitecturestudio, Kudoz, @sengsuriya" title="Photo Credit: Yew Wood, Focal Journey, Kudoz, @sengsuriya" src="images/homepage-1.jpg">
-    </section>
-
-    <!-- <section>
-      <img src="images/heatmap.png" style="position: relative; width: 100%; height: auto;" width="1914" height="1279">
-    </section> -->
-
-    {% include festival.html %}
-
-    <section class="">
-      <img style="width: 100%;position: relative;display: block;" alt="Photo Credit: Natalie Hopson, @wendy.shep, Kudoz, Meghan Proulx" title="Photo Credit: Natalie Hopson, @wendy.shep, Kudoz, Meghan Proulx" src="images/homepage-2.jpg">
-    </section>
-
-    {% include about.html %}
-    
-    {% comment %}
-    {% include event-schedule.html %}
-
-
-<!--     <section id="successes" class="c-l-fw-container vdw-section2 u-pt--l u-pb">
-      <div class="c-l-container u-db twelve md-eight md-push-two lg-six lg-push-six columns c-callout ff-secondary vdw-callout u-pt">
-        <div class="c-l-row">
-          <h3 class="f-tt-uc f-ta-c"><span class="f-wt">The Successes </span><br>of 2014</h3>
-        </div>
-        <div class="c-l-row u-flexbox">
-          <div class="c-callout-col1">
-            <ul>
-              <li class="f-wb">1</li>
-              <li class="f-wb">14</li>
-              <li class="f-wb">15+</li>
-              <li class="f-wb">94</li>
-              <li class="f-wb">22</li>
-              <li class="f-wb">25000</li>
-              <li class="f-wb">26</li>
-              <li class="f-wb">10</li>
-            </ul>
-          </div>
-          <div class="c-callout-col2">
-            <ul>
-              <li class="f-tt-uc">Mayoral Proclamation</li>
-              <li class="f-tt-uc">Days</li>
-              <li class="f-tt-uc">Disciplines</li>
-              <li class="f-tt-uc">Happenings</li>
-              <li class="f-tt-uc">Sold Out Events</li>
-              <li class="f-tt-uc">Attendees</li>
-              <li class="f-tt-uc">Open Studios</li>
-              <li class="f-tt-uc">Open Buildings</li>
-            </ul>
-          </div>
-        </div>
-        <div class="c-callout-link u-pt--s u-pb--s f-ta-c u-pr--xs u-pl--xs">
-          <p>With the help of <span class="f-wb">43</span> supporting partners.
-          <p><a class="u-callout-link" href="/2014/">Visit the 2014 Site.</a></p>
-        </div>
-      </div>
-    </section>
- -->
-
-
-     
-
-    
-
-    {% endcomment %}
-
-    {% include team.html %}
-    {% include sponsors.html %}
-
-    <section id="newsletter" class="c-l-container u-pr--xs u-pl--xs">
-      <div class="c-l-row u-pb u-db twelve lg-eight lg-push-four columns">
-        <h5 class="ff-secondary">Subscribe to VDW News &amp; Updates</h5>
-        <form action="//vancouverdesignwk.us16.list-manage.com/subscribe/post?u=7158559d84aec8751751635da&amp;id=58cff9b111" method="post" target="_blank" rel="noopener" novalidate accept-charset="utf-8">
-          <input class="vdw-email-input u-ac ff-secondary" type="email" value="" name="EMAIL" tabindex="2" placeholder="email@example.com">
-          <input type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button u-ac ff-secondary">
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7158559d84aec8751751635da_58cff9b111" tabindex="-1" value=""></div>
-        </form>
-      </div>
-    </section>
-
-    <footer id="contact" class="c-l-container u-pr--xs u-pl--xs">
-      <div class="eight push-two lg-push-four columns u-mb">
-        <div class="one-half column">
-          <h3 class="f-tt-uc ff-secondary golf">Contact</h3>
+    <div class="grid-container">
+      <div class="section-about">
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 408.36 144" id="logo">
+            <path d="M114.026 21.215c-.926 0-1.802.186-2.638.519h-1.544c-.916.147-1.542.22-1.885.22l-6.169 1.103c-.8.147-2.343.219-4.627.219-2.629 0-8.054-.171-16.279-.513l-4.97-1.029h-.685c-2.287 0-3.428.801-3.428 2.399 0 1.371 1.256 2.056 3.771 2.056h9.596c5.025 0 7.54 1.597 7.54 4.783 0 1.141-.23 2.394-.686 3.76L67.069 107.24c-2.23-6.041-4.38-11.785-6.44-17.197a3243.035 3243.035 0 0 1-7.575-20.07 4456.342 4456.342 0 0 1-7.763-20.924 1480.352 1480.352 0 0 0-8.66-22.86h2.44c2.512 0 3.77-.797 3.77-2.398 0-1.372-1.314-2.057-3.941-2.057h-.343c-2.005 0-3.947.143-5.83.417a7.77 7.77 0 0 0-3.72-.936c-1.839 0-3.47.693-4.891 2.061h-2.01c-2.857 0-4.913-.055-6.169-.171l-5.655-.686-4.798-.685H4.456C1.487 21.734 0 22.56 0 24.208c0 1.323 1.315 1.981 3.942 1.981H9.768c3.655 0 6.683 3.304 9.082 9.911l35.987 99.602c.913 2.618 2.112 3.929 3.598 3.929 1.218 0 2.399-1.332 3.542-3.95.771 1.249 1.676 2.233 2.722 2.932 1.326.882 2.681 1.326 4.072 1.326 1.514 0 2.964-.507 4.355-1.516 1.387-1.012 2.461-2.522 3.219-4.545a2605.175 2605.175 0 0 1 20.166-51.313c7.006-17.293 14.988-33.83 23.953-49.609.63-1.64.946-3.03.946-4.167 0-2.272-.757-4.099-2.272-5.491-1.515-1.387-3.219-2.083-5.112-2.083M58.435 130.721c-.458 0-.856-.511-1.199-1.537L24.594 38.088c5.689 14.998 11.36 29.956 17.005 44.855a7501.87 7501.87 0 0 0 17.793 46.512c-.357.84-.676 1.266-.957 1.266m32.679-73.53a2450.339 2450.339 0 0 0-9.774 23.177l14.281-40.983 2.056-5.655c1.029-2.97 2.113-4.971 3.256-5.998 1.096-.988 2.994-1.496 5.675-1.535a296.98 296.98 0 0 0-15.494 30.994M403.395 19.79l-31.713 111.958-5.347-19.36c.74-1.697 1.268-3.036 1.562-3.973.521-2.151 1.09-3.942 1.711-5.376.618-1.434 1.254-2.574 1.906-3.423a236.775 236.775 0 0 1 2.442-7.479 142.458 142.458 0 0 0 1.762-5.327 1001.08 1001.08 0 0 0 1.66-6.404c.455-1.791.881-3.11 1.271-3.959a948.077 948.077 0 0 0 2.346-6.257c.651-1.759 1.076-3.258 1.272-4.496.455-.717.942-2.151 1.466-4.302.52-2.151 1.107-5.05 1.759-8.701.651-3.844 1.237-6.956 1.76-9.336.521-2.378.979-4.022 1.369-4.936l-1.271-4.791c.194-.52.455-1.188.781-2.004a34.69 34.69 0 0 1 1.174-2.59c.26-.65.472-2.068.635-4.253.162-2.183.245-5.262.245-9.238 0-1.498-.131-2.59-.392-3.275-.262-.684-.719-1.027-1.368-1.027-.847 0-1.97.718-3.368 2.151-1.399 1.435-2.979 3.553-4.736 6.355-.326 1.63-.684 3.03-1.074 4.204a40.787 40.787 0 0 0-.879 2.932l1.27 4.106a4876.118 4876.118 0 0 0-2.684 10.46c-.748 2.933-1.45 5.377-2.101 7.332a652.063 652.063 0 0 0-3.123 9.63 187.077 187.077 0 0 1-3.028 8.847c-.13 2.02-.39 3.682-.78 4.986-.392 1.304-.911 2.312-1.562 3.029a320.595 320.595 0 0 1-3.563 10.852 419.06 419.06 0 0 1-2.089 5.877l-9.494-34.383c.134-1.264.225-2.396.266-3.364 1.494-6.842 2.6-12.528 3.317-17.058.717-4.529 1.076-7.804 1.076-9.825 0-1.628-.327-2.948-.979-3.959-.652-1.01-1.728-1.809-3.226-2.395l-8.691 3.128a5 5 0 0 0-.901.376l-1.307-4.733h-3.363l-23.35 86.358-5.452 9.795a10.23 10.23 0 0 0-1.172.586c-.468-.65-1.464-5.474-2.99-14.468s-2.322-14.728-2.386-17.206v-6.158c-.327-1.369-.556-2.509-.686-3.422a12.967 12.967 0 0 1-.39-1.956 14.084 14.084 0 0 1-.098-1.563c0-.65.031-1.872.098-3.666.063-1.791.13-4.121.195-6.989.13-2.281.194-4.317.194-6.11 0-1.792-.064-3.405-.194-4.839a102.712 102.712 0 0 0-.344-5.475 75.748 75.748 0 0 0-.634-5.181c.195-1.107.423-2.117.685-3.03.586-3.845 1.01-7.592 1.27-11.242.392-3.455.815-7.072 1.271-10.852 0-.325-.229-.993-.684-2.004-.457-1.01-1.206-2.46-2.249-4.35a163.74 163.74 0 0 1-2.102-3.471c-.555-.944-1.123-1.711-1.71-2.297-.652-.651-1.484-1.189-2.493-1.613C293.173.213 291.953 0 290.52 0c-1.76 0-3.227.587-4.4 1.759-1.172 1.174-1.987 2.902-2.442 5.183-1.76 8.863-3.079 17.302-3.959 25.319-.103.922-.178 1.825-.267 2.739L275.1 19.79h-5.125l8.51 29.846a191.965 191.965 0 0 0-.087 5.696c0 2.803.113 5.167.342 7.087.229 1.923.539 3.341.932 4.253l2.646 1.955c.653.457 1.141 1.418 1.468 2.884.327 1.467.523 3.309.588 5.522.132 2.738.247 4.874.345 6.404.098 1.532.211 2.493.342 2.884.588 1.108 1.029 2.087 1.323 2.933.293.849.473 1.631.538 2.346.064.914.131 1.843.196 2.787.065.946.131 1.874.196 2.786.392 2.933.751 5.474 1.078 7.625.327 2.15.588 3.911.782 5.279.59 2.217 1.129 4.105 1.618 5.67s.962 2.804 1.42 3.715c-.131.586-.359 1.337-.686 2.249.587 2.15 1.159 4.252 1.715 6.305a310.08 310.08 0 0 0 1.715 6.111c.979 3.322 1.958 5.8 2.938 7.429.979 1.629 1.993 2.444 3.038 2.444 2.15 0 4.089-.637 5.816-1.907 1.726-1.271 3.338-3.177 4.838-5.718a315.416 315.416 0 0 0 5.866-12.808c1.76-4.04 3.128-7.2 4.106-9.482.977-2.28 1.433-3.714 1.369-4.302a680.51 680.51 0 0 1 4.545-8.75c1.467-2.769 2.884-5.457 4.253-8.064.781 3.324 1.351 6.176 1.711 8.554.356 2.38.601 4.287.732 5.72.261 2.933.504 5.816.733 8.651.228 2.835.44 5.655.635 8.456.651 4.042 1.728 7.039 3.227 8.994s3.485 2.932 5.964 2.932c.521 0 1.222-.194 2.101-.585.881-.392 1.907-.944 3.08-1.663 1.238.066 2.249-.015 3.031-.244a3.821 3.821 0 0 0 1.954-1.319l2.347-1.369c.392-.195 1.075-1.172 2.052-2.933.979-1.76 2.151-4.268 3.521-7.527.105-.254.202-.481.305-.728l5.04 18.406h6.246L408.36 19.79h-4.965zm-50.167 91.265c-1.398 2.803-2.424 4.204-3.075 4.204-.391 0-.7-1.125-.928-3.373-.229-2.249-.377-5.555-.44-9.922v-4.693c0-2.215-.065-4.986-.196-8.309-.065-2.738-.131-5.198-.194-7.381a194.816 194.816 0 0 1-.099-5.817c0-.325.147-1.173.44-2.542.188-.876.427-1.974.708-3.25l8.262 30.174c-1.737 4.772-3.231 8.414-4.478 10.909M239.678 46.286c-1.98-4.964-4.811-9.162-8.493-12.593-3.681-3.431-8.256-6.094-13.722-7.99-2.838-.984-5.822-1.708-8.945-2.181-5.956-3.409-12.344-6.282-19.17-8.614-1.338-.445-6.304-2.761-14.894-6.944-7.586-3.737-12.048-5.607-13.387-5.607-2.343 0-4.686 1.256-7.029 3.766-2.342 2.51-3.514 4.909-3.514 7.196 0 5.097.077 12.169.23 21.197a106.699 106.699 0 0 0-3.2 1.521c-4.324 2.147-7.462 4.003-9.414 5.564-4.796 3.848-7.195 10.514-7.195 19.997 0 3.682 1.422 5.523 4.267 5.523.891 0 1.952-.21 3.179-.628s3.249-1.255 6.067-2.51a187.65 187.65 0 0 1 6.744-2.842c.05 4.195.075 7.753.075 10.665 0 5.858-.265 14.631-.795 26.316l-.004.098c-2.683 4.914-5.014 9.556-6.982 13.917-1.172 2.623-2.009 4.938-2.511 6.945s-.753 4.601-.753 7.782c0 2.565.251 4.505.753 5.814s1.352 2.189 2.553 2.635c1.198.446 2.83.67 4.894.67 4.512 0 9.053-.349 13.621-1.01 2.915 1.542 6.621 2.857 11.147 3.939 5.242 1.282 9.901 1.924 13.973 1.924 16.177 0 28.587-2.958 37.235-8.87 7.752-5.298 13.875-12.327 18.366-21.085 4.489-8.757 6.735-17.906 6.735-27.445 0-9.673-2.458-18.854-7.345-27.55-.475-3.418-1.298-6.622-2.486-9.6m-54.512 69.239c-5.687 1.853-11.168 3.068-16.452 3.679-.065-.042-.135-.078-.199-.121-.782-.558-1.368-.92-1.757-1.088l.979-33.41c.408-.685.809-1.351 1.196-1.983 2.732-4.463 6.025-9.65 9.874-15.564 3.848-5.912 6.428-10.027 7.739-12.341 1.31-2.315 1.967-4.114 1.967-5.398 0-.836-.113-1.826-.335-2.97-.223-1.143-.334-1.771-.334-1.883 3.96-.334 8.2-.502 12.718-.502 2.687 0 5.213.13 7.581.389 13.951 9.448 21.937 20.465 23.942 33.054-1.113 3.404-2.824 6.733-5.166 9.984-4.463 6.191-10.417 11.743-17.864 16.649a98.786 98.786 0 0 1-23.889 11.505m-12.193-88.86c-1.875.49-3.705 1.001-5.477 1.54l-.07-4.008c1.921.848 3.757 1.665 5.547 2.468m-21.821 31.921c-4.046.669-6.318 1.005-6.82 1.005-.725 0-1.087-.196-1.087-.586 0-.614 1.477-1.617 4.434-3.013a84.55 84.55 0 0 1 3.431-1.517c.022 1.426.042 2.794.059 4.108l-.017.003m16.698-9.889a183.91 183.91 0 0 1 4.347-1.197c4.796-1.256 9.203-2.105 13.22-2.553-6.4 8.676-12.177 16.87-17.349 24.596l-.218-20.846zm47.02 69.466c-4.108 2.765-9.959 4.546-17.535 5.353 5.456-2.801 10.596-5.985 15.401-9.579 7.164-5.356 13.18-11.379 18.079-18.044a44.225 44.225 0 0 1-3.019 7.418c-3.208 6.221-7.516 11.169-12.926 14.852"/>
+          </svg>
+        </figure>
+      <h3>Vancouver Design Week: Redesign the Future!</h3>
+      <p>Vancouver Design Week (VDW) is a collaborative platform, a call to action and an invitation to us all to immerse in design and leverage its transformative potential.</p>
+      <footer id="contact" class="c-l-container u-pr--xs u-pl--xs">
           <p>General inquiries: <a class="u-email-link" href="mailto: info@vancouverdesignwk.com">info@vancouverdesignwk.com</a></p>
-        </div>
-        <div class="one-half column">
-          <h3 class="f-tt-uc ff-secondary golf">Social Media</h3>
-          <a class="u-social-link" href="https://www.instagram.com/vandesignwk/"><div class="u-social-icon u--instagram"></div></a>
-          <a class="u-social-link" href="https://twitter.com/vandesignwk"><div class="u-social-icon u--twitter"></div></a>
-          <a class="u-social-link" href="https://www.facebook.com/vandesignwk"><div class="u-social-icon u--facebook"></div></a>
-        </div>
-      </div>
+          <ul>
+            <li>
+              <a class="u-social-link" href="https://www.instagram.com/vandesignwk/">
+                <svg width="24" height="24" viewbox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M25 0H3a3 3 0 0 0-3 3v22a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3zM14 8a6 6 0 0 1 0 12 6 6 0 0 1 0-12zm11 15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V12h2.23A9.036 9.036 0 0 0 5 14a9 9 0 0 0 9 9 9 9 0 0 0 9-9c0-.688-.084-1.355-.23-2H25v11zm0-15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4z" fill="#FFF" fill-rule="evenodd"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="u-social-link" href="https://twitter.com/vandesignwk">
+                <svg width="24" height="24" viewbox="0 0 173 140" xmlns="http://www.w3.org/2000/svg"><path d="M171.505 16.499a70.337 70.337 0 0 1-20.208 5.54c7.264-4.354 12.844-11.25 15.47-19.466a70.437 70.437 0 0 1-22.344 8.538A35.136 35.136 0 0 0 118.74 0C99.308 0 83.553 15.754 83.553 35.185c0 2.758.311 5.444.912 8.019C55.22 41.737 29.295 27.728 11.94 6.44a35.019 35.019 0 0 0-4.764 17.69c0 12.207 6.211 22.977 15.653 29.286a35.047 35.047 0 0 1-15.937-4.4c-.004.146-.004.294-.004.442 0 17.048 12.129 31.268 28.225 34.503a35.224 35.224 0 0 1-15.89.602c4.478 13.979 17.472 24.152 32.87 24.435-12.042 9.438-27.214 15.063-43.7 15.063-2.84 0-5.64-.167-8.393-.492 15.572 9.984 34.067 15.81 53.938 15.81 64.72 0 100.113-53.616 100.113-100.114 0-1.526-.035-3.043-.102-4.553a71.483 71.483 0 0 0 17.556-18.213z" fill="#FFF" fill-rule="evenodd"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="u-social-link" href="https://www.facebook.com/vandesignwk"><svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.403 4.778h-3.035c-1.162 0-2.146.412-2.951 1.236-.806.824-1.209 1.817-1.209 2.979v2.979h-2.416v3.597h2.416v8.375h3.598v-8.375h3.597v-3.597h-3.597V9.555c0-.3.112-.571.337-.815a1.1 1.1 0 0 1 .843-.365h2.417V4.778zM0 0h24v23.944H0V0z" fill="#FFF" fill-rule="evenodd"/></svg>
+              </a>
+            </li>
+          </ul>
     </footer>
-
+    </div>
+    <div class="section-primary">
+      <label for="email">Stay up to date with our newsletter</label>
+      <form action="//vancouverdesignwk.us16.list-manage.com/subscribe/post?u=7158559d84aec8751751635da&amp;id=58cff9b111" method="post" target="_blank" rel="noopener" novalidate accept-charset="utf-8">
+        <input type="email" value="" name="EMAIL" tabindex="2" placeholder="email@example.com">
+        <button type="submit" value="Subscribe" name="subscribe" class="e-btn-primary vdw-email-button u-ac ff-secondary">
+          Subscribe
+          <span class="text-overlay text-burn" aria-hidden="true">Subscribe</span>
+          <span class="text-overlay" aria-hidden="true">Subscribe</span>
+        </button>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7158559d84aec8751751635da_58cff9b111" tabindex="-1" value=""></div>
+      </form>
+      <p>Receive updates, hear inspiring stories from Vancouver's design community about how we're leveraging our unique skills to reimagine and realize a future that's thriving and equitable for all!</p>
+    </div>
+    </div>
+    </section>
+  
   </main>
-
-  <script type="text/javascript" src="/javascript/third-party.js"></script>
-  <script type="text/javascript" src="/javascript/app-2017.js?20180507"></script>
-  <script>
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+  
+  <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 </html>

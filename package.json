@@ -13,5 +13,8 @@
   "dependencies": {
     "autoprefixer": "^6.7.7",
     "postcss-cli-simple": "^1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0"
   }
 }
