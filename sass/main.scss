@@ -85,10 +85,14 @@ footer {
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     list-style: none;
     
     padding: 0;
+  }
+
+  li + li {
+    margin-left: 2.5rem;
   }
 
   a {

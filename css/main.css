@@ -469,10 +469,13 @@ footer ul {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   list-style: none;
   padding: 0;
+}
+footer li + li {
+  margin-left: 2.5rem;
 }
 footer a {
   text-decoration: none;
