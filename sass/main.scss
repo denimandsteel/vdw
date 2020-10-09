@@ -1,5 +1,29 @@
 @import "normalize";
 
+// Lekton font-face
+@import 'https://fonts.googleapis.com/css?family=Lekton:400,700';
+
+// Tabac Sans font-face (thin, light, black)
+
+@font-face {
+  font-family: 'Tabac Sans';
+  src: url('/fonts/TabacSansBlack.otf') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Tabac Sans';
+  src: url('/fonts/TabacSansLight.otf') format('opentype');
+  font-weight: 300;
+
+}
+
+@font-face {
+  font-family: 'Tabac Sans';
+  src: url('/fonts/TabacSansThin.otf') format('opentype');
+  font-weight: 100;
+}
+
 $neutral0: #1A202C;
 $neutral02: #4A5568;
 $neutral04: #A0AEC0;
@@ -24,24 +48,30 @@ $breakpoint-sm: 36rem;
 $breakpoint-md: 48rem;
 $breakpoint-lg: 64rem;
 
+$ff-bold: "Tabac Sans", Georgia, serif;
+$ff-base: "Lekton", Helvetica, sans-serif;
+$ff-no-style: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 html,
 body {
   margin: 0;
 }
 
 body {
+  font-family: $ff-no-style;
   font-size: 16px;
   line-height: 1.5;
   font-size: 1.25rem;
+  font-weight: 400;
   color: $neutral10;
 }
 
 header {
   width: 100%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   @media screen and (min-width: $breakpoint-md) {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -130,6 +160,18 @@ figure {
   }
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-bold;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+  font-weight: 900;
+}
 h1,h2,h3,h4,h5,h6,p,ul,ol,li {
   margin: 0 0 calc(1.45 * 1rem);
 }
@@ -212,11 +254,13 @@ input[type="email"] {
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
 
+  font-family: $ff-base;
   border: 2px solid transparent;
-  background-color: $neutral10;
-  outline: none;
   border-radius: 6px;
+  outline: none;
+  background-color: $neutral10;
   box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 8px 16px -4px rgba(14,14,14,0.12);
+
   will-change: border;
   transition: border 150ms ease-in-out;
 
@@ -245,9 +289,12 @@ button[type="submit"] {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
-  background-color: $neutral0;
   color: $neutral10;
+  font-family: $ff-base;
+  font-weight: 700;
+  
   cursor: pointer;
+  background-color: $neutral0;
   box-shadow: 0 1px 1px 0 rgba(14,14,14,0.05), 0 8px 16px -4px rgba(14,14,14,0.12);
 
   will-change: background-image, box-shadow;
